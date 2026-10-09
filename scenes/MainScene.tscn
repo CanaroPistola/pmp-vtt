@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bnod8lhnr63h8"]
+
+[ext_resource type="Script" uid="uid://dovn3gg0ev85u" path="res://scripts/open_trainer_sheet.gd" id="1_echbf"]
+
+[node name="MainScene" type="Node2D" unique_id=1333760434]
+
+[node name="Control" type="Control" parent="." unique_id=1040807619]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control" unique_id=1238304047]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Abrir Ficha"
+script = ExtResource("1_echbf")

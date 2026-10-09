@@ -1,0 +1,127 @@
+# ─────────────────────────────────────────────────────────────
+# .gitignore — Pokémon Mundo Perfeito VTT (Godot 4.x)
+# ─────────────────────────────────────────────────────────────
+
+# ─── Godot 4 — cache e configuração local ───
+.godot/
+.import/
+*.import
+*.translation
+
+# ─── Godot 4 — exportação ───
+export/
+export_presets.cfg
+*.exe
+*.pck
+*.zip
+*.apk
+*.aab
+*.ipa
+*.app/
+*.dmg
+
+# ─── Godot 4 — arquivos temporários do editor ───
+*.tmp
+*.bak
+*.orig
+*.rej
+*.swp
+*.swo
+*~
+
+# ─── Mono/C# (caso você use no futuro) ───
+.mono/
+data_*/
+mono_crash.*.json
+*.csproj
+*.sln
+*.user
+
+# ─────────────────────────────────────────────────────────────
+# Assets pesados que NÃO pertencem ao Git
+# ─────────────────────────────────────────────────────────────
+
+# Sprites overworld do PMDCollab (baixados em runtime, cacheados em user://)
+# Se um dia quiser versionar via Git LFS, remova as linhas abaixo
+# e configure .gitattributes
+assets/tokens/overworld/
+
+# Áudio de jogo (se começar a usar)
+assets/audio/
+
+# Mapas e battlemaps
+assets/maps/
+
+# Vídeos
+assets/video/
+
+# Fontes grandes (se baixar pacotes pesados)
+assets/ui/fonts/big_packs/
+
+# ─────────────────────────────────────────────────────────────
+# Conteúdo de campanha — NUNCA vai pro Git do VTT
+# (fica em user://campaigns/, fora do res://)
+# ─────────────────────────────────────────────────────────────
+campaigns/
+saves/
+user_data/
+
+# ─────────────────────────────────────────────────────────────
+# Sistema operacional
+# ─────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ─────────────────────────────────────────────────────────────
+# IDEs / editores externos
+# ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.vim/
+*.vim
+
+# ─────────────────────────────────────────────────────────────
+# Ferramentas de asset pipeline
+# ─────────────────────────────────────────────────────────────
+
+# Python (scripts de conversão PMD, por exemplo)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Node (caso você use ferramentas web no futuro)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ─────────────────────────────────────────────────────────────
+# Segredos e configurações locais
+# ─────────────────────────────────────────────────────────────
+.env
+.env.*
+secrets.json
+config.local.json
+*.local
+
+# ─────────────────────────────────────────────────────────────
+# Logs
+# ─────────────────────────────────────────────────────────────
+*.log
+logs/
+crash_*.txt

@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dyhfcrhiy4762"]
+
+[ext_resource type="Script" uid="uid://mufe7muvvmu6" path="res://scripts/trainer_sheet/skill_row.gd" id="1_02n8k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_10w08"]
+font_size = 12
+
+[node name="Skill" type="HBoxContainer" unique_id=782886367]
+custom_maximum_size = Vector2(-1, 20)
+script = ExtResource("1_02n8k")
+
+[node name="IsTrained" type="CheckBox" parent="." unique_id=2119389416]
+layout_mode = 2
+
+[node name="IsExpert" type="CheckBox" parent="." unique_id=69135178]
+layout_mode = 2
+
+[node name="SkillBonus" type="LineEdit" parent="." unique_id=1985788389]
+layout_mode = 2
+text = "+0"
+alignment = 1
+max_length = 4
+
+[node name="SkillName" type="Label" parent="." unique_id=1221082122]
+layout_mode = 2
+text = "Acrobacia"
+label_settings = SubResource("LabelSettings_10w08")
+
+[node name="SkillAttribute" type="Label" parent="." unique_id=1616062362]
+layout_mode = 2
+text = "(DES)"
+label_settings = SubResource("LabelSettings_10w08")
