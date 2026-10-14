@@ -1,0 +1,582 @@
+[gd_scene format=3 uid="uid://b3xq8vwx1k4pn"]
+
+[ext_resource type="Script" uid="uid://dwgncd0jtxj7b" path="res://scripts/trainer_sheet/specialization_selector.gd" id="1_0tkcy"]
+
+[node name="SpecializationSelector" type="Window" unique_id=267379937]
+oversampling_override = 1.0
+title = "Especialização"
+initial_position = 1
+size = Vector2i(700, 500)
+visible = false
+exclusive = true
+unresizable = true
+always_on_top = true
+script = ExtResource("1_0tkcy")
+
+[node name="Panel" type="Panel" parent="." unique_id=1635032482]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=1251452974]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin" unique_id=1173206133]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HeaderLabel" type="Label" parent="Panel/Margin/VBox" unique_id=2092338493]
+layout_mode = 2
+text = "Escolha uma especialização"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel/Margin/VBox" unique_id=628071250]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 3
+
+[node name="guardiao_dos_passaros" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=786031785]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/guardiao_dos_passaros" unique_id=1864378605]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/guardiao_dos_passaros/TextureButton" unique_id=1780018687]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -11.5
+offset_right = 80.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Guardião dos Pássaros"
+
+[node name="maniatico_por_insetos" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=2058655258]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/maniatico_por_insetos" unique_id=169876694]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/maniatico_por_insetos/TextureButton" unique_id=22038261]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -11.5
+offset_right = 80.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Maníaco por Insetos"
+
+[node name="campista" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=406204985]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/campista" unique_id=391984753]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/campista/TextureButton" unique_id=1641685123]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Campista"
+
+[node name="domador_de_dragoes" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1906812326]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/domador_de_dragoes" unique_id=1830057093]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/domador_de_dragoes/TextureButton" unique_id=1585138942]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -11.5
+offset_right = 80.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Domador de Dragões"
+
+[node name="engenheiro" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1013625668]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/engenheiro" unique_id=865011024]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/engenheiro/TextureButton" unique_id=1677041830]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -11.5
+offset_right = 45.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Engenheiro"
+
+[node name="piromaniaco" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1446171883]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/piromaniaco" unique_id=1488568703]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/piromaniaco/TextureButton" unique_id=1000633181]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -11.5
+offset_right = 45.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Piromaníaco"
+
+[node name="encantador" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=463132097]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/encantador" unique_id=912148359]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/encantador/TextureButton" unique_id=354087947]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Encantador"
+
+[node name="sombrio" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=714881595]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/sombrio" unique_id=787262256]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/sombrio/TextureButton" unique_id=1018862258]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -11.5
+offset_right = 35.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sombrio"
+
+[node name="alquimista" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1434498057]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/alquimista" unique_id=35095076]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/alquimista/TextureButton" unique_id=243962731]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Alquimista"
+
+[node name="jogador_de_equipe" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=689718447]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/jogador_de_equipe" unique_id=305180848]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/jogador_de_equipe/TextureButton" unique_id=1632748924]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -11.5
+offset_right = 70.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Jogador de Equipe"
+
+[node name="esquiador" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=461457328]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/esquiador" unique_id=2115993924]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/esquiador/TextureButton" unique_id=454051227]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Esquiador"
+
+[node name="jardineiro" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=902377749]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/jardineiro" unique_id=1608564121]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/jardineiro/TextureButton" unique_id=712929671]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Jardineiro"
+
+[node name="artista_marcial" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1808946055]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/artista_marcial" unique_id=1991965697]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/artista_marcial/TextureButton" unique_id=560761657]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -11.5
+offset_right = 55.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Artista Marcial"
+
+[node name="alpinista" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=826221407]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/alpinista" unique_id=149847099]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/alpinista/TextureButton" unique_id=1347273282]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Alpinista"
+
+[node name="mistico" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=2094041459]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/mistico" unique_id=106812809]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/mistico/TextureButton" unique_id=525515473]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -11.5
+offset_right = 35.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Místico"
+
+[node name="metalurgico" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=527504281]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/metalurgico" unique_id=1847110563]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/metalurgico/TextureButton" unique_id=768815146]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -11.5
+offset_right = 50.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Metalúrgico"
+
+[node name="psiquico" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=390873071]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/psiquico" unique_id=74916789]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/psiquico/TextureButton" unique_id=232735322]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -11.5
+offset_right = 35.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Psíquico"
+
+[node name="nadador" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=253631146]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/nadador" unique_id=530740099]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/nadador/TextureButton" unique_id=711910625]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -11.5
+offset_right = 35.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Nadador"
+
+[node name="ChoiceScroll" type="ScrollContainer" parent="Panel/Margin/VBox" unique_id=859261794]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="ChoiceContainer" type="VBoxContainer" parent="Panel/Margin/VBox/ChoiceScroll" unique_id=1113743269]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6

@@ -1,0 +1,408 @@
+[gd_scene format=3 uid="uid://tm5u1eb1km56"]
+
+[ext_resource type="Script" uid="uid://bnr2y8422rquk" path="res://scripts/trainer_sheet/class_selector.gd" id="1_rrl05"]
+
+[node name="ClassSelector" type="Window" unique_id=1404861322]
+oversampling_override = 1.0
+title = "Classe de Treinador"
+initial_position = 1
+size = Vector2i(720, 500)
+visible = false
+exclusive = true
+unresizable = true
+always_on_top = true
+script = ExtResource("1_rrl05")
+
+[node name="Panel" type="Panel" parent="." unique_id=1701300738]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=236804430]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin" unique_id=1363331465]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HeaderLabel" type="Label" parent="Panel/Margin/VBox" unique_id=1878153028]
+layout_mode = 2
+text = "Escolha uma classe de treinador"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel/Margin/VBox" unique_id=959185516]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 3
+
+[node name="treinador_as" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1058917541]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/treinador_as" unique_id=553865592]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/treinador_as/TextureButton" unique_id=1138265708]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -11.5
+offset_right = 55.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Treinador Ás"
+
+[node name="versatil" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=2100296227]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/versatil" unique_id=879239430]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/versatil/TextureButton" unique_id=1628047772]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -11.5
+offset_right = 30.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Versátil"
+
+[node name="mentor_pokemon" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=662483994]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/mentor_pokemon" unique_id=354653735]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/mentor_pokemon/TextureButton" unique_id=1228225841]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -11.5
+offset_right = 55.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Mentor Pokémon"
+
+[node name="enfermeiro" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=368285235]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/enfermeiro" unique_id=1562824570]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/enfermeiro/TextureButton" unique_id=258041971]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Enfermeiro"
+
+[node name="pesquisador" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=888057923]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/pesquisador" unique_id=1895652325]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/pesquisador/TextureButton" unique_id=1092652154]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Pesquisador"
+
+[node name="colecionador_pokemon" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1689224159]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/colecionador_pokemon" unique_id=536599385]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/colecionador_pokemon/TextureButton" unique_id=2106605165]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -11.5
+offset_right = 70.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Colecionador Pokémon"
+
+[node name="comandante" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1271163425]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/comandante" unique_id=1587094397]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/comandante/TextureButton" unique_id=1888272109]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -11.5
+offset_right = 45.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Comandante"
+
+[node name="patrulheiro" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=273037184]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/patrulheiro" unique_id=826970281]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/patrulheiro/TextureButton" unique_id=1800354089]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Patrulheiro"
+
+[node name="capanga" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=997691910]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/capanga" unique_id=673085063]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/capanga/TextureButton" unique_id=1393661547]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -11.5
+offset_right = 35.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Capanga"
+
+[node name="tatico" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=377364723]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/tatico" unique_id=1850463423]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/tatico/TextureButton" unique_id=1222840261]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -11.5
+offset_right = 30.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Tático"
+
+[node name="guru" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=27043373]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/guru" unique_id=2138495958]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/guru/TextureButton" unique_id=142212608]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -11.5
+offset_right = 25.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Guru"
+
+[node name="criador_pokemon" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=937434362]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/criador_pokemon" unique_id=168460926]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/criador_pokemon/TextureButton" unique_id=1261263173]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -11.5
+offset_right = 70.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Criador de Pokémon"
+
+[node name="ChoiceScroll" type="ScrollContainer" parent="Panel/Margin/VBox"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="ChoiceContainer" type="VBoxContainer" parent="Panel/Margin/VBox/ChoiceScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6

@@ -1,0 +1,321 @@
+[gd_scene format=3 uid="uid://dkqcvynv26brb"]
+
+[ext_resource type="Script" uid="uid://dfljbu5biyd4l" path="res://scripts/trainer_sheet/region_selector.gd" id="1_regsel"]
+
+[node name="RegionSelector" type="Window" unique_id=568591524]
+oversampling_override = 1.0
+title = "Região de Origem"
+initial_position = 1
+size = Vector2i(560, 340)
+visible = false
+exclusive = true
+unresizable = true
+always_on_top = true
+script = ExtResource("1_regsel")
+
+[node name="Panel" type="Panel" parent="." unique_id=1717816028]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=1653729789]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin" unique_id=1560826725]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HeaderLabel" type="Label" parent="Panel/Margin/VBox" unique_id=406804280]
+layout_mode = 2
+text = "Escolha uma região de origem"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel/Margin/VBox" unique_id=60582526]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 3
+
+[node name="Kanto" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=2042184674]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Kanto" unique_id=687462463]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Kanto/TextureButton" unique_id=1654477272]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -11.5
+offset_right = 23.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Kanto"
+
+[node name="Johto" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1052518281]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Johto" unique_id=762745201]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Johto/TextureButton" unique_id=504903725]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -11.5
+offset_right = 23.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Johto"
+
+[node name="Hoenn" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1858161858]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Hoenn" unique_id=1966308708]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Hoenn/TextureButton" unique_id=33520074]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -11.5
+offset_right = 23.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hoenn"
+
+[node name="Sinnoh" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=391995793]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Sinnoh" unique_id=1056697156]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Sinnoh/TextureButton" unique_id=817618754]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -11.5
+offset_right = 23.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sinnoh"
+
+[node name="Unova" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1378905046]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Unova" unique_id=156159276]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Unova/TextureButton" unique_id=1268310882]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -11.5
+offset_right = 23.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unova"
+
+[node name="Kalos" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1607233656]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Kalos" unique_id=931719294]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Kalos/TextureButton" unique_id=1981274636]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -11.5
+offset_right = 23.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Kalos"
+
+[node name="Alola" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1584758150]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Alola" unique_id=733928760]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Alola/TextureButton" unique_id=1117668072]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -11.5
+offset_right = 23.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Alola"
+
+[node name="Galar" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=274446255]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Galar" unique_id=976739527]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Galar/TextureButton" unique_id=1271508153]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -11.5
+offset_right = 23.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Galar"
+
+[node name="Paldea" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1355958764]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Paldea" unique_id=1278612086]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Paldea/TextureButton" unique_id=34680565]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -11.5
+offset_right = 23.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Paldea"
+
+[node name="ChoiceScroll" type="ScrollContainer" parent="Panel/Margin/VBox" unique_id=1886517667]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="ChoiceContainer" type="VBoxContainer" parent="Panel/Margin/VBox/ChoiceScroll" unique_id=422663109]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6

@@ -54,6 +54,15 @@ const MAX_SR := {
 @export var expert_skills: Array[Constants.Skill]
 @export var saving_throws: Array[Constants.Attribute]
 
+## Região de origem (id de Regions.DATA, ex.: "Kanto"; vazio = nenhuma)
+@export var region: String = ""
+## Quanto a região somou em cada atributo (atributo -> valor), para poder desfazer na troca
+@export var region_attr_bonus := {}
+## Perícia fixa da região (Constants.Skill) ou -1
+@export var region_skill: int = -1
+## Perícias escolhidas livremente pela região (Unova)
+@export var region_extra_skills: Array = []
+
 @export var movement := {
 	Constants.Movement.WALKING: 9,
 }
@@ -116,6 +125,48 @@ func set_saving_throw_trained(attr: Constants.Attribute, value: bool) -> void:
 		saving_throws.erase(attr)
 	emit_changed()
 
+## Aplica uma região de origem (id "" limpa a região).
+## choices: {"attr_bonus": {atributo: valor}, "skills": [perícias]}, já com as escolhas resolvidas.
+## Atributos: o bônus é somado em `attributes` e guardado para ser desfeito na troca.
+## Perícias/salvaguardas: ficam em campos próprios e são consultadas por is_skill_trained()
+## e is_saving_throw_trained(), para não mexer no que o jogador marcou na mão.
+func set_region(id: String, choices: Dictionary = {}) -> void:
+	var attr_bonus: Dictionary = choices.get("attr_bonus", {})
+	var extra_skills: Array = choices.get("skills", [])
+	if id == region and attr_bonus == region_attr_bonus and extra_skills == region_extra_skills:
+		return
+	var touched := {}
+	for attr in region_attr_bonus:  # desfaz a região anterior
+		attributes[attr] = clampi(attributes[attr] - region_attr_bonus[attr], 0, 30)
+		touched[attr] = true
+	region = id
+	region_attr_bonus = attr_bonus.duplicate()
+	region_extra_skills = extra_skills.duplicate()
+	region_skill = Regions.get_skill(id)
+	for attr in region_attr_bonus:
+		attributes[attr] = clampi(attributes[attr] + region_attr_bonus[attr], 0, 30)
+		touched[attr] = true
+	recalculate()  # CA (Sinnoh), PV (CON) etc.
+	for attr in touched:
+		attribute_changed.emit(attr, attributes[attr])
+	emit_changed()
+
+func is_skill_from_region(skill: Constants.Skill) -> bool:
+	return skill == region_skill or skill in region_extra_skills
+
+func is_skill_trained(skill: Constants.Skill) -> bool:
+	return skill in trained_skills \
+		or is_skill_from_region(skill) \
+		or is_skill_from_journey(skill) \
+		or is_skill_from_class(skill) \
+		or is_skill_from_specialization(skill)
+
+func is_saving_throw_from_region(attr: Constants.Attribute) -> bool:
+	return attr in Regions.get_saving_throws(region)
+
+func is_saving_throw_trained(attr: Constants.Attribute) -> bool:
+	return attr in saving_throws or is_saving_throw_from_region(attr)
+
 func set_level(value: int) -> void:
 	level = clampi(value, 1, 20)
 	recalculate()
@@ -143,7 +194,7 @@ func recalculate() -> void:
 	var old_max_hp := max_hp
 	var dex_mod := Constants.get_attribute_modifier(attributes[Constants.Attribute.DEX])
 	var con_mod := Constants.get_attribute_modifier(attributes[Constants.Attribute.CON])
-	armor_class = 10 + dex_mod
+	armor_class = 10 + dex_mod + Regions.get_ac_bonus(region)
 	initiative = dex_mod
 	profficiency_bonus = get_profficiency_bonus(level)
 	# Treinador começa com 10 + CON de HP.
@@ -167,17 +218,109 @@ func get_skill_bonus(skill: Constants.Skill) -> int:
 	# Especialista vem primeiro: quem é especialista também costuma estar treinado
 	if skill in expert_skills:
 		return mod + prof * 2
-	if skill in trained_skills:
+	if is_skill_trained(skill):
 		return mod + prof
 	return mod
 
 ## Salvaguarda = modificador do atributo (+ proficiência, se treinada)
 func get_saving_throw_bonus(attr: Constants.Attribute) -> int:
 	var bonus := Constants.get_attribute_modifier(attributes[attr])
-	if attr in saving_throws:
+	if is_saving_throw_trained(attr):
 		bonus += get_profficiency_bonus(level)
 	return bonus
 
 ## Percepção passiva = 10 + modificador de Sabedoria
 func get_passive_perception() -> int:
 	return 10 + Constants.get_attribute_modifier(attributes[Constants.Attribute.WIS])
+
+## Origem de Jornada (id de Journeys.DATA, ex.: "Atleta"; vazio = nenhuma)
+@export var journey: String = ""
+## Perícias fixas da origem de jornada
+@export var journey_skills: Array = []
+
+## (futuro) conhecimento de itens e equipamento bônus, guardados como dado cru
+@export var journey_item_knowledge: String = ""
+@export var journey_bonus_equipment: Dictionary = {}
+
+func set_journey(id: String) -> void:
+	if id == journey:
+		return
+	journey = id
+	journey_skills = Journeys.get_skills(id).duplicate()
+	journey_item_knowledge = Journeys.get_item_knowledge(id)
+	journey_bonus_equipment = Journeys.get_bonus_equipment(id).duplicate()
+	recalculate()
+	emit_changed()
+
+func is_skill_from_journey(skill: Constants.Skill) -> bool:
+	return skill in journey_skills
+
+## Classe de Treinador (id de TrainersClasses.DATA, ex.: "treinador_as"; vazio = nenhuma)
+@export var trainer_class: String = ""
+## Perícias fixas garantidas pela classe
+@export var class_skills: Array = []
+## Perícias escolhidas livremente pela classe (Pesquisador / Versátil) — preenchido na (1b)
+@export var class_skills_chosen: Array = []
+
+func set_class(id: String, choices: Dictionary = {}) -> void:
+	if id == trainer_class and choices.is_empty():
+		return
+	trainer_class = id
+	class_skills = TrainersClasses.get_skills_fixed(id).duplicate()
+	class_skills_chosen = choices.get("skills", []).duplicate()
+	recalculate()
+	emit_changed()
+
+func is_skill_from_class(skill: Constants.Skill) -> bool:
+	return skill in class_skills or skill in class_skills_chosen
+	
+## Especializações escolhidas. Array de até 3 dicionários:
+##   {"id": String, "skill": int, "attribute": int}
+## Skill/attribute guardam a escolha feita na etapa 2, ou -1 se não se aplicam.
+@export var specializations: Array = []
+
+const SPECIALIZATION_SLOT_LEVELS := [1, 7, 18]
+
+func is_specialization_slot_unlocked(slot_index: int) -> bool:
+	if slot_index < 0 or slot_index >= SPECIALIZATION_SLOT_LEVELS.size():
+		return false
+	return level >= SPECIALIZATION_SLOT_LEVELS[slot_index]
+
+func set_specialization(slot_index: int, id: String, choices: Dictionary = {}) -> void:
+	if not is_specialization_slot_unlocked(slot_index):
+		return
+
+	# Garante que o array tenha o tamanho certo
+	while specializations.size() <= slot_index:
+		specializations.append({"id": "", "skill": -1, "attribute": -1})
+
+	specializations[slot_index] = {
+		"id": id,
+		"skill": choices.get("skill", -1),
+		"attribute": choices.get("attribute", -1),
+	}
+	recalculate()
+	emit_changed()
+
+func remove_specialization(slot_index: int) -> void:
+	if slot_index < 0 or slot_index >= specializations.size():
+		return
+	specializations[slot_index] = {"id": "", "skill": -1, "attribute": -1}
+	recalculate()
+	emit_changed()
+
+func get_specialization(slot_index: int) -> Dictionary:
+	if slot_index < 0 or slot_index >= specializations.size():
+		return {}
+	return specializations[slot_index]
+
+func is_skill_from_specialization(skill: Constants.Skill) -> bool:
+	for slot in specializations:
+		var id: String = slot.get("id", "")
+		if id.is_empty():
+			continue
+		if Specializations.get_skill_fixed(id) == skill:
+			return true
+		if slot.get("skill", -1) == skill:
+			return true
+	return false

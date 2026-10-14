@@ -52,5 +52,11 @@ func set_data(data: Dictionary) -> void:
 	is_expert.set_pressed_no_signal(data["expert"])
 	set_bonus(data["bonus"])
 
+## locked: a proficiência vem da região de origem, então o jogador não pode desmarcar
+func set_trained(pressed: bool, locked: bool) -> void:
+	is_trained.set_pressed_no_signal(pressed)
+	is_trained.disabled = locked
+	is_trained.tooltip_text = "Vem de região, jornada ou classe" if locked else ""
+
 func set_bonus(value: int) -> void:
 	skill_bonus.text = "%+d" % value

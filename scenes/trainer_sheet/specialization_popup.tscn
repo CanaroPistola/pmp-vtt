@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://pdj84itb7o4v"]
+
+[ext_resource type="Script" uid="uid://d4j1b57004t0k" path="res://scripts/trainer_sheet/specialization_popup.gd" id="1_specpop"]
+
+[node name="SpecializationPopup" type="Window" unique_id=1508775992]
+oversampling_override = 1.0
+title = "Especialização"
+initial_position = 1
+size = Vector2i(500, 360)
+visible = false
+exclusive = true
+unresizable = true
+always_on_top = true
+script = ExtResource("1_specpop")
+
+[node name="Panel" type="Panel" parent="." unique_id=373690324]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=1532476977]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin" unique_id=243334406]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="Panel/Margin/VBox" unique_id=1961711702]
+layout_mode = 2
+text = "Título"
+autowrap_mode = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/Margin/VBox" unique_id=1861492587]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="TextLabel" type="Label" parent="Panel/Margin/VBox/Scroll" unique_id=1509735766]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Texto"
+autowrap_mode = 3
+
+[node name="ButtonsRow" type="HBoxContainer" parent="Panel/Margin/VBox" unique_id=598509195]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 2
+
+[node name="ChangeButton" type="Button" parent="Panel/Margin/VBox/ButtonsRow" unique_id=1673824690]
+layout_mode = 2
+text = "Trocar"
+
+[node name="RemoveButton" type="Button" parent="Panel/Margin/VBox/ButtonsRow" unique_id=932996920]
+layout_mode = 2
+text = "Remover"
+
+[node name="CloseButton" type="Button" parent="Panel/Margin/VBox/ButtonsRow" unique_id=992162029]
+layout_mode = 2
+text = "Fechar"

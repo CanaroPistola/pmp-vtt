@@ -1,0 +1,252 @@
+[gd_scene format=3 uid="uid://0mb0ndhvp10y"]
+
+[ext_resource type="Script" uid="uid://c2ulby0sie2ti" path="res://scripts/trainer_sheet/journey_selector.gd" id="1_4bta4"]
+
+[node name="JourneySelector" type="Window" unique_id=1651784161]
+oversampling_override = 1.0
+title = "Origem de Jornada"
+initial_position = 1
+size = Vector2i(600, 420)
+visible = false
+exclusive = true
+unresizable = true
+always_on_top = true
+script = ExtResource("1_4bta4")
+
+[node name="Panel" type="Panel" parent="." unique_id=54928209]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=699754068]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin" unique_id=897002221]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HeaderLabel" type="Label" parent="Panel/Margin/VBox" unique_id=1430746021]
+layout_mode = 2
+text = "Escolha uma origem de jornada"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel/Margin/VBox" unique_id=1412126272]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+
+[node name="Atleta" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1493128062]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Atleta" unique_id=2002588026]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Atleta/TextureButton" unique_id=1231444405]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Atleta"
+
+[node name="Conhecedor" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=878451031]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Conhecedor" unique_id=579636539]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Conhecedor/TextureButton" unique_id=821518176]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -11.5
+offset_right = 50.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Conhecedor"
+
+[node name="Nobre" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1212406933]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Nobre" unique_id=1276302496]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Nobre/TextureButton" unique_id=958138740]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -11.5
+offset_right = 30.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Nobre"
+
+[node name="Encrenqueiro" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=47040772]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Encrenqueiro" unique_id=2072557910]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Encrenqueiro/TextureButton" unique_id=1651193070]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -11.5
+offset_right = 60.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Encrenqueiro"
+
+[node name="Amigo" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1917774686]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Amigo" unique_id=2103741950]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Amigo/TextureButton" unique_id=1664749913]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -11.5
+offset_right = 90.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Amigo dos Pokémon"
+
+[node name="Rival" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=1065369844]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Rival" unique_id=738132201]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Rival/TextureButton" unique_id=490285002]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -11.5
+offset_right = 30.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Rival"
+
+[node name="Estudioso" type="Panel" parent="Panel/Margin/VBox/GridContainer" unique_id=933222410]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Margin/VBox/GridContainer/Estudioso" unique_id=712035147]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/VBox/GridContainer/Estudioso/TextureButton" unique_id=1631278621]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -11.5
+offset_right = 45.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Estudioso"

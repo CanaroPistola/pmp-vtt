@@ -6,17 +6,16 @@ const SAVE_PATH := "user://trainer.tres"
 
 @onready var card := $TabContainer/TrainerCard
 @onready var attributes_tab := $TabContainer/AtributosPericias
+@onready var talents_tab := $TabContainer/TalentosHabilidades
 
 func _ready() -> void:
 	close_requested.connect(_on_close_requested)
-
 	trainer_data = _load_or_create()
 	trainer_data.recalculate()
-	trainer_data.changed.connect(save)  # autosave a cada mudança
-
-	# Os filhos já passaram pelo _ready, então podem receber o recurso
+	trainer_data.changed.connect(save)
 	card.setup(trainer_data)
 	attributes_tab.setup(trainer_data)
+	talents_tab.setup(trainer_data)
 
 func _load_or_create() -> TrainerData:
 	if ResourceLoader.exists(SAVE_PATH):

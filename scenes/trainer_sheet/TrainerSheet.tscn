@@ -4,11 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://cya7epnwlrqp1" path="res://assets/images/pokeball.png" id="1_ucmi3"]
 [ext_resource type="Script" uid="uid://cgfo54cx65exh" path="res://scripts/trainer_sheet.gd" id="1_yqoxd"]
 [ext_resource type="Texture2D" uid="uid://bkx3mwv3enhbh" path="res://assets/pc_sprites/eevee.png" id="2_0t5ym"]
-[ext_resource type="PackedScene" uid="uid://diy6aeqb81hmd" path="res://scenes/hp_panel.tscn" id="2_10w08"]
+[ext_resource type="PackedScene" uid="uid://diy6aeqb81hmd" path="res://scenes/trainer_sheet/hp_panel.tscn" id="2_10w08"]
 [ext_resource type="Script" uid="uid://dedmctb0k3pi7" path="res://scripts/trainer_sheet/trainer_card.gd" id="2_ayiyf"]
 [ext_resource type="Texture2D" uid="uid://ctcg7jyoar3x0" path="res://assets/pc_sprites/greninja.png" id="2_sxlm7"]
 [ext_resource type="Script" uid="uid://c5q55e0hof7nv" path="res://scripts/trainer_sheet/atributos_pericias.gd" id="4_lp3lw"]
 [ext_resource type="Script" uid="uid://dj2hfa37ymon4" path="res://addons/godot_radar_graph/radar_graph.gd" id="4_xmc0x"]
+[ext_resource type="Script" uid="uid://doadutqjhxmyl" path="res://scripts/trainer_sheet/select_region.gd" id="6_eenh0"]
+[ext_resource type="Script" uid="uid://bgyncbedq6e7a" path="res://scripts/trainer_sheet/select_journey.gd" id="7_4vhc1"]
+[ext_resource type="Script" uid="uid://ca47kobfl1poy" path="res://scripts/trainer_sheet/select_class.gd" id="10_6emfv"]
+[ext_resource type="Script" uid="uid://bb2qmkrl1bel3" path="res://scripts/trainer_sheet/talentos_habilidades.gd" id="13_isk6n"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_lbgvd"]
 font_size = 13
@@ -29,13 +33,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 tab_alignment = 1
-current_tab = 1
+current_tab = 0
 tab_0/title = "Trainer Card"
 tab_1/title = "Atributos e Perícias"
 tab_3/title = "Talentos e Habilidades"
 
 [node name="TrainerCard" type="Control" parent="TabContainer" unique_id=1743251056]
-visible = false
 layout_mode = 2
 script = ExtResource("2_ayiyf")
 metadata/_tab_index = 0
@@ -114,8 +117,10 @@ layout_mode = 2
 text = "Região de Origem"
 label_settings = SubResource("LabelSettings_lbgvd")
 
-[node name="RegiaoEdit" type="LineEdit" parent="TabContainer/TrainerCard/RegiaoContainer" unique_id=251100104]
+[node name="SelectRegion" type="Button" parent="TabContainer/TrainerCard/RegiaoContainer" unique_id=1410729036]
 layout_mode = 2
+text = "Escolha uma região"
+script = ExtResource("6_eenh0")
 
 [node name="JornadaContainer" type="VBoxContainer" parent="TabContainer/TrainerCard" unique_id=201623704]
 layout_mode = 1
@@ -130,8 +135,10 @@ layout_mode = 2
 text = "Origem de Jornada"
 label_settings = SubResource("LabelSettings_lbgvd")
 
-[node name="RegiaoEdit" type="LineEdit" parent="TabContainer/TrainerCard/JornadaContainer" unique_id=783010010]
+[node name="SelectJourney" type="Button" parent="TabContainer/TrainerCard/JornadaContainer" unique_id=987654321]
 layout_mode = 2
+text = "Escolha uma jornada"
+script = ExtResource("7_4vhc1")
 
 [node name="NivelExpContainer" type="HBoxContainer" parent="TabContainer/TrainerCard" unique_id=1169099387]
 layout_mode = 1
@@ -348,10 +355,10 @@ offset_top = 280.0
 offset_right = 266.0
 offset_bottom = 330.0
 
-[node name="Label" type="Label" parent="TabContainer/TrainerCard/ClassContainer" unique_id=752695943]
+[node name="SelectClass" type="Button" parent="TabContainer/TrainerCard/ClassContainer" unique_id=987654322]
 layout_mode = 2
-text = "Classe de Treinador"
-horizontal_alignment = 1
+text = "Escolha uma classe"
+script = ExtResource("10_6emfv")
 
 [node name="SpecialtyContainer" type="HBoxContainer" parent="TabContainer/TrainerCard" unique_id=1547161424]
 layout_mode = 0
@@ -362,36 +369,24 @@ offset_bottom = 330.0
 
 [node name="Specialty1" type="PanelContainer" parent="TabContainer/TrainerCard/SpecialtyContainer" unique_id=644156622]
 layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Button" type="Button" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty1" unique_id=1211040062]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty1" unique_id=1261916057]
-custom_minimum_size = Vector2(150, 0)
+[node name="Specialty2" type="PanelContainer" parent="TabContainer/TrainerCard/SpecialtyContainer" unique_id=1479518865]
 layout_mode = 2
-stretch_mode = 5
+size_flags_horizontal = 3
 
-[node name="Specialty2" type="PanelContainer" parent="TabContainer/TrainerCard/SpecialtyContainer" unique_id=1627727129]
-layout_mode = 2
-
-[node name="Button" type="Button" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty2" unique_id=895509373]
+[node name="Button" type="Button" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty2" unique_id=912136476]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty2" unique_id=1264668964]
-custom_minimum_size = Vector2(150, 0)
+[node name="Specialty3" type="PanelContainer" parent="TabContainer/TrainerCard/SpecialtyContainer" unique_id=1898952881]
 layout_mode = 2
-stretch_mode = 5
+size_flags_horizontal = 3
 
-[node name="Specialty3" type="PanelContainer" parent="TabContainer/TrainerCard/SpecialtyContainer" unique_id=1414118079]
+[node name="Button" type="Button" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty3" unique_id=201179975]
 layout_mode = 2
-
-[node name="Button" type="Button" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty3" unique_id=613672528]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty3" unique_id=1619669820]
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-stretch_mode = 5
 
 [node name="ACPanel" type="Panel" parent="TabContainer/TrainerCard" unique_id=1590696851]
 layout_mode = 1
@@ -496,6 +491,7 @@ text = "9m"
 alignment = 1
 
 [node name="AtributosPericias" type="Control" parent="TabContainer" unique_id=271822276]
+visible = false
 layout_mode = 2
 script = ExtResource("4_lp3lw")
 metadata/_tab_index = 1
@@ -777,7 +773,46 @@ metadata/_tab_index = 2
 [node name="TalentosHabilidades" type="Control" parent="TabContainer" unique_id=223485843]
 visible = false
 layout_mode = 2
+script = ExtResource("13_isk6n")
 metadata/_tab_index = 3
 metadata/_tab_name = "Talentos e Habilidades"
+
+[node name="Root" type="HBoxContainer" parent="TabContainer/TalentosHabilidades" unique_id=1455528719]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="LeftColumn" type="VBoxContainer" parent="TabContainer/TalentosHabilidades/Root" unique_id=252870918]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="TopRow" type="HBoxContainer" parent="TabContainer/TalentosHabilidades/Root/LeftColumn" unique_id=1742630222]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="RegionSlot" type="PanelContainer" parent="TabContainer/TalentosHabilidades/Root/LeftColumn/TopRow" unique_id=171906536]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="JourneySlot" type="PanelContainer" parent="TabContainer/TalentosHabilidades/Root/LeftColumn/TopRow" unique_id=1350098443]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TalentsSlot" type="PanelContainer" parent="TabContainer/TalentosHabilidades/Root/LeftColumn" unique_id=467190747]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.5
+
+[node name="RightColumn" type="PanelContainer" parent="TabContainer/TalentosHabilidades/Root" unique_id=1550232557]
+layout_mode = 2
+size_flags_horizontal = 3
 
 [editable path="TabContainer/TrainerCard/HPPanel"]

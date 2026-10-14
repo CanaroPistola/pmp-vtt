@@ -1,7 +1,7 @@
 extends Control
 
 const RadarGraph = preload("res://addons/godot_radar_graph/radar_graph.gd")
-const SKILL_SCENE := preload("res://scenes/skill_row.tscn")
+const SKILL_SCENE := preload("res://scenes/trainer_sheet/skill_row.tscn")
 
 # Mesma ordem dos LineEdits (FOR, DEX, CON, INT, WIS, CHA) e dos itens do radar
 const ATTR_ORDER := [
@@ -71,13 +71,14 @@ func setup(trainer: TrainerData) -> void:
 		row.set_data({
 			"name": Constants.SKILL_DETAILS[i]["name"],
 			"attribute": Constants.SKILL_DETAILS[i]["attribute"],
-			"trained": i in data.trained_skills,
+			"trained": data.is_skill_trained(i),
 			"expert": i in data.expert_skills,
 			"bonus": data.get_skill_bonus(i),
 		})
 		row.trained_toggled.connect(_on_row_trained_toggled.bind(i))
 		row.expert_toggled.connect(_on_row_expert_toggled.bind(i))
 		skill_rows.append(row)
+	_refresh_skill_bonuses()  # aplica a trava das perícias que vêm da região
 
 # ---------- UI -> dados ----------
 
@@ -136,6 +137,11 @@ func _refresh_attribute(index: int, animate: bool) -> void:
 func _refresh_skill_bonuses() -> void:
 	for i in skill_rows.size():
 		skill_rows[i].set_bonus(data.get_skill_bonus(i))
+		var locked := data.is_skill_from_region(i) \
+			or data.is_skill_from_journey(i) \
+			or data.is_skill_from_class(i) \
+			or data.is_skill_from_specialization(i)
+		skill_rows[i].set_trained(data.is_skill_trained(i), locked)
 
 func _on_data_changed() -> void:
 	_refresh_skill_bonuses()
@@ -145,7 +151,8 @@ func _on_data_changed() -> void:
 func _refresh_derived() -> void:
 	for i in ATTR_ORDER.size():
 		var attr: Constants.Attribute = ATTR_ORDER[i]
-		saving_checks[i].set_pressed_no_signal(attr in data.saving_throws)
+		saving_checks[i].set_pressed_no_signal(data.is_saving_throw_trained(attr))
+		saving_checks[i].disabled = data.is_saving_throw_from_region(attr)
 		saving_labels[i].text = "%s (%+d)" % [saving_names[i], data.get_saving_throw_bonus(attr)]
 	perception_value.text = str(data.get_passive_perception())
 	initiative_value.text = "%+d" % data.initiative

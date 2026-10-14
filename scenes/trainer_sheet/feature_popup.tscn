@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cx7v2kqwp3b1n"]
+
+[ext_resource type="Script" uid="uid://bh1f6m8lj2pa0" path="res://scripts/trainer_sheet/feature_popup.gd" id="1_featpop"]
+
+[node name="FeaturePopup" type="Window" unique_id=429236323]
+oversampling_override = 1.0
+title = "Habilidade"
+initial_position = 1
+size = Vector2i(560, 400)
+visible = false
+exclusive = true
+unresizable = true
+always_on_top = true
+script = ExtResource("1_featpop")
+
+[node name="Panel" type="Panel" parent="." unique_id=259035959]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=88943470]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin" unique_id=1602491509]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="Panel/Margin/VBox" unique_id=531900088]
+layout_mode = 2
+text = "Título"
+autowrap_mode = 3
+
+[node name="SubtitleLabel" type="Label" parent="Panel/Margin/VBox" unique_id=1171341734]
+visible = false
+modulate = Color(0.75, 0.75, 0.75, 1)
+layout_mode = 2
+autowrap_mode = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/Margin/VBox" unique_id=611845474]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="TextLabel" type="Label" parent="Panel/Margin/VBox/Scroll" unique_id=1814814880]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Texto"
+autowrap_mode = 3
+
+[node name="CloseButton" type="Button" parent="Panel/Margin/VBox" unique_id=1383614028]
+layout_mode = 2
+text = "Fechar"
