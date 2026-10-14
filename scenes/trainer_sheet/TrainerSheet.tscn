@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://doadutqjhxmyl" path="res://scripts/trainer_sheet/select_region.gd" id="6_eenh0"]
 [ext_resource type="Script" uid="uid://bgyncbedq6e7a" path="res://scripts/trainer_sheet/select_journey.gd" id="7_4vhc1"]
 [ext_resource type="Script" uid="uid://ca47kobfl1poy" path="res://scripts/trainer_sheet/select_class.gd" id="10_6emfv"]
+[ext_resource type="Script" uid="uid://cwljkv8jngv3a" path="res://scripts/trainer_sheet/mochila.gd" id="13_3qsu8"]
 [ext_resource type="Script" uid="uid://bb2qmkrl1bel3" path="res://scripts/trainer_sheet/talentos_habilidades.gd" id="13_isk6n"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_lbgvd"]
@@ -768,7 +769,51 @@ horizontal_alignment = 1
 [node name="Mochila" type="Control" parent="TabContainer" unique_id=1507927778]
 visible = false
 layout_mode = 2
+script = ExtResource("13_3qsu8")
 metadata/_tab_index = 2
+
+[node name="Root" type="HBoxContainer" parent="TabContainer/Mochila" unique_id=1738498446]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="Sidebar" type="PanelContainer" parent="TabContainer/Mochila/Root" unique_id=370952353]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+
+[node name="SidebarVBox" type="VBoxContainer" parent="TabContainer/Mochila/Root/Sidebar" unique_id=763785723]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="TabContainer/Mochila/Root" unique_id=1237412979]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="TopBar" type="PanelContainer" parent="TabContainer/Mochila/Root/Content" unique_id=878741472]
+layout_mode = 2
+
+[node name="TopBarHBox" type="HBoxContainer" parent="TabContainer/Mochila/Root/Content/TopBar" unique_id=1844420757]
+layout_mode = 2
+
+[node name="ItemsScroll" type="ScrollContainer" parent="TabContainer/Mochila/Root/Content" unique_id=500464636]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="ItemsGrid" type="GridContainer" parent="TabContainer/Mochila/Root/Content/ItemsScroll" unique_id=49291088]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 5
+
+[node name="Footer" type="PanelContainer" parent="TabContainer/Mochila/Root/Content" unique_id=740402693]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
 
 [node name="TalentosHabilidades" type="Control" parent="TabContainer" unique_id=223485843]
 visible = false

@@ -324,3 +324,60 @@ func is_skill_from_specialization(skill: Constants.Skill) -> bool:
 		if slot.get("skill", -1) == skill:
 			return true
 	return false
+
+## Inventário. Array de {"id": String, "quantity": int}
+@export var inventory: Array = []
+
+# ---------- Pokédólares ----------
+
+func set_pokedollars(value: int) -> void:
+	value = maxi(value, 0)
+	if value == pokedollars:
+		return
+	pokedollars = value
+	emit_changed()
+
+func add_pokedollars(amount: int) -> void:
+	set_pokedollars(pokedollars + amount)
+
+## Tenta descontar; retorna false se não houver saldo
+func spend_pokedollars(amount: int) -> bool:
+	if amount <= 0:
+		return true
+	if pokedollars < amount:
+		return false
+	set_pokedollars(pokedollars - amount)
+	return true
+
+# ---------- Inventário ----------
+
+func add_item(id: String, quantity: int = 1) -> void:
+	if quantity <= 0:
+		return
+	for entry in inventory:
+		if entry.get("id", "") == id:
+			entry["quantity"] = entry.get("quantity", 0) + quantity
+			emit_changed()
+			return
+	inventory.append({"id": id, "quantity": quantity})
+	emit_changed()
+
+func remove_item(id: String, quantity: int = 1) -> void:
+	if quantity <= 0:
+		return
+	for i in range(inventory.size()):
+		if inventory[i].get("id", "") == id:
+			inventory[i]["quantity"] = inventory[i].get("quantity", 0) - quantity
+			if inventory[i]["quantity"] <= 0:
+				inventory.remove_at(i)
+			emit_changed()
+			return
+
+func get_item_quantity(id: String) -> int:
+	for entry in inventory:
+		if entry.get("id", "") == id:
+			return entry.get("quantity", 0)
+	return 0
+
+func has_item(id: String, quantity: int = 1) -> bool:
+	return get_item_quantity(id) >= quantity

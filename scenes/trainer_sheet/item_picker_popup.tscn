@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://csd1pnkjfqywa"]
+
+[ext_resource type="Script" uid="uid://d0rcv6cr61auw" path="res://scripts/trainer_sheet/item_picker_popup.gd" id="1_itempick"]
+
+[node name="ItemPickerPopup" type="Window" unique_id=1665948154]
+oversampling_override = 1.0
+title = "Adicionar Item"
+initial_position = 1
+size = Vector2i(600, 500)
+visible = false
+exclusive = true
+unresizable = true
+always_on_top = true
+script = ExtResource("1_itempick")
+
+[node name="Panel" type="Panel" parent="." unique_id=2018583784]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=666140607]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin" unique_id=857908590]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="Panel/Margin/VBox" unique_id=1645210535]
+layout_mode = 2
+text = "Escolha um item"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/Margin/VBox" unique_id=190564748]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="List" type="VBoxContainer" parent="Panel/Margin/VBox/Scroll" unique_id=422642279]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="Footer" type="HBoxContainer" parent="Panel/Margin/VBox" unique_id=1909638632]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 2
+
+[node name="QtyLabel" type="Label" parent="Panel/Margin/VBox/Footer" unique_id=1585213954]
+layout_mode = 2
+text = "Quantidade:"
+
+[node name="QtyEdit" type="LineEdit" parent="Panel/Margin/VBox/Footer" unique_id=914147856]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+text = "1"
+alignment = 1
+
+[node name="CancelButton" type="Button" parent="Panel/Margin/VBox/Footer" unique_id=479828375]
+layout_mode = 2
+text = "Cancelar"
+
+[node name="AddButton" type="Button" parent="Panel/Margin/VBox/Footer" unique_id=1206654880]
+layout_mode = 2
+disabled = true
+text = "Adicionar"

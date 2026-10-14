@@ -7,6 +7,7 @@ const SAVE_PATH := "user://trainer.tres"
 @onready var card := $TabContainer/TrainerCard
 @onready var attributes_tab := $TabContainer/AtributosPericias
 @onready var talents_tab := $TabContainer/TalentosHabilidades
+@onready var mochila_tab := $TabContainer/Mochila
 
 func _ready() -> void:
 	close_requested.connect(_on_close_requested)
@@ -16,6 +17,7 @@ func _ready() -> void:
 	card.setup(trainer_data)
 	attributes_tab.setup(trainer_data)
 	talents_tab.setup(trainer_data)
+	mochila_tab.setup(trainer_data)
 
 func _load_or_create() -> TrainerData:
 	if ResourceLoader.exists(SAVE_PATH):
