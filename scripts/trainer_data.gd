@@ -189,23 +189,31 @@ func set_skill_expert(skill: Constants.Skill, value: bool) -> void:
 	emit_changed()
 
 ## Recalcula tudo que deriva de nível e atributos
+## Recalcula tudo que deriva de nível e atributos
 func recalculate() -> void:
 	level = clampi(level, 1, 20)
+
+	var attrs_before := attributes.duplicate()
+	_reapply_spec_attr_bonuses()
+
 	var old_max_hp := max_hp
 	var dex_mod := Constants.get_attribute_modifier(attributes[Constants.Attribute.DEX])
 	var con_mod := Constants.get_attribute_modifier(attributes[Constants.Attribute.CON])
 	armor_class = 10 + dex_mod + Regions.get_ac_bonus(region)
 	initiative = dex_mod
 	profficiency_bonus = get_profficiency_bonus(level)
-	# Treinador começa com 10 + CON de HP.
-	# A cada level (acima do 1) recebe 2 + CON de HP (CON retroativa).
 	max_hp = 10 + (level * con_mod) + (level * 2 - 2)
 	if old_max_hp == 0:
-		current_hp = max_hp  # ficha nova começa com PV cheio
+		current_hp = max_hp
 	else:
-		current_hp = maxi(current_hp + (max_hp - old_max_hp), 0)  # PV máx mudou: PV atual acompanha
+		current_hp = maxi(current_hp + (max_hp - old_max_hp), 0)
 	pokeslots = POKESLOTS[level]
 	max_sr = MAX_SR[level]
+
+	# avisa a UI só dos atributos que mudaram por causa das specs
+	for attr in Constants.Attribute.values():
+		if attrs_before.get(attr) != attributes.get(attr):
+			attribute_changed.emit(attr, attributes[attr])
 
 func get_profficiency_bonus(lvl: int) -> int:
 	return Constants.PROFFICIENCY_BONUS[lvl]
@@ -229,9 +237,13 @@ func get_saving_throw_bonus(attr: Constants.Attribute) -> int:
 		bonus += get_profficiency_bonus(level)
 	return bonus
 
-## Percepção passiva = 10 + modificador de Sabedoria
+## Percepção passiva = 10 + mod(SAB) + proficiência (se treinado em Percepção)
 func get_passive_perception() -> int:
-	return 10 + Constants.get_attribute_modifier(attributes[Constants.Attribute.WIS])
+	var mod := Constants.get_attribute_modifier(attributes[Constants.Attribute.WIS])
+	var bonus := 10 + mod
+	if is_skill_trained(Constants.Skill.PERCEPCAO):
+		bonus += get_profficiency_bonus(level)
+	return bonus
 
 ## Origem de Jornada (id de Journeys.DATA, ex.: "Atleta"; vazio = nenhuma)
 @export var journey: String = ""
@@ -354,6 +366,19 @@ func spend_pokedollars(amount: int) -> bool:
 func add_item(id: String, quantity: int = 1) -> void:
 	if quantity <= 0:
 		return
+
+	# Pacotes são "atalhos": ao adicionar, expandem nos itens que os compõem
+	# e não aparecem no inventário por si mesmos.
+	if ItemData.has_item(id):
+		var eff: Dictionary = ItemData.get_effect(id)
+		if eff.get("type", "") == "package":
+			for entry in eff.get("contents", []):
+				var child_id: String = entry.get("id", "")
+				var child_qty: int = int(entry.get("qty", 1)) * quantity
+				if not child_id.is_empty() and child_qty > 0:
+					add_item(child_id, child_qty)
+			return
+
 	for entry in inventory:
 		if entry.get("id", "") == id:
 			entry["quantity"] = entry.get("quantity", 0) + quantity
@@ -381,3 +406,41 @@ func get_item_quantity(id: String) -> int:
 
 func has_item(id: String, quantity: int = 1) -> bool:
 	return get_item_quantity(id) >= quantity
+
+## Bônus de atributo aplicado por slot de especialização (bookkeeping, não salvo na ficha).
+## slot_index -> {attr: int}
+var _spec_applied_attrs := {}
+
+## Recalcula do zero os bônus de atributo das especializações.
+## Não muta `specializations`; só ajusta `attributes`.
+func _reapply_spec_attr_bonuses() -> void:
+	# desfaz o que foi aplicado antes
+	for slot_index in _spec_applied_attrs:
+		for attr in _spec_applied_attrs[slot_index]:
+			attributes[attr] = clampi(
+				attributes[attr] - _spec_applied_attrs[slot_index][attr], 0, 30)
+	_spec_applied_attrs.clear()
+
+	# aplica de novo com base nas specs atuais
+	for i in range(specializations.size()):
+		var slot: Dictionary = specializations[i]
+		var id: String = slot.get("id", "")
+		if id.is_empty():
+			continue
+		var bonus := _get_spec_attr_bonus(id, slot)
+		if bonus.is_empty():
+			continue
+		for attr in bonus:
+			attributes[attr] = clampi(attributes[attr] + bonus[attr], 0, 30)
+		_spec_applied_attrs[i] = bonus
+
+## Retorna {attr: valor} com o bônus de atributo que UMA especialização concede.
+func _get_spec_attr_bonus(id: String, slot: Dictionary) -> Dictionary:
+	var result := {}
+	var fixed: int = Specializations.get_attribute_fixed(id)
+	if fixed != -1:
+		result[fixed] = 1
+	var choice: int = slot.get("attribute", -1)
+	if choice != -1:
+		result[choice] = result.get(choice, 0) + 1
+	return result

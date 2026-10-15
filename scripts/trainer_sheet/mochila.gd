@@ -4,6 +4,7 @@ extends Control
 ## Tudo construído por código a partir de Items.DATA.
 
 const ITEM_PICKER := preload("res://scenes/trainer_sheet/item_picker_popup.tscn")
+const SIDEBAR_SCROLL_NAME := "SidebarScroll"
 
 @onready var sidebar_vbox: VBoxContainer = $Root/Sidebar/SidebarVBox
 @onready var top_bar: HBoxContainer = $Root/Content/TopBar/TopBarHBox
@@ -40,18 +41,33 @@ func _build_sidebar() -> void:
 		c.queue_free()
 	_category_buttons.clear()
 
+	# Cabeçalho fixo (não rola com as categorias)
 	var header := Label.new()
 	header.text = "MOCHILA"
 	header.add_theme_font_size_override("font_size", 20)
 	sidebar_vbox.add_child(header)
+
+	# ScrollContainer que vai segurar as categorias roláveis
+	var scroll := ScrollContainer.new()
+	scroll.name = SIDEBAR_SCROLL_NAME
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	sidebar_vbox.add_child(scroll)
+
+	# VBoxContainer interno que realmente lista as categorias
+	var list := VBoxContainer.new()
+	list.name = "CategoryList"
+	list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	scroll.add_child(list)
 
 	for cat in ItemData.CATEGORIES:
 		var btn := Button.new()
 		btn.text = cat["display_name"]
 		btn.alignment = HORIZONTAL_ALIGNMENT_LEFT
 		btn.toggle_mode = false
+		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		btn.pressed.connect(_on_category_pressed.bind(cat["id"]))
-		sidebar_vbox.add_child(btn)
+		list.add_child(btn)
 		_category_buttons.append(btn)
 
 func _build_topbar() -> void:
@@ -165,39 +181,54 @@ func _rebuild_items_grid() -> void:
 
 func _make_item_slot(id: String, qty: int) -> Button:
 	var btn := Button.new()
-	btn.custom_minimum_size = Vector2(90, 100)
+	btn.custom_minimum_size = Vector2(100, 110)
 	btn.toggle_mode = false
 	btn.pressed.connect(_on_item_pressed.bind(id))
-	btn.tooltip_text = ItemData.get_description(id)  # hover com descrição
+	btn.tooltip_text = ItemData.get_description(id)
 
-	var vbox := VBoxContainer.new()
-	vbox.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	vbox.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	vbox.alignment = BoxContainer.ALIGNMENT_CENTER
+	# Texto do próprio Button — o Godot cuida do wrap e do alinhamento.
+	btn.text = ItemData.get_display_name(id)
+	btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	btn.alignment = HORIZONTAL_ALIGNMENT_CENTER
+	btn.vertical_icon_alignment = VERTICAL_ALIGNMENT_CENTER
+	btn.add_theme_font_size_override("font_size", 11)
 
-	# Ícone placeholder
+	# VBox só para o ícone (topo) e a quantidade (rodapé).
+	# Ele NÃO captura o texto do Button, então não conflita.
+	var overlay := VBoxContainer.new()
+	overlay.name = "Overlay"
+	overlay.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	overlay.add_theme_constant_override("separation", 0)
+	overlay.offset_top = 6
+	overlay.offset_bottom = -6
+	overlay.offset_left = 4
+	overlay.offset_right = -4
+	btn.add_child(overlay)
+
+	# Ícone no topo
 	var icon := ColorRect.new()
-	icon.custom_minimum_size = Vector2(40, 40)
+	icon.custom_minimum_size = Vector2(32, 32)
+	icon.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	icon.color = Color(0.3, 0.3, 0.3)
 	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	vbox.add_child(icon)
+	overlay.add_child(icon)
 
-	var name_label := Label.new()
-	name_label.text = ItemData.get_display_name(id)
-	name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	name_label.add_theme_font_size_override("font_size", 12)
-	name_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	vbox.add_child(name_label)
+	# Espaçador que empurra o qty pro rodapé
+	var spacer := Control.new()
+	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	spacer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	overlay.add_child(spacer)
 
+	# Quantidade no rodapé
 	var qty_label := Label.new()
 	qty_label.text = "x%d" % qty
 	qty_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	qty_label.add_theme_font_size_override("font_size", 11)
 	qty_label.modulate = Color(0.8, 0.8, 0.8)
 	qty_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	vbox.add_child(qty_label)
+	overlay.add_child(qty_label)
 
-	btn.add_child(vbox)
 	return btn
 
 # ---------- Handlers ----------

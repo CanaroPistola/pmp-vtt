@@ -781,9 +781,10 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 8
 
-[node name="Sidebar" type="PanelContainer" parent="TabContainer/Mochila/Root" unique_id=370952353]
+[node name="Sidebar" type="PanelContainer" parent="TabContainer/Mochila/Root" unique_id=769926200]
 custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
+size_flags_vertical = 3
 
 [node name="SidebarVBox" type="VBoxContainer" parent="TabContainer/Mochila/Root/Sidebar" unique_id=763785723]
 layout_mode = 2

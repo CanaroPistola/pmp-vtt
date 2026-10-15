@@ -1,6 +1,6 @@
 extends Button
 
-@onready var Sheet = preload("res://scenes/TrainerSheet.tscn")
+@onready var Sheet = preload("res://scenes/trainer_sheet/TrainerSheet.tscn")
 var sheet_instance
 
 func _on_button_press() -> void:
