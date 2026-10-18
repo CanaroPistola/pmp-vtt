@@ -31,7 +31,7 @@ const MAX_SR := {
 
 @export var aname: String
 
-@export var level: int = 1  # era 0: POKESLOTS[0] e PROFFICIENCY_BONUS[0] não existem
+@export var level: int = 1
 @export var xp: int
 
 @export var max_hp: int
@@ -41,6 +41,10 @@ const MAX_SR := {
 @export var pokeslots: int
 @export var max_sr: String
 
+## VALOR BASE do atributo (o que o jogador digita no LineEdit).
+## Bônus de região e de especializações NÃO são aplicados aqui; são somados
+## em leitura por get_effective_attribute(). Isso evita que o bônus seja
+## duplicado a cada save/load.
 @export var attributes := {
 	Constants.Attribute.STR: 8,
 	Constants.Attribute.DEX: 8,
@@ -56,7 +60,8 @@ const MAX_SR := {
 
 ## Região de origem (id de Regions.DATA, ex.: "Kanto"; vazio = nenhuma)
 @export var region: String = ""
-## Quanto a região somou em cada atributo (atributo -> valor), para poder desfazer na troca
+## Bônus que a região concede em cada atributo (atributo -> valor).
+## Somado em leitura por get_effective_attribute(); `attributes` permanece base.
 @export var region_attr_bonus := {}
 ## Perícia fixa da região (Constants.Skill) ou -1
 @export var region_skill: int = -1
@@ -78,10 +83,63 @@ const MAX_SR := {
 @export var portrait_data: String
 
 
+# ---------------------------------------------------------------------------
+# Atributos: base + efetivo
+# ---------------------------------------------------------------------------
+
+## Valor efetivo de um atributo: base digitada + bônus de região + bônus de specs.
+## É a fonte única de verdade para cálculo de modificadores, CA, PV, perícias etc.
+func get_effective_attribute(attr: Constants.Attribute) -> int:
+	var value: int = attributes.get(attr, 8)
+	value += int(region_attr_bonus.get(attr, 0))
+	value += _spec_attr_bonus_for(attr)
+	value += _talent_attr_bonus_for(attr) # NOVO
+	return clampi(value, 0, 30)
+
+func _talent_attr_bonus_for(attr: Constants.Attribute) -> int:
+	var total := 0
+	for slot in talents:
+		var t_id := ""
+		var choices := {}
+		if typeof(slot) == TYPE_STRING:
+			t_id = slot
+		elif typeof(slot) == TYPE_DICTIONARY:
+			t_id = slot.get("id", "")
+			choices = slot.get("choices", {})
+			
+		if t_id == "": continue
+		
+		var b := TrainersTalents.get_attribute_bonus(t_id)
+		if b.has(attr):
+			total += b[attr]
+		elif b.has("choice"):
+			if choices.get("attribute", -1) == attr:
+				total += 1
+	return total
+
+func _spec_attr_bonus_for(attr: Constants.Attribute) -> int:
+	var total := 0
+	var vistas := {}
+
+	for slot in specializations:
+		var id: String = slot.get("id", "")
+		if id.is_empty() or vistas.has(id):
+			continue
+		
+		vistas[id] = true
+
+		if Specializations.get_attribute_fixed(id) == attr:
+			total += 1
+		
+		if slot.get("attribute", -1) == attr:
+			total += 1
+			
+	return total
+
 func set_attribute(attr: Constants.Attribute, value: int) -> void:
 	attributes[attr] = clampi(value, 0, 30)
 	recalculate()
-	attribute_changed.emit(attr, attributes[attr])
+	attribute_changed.emit(attr, get_effective_attribute(attr))
 	emit_changed()
 
 func set_aname(value: String) -> void:
@@ -127,34 +185,43 @@ func set_saving_throw_trained(attr: Constants.Attribute, value: bool) -> void:
 
 ## Aplica uma região de origem (id "" limpa a região).
 ## choices: {"attr_bonus": {atributo: valor}, "skills": [perícias]}, já com as escolhas resolvidas.
-## Atributos: o bônus é somado em `attributes` e guardado para ser desfeito na troca.
-## Perícias/salvaguardas: ficam em campos próprios e são consultadas por is_skill_trained()
-## e is_saving_throw_trained(), para não mexer no que o jogador marcou na mão.
+## O bônus de atributo é guardado em `region_attr_bonus` e somado em leitura;
+## `attributes` permanece como valor base. Perícias/salvaguardas ficam em
+## campos próprios e são consultadas por is_skill_trained()/is_saving_throw_trained().
 func set_region(id: String, choices: Dictionary = {}) -> void:
 	var attr_bonus: Dictionary = choices.get("attr_bonus", {})
 	var extra_skills: Array = choices.get("skills", [])
 	if id == region and attr_bonus == region_attr_bonus and extra_skills == region_extra_skills:
 		return
-	var touched := {}
-	for attr in region_attr_bonus:  # desfaz a região anterior
-		attributes[attr] = clampi(attributes[attr] - region_attr_bonus[attr], 0, 30)
-		touched[attr] = true
 	region = id
 	region_attr_bonus = attr_bonus.duplicate()
 	region_extra_skills = extra_skills.duplicate()
 	region_skill = Regions.get_skill(id)
-	for attr in region_attr_bonus:
-		attributes[attr] = clampi(attributes[attr] + region_attr_bonus[attr], 0, 30)
-		touched[attr] = true
 	recalculate()  # CA (Sinnoh), PV (CON) etc.
-	for attr in touched:
-		attribute_changed.emit(attr, attributes[attr])
+	for attr in Constants.Attribute.values():
+		attribute_changed.emit(attr, get_effective_attribute(attr))
 	emit_changed()
 
 func is_skill_from_region(skill: Constants.Skill) -> bool:
 	return skill == region_skill or skill in region_extra_skills
 
 func is_skill_trained(skill: Constants.Skill) -> bool:
+	for slot in talents:
+		var t_id := ""
+		var choices := {}
+		if typeof(slot) == TYPE_STRING:
+			t_id = slot
+		elif typeof(slot) == TYPE_DICTIONARY:
+			t_id = slot.get("id", "")
+			choices = slot.get("choices", {})
+			
+		if t_id == "": continue
+		
+		if skill in TrainersTalents.get_skills_fixed(t_id):
+			return true
+		if t_id == "perito" and skill in choices.get("skills", []):
+			return true
+			
 	return skill in trained_skills \
 		or is_skill_from_region(skill) \
 		or is_skill_from_journey(skill) \
@@ -188,21 +255,35 @@ func set_skill_expert(skill: Constants.Skill, value: bool) -> void:
 	skill_changed.emit(skill)
 	emit_changed()
 
-## Recalcula tudo que deriva de nível e atributos
-## Recalcula tudo que deriva de nível e atributos
+## Recalcula tudo que deriva de nível e dos atributos EFETIVOS
+## (base + região + especializações).
+## Recalcula CA e PV considerando também os talentos.
 func recalculate() -> void:
 	level = clampi(level, 1, 20)
-
-	var attrs_before := attributes.duplicate()
-	_reapply_spec_attr_bonuses()
-
 	var old_max_hp := max_hp
-	var dex_mod := Constants.get_attribute_modifier(attributes[Constants.Attribute.DEX])
-	var con_mod := Constants.get_attribute_modifier(attributes[Constants.Attribute.CON])
-	armor_class = 10 + dex_mod + Regions.get_ac_bonus(region)
+	var dex_mod := Constants.get_attribute_modifier(get_effective_attribute(Constants.Attribute.DEX))
+	var con_mod := Constants.get_attribute_modifier(get_effective_attribute(Constants.Attribute.CON))
+	
+	var ca_bonus := 0
+	var hp_bonus := 0
+	
+	for slot in talents:
+		var t_id := ""
+		if typeof(slot) == TYPE_STRING:
+			t_id = slot
+		elif typeof(slot) == TYPE_DICTIONARY:
+			t_id = slot.get("id", "")
+			
+		if t_id == "aumento_ca":
+			ca_bonus += 1
+		elif t_id == "robusto":
+			hp_bonus += 2 * level
+			
+	armor_class = 10 + dex_mod + Regions.get_ac_bonus(region) + ca_bonus
 	initiative = dex_mod
 	profficiency_bonus = get_profficiency_bonus(level)
-	max_hp = 10 + (level * con_mod) + (level * 2 - 2)
+	max_hp = 10 + (level * con_mod) + (level * 2 - 2) + hp_bonus
+	
 	if old_max_hp == 0:
 		current_hp = max_hp
 	else:
@@ -210,36 +291,43 @@ func recalculate() -> void:
 	pokeslots = POKESLOTS[level]
 	max_sr = MAX_SR[level]
 
-	# avisa a UI só dos atributos que mudaram por causa das specs
-	for attr in Constants.Attribute.values():
-		if attrs_before.get(attr) != attributes.get(attr):
-			attribute_changed.emit(attr, attributes[attr])
-
 func get_profficiency_bonus(lvl: int) -> int:
 	return Constants.PROFFICIENCY_BONUS[lvl]
 
+## Bônus de perícia, checando se é especialista por talento.
 func get_skill_bonus(skill: Constants.Skill) -> int:
 	var attr: Constants.Attribute = Constants.SKILL_DETAILS[skill]["attribute"]
-	var mod := Constants.get_attribute_modifier(attributes[attr])
+	var mod := Constants.get_attribute_modifier(get_effective_attribute(attr))
 	var prof := get_profficiency_bonus(level)
 
-	# Especialista vem primeiro: quem é especialista também costuma estar treinado
 	if skill in expert_skills:
 		return mod + prof * 2
+		
+	for slot in talents:
+		var t_id := ""
+		if typeof(slot) == TYPE_STRING:
+			t_id = slot
+		elif typeof(slot) == TYPE_DICTIONARY:
+			t_id = slot.get("id", "")
+		
+		if t_id != "" and skill in TrainersTalents.get_skills_expert(t_id):
+			return mod + prof * 2
+			
 	if is_skill_trained(skill):
 		return mod + prof
 	return mod
 
-## Salvaguarda = modificador do atributo (+ proficiência, se treinada)
+## Salvaguarda = modificador do atributo efetivo (+ proficiência, se treinada)
 func get_saving_throw_bonus(attr: Constants.Attribute) -> int:
-	var bonus := Constants.get_attribute_modifier(attributes[attr])
+	var bonus := Constants.get_attribute_modifier(get_effective_attribute(attr))
 	if is_saving_throw_trained(attr):
 		bonus += get_profficiency_bonus(level)
 	return bonus
 
-## Percepção passiva = 10 + mod(SAB) + proficiência (se treinado em Percepção)
+## Percepção passiva = 10 + mod(SAB efetivo) + proficiência (se treinado em Percepção)
 func get_passive_perception() -> int:
-	var mod := Constants.get_attribute_modifier(attributes[Constants.Attribute.WIS])
+	var mod := Constants.get_attribute_modifier(
+		get_effective_attribute(Constants.Attribute.WIS))
 	var bonus := 10 + mod
 	if is_skill_trained(Constants.Skill.PERCEPCAO):
 		bonus += get_profficiency_bonus(level)
@@ -271,7 +359,7 @@ func is_skill_from_journey(skill: Constants.Skill) -> bool:
 @export var trainer_class: String = ""
 ## Perícias fixas garantidas pela classe
 @export var class_skills: Array = []
-## Perícias escolhidas livremente pela classe (Pesquisador / Versátil) — preenchido na (1b)
+## Perícias escolhidas livremente pela classe (Pesquisador / Versátil)
 @export var class_skills_chosen: Array = []
 
 func set_class(id: String, choices: Dictionary = {}) -> void:
@@ -285,10 +373,12 @@ func set_class(id: String, choices: Dictionary = {}) -> void:
 
 func is_skill_from_class(skill: Constants.Skill) -> bool:
 	return skill in class_skills or skill in class_skills_chosen
-	
+
 ## Especializações escolhidas. Array de até 3 dicionários:
 ##   {"id": String, "skill": int, "attribute": int}
 ## Skill/attribute guardam a escolha feita na etapa 2, ou -1 se não se aplicam.
+## O bônus de atributo é derivado em leitura por _spec_attr_bonus_for();
+## `attributes` permanece como valor base.
 @export var specializations: Array = []
 
 const SPECIALIZATION_SLOT_LEVELS := [1, 7, 18]
@@ -312,6 +402,8 @@ func set_specialization(slot_index: int, id: String, choices: Dictionary = {}) -
 		"attribute": choices.get("attribute", -1),
 	}
 	recalculate()
+	for attr in Constants.Attribute.values():
+		attribute_changed.emit(attr, get_effective_attribute(attr))
 	emit_changed()
 
 func remove_specialization(slot_index: int) -> void:
@@ -319,6 +411,8 @@ func remove_specialization(slot_index: int) -> void:
 		return
 	specializations[slot_index] = {"id": "", "skill": -1, "attribute": -1}
 	recalculate()
+	for attr in Constants.Attribute.values():
+		attribute_changed.emit(attr, get_effective_attribute(attr))
 	emit_changed()
 
 func get_specialization(slot_index: int) -> Dictionary:
@@ -407,40 +501,40 @@ func get_item_quantity(id: String) -> int:
 func has_item(id: String, quantity: int = 1) -> bool:
 	return get_item_quantity(id) >= quantity
 
-## Bônus de atributo aplicado por slot de especialização (bookkeeping, não salvo na ficha).
-## slot_index -> {attr: int}
-var _spec_applied_attrs := {}
+## Talentos escolhidos. Array de IDs de talentos.
+@export var talents: Array = []
 
-## Recalcula do zero os bônus de atributo das especializações.
-## Não muta `specializations`; só ajusta `attributes`.
-func _reapply_spec_attr_bonuses() -> void:
-	# desfaz o que foi aplicado antes
-	for slot_index in _spec_applied_attrs:
-		for attr in _spec_applied_attrs[slot_index]:
-			attributes[attr] = clampi(
-				attributes[attr] - _spec_applied_attrs[slot_index][attr], 0, 30)
-	_spec_applied_attrs.clear()
+## Escolhas feitas nos talentos que pedem opções.
+@export var talent_choices: Dictionary = {} 
 
-	# aplica de novo com base nas specs atuais
-	for i in range(specializations.size()):
-		var slot: Dictionary = specializations[i]
-		var id: String = slot.get("id", "")
-		if id.is_empty():
-			continue
-		var bonus := _get_spec_attr_bonus(id, slot)
-		if bonus.is_empty():
-			continue
-		for attr in bonus:
-			attributes[attr] = clampi(attributes[attr] + bonus[attr], 0, 30)
-		_spec_applied_attrs[i] = bonus
+func set_talent(slot_index: int, id: String, choices: Dictionary = {}) -> void:
+	if not TrainersTalents.has_data(id):
+		return
+		
+	while talents.size() <= slot_index:
+		talents.append({})
+		
+	talents[slot_index] = {"id": id, "choices": choices}
+	
+	recalculate()
+	for attr in Constants.Attribute.values():
+		attribute_changed.emit(attr, get_effective_attribute(attr))
+	emit_changed()
 
-## Retorna {attr: valor} com o bônus de atributo que UMA especialização concede.
-func _get_spec_attr_bonus(id: String, slot: Dictionary) -> Dictionary:
-	var result := {}
-	var fixed: int = Specializations.get_attribute_fixed(id)
-	if fixed != -1:
-		result[fixed] = 1
-	var choice: int = slot.get("attribute", -1)
-	if choice != -1:
-		result[choice] = result.get(choice, 0) + 1
-	return result
+func remove_talent(slot_index: int) -> void:
+	if slot_index < 0 or slot_index >= talents.size():
+		return
+	talents[slot_index] = {}
+	recalculate()
+	for attr in Constants.Attribute.values():
+		attribute_changed.emit(attr, get_effective_attribute(attr))
+	emit_changed()
+
+## Retorna o tipo de Pokémon escolhido no talento "Mestre do Tipo",
+## ou -1 se não tiver escolhido ou não tiver o talento.
+func get_master_type() -> int:
+	for slot in talents:
+		if typeof(slot) == TYPE_DICTIONARY and slot.get("id", "") == "mestre_do_tipo":
+			var choices = slot.get("choices", {})
+			return choices.get("pokemon_type", -1)
+	return -1

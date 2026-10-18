@@ -60,8 +60,20 @@ func setup(trainer: TrainerData) -> void:
 	portrait_button.image_selected.connect(data.set_portrait)
 	portrait_button.show_image(data.get_portrait())
 	class_button.class_chosen.connect(data.set_class)
+	
+	# --- Configura os botões de especialização ---
 	for i in specialty_buttons.size():
-		specialty_buttons[i].pressed.connect(_on_specialty_slot_pressed.bind(i))
+		var btn := specialty_buttons[i]
+		btn.pressed.connect(_on_specialty_slot_pressed.bind(i))
+		
+		# Configuração visual
+		btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		btn.clip_text = true
+		btn.add_theme_font_size_override("font_size", 11) # Fonte menor
+		btn.alignment = HORIZONTAL_ALIGNMENT_CENTER
+		btn.vertical_icon_alignment = VERTICAL_ALIGNMENT_CENTER
+		# Garante que o botão tenha espaço vertical pra 2-3 linhas
+		btn.custom_minimum_size.y = 44 
 
 	_refresh()
 
@@ -119,13 +131,26 @@ func _refresh_specialty_slots() -> void:
 		var spec := data.get_specialization(i)
 
 		btn.disabled = not unlocked
+		
+		# Garante que o botão tenha altura para 2 linhas
+		btn.custom_minimum_size.y = 48
+		btn.size_flags_vertical = Control.SIZE_EXPAND_FILL
+		
 		if not unlocked:
 			btn.text = "Nível %d" % slot_level
 		elif spec.is_empty() or spec.get("id", "").is_empty():
 			btn.text = "+"
 		else:
-			btn.text = Specializations.get_display_name(spec["id"])
-			
+			var display_name := Specializations.get_display_name(spec["id"])
+			# Força a quebra de linha substituindo o espaço por \n
+			# Isso garante que o nome longo caiba no botão.
+			if display_name.length() > 12:
+				# Pega a primeira palavra e coloca o resto na segunda linha
+				var partes := display_name.split(" ", true, 1)
+				btn.text = partes[0] + "\n" + partes[1]
+			else:
+				btn.text = display_name
+
 var _active_slot: int = -1
 
 func _on_specialty_slot_pressed(slot_index: int) -> void:

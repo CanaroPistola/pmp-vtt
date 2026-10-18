@@ -10,8 +10,12 @@ const FEATURE_POPUP := preload("res://scenes/trainer_sheet/feature_popup.tscn")
 const REGION_SELECTOR := preload("res://scenes/trainer_sheet/region_selector.tscn")
 const JOURNEY_SELECTOR := preload("res://scenes/trainer_sheet/journey_selector.tscn")
 const CLASS_SELECTOR := preload("res://scenes/trainer_sheet/class_selector.tscn")
+const TALENT_SELECTOR := preload("res://scenes/trainer_sheet/talent_selector.tscn")
 
 const TALENT_SLOTS := 5
+
+
+var _talent_selector: Window
 
 @onready var region_slot: PanelContainer = $Root/LeftColumn/TopRow/RegionSlot
 @onready var journey_slot: PanelContainer = $Root/LeftColumn/TopRow/JourneySlot
@@ -47,6 +51,12 @@ func setup(trainer: TrainerData) -> void:
 	_class_selector.class_chosen.connect(_on_class_chosen)
 
 	data.changed.connect(_refresh)
+	_talent_selector = TALENT_SELECTOR.instantiate()
+	add_child(_talent_selector)
+	_talent_selector.hide()
+	_talent_selector.talent_chosen.connect(_on_talent_chosen)
+	
+	#data.changed.connect(_refresh)
 	_refresh()
 
 func _refresh() -> void:
@@ -117,11 +127,109 @@ func _build_talents_slot() -> void:
 	vbox.add_child(grid)
 
 	for i in TALENT_SLOTS:
-		var btn := _make_empty_slot_button("+", func() -> void:
-			popup_feature("Talento %d" % (i + 1), "Talentos", "Em breve",
-				"Sistema de Talentos ainda não implementado."))
+		var t_data := {}
+		if i < data.talents.size():
+			t_data = data.talents[i]
+			
+		var btn := Button.new()
+		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		btn.custom_minimum_size = Vector2(0, 60)
+		btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		btn.clip_text = true
+		btn.add_theme_font_size_override("font_size", 11)
+		
+		if t_data.is_empty():
+			btn.text = "+"
+			btn.pressed.connect(_open_talent_selector.bind(i))
+		else:
+			var t_id: String = t_data.get("id", "")
+			var display_name: String = TrainersTalents.get_display_name(t_id)
+			
+			# Adiciona o tipo entre parênteses se for o Mestre do Tipo
+			if t_id == "mestre_do_tipo":
+				var choices: Dictionary = t_data.get("choices", {})
+				var type_id = choices.get("pokemon_type", -1)
+				if type_id != -1:
+					var type_name = Constants.PokemonType.keys()[type_id].capitalize()
+					display_name += " (%s)" % type_name
+					
+			btn.text = display_name
+			btn.pressed.connect(_open_talent_popup.bind(t_id, i))
+			
 		grid.add_child(btn)
+
+var _active_talent_slot := -1
+
+func _open_talent_selector(slot_index: int) -> void:
+	_active_talent_slot = slot_index
+	
+	# Coleta os tipos permitidos baseado nas especializações atuais
+	var allowed_types: Array[int] = []
+	for spec in data.specializations:
+		var spec_id = spec.get("id", "")
+		if not spec_id.is_empty() and Specializations.TYPE_MAP.has(spec_id):
+			var type_id = Specializations.TYPE_MAP[spec_id]
+			if type_id not in allowed_types:
+				allowed_types.append(type_id)
+				
+	_talent_selector.set_allowed_types(allowed_types)
+	_talent_selector.popup_centered()
+
+func _on_talent_chosen(id: String, choices: Dictionary) -> void:
+	if _active_talent_slot < 0: return
+	data.set_talent(_active_talent_slot, id, choices)
+	_active_talent_slot = -1
+
+func _open_talent_popup(id: String, slot_index: int) -> void:
+	var popup := Window.new()
+	popup.title = TrainersTalents.get_display_name(id)
+	popup.size = Vector2i(450, 300)
+	popup.max_size = Vector2i(450, 300)
+	popup.unresizable = true
+	popup.exclusive = true
+	popup.always_on_top = true
+	
+	var margin := MarginContainer.new()
+	margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	margin.add_theme_constant_override("margin_left", 16)
+	margin.add_theme_constant_override("margin_top", 16)
+	margin.add_theme_constant_override("margin_right", 16)
+	margin.add_theme_constant_override("margin_bottom", 16)
+	popup.add_child(margin)
+	
+	var vbox := VBoxContainer.new()
+	margin.add_child(vbox)
+	
+	var scroll := ScrollContainer.new()
+	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	vbox.add_child(scroll)
+	
+	var label := Label.new()
+	label.text = TrainersTalents.get_description(id)
+	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	scroll.add_child(label)
+	
+	var hbox := HBoxContainer.new()
+	hbox.alignment = BoxContainer.ALIGNMENT_END
+	vbox.add_child(hbox)
+	
+	var close_btn := Button.new()
+	close_btn.text = "Fechar"
+	close_btn.pressed.connect(popup.queue_free)
+	hbox.add_child(close_btn)
+	
+	var remove_btn := Button.new()
+	remove_btn.text = "Remover"
+	remove_btn.pressed.connect(func():
+		data.remove_talent(slot_index)
+		popup.queue_free()
+	)
+	hbox.add_child(remove_btn)
+	
+	add_child(popup)
+	popup.popup_centered()
 
 # ---------- Classe ----------
 

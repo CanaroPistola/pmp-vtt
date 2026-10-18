@@ -120,19 +120,37 @@ func _on_data_attribute_changed(attr: Constants.Attribute, _value: int) -> void:
 	_refresh_attribute(ATTR_ORDER.find(attr), true)
 
 func _refresh_attribute(index: int, animate: bool) -> void:
-	var value: int = data.attributes[ATTR_ORDER[index]]
-	attributes[index].text = str(value)
+	var attr: Constants.Attribute = ATTR_ORDER[index]
+	var base_value: int = data.attributes[attr]
+	attributes[index].text = str(base_value)
 
-	var mod := Constants.get_attribute_modifier(value)
+	var effective: int = data.get_effective_attribute(attr)
+	var bonus: int = effective - base_value
+	var mod := Constants.get_attribute_modifier(effective)
 	var base_name: String = radar_graph.get_item(index)["title"].get_slice(" (", 0)
 	var sign_str := "+" if mod >= 0 else ""
 	radar_graph.set_item_title(index, "%s (%s%d)" % [base_name, sign_str, mod])
 
+	# Tooltip: aparece ao passar o mouse no LineEdit do atributo.
+	# Só mostra algo quando há bônus de região/spec; senão fica limpo.
+	attributes[index].tooltip_text = _build_attr_tooltip(
+		base_name, base_value, effective, bonus, mod)
+
 	if animate:
 		create_tween().tween_property(
-			radar_graph, "items/key_%d/value" % index, float(value), 0.4)
+			radar_graph, "items/key_%d/value" % index, float(effective), 0.4)
 	else:
-		radar_graph.set_item_value(index, float(value))
+		radar_graph.set_item_value(index, float(effective))
+
+func _build_attr_tooltip(label: String, base: int, effective: int, bonus: int, mod: int) -> String:
+	if bonus == 0:
+		return "%s: %d (modificador %+d)\nSem bônus de região ou especialização." % [
+			label, base, mod
+		]
+	var bonus_str := "+" if bonus > 0 else ""
+	return "%s\nBase: %d\nBônus: %s%d\nEfetivo: %d\nModificador: %+d" % [
+		label, base, bonus_str, bonus, effective, mod
+	]
 
 func _refresh_skill_bonuses() -> void:
 	for i in skill_rows.size():

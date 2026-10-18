@@ -24,7 +24,6 @@ title = "Ficha do Treinador"
 initial_position = 1
 size = Vector2i(800, 500)
 unresizable = true
-always_on_top = true
 script = ExtResource("1_yqoxd")
 
 [node name="TabContainer" type="TabContainer" parent="." unique_id=1432107466]
@@ -362,6 +361,7 @@ text = "Escolha uma classe"
 script = ExtResource("10_6emfv")
 
 [node name="SpecialtyContainer" type="HBoxContainer" parent="TabContainer/TrainerCard" unique_id=1547161424]
+custom_maximum_size = Vector2(458, -1)
 layout_mode = 0
 offset_left = 305.0
 offset_top = 280.0
@@ -373,6 +373,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Button" type="Button" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty1" unique_id=1211040062]
+custom_maximum_size = Vector2(150, -1)
 layout_mode = 2
 
 [node name="Specialty2" type="PanelContainer" parent="TabContainer/TrainerCard/SpecialtyContainer" unique_id=1479518865]
@@ -380,6 +381,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Button" type="Button" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty2" unique_id=912136476]
+custom_maximum_size = Vector2(150, -1)
 layout_mode = 2
 
 [node name="Specialty3" type="PanelContainer" parent="TabContainer/TrainerCard/SpecialtyContainer" unique_id=1898952881]
@@ -387,6 +389,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Button" type="Button" parent="TabContainer/TrainerCard/SpecialtyContainer/Specialty3" unique_id=201179975]
+custom_maximum_size = Vector2(150, -1)
 layout_mode = 2
 
 [node name="ACPanel" type="Panel" parent="TabContainer/TrainerCard" unique_id=1590696851]

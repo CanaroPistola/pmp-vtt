@@ -241,7 +241,7 @@ func _on_item_pressed(id: String) -> void:
 	_selected_item_id = id
 	_refresh_footer()
 
-func _on_pokedollars_changed(new_text: String, line_edit: LineEdit) -> void:
+func _on_pokedollars_changed(new_text: String, _line_edit: LineEdit) -> void:
 	if new_text.is_valid_int():
 		data.set_pokedollars(new_text.to_int())
 

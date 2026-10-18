@@ -48,7 +48,7 @@ const DATA := {
 	},
 	"domador_de_dragoes": {
 		"display_name": "Domador de Dragões",
-		"skill_fixed": Constants.Skill.ADESTRAR_ANIMAIS,
+		"skill_fixed": -1,
 		"skill_choice": [],
 		"attribute_fixed": Constants.Attribute.WIS,
 		"attribute_choice": [],
@@ -59,7 +59,7 @@ const DATA := {
 	},
 	"engenheiro": {
 		"display_name": "Engenheiro",
-		"skill_fixed": Constants.Skill.ARCANISMO,
+		"skill_fixed": -1,
 		"skill_choice": [],
 		"attribute_fixed": Constants.Attribute.INT,
 		"attribute_choice": [],
@@ -70,7 +70,7 @@ const DATA := {
 	},
 	"piromaniaco": {
 		"display_name": "Piromaníaco",
-		"skill_fixed": Constants.Skill.INTIMIDACAO,
+		"skill_fixed": -1,
 		"skill_choice": [],
 		"attribute_fixed": Constants.Attribute.CON,
 		"attribute_choice": [],
@@ -81,7 +81,7 @@ const DATA := {
 	},
 	"encantador": {
 		"display_name": "Encantador",
-		"skill_fixed": Constants.Skill.PERSUASAO,
+		"skill_fixed": -1,
 		"skill_choice": [],
 		"attribute_fixed": Constants.Attribute.CHA,
 		"attribute_choice": [],
@@ -214,6 +214,29 @@ const DATA := {
 			"text": "Ganhe uma velocidade de natação igual à sua velocidade de movimento. Adicione um bônus de +1 a todos os testes de perícia feitos por qualquer um dos seus Pokémon do tipo Água.",
 		},
 	},
+}
+
+## Relaciona a ID da especialização ao tipo de Pokémon que ela representa.
+## Usado pelo talento "Mestre do Tipo".
+const TYPE_MAP := {
+	"guardiao_dos_passaros": Constants.PokemonType.FLYING,
+	"maniatico_por_insetos": Constants.PokemonType.BUG,
+	"campista": Constants.PokemonType.GROUND,
+	"domador_de_dragoes": Constants.PokemonType.DRAGON,
+	"engenheiro": Constants.PokemonType.ELECTRIC,
+	"piromaniaco": Constants.PokemonType.FIRE,
+	"encantador": Constants.PokemonType.FAIRY,
+	"sombrio": Constants.PokemonType.DARK,
+	"alquimista": Constants.PokemonType.POISON,
+	"jogador_de_equipe": Constants.PokemonType.NORMAL,
+	"esquiador": Constants.PokemonType.ICE,
+	"jardineiro": Constants.PokemonType.GRASS,
+	"artista_marcial": Constants.PokemonType.FIGHTING,
+	"alpinista": Constants.PokemonType.ROCK,
+	"mistico": Constants.PokemonType.GHOST,
+	"metalurgico": Constants.PokemonType.STEEL,
+	"psiquico": Constants.PokemonType.PSYCHIC,
+	"nadador": Constants.PokemonType.WATER,
 }
 
 static func has_data(id: String) -> bool:
