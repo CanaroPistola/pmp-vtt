@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ccmruskgp4v1c"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_qxqt2"]
+
+[resource]
+script = ExtResource("1_qxqt2")
+id = "sleep_talk"
+display_name = "Sleep Talk (Ataque Sonâmbulo)"
+name_en = "Sleep Talk"
+name_pt = "Ataque Sonâmbulo"
+pp = 5
+move_time = "1 ação"
+range_category = 6
+range_distance = 0.0
+duration_flags = Array[String](["variable"])
+description = "Você se torna um sonâmbulo enquanto dorme, atacando como se estivesse acordado. Este Move só pode ser usado se você estiver dormindo. Ao usar Sleep Talk, você pode executar sua movimentação normalmente e ativar um Move aleatório presente na sua lista de Moves (exceto Sleep Talk e outros Moves não elegíveis) que tenha um tempo de execução de 1 ação ou ação bônus. Caso seja uma batalha com mais de um inimigo, você atacará um alvo aleatório (mas não aliados). Sleep Talk consome o PP do Move utilizado, e pode executá-lo mesmo que tenha 0 PPs."
+range_text_raw = "Variável"
+duration_text_raw = "Variável"
+effect_tags = Array[String](["copy", "sleep"])

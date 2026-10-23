@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://pebsvqpokkhl"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_iaufo"]
+
+[resource]
+script = ExtResource("1_iaufo")
+dex_number = 615
+display_name = "Cryogonal"
+id = "cryogonal"
+types = Array[int]([5])
+sr = "11"
+min_level = 8
+evolution_stage = 1
+armor_class = 17
+hit_points = 78
+hit_dice = "d10"
+attributes = {
+0: 13,
+1: 18,
+2: 15,
+3: 6,
+4: 16,
+5: 10
+}
+skills = Array[int]([12, 17])
+abilities = Array[String](["Levitate"])
+level_moves = {
+2: ["Icy Wind"],
+3: ["Haze", "Mist"],
+4: ["Laser Focus"],
+5: ["Aurora Beam"],
+6: ["Acid Armor"],
+7: ["Ancient Power"],
+9: ["Ice Beam"],
+10: ["Light Screen"],
+11: ["Reflect"],
+13: ["Slash"],
+14: ["Confuse Ray"],
+15: ["Freeze-Dry", "Recover", "Solar Beam"],
+16: ["Night Slash", "Sheer Cold"]
+}
+starting_moves = Array[String](["Bind", "Ice Shard", "Rapid Spin", "Sharpen"])
+tms = Array[String](["tm_2", "tm_13", "tm_15", "tm_16", "tm_20", "tm_22", "tm_25", "tm_42", "tm_45", "tm_46", "tm_54", "tm_58", "tm_83", "tm_86", "tm_87", "tm_99", "tm_108", "tm_109", "tm_113", "tm_122", "tm_124", "tm_131", "tm_136", "tm_139", "tm_142", "tm_143", "tm_144", "tm_147", "tm_150", "tm_151", "tm_156", "tm_161", "tm_191", "tm_199", "tm_209", "tm_212", "tm_214", "tm_216", "tm_228", "tm_234", "tm_239", "tm_243", "tm_248", "tm_255", "tm_256", "tm_257", "tm_270", "tm_276", "tm_282", "tm_286", "tm_296", "tm_302", "tm_311"])
+egg_moves = Array[String](["Aurora Veil", "Explosion", "Frost Breath"])

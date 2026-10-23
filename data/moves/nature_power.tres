@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://2xht1uob68r1"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_gynfc"]
+
+[resource]
+script = ExtResource("1_gynfc")
+id = "nature_power"
+display_name = "Nature Power (Poder da Natureza)"
+name_en = "Nature Power"
+name_pt = "Poder da Natureza"
+move_time = "1 ação"
+range_category = 6
+range_distance = 0.0
+duration_flags = Array[String](["variable"])
+description = "Você invoca os poderes da natureza próxima e ativa um Move com base no terreno. Abaixo estão exemplos de tipos de terreno, mas o Mestre também pode decidir qual Move ativar. Embora seja um Move do tipo Normal, o usuário só recebe o bônus de STAB se o Move em que ele se transforma for do seu tipo. Confira a tabela no livro."
+range_text_raw = "Variável"
+duration_text_raw = "Variável"

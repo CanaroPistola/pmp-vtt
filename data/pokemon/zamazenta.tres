@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bofcj4w4ooh56"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_lfgve"]
+
+[resource]
+script = ExtResource("1_lfgve")
+dex_number = 889
+display_name = "Zamazenta"
+id = "zamazenta"
+types = Array[int]([6])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 19
+hit_points = 173
+hit_dice = "d20"
+movement = {
+0: 15.0
+}
+attributes = {
+0: 22,
+1: 22,
+2: 20,
+3: 10,
+4: 18,
+5: 12
+}
+skills = Array[int]([3, 8, 9, 13])
+abilities = Array[String](["Dauntless Shield"])
+level_moves = {
+4: ["Slash"],
+8: ["Iron Defense"],
+11: ["Iron Head"],
+15: ["Laser Focus", "Metal Burst"],
+16: ["Crunch"],
+17: ["Moonblast"],
+18: ["Close Combat"],
+19: ["Giga Impact"]
+}
+starting_moves = Array[String](["Bite", "Howl", "Metal Claw", "Quick Attack", "Wide Guard"])
+tms = Array[String](["tm_5", "tm_24", "tm_25", "tm_29", "tm_43", "tm_44", "tm_50", "tm_53", "tm_55", "tm_83", "tm_87", "tm_92", "tm_99", "tm_103", "tm_113", "tm_119", "tm_128", "tm_129", "tm_136", "tm_137", "tm_140", "tm_145", "tm_147", "tm_148", "tm_156", "tm_168", "tm_186", "tm_190", "tm_198", "tm_199", "tm_203", "tm_209", "tm_212", "tm_214", "tm_215", "tm_217", "tm_218", "tm_220", "tm_228", "tm_229", "tm_231", "tm_234", "tm_248", "tm_253", "tm_255", "tm_257", "tm_263", "tm_267", "tm_270", "tm_271", "tm_277", "tm_280", "tm_282", "tm_286", "tm_291", "tm_298", "tm_315"])
+is_variant = true
+variant_data = {
+"Zamazenta Escudo Coroado": {
+"diff": {
+"armor_class": 21,
+"attributes": {
+"DEX": 20,
+"WIS": 24
+},
+"types": [6, 16]
+},
+"display_name": "Zamazenta Escudo Coroado",
+"is_default": false
+},
+"Zamazenta Herói de Muitas Batalhas": {
+"diff": {},
+"display_name": "Zamazenta Herói de Muitas Batalhas",
+"is_default": true
+}
+}

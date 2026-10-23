@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://pkswsdqctqv7"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_px4m1"]
+
+[resource]
+script = ExtResource("1_px4m1")
+id = "mystical_power"
+display_name = "Mystical Power"
+name_en = "Mystical Power"
+type = 10
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Você libera um poder misterioso para atacar. Faça um ataque à distância -1 contra um alvo em alcance, causando 2d8 + MOVE de dano psíquico em um acerto. Caso acerte, seu Ataque Especial é aumentado em 1 estágio, podendo ser acumulado em até 6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 3d10 no nível 10 e 3d12 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 3, 4])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

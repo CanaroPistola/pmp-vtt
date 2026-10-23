@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bxuhm51p2ybtl"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_twtgk"]
+
+[resource]
+script = ExtResource("1_twtgk")
+id = "vise_grip"
+display_name = "Vice Grip (Aperto com Garra)"
+name_en = "Vice Grip"
+name_pt = "Aperto com Garra"
+pp = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+save_attribute = 0
+description = "Você esmaga uma criatura com um ataque de aperto poderoso. Faça um ataque corpo a corpo, causando 1d12 + MOVE de dano normal e agarrando o alvo em um acerto. Em cada turno sucessivo, se a criatura ainda estiver agarrada, você pode usar este Move novamente (como uma ação) e acertar automaticamente. Uma criatura pode tentar escapar do agarrão no início de seus turnos com um teste de FOR contra sua CD de Move."
+scaling_text = "O dado de dano para este Move muda para 4d4 no nível 5, 2d12 no nível 10 e 3d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["grapple"])

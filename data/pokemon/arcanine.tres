@@ -1,0 +1,62 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ctaxiq7fgh1e4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_l8cod"]
+
+[resource]
+script = ExtResource("1_l8cod")
+dex_number = 59
+display_name = "Arcanine"
+id = "arcanine"
+types = Array[int]([1])
+sr = "11"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 80
+hit_dice = "d10"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 16,
+1: 18,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([2, 13])
+abilities = Array[String](["Intimidate", "Flash Fire"])
+hidden_ability = "Justified"
+level_moves = {
+2: ["Flamethrower"],
+12: ["Extreme Speed"]
+}
+starting_moves = Array[String](["Agility", "Bite", "Crunch", "Ember", "Fire Fang", "Flame Wheel", "Flare Blitz", "Helping Hand", "Howl", "Leer", "Odor Sleuth", "Play Rough", "Retaliate", "Reversal", "Roar", "Take Down", "Thunder Fang"])
+tms = Array[String](["tm_3", "tm_5", "tm_13", "tm_25", "tm_35", "tm_41", "tm_43", "tm_45", "tm_48", "tm_50", "tm_51", "tm_55", "tm_58", "tm_59", "tm_65", "tm_83", "tm_87", "tm_91", "tm_92", "tm_95", "tm_96", "tm_97", "tm_98", "tm_109", "tm_113", "tm_126", "tm_127", "tm_129", "tm_131", "tm_136", "tm_137", "tm_148", "tm_149", "tm_151", "tm_182", "tm_183", "tm_190", "tm_199", "tm_203", "tm_214", "tm_215", "tm_216", "tm_218", "tm_220", "tm_228", "tm_229", "tm_234", "tm_235", "tm_248", "tm_253", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_285", "tm_286", "tm_288", "tm_291", "tm_296", "tm_315", "tm_316"])
+egg_moves = Array[String](["Body Slam", "Burn Up", "Close Combat", "Covet", "Crunch", "Double Kick", "Double-Edge", "Fire Spin", "Flare Blitz", "Heat Wave", "Howl", "Iron Tail", "Morning Sun", "Raging Fury", "Thrash"])
+is_variant = true
+variant_data = {
+"Arcanine": {
+"diff": {},
+"display_name": "Arcanine",
+"is_default": true
+},
+"Arcanine de Hisui": {
+"diff": {
+"hidden_ability": "Rock Head",
+"moves_diff": {
+"egg_moves": ["Covet", "Double Kick", "Double-Edge", "Head Smash", "Morning Sun", "Thrash"],
+"level_moves": {
+2: ["Flamethrower"],
+17: ["Raging Fury"]
+},
+"starting_moves": ["Agility", "Bite", "Crunch", "Ember", "Extreme Speed", "Fire Fang", "Flame Wheel", "Flare Blitz", "Helping Hand", "Howl", "Leer", "Retaliate", "Reversal", "Roar", "Rock Slide", "Rock Throw", "Take Down"],
+"tms": ["tm_3", "tm_5", "tm_25", "tm_35", "tm_43", "tm_50", "tm_55", "tm_59", "tm_65", "tm_83", "tm_87", "tm_91", "tm_92", "tm_95", "tm_96", "tm_97", "tm_98", "tm_113", "tm_126", "tm_127", "tm_129", "tm_136", "tm_137", "tm_148", "tm_149", "tm_182", "tm_183", "tm_190", "tm_196", "tm_199", "tm_203", "tm_214", "tm_218", "tm_220", "tm_221", "tm_223", "tm_224", "tm_225", "tm_231", "tm_234", "tm_235", "tm_248", "tm_251", "tm_252", "tm_253", "tm_257", "tm_262", "tm_267", "tm_270", "tm_271", "tm_277", "tm_282", "tm_285", "tm_286", "tm_288", "tm_291", "tm_315", "tm_316"]
+},
+"types": [1, 12]
+},
+"display_name": "Arcanine de Hisui",
+"is_default": false
+}
+}

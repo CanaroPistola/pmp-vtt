@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dxdv77ca2xgj8"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_5wc1o"]
+
+[resource]
+script = ExtResource("1_5wc1o")
+id = "play_nice"
+display_name = "Play Nice"
+name_en = "Play Nice"
+move_time = "1 ação"
+range_category = 2
+range_distance = 9.0
+description = "Você convence uma criatura de que não tem más intenções. Ao usar este Move, escolha uma criatura dentro do alcance. O Ataque do alvo é reduzido em 1 estágio, podendo ser acumulado em até -6 estágios. Observações: Play Nice ignora Substitute e reações de proteção, como Protect ou Detect."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+effect_tags = Array[String](["stat_change"])

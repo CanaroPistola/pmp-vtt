@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c61o8u3n53bc5"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_dku4q"]
+
+[resource]
+script = ExtResource("1_dku4q")
+id = "conversion"
+display_name = "Conversion (Conversão)"
+name_en = "Conversion"
+name_pt = "Conversão"
+pp = 15
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você muda sua tipagem para o mesmo de um Move que tanto conhece. Sua tipagem se torna a mesma do primeiro Move de sua lista de Moves."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"

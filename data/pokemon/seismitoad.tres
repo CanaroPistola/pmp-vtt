@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d3r1i5ef5xn2m"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_kmykx"]
+
+[resource]
+script = ExtResource("1_kmykx")
+dex_number = 537
+display_name = "Seismitoad"
+id = "seismitoad"
+types = Array[int]([2, 8])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 15
+hit_points = 117
+hit_dice = "d12"
+movement = {
+0: 7.5,
+1: 9.0
+}
+attributes = {
+0: 16,
+1: 16,
+2: 19,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Swift Swim", "Poison Touch"])
+hidden_ability = "Water Absorb"
+level_moves = {
+2: ["Supersonic"],
+3: ["Round"],
+4: ["Bubble Beam"],
+6: ["Mud Shot"],
+7: ["Aqua Ring"],
+8: ["Uproar"],
+10: ["Muddy Water"],
+11: ["Rain Dance"],
+13: ["Flail"],
+15: ["Drain Punch", "Echoed Voice"],
+16: ["Hydro Pump", "Hyper Voice"]
+}
+starting_moves = Array[String](["Acid", "Bubble", "Growl"])
+tms = Array[String](["tm_4", "tm_13", "tm_26", "tm_29", "tm_35", "tm_45", "tm_55", "tm_57", "tm_58", "tm_67", "tm_73", "tm_74", "tm_75", "tm_82", "tm_87", "tm_100", "tm_103", "tm_105", "tm_109", "tm_111", "tm_113", "tm_114", "tm_122", "tm_131", "tm_136", "tm_137", "tm_141", "tm_144", "tm_146", "tm_150", "tm_158", "tm_165", "tm_166", "tm_174", "tm_186", "tm_191", "tm_199", "tm_209", "tm_214", "tm_216", "tm_223", "tm_225", "tm_228", "tm_232", "tm_236", "tm_248", "tm_249", "tm_250", "tm_255", "tm_262", "tm_266", "tm_270", "tm_275", "tm_276", "tm_296", "tm_305", "tm_307", "tm_311", "tm_313"])
+egg_moves = Array[String](["After You", "Earth Power", "Mist", "Mud Bomb", "Mud Sport", "Mud-Slap", "Refresh", "Sleep Talk", "Snore", "Toxic", "Venom Drench", "Water Pulse"])

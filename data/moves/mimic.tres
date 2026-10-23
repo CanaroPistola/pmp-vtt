@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://qg4bw2jy3r6c"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_vc11p"]
+
+[resource]
+script = ExtResource("1_vc11p")
+id = "mimic"
+display_name = "Mimic (Mímica)"
+name_en = "Mimic"
+name_pt = "Mímica"
+pp = 5
+move_time = "1 reação"
+activation = 1
+range_category = 2
+range_distance = 36.0
+duration_is_permanent = true
+description = "Você copia os Moves de outra criatura, aprendendo suas maneiras de batalha. Quando uma criatura utilizar um Move dentro do alcance, você pode usar sua reação para substituir este Move (Mimic) pelo Move utilizado pela criatura. O alvo pode ser um aliado. O Move substituído sempre começará com um máximo de 3 PPs."
+range_text_raw = "(36 metros)"
+duration_text_raw = "Enquanto ativo"

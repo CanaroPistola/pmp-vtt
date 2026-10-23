@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://hv21nf4jysxp"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_54nrf"]
+
+[resource]
+script = ExtResource("1_54nrf")
+id = "magma_storm"
+display_name = "Magma Storm"
+name_en = "Magma Storm"
+type = 1
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 24.0
+duration_rounds = 5
+description = "Você convoca uma erupção brutal de magma que se eleva em espirais ao redor do alvo, envolvendo -o em uma prisão de rochas incandescentes. Faça um ataque à distância -3 contra um alvo em alcance, causando 2d10 + MOVE de dado do tipo fogo e m um acerto. Ao acertar, um redemoinho de magma surge abaixo da criatura em um círculo de 5 pés (1,5 metros), mesmo que ela não esteja em contato com o solo. Este redemoinho permanece fixo por 5 rodadas. Toda vez que uma criatura terminar seu turno ocupando total ou parcialmente a área do redemoinho, ela sofre dano sem tipo igual ao próprio nível. Além disso, uma criatura sofre dano do tipo Fogo igual ao ao próprio nível ao entrar, atravessar ou sair voluntariamente da área. Uma mesma criatura só pode sofrer esse dano de movimentação uma vez por turno."
+scaling_text = "Os dados de dano deste Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "(24 metros)"
+duration_text_raw = "5 rodadas"
+role = 0
+move_power_attributes = Array[int]([0])
+move_power_modifier = -3
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}

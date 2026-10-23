@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cdavesen1r80i"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_roass"]
+
+[resource]
+script = ExtResource("1_roass")
+id = "terrain_pulse"
+display_name = "Terrain Pulse"
+name_en = "Terrain Pulse"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Você canaliza a energia do terreno ao redor, lançando ondas pulsantes que avançam com força em direção ao alvo. Faça um ataque à distância contra um alvo em alcance, causando 1d10 + MOVE de dano do tipo normal em um acerto. Caso esteja dentro de um Terreno (Grassy Terrain, Misty Terrain, Electric Terrain ou Psychic Terrain) e em contato com o solo, dobre os dados de dano, e o tipo do Move se torna igual ao tipo do Terreno. Observações: Terrain Pulse não é afetado por Normalize, Pixilate, Refrigerate ou Galvanize."
+scaling_text = "Os dados de dano para este Move mudam para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}

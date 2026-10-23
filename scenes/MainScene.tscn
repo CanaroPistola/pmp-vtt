@@ -16,3 +16,10 @@ offset_right = 8.0
 offset_bottom = 8.0
 text = "Abrir Ficha"
 script = ExtResource("1_echbf")
+
+[node name="Button2" type="Button" parent="Control" unique_id=323255530]
+layout_mode = 0
+offset_left = 94.0
+offset_right = 253.0
+offset_bottom = 31.0
+text = "Adicionar Pokemon"

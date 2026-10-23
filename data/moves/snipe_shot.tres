@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b5ubey3aspcac"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_kihy1"]
+
+[resource]
+script = ExtResource("1_kihy1")
+id = "snipe_shot"
+display_name = "Snipe Shot"
+name_en = "Snipe Shot"
+type = 2
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 18.0
+description = "Você dispara um tiro de água concentrado a partir de seus dedos, atingindo o oponente com precisão. Faça um ataque à distância contra um alvo em alcance, causando 4d4 + MOVE de dano de água em um acerto. Este Move causa um golpe crítico em rolagens naturais de 18 ou mais no acerto. Snipe Shot não é afetado por Moves nem por efeitos de habilidades que redirecionam Moves, como Follow Me e Storm Drain."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}

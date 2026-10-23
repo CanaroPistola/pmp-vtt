@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://5yif6d7rr5y1"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_phiby"]
+
+[resource]
+script = ExtResource("1_phiby")
+id = "shadow_sneak"
+display_name = "Shadow Sneak (Furtividade nas Sombras)"
+name_en = "Shadow Sneak"
+name_pt = "Furtividade nas Sombras"
+type = 13
+pp = 15
+move_time = "1 ação / reação"
+is_attack = true
+resolution = 1
+activation = 3
+range_category = 7
+range_distance = 4.5
+range_secondary = 1.5
+description = "Você projeta sua sombra que se estende até o inimigo, atacando-o de surpresa pelas costas. Como uma ação, você pode realizar um ataque corpo a corpo com alcance estendido de até 15 pés (4,5 metros), causando 2d4 + MOVE de dano do tipo Fantasma em um acerto. Este Move também pode ser usado como reação para ser executado a qualquer momento da rodada, desde que ocorra fora do turno de outra criatura e antes do início do seu turno. Se usar esta reação, você perde a ação padrão do seu próximo turno. Este Move é classificado como Prioridade 1. Caso outra criatura utilize um Move de Prioridade 1 no mesmo momento, a ordem de execução é determinada pela Destreza (ou por uma rolagem, em caso de empate). Moves com valores mais altos de Prioridade são sempre executados antes."
+scaling_text = "Os dados de dano para este Move mudam para 1d12 no nível 5, 4d4 no nível 10 e 2d10 no nível 17."
+range_text_raw = "Corpo a corpo ( / 4,5 metros de alcance)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}

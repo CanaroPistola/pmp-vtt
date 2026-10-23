@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://d3pwhonh8oa5i"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_e0s8d"]
+
+[resource]
+script = ExtResource("1_e0s8d")
+id = "bonemerang"
+display_name = "Bonemerang (Osso-Bumerangue)"
+name_en = "Bonemerang"
+name_pt = "Osso-Bumerangue"
+type = 8
+pp = 5
+move_time = "1 ação"
+range_category = 2
+range_distance = 24.0
+description = "Você lança um osso como um bumerangue, fazendo dois ataques à distância -1 contra um alvo. Em cada acerto bem-sucedido, cause 1d10 + MOVE de dano de terra."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "(24 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}

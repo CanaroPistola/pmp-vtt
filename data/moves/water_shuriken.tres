@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://nv1yfcspfcek"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_rsxuq"]
+
+[resource]
+script = ExtResource("1_rsxuq")
+id = "water_shuriken"
+display_name = "Water Shuriken"
+name_en = "Water Shuriken"
+type = 2
+move_time = "1 ação / reação"
+is_attack = true
+resolution = 1
+activation = 3
+range_category = 2
+range_distance = 15.0
+description = "Você forma uma ou mais shurikens de água em suas mãos e as arremessa contra uma criatura, cortando -a com lâminas giratórias líquidas . Faça um ataque à distância em uma criatura, causando 1d4 + MOVE de dano de água em um acerto. Confira a tabela no livro. Para cada golpe adicional, você pode imediatamente realizar um novo ataque contra o mesmo alvo com acerto garantido, causando 1d4 + MOVE de dano de água. Cada golpe extra deve rolar separadamente um d20 para verificar chance de crítico, mas não para efeitos secundários de habilidades ou itens . Este Move também pode ser usado como reação, podendo ser ativado em qualquer momento da rodada, desde que ocorra fora do turno de outra criatura (após um turno ser encerrado e antes da próxima criatura agir) e antes do início do seu próximo turno. Se usar esta reação, você perde a ação padrão do seu próximo turno. Este Move é classificado como Prioridade 1. Caso outra criatura utilize um Move de Prioridade 1 no mesmo momento, a ordem de execução é determinada pela Destreza (ou por uma rolagem, em caso de empate). Moves com valores mais altos de Prioridade são sempre executados antes."
+scaling_text = "O dado de dano para esse Move muda para 1d6 no nível 10 e 1d8 no nível 17. 1-3 Você realiza mais 1 ataque 4-6 Você realiza mais 2 ataques 7 Você realiza mais 3 ataques 8 Você realiza mais 4 ataques Cada golpe de Water Shuriken é tratado como um ataque separado: • Se o primeiro golpe quebrar um Substitute, o segundo golpe causará dano direto ao Pokémon alvo."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+}
+}

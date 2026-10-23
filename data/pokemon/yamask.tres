@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dlijgeilsjnxw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_m5eq1"]
+
+[resource]
+script = ExtResource("1_m5eq1")
+dex_number = 562
+display_name = "Yamask"
+id = "yamask"
+types = Array[int]([13])
+sr = "1"
+evolution_stage = 1
+armor_class = 14
+hit_points = 17
+attributes = {
+0: 11,
+1: 9,
+2: 12,
+3: 8,
+4: 14,
+5: 10
+}
+skills = Array[int]([9])
+senses = Array[Dictionary]([{
+"range_m": 4.5,
+"type": 2
+}])
+abilities = Array[String](["Mummy"])
+evolves_to = Array[String](["cofagrigus", "runerigus"])
+evolution_level = 12
+evolution_points = 10
+level_moves = {
+2: ["Disable"],
+3: ["Haze"],
+5: ["Night Shade"],
+6: ["Hex"],
+7: ["Crafty Shield", "Will-O-Wisp"],
+9: ["Ominous Wind"],
+10: ["Curse"],
+11: ["Guard Split", "Power Split"],
+13: ["Shadow Ball"],
+14: ["Grudge"],
+15: ["Dark Pulse", "Destiny Bond", "Mean Look"]
+}
+starting_moves = Array[String](["Astonish", "Protect"])
+tms = Array[String](["tm_4", "tm_9", "tm_13", "tm_23", "tm_38", "tm_45", "tm_52", "tm_58", "tm_69", "tm_80", "tm_84", "tm_87", "tm_88", "tm_109", "tm_130", "tm_131", "tm_145", "tm_146", "tm_147", "tm_150", "tm_161", "tm_184", "tm_186", "tm_194", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_226", "tm_228", "tm_229", "tm_240", "tm_242", "tm_244", "tm_248", "tm_254", "tm_255", "tm_261", "tm_270", "tm_276", "tm_284", "tm_288", "tm_296", "tm_300", "tm_301", "tm_316", "tm_317", "tm_321"])
+egg_moves = Array[String](["Ally Switch", "Crafty Shield", "Disable", "Endure", "Fake Tears", "Heal Block", "Imprison", "Memento", "Nasty Plot", "Nightmare", "Toxic Spikes"])
+is_variant = true
+variant_data = {
+"Yamask": {
+"diff": {},
+"display_name": "Yamask",
+"is_default": true
+},
+"Yamask de Galar": {
+"diff": {
+"Evolve": "Runerigus",
+"abilities": ["Wandering Spirit"],
+"moves_diff": {
+"egg_moves": ["Memento"],
+"level_moves": {
+2: ["Haze"],
+3: ["Night Shade"],
+4: ["Disable"],
+6: ["Brutal Swing"],
+7: ["Crafty Shield"],
+8: ["Hex"],
+10: ["Mean Look"],
+11: ["Slam"],
+12: ["Curse"],
+14: ["Shadow Ball"],
+15: ["Earthquake", "Guard Split", "Power Split"],
+16: ["Destiny Bond"]
+},
+"starting_moves": ["Astonish", "Protect"],
+"tms": ["tm_13", "tm_31", "tm_87", "tm_88", "tm_130", "tm_145", "tm_186", "tm_194", "tm_199", "tm_209", "tm_214", "tm_223", "tm_225", "tm_228", "tm_229", "tm_231", "tm_255", "tm_288", "tm_301", "tm_316", "tm_317"]
+},
+"types": [8, 13]
+},
+"display_name": "Yamask de Galar",
+"is_default": false
+}
+}

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cwsge0xbt0838"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_jmh00"]
+
+[resource]
+script = ExtResource("1_jmh00")
+dex_number = 462
+display_name = "Magnezone"
+id = "magnezone"
+types = Array[int]([3, 16])
+sr = "14"
+min_level = 12
+evolution_stage = 3
+armor_class = 17
+hit_points = 133
+hit_dice = "d12"
+attributes = {
+0: 20,
+1: 16,
+2: 17,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([0, 9])
+abilities = Array[String](["Magnet Pull", "Sturdy"])
+hidden_ability = "Analytic"
+level_moves = {
+2: ["Thunder Shock"],
+3: ["Thunder Wave"],
+4: ["Magnet Bomb"],
+5: ["Light Screen"],
+6: ["Sonic Boom"],
+7: ["Spark"],
+8: ["Mirror Shot"],
+9: ["Metal Sound"],
+10: ["Electro Ball"],
+11: ["Flash Cannon"],
+13: ["Screech"],
+15: ["Discharge", "Lock-On"],
+16: ["Gyro Ball", "Magnet Rise"],
+17: ["Zap Cannon"]
+}
+starting_moves = Array[String](["Barrier", "Electric Terrain", "Magnetic Flux", "Mirror Coat", "Supersonic", "Tackle", "Tri Attack"])
+tms = Array[String](["tm_9", "tm_24", "tm_25", "tm_39", "tm_40", "tm_45", "tm_46", "tm_58", "tm_59", "tm_76", "tm_77", "tm_78", "tm_79", "tm_83", "tm_86", "tm_87", "tm_99", "tm_109", "tm_113", "tm_118", "tm_121", "tm_123", "tm_128", "tm_129", "tm_131", "tm_136", "tm_147", "tm_148", "tm_156", "tm_161", "tm_164", "tm_169", "tm_199", "tm_201", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_219", "tm_228", "tm_231", "tm_236", "tm_239", "tm_242", "tm_243", "tm_248", "tm_255", "tm_263", "tm_264", "tm_270", "tm_271", "tm_273", "tm_276", "tm_277", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294", "tm_296", "tm_299", "tm_308", "tm_315"])
+egg_moves = Array[String](["Electroweb", "Explosion"])

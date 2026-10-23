@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c4d3vvavovprv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_18ym3"]
+
+[resource]
+script = ExtResource("1_18ym3")
+id = "focus_energy"
+display_name = "Focus Energy (Focalizar Energia)"
+name_en = "Focus Energy"
+name_pt = "Focalizar Energia"
+pp = 15
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você fecha os olhos e se concentra na energia dentro de você para atacar de maneira mais letal, aumentando sua Margem de Crítico em 2 estágios, podendo ser acumulado em até 6 estágios."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

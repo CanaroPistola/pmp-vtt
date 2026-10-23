@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cp2c1wplucrmk"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_75yjp"]
+
+[resource]
+script = ExtResource("1_75yjp")
+dex_number = 417
+display_name = "Pachirisu"
+id = "pachirisu"
+types = Array[int]([3])
+sr = "6"
+evolution_stage = 1
+armor_class = 16
+hit_points = 20
+hit_dice = "d8"
+movement = {
+0: 10.5,
+2: 10.5
+}
+attributes = {
+0: 13,
+1: 18,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 13])
+abilities = Array[String](["Run Away", "Pickup"])
+hidden_ability = "Volt Absorb"
+level_moves = {
+2: ["Quick Attack"],
+3: ["Charm"],
+5: ["Spark"],
+6: ["Endure"],
+7: ["Nuzzle", "Swift"],
+9: ["Electro Ball"],
+10: ["Sweet Kiss"],
+11: ["Thunder Wave"],
+13: ["Super Fang"],
+14: ["Discharge"],
+15: ["Hyper Fang", "Last Resort", "Thunder"]
+}
+starting_moves = Array[String](["Bide", "Growl", "Thunder Shock"])
+tms = Array[String](["tm_3", "tm_5", "tm_8", "tm_13", "tm_17", "tm_39", "tm_40", "tm_41", "tm_45", "tm_48", "tm_55", "tm_58", "tm_75", "tm_76", "tm_77", "tm_78", "tm_79", "tm_81", "tm_82", "tm_83", "tm_87", "tm_88", "tm_100", "tm_109", "tm_113", "tm_114", "tm_120", "tm_129", "tm_131", "tm_136", "tm_149", "tm_151", "tm_153", "tm_156", "tm_164", "tm_174", "tm_175", "tm_190", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_238", "tm_242", "tm_248", "tm_255", "tm_270", "tm_271", "tm_272", "tm_276", "tm_277", "tm_282", "tm_286", "tm_288", "tm_290", "tm_291", "tm_292", "tm_293", "tm_294", "tm_296", "tm_298", "tm_303", "tm_305", "tm_308", "tm_315"])
+egg_moves = Array[String](["Baby-Doll Eyes", "Bestow", "Bite", "Charge", "Covet", "Defense Curl", "Fake Tears", "Flail", "Flatter", "Follow Me", "Ion Deluge", "Iron Tail", "Rollout", "Tail Whip"])

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dpacoenukoxmg"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_t6imw"]
+
+[resource]
+script = ExtResource("1_t6imw")
+id = "pounce"
+display_name = "Pounce"
+name_en = "Pounce"
+type = 11
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você salta rapidamente sobre o alvo, golpeando-o com o impacto da investida e deixando seus movimentos mais lentos. Faça um ataque corpo a corpo, causando 1d10 + MOVE de dano do tipo Inseto em um acerto. Em caso de acerto, o alvo também tem sua Velocidade reduzida em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "Corpo a Corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

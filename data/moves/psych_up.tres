@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cmkc2bsj1wm21"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_mm16t"]
+
+[resource]
+script = ExtResource("1_mm16t")
+id = "psych_up"
+display_name = "Psych Up (Carga Psíquica)"
+name_en = "Psych Up"
+name_pt = "Carga Psíquica"
+pp = 5
+move_time = "1 ação"
+range_category = 2
+range_distance = 12.0
+description = "Você se sincroniza com uma criatura, copiando quaisquer alterações positivas ou negativas de estatísticas. Ao usar este Move, suas Mudança de Status são redefinidas, e você copia todos os estágios de Mudança de Status de um alvo em alcance para si (Ataque, Defesa, Ataque Especial, Defesa Especial, Velocidade, Precisão e Evasão)."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+effect_tags = Array[String](["stat_change"])

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://hhbx8l0adcjc"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_eq1v3"]
+
+[resource]
+script = ExtResource("1_eq1v3")
+id = "seed_bomb"
+display_name = "Seed Bomb (Bomba de Sementes)"
+name_en = "Seed Bomb"
+name_pt = "Bomba de Sementes"
+type = 4
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "Você dispara uma série de sementes luminosas que explodem ao atingir o alvo. Faça um ataque à distância, causando 4d4 + MOVE de dano de grama em um acerto."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}

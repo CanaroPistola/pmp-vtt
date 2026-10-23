@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://oywrdke4b7aw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ckjcq"]
+
+[resource]
+script = ExtResource("1_ckjcq")
+dex_number = 694
+display_name = "Helioptile"
+id = "helioptile"
+types = Array[int]([3, 0])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 7.5
+}
+attributes = {
+0: 10,
+1: 14,
+2: 11,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 17])
+abilities = Array[String](["Dry Skin", "Sand Veil"])
+hidden_ability = "Solar Power"
+evolves_to = Array[String](["heliolisk"])
+evolution_level = 11
+evolution_points = 15
+level_moves = {
+2: ["Thunder Shock"],
+4: ["Charge"],
+5: ["Mud-Slap"],
+6: ["Quick Attack"],
+8: ["Razor Wind"],
+9: ["Parabolic Charge"],
+11: ["Thunder Wave"],
+12: ["Bulldoze"],
+14: ["Volt Switch"],
+15: ["Electrify", "Thunder", "Thunderbolt"]
+}
+starting_moves = Array[String](["Pound", "Tail Whip"])
+tms = Array[String](["tm_9", "tm_13", "tm_35", "tm_40", "tm_45", "tm_52", "tm_55", "tm_58", "tm_66", "tm_77", "tm_79", "tm_87", "tm_109", "tm_114", "tm_131", "tm_149", "tm_156", "tm_159", "tm_164", "tm_199", "tm_201", "tm_209", "tm_214", "tm_216", "tm_219", "tm_223", "tm_225", "tm_228", "tm_231", "tm_233", "tm_242", "tm_243", "tm_248", "tm_255", "tm_270", "tm_275", "tm_276", "tm_277", "tm_290", "tm_293", "tm_294", "tm_296", "tm_303", "tm_308", "tm_315"])
+egg_moves = Array[String](["Agility", "Camouflage", "Dragon Rush", "Dragon Tail", "Electric Terrain", "Glare"])

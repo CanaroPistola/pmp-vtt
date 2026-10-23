@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cxfqwvsar0kpo"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_gij8w"]
+
+[resource]
+script = ExtResource("1_gij8w")
+id = "heal_bell"
+display_name = "Heal Bell (Sino da Cura)"
+name_en = "Heal Bell"
+name_pt = "Sino da Cura"
+pp = 3
+move_time = "1 ação"
+range_category = 5
+range_distance = 18.0
+description = "Você toca um sino que soa lindamente pelo campo de batalha. Todas as criaturas aliadas em um raio de 18 metros, centrado em você, são curadas de qualquer Condição de Status."
+range_text_raw = "Pessoal (raio de 18 metros)"
+duration_text_raw = "Instantânea"

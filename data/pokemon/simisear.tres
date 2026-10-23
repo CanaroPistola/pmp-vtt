@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ciamhougm0hh5"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_b13qx"]
+
+[resource]
+script = ExtResource("1_b13qx")
+dex_number = 514
+display_name = "Simisear"
+id = "simisear"
+types = Array[int]([1])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 80
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 15,
+1: 19,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 17])
+abilities = Array[String](["Gluttony"])
+hidden_ability = "Blaze"
+starting_moves = Array[String](["Flame Burst", "Fury Swipes", "Leer", "Lick"])
+tms = Array[String](["tm_2", "tm_13", "tm_29", "tm_45", "tm_48", "tm_58", "tm_82", "tm_87", "tm_91", "tm_93", "tm_94", "tm_96", "tm_97", "tm_100", "tm_103", "tm_105", "tm_109", "tm_111", "tm_113", "tm_114", "tm_120", "tm_127", "tm_129", "tm_131", "tm_136", "tm_149", "tm_150", "tm_158", "tm_159", "tm_183", "tm_186", "tm_199", "tm_211", "tm_214", "tm_216", "tm_223", "tm_225", "tm_226", "tm_228", "tm_241", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_274", "tm_276", "tm_283", "tm_288", "tm_289", "tm_295", "tm_296", "tm_305", "tm_316", "tm_318"])
+egg_moves = Array[String](["Astonish", "Belch", "Covet", "Disarming Voice", "Fire Punch", "Fire Spin", "Flare Blitz", "Heat Wave", "Low Kick", "Nasty Plot", "Role Play", "Sleep Talk", "Tickle"])

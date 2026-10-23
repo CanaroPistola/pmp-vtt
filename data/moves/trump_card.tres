@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b8p0gyb2uupnf"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ko80h"]
+
+[resource]
+script = ExtResource("1_ko80h")
+id = "trump_card"
+display_name = "Trump Card"
+name_en = "Trump Card"
+pp = 3
+move_time = "1 ação"
+range_category = 2
+range_distance = 9.0
+description = "Você ataca com uma explosão de energia em formato de cartas que aumenta em força quanto mais é usada. Confira a tabela no livro. Role um d20 para chance de golpe crítico e outros efeitos. Adicione seu MOVE a qualquer rolagem da tabela. Observações: Quando Trump Card é acionado por outro Move, como Metronome ou Assist, ele usará o PP do Move que o chamou, aplicando-se a mesma tabela de dano. PP restante Dano Nível 1 Nível 5 Nível 10 Nível 17 ≥ 2 2d4 1d12 4d4 2d10 1 4d4 4d6 4d8 4d10 0 4d10 6d10 8d10 10d10"
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0, 1])

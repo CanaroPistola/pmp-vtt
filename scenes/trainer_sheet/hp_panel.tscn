@@ -12,10 +12,8 @@ bg_color = Color(0.09411765, 0.7647059, 0.9019608, 1)
 font_size = 29
 
 [node name="HPPanel" type="Panel" unique_id=434013711]
-offset_left = 306.0
-offset_top = 204.0
-offset_right = 446.0
-offset_bottom = 264.0
+offset_right = 140.0
+offset_bottom = 60.0
 script = ExtResource("1_1yf05")
 
 [node name="ShowPopup" type="Button" parent="." unique_id=753989751]

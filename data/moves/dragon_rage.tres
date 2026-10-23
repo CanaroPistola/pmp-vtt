@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://0bqygvefl2hu"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_snek0"]
+
+[resource]
+script = ExtResource("1_snek0")
+id = "dragon_rage"
+display_name = "Dragon Rage"
+name_en = "Dragon Rage"
+type = 14
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 18.0
+description = "Você dispara um feixe de energia dracônica de sua boca, atingindo uma criatura à sua frente . Faça um ataque à distância contra um alvo em alcance, causando 8 de dano fixo do tipo Dragão, independente do tipo do alvo (não há resistências ou super efetivos, porém não causa dano quando há imunidade). Esse dano não pode ser aumentado ou reduzido por nenhuma fonte, incluindo STAB, itens,  condições, habilidades (de Pokémon ou Treinador), outros Moves ou acertos críticos."
+scaling_text = "O dano deste Move muda para 12 no nível 5, 16 no nível 10 e 20 no nível 17."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0])

@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dqpl4xrdcwqih"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_2itlg"]
+
+[resource]
+script = ExtResource("1_2itlg")
+dex_number = 971
+display_name = "Greavard"
+id = "greavard"
+types = Array[int]([13])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 9.0
+}
+attributes = {
+0: 13,
+1: 11,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([6, 10, 13])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Pickup"])
+hidden_ability = "Fluffy"
+evolves_to = Array[String](["houndstone"])
+evolution_level = 10
+evolution_points = 15
+level_moves = {
+2: ["Bite", "Tail Whip"],
+3: ["Roar"],
+4: ["Headbutt"],
+6: ["Dig"],
+8: ["Rest"],
+10: ["Crunch"],
+11: ["Play Rough"],
+13: ["Helping Hand"],
+14: ["Phantom Force"],
+15: ["Charm"],
+16: ["Double-Edge"]
+}
+starting_moves = Array[String](["Growl", "Lick", "Tackle"])
+tms = Array[String](["tm_35", "tm_41", "tm_46", "tm_50", "tm_55", "tm_59", "tm_82", "tm_83", "tm_87", "tm_92", "tm_129", "tm_130", "tm_140", "tm_174", "tm_175", "tm_180", "tm_184", "tm_188", "tm_190", "tm_194", "tm_199", "tm_203", "tm_209", "tm_214", "tm_220", "tm_231", "tm_234", "tm_240", "tm_248", "tm_253", "tm_266", "tm_270", "tm_271", "tm_282", "tm_286", "tm_288", "tm_291", "tm_300", "tm_305"])
+egg_moves = Array[String](["Ally Switch", "Destiny Bond", "Disable", "Howl", "Memento", "Shadow Sneak", "Yawn"])

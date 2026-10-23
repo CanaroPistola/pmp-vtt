@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bamt61vvf6wfn"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_h4ok1"]
+
+[resource]
+script = ExtResource("1_h4ok1")
+id = "transform"
+display_name = "Transform (Transformação)"
+name_en = "Transform"
+name_pt = "Transformação"
+pp = 5
+move_time = "1 ação"
+range_category = 2
+range_distance = 15.0
+duration_is_permanent = true
+description = "Você tenta se transformar em uma cópia quase exata de uma criatura dentro do alcance. O seu treinador deve ser capaz de controlar o SR base do alvo ou o Move falha. Durante a duração, você copia a aparência, o tamanho, o tipo, os valores de atributos, perícias, velocidades, sentidos, habilidade passiva, Moves atuais do alvo e qualquer alteração em suas Mudanças de Status. Você retém seus próprios talentos, nível, PV (Mudanças de CON não afetam seu PV) e Condições de Status. Um Pokémon selvagem mantém sua taxa de captura, mesmo transformado. Criaturas com visão verdadeira conseguem enxergar sua forma original."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Enquanto ativo"

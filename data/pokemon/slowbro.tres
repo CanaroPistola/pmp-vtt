@@ -1,0 +1,96 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://da34gutqa6uvl"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_lee02"]
+
+[resource]
+script = ExtResource("1_lee02")
+dex_number = 80
+display_name = "Slowbro"
+id = "slowbro"
+types = Array[int]([2, 10])
+sr = "11"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 97
+hit_dice = "d10"
+movement = {
+1: 9.0
+}
+attributes = {
+0: 16,
+1: 12,
+2: 18,
+3: 6,
+4: 16,
+5: 10
+}
+skills = Array[int]([7, 9])
+abilities = Array[String](["Oblivious", "Own Tempo"])
+hidden_ability = "Regenerator"
+level_moves = {
+2: ["Growl"],
+3: ["Water Gun"],
+5: ["Confusion"],
+7: ["Disable"],
+8: ["Headbutt"],
+10: ["Surf", "Water Pulse"],
+11: ["Zen Headbutt"],
+12: ["Slack Off"],
+15: ["Amnesia", "Psychic"],
+16: ["Rain Dance"],
+17: ["Heal Pulse", "Psych Up"]
+}
+starting_moves = Array[String](["Curse", "Tackle", "Withdraw", "Yawn"])
+tms = Array[String](["tm_3", "tm_4", "tm_10", "tm_11", "tm_13", "tm_16", "tm_22", "tm_23", "tm_24", "tm_25", "tm_29", "tm_30", "tm_35", "tm_38", "tm_42", "tm_45", "tm_51", "tm_55", "tm_57", "tm_58", "tm_67", "tm_69", "tm_74", "tm_75", "tm_83", "tm_85", "tm_87", "tm_91", "tm_97", "tm_100", "tm_103", "tm_105", "tm_106", "tm_109", "tm_110", "tm_113", "tm_114", "tm_122", "tm_129", "tm_131", "tm_135", "tm_136", "tm_139", "tm_141", "tm_144", "tm_145", "tm_147", "tm_149", "tm_156", "tm_157", "tm_161", "tm_165", "tm_166", "tm_171", "tm_174", "tm_176", "tm_178", "tm_185", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_209", "tm_210", "tm_211", "tm_214", "tm_216", "tm_228", "tm_229", "tm_232", "tm_240", "tm_243", "tm_244", "tm_248", "tm_255", "tm_256", "tm_268", "tm_270", "tm_271", "tm_275", "tm_276", "tm_277", "tm_282", "tm_284", "tm_286", "tm_293", "tm_296", "tm_300", "tm_301", "tm_311", "tm_312", "tm_313", "tm_314", "tm_317", "tm_321"])
+egg_moves = Array[String](["Belch", "Belly Drum", "Block", "Future Sight", "Me First", "Mud Sport", "Sleep Talk", "Snore", "Stomp", "Wonder Room", "Zen Headbutt"])
+is_variant = true
+variant_data = {
+"Slowbro": {
+"diff": {
+"movement": {
+0: 6.0
+}
+},
+"display_name": "Slowbro",
+"is_default": true
+},
+"Slowbro de Galar": {
+"diff": {
+"abilities": ["Quick Draw", "Own Tempo"],
+"armor_class": 14,
+"attributes": {
+"CON": 16,
+"DEX": 13,
+"STR": 17
+},
+"hit_points": 90,
+"movement": {
+0: 9.0
+},
+"moves_diff": {
+"egg_moves": ["Belch", "Belly Drum", "Block", "Stomp"],
+"level_moves": {
+3: ["Yawn"],
+4: ["Confusion"],
+5: ["Disable"],
+6: ["Water Pulse"],
+7: ["Headbutt"],
+8: ["Zen Headbutt"],
+9: ["Amnesia"],
+10: ["Surf"],
+11: ["Slack Off"],
+12: ["Psychic"],
+13: ["Psych Up"],
+14: ["Rain Dance"],
+15: ["Heal Pulse"]
+},
+"starting_moves": ["Acid", "Curse", "Growl", "Shell Side Arm", "Tackle", "Withdraw"],
+"tms": ["tm_1", "tm_10", "tm_13", "tm_16", "tm_22", "tm_24", "tm_25", "tm_29", "tm_30", "tm_31", "tm_35", "tm_38", "tm_42", "tm_51", "tm_55", "tm_57", "tm_59", "tm_67", "tm_74", "tm_83", "tm_85", "tm_87", "tm_91", "tm_97", "tm_100", "tm_103", "tm_106", "tm_113", "tm_114", "tm_120", "tm_122", "tm_124", "tm_129", "tm_135", "tm_136", "tm_139", "tm_140", "tm_141", "tm_144", "tm_145", "tm_147", "tm_156", "tm_157", "tm_165", "tm_166", "tm_171", "tm_174", "tm_176", "tm_178", "tm_185", "tm_191", "tm_196", "tm_199", "tm_200", "tm_201", "tm_202", "tm_205", "tm_207", "tm_209", "tm_210", "tm_214", "tm_221", "tm_228", "tm_229", "tm_231", "tm_234", "tm_240", "tm_244", "tm_248", "tm_249", "tm_250", "tm_251", "tm_255", "tm_256", "tm_268", "tm_270", "tm_271", "tm_275", "tm_277", "tm_282", "tm_286", "tm_293", "tm_296", "tm_300", "tm_301", "tm_307", "tm_311", "tm_312", "tm_313", "tm_314", "tm_317", "tm_321"]
+},
+"types": [7, 10]
+},
+"display_name": "Slowbro de Galar",
+"is_default": false
+}
+}

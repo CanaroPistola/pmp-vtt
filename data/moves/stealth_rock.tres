@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://da01umugfg3dd"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_cl0uq"]
+
+[resource]
+script = ExtResource("1_cl0uq")
+id = "stealth_rock"
+display_name = "Stealth Rock"
+name_en = "Stealth Rock"
+type = 12
+move_time = "1 ação"
+range_category = 2
+range_distance = 15.0
+target_area_radius = 6.0
+description = "Você rapidamente invoca uma ár ea de armadilhas de rochas afiadas que surgem do chão  e passam a fluruar em um raio de 20 pés (6 metros)  de largura e 50 pés (15 metros)  de altura , centrado em um ponto dentro do alcance. Sempre que uma criatura entrar nessa área, ou quando um Pokémon for substituído e o próximo surgir dentro dela, a criatura sofre dano de Pedra igual ao nível dela. Mover-se dentro da área é considerado terreno difícil. Uma criatura pode ignorar essa penalidade ao atravessar as pedras, mas recebe dano ao fazer isso. Um mesmo Pokémon pode manter até duas áreas de Stealth Rock ativas simultaneamente. Caso tente criar uma terceira, a mais antiga desaparece automaticamente."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+effect_tags = Array[String](["hazard"])

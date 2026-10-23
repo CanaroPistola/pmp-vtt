@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b6phwiwsf1a7p"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vchbs"]
+
+[resource]
+script = ExtResource("1_vchbs")
+dex_number = 146
+display_name = "Moltres"
+id = "moltres"
+types = Array[int]([1, 9])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 232
+hit_dice = "d12"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 18,
+1: 18,
+2: 16,
+3: 6,
+4: 14,
+5: 16
+}
+skills = Array[int]([2, 8, 9])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Pressure"])
+hidden_ability = "Flame Body"
+level_moves = {
+3: ["Fire Spin"],
+5: ["Agility"],
+8: ["Endure"],
+10: ["Ancient Power", "Incinerate"],
+12: ["Flamethrower"],
+15: ["Air Slash", "Safeguard"],
+16: ["Sunny Day"],
+17: ["Heat Wave", "Overheat"],
+18: ["Sky Attack", "Solar Beam"],
+19: ["Roost"],
+20: ["Burn Up", "Hurricane"]
+}
+starting_moves = Array[String](["Ember", "Gust", "Leer", "Wing Attack"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_27", "tm_37", "tm_45", "tm_54", "tm_58", "tm_59", "tm_72", "tm_83", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_102", "tm_109", "tm_113", "tm_127", "tm_129", "tm_131", "tm_133", "tm_136", "tm_151", "tm_177", "tm_183", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_227", "tm_228", "tm_229", "tm_231", "tm_235", "tm_246", "tm_247", "tm_248", "tm_255", "tm_257", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_285", "tm_286", "tm_296", "tm_303", "tm_313", "tm_316"])
+is_variant = true
+variant_data = {
+"Moltres": {
+"diff": {},
+"display_name": "Moltres",
+"is_default": true
+},
+"Moltres de Galar": {
+"diff": {
+"abilities": ["Berserk"],
+"armor_class": 18,
+"attributes": {
+"DEX": 16,
+"WIS": 16
+},
+"hit_points": 246,
+"moves_diff": {
+"level_moves": {
+2: ["Payback"],
+4: ["Safeguard"],
+5: ["Wing Attack"],
+7: ["Agility"],
+9: ["Ancient Power"],
+10: ["Sucker Punch"],
+12: ["Air Slash"],
+14: ["After You"],
+15: ["Fiery Wrath", "Nasty Plot"],
+16: ["Endure", "Hurricane"],
+17: ["Memento", "Sky Attack"]
+},
+"starting_moves": ["Gust", "Leer"],
+"tms": ["tm_2", "tm_3", "tm_5", "tm_7", "tm_12", "tm_27", "tm_52", "tm_72", "tm_83", "tm_87", "tm_102", "tm_106", "tm_113", "tm_129", "tm_130", "tm_133", "tm_136", "tm_137", "tm_145", "tm_152", "tm_178", "tm_184", "tm_186", "tm_199", "tm_209", "tm_214", "tm_228", "tm_229", "tm_231", "tm_234", "tm_240", "tm_248", "tm_253", "tm_255", "tm_261", "tm_265", "tm_270", "tm_271", "tm_277", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_303"]
+},
+"types": [15, 9]
+},
+"display_name": "Moltres de Galar",
+"is_default": false
+}
+}

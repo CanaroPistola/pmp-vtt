@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b5kj1jvu0w0je"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ahs51"]
+
+[resource]
+script = ExtResource("1_ahs51")
+dex_number = 796
+display_name = "Xurkitree"
+id = "xurkitree"
+types = Array[int]([3])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 232
+hit_dice = "d12"
+movement = {
+0: 15.0
+}
+attributes = {
+0: 16,
+1: 20,
+2: 16,
+3: 8,
+4: 14,
+5: 12
+}
+skills = Array[int]([0, 5, 17])
+abilities = Array[String](["Beast Boost"])
+level_moves = {
+3: ["Thunder Wave"],
+5: ["Shock Wave"],
+7: ["Ingrain"],
+8: ["Thunder Punch"],
+10: ["Eerie Impulse"],
+11: ["Signal Beam"],
+13: ["Thunderbolt"],
+15: ["Discharge", "Hypnosis", "Magnet Rise"],
+16: ["Electric Terrain", "Power Whip"],
+17: ["Ion Deluge"],
+18: ["Zap Cannon"]
+}
+starting_moves = Array[String](["Charge", "Spark", "Tail Glow", "Thunder Shock", "Wrap"])
+tms = Array[String](["tm_20", "tm_31", "tm_38", "tm_40", "tm_45", "tm_53", "tm_58", "tm_76", "tm_77", "tm_79", "tm_84", "tm_87", "tm_100", "tm_109", "tm_113", "tm_114", "tm_118", "tm_131", "tm_136", "tm_156", "tm_161", "tm_164", "tm_179", "tm_199", "tm_209", "tm_212", "tm_214", "tm_216", "tm_219", "tm_228", "tm_242", "tm_243", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_308", "tm_315"])

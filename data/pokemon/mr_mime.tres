@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dg284s15ew8n6"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_geuuj"]
+
+[resource]
+script = ExtResource("1_geuuj")
+dex_number = 122
+display_name = "Mr. Mime"
+id = "mr_mime"
+types = Array[int]([10, 17])
+sr = "9"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 12,
+1: 15,
+2: 8,
+3: 12,
+4: 14,
+5: 12
+}
+skills = Array[int]([4])
+senses = Array[Dictionary]([{
+"range_m": 3.0,
+"type": 2
+}])
+abilities = Array[String](["Soundproof", "Filter"])
+hidden_ability = "Technician"
+evolves_to = Array[String](["mr._rime"])
+evolution_level = 14
+evolution_points = 1
+level_moves = {
+2: ["Copycat"],
+3: ["Meditate"],
+4: ["Double Slap"],
+5: ["Mimic", "Psywave"],
+6: ["Encore"],
+7: ["Protect"],
+8: ["Light Screen", "Reflect"],
+9: ["Psybeam"],
+10: ["Substitute"],
+11: ["Recycle"],
+12: ["Trick"],
+13: ["Psychic"],
+14: ["Sucker Punch"],
+15: ["Baton Pass", "Dazzling Gleam", "Role Play", "Safeguard"],
+16: ["Teeter Dance"]
+}
+starting_moves = Array[String](["Barrier", "Confusion", "Guard Swap", "Magical Leaf", "Misty Terrain", "Pound", "Power Swap", "Quick Guard", "Wide Guard"])
+tms = Array[String](["tm_3", "tm_9", "tm_13", "tm_29", "tm_38", "tm_40", "tm_41", "tm_45", "tm_48", "tm_53", "tm_58", "tm_67", "tm_69", "tm_84", "tm_85", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_106", "tm_109", "tm_113", "tm_114", "tm_119", "tm_129", "tm_131", "tm_136", "tm_141", "tm_144", "tm_146", "tm_147", "tm_156", "tm_161", "tm_162", "tm_163", "tm_165", "tm_166", "tm_173", "tm_177", "tm_186", "tm_197", "tm_198", "tm_199", "tm_201", "tm_202", "tm_205", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_226", "tm_228", "tm_229", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_254", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_283", "tm_284", "tm_288", "tm_290", "tm_292", "tm_293", "tm_294", "tm_295", "tm_296", "tm_300", "tm_301", "tm_317", "tm_321"])
+egg_moves = Array[String](["Charm", "Confuse Ray", "Fake Out", "Future Sight", "Healing Wish", "Hypnosis", "Icy Wind", "Magic Room", "Mimic", "Nasty Plot", "Power Split", "Psychic Terrain", "Teeter Dance", "Tickle", "Trick", "Wake-Up Slap"])
+is_variant = true
+variant_data = {
+"Mr. Mime": {
+"diff": {},
+"display_name": "Mr. Mime",
+"is_default": true
+},
+"Mr. Mime de Galar": {
+"diff": {
+"Evolve": "Mr",
+"abilities": ["Vital Spirit", "Screen Cleaner"],
+"hidden_ability": "Ice Body",
+"moves_diff": {
+"egg_moves": ["Confuse Ray", "Fake Out", "Hypnosis", "Power Split", "Tickle"],
+"level_moves": {
+4: ["Confusion"],
+6: ["Ally Switch"],
+7: ["Icy Wind"],
+8: ["Double Kick"],
+10: ["Psybeam"],
+11: ["Hypnosis"],
+12: ["Mirror Coat"],
+14: ["Sucker Punch"],
+15: ["Freeze-Dry", "Psychic"],
+16: ["Teeter Dance"]
+},
+"starting_moves": ["Baton Pass", "Copycat", "Dazzling Gleam", "Encore", "Ice Shard", "Light Screen", "Mimic", "Misty Terrain", "Pound", "Protect", "Rapid Spin", "Recycle", "Reflect", "Role Play", "Safeguard"],
+"tms": ["tm_13", "tm_16", "tm_29", "tm_41", "tm_67", "tm_85", "tm_87", "tm_100", "tm_113", "tm_119", "tm_122", "tm_129", "tm_136", "tm_141", "tm_143", "tm_144", "tm_156", "tm_162", "tm_165", "tm_166", "tm_173", "tm_186", "tm_198", "tm_199", "tm_205", "tm_209", "tm_212", "tm_214", "tm_228", "tm_229", "tm_236", "tm_255", "tm_257", "tm_266", "tm_271", "tm_288", "tm_293", "tm_301", "tm_302", "tm_317"]
+},
+"types": [5, 10]
+},
+"display_name": "Mr. Mime de Galar",
+"is_default": false
+}
+}

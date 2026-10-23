@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ca17c08d0lpdu"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_0mmxe"]
+
+[resource]
+script = ExtResource("1_0mmxe")
+id = "bolt_beak"
+display_name = "Bolt Beak"
+name_en = "Bolt Beak"
+type = 3
+pp = 5
+move_time = "1 ação / reação"
+is_attack = true
+resolution = 1
+activation = 3
+description = "Você perfura o alvo com um bico eletrificado. Faça um ataque corpo a corpo em um alvo, causando 4d4 de dano elétrico em um acerto. Se a sua iniciativa for maior que a do alvo, dobre os dados de dano. Você também pode usar este Move como reação quando um Pokémon for substituído, desde que  o novo alvo surja dentro do alcance do seu deslocamento, movendo -se imediatamente até ele sem sofrer ataques de oportunidade, e desferindo o ataque assim que ele entrar em campo, com o dobro dos dados de dano (não cumulativo com o bônus da iniciativa). Ao  fazer isso, você abre mão de sua ação padrão e de movimento do próximo turno."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 5d8 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+}
+}

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c8ofvocem2b85"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_haay8"]
+
+[resource]
+script = ExtResource("1_haay8")
+dex_number = 862
+display_name = "Obstagoon"
+id = "obstagoon"
+types = Array[int]([15, 0])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 17
+hit_points = 112
+hit_dice = "d12"
+movement = {
+0: 10.5,
+2: 9.0
+}
+attributes = {
+0: 16,
+1: 18,
+2: 16,
+3: 6,
+4: 14,
+5: 12
+}
+skills = Array[int]([3, 5, 8])
+abilities = Array[String](["Reckless", "Guts"])
+hidden_ability = "Defiant"
+level_moves = {
+3: ["Snarl"],
+4: ["Headbutt"],
+5: ["Hone Claws"],
+6: ["Fury Swipes"],
+8: ["Rest"],
+10: ["Take Down"],
+12: ["Scary Face"],
+14: ["Counter"],
+15: ["Taunt"],
+16: ["Double-Edge"]
+}
+starting_moves = Array[String](["Baby-Doll Eyes", "Cross Chop", "Leer", "Lick", "Night Slash", "Obstruct", "Pin Missile", "Sand Attack", "Submission", "Switcheroo", "Tackle"])
+tms = Array[String](["tm_12", "tm_13", "tm_29", "tm_49", "tm_55", "tm_87", "tm_88", "tm_94", "tm_100", "tm_113", "tm_129", "tm_136", "tm_141", "tm_144", "tm_152", "tm_165", "tm_166", "tm_174", "tm_186", "tm_189", "tm_199", "tm_209", "tm_214", "tm_215", "tm_217", "tm_228", "tm_234", "tm_236", "tm_241", "tm_253", "tm_255", "tm_266", "tm_271", "tm_277", "tm_288", "tm_292", "tm_293", "tm_314"])
+egg_moves = Array[String](["Knock Off", "Parting Shot", "Quick Guard"])

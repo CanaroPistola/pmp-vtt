@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bdntd01a3mq77"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_7cw7n"]
+
+[resource]
+script = ExtResource("1_7cw7n")
+id = "fell_stinger"
+display_name = "Fell Stinger (Ferroada)"
+name_en = "Fell Stinger"
+name_pt = "Ferroada"
+type = 11
+pp = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+duration_is_permanent = true
+description = "Você investe contra uma criatura com um ataque de ferrão devastador. Faça um ataque corpo a corpo em uma criatura, causando 1d10 + MOVE de dano de tipo inseto em um acerto. Se este ataque fizer com que o alvo desmaie, aumente seu Ataque em 3 estágios, podendo ser acumulado em até 6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

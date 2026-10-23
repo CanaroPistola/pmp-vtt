@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dw1f3ob6ywmwt"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_clwm7"]
+
+[resource]
+script = ExtResource("1_clwm7")
+id = "psystrike"
+display_name = "Psystrike (Golpe Psíquico)"
+name_en = "Psystrike"
+name_pt = "Golpe Psíquico"
+type = 10
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "Você materializa uma poderosa onda psíquica que se choca contra uma criatura. Faça um ataque à distância, causando 2d10 + MOVE de dano psíquico em um acerto. Apesar deste Move ser um ataque à distância, seu dano é afetado pelo bônus de Defesa do alvo, e não pela Defesa Especial."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 3])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}

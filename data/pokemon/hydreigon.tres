@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cm06d7g7dhefg"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4hav3"]
+
+[resource]
+script = ExtResource("1_4hav3")
+dex_number = 635
+display_name = "Hydreigon"
+id = "hydreigon"
+types = Array[int]([15, 14])
+sr = "14"
+min_level = 10
+evolution_stage = 3
+armor_class = 17
+hit_points = 117
+hit_dice = "d12"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 18,
+1: 19,
+2: 19,
+3: 6,
+4: 16,
+5: 10
+}
+skills = Array[int]([8, 17])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 0
+}])
+abilities = Array[String](["Levitate"])
+level_moves = {
+2: ["Focus Energy"],
+3: ["Bite"],
+4: ["Headbutt"],
+6: ["Assurance", "Dragon Breath"],
+7: ["Roar"],
+9: ["Crunch"],
+10: ["Slam"],
+11: ["Dragon Pulse"],
+13: ["Work Up"],
+14: ["Dragon Rush"],
+15: ["Body Slam"],
+16: ["Nasty Plot", "Scary Face"],
+17: ["Hyper Voice"],
+18: ["Hyper Beam", "Outrage"]
+}
+starting_moves = Array[String](["Double Hit", "Dragon Rage", "Tackle", "Tri Attack"])
+tms = Array[String](["tm_2", "tm_11", "tm_12", "tm_13", "tm_19", "tm_25", "tm_28", "tm_31", "tm_35", "tm_40", "tm_45", "tm_50", "tm_52", "tm_54", "tm_58", "tm_60", "tm_62", "tm_64", "tm_65", "tm_66", "tm_72", "tm_73", "tm_74", "tm_75", "tm_83", "tm_87", "tm_91", "tm_92", "tm_95", "tm_97", "tm_99", "tm_102", "tm_103", "tm_109", "tm_113", "tm_127", "tm_129", "tm_131", "tm_135", "tm_136", "tm_137", "tm_140", "tm_149", "tm_152", "tm_178", "tm_182", "tm_186", "tm_199", "tm_201", "tm_209", "tm_212", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_227", "tm_228", "tm_233", "tm_234", "tm_236", "tm_242", "tm_243", "tm_248", "tm_253", "tm_255", "tm_261", "tm_262", "tm_265", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_275", "tm_276", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_291", "tm_293", "tm_295", "tm_296", "tm_303", "tm_305", "tm_318", "tm_321"])
+egg_moves = Array[String](["Assurance", "Astonish", "Belch", "Dark Pulse", "Double Hit", "Earth Power", "Fire Fang", "Head Smash", "Ice Fang", "Screech", "Thunder Fang"])

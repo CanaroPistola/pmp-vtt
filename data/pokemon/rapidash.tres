@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dot277v08y38v"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qnmja"]
+
+[resource]
+script = ExtResource("1_qnmja")
+dex_number = 78
+display_name = "Rapidash"
+id = "rapidash"
+types = Array[int]([1])
+sr = "11"
+min_level = 10
+evolution_stage = 2
+armor_class = 16
+hit_points = 98
+hit_dice = "d10"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 16,
+1: 18,
+2: 14,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([3])
+abilities = Array[String](["Run Away", "Flash Fire"])
+hidden_ability = "Flame Body"
+level_moves = {
+2: ["Tail Whip"],
+3: ["Ember"],
+5: ["Flame Wheel"],
+6: ["Stomp"],
+7: ["Flame Charge"],
+9: ["Fire Spin"],
+10: ["Take Down"],
+11: ["Inferno"],
+13: ["Agility"],
+14: ["Fire Blast"],
+15: ["Bounce", "Flare Blitz"]
+}
+starting_moves = Array[String](["Fury Attack", "Growl", "Megahorn", "Poison Jab", "Quick Attack"])
+tms = Array[String](["tm_9", "tm_13", "tm_26", "tm_41", "tm_45", "tm_58", "tm_70", "tm_75", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_109", "tm_113", "tm_127", "tm_131", "tm_132", "tm_136", "tm_149", "tm_158", "tm_167", "tm_177", "tm_183", "tm_185", "tm_191", "tm_199", "tm_214", "tm_216", "tm_228", "tm_235", "tm_248", "tm_252", "tm_255", "tm_257", "tm_258", "tm_270", "tm_271", "tm_276", "tm_277", "tm_289", "tm_296", "tm_315", "tm_316"])
+egg_moves = Array[String](["Ally Switch", "Captivate", "Charm", "Double Kick", "Double-Edge", "Flame Wheel", "High Horsepower", "Horn Drill", "Hypnosis", "Low Kick", "Morning Sun", "Thrash"])
+is_variant = true
+variant_data = {
+"Rapidash": {
+"diff": {},
+"display_name": "Rapidash",
+"is_default": true
+},
+"Rapidash de Galar": {
+"diff": {
+"abilities": ["Run Away", "Pastel Veil"],
+"hidden_ability": "Anticipation",
+"moves_diff": {
+"egg_moves": ["Double Kick", "Double-Edge", "Horn Drill", "Hypnosis", "Morning Sun", "Thrash"],
+"level_moves": {
+5: ["Fairy Wind"],
+7: ["Agility"],
+9: ["Psybeam"],
+10: ["Stomp"],
+12: ["Heal Pulse"],
+15: ["Dazzling Gleam", "Take Down"],
+16: ["Psychic"],
+17: ["Healing Wish"]
+},
+"starting_moves": ["Confusion", "Growl", "Megahorn", "Psycho Cut", "Quick Attack", "Tackle", "Tail Whip"],
+"tms": ["tm_13", "tm_26", "tm_41", "tm_85", "tm_87", "tm_113", "tm_136", "tm_145", "tm_162", "tm_173", "tm_177", "tm_185", "tm_199", "tm_205", "tm_206", "tm_214", "tm_228", "tm_252", "tm_255", "tm_277", "tm_301", "tm_317"]
+},
+"types": [10, 17]
+},
+"display_name": "Rapidash de Galar",
+"is_default": false
+}
+}

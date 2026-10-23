@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cm3x6xt87v43l"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_315fs"]
+
+[resource]
+script = ExtResource("1_315fs")
+dex_number = 969
+display_name = "Glimmet"
+id = "glimmet"
+types = Array[int]([12, 7])
+sr = "2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+attributes = {
+0: 10,
+1: 15,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([6, 12, 13])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 0
+}])
+abilities = Array[String](["Toxic Debris"])
+hidden_ability = "Corrosion"
+evolves_to = Array[String](["glimmora"])
+evolution_level = 12
+evolution_points = 15
+level_moves = {
+3: ["Acid Spray"],
+4: ["Ancient Power"],
+5: ["Rock Polish"],
+6: ["Stealth Rock"],
+8: ["Venoshock"],
+9: ["Sandstorm"],
+10: ["Self-Destruct"],
+11: ["Rock Slide"],
+13: ["Power Gem"],
+14: ["Acid Armor"],
+15: ["Sludge Wave"]
+}
+starting_moves = Array[String](["Harden", "Rock Throw", "Smack Down"])
+tms = Array[String](["tm_1", "tm_46", "tm_53", "tm_83", "tm_87", "tm_120", "tm_147", "tm_156", "tm_170", "tm_174", "tm_196", "tm_199", "tm_209", "tm_212", "tm_214", "tm_221", "tm_223", "tm_225", "tm_230", "tm_231", "tm_248", "tm_249", "tm_250", "tm_251", "tm_260", "tm_262", "tm_267", "tm_270", "tm_271", "tm_286", "tm_296", "tm_297", "tm_307"])
+egg_moves = Array[String](["Explosion", "Memento", "Toxic"])

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dp5iekw0hqrxw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_36am0"]
+
+[resource]
+script = ExtResource("1_36am0")
+dex_number = 896
+display_name = "Glastrier"
+id = "glastrier"
+types = Array[int]([5])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 18
+hit_points = 188
+hit_dice = "d20"
+movement = {
+0: 15.0
+}
+attributes = {
+0: 19,
+1: 12,
+2: 16,
+3: 12,
+4: 8,
+5: 12
+}
+skills = Array[int]([3, 8, 17])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 2
+}])
+abilities = Array[String](["Chilling Neigh"])
+level_moves = {
+2: ["Double Kick"],
+4: ["Avalanche"],
+6: ["Stomp"],
+8: ["Torment"],
+10: ["Mist"],
+12: ["Icicle Crash"],
+14: ["Take Down"],
+15: ["Iron Defense"],
+16: ["Taunt", "Thrash"],
+17: ["Double-Edge"],
+18: ["Swords Dance"]
+}
+starting_moves = Array[String](["Tackle", "Tail Whip"])
+tms = Array[String](["tm_12", "tm_16", "tm_22", "tm_24", "tm_25", "tm_35", "tm_43", "tm_50", "tm_51", "tm_59", "tm_83", "tm_87", "tm_113", "tm_122", "tm_128", "tm_132", "tm_136", "tm_139", "tm_143", "tm_144", "tm_147", "tm_152", "tm_174", "tm_182", "tm_186", "tm_199", "tm_214", "tm_220", "tm_228", "tm_234", "tm_248", "tm_252", "tm_253", "tm_255", "tm_256", "tm_266", "tm_270", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289", "tm_298", "tm_321"])

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://5r77rasnnor7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wdr0m"]
+
+[resource]
+script = ExtResource("1_wdr0m")
+dex_number = 673
+display_name = "Gogoat"
+id = "gogoat"
+types = Array[int]([4])
+sr = "12"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 109
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 15,
+2: 20,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Sap Sipper"])
+hidden_ability = "Grass Pelt"
+level_moves = {
+3: ["Tail Whip", "Vine Whip"],
+4: ["Leech Seed"],
+5: ["Razor Leaf"],
+6: ["Worry Seed"],
+7: ["Synthesis"],
+8: ["Take Down"],
+9: ["Bulldoze"],
+10: ["Seed Bomb"],
+12: ["Bulk Up"],
+14: ["Double-Edge"],
+15: ["Horn Leech"],
+16: ["Leaf Blade", "Milk Drink"]
+}
+starting_moves = Array[String](["Aerial Ace", "Earthquake", "Growth", "Tackle"])
+tms = Array[String](["tm_3", "tm_13", "tm_25", "tm_26", "tm_29", "tm_34", "tm_35", "tm_36", "tm_45", "tm_55", "tm_58", "tm_59", "tm_74", "tm_82", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_129", "tm_131", "tm_132", "tm_136", "tm_149", "tm_154", "tm_163", "tm_174", "tm_175", "tm_179", "tm_186", "tm_190", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_223", "tm_228", "tm_238", "tm_248", "tm_255", "tm_257", "tm_266", "tm_270", "tm_271", "tm_274", "tm_275", "tm_276", "tm_279", "tm_282", "tm_286", "tm_289", "tm_296", "tm_298", "tm_315", "tm_318", "tm_319", "tm_321"])
+egg_moves = Array[String](["Defense Curl", "Grassy Terrain", "Milk Drink", "Rollout"])

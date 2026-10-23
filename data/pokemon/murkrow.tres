@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bg2p8gkcvv0dp"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_u3bvq"]
+
+[resource]
+script = ExtResource("1_u3bvq")
+dex_number = 198
+display_name = "Murkrow"
+id = "murkrow"
+types = Array[int]([15, 9])
+sr = "2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 20
+hit_dice = "d10"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 12,
+1: 16,
+2: 12,
+3: 6,
+4: 14,
+5: 8
+}
+skills = Array[int]([5, 9])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Insomnia", "Super Luck"])
+hidden_ability = "Prankster"
+evolves_to = Array[String](["honchkrow"])
+evolution_level = 8
+evolution_points = 8
+level_moves = {
+2: ["Gust", "Pursuit"],
+4: ["Haze"],
+5: ["Wing Attack"],
+7: ["Night Shade"],
+9: ["Assurance"],
+11: ["Taunt"],
+12: ["Feint Attack"],
+14: ["Mean Look"],
+15: ["Foul Play", "Tailwind"],
+16: ["Sucker Punch"],
+17: ["Quash", "Torment"]
+}
+starting_moves = Array[String](["Astonish", "Peck"])
+tms = Array[String](["tm_2", "tm_3", "tm_6", "tm_7", "tm_13", "tm_27", "tm_38", "tm_45", "tm_46", "tm_52", "tm_54", "tm_58", "tm_59", "tm_69", "tm_72", "tm_80", "tm_83", "tm_87", "tm_90", "tm_102", "tm_106", "tm_109", "tm_113", "tm_124", "tm_127", "tm_130", "tm_131", "tm_133", "tm_136", "tm_144", "tm_152", "tm_175", "tm_178", "tm_180", "tm_181", "tm_186", "tm_199", "tm_201", "tm_202", "tm_204", "tm_208", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_234", "tm_240", "tm_246", "tm_248", "tm_253", "tm_254", "tm_255", "tm_261", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_293", "tm_295", "tm_296", "tm_303", "tm_305"])
+egg_moves = Array[String](["Assurance", "Brave Bird", "Confuse Ray", "Drill Peck", "Feather Dance", "Feint Attack", "Flatter", "Mirror Move", "Perish Song", "Psycho Shift", "Punishment", "Roost", "Screech", "Sky Attack", "Whirlwind", "Wing Attack"])

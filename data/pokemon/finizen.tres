@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d2qtjhv4wnejk"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_rclmy"]
+
+[resource]
+script = ExtResource("1_rclmy")
+dex_number = 963
+display_name = "Finizen"
+id = "finizen"
+types = Array[int]([2])
+sr = "2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 17
+movement = {
+0: 1.5,
+1: 10.5
+}
+attributes = {
+0: 12,
+1: 14,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 9])
+abilities = Array[String](["Water Veil"])
+evolves_to = Array[String](["palafin"])
+evolution_level = 13
+evolution_points = 9
+level_moves = {
+3: ["Astonish"],
+4: ["Focus Energy"],
+5: ["Aqua Jet"],
+6: ["Double Hit"],
+7: ["Dive"],
+9: ["Charm"],
+10: ["Acrobatics"],
+12: ["Encore"],
+13: ["Aqua Tail"],
+15: ["Hydro Pump", "Mist"]
+}
+starting_moves = Array[String](["Supersonic", "Water Gun"])
+tms = Array[String](["tm_2", "tm_5", "tm_22", "tm_25", "tm_41", "tm_42", "tm_56", "tm_68", "tm_81", "tm_83", "tm_87", "tm_100", "tm_124", "tm_129", "tm_135", "tm_139", "tm_144", "tm_157", "tm_199", "tm_201", "tm_209", "tm_214", "tm_248", "tm_270", "tm_275", "tm_277", "tm_282", "tm_286", "tm_311", "tm_312", "tm_321"])
+egg_moves = Array[String](["Boomburst", "Bounce", "Counter", "Haze", "Tickle"])

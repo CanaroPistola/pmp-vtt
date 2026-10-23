@@ -37,8 +37,7 @@ func setup(trainer: TrainerData) -> void:
 # ---------- Construção estática ----------
 
 func _build_sidebar() -> void:
-	for c in sidebar_vbox.get_children():
-		c.queue_free()
+	_clear(sidebar_vbox)
 	_category_buttons.clear()
 
 	# Cabeçalho fixo (não rola com as categorias)
@@ -71,8 +70,7 @@ func _build_sidebar() -> void:
 		_category_buttons.append(btn)
 
 func _build_topbar() -> void:
-	for c in top_bar.get_children():
-		c.queue_free()
+	_clear(top_bar)
 
 	var label := Label.new()
 	label.text = "Pokédólares:"
@@ -99,8 +97,7 @@ func _build_footer() -> void:
 	_refresh_footer()
 
 func _refresh_footer() -> void:
-	for c in footer.get_children():
-		c.queue_free()
+	_clear(footer)
 
 	var margin := MarginContainer.new()
 	margin.add_theme_constant_override("margin_left", 12)
@@ -148,6 +145,11 @@ func _refresh_footer() -> void:
 
 # ---------- Refresh dinâmico ----------
 
+func _clear(node: Node) -> void:
+	for c in node.get_children():
+		c.queue_free()
+
+
 func _refresh() -> void:
 	_update_pokedollars_field()
 	_update_category_highlight()
@@ -166,70 +168,18 @@ func _update_category_highlight() -> void:
 		btn.modulate = Color(1, 1, 1) if cat_id == _active_category else Color(0.7, 0.7, 0.7)
 
 func _rebuild_items_grid() -> void:
-	for c in items_grid.get_children():
-		c.queue_free()
+	_clear(items_grid)
 
 	var ids: Array = ItemData.get_ids_by_category(_active_category)
 
 	# Sempre filtra só pelos que o jogador tem
 	for id in ids:
 		var qty := data.get_item_quantity(id)
-		if qty <= 0:
-			continue
-		var slot := _make_item_slot(id, qty)
-		items_grid.add_child(slot)
+		if qty > 0:
+			items_grid.add_child(_make_item_slot(id, qty))
 
 func _make_item_slot(id: String, qty: int) -> Button:
-	var btn := Button.new()
-	btn.custom_minimum_size = Vector2(100, 110)
-	btn.toggle_mode = false
-	btn.pressed.connect(_on_item_pressed.bind(id))
-	btn.tooltip_text = ItemData.get_description(id)
-
-	# Texto do próprio Button — o Godot cuida do wrap e do alinhamento.
-	btn.text = ItemData.get_display_name(id)
-	btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	btn.alignment = HORIZONTAL_ALIGNMENT_CENTER
-	btn.vertical_icon_alignment = VERTICAL_ALIGNMENT_CENTER
-	btn.add_theme_font_size_override("font_size", 11)
-
-	# VBox só para o ícone (topo) e a quantidade (rodapé).
-	# Ele NÃO captura o texto do Button, então não conflita.
-	var overlay := VBoxContainer.new()
-	overlay.name = "Overlay"
-	overlay.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	overlay.add_theme_constant_override("separation", 0)
-	overlay.offset_top = 6
-	overlay.offset_bottom = -6
-	overlay.offset_left = 4
-	overlay.offset_right = -4
-	btn.add_child(overlay)
-
-	# Ícone no topo
-	var icon := ColorRect.new()
-	icon.custom_minimum_size = Vector2(32, 32)
-	icon.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
-	icon.color = Color(0.3, 0.3, 0.3)
-	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	overlay.add_child(icon)
-
-	# Espaçador que empurra o qty pro rodapé
-	var spacer := Control.new()
-	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	spacer.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	overlay.add_child(spacer)
-
-	# Quantidade no rodapé
-	var qty_label := Label.new()
-	qty_label.text = "x%d" % qty
-	qty_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	qty_label.add_theme_font_size_override("font_size", 11)
-	qty_label.modulate = Color(0.8, 0.8, 0.8)
-	qty_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	overlay.add_child(qty_label)
-
-	return btn
+	return ItemSlot.make(id, "x%d" % qty, Color(0.8, 0.8, 0.8), _on_item_pressed.bind(id))
 
 # ---------- Handlers ----------
 

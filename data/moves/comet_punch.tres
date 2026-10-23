@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cypqqloc6256x"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8yvs5"]
+
+[resource]
+script = ExtResource("1_8yvs5")
+id = "comet_punch"
+display_name = "Comet Punch (Soco de Cometa)"
+name_en = "Comet Punch"
+name_pt = "Soco de Cometa"
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você desfere uma rajada de socos extremamente rápida. Faça um ataque corpo a corpo -2 em uma criatura, causando 1d4 + MOVE de dano normal em um acerto. Em um acerto, após isso, role um d8 e compare o resultado com a tabela abaixo para determinar a quantidade de golpes. Para cada golpe adicional, você pode imediatamente realizar um novo ataque contra o mesmo alvo com acerto garantido, causando 1d4 + MOVE de dano normal. Cada golpe extra deve rolar separadamente 1d20 para verificar chance de crítico. Confira a tabela no livro."
+scaling_text = "O dado de dano para esse Move muda para 1d6 no nível 10 e 1d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+move_power_modifier = -2
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+}
+}

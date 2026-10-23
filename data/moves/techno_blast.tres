@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://y25gcbqqmg8y"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_l0o2o"]
+
+[resource]
+script = ExtResource("1_l0o2o")
+id = "techno_blast"
+display_name = "Techno Blast (Explosão Técnica)"
+name_en = "Techno Blast"
+name_pt = "Explosão Técnica"
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 4
+range_distance = 24.0
+description = "Você dispara um poderoso feixe de luz pura. A linha tem 24 metros de comprimento e  (1,5 metros) de largura, e todas as criaturas pegas na explosão devem fazer um teste de resistência de DES contra sua CD de Move, sofrendo 3d8 + MOVE de dano em caso de falha, ou metade disso em caso de sucesso. O tipo de dano depende da Drive que o usuário segura. (Nenhum: Normal / Burn Drive: Fogo / Chill Drive: Gelo / Douse Drive: Água / Shock Drive: Elétrico)"
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Pessoal (linha de 24 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}

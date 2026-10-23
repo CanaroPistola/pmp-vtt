@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cdycb4ipbsif"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_6hcpa"]
+
+[resource]
+script = ExtResource("1_6hcpa")
+id = "aqua_ring"
+display_name = "Aqua Ring (Aqua Arco)"
+name_en = "Aqua Ring"
+name_pt = "Aqua Arco"
+type = 2
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você se cerca com um véu de água curativa. Ao final de cada um de seus turnos, recupere um número de pontos de vida igual ao seu bônus de proficiência. Se usado fora de combate, você cura uma quantidade de vida igual a 5 vezes o seu bônus de proficiência."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"

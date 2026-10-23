@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://oa6ogp64gd6b"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_0mkpa"]
+
+[resource]
+script = ExtResource("1_0mkpa")
+id = "swift"
+display_name = "Swift (Estrela Cadente)"
+name_en = "Swift"
+name_pt = "Estrela Cadente"
+move_time = "1 ação"
+range_category = 2
+range_distance = 18.0
+description = "Você dispara até 2 projéteis em qualquer criatura que possa ver dentro do alcance, com acerto garantido. Cada criatura só pode ser atingida por 1 projétil por vez, causando 2d6 + MOVE de dano normal. Role um d20 para cada golpe para determinar chance de crítico e outros efeitos."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bmup7ky74ti7s"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_u6662"]
+
+[resource]
+script = ExtResource("1_u6662")
+id = "happy_hour"
+display_name = "Happy Hour (Happy Hour)"
+name_en = "Happy Hour"
+name_pt = "Happy Hour"
+pp = 15
+move_time = "1 ação"
+description = "Você celebra sua vitória iminente com uma pequena dança, instigando pessoas próximas. É um velho costume popular jogar moedas ao chão após ver alguém efetuar Happy Hour em batalha. Caso você esteja batalhando em público, o dinheiro do prêmio concedido no final da batalha é dobrado (ou determinado de acordo com a vontade do Mestre). Because im happy - Dante... Sim isso é um easter egg"
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"

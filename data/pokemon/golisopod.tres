@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cyceyawjs5yud"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_g3vd8"]
+
+[resource]
+script = ExtResource("1_g3vd8")
+dex_number = 768
+display_name = "Golisopod"
+id = "golisopod"
+types = Array[int]([11, 2])
+sr = "9"
+min_level = 5
+evolution_stage = 2
+armor_class = 18
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0,
+1: 10.5
+}
+attributes = {
+0: 17,
+1: 14,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 6])
+abilities = Array[String](["Emergency Exit"])
+level_moves = {
+2: ["Fury Cutter"],
+3: ["Rock Smash"],
+4: ["Bug Bite", "Mud Shot"],
+5: ["Spite"],
+6: ["Swords Dance"],
+7: ["Slash"],
+9: ["Razor Shell"],
+11: ["Sucker Punch"],
+12: ["Iron Defense"],
+14: ["Pin Missile"],
+15: ["Liquidation"]
+}
+starting_moves = Array[String](["First Impression", "Sand Attack", "Struggle Bug"])
+tms = Array[String](["tm_3", "tm_12", "tm_13", "tm_22", "tm_29", "tm_32", "tm_34", "tm_45", "tm_52", "tm_57", "tm_58", "tm_70", "tm_71", "tm_82", "tm_87", "tm_89", "tm_100", "tm_103", "tm_108", "tm_109", "tm_113", "tm_122", "tm_131", "tm_136", "tm_139", "tm_144", "tm_147", "tm_148", "tm_150", "tm_151", "tm_155", "tm_157", "tm_174", "tm_184", "tm_186", "tm_189", "tm_191", "tm_199", "tm_201", "tm_209", "tm_210", "tm_214", "tm_216", "tm_223", "tm_225", "tm_228", "tm_232", "tm_236", "tm_241", "tm_245", "tm_248", "tm_249", "tm_250", "tm_253", "tm_255", "tm_261", "tm_270", "tm_275", "tm_276", "tm_277", "tm_278", "tm_283", "tm_289", "tm_296", "tm_307", "tm_311", "tm_312", "tm_320"])
+egg_moves = Array[String](["Aqua Jet", "Harden", "Metal Claw", "Rollout", "Spikes", "Wide Guard"])

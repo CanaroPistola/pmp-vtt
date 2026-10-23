@@ -1,0 +1,433 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://w36oryf64k1p"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_t8w3x"]
+
+[resource]
+script = ExtResource("1_t8w3x")
+dex_number = 493
+display_name = "Arceus"
+id = "arceus"
+types = Array[int]([0])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 25
+hit_points = 543
+hit_dice = "d20"
+movement = {
+0: 24.0,
+1: 24.0
+}
+attributes = {
+0: 25,
+1: 25,
+2: 25,
+3: 30,
+4: 30,
+5: 25
+}
+skills = Array[int]([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17])
+senses = Array[Dictionary]([{
+"range_m": 60.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Multitype"])
+level_moves = {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Healing Wish", "Refresh"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+}
+starting_moves = Array[String](["Cosmic Power", "Natural Gift", "Punishment", "Seismic Toss"])
+tms = Array[String](["tm_1", "tm_3", "tm_5", "tm_7", "tm_11", "tm_14", "tm_16", "tm_22", "tm_24", "tm_25", "tm_29", "tm_33", "tm_34", "tm_35", "tm_36", "tm_38", "tm_40", "tm_42", "tm_45", "tm_46", "tm_52", "tm_53", "tm_54", "tm_58", "tm_59", "tm_60", "tm_63", "tm_64", "tm_65", "tm_66", "tm_69", "tm_73", "tm_74", "tm_75", "tm_77", "tm_83", "tm_84", "tm_87", "tm_91", "tm_97", "tm_98", "tm_99", "tm_102", "tm_103", "tm_106", "tm_109", "tm_110", "tm_112", "tm_113", "tm_114", "tm_117", "tm_118", "tm_120", "tm_122", "tm_127", "tm_128", "tm_130", "tm_131", "tm_133", "tm_135", "tm_136", "tm_137", "tm_139", "tm_144", "tm_145", "tm_147", "tm_148", "tm_149", "tm_151", "tm_153", "tm_156", "tm_157", "tm_161", "tm_163", "tm_170", "tm_173", "tm_177", "tm_181", "tm_182", "tm_183", "tm_186", "tm_188", "tm_191", "tm_196", "tm_199", "tm_201", "tm_202", "tm_205", "tm_207", "tm_208", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_220", "tm_223", "tm_224", "tm_225", "tm_228", "tm_229", "tm_231", "tm_234", "tm_235", "tm_240", "tm_241", "tm_242", "tm_243", "tm_248", "tm_249", "tm_253", "tm_255", "tm_257", "tm_262", "tm_263", "tm_266", "tm_267", "tm_268", "tm_270", "tm_271", "tm_273", "tm_275", "tm_276", "tm_277", "tm_278", "tm_281", "tm_282", "tm_283", "tm_284", "tm_286", "tm_290", "tm_293", "tm_294", "tm_296", "tm_298", "tm_300", "tm_301", "tm_311", "tm_312", "tm_315", "tm_316", "tm_318", "tm_320", "tm_321"])
+is_variant = true
+variant_data = {
+"Aço": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [16]
+},
+"display_name": "Arceus (Aço)",
+"is_default": false
+},
+"Dragão": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [14]
+},
+"display_name": "Arceus (Dragão)",
+"is_default": false
+},
+"Elétrico": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [3]
+},
+"display_name": "Arceus (Elétrico)",
+"is_default": false
+},
+"Fada": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [17]
+},
+"display_name": "Arceus (Fada)",
+"is_default": false
+},
+"Fantasma": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [13]
+},
+"display_name": "Arceus (Fantasma)",
+"is_default": false
+},
+"Fogo": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [1]
+},
+"display_name": "Arceus (Fogo)",
+"is_default": false
+},
+"Gelo": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [5]
+},
+"display_name": "Arceus (Gelo)",
+"is_default": false
+},
+"Grama": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [4]
+},
+"display_name": "Arceus (Grama)",
+"is_default": false
+},
+"Inseto": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [11]
+},
+"display_name": "Arceus (Inseto)",
+"is_default": false
+},
+"Lutador": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [6]
+},
+"display_name": "Arceus (Lutador)",
+"is_default": false
+},
+"Normal": {
+"diff": {},
+"display_name": "Arceus (Normal)",
+"is_default": true
+},
+"Pedra": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [12]
+},
+"display_name": "Arceus (Pedra)",
+"is_default": false
+},
+"Psíquico": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [10]
+},
+"display_name": "Arceus (Psíquico)",
+"is_default": false
+},
+"Sombrio": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [15]
+},
+"display_name": "Arceus (Sombrio)",
+"is_default": false
+},
+"Terra": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [8]
+},
+"display_name": "Arceus (Terra)",
+"is_default": false
+},
+"Venenoso": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [7]
+},
+"display_name": "Arceus (Venenoso)",
+"is_default": false
+},
+"Voador": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [9]
+},
+"display_name": "Arceus (Voador)",
+"is_default": false
+},
+"Água": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Gravity"],
+7: ["Earth Power"],
+10: ["Hyper Voice"],
+14: ["Extreme Speed"],
+15: ["Refresh", "Healing Wish"],
+16: ["Future Sight"],
+17: ["Recover"],
+18: ["Hyper Beam"],
+19: ["Perish Song"],
+20: ["Judgment"]
+},
+"starting_moves": ["Seismic Toss", "Cosmic Power", "Natural Gift", "Punishment"]
+},
+"types": [2]
+},
+"display_name": "Arceus (Água)",
+"is_default": false
+}
+}

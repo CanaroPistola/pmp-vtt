@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bquah0fe8kjhj"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_k0i6l"]
+
+[resource]
+script = ExtResource("1_k0i6l")
+dex_number = 891
+display_name = "Kubfu"
+id = "kubfu"
+types = Array[int]([6])
+sr = "6"
+min_level = 5
+evolution_stage = 1
+armor_class = 14
+hit_points = 45
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 15,
+1: 14,
+2: 10,
+3: 8,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 3, 9])
+abilities = Array[String](["Inner Focus"])
+evolves_to = Array[String](["urshifu"])
+evolution_level = 11
+evolution_points = 12
+level_moves = {
+2: ["Endure"],
+3: ["Focus Energy"],
+4: ["Aerial Ace"],
+6: ["Scary Face"],
+7: ["Headbutt"],
+8: ["Brick Break"],
+10: ["Detect"],
+11: ["Bulk Up"],
+12: ["Iron Head"],
+14: ["Dynamic Punch"],
+15: ["Close Combat", "Counter"],
+16: ["Focus Punch"]
+}
+starting_moves = Array[String](["Leer", "Rock Smash"])
+tms = Array[String](["tm_2", "tm_3", "tm_13", "tm_25", "tm_29", "tm_34", "tm_43", "tm_44", "tm_55", "tm_59", "tm_83", "tm_87", "tm_94", "tm_100", "tm_105", "tm_129", "tm_141", "tm_148", "tm_158", "tm_159", "tm_165", "tm_166", "tm_168", "tm_199", "tm_214", "tm_215", "tm_217", "tm_218", "tm_228", "tm_234", "tm_248", "tm_255", "tm_270", "tm_278", "tm_282", "tm_286", "tm_292", "tm_303", "tm_321"])

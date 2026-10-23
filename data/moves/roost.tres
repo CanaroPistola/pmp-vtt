@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bwo4rkkuf3d4s"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_uvomh"]
+
+[resource]
+script = ExtResource("1_uvomh")
+id = "roost"
+display_name = "Roost"
+name_en = "Roost"
+type = 9
+pp = 3
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_rounds = 1
+description = "Você pousa no chão para descansar seu corpo. Quando ativado, sua velocidade de voo diminui para zero, e você perde seu tipo voador (caso tenha) até o início de seu próximo turno. Ao fazer isso, recupere imediatamente 2d6 + MOVE pontos de vida. Observações: Se um Pokémon do tipo Voador puro usar Roost com sucesso, ele se tornará do tipo Normal. Se um Pokémon do tipo fogo/Voador perdeu seu tipo fogo devido a Burn Up, ao usar Roost ele se tornará sem tipo."
+scaling_text = "Os dados de cura para este Move mudam para 2d10 no nível 5, 4d8 no nível 10 e 4d12 no nível 17."
+range_text_raw = "Pessoal"
+duration_text_raw = "1 rodada"
+role = 1
+move_power_attributes = Array[int]([2])
+has_healing = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["heal"])

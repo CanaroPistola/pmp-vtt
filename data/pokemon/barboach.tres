@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dl6quh47xvrw5"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ac625"]
+
+[resource]
+script = ExtResource("1_ac625")
+dex_number = 339
+display_name = "Barboach"
+id = "barboach"
+types = Array[int]([2, 8])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 17
+movement = {
+0: 1.5,
+1: 9.0
+}
+attributes = {
+0: 10,
+1: 13,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([10, 13])
+abilities = Array[String](["Oblivious", "Anticipation"])
+hidden_ability = "Hydration"
+evolves_to = Array[String](["whiscash"])
+evolution_level = 10
+evolution_points = 10
+level_moves = {
+2: ["Mud Sport", "Water Sport"],
+3: ["Water Gun"],
+5: ["Amnesia", "Mud Bomb"],
+6: ["Water Pulse"],
+7: ["Magnitude"],
+9: ["Rest", "Snore"],
+10: ["Aqua Tail"],
+11: ["Earthquake"],
+12: ["Muddy Water"],
+13: ["Future Sight"],
+15: ["Fissure"]
+}
+starting_moves = Array[String](["Mud-Slap"])
+tms = Array[String](["tm_10", "tm_11", "tm_13", "tm_22", "tm_26", "tm_35", "tm_42", "tm_45", "tm_57", "tm_58", "tm_59", "tm_64", "tm_73", "tm_74", "tm_83", "tm_87", "tm_109", "tm_110", "tm_122", "tm_129", "tm_131", "tm_132", "tm_135", "tm_139", "tm_144", "tm_157", "tm_174", "tm_175", "tm_176", "tm_182", "tm_199", "tm_209", "tm_214", "tm_216", "tm_223", "tm_225", "tm_228", "tm_231", "tm_232", "tm_248", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_275", "tm_276", "tm_277", "tm_282", "tm_286", "tm_296", "tm_311", "tm_312", "tm_314", "tm_321"])
+egg_moves = Array[String](["Dragon Dance", "Earth Power", "Flail", "Hydro Pump", "Mud Shot", "Muddy Water", "Spark", "Take Down", "Thrash", "Whirlpool"])

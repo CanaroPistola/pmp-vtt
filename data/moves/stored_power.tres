@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bh1g3u2lwih4t"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_cyvka"]
+
+[resource]
+script = ExtResource("1_cyvka")
+id = "stored_power"
+display_name = "Stored Power (Poder Armazenado)"
+name_en = "Stored Power"
+name_pt = "Poder Armazenado"
+type = 10
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "Você reúne a energia acumulada em seu corpo e a dispara contra o alvo em um projétil concentrado. Faça um ataque à distância, causando 1d4 + MOVE de dano psíquico em um acerto. Para cada estágio positivo que você tiver no aumento de qualquer Mudança de Status, acrescente mais um dado de dano."
+scaling_text = "O dado de dano para este Move muda para 1d6 no nível 5, 1d8 no nível 10 e 1d10 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

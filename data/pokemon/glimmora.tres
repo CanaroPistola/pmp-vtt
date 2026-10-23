@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cbyj8kr6u0fam"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ina81"]
+
+[resource]
+script = ExtResource("1_ina81")
+dex_number = 970
+display_name = "Glimmora"
+id = "glimmora"
+types = Array[int]([12, 7])
+sr = "12"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 72
+hit_dice = "d10"
+attributes = {
+0: 16,
+1: 17,
+2: 18,
+3: 6,
+4: 12,
+5: 11
+}
+skills = Array[int]([6, 12, 13])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Toxic Debris"])
+hidden_ability = "Corrosion"
+level_moves = {
+3: ["Acid Spray"],
+4: ["Ancient Power"],
+5: ["Rock Polish"],
+6: ["Stealth Rock"],
+8: ["Venoshock"],
+9: ["Sandstorm"],
+10: ["Self-Destruct"],
+11: ["Rock Slide"],
+13: ["Power Gem"],
+15: ["Acid Armor", "Sludge Wave"]
+}
+starting_moves = Array[String](["Harden", "Mortal Spin", "Rock Throw", "Smack Down", "Spiky Shield", "Toxic Spikes"])
+tms = Array[String](["tm_1", "tm_46", "tm_53", "tm_73", "tm_83", "tm_84", "tm_87", "tm_99", "tm_113", "tm_120", "tm_136", "tm_147", "tm_156", "tm_170", "tm_174", "tm_196", "tm_199", "tm_209", "tm_212", "tm_214", "tm_221", "tm_223", "tm_225", "tm_230", "tm_231", "tm_248", "tm_249", "tm_250", "tm_251", "tm_257", "tm_260", "tm_262", "tm_267", "tm_270", "tm_271", "tm_286", "tm_296", "tm_297", "tm_307"])
+egg_moves = Array[String](["Explosion", "Memento", "Toxic"])

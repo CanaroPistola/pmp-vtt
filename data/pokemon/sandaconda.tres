@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://fy8jbku0xn8d"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_o3igt"]
+
+[resource]
+script = ExtResource("1_o3igt")
+dex_number = 844
+display_name = "Sandaconda"
+id = "sandaconda"
+types = Array[int]([8])
+sr = "9"
+min_level = 8
+evolution_stage = 2
+armor_class = 17
+hit_points = 72
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 14,
+1: 16,
+2: 14,
+3: 8,
+4: 12,
+5: 10
+}
+skills = Array[int]([6, 8, 17])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 1
+}, {
+"range_m": 10.5,
+"type": 0
+}, {
+"range_m": 3.0,
+"type": 3
+}])
+abilities = Array[String](["Sand Spit", "Shed Skin"])
+hidden_ability = "Sand Veil"
+level_moves = {
+5: ["Bulldoze"],
+7: ["Headbutt"],
+9: ["Glare"],
+10: ["Dig"],
+12: ["Sandstorm"],
+14: ["Slam"],
+15: ["Coil"],
+16: ["Sand Tomb"]
+}
+starting_moves = Array[String](["Brutal Swing", "Minimize", "Sand Attack", "Wrap"])
+tms = Array[String](["tm_13", "tm_24", "tm_25", "tm_31", "tm_35", "tm_55", "tm_70", "tm_73", "tm_74", "tm_82", "tm_83", "tm_87", "tm_92", "tm_113", "tm_132", "tm_133", "tm_136", "tm_147", "tm_148", "tm_174", "tm_175", "tm_182", "tm_192", "tm_199", "tm_214", "tm_221", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_233", "tm_234", "tm_235", "tm_236", "tm_245", "tm_248", "tm_255", "tm_262", "tm_267", "tm_270", "tm_282", "tm_286", "tm_291", "tm_321"])
+egg_moves = Array[String](["Belch", "Dragon Rush", "Last Resort", "Mud-Slap", "Poison Tail"])

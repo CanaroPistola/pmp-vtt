@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dmhel6lx6f0ys"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_37pr0"]
+
+[resource]
+script = ExtResource("1_37pr0")
+dex_number = 33
+display_name = "Nidorino"
+id = "nidorino"
+types = Array[int]([7])
+sr = "4"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 45
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 13,
+1: 14,
+2: 12,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([13])
+abilities = Array[String](["Poison Point", "Rivalry"])
+hidden_ability = "Hustle"
+evolves_to = Array[String](["nidoking"])
+evolution_level = 5
+evolution_points = 12
+level_moves = {
+3: ["Double Kick", "Focus Energy"],
+5: ["Poison Sting"],
+7: ["Fury Attack"],
+8: ["Horn Attack"],
+10: ["Helping Hand"],
+12: ["Toxic Spikes"],
+13: ["Flatter"],
+15: ["Captivate", "Poison Jab", "Toxic"],
+16: ["Horn Drill"],
+18: ["Earth Power"]
+}
+starting_moves = Array[String](["Leer", "Peck"])
+tms = Array[String](["tm_13", "tm_19", "tm_22", "tm_45", "tm_55", "tm_58", "tm_70", "tm_75", "tm_87", "tm_109", "tm_129", "tm_131", "tm_139", "tm_149", "tm_191", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_241", "tm_242", "tm_248", "tm_249", "tm_252", "tm_255", "tm_266", "tm_270", "tm_271", "tm_272", "tm_276", "tm_288", "tm_290", "tm_294", "tm_296", "tm_307", "tm_311"])
+egg_moves = Array[String](["Amnesia", "Beat Up", "Chip Away", "Confusion", "Counter", "Disable", "Endure", "Head Smash", "Horn Drill", "Iron Tail", "Poison Tail", "Sucker Punch", "Supersonic", "Take Down", "Thrash", "Venom Drench"])

@@ -1,0 +1,69 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dgb5ylq5wt2f4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4bmvx"]
+
+[resource]
+script = ExtResource("1_4bmvx")
+dex_number = 902
+display_name = "Basculegion"
+id = "basculegion"
+types = Array[int]([2, 13])
+sr = "11"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 88
+hit_dice = "d12"
+movement = {
+1: 12.0
+}
+attributes = {
+0: 20,
+1: 18,
+2: 15,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([0, 3, 8, 17])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Swift Swim", "Adaptability"])
+hidden_ability = "Mold Breaker"
+level_moves = {
+2: ["Tackle"],
+3: ["Flail"],
+4: ["Aqua Jet"],
+6: ["Bite"],
+7: ["Scary Face"],
+8: ["Headbutt"],
+10: ["Soak"],
+11: ["Crunch"],
+12: ["Take Down"],
+14: ["Uproar"],
+15: ["Thrash", "Wave Crash"],
+16: ["Double-Edge", "Head Smash"]
+}
+starting_moves = Array[String](["Phantom Force", "Shadow Ball", "Tail Whip", "Water Gun"])
+tms = Array[String](["tm_5", "tm_11", "tm_22", "tm_38", "tm_42", "tm_46", "tm_50", "tm_59", "tm_82", "tm_83", "tm_87", "tm_101", "tm_113", "tm_130", "tm_135", "tm_136", "tm_139", "tm_140", "tm_144", "tm_157", "tm_174", "tm_176", "tm_180", "tm_181", "tm_182", "tm_184", "tm_188", "tm_199", "tm_202", "tm_203", "tm_209", "tm_214", "tm_233", "tm_234", "tm_240", "tm_248", "tm_256", "tm_261", "tm_270", "tm_275", "tm_277", "tm_282", "tm_286", "tm_305", "tm_311", "tm_312", "tm_314", "tm_321"])
+egg_moves = Array[String](["Endeavor", "Last Respects"])
+is_variant = true
+variant_data = {
+"Basculegion Fêmea": {
+"diff": {
+"attributes": {
+"STR": 16,
+"WIS": 16
+}
+},
+"display_name": "Basculegion Fêmea",
+"is_default": false
+},
+"Basculegion Macho": {
+"diff": {},
+"display_name": "Basculegion Macho",
+"is_default": true
+}
+}

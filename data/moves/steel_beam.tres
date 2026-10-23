@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cg21yg0i5g55i"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_d8ijs"]
+
+[resource]
+script = ExtResource("1_d8ijs")
+id = "steel_beam"
+display_name = "Steel Beam"
+name_en = "Steel Beam"
+type = 16
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 4
+range_distance = 24.0
+description = "Você dispara um feixe intenso de energia metálica acumulada em todo o seu corpo em uma linha de de 100 pés (30 metros), com 5 pés (1,5 metros) de largura. Qualquer criatura pega na linha deve ter sucesso em um teste de DES contra sua CD de Move -1, sofrendo 3d10 + MOVE de dano de aço em caso de falha e metade disso em caso de sucesso. Após ativar este Move, você recebe um dano de recuo sem tipo igual ao dano máximo causado, como se tivesse falhado no teste."
+scaling_text = "Os dados de dano para este Move  mudam para 4d10 no nível 5, 7d8 no nível 10 e 7d10 no nível 17."
+range_text_raw = "Pessoal (linha de 24 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 7,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 7,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["recoil"])

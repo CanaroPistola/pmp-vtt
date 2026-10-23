@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://llbhw1kjwu5n"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_8dyqt"]
+
+[resource]
+script = ExtResource("1_8dyqt")
+dex_number = 707
+display_name = "Klefki"
+id = "klefki"
+types = Array[int]([16, 17])
+sr = "8"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 48
+hit_dice = "d8"
+attributes = {
+0: 15,
+1: 15,
+2: 15,
+3: 6,
+4: 12,
+5: 14
+}
+skills = Array[int]([5])
+abilities = Array[String](["Prankster"])
+hidden_ability = "Magician"
+level_moves = {
+2: ["Fairy Wind"],
+3: ["Astonish"],
+4: ["Metal Sound"],
+5: ["Spikes"],
+6: ["Draining Kiss"],
+8: ["Crafty Shield"],
+9: ["Foul Play"],
+11: ["Torment"],
+12: ["Flash Cannon", "Imprison", "Mirror Shot"],
+14: ["Recycle"],
+15: ["Heal Block", "Magic Room", "Play Rough"],
+16: ["Last Resort"]
+}
+starting_moves = Array[String](["Fairy Lock", "Tackle"])
+tms = Array[String](["tm_13", "tm_38", "tm_45", "tm_48", "tm_53", "tm_54", "tm_58", "tm_68", "tm_83", "tm_87", "tm_99", "tm_106", "tm_109", "tm_113", "tm_131", "tm_136", "tm_145", "tm_147", "tm_153", "tm_156", "tm_161", "tm_162", "tm_164", "tm_169", "tm_173", "tm_190", "tm_199", "tm_201", "tm_202", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_228", "tm_229", "tm_231", "tm_245", "tm_248", "tm_255", "tm_260", "tm_263", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_286", "tm_288", "tm_293", "tm_295", "tm_296", "tm_301"])
+egg_moves = Array[String](["Iron Defense", "Lock-On", "Magnet Rise", "Switcheroo", "Thief"])

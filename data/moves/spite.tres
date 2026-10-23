@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dy8qh48eq5lpr"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_uivef"]
+
+[resource]
+script = ExtResource("1_uivef")
+id = "spite"
+display_name = "Spite"
+name_en = "Spite"
+type = 13
+pp = 5
+move_time = "1 reação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+activation = 1
+range_category = 2
+range_distance = 9.0
+description = "Você libera uma energia rancorosa sobre o oponente. Quando for atingido por um Move, você pode gastar sua reação para tentar drenar os PP do atacante, desde que ele esteja d entro do alcance. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do atacante. Em um resultado maior ou igual, role 1d4. Os PP do Move que atingiu você são reduzidos pelo valor rolado. Caso o efeito seja aplicado, você abre mão de sua ação padrão no próximo turno. Observações: Este Move ignora Substitute."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([4])

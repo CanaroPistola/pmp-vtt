@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cw0pg7wyaekoc"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_3uqjt"]
+
+[resource]
+script = ExtResource("1_3uqjt")
+dex_number = 420
+display_name = "Cherubi"
+id = "cherubi"
+types = Array[int]([4])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 17
+movement = {
+0: 4.5
+}
+attributes = {
+0: 11,
+1: 10,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Chlorophyll"])
+evolves_to = Array[String](["cherrim"])
+evolution_level = 9
+evolution_points = 15
+level_moves = {
+2: ["Leafage"],
+3: ["Growth"],
+4: ["Leech Seed"],
+5: ["Helping Hand"],
+7: ["Magical Leaf"],
+8: ["Sunny Day"],
+10: ["Worry Seed"],
+11: ["Take Down"],
+13: ["Solar Beam"],
+14: ["Lucky Chant"],
+15: ["Petal Blizzard"]
+}
+starting_moves = Array[String](["Morning Sun", "Tackle"])
+tms = Array[String](["tm_13", "tm_36", "tm_45", "tm_53", "tm_58", "tm_68", "tm_84", "tm_87", "tm_109", "tm_112", "tm_114", "tm_116", "tm_117", "tm_129", "tm_131", "tm_163", "tm_179", "tm_199", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_296", "tm_313", "tm_319"])
+egg_moves = Array[String](["Aromatherapy", "Defense Curl", "Flower Shield", "Grass Whistle", "Grassy Terrain", "Heal Pulse", "Healing Wish", "Natural Gift", "Nature Power", "Razor Leaf", "Rollout", "Seed Bomb", "Sweet Scent", "Tickle", "Weather Ball"])

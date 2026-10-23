@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bsdnbnqwve28c"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ugn2s"]
+
+[resource]
+script = ExtResource("1_ugn2s")
+id = "charge"
+display_name = "Charge (Carga)"
+name_en = "Charge"
+name_pt = "Carga"
+type = 3
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Eletricidade percorre seu corpo, se preparando para seu próximo ataque. Você aumenta sua Defesa Especial em 1 estágio, podendo ser acumulado em até 6 estágios. Além disso, até o fim de seu próximo turno, se você usar um Move danoso do tipo elétrico, dobre os dados de dano dele."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

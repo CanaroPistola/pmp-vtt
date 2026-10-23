@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c75lkxrtm1kxw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_jxtdx"]
+
+[resource]
+script = ExtResource("1_jxtdx")
+dex_number = 882
+display_name = "Dracovish"
+id = "dracovish"
+types = Array[int]([2, 14])
+sr = "11"
+min_level = 8
+evolution_stage = 1
+armor_class = 16
+hit_points = 80
+hit_dice = "d12"
+movement = {
+0: 9.0,
+1: 7.5
+}
+attributes = {
+0: 20,
+1: 14,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 7, 17])
+abilities = Array[String](["Water Absorb", "Strong Jaw"])
+hidden_ability = "Sand Rush"
+level_moves = {
+3: ["Protect"],
+5: ["Brutal Swing"],
+7: ["Ancient Power"],
+10: ["Bite"],
+12: ["Dragon Breath"],
+14: ["Stomp"],
+15: ["Super Fang"],
+16: ["Crunch"],
+17: ["Dragon Pulse", "Fishious Rend"],
+18: ["Dragon Rush"]
+}
+starting_moves = Array[String](["Tackle", "Water Gun"])
+tms = Array[String](["tm_30", "tm_31", "tm_35", "tm_57", "tm_60", "tm_87", "tm_113", "tm_136", "tm_140", "tm_165", "tm_170", "tm_199", "tm_209", "tm_214", "tm_221", "tm_223", "tm_225", "tm_228", "tm_255", "tm_266", "tm_314"])

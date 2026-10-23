@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c8eihnfsof6si"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_r4an0"]
+
+[resource]
+script = ExtResource("1_r4an0")
+dex_number = 430
+display_name = "Honchkrow"
+id = "honchkrow"
+types = Array[int]([15, 9])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 14
+hit_points = 89
+hit_dice = "d12"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 16,
+1: 17,
+2: 15,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([6, 9])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 0
+}])
+abilities = Array[String](["Insomnia", "Super Luck"])
+hidden_ability = "Moxie"
+level_moves = {
+9: ["Swagger"],
+12: ["Nasty Plot"],
+15: ["Foul Play"],
+16: ["Night Slash"],
+17: ["Comeuppance", "Quash"],
+18: ["Dark Pulse"]
+}
+starting_moves = Array[String](["Astonish", "Haze", "Pursuit", "Sucker Punch", "Wing Attack"])
+tms = Array[String](["tm_2", "tm_3", "tm_6", "tm_7", "tm_13", "tm_27", "tm_38", "tm_42", "tm_45", "tm_46", "tm_52", "tm_54", "tm_58", "tm_59", "tm_69", "tm_72", "tm_80", "tm_82", "tm_83", "tm_87", "tm_90", "tm_102", "tm_106", "tm_109", "tm_113", "tm_124", "tm_127", "tm_129", "tm_130", "tm_131", "tm_133", "tm_136", "tm_144", "tm_152", "tm_175", "tm_178", "tm_180", "tm_181", "tm_186", "tm_199", "tm_201", "tm_202", "tm_204", "tm_208", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_234", "tm_240", "tm_246", "tm_248", "tm_253", "tm_254", "tm_255", "tm_261", "tm_265", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_293", "tm_295", "tm_296", "tm_303", "tm_305"])
+egg_moves = Array[String](["Assurance", "Brave Bird", "Confuse Ray", "Drill Peck", "Feather Dance", "Feint Attack", "Flatter", "Mirror Move", "Perish Song", "Psycho Shift", "Punishment", "Roost", "Screech", "Sky Attack", "Whirlwind", "Wing Attack"])

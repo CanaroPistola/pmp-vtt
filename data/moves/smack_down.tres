@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bwfdwk20dttuh"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_g0hsg"]
+
+[resource]
+script = ExtResource("1_g0hsg")
+id = "smack_down"
+display_name = "Smack Down (Derrubada)"
+name_en = "Smack Down"
+name_pt = "Derrubada"
+type = 12
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 24.0
+description = "Você lança uma esfera de energia sólida como pedra em uma criatura na tentativa de derrubá-la. Faça um ataque à distância, causando 1d10 + MOVE de dano de pedra em um acerto. Em um acerto, qualquer criatura 'Elevada' é derrubada ao chão, ficando caída, e perde sua velocidade de voo e imunidade a Moves do tipo terra até que possa se mover novamente. Pokémon elevados são quaisquer do tipo Voador, aqueles sob os efeitos de Levitate, Magnet Rise, Telekinesis ou por segurarem um Air Balloon. Smack Down pode atingir Pokémon que estiverem usando Fly ou Bounce, caso tenham sido ativados dentro do alcance, e irá trazê-los de volta ao chão, cancelando esses Moves. Também pode atingir Pokémon que estiverem usando Sky Drop, mas não os derruba ao chão."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "(24 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}

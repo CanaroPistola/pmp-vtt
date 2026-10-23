@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://uq6h3jf1qb0l"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4ctpm"]
+
+[resource]
+script = ExtResource("1_4ctpm")
+id = "smelling_salts"
+display_name = "Smelling Salts (Essência Salgada)"
+name_en = "Smelling Salts"
+name_pt = "Essência Salgada"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você desfere um golpe energizado que causa dano e revitaliza uma criatura paralisada. Faça um ataque corpo a corpo contra um alvo, causando 2d8 + MOVE de dano normal em um acerto. Se o alvo estiver paralisado, dobre os dados de dano, e a paralisia dele é curada."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 3d10 no nível 10 e 3d12 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["paralysis"])

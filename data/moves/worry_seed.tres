@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dcbiw4foip70g"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_cxo17"]
+
+[resource]
+script = ExtResource("1_cxo17")
+id = "worry_seed"
+display_name = "Worry Seed"
+name_en = "Worry Seed"
+type = 4
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 2
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você dispara uma semente bizarra que implanta preocupação em outra criatura. Role 1d20 + MOVE + 9 e compare o resultado com 10 + CON do alvo. Em um resultado maior ou igual, a habilidade passiva do alvo é substituída por Insomnia durante a duração, impedindo-o de ficar Sonolenta ou Dormindo. Caso o alvo já esteja Sonolento ou Dormindo, ele acorda no início do próximo turno dele."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([1, 5])
+effect_tags = Array[String](["sleep"])

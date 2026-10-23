@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bsvq8dotykyql"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_sluoh"]
+
+[resource]
+script = ExtResource("1_sluoh")
+dex_number = 702
+display_name = "Dedenne"
+id = "dedenne"
+types = Array[int]([3, 17])
+sr = "7"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 48
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 12,
+1: 18,
+2: 14,
+3: 6,
+4: 10,
+5: 14
+}
+skills = Array[int]([13])
+abilities = Array[String](["Cheek Pouch", "Pickup"])
+hidden_ability = "Plus"
+level_moves = {
+3: ["Thunder Shock"],
+4: ["Charge"],
+5: ["Charm"],
+6: ["Parabolic Charge"],
+7: ["Nuzzle"],
+8: ["Thunder Wave"],
+9: ["Volt Switch"],
+10: ["Rest"],
+11: ["Snore"],
+12: ["Charge Beam"],
+13: ["Entrainment"],
+14: ["Play Rough"],
+15: ["Discharge", "Super Fang", "Thunder"]
+}
+starting_moves = Array[String](["Tackle", "Tail Whip"])
+tms = Array[String](["tm_3", "tm_5", "tm_9", "tm_13", "tm_39", "tm_40", "tm_41", "tm_45", "tm_48", "tm_53", "tm_55", "tm_58", "tm_68", "tm_76", "tm_77", "tm_78", "tm_79", "tm_82", "tm_83", "tm_87", "tm_100", "tm_109", "tm_113", "tm_114", "tm_129", "tm_131", "tm_136", "tm_149", "tm_153", "tm_156", "tm_164", "tm_173", "tm_190", "tm_199", "tm_209", "tm_211", "tm_214", "tm_215", "tm_216", "tm_219", "tm_228", "tm_238", "tm_242", "tm_243", "tm_248", "tm_255", "tm_270", "tm_271", "tm_272", "tm_276", "tm_277", "tm_282", "tm_286", "tm_288", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_298", "tm_303", "tm_308", "tm_315"])
+egg_moves = Array[String](["Covet", "Eerie Impulse", "Helping Hand", "Magnet Rise", "Natural Gift", "Tearful Look"])

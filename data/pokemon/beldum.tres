@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c8gdhdn226hip"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_c1e58"]
+
+[resource]
+script = ExtResource("1_c1e58")
+dex_number = 374
+display_name = "Beldum"
+id = "beldum"
+types = Array[int]([16, 10])
+sr = "3"
+evolution_stage = 1
+armor_class = 14
+hit_points = 18
+attributes = {
+0: 15,
+1: 10,
+2: 14,
+3: 8,
+4: 12,
+5: 10
+}
+skills = Array[int]([9])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 0
+}])
+abilities = Array[String](["Clear Body"])
+hidden_ability = "Light Metal"
+evolves_to = Array[String](["metang"])
+evolution_level = 7
+evolution_points = 11
+starting_moves = Array[String](["Tackle", "Take Down"])
+tms = Array[String](["tm_147", "tm_148", "tm_263", "tm_282", "tm_286", "tm_321"])

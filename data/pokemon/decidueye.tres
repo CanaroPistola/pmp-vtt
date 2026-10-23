@@ -1,0 +1,87 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ce2tiu6q7r4ml"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_sgl1b"]
+
+[resource]
+script = ExtResource("1_sgl1b")
+dex_number = 724
+display_name = "Decidueye"
+id = "decidueye"
+types = Array[int]([4, 13])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 112
+hit_dice = "d12"
+attributes = {
+0: 14,
+1: 19,
+2: 17,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([0, 12])
+senses = Array[Dictionary]([{
+"range_m": 22.5,
+"type": 0
+}])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Long Reach"
+level_moves = {
+2: ["Growl"],
+3: ["Peck"],
+4: ["Astonish"],
+5: ["Razor Leaf"],
+6: ["Ominous Wind"],
+7: ["Foresight"],
+8: ["Pluck"],
+10: ["Synthesis"],
+11: ["Fury Attack"],
+13: ["Sucker Punch"],
+15: ["Feather Dance", "Leaf Blade"],
+16: ["Brave Bird", "Nasty Plot"]
+}
+starting_moves = Array[String](["Leaf Storm", "Leafage", "Phantom Force", "Shadow Sneak", "Spirit Shackle", "Spite", "Tackle", "U-turn"])
+tms = Array[String](["tm_2", "tm_3", "tm_6", "tm_7", "tm_13", "tm_18", "tm_27", "tm_36", "tm_45", "tm_46", "tm_48", "tm_51", "tm_54", "tm_58", "tm_72", "tm_75", "tm_83", "tm_84", "tm_87", "tm_89", "tm_90", "tm_107", "tm_109", "tm_112", "tm_113", "tm_114", "tm_115", "tm_116", "tm_117", "tm_124", "tm_129", "tm_130", "tm_131", "tm_133", "tm_136", "tm_145", "tm_150", "tm_151", "tm_154", "tm_156", "tm_158", "tm_159", "tm_163", "tm_178", "tm_179", "tm_180", "tm_188", "tm_194", "tm_199", "tm_206", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_229", "tm_238", "tm_240", "tm_241", "tm_245", "tm_246", "tm_248", "tm_251", "tm_255", "tm_257", "tm_258", "tm_261", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_279", "tm_281", "tm_282", "tm_286", "tm_296", "tm_298", "tm_303", "tm_318", "tm_319"])
+egg_moves = Array[String](["Baton Pass", "Confuse Ray", "Curse", "Defog", "Double Team", "Haze", "Knock Off", "Ominous Wind", "Roost"])
+is_variant = true
+variant_data = {
+"Decidueye": {
+"diff": {
+"movement": {
+0: 7.5
+}
+},
+"display_name": "Decidueye",
+"is_default": true
+},
+"Decidueye de Hisui": {
+"diff": {
+"hidden_ability": "Scrappy",
+"movement": {
+0: 9.0
+},
+"moves_diff": {
+"egg_moves": ["Confuse Ray", "Defog", "Double Team", "Knock Off", "Roost"],
+"level_moves": {
+3: ["Peck"],
+4: ["Shadow Sneak"],
+5: ["Razor Leaf"],
+7: ["Synthesis"],
+9: ["Pluck"],
+10: ["Bulk Up"],
+13: ["Sucker Punch"],
+15: ["Leaf Blade"],
+16: ["Brave Bird", "Feather Dance"]
+},
+"starting_moves": ["Growl", "Leaf Storm", "Leafage", "Tackle", "Triple Arrows", "U-turn"],
+"tms": ["tm_3", "tm_6", "tm_7", "tm_14", "tm_18", "tm_27", "tm_29", "tm_34", "tm_36", "tm_43", "tm_44", "tm_46", "tm_72", "tm_83", "tm_84", "tm_87", "tm_89", "tm_90", "tm_103", "tm_104", "tm_105", "tm_107", "tm_112", "tm_113", "tm_114", "tm_115", "tm_116", "tm_117", "tm_124", "tm_129", "tm_136", "tm_150", "tm_154", "tm_156", "tm_158", "tm_159", "tm_163", "tm_178", "tm_180", "tm_199", "tm_206", "tm_209", "tm_214", "tm_218", "tm_224", "tm_225", "tm_234", "tm_238", "tm_241", "tm_248", "tm_251", "tm_257", "tm_260", "tm_270", "tm_271", "tm_277", "tm_278", "tm_281", "tm_282", "tm_283", "tm_286", "tm_298", "tm_303", "tm_304"]
+},
+"types": [4, 6]
+},
+"display_name": "Decidueye de Hisui",
+"is_default": false
+}
+}

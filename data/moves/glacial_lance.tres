@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://da6ok1iateomk"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_aiye2"]
+
+[resource]
+script = ExtResource("1_aiye2")
+id = "glacial_lance"
+display_name = "Glacial Lance"
+name_en = "Glacial Lance"
+type = 5
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+range_category = 7
+range_distance = 12.0
+range_secondary = 1.5
+description = "Você ataca com uma lança de gelo envolta por uma nevasca contra os oponentes. Você pode realizar um ataque corpo a corpo com alcance estendido de até 5 pés (1,5 metros), podendo atingir até três alvos dentro do alcance corpo a corpo, ou realizar um ataque à distância contra um alvo a até 40 pés (12 metros) de alcance, causando 3d8 + MOVE de dano de gelo em um acerto. Caso o ataque à distância acerte, todas as criaturas a até 10 pés (3 metros) do alvo devem realizar um teste de DES contra sua CD de Move, sofrendo o mesmo dano em caso de falha ou metade do dano em caso de sucesso."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Corpo a corpo (12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}

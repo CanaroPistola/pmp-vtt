@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://d0cennkycf53a"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ifot3"]
+
+[resource]
+script = ExtResource("1_ifot3")
+id = "electro_ball"
+display_name = "Electro Ball (Bola Elétrica)"
+name_en = "Electro Ball"
+name_pt = "Bola Elétrica"
+type = 3
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Você concentra sua energia elétrica em uma esfera brilhante e a arremessa contra o inimigo. Quanto maior sua vantagem em velocidade, mais poderosa se torna a explosão. Faça um ataque à distância contra uma criatura dentro do alcance, causando 2d4 + MOVE de dano elétrico em um acerto. Para cada 5 pontos em que você estiver acima da ordem de iniciativa do alvo, acrescente mais um dado de dano, até um máximo de +5 dados de dano extra."
+scaling_text = "Os dados de dano para este Move mudam para 2d6 no nível 5, 2d8 no nível 10 e 2d10 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}

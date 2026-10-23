@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dykqkg3uom3ko"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_dc61f"]
+
+[resource]
+script = ExtResource("1_dc61f")
+id = "kowtow_cleave"
+display_name = "Kowtow Cleave"
+name_en = "Kowtow Cleave"
+type = 15
+pp = 5
+move_time = "1 ação"
+description = "Você se curva para enganar o alvo e então o ataca com um golpe certeiro. Este Move é garantido de acertar, causando 4d4 + MOVE de dano do tipo sombrio, desde que você possa ver o alvo e ele esteja dentro do seu alcance. Role um d20 para chance de golpe crítico e outros efeitos."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 5d8 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+}
+}

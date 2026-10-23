@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://qkosaedooul5"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_la5ug"]
+
+[resource]
+script = ExtResource("1_la5ug")
+id = "simple_beam"
+display_name = "Simple Beam"
+name_en = "Simple Beam"
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 24.0
+duration_is_permanent = true
+description = "Você usa u ma energia psíquica misteriosa para mudar a habilidade passiva de uma criatura dentro do alcance. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, a habilidade passiva do alvo muda para Simple. Observações: Simple Beam falha se a habilidade passiva do alvo for Simple, Truant, Multitype, Zen Mode, Stance Change, Schooling, Comatose, Shields Down, Disguise, RKS System, Battle Bond, Power Construct, Ice Face, Gulp Missile ou As One."
+range_text_raw = "(24 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([3, 4])

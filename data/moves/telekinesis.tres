@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://4jkewgkqt58o"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_mt0jw"]
+
+[resource]
+script = ExtResource("1_mt0jw")
+id = "telekinesis"
+display_name = "Telekinesis"
+name_en = "Telekinesis"
+type = 10
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 1
+range_category = 2
+range_distance = 6.0
+duration_rounds = 3
+duration_flags = Array[String](["concentration"])
+description = "Você usa seu poder psíquico para tentar erguer uma criatura dentro do alcance. Role 1d20 + MOVE  + 9 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, o alvo flutua alguns metros no ar, ficando Impedido enquanto você mantiver sua concentração, ou até o fim de 3 rodadas . Enquanto estiver agarrada, a criatura é considerada 'Elevada'. Criaturas elevadas não são afetad as por Moves do tipo Terra, Spikes , Toxic Spikes e Sticky Web. Observações: Se um Pokémon sob o efeito de Telekinesis for afetado por Ingrain, ele se torna 'No Chão' , mas ele ainda se mantém agarrado e impedido. Se um Pokémon sob o efeito de Telekinesis for atingido por Smack Down ou Thousand Arrows, o efeito de Telekinesis desaparece. Se Gravity estiver em efeito, Telekinesis desaparece de todos os Pokémon afetados. O Move Telekinesis não pode afetar um Pokémon sob o efeito de Ingrain, Smack Down ou Thousand Arrows. Enquanto Gravity estiver em efeito, Telekinesis não pode ser selecionado. Mega Gengar, Diglett, Dugtrio, Sandygast e Palossand não podem ser afetados pelo Move Telekinesis, mas um Pokémon transformado em um desses pode ser afetado."
+range_text_raw = "(6 metros)"
+duration_text_raw = "3 rodadas, Concentração"
+move_power_attributes = Array[int]([3, 4])
+effect_tags = Array[String](["grapple"])

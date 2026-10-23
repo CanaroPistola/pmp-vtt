@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bnjuxwaux4470"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_qefoo"]
+
+[resource]
+script = ExtResource("1_qefoo")
+id = "smog"
+display_name = "Smog (Nevoeiro de Fumaça)"
+name_en = "Smog"
+name_pt = "Nevoeiro de Fumaça"
+type = 7
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 2
+range_distance = 12.0
+duration_rounds = 1
+description = "Você libera uma nuvem tóxica de fumaça venenosa em um raio de 3 metros, centrada em um ponto dentro do alcance. Qualquer criatura que comece seu turno nesta área deve ter sucesso em um teste de resistência de CON contra sua CD do Move -3, sofrendo 1d6 + MOVE de dano venenoso e ficando envenenada em caso de falha, ou metade disso sem ficar envenenada em caso de sucesso. A nuvem tóxica dura 1 rodada."
+scaling_text = "O dado de dano para este Move muda para 1d10 no nível 5, 1d12 no nível 10 e 2d8 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "1 rodada"
+role = 0
+move_power_attributes = Array[int]([2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["poison"])

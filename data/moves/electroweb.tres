@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://chqvlaq230gfg"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_xl46p"]
+
+[resource]
+script = ExtResource("1_xl46p")
+id = "electroweb"
+display_name = "Electroweb (Teia Elétrica)"
+name_en = "Electroweb"
+name_pt = "Teia Elétrica"
+type = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 3
+range_distance = 12.0
+duration_is_permanent = true
+description = "Você libera uma rede elétrica nos alvos à sua frente em um cone de 12 metros. Qualquer criatura pega no cone deve ter sucesso em um teste de DES contra sua CD de Move -1. Os alvos que falharem no teste sofrem 1d12 + MOVE de dano elétrico e têm suas Velocidades reduzidas em 1 estágio, ou metade do dano sem reduzir a Velocidade em um sucesso. Uma criatura cuja velocidade seja reduzida a 0 com este Move fica impedida. O alvo pode gastar uma ação para tentar se livrar de qualquer teia com um teste de FOR contra sua CD de Move."
+scaling_text = "Os dados de dano para este Move mudam para 4d4 no nível 5, 2d12 no nível 10 e 3d10 no nível 17."
+range_text_raw = "Pessoal (cone de 12 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

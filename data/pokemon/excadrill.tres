@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://gtik6fftw282"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_2ddft"]
+
+[resource]
+script = ExtResource("1_2ddft")
+dex_number = 530
+display_name = "Excadrill"
+id = "excadrill"
+types = Array[int]([8, 16])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 14
+hit_points = 80
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 18,
+2: 17,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 1
+}])
+abilities = Array[String](["Sand Rush", "Sand Force"])
+hidden_ability = "Mold Breaker"
+level_moves = {
+2: ["Rapid Spin"],
+3: ["Mud-Slap"],
+4: ["Fury Swipes"],
+5: ["Metal Claw"],
+7: ["Dig"],
+8: ["Crush Claw", "Hone Claws"],
+9: ["Slash"],
+10: ["Rock Slide"],
+12: ["Earthquake"],
+14: ["Swords Dance"],
+15: ["Sandstorm"],
+16: ["Drill Run"],
+17: ["Fissure"]
+}
+starting_moves = Array[String](["Horn Drill", "Mud Sport", "Rototiller", "Scratch"])
+tms = Array[String](["tm_3", "tm_13", "tm_25", "tm_29", "tm_31", "tm_35", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_70", "tm_73", "tm_74", "tm_83", "tm_87", "tm_100", "tm_103", "tm_109", "tm_113", "tm_129", "tm_131", "tm_132", "tm_136", "tm_147", "tm_148", "tm_164", "tm_168", "tm_169", "tm_174", "tm_175", "tm_191", "tm_199", "tm_214", "tm_216", "tm_221", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_234", "tm_235", "tm_241", "tm_248", "tm_249", "tm_252", "tm_255", "tm_262", "tm_263", "tm_266", "tm_270", "tm_271", "tm_276", "tm_278", "tm_282", "tm_286", "tm_289", "tm_296", "tm_320"])
+egg_moves = Array[String](["Crush Claw", "Earth Power", "Iron Defense", "Metal Sound", "Rapid Spin", "Rock Climb", "Skull Bash", "Slash", "Submission"])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b322j0dxu0pu8"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_nrbqt"]
+
+[resource]
+script = ExtResource("1_nrbqt")
+id = "sunny_day"
+display_name = "Sunny Day"
+name_en = "Sunny Day"
+type = 1
+pp = 3
+move_time = "1 ação"
+range_category = 5
+range_distance = 15.0
+duration_rounds = 5
+description = "Você limpa os céus e fortalece os raios solares ao redor, mudando o clima para luz solar intensa em um raio de 50 pés (15 metros), sempre centrado em você e acompanhando seus movimentos. Em ambientes fechados, você cria uma esfera de luz radiante que emite calor e energia, gerando os mesmos efeitos. O efeito dura 5 rodadas, a menos que seja cancelado por Air Lock ou Cloud Nine, ou caso outro clima seja ativado em seguida e a área dele esteja encostada na sua. Usar Sunny Day enquanto já  houver luz solar intensa ativa não reinicia a duração. Durante a luz solar intensa, ocorrem os seguintes efeitos: • Os Moves do tipo fogo aumentam os dados de dano em metade da quantidade original (arredondado para baixo). Caso seja uma rolagem com apenas 1 dado, role o dano duas vezes e escolha o maior resultado. • Os Moves do tipo Água reduzem seus dados de dano pela metade (arredondado para baixo). Caso seja uma rolagem com apenas 1 dado, role o dano duas vezes e escolha o menor resultado. • Solar Beam e Solar Blade não exigem turno de carregamento e atacam imediatamente. • Os Moves Thunder e Hurricane passam a ter -5 na rolagem de acerto, ao invés de -3. • Nenhuma criatura pode ser congelada durante esse clima, e quaisquer criaturas já congeladas têm sua condição encerrada."
+range_text_raw = "Pessoal (raio de 15 metros)"
+duration_text_raw = "5 rodadas"
+effect_tags = Array[String](["weather", "freeze"])

@@ -1,0 +1,66 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bi50aqknkq7w"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_etlrm"]
+
+[resource]
+script = ExtResource("1_etlrm")
+dex_number = 905
+display_name = "Enamorus"
+id = "enamorus"
+types = Array[int]([17, 9])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 232
+hit_dice = "d12"
+attributes = {
+0: 10,
+1: 18,
+2: 16,
+3: 14,
+4: 16,
+5: 18
+}
+skills = Array[int]([0, 12, 14])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Cute Charm"])
+hidden_ability = "Contrary"
+level_moves = {
+2: ["Torment"],
+4: ["Flatter"],
+5: ["Twister"],
+7: ["Draining Kiss"],
+9: ["Iron Defense"],
+10: ["Imprison"],
+12: ["Mystical Fire"],
+14: ["Dazzling Gleam"],
+15: ["Extrasensory", "Uproar"],
+16: ["Healing Wish", "Superpower"],
+17: ["Moonblast", "Outrage"],
+18: ["Springtide Storm"]
+}
+starting_moves = Array[String](["Astonish", "Fairy Wind"])
+tms = Array[String](["tm_5", "tm_8", "tm_25", "tm_38", "tm_53", "tm_56", "tm_68", "tm_73", "tm_83", "tm_87", "tm_102", "tm_103", "tm_113", "tm_114", "tm_117", "tm_136", "tm_145", "tm_147", "tm_148", "tm_172", "tm_173", "tm_177", "tm_182", "tm_190", "tm_197", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_224", "tm_234", "tm_248", "tm_249", "tm_270", "tm_271", "tm_281", "tm_282", "tm_283", "tm_286", "tm_305", "tm_313", "tm_321"])
+is_variant = true
+variant_data = {
+"Enamorus Forma Encarnada": {
+"diff": {},
+"display_name": "Enamorus Forma Encarnada",
+"is_default": true
+},
+"Enamorus Forma Therian": {
+"diff": {
+"abilities": ["Overcoat"],
+"armor_class": 17
+},
+"display_name": "Enamorus Forma Therian",
+"is_default": false
+}
+}

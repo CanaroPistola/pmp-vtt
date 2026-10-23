@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bfrkpo8rmhcjr"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4s4yu"]
+
+[resource]
+script = ExtResource("1_4s4yu")
+id = "foresight"
+display_name = "Foresight"
+name_en = "Foresight"
+pp = 20
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 5
+range_category = 2
+range_distance = 12.0
+duration_is_permanent = true
+description = "Seus olhos brilham com uma aura que envolve um alvo em alcance, tornando-o mais sólido e visível. Role 1d20 + MOVE + 9 e compare o resultado com 10 + CAR do alvo. Em um resultado maior ou igual, todos os bônus na Evasão do alvo são redefin idos, e caso ele seja do tipo fantasma, suas imunidades contra ataques do tipo normal e lutador são removidas. Observações: Este Move ignora Substitute. 122"
+range_text_raw = "(12 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([4, 5])

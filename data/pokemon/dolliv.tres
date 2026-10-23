@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cwvuu6cjxuh1d"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6gg2y"]
+
+[resource]
+script = ExtResource("1_6gg2y")
+dex_number = 929
+display_name = "Dolliv"
+id = "dolliv"
+types = Array[int]([4, 0])
+sr = "3"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 45
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 14,
+1: 15,
+2: 13,
+3: 6,
+4: 12,
+5: 11
+}
+skills = Array[int]([6, 12, 17])
+abilities = Array[String](["Early Bird"])
+hidden_ability = "Harvest"
+evolves_to = Array[String](["arboliva"])
+evolution_level = 12
+evolution_points = 11
+level_moves = {
+2: ["Absorb"],
+3: ["Growth"],
+4: ["Razor Leaf"],
+5: ["Helping Hand"],
+6: ["Flail"],
+7: ["Mega Drain"],
+8: ["Grassy Terrain"],
+10: ["Seed Bomb"],
+12: ["Energy Ball"],
+13: ["Leech Seed"],
+14: ["Terrain Pulse"]
+}
+starting_moves = Array[String](["Sweet Scent", "Tackle"])
+tms = Array[String](["tm_36", "tm_41", "tm_73", "tm_83", "tm_84", "tm_87", "tm_112", "tm_114", "tm_117", "tm_129", "tm_154", "tm_163", "tm_199", "tm_214", "tm_238", "tm_248", "tm_257", "tm_258", "tm_270", "tm_271", "tm_277", "tm_286", "tm_298", "tm_313"])
+egg_moves = Array[String](["Memento", "Strength Sap", "Synthesis", "Weather Ball"])

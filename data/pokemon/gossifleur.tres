@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c28vcyw7abv6p"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wemo0"]
+
+[resource]
+script = ExtResource("1_wemo0")
+dex_number = 829
+display_name = "Gossifleur"
+id = "gossifleur"
+types = Array[int]([4])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 18
+movement = {
+0: 6.0
+}
+attributes = {
+0: 12,
+1: 12,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([11, 12])
+abilities = Array[String](["Cotton Down", "Regenerator"])
+hidden_ability = "Effect Spore"
+evolves_to = Array[String](["eldegoss"])
+evolution_level = 7
+evolution_points = 9
+level_moves = {
+2: ["Rapid Spin"],
+3: ["Sweet Scent"],
+4: ["Razor Leaf"],
+6: ["Round"],
+7: ["Leaf Tornado"],
+8: ["Synthesis"],
+10: ["Hyper Voice"],
+11: ["Aromatherapy"],
+12: ["Leaf Storm"]
+}
+starting_moves = Array[String](["Leafage", "Sing"])
+tms = Array[String](["tm_13", "tm_36", "tm_41", "tm_87", "tm_112", "tm_116", "tm_117", "tm_129", "tm_156", "tm_163", "tm_199", "tm_214", "tm_228", "tm_255", "tm_257", "tm_271"])
+egg_moves = Array[String](["Growth", "Leech Seed", "Poison Powder", "Sleep Powder", "Stun Spore", "Worry Seed"])

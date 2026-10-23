@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dgdr20kr1v8en"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_xe4cf"]
+
+[resource]
+script = ExtResource("1_xe4cf")
+id = "nightmare"
+display_name = "Nightmare"
+name_en = "Nightmare"
+type = 13
+move_time = "1 ação"
+range_category = 2
+range_distance = 12.0
+duration_is_permanent = true
+duration_flags = Array[String](["conditional"])
+description = "Você cria um pesadelo horrível na mente de uma criatura Dormindo dentro do alcance. Role 1d20 + MOVE + 9 e compa re o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o alvo sofre dano sem tipo igual ao dobro do nível dele ao final de cada um de seus turnos. Este Move não acorda uma criatura Dormindo, e seu efeito dura até que ela acorde."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Até que a criatura acorde"
+move_power_attributes = Array[int]([4, 5])
+effect_tags = Array[String](["sleep"])

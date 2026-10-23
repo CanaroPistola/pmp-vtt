@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://osifsh0stt33"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_76q31"]
+
+[resource]
+script = ExtResource("1_76q31")
+dex_number = 386
+display_name = "Deoxys"
+id = "deoxys"
+types = Array[int]([10])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 15
+hit_points = 232
+hit_dice = "d12"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 15,
+1: 20,
+2: 16,
+3: 20,
+4: 20,
+5: 12
+}
+skills = Array[int]([0, 3])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Pressure + Transformer"])
+level_moves = {
+3: ["Night Shade"],
+5: ["Teleport"],
+7: ["Knock Off"],
+9: ["Psyshock", "Pursuit"],
+11: ["Psychic"],
+13: ["Gravity", "Snatch"],
+15: ["Psycho Shift", "Skill Swap", "Zen Headbutt"],
+16: ["Cosmic Power"],
+17: ["Psycho Boost", "Recover"],
+18: ["Hyper Beam"]
+}
+starting_moves = Array[String](["Leer", "Wrap"])
+tms = Array[String](["tm_3", "tm_5", "tm_9", "tm_20", "tm_29", "tm_31", "tm_38", "tm_40", "tm_45", "tm_52", "tm_58", "tm_67", "tm_69", "tm_83", "tm_84", "tm_85", "tm_87", "tm_94", "tm_99", "tm_100", "tm_103", "tm_105", "tm_109", "tm_110", "tm_113", "tm_114", "tm_118", "tm_131", "tm_136", "tm_139", "tm_141", "tm_144", "tm_145", "tm_150", "tm_151", "tm_156", "tm_158", "tm_159", "tm_161", "tm_170", "tm_178", "tm_180", "tm_184", "tm_191", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_223", "tm_225", "tm_226", "tm_228", "tm_229", "tm_234", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_254", "tm_255", "tm_257", "tm_262", "tm_266", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_289", "tm_290", "tm_292", "tm_293", "tm_294", "tm_295", "tm_296", "tm_300", "tm_301", "tm_311", "tm_317", "tm_321"])
+is_variant = true
+variant_data = {
+"Deoxys": {
+"diff": {},
+"display_name": "Deoxys",
+"is_default": true
+},
+"Deoxys Forma de Ataque": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+3: ["Night Shade"],
+5: ["Teleport"],
+7: ["Taunt"],
+9: ["Pursuit", "Psyshock"],
+11: ["Psychic"],
+13: ["Superpower"],
+15: ["Psycho Shift", "Zen Headbutt", "Skill Swap"],
+16: ["Cosmic Power"],
+17: ["Zap Cannon", "Psycho Boost"],
+18: ["Hyper Beam"]
+},
+"starting_moves": ["Leer", "Wrap"],
+"tms": ["tm_3", "tm_5", "tm_9", "tm_20", "tm_29", "tm_31", "tm_38", "tm_40", "tm_45", "tm_52", "tm_58", "tm_67", "tm_69", "tm_83", "tm_84", "tm_85", "tm_87", "tm_94", "tm_99", "tm_100", "tm_103", "tm_105", "tm_109", "tm_110", "tm_113", "tm_114", "tm_118", "tm_131", "tm_136", "tm_139", "tm_141", "tm_144", "tm_145", "tm_150", "tm_151", "tm_156", "tm_158", "tm_159", "tm_161", "tm_170", "tm_178", "tm_180", "tm_184", "tm_191", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_223", "tm_225", "tm_226", "tm_228", "tm_229", "tm_234", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_254", "tm_255", "tm_257", "tm_262", "tm_266", "tm_268", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_289", "tm_290", "tm_292", "tm_293", "tm_294", "tm_295", "tm_296", "tm_300", "tm_301", "tm_311", "tm_317", "tm_321"]
+}
+},
+"display_name": "Deoxys Forma de Ataque",
+"is_default": false
+},
+"Deoxys Forma de Defesa": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+3: ["Night Shade"],
+5: ["Teleport"],
+7: ["Knock Off"],
+9: ["Spikes"],
+11: ["Psychic"],
+13: ["Snatch", "Protect"],
+15: ["Psycho Shift", "Zen Headbutt", "Skill Swap"],
+16: ["Iron Defense", "Amnesia"],
+17: ["Recover", "Psycho Boost"],
+18: ["Counter", "Mirror Coat"]
+},
+"starting_moves": ["Leer", "Wrap"],
+"tms": ["tm_3", "tm_5", "tm_9", "tm_10", "tm_20", "tm_29", "tm_31", "tm_38", "tm_40", "tm_45", "tm_52", "tm_58", "tm_67", "tm_69", "tm_83", "tm_84", "tm_85", "tm_87", "tm_94", "tm_99", "tm_100", "tm_103", "tm_105", "tm_109", "tm_110", "tm_113", "tm_114", "tm_118", "tm_131", "tm_136", "tm_139", "tm_141", "tm_144", "tm_145", "tm_147", "tm_150", "tm_151", "tm_156", "tm_158", "tm_159", "tm_161", "tm_170", "tm_180", "tm_184", "tm_191", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_223", "tm_225", "tm_226", "tm_228", "tm_229", "tm_234", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_254", "tm_255", "tm_257", "tm_260", "tm_262", "tm_266", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_289", "tm_290", "tm_292", "tm_293", "tm_294", "tm_295", "tm_296", "tm_300", "tm_301", "tm_311", "tm_317", "tm_321"]
+}
+},
+"display_name": "Deoxys Forma de Defesa",
+"is_default": false
+},
+"Deoxys Forma de Velocidade": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+3: ["Night Shade"],
+5: ["Double Team"],
+7: ["Knock Off"],
+9: ["Pursuit", "Psyshock"],
+11: ["Psychic"],
+13: ["Swift"],
+15: ["Psycho Shift", "Zen Headbutt", "Skill Swap"],
+16: ["Agility"],
+17: ["Recover", "Psycho Boost"],
+18: ["Extreme Speed"]
+},
+"starting_moves": ["Leer", "Wrap"],
+"tms": ["tm_3", "tm_5", "tm_9", "tm_10", "tm_20", "tm_29", "tm_31", "tm_38", "tm_40", "tm_45", "tm_52", "tm_58", "tm_67", "tm_69", "tm_83", "tm_84", "tm_85", "tm_87", "tm_94", "tm_99", "tm_100", "tm_103", "tm_105", "tm_109", "tm_110", "tm_113", "tm_114", "tm_118", "tm_131", "tm_136", "tm_139", "tm_141", "tm_144", "tm_145", "tm_150", "tm_151", "tm_156", "tm_158", "tm_159", "tm_161", "tm_170", "tm_178", "tm_180", "tm_184", "tm_191", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_223", "tm_225", "tm_226", "tm_228", "tm_229", "tm_234", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_254", "tm_255", "tm_257", "tm_262", "tm_266", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_289", "tm_290", "tm_292", "tm_293", "tm_294", "tm_295", "tm_296", "tm_300", "tm_301", "tm_311", "tm_317", "tm_321"]
+}
+},
+"display_name": "Deoxys Forma de Velocidade",
+"is_default": false
+}
+}

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bkbein0ylruqh"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wnkq4"]
+
+[resource]
+script = ExtResource("1_wnkq4")
+dex_number = 596
+display_name = "Galvantula"
+id = "galvantula"
+types = Array[int]([11, 3])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 14,
+1: 19,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([8, 17])
+abilities = Array[String](["Compound Eyes", "Unnerve"])
+hidden_ability = "Swarm"
+level_moves = {
+2: ["Thunder Wave"],
+3: ["Screech"],
+4: ["Fury Cutter"],
+5: ["Electroweb"],
+6: ["Bug Bite"],
+8: ["Gastro Acid"],
+9: ["Slash"],
+10: ["Electro Ball"],
+12: ["Signal Beam"],
+14: ["Agility"],
+15: ["Sucker Punch"],
+16: ["Bug Buzz", "Discharge"]
+}
+starting_moves = Array[String](["Absorb", "Spider Web", "Sticky Web", "String Shot"])
+tms = Array[String](["tm_5", "tm_13", "tm_26", "tm_32", "tm_33", "tm_39", "tm_40", "tm_45", "tm_49", "tm_58", "tm_78", "tm_79", "tm_83", "tm_84", "tm_87", "tm_109", "tm_111", "tm_112", "tm_113", "tm_129", "tm_131", "tm_136", "tm_146", "tm_155", "tm_156", "tm_160", "tm_164", "tm_189", "tm_191", "tm_195", "tm_199", "tm_209", "tm_214", "tm_216", "tm_219", "tm_228", "tm_236", "tm_242", "tm_243", "tm_245", "tm_248", "tm_255", "tm_259", "tm_269", "tm_270", "tm_276", "tm_277", "tm_286", "tm_288", "tm_289", "tm_290", "tm_293", "tm_294", "tm_296", "tm_308", "tm_315", "tm_320"])
+egg_moves = Array[String](["Camouflage", "Cross Poison", "Disable", "Double Team", "Feint Attack", "Infestation", "Lunge", "Pin Missile", "Poison Sting", "Pursuit", "Rock Climb", "Struggle Bug"])

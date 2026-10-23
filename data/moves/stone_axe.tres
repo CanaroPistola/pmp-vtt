@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://mr8fey85clre"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_7dcak"]
+
+[resource]
+script = ExtResource("1_7dcak")
+id = "stone_axe"
+display_name = "Stone Axe"
+name_en = "Stone Axe"
+type = 12
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+target_area_radius = 6.0
+description = "Você ataca balançando seus machados de pedra contra os alvos, e estilhaços lançados pelo golpe flutuam ao redor deles. Faça um ataque corpo a corpo -1, causando 2d6 + MOVE de dano de pedra em um acerto. Caso acerte, você cria uma área de Stealth Rock, centrado em você. Stealth Rock: Você rapidamente invoca uma área de armadilhas de rochas afiadas que passam a flutuar em em um raio de 20 pés (6 metros) de largura e 50 pés (15 metros) de altura, centrado em um ponto dentro do alcance. Sempre que uma criatura entrar nessa área, ou quando um Pokémon for substituído e o próximo surgir dentro dela, a criatura sofre dano de Pedra igual ao nível dela. Mover -se dentro da área ou sair dela não causa dano. Um mesmo Pokémon pode manter até duas áreas de Stealth Rock ativas simultaneamente. Caso tente criar uma terceira, a mais antiga desaparece automaticamente."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 4d6 no nível 10 e 4d8 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["hazard"])

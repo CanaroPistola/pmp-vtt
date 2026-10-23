@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cuhy4qat21n05"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_g54vy"]
+
+[resource]
+script = ExtResource("1_g54vy")
+dex_number = 998
+display_name = "Baxcalibur"
+id = "baxcalibur"
+types = Array[int]([14, 5])
+sr = "14"
+min_level = 15
+evolution_stage = 3
+armor_class = 16
+hit_points = 188
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 20,
+1: 18,
+2: 19,
+3: 6,
+4: 14,
+5: 14
+}
+skills = Array[int]([3, 8, 17])
+abilities = Array[String](["Thermal Exchange"])
+hidden_ability = "Ice Body"
+level_moves = {
+2: ["Icy Wind"],
+4: ["Dragon Breath"],
+6: ["Focus Energy"],
+8: ["Bite"],
+10: ["Ice Fang"],
+12: ["Dragon Claw"],
+14: ["Take Down"],
+15: ["Ice Beam"],
+16: ["Crunch"],
+17: ["Icicle Crash"]
+}
+starting_moves = Array[String](["Breaking Swipe", "Dragon Tail", "Glaive Rush", "Ice Shard", "Leer", "Snowscape", "Tackle"])
+tms = Array[String](["tm_3", "tm_16", "tm_22", "tm_24", "tm_25", "tm_28", "tm_29", "tm_35", "tm_50", "tm_55", "tm_59", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_74", "tm_83", "tm_87", "tm_89", "tm_113", "tm_129", "tm_132", "tm_136", "tm_139", "tm_140", "tm_143", "tm_144", "tm_148", "tm_182", "tm_199", "tm_209", "tm_214", "tm_233", "tm_234", "tm_248", "tm_256", "tm_266", "tm_270", "tm_278", "tm_282", "tm_286", "tm_291", "tm_321"])
+egg_moves = Array[String](["Aqua Tail", "Dragon Rush", "Freeze-Dry", "Icicle Spear"])

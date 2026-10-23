@@ -1,0 +1,79 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b47yphytq3x7r"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_8v32l"]
+
+[resource]
+script = ExtResource("1_8v32l")
+dex_number = 157
+display_name = "Typhlosion"
+id = "typhlosion"
+types = Array[int]([1])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 87
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 17,
+1: 20,
+2: 13,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Blaze"])
+hidden_ability = "Flash Fire"
+level_moves = {
+2: ["Smokescreen"],
+4: ["Ember"],
+5: ["Quick Attack"],
+7: ["Flame Wheel"],
+8: ["Defense Curl"],
+11: ["Swift"],
+12: ["Flame Charge"],
+15: ["Flamethrower", "Lava Plume"],
+16: ["Inferno"],
+17: ["Double-Edge", "Rollout"],
+18: ["Burn Up", "Overheat"],
+19: ["Eruption"]
+}
+starting_moves = Array[String](["Gyro Ball", "Leer", "Tackle"])
+tms = Array[String](["tm_3", "tm_13", "tm_21", "tm_25", "tm_29", "tm_35", "tm_37", "tm_45", "tm_48", "tm_51", "tm_55", "tm_58", "tm_59", "tm_74", "tm_82", "tm_83", "tm_87", "tm_91", "tm_92", "tm_93", "tm_94", "tm_95", "tm_96", "tm_97", "tm_98", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_121", "tm_127", "tm_129", "tm_131", "tm_136", "tm_148", "tm_151", "tm_158", "tm_179", "tm_183", "tm_190", "tm_199", "tm_214", "tm_216", "tm_218", "tm_220", "tm_223", "tm_225", "tm_228", "tm_235", "tm_240", "tm_241", "tm_248", "tm_255", "tm_257", "tm_266", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_285", "tm_286", "tm_289", "tm_292", "tm_296", "tm_315", "tm_316", "tm_318", "tm_321"])
+egg_moves = Array[String](["Covet", "Crush Claw", "Curse", "Double Kick", "Double-Edge", "Extrasensory", "Flame Burst", "Flare Blitz", "Foresight", "Fury Swipes", "Howl", "Nature Power", "Quick Attack", "Reversal", "Thrash"])
+is_variant = true
+variant_data = {
+"Typhlosion": {
+"diff": {},
+"display_name": "Typhlosion",
+"is_default": true
+},
+"Typhlosion de Hisui": {
+"diff": {
+"hidden_ability": "Frisk",
+"moves_diff": {
+"egg_moves": ["Covet", "Curse", "Double Kick", "Extrasensory", "Howl", "Reversal"],
+"level_moves": {
+5: ["Quick Attack"],
+7: ["Flame Wheel"],
+8: ["Defense Curl"],
+11: ["Swift"],
+12: ["Flame Charge"],
+15: ["Flamethrower", "Lava Plume"],
+16: ["Inferno"],
+17: ["Rollout"],
+18: ["Overheat"]
+},
+"starting_moves": ["Double-Edge", "Ember", "Eruption", "Gyro Ball", "Infernal Parade", "Leer", "Smokescreen", "Tackle"],
+"tms": ["tm_3", "tm_21", "tm_25", "tm_29", "tm_35", "tm_37", "tm_38", "tm_46", "tm_51", "tm_55", "tm_59", "tm_67", "tm_74", "tm_82", "tm_83", "tm_87", "tm_91", "tm_92", "tm_93", "tm_94", "tm_95", "tm_96", "tm_97", "tm_98", "tm_103", "tm_105", "tm_113", "tm_121", "tm_127", "tm_130", "tm_136", "tm_148", "tm_149", "tm_158", "tm_177", "tm_180", "tm_181", "tm_183", "tm_190", "tm_194", "tm_199", "tm_214", "tm_218", "tm_220", "tm_223", "tm_224", "tm_240", "tm_241", "tm_248", "tm_257", "tm_261", "tm_266", "tm_270", "tm_271", "tm_277", "tm_282", "tm_285", "tm_286", "tm_292", "tm_315", "tm_316", "tm_321"]
+},
+"types": [1, 13]
+},
+"display_name": "Typhlosion de Hisui",
+"is_default": false
+}
+}

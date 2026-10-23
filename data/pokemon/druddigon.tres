@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bv8at41qggpgf"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_r47x1"]
+
+[resource]
+script = ExtResource("1_r47x1")
+dex_number = 621
+display_name = "Druddigon"
+id = "druddigon"
+types = Array[int]([14])
+sr = "10"
+min_level = 5
+evolution_stage = 1
+armor_class = 17
+hit_points = 52
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 19,
+1: 13,
+2: 15,
+3: 6,
+4: 13,
+5: 10
+}
+skills = Array[int]([3])
+senses = Array[Dictionary]([{
+"range_m": 12.0,
+"type": 0
+}])
+abilities = Array[String](["Rough Skin", "Sheer Force"])
+hidden_ability = "Mold Breaker"
+level_moves = {
+2: ["Hone Claws"],
+3: ["Bite"],
+5: ["Metal Claw", "Scary Face"],
+6: ["Dragon Rage"],
+7: ["Slash"],
+9: ["Crunch", "Dragon Claw"],
+11: ["Chip Away"],
+12: ["Revenge"],
+14: ["Night Slash"],
+15: ["Dragon Tail", "Iron Head", "Rock Climb"],
+16: ["Superpower"],
+17: ["Outrage"]
+}
+starting_moves = Array[String](["Leer", "Scratch"])
+tms = Array[String](["tm_3", "tm_11", "tm_13", "tm_35", "tm_40", "tm_45", "tm_52", "tm_55", "tm_58", "tm_60", "tm_63", "tm_65", "tm_66", "tm_72", "tm_74", "tm_87", "tm_92", "tm_94", "tm_97", "tm_99", "tm_100", "tm_103", "tm_109", "tm_113", "tm_120", "tm_127", "tm_131", "tm_136", "tm_148", "tm_149", "tm_152", "tm_166", "tm_182", "tm_186", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_220", "tm_223", "tm_225", "tm_228", "tm_233", "tm_234", "tm_241", "tm_242", "tm_248", "tm_249", "tm_251", "tm_253", "tm_254", "tm_255", "tm_262", "tm_266", "tm_270", "tm_271", "tm_274", "tm_275", "tm_276", "tm_283", "tm_291", "tm_292", "tm_295", "tm_296"])
+egg_moves = Array[String](["Crush Claw", "Feint Attack", "Fire Fang", "Glare", "Iron Tail", "Metal Claw", "Night Slash", "Poison Tail", "Pursuit", "Snatch", "Sucker Punch", "Thunder Fang"])

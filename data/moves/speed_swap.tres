@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dyf2kk1l1yeys"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_vwxxe"]
+
+[resource]
+script = ExtResource("1_vwxxe")
+id = "speed_swap"
+display_name = "Speed Swap (Troca de Velocidade)"
+name_en = "Speed Swap"
+name_pt = "Troca de Velocidade"
+type = 10
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 5
+range_category = 2
+range_distance = 12.0
+duration_is_permanent = true
+description = "Você usa seu poder psíquico para trocar a velocidade com uma criatura. Force uma criatura no alcance a fazer um teste de CAR contra sua CD de Move. Em caso de falha, todas as velocidades de movimentação compatíveis entre os dois serão trocadas, e suas posições na iniciativa também. Este Move não troca modificadores de Velocidade em combate, como Habilidades e Mudanças de Status."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([4, 3])

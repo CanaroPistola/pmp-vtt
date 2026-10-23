@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://djewslg50a3ys"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ygxrl"]
+
+[resource]
+script = ExtResource("1_ygxrl")
+id = "sucker_punch"
+display_name = "Sucker Punch"
+name_en = "Sucker Punch"
+type = 15
+pp = 3
+move_time = "1 reação"
+is_attack = true
+resolution = 1
+activation = 1
+description = "Você desfere um soco rápido antes que uma criatura tenha a chance de atacar. Quando alvo de um Move danoso, você pode usar sua reação para tentar atacar uma criatura antes que seu dano seja rolado. Faça um ataque corpo a corpo, causando 2d8 + MOVE de dano sombrio em um acerto. Ao fazer isso, você abre mão de sua ação padrão em seu próximo turno . Caso a criatura não esteja em seu alcance corpo a corpo, mas esteja em seu alcance de deslocamento, você pode se mover até ela durante esta reação, mas fazer isso também abre mão de sua ação de movimento do próximo turno. Este Move é classificado como Prioridade 1. Caso outra criatura uti lize um Move de Prioridade 1 no mesmo momento, a ordem de execução é determinada pela Destreza (ou por uma rolagem, em caso de empate). Moves com valores mais altos de Prioridade são sempre executados antes."
+scaling_text = "Os dados de dano para este Move mudam para 2d10 no nível 5, 3d10 no nível 10 e 3d12 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+}
+}

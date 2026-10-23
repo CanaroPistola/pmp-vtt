@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://y6nulvy4bokv"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_60y78"]
+
+[resource]
+script = ExtResource("1_60y78")
+dex_number = 945
+display_name = "Grafaiai"
+id = "grafaiai"
+types = Array[int]([7, 0])
+sr = "9"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 64
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 13,
+1: 17,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 5, 6, 15, 17])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Unburden", "Poison Touch"])
+hidden_ability = "Prankster"
+level_moves = {
+2: ["Acid Spray"],
+3: ["Fury Swipes"],
+4: ["Switcheroo"],
+5: ["Poison Fang"],
+6: ["Flatter"],
+7: ["Slash"],
+9: ["U-turn"],
+11: ["Poison Jab"],
+13: ["Taunt"],
+14: ["Substitute"],
+15: ["Knock Off"],
+16: ["Gunk Shot"]
+}
+starting_moves = Array[String](["Doodle", "Leer", "Scratch"])
+tms = Array[String](["tm_1", "tm_2", "tm_18", "tm_55", "tm_59", "tm_81", "tm_82", "tm_83", "tm_87", "tm_100", "tm_106", "tm_113", "tm_120", "tm_129", "tm_150", "tm_158", "tm_159", "tm_171", "tm_174", "tm_175", "tm_178", "tm_191", "tm_192", "tm_195", "tm_199", "tm_201", "tm_209", "tm_214", "tm_234", "tm_241", "tm_245", "tm_248", "tm_249", "tm_250", "tm_270", "tm_271", "tm_272", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_296", "tm_298", "tm_303", "tm_307", "tm_320"])
+egg_moves = Array[String](["Copycat", "Cross Poison", "Parting Shot", "Super Fang", "Swagger", "Toxic"])

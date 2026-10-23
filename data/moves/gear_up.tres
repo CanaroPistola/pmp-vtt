@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b8to6vaqvo5ob"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_inx24"]
+
+[resource]
+script = ExtResource("1_inx24")
+id = "gear_up"
+display_name = "Gear Up (Engrenar)"
+name_en = "Gear Up"
+name_pt = "Engrenar"
+type = 16
+move_time = "1 ação"
+range_category = 5
+range_distance = 12.0
+duration_is_permanent = true
+description = "Você engata suas engrenagens para aumentar o ataque de criaturas aliadas em alcance que possuam a habilidade passiva Plus ou Minus, aumentando o Ataque e Ataque Especial destes em 1 estágio, podendo ser acumulado em até 6 estágios cada. Observações: Este Move ignora Substitute."
+range_text_raw = "Pessoal (raio de 12 metros)"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

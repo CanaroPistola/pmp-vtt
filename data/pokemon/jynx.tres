@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bng1a3gmxum6"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_aqtp3"]
+
+[resource]
+script = ExtResource("1_aqtp3")
+dex_number = 124
+display_name = "Jynx"
+id = "jynx"
+types = Array[int]([5, 10])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 67
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 12,
+1: 16,
+2: 14,
+3: 8,
+4: 16,
+5: 16
+}
+skills = Array[int]([5, 9])
+abilities = Array[String](["Oblivious", "Forewarn"])
+hidden_ability = "Dry Skin"
+level_moves = {
+2: ["Lick"],
+3: ["Lovely Kiss"],
+4: ["Confusion", "Powder Snow"],
+5: ["Double Slap"],
+6: ["Covet", "Ice Punch"],
+7: ["Heart Stamp", "Sing"],
+9: ["Mean Look"],
+10: ["Fake Tears"],
+11: ["Wake-Up Slap"],
+12: ["Psychic"],
+13: ["Avalanche"],
+15: ["Body Slam", "Wring Out"],
+16: ["Blizzard", "Perish Song"]
+}
+starting_moves = Array[String](["Draining Kiss", "Pound"])
+tms = Array[String](["tm_9", "tm_13", "tm_15", "tm_16", "tm_22", "tm_29", "tm_38", "tm_41", "tm_45", "tm_48", "tm_58", "tm_67", "tm_68", "tm_69", "tm_75", "tm_84", "tm_85", "tm_87", "tm_88", "tm_100", "tm_103", "tm_105", "tm_108", "tm_109", "tm_113", "tm_114", "tm_122", "tm_125", "tm_129", "tm_131", "tm_136", "tm_137", "tm_139", "tm_141", "tm_143", "tm_144", "tm_156", "tm_161", "tm_162", "tm_165", "tm_166", "tm_186", "tm_199", "tm_201", "tm_202", "tm_205", "tm_206", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_226", "tm_228", "tm_240", "tm_243", "tm_244", "tm_248", "tm_255", "tm_270", "tm_276", "tm_283", "tm_284", "tm_288", "tm_295", "tm_296", "tm_300", "tm_301", "tm_302", "tm_311", "tm_317", "tm_321"])
+egg_moves = Array[String](["Captivate", "Fake Out", "Ice Punch", "Meditate", "Miracle Eye", "Nasty Plot", "Role Play", "Wake-Up Slap", "Wish"])

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bb8cycm60s1ib"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_qtbqi"]
+
+[resource]
+script = ExtResource("1_qtbqi")
+id = "sky_attack"
+display_name = "Sky Attack (Ataque do Céu)"
+name_en = "Sky Attack"
+name_pt = "Ataque do Céu"
+type = 9
+pp = 3
+move_time = "1 ação, carga"
+is_attack = true
+resolution = 1
+needs_charge = true
+duration_rounds = 1
+duration_flags = Array[String](["concentration"])
+description = "Você se envolve em uma luz intensa e avança contra o oponente em velocidade máxima. Com uma ação completa no seu próximo turno, se você mantiver sua concentração, você avança em linha reta em direção a uma criatura, a uma distância de até o dobro de seu deslocamento, ignorando quaisquer ataques de oportunidade, para um ataque corpo a corpo -1, causando 3d10 + MOVE de dano voador em um acerto. Em um resultado natural de 15 ou mais no acerto, o alvo fica atordoado. Este Move causa um golpe crítico em rolagens naturais de 18 ou mais no acerto."
+scaling_text = "Os dados de dano para este Move mudam para 4d10 no nível 5, 7d8 no nível 10 e 7d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "1 rodada, Concentração"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 7,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 7,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stun"])

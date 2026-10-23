@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c7wkfiihblu7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_8svsd"]
+
+[resource]
+script = ExtResource("1_8svsd")
+dex_number = 1004
+display_name = "Chi-Yu"
+id = "chi_yu"
+types = Array[int]([15, 1])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 18
+hit_points = 158
+hit_dice = "d12"
+movement = {
+1: 9.0
+}
+attributes = {
+0: 18,
+1: 18,
+2: 14,
+3: 10,
+4: 12,
+5: 16
+}
+skills = Array[int]([2, 5, 6, 7, 9, 16])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}])
+abilities = Array[String](["Beads of Ruin"])
+level_moves = {
+2: ["Flame Wheel"],
+4: ["Payback"],
+5: ["Will-O-Wisp"],
+7: ["Flame Charge"],
+9: ["Incinerate"],
+10: ["Confuse Ray"],
+12: ["Nasty Plot"],
+14: ["Dark Pulse"],
+15: ["Lava Plume", "Ruination"],
+16: ["Bounce", "Swagger"],
+17: ["Inferno", "Memento"],
+18: ["Overheat"]
+}
+starting_moves = Array[String](["Ember", "Mean Look", "Spite"])
+tms = Array[String](["tm_37", "tm_46", "tm_50", "tm_52", "tm_83", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_113", "tm_127", "tm_130", "tm_136", "tm_152", "tm_156", "tm_178", "tm_183", "tm_199", "tm_202", "tm_212", "tm_214", "tm_234", "tm_248", "tm_253", "tm_261", "tm_270", "tm_271", "tm_282", "tm_283", "tm_285", "tm_286", "tm_316", "tm_321"])

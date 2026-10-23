@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bbx7742ns40sr"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_jv55x"]
+
+[resource]
+script = ExtResource("1_jv55x")
+dex_number = 779
+display_name = "Bruxish"
+id = "bruxish"
+types = Array[int]([2, 10])
+sr = "7"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 1.5,
+1: 10.5
+}
+attributes = {
+0: 16,
+1: 17,
+2: 15,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([2, 14])
+abilities = Array[String](["Dazzling", "Strong Jaw"])
+hidden_ability = "Wonder Skin"
+level_moves = {
+2: ["Astonish"],
+3: ["Confusion"],
+4: ["Bite"],
+6: ["Aqua Jet"],
+7: ["Disable"],
+9: ["Psyshock", "Psywave"],
+10: ["Crunch"],
+11: ["Aqua Tail"],
+12: ["Screech"],
+14: ["Psychic Fangs"],
+15: ["Synchronoise", "Wave Crash"]
+}
+starting_moves = Array[String](["Water Gun"])
+tms = Array[String](["tm_3", "tm_4", "tm_5", "tm_9", "tm_11", "tm_13", "tm_22", "tm_34", "tm_38", "tm_42", "tm_45", "tm_50", "tm_58", "tm_69", "tm_80", "tm_83", "tm_85", "tm_87", "tm_100", "tm_101", "tm_108", "tm_109", "tm_113", "tm_131", "tm_135", "tm_136", "tm_139", "tm_140", "tm_144", "tm_149", "tm_156", "tm_157", "tm_161", "tm_162", "tm_184", "tm_186", "tm_199", "tm_202", "tm_203", "tm_204", "tm_205", "tm_207", "tm_209", "tm_212", "tm_214", "tm_216", "tm_228", "tm_229", "tm_232", "tm_234", "tm_243", "tm_248", "tm_254", "tm_255", "tm_270", "tm_272", "tm_275", "tm_276", "tm_278", "tm_282", "tm_283", "tm_284", "tm_286", "tm_295", "tm_296", "tm_301", "tm_305", "tm_307", "tm_311", "tm_312", "tm_314", "tm_317"])
+egg_moves = Array[String](["Ice Fang", "Poison Fang", "Rage", "Super Fang", "Water Pulse"])

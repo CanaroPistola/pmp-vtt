@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dopmkilnxc8xi"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_u1ccl"]
+
+[resource]
+script = ExtResource("1_u1ccl")
+dex_number = 1011
+display_name = "Dipplin"
+id = "dipplin"
+types = Array[int]([4, 14])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 16,
+1: 17,
+2: 15,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([5, 6, 12])
+abilities = Array[String](["Supersweet Syrup", "Gluttony"])
+hidden_ability = "Sticky Hold"
+evolves_to = Array[String](["hydrapple"])
+evolution_level = 1
+evolution_points = 7
+level_moves = {
+2: ["Dragon Tail"],
+3: ["Growth"],
+4: ["Dragon Breath"],
+6: ["Protect"],
+7: ["Bullet Seed"],
+10: ["Syrup Bomb"],
+11: ["Dragon Pulse"],
+12: ["Recover"],
+14: ["Energy Ball"],
+15: ["Substitute"]
+}
+starting_moves = Array[String](["Astonish", "Double Hit", "Recycle", "Sweet Scent", "Withdraw"])
+tms = Array[String](["tm_25", "tm_32", "tm_36", "tm_60", "tm_62", "tm_65", "tm_66", "tm_83", "tm_84", "tm_87", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_121", "tm_136", "tm_154", "tm_182", "tm_193", "tm_195", "tm_199", "tm_212", "tm_214", "tm_238", "tm_248", "tm_257", "tm_270", "tm_271", "tm_282", "tm_286"])
+egg_moves = Array[String](["Defense Curl", "Recycle", "Rollout", "Sucker Punch"])

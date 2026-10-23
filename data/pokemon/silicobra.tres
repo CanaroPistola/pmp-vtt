@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b2ivf2mrr56x4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_hsms7"]
+
+[resource]
+script = ExtResource("1_hsms7")
+dex_number = 843
+display_name = "Silicobra"
+id = "silicobra"
+types = Array[int]([8])
+sr = "1"
+evolution_stage = 1
+armor_class = 14
+hit_points = 17
+movement = {
+0: 7.5
+}
+attributes = {
+0: 12,
+1: 13,
+2: 11,
+3: 8,
+4: 10,
+5: 10
+}
+skills = Array[int]([6, 17])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}, {
+"range_m": 9.0,
+"type": 1
+}, {
+"range_m": 3.0,
+"type": 3
+}])
+abilities = Array[String](["Sand Spit", "Shed Skin"])
+hidden_ability = "Sand Veil"
+evolves_to = Array[String](["sandaconda"])
+evolution_level = 12
+evolution_points = 10
+level_moves = {
+2: ["Minimize"],
+4: ["Brutal Swing"],
+5: ["Bulldoze"],
+7: ["Headbutt"],
+9: ["Glare"],
+10: ["Dig"],
+12: ["Sandstorm"],
+14: ["Slam"],
+15: ["Coil", "Sand Tomb"]
+}
+starting_moves = Array[String](["Sand Attack", "Wrap"])
+tms = Array[String](["tm_13", "tm_25", "tm_31", "tm_35", "tm_55", "tm_70", "tm_73", "tm_74", "tm_83", "tm_87", "tm_174", "tm_175", "tm_192", "tm_199", "tm_214", "tm_221", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_233", "tm_234", "tm_235", "tm_236", "tm_245", "tm_248", "tm_255", "tm_262", "tm_267", "tm_270", "tm_282", "tm_286"])
+egg_moves = Array[String](["Belch", "Dragon Rush", "Last Resort", "Mud-Slap", "Poison Tail"])

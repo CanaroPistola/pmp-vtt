@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://fsyspsh658tw"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_5syg0"]
+
+[resource]
+script = ExtResource("1_5syg0")
+id = "bind"
+display_name = "Bind (Enlaçar)"
+name_en = "Bind"
+name_pt = "Enlaçar"
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 0
+description = "Você tenta imobilizar um alvo com seu corpo. Force um alvo a realizar um teste de FOR contra sua CD de Move -2. Em uma falha, o alvo sofre 1d4 + MOVE de dano normal e fica agarrado. No início de cada um dos turnos dele, o alvo pode tentar escapar repetindo o teste de FOR. Enquanto o alvo estiver agarrado por você, ele sofre dano sem tipo igual ao nível dele ao final de cada um dos próprios turnos. Você não pode usar outros Moves enquanto estiver agarrando um alvo com Bind, mas ambos podem ser substituídos."
+scaling_text = "Os dados de dano para este Move mudam para 1d6 no nível 10 e 1d8 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+move_power_modifier = -2
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["grapple"])

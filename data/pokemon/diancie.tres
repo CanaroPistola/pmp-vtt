@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://doayrpm2nvk3"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_2oaca"]
+
+[resource]
+script = ExtResource("1_2oaca")
+dex_number = 719
+display_name = "Diancie"
+id = "diancie"
+types = Array[int]([12, 17])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 20
+hit_points = 288
+hit_dice = "d12"
+attributes = {
+0: 18,
+1: 20,
+2: 14,
+3: 10,
+4: 18,
+5: 20
+}
+skills = Array[int]([4, 9, 14])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Clear Body"])
+level_moves = {
+2: ["Sharpen"],
+3: ["Smack Down"],
+4: ["Reflect"],
+6: ["Stealth Rock"],
+7: ["Guard Split"],
+9: ["Ancient Power"],
+11: ["Flail"],
+12: ["Rock Polish", "Skill Swap"],
+14: ["Power Gem"],
+15: ["Diamond Storm", "Moonblast", "Rock Slide", "Stone Edge", "Trick Room"],
+16: ["Light Screen"],
+17: ["Safeguard"]
+}
+starting_moves = Array[String](["Harden", "Rock Throw", "Tackle"])
+tms = Array[String](["tm_4", "tm_10", "tm_18", "tm_24", "tm_25", "tm_35", "tm_38", "tm_41", "tm_45", "tm_48", "tm_53", "tm_58", "tm_68", "tm_73", "tm_81", "tm_82", "tm_83", "tm_86", "tm_87", "tm_88", "tm_99", "tm_109", "tm_113", "tm_118", "tm_119", "tm_121", "tm_122", "tm_125", "tm_129", "tm_131", "tm_136", "tm_147", "tm_153", "tm_156", "tm_164", "tm_170", "tm_171", "tm_172", "tm_177", "tm_179", "tm_190", "tm_196", "tm_199", "tm_201", "tm_202", "tm_207", "tm_209", "tm_212", "tm_214", "tm_216", "tm_222", "tm_223", "tm_225", "tm_228", "tm_229", "tm_230", "tm_231", "tm_235", "tm_244", "tm_248", "tm_251", "tm_255", "tm_256", "tm_260", "tm_262", "tm_267", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_284", "tm_286", "tm_287", "tm_296", "tm_301", "tm_317"])

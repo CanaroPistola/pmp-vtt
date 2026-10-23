@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://d18un878htbhe"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_qgi3l"]
+
+[resource]
+script = ExtResource("1_qgi3l")
+id = "coaching"
+display_name = "Coaching"
+name_en = "Coaching"
+type = 6
+pp = 5
+move_time = "1 ação"
+range_category = 2
+range_distance = 6.0
+duration_is_permanent = true
+description = "Você orienta seu aliado com instruções precisas e motivadoras, aumentando o Ataque e Defesa dele em 1 estágio, podendo ser acumulado em até 6 estágios cada."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

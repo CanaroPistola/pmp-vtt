@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bwa6ccbmtiaue"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_mott1"]
+
+[resource]
+script = ExtResource("1_mott1")
+id = "electric_terrain"
+display_name = "Electric Terrain"
+name_en = "Electric Terrain"
+type = 3
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 12.0
+duration_rounds = 5
+description = "Você eletrifica o solo ao seu redor para criar um campo estático de eletricidade. Por 5 rodadas, nenhuma criatura no chão dentro da área pode estar Sonolenta ou Dormindo, e as que estavam são acordadas. Criaturas no chão são aquelas que não estão utilizando sua velocidade de vôo ou sobre efeito de Levitate, Magnet Rise ou Telekinesis. Além disso, os Moves do tipo Elétrico ativados dentro da área também aumentam os dados de dano em metade da quantidade original (arredondado para baixo). Caso seja uma rolagem com apenas 1 dado, role o dano duas vezes e escolha o maior resultado . Electric Terrain é uma condição de terreno e pode coexistir ao mesmo tempo que condições climáticas, mas não com outras condições de terreno. Se uma nova condição de terreno for ativada na mesma área, ela substitui a anterior."
+range_text_raw = "Pessoal (raio de 12 metros)"
+duration_text_raw = "5 rodadas"
+effect_tags = Array[String](["sleep"])

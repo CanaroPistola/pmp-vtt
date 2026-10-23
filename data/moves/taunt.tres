@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bhiq21qm1yr0f"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_5r2gv"]
+
+[resource]
+script = ExtResource("1_5r2gv")
+id = "taunt"
+display_name = "Taunt"
+name_en = "Taunt"
+type = 15
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 12.0
+duration_rounds = 3
+description = "Você provoca uma criatura de ntro do alcance com zombaria, deixando-a irritada e incapaz de se concentrar em outras ações. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o alvo só pode usar ataques que causam dano durante a duração. Observações: Se um Pokémon que conhece apenas Moves de Status for afetado por Taunt, ou for afetado após usar um Move de Status enquanto segura um item do tipo Choice, ele será forçado a usar Struggle. Este Move ignora Substitute."
+range_text_raw = "(12 metros)"
+duration_text_raw = "3 rodadas"
+move_power_attributes = Array[int]([4, 5])

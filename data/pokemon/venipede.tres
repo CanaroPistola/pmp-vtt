@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bbwnqai47ph6e"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_i7iq8"]
+
+[resource]
+script = ExtResource("1_i7iq8")
+dex_number = 543
+display_name = "Venipede"
+id = "venipede"
+types = Array[int]([11, 7])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 6.0,
+2: 6.0
+}
+attributes = {
+0: 12,
+1: 12,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Poison Point", "Swarm"])
+hidden_ability = "Speed Boost"
+evolves_to = Array[String](["whirlipede"])
+evolution_level = 8
+evolution_points = 9
+level_moves = {
+2: ["Poison Sting"],
+3: ["Screech"],
+4: ["Pursuit"],
+5: ["Protect"],
+7: ["Poison Tail"],
+8: ["Bug Bite"],
+9: ["Venoshock"],
+10: ["Agility", "Take Down"],
+11: ["Steamroller"],
+12: ["Toxic"],
+13: ["Venom Drench"],
+14: ["Rock Climb"],
+15: ["Double-Edge"]
+}
+starting_moves = Array[String](["Defense Curl", "Rollout"])
+tms = Array[String](["tm_13", "tm_32", "tm_45", "tm_58", "tm_82", "tm_87", "tm_109", "tm_121", "tm_130", "tm_131", "tm_146", "tm_147", "tm_186", "tm_189", "tm_191", "tm_199", "tm_214", "tm_216", "tm_228", "tm_236", "tm_243", "tm_245", "tm_248", "tm_249", "tm_255", "tm_257", "tm_264", "tm_270", "tm_271", "tm_276", "tm_296", "tm_307"])
+egg_moves = Array[String](["Bite", "Fury Cutter", "Pin Missile", "Rock Climb", "Spikes", "Take Down", "Toxic Spikes", "Twineedle"])

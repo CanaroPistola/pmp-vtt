@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://va6ty8nx4jy1"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_epd6t"]
+
+[resource]
+script = ExtResource("1_epd6t")
+dex_number = 1001
+display_name = "Wo-Chien"
+id = "wo_chien"
+types = Array[int]([15, 4])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 18
+hit_points = 173
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 18,
+1: 14,
+2: 18,
+3: 10,
+4: 16,
+5: 12
+}
+skills = Array[int]([2, 5, 7, 12, 16, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}])
+abilities = Array[String](["Tablets of Ruin"])
+level_moves = {
+2: ["Tickle"],
+4: ["Payback"],
+5: ["Poison Powder", "Stun Spore"],
+7: ["Mega Drain"],
+9: ["Leech Seed"],
+10: ["Growth"],
+12: ["Ingrain"],
+14: ["Dark Pulse"],
+15: ["Giga Drain", "Ruination"],
+16: ["Foul Play", "Power Whip"],
+17: ["Grassy Terrain", "Knock Off"],
+18: ["Leaf Storm"]
+}
+starting_moves = Array[String](["Absorb", "Mean Look", "Spite"])
+tms = Array[String](["tm_24", "tm_25", "tm_36", "tm_52", "tm_83", "tm_84", "tm_87", "tm_106", "tm_112", "tm_113", "tm_114", "tm_117", "tm_130", "tm_136", "tm_150", "tm_152", "tm_154", "tm_156", "tm_163", "tm_174", "tm_175", "tm_193", "tm_199", "tm_209", "tm_212", "tm_214", "tm_234", "tm_238", "tm_248", "tm_253", "tm_257", "tm_258", "tm_261", "tm_270", "tm_271", "tm_282", "tm_283", "tm_286", "tm_298", "tm_321"])

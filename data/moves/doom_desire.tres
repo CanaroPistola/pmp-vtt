@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cvwfami77n3sj"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_x6fjk"]
+
+[resource]
+script = ExtResource("1_x6fjk")
+id = "doom_desire"
+display_name = "Doom Desire (Desejo Cruel)"
+name_en = "Doom Desire"
+name_pt = "Desejo Cruel"
+type = 16
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+duration_rounds = 3
+description = "Seu corpo brila e forma uma esfera de luz prateada que sobe aos céus, gerando uma chuva de meteoros que cai sobre um alvo. Quando você ativa este Move, faça um ataque à distância contra um alvo. Em um acerto, no início do terceiro turno do alvo após você ativar este Move, ele sofre 3d10 + MOVE de dano de aço. Se o alvo for trocado, o dano é causado ao Pokémon que o substituiu. O alvo só precisa estar em alcance no momento em que o Move for ativado."
+scaling_text = "Os dados de dano para este Move mudam para 4d10 no nível 5, 7d8 no nível 10 e 7d10 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "3 rodadas"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 7,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 7,
+"dice_max": 10,
+"move": true
+}
+}

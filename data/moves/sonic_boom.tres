@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bfb5t35cfidpg"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_sr51i"]
+
+[resource]
+script = ExtResource("1_sr51i")
+id = "sonic_boom"
+display_name = "Sonic Boom"
+name_en = "Sonic Boom"
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "Você gera vibrações em seu corpo, criando várias ondas de choque que avançam em direção a uma criatura. Faça um ataque à distância -1 contra um alvo em alcance, causando 4 de dano fixo do tipo normal em um acerto. O dano fixo  independe do tipo do alvo (não há resistências ou super e fetivos, porém não causa dano quando há imunidade). Esse dano não pode ser aumentado ou reduzido por nenhuma fonte, incluindo STAB, itens,  condições, habilidades (de Pokémon ou Treinador), outros Moves ou acertos críticos."
+scaling_text = "O dano deste M ove muda para 6 no nível 5, 8 no nível 10 e 10 no nível 17. Arte feita por edo_sama Arte feita por cubehero Arte feita por freqrexy 182"
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -1

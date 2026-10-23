@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bbdggfl67tqmg"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_pjebq"]
+
+[resource]
+script = ExtResource("1_pjebq")
+dex_number = 130
+display_name = "Gyarados"
+id = "gyarados"
+types = Array[int]([2, 9])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 80
+hit_dice = "d12"
+movement = {
+0: 9.0,
+1: 12.0
+}
+attributes = {
+0: 18,
+1: 16,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 8])
+abilities = Array[String](["Intimidate"])
+hidden_ability = "Moxie"
+level_moves = {
+2: ["Whirlpool"],
+4: ["Brine"],
+7: ["Leer", "Waterfall"],
+8: ["Twister"],
+9: ["Ice Fang"],
+10: ["Aqua Tail"],
+11: ["Scary Face"],
+12: ["Dragon Rage"],
+13: ["Crunch"],
+14: ["Hydro Pump"],
+15: ["Dragon Dance", "Hurricane"],
+16: ["Hyper Beam", "Rain Dance"]
+}
+starting_moves = Array[String](["Bite", "Flail", "Splash", "Tackle", "Thrash"])
+tms = Array[String](["tm_11", "tm_13", "tm_16", "tm_22", "tm_25", "tm_26", "tm_30", "tm_31", "tm_35", "tm_42", "tm_45", "tm_50", "tm_52", "tm_57", "tm_58", "tm_59", "tm_62", "tm_64", "tm_65", "tm_66", "tm_74", "tm_82", "tm_83", "tm_87", "tm_91", "tm_97", "tm_104", "tm_109", "tm_113", "tm_122", "tm_129", "tm_131", "tm_133", "tm_135", "tm_136", "tm_139", "tm_140", "tm_144", "tm_148", "tm_149", "tm_152", "tm_176", "tm_182", "tm_186", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_224", "tm_228", "tm_231", "tm_232", "tm_233", "tm_234", "tm_248", "tm_255", "tm_261", "tm_267", "tm_270", "tm_271", "tm_275", "tm_276", "tm_282", "tm_283", "tm_285", "tm_286", "tm_290", "tm_293", "tm_294", "tm_295", "tm_296", "tm_305", "tm_311", "tm_312", "tm_314"])

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://1irpw8ebsmjs"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_yu54h"]
+
+[resource]
+script = ExtResource("1_yu54h")
+dex_number = 739
+display_name = "Crabrawler"
+id = "crabrawler"
+types = Array[int]([6])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 10.5
+}
+attributes = {
+0: 13,
+1: 14,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Hyper Cutter", "Iron Fist"])
+hidden_ability = "Anger Point"
+evolves_to = Array[String](["crabominable"])
+evolution_level = 6
+evolution_points = 11
+level_moves = {
+2: ["Rock Smash"],
+3: ["Leer"],
+5: ["Pursuit"],
+6: ["Bubble Beam", "Protect"],
+8: ["Brick Break", "Power-Up Punch"],
+9: ["Dizzy Punch", "Slam"],
+10: ["Payback"],
+11: ["Reversal"],
+13: ["Crabhammer"],
+14: ["Iron Defense"],
+15: ["Close Combat", "Dynamic Punch"]
+}
+starting_moves = Array[String](["Bubble", "Vise Grip"])
+tms = Array[String](["tm_10", "tm_13", "tm_25", "tm_29", "tm_31", "tm_34", "tm_35", "tm_42", "tm_43", "tm_44", "tm_45", "tm_55", "tm_58", "tm_67", "tm_71", "tm_74", "tm_82", "tm_83", "tm_87", "tm_100", "tm_103", "tm_105", "tm_108", "tm_109", "tm_120", "tm_129", "tm_131", "tm_141", "tm_147", "tm_148", "tm_150", "tm_157", "tm_174", "tm_175", "tm_186", "tm_199", "tm_209", "tm_214", "tm_216", "tm_218", "tm_223", "tm_225", "tm_228", "tm_232", "tm_248", "tm_255", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_282", "tm_286", "tm_288", "tm_292", "tm_296", "tm_304", "tm_318", "tm_321"])
+egg_moves = Array[String](["Amnesia", "Endeavor", "Focus Punch", "Superpower", "Wide Guard"])

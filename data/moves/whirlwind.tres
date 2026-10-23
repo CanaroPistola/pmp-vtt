@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c08cq42u6scox"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8cmok"]
+
+[resource]
+script = ExtResource("1_8cmok")
+id = "whirlwind"
+display_name = "Whirlwind (Ataque de Vento)"
+name_en = "Whirlwind"
+name_pt = "Ataque de Vento"
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 0
+range_category = 2
+range_distance = 9.0
+description = "Você cria uma rajada poderosa de vento que lança o inimigo para longe. O alvo deve realizar um teste de resistência de FOR contra sua CD de Move. Em caso de falha, o efeito depende do tipo de encontro. Em encontros selvagens: Se o alvo for de um nível menor que você, ele tenta fugir do combate imediatamente. Em batalhas contra treinadores: O alvo é imediatamente substituído por outro Pokémon da equipe, à escolha do treinador. Se não houver outro Pokémon disponível, ou se o alvo estiver impossibilitado de ser trocado (por habilidade, item ou condição de combate), o Move falha automaticamente. Este Move ignora reações de proteção, como Protect ou Detect."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([1])

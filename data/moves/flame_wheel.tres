@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://yek8kj8soqry"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_oisua"]
+
+[resource]
+script = ExtResource("1_oisua")
+id = "flame_wheel"
+display_name = "Flame Wheel (Roda de Fogo)"
+name_en = "Flame Wheel"
+name_pt = "Roda de Fogo"
+type = 1
+pp = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você se envolve em chamas e gira em alta velocidade, avançando como uma roda de fogo em direção ao alvo. Avance obrigatoriamente 20 pés (6 metros) em linha reta e realize um ataque corpo a corpo contra cada criatura no trajeto, causando 2d6 + MOVE de dano do tipo Fogo a cada acerto. Se atingir um alvo que seja duas ou mais escalas de tamanho maior que a sua, você ricocheteia ao colidir, continuando o movimento na direção oposta do golpe. Em um resultado natural de 19 ou 20 no dado de ataque, o alvo fica Queimado. Se você estiver congelado, este Move ainda pode ser usado, descongelando você imediatamente antes de realizar o ataque."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["burn", "freeze"])

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cau5o048hn6ai"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_twjnu"]
+
+[resource]
+script = ExtResource("1_twjnu")
+dex_number = 856
+display_name = "Hatenna"
+id = "hatenna"
+types = Array[int]([10])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 6.0
+}
+attributes = {
+0: 9,
+1: 12,
+2: 10,
+3: 10,
+4: 12,
+5: 10
+}
+skills = Array[int]([9])
+senses = Array[Dictionary]([{
+"range_m": 1.5,
+"type": 2
+}])
+abilities = Array[String](["Healer", "Anticipation"])
+hidden_ability = "Magic Bounce"
+evolves_to = Array[String](["hattrem"])
+evolution_level = 11
+evolution_points = 7
+level_moves = {
+2: ["Life Dew"],
+4: ["Disarming Voice"],
+5: ["Aromatherapy", "Aromatic Mist"],
+7: ["Psybeam"],
+9: ["Heal Pulse"],
+10: ["Dazzling Gleam"],
+12: ["Calm Mind"],
+14: ["Psychic"],
+15: ["Healing Wish"]
+}
+starting_moves = Array[String](["Confusion", "Play Nice"])
+tms = Array[String](["tm_13", "tm_18", "tm_38", "tm_41", "tm_52", "tm_53", "tm_56", "tm_68", "tm_83", "tm_85", "tm_87", "tm_110", "tm_112", "tm_129", "tm_145", "tm_156", "tm_163", "tm_171", "tm_173", "tm_177", "tm_190", "tm_199", "tm_200", "tm_201", "tm_202", "tm_205", "tm_207", "tm_212", "tm_214", "tm_228", "tm_229", "tm_244", "tm_248", "tm_255", "tm_268", "tm_270", "tm_277", "tm_286", "tm_293", "tm_300", "tm_301"])
+egg_moves = Array[String](["After You", "Aromatic Mist", "Mystical Fire", "Nuzzle", "Quash"])

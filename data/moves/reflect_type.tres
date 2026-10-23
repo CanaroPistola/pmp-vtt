@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cpcwpa5u3ytkn"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_tfwwg"]
+
+[resource]
+script = ExtResource("1_tfwwg")
+id = "reflect_type"
+display_name = "Reflect Type (Refletir Tipo)"
+name_en = "Reflect Type"
+name_pt = "Refletir Tipo"
+move_time = "1 ação"
+range_category = 2
+range_distance = 12.0
+duration_is_permanent = true
+description = "Seu corpo brilha como um espelho por apenas um instante. Quando ele volta ao normal, você assume o(s) tipo(s) de uma criatura no alcance."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Enquanto ativo"

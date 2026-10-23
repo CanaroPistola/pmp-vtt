@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://updkum6r7phn"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_cblfj"]
+
+[resource]
+script = ExtResource("1_cblfj")
+dex_number = 223
+display_name = "Remoraid"
+id = "remoraid"
+types = Array[int]([2])
+sr = "1/4"
+evolution_stage = 2
+armor_class = 12
+hit_points = 17
+movement = {
+0: 1.5,
+1: 9.0
+}
+attributes = {
+0: 10,
+1: 14,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0])
+abilities = Array[String](["Hustle", "Sniper"])
+hidden_ability = "Moody"
+evolves_to = Array[String](["octillery"])
+evolution_level = 9
+evolution_points = 10
+level_moves = {
+2: ["Lock-On"],
+4: ["Psybeam"],
+5: ["Aurora Beam"],
+6: ["Bubble Beam"],
+8: ["Focus Energy"],
+9: ["Water Pulse"],
+10: ["Signal Beam"],
+12: ["Ice Beam"],
+13: ["Bullet Seed"],
+14: ["Hydro Pump"],
+15: ["Hyper Beam", "Soak"]
+}
+starting_moves = Array[String](["Water Gun"])
+tms = Array[String](["tm_12", "tm_13", "tm_22", "tm_26", "tm_30", "tm_36", "tm_40", "tm_45", "tm_57", "tm_58", "tm_87", "tm_91", "tm_97", "tm_104", "tm_109", "tm_120", "tm_129", "tm_131", "tm_136", "tm_139", "tm_144", "tm_174", "tm_199", "tm_202", "tm_209", "tm_214", "tm_216", "tm_221", "tm_228", "tm_232", "tm_236", "tm_238", "tm_243", "tm_248", "tm_251", "tm_255", "tm_270", "tm_271", "tm_275", "tm_276", "tm_277", "tm_288", "tm_293", "tm_296", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Acid Spray", "Aurora Beam", "Entrainment", "Flail", "Haze", "Mud Shot", "Octazooka", "Rock Blast", "Screech", "Snore", "Supersonic", "Swift", "Water Pulse", "Water Spout"])

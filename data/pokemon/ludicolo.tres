@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c6x6nt4gxokbb"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_b2a0v"]
+
+[resource]
+script = ExtResource("1_b2a0v")
+dex_number = 272
+display_name = "Ludicolo"
+id = "ludicolo"
+types = Array[int]([2, 4])
+sr = "10"
+min_level = 8
+evolution_stage = 3
+armor_class = 16
+hit_points = 88
+hit_dice = "d12"
+movement = {
+0: 9.0,
+1: 9.0
+}
+attributes = {
+0: 16,
+1: 15,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([4, 12])
+abilities = Array[String](["Swift Swim", "Rain Dish"])
+hidden_ability = "Own Tempo"
+starting_moves = Array[String](["Astonish", "Bubble Beam", "Fake Out", "Growl", "Mega Drain", "Nature Power", "Rain Dance"])
+tms = Array[String](["tm_10", "tm_13", "tm_22", "tm_25", "tm_29", "tm_36", "tm_42", "tm_45", "tm_56", "tm_57", "tm_58", "tm_59", "tm_67", "tm_75", "tm_81", "tm_83", "tm_84", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_109", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_122", "tm_131", "tm_135", "tm_136", "tm_137", "tm_139", "tm_141", "tm_142", "tm_144", "tm_150", "tm_154", "tm_163", "tm_165", "tm_166", "tm_171", "tm_174", "tm_176", "tm_179", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_232", "tm_238", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_275", "tm_276", "tm_277", "tm_278", "tm_279", "tm_282", "tm_286", "tm_288", "tm_292", "tm_296", "tm_298", "tm_305", "tm_311", "tm_312", "tm_313", "tm_314", "tm_321"])
+egg_moves = Array[String](["Counter", "Flail", "Giga Drain", "Leech Seed", "Razor Leaf", "Sweet Scent", "Synthesis", "Teeter Dance", "Tickle", "Water Gun"])

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cyq2do6u3o8ri"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_kgy8i"]
+
+[resource]
+script = ExtResource("1_kgy8i")
+dex_number = 616
+display_name = "Shelmet"
+id = "shelmet"
+types = Array[int]([11])
+sr = "1"
+evolution_stage = 1
+armor_class = 15
+hit_points = 17
+movement = {
+0: 4.5
+}
+attributes = {
+0: 12,
+1: 9,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Hydration", "Shell Armor"])
+hidden_ability = "Overcoat"
+evolves_to = Array[String](["accelgor"])
+evolution_level = 10
+evolution_points = 14
+level_moves = {
+2: ["Acid"],
+3: ["Bide"],
+5: ["Curse"],
+6: ["Struggle Bug"],
+7: ["Mega Drain"],
+9: ["Yawn"],
+10: ["Protect"],
+11: ["Acid Armor"],
+13: ["Giga Drain"],
+14: ["Body Slam"],
+15: ["Bug Buzz", "Guard Swap", "Recover"],
+16: ["Final Gambit"]
+}
+starting_moves = Array[String](["Absorb"])
+tms = Array[String](["tm_13", "tm_32", "tm_45", "tm_58", "tm_84", "tm_87", "tm_109", "tm_111", "tm_112", "tm_119", "tm_131", "tm_146", "tm_155", "tm_174", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_243", "tm_245", "tm_248", "tm_249", "tm_255", "tm_270", "tm_276", "tm_296", "tm_307"])
+egg_moves = Array[String](["Baton Pass", "Double-Edge", "Encore", "Endure", "Feint", "Guard Split", "Mind Reader", "Mud-Slap", "Pursuit", "Spikes", "Toxic Spikes"])

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dbajwib1yemqp"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_qfu5x"]
+
+[resource]
+script = ExtResource("1_qfu5x")
+id = "disarming_voice"
+display_name = "Disarming Voice (Voz Desarmante)"
+name_en = "Disarming Voice"
+name_pt = "Voz Desarmante"
+type = 17
+move_time = "1 ação"
+range_category = 3
+range_distance = 12.0
+description = "Você solta um grito melodioso que se manifesta em ondas rosadas repletas de corações e notas musicais, atingindo inimigos em um cone de 40 pés (12 metros). Este Move é garantido de acertar, sem testes de resistência, causando 2d4 + MOVE de dano do tipo fada. Os alvos devem rolar um d20 para chance de acerto crítico."
+scaling_text = "Os dados de dano para este Move mudam para 1d12 no nível 5, 4d4 no nível 10 e 2d10 no nível 17."
+range_text_raw = "Pessoal (cone de 12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}

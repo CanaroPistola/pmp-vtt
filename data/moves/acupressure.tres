@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://btk540djv1058"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_d44tu"]
+
+[resource]
+script = ExtResource("1_d44tu")
+id = "acupressure"
+display_name = "Acupressure (Acupressão)"
+name_en = "Acupressure"
+name_pt = "Acupressão"
+pp = 15
+move_time = "1 ação"
+range_category = 8
+range_distance = 6.0
+duration_is_permanent = true
+description = "Você aplica pressão em diferentes pontos de estresse em seu corpo, aumentando aleatoriamente uma habilidade. Ao ativar esse Move, role um d8 e ganhe o seguinte aumento com base no resultado. Este bônus pode ser acumulado até um máximo de 6 estágios para cada. Caso tenha caído em um atributo já maximizado, role novamente. Acupressure pode ser direcionado a si mesmo ou a um companheiro de equipe no alcance. Para mais informações, cheque o livro."
+range_text_raw = "Pessoal / (6 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+effect_tags = Array[String](["stat_change", "prone"])

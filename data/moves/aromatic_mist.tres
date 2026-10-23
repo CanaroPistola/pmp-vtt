@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cbxcq6oorxigl"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_njvyc"]
+
+[resource]
+script = ExtResource("1_njvyc")
+id = "aromatic_mist"
+display_name = "Aromatic Mist (Névoa Aromática)"
+name_en = "Aromatic Mist"
+name_pt = "Névoa Aromática"
+type = 17
+move_time = "1 ação"
+range_category = 2
+range_distance = 6.0
+duration_is_permanent = true
+description = "Você libera um aroma que inspira um de seus aliados. Escolha um alvo no alcance, concedendo a ele um aumento de sua Defesa Especial em 1 estágio, podendo ser acumulado em até 6 estágios."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

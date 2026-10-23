@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dgbqlsfgiy5s7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vawqt"]
+
+[resource]
+script = ExtResource("1_vawqt")
+dex_number = 49
+display_name = "Venomoth"
+id = "venomoth"
+types = Array[int]([11, 7])
+sr = "8"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 64
+hit_dice = "d10"
+movement = {
+0: 3.0
+}
+attributes = {
+0: 14,
+1: 17,
+2: 12,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([12])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Shield Dust", "Tinted Lens"])
+hidden_ability = "Wonder Skin"
+level_moves = {
+2: ["Supersonic"],
+4: ["Confusion"],
+5: ["Poison Powder"],
+6: ["Psybeam"],
+8: ["Stun Spore"],
+9: ["Signal Beam"],
+10: ["Sleep Powder"],
+13: ["Leech Life"],
+14: ["Zen Headbutt"],
+15: ["Poison Fang"],
+16: ["Bug Buzz", "Psychic"],
+17: ["Quiver Dance"]
+}
+starting_moves = Array[String](["Air Slash", "Disable", "Foresight", "Gust", "Silver Wind", "Tackle"])
+tms = Array[String](["tm_1", "tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_13", "tm_18", "tm_32", "tm_33", "tm_45", "tm_46", "tm_54", "tm_58", "tm_59", "tm_82", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_113", "tm_131", "tm_136", "tm_146", "tm_155", "tm_160", "tm_180", "tm_195", "tm_199", "tm_200", "tm_202", "tm_204", "tm_214", "tm_216", "tm_227", "tm_228", "tm_243", "tm_244", "tm_245", "tm_248", "tm_249", "tm_250", "tm_255", "tm_257", "tm_269", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_288", "tm_296", "tm_297", "tm_303", "tm_307", "tm_321"])
+egg_moves = Array[String](["Agility", "Baton Pass", "Bug Bite", "Giga Drain", "Morning Sun", "Rage Powder", "Screech", "Secret Power", "Signal Beam", "Skill Swap", "Toxic Spikes", "Venoshock"])

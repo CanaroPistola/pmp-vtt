@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://de8o2dob75x4m"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_cgekm"]
+
+[resource]
+script = ExtResource("1_cgekm")
+id = "dire_claw"
+display_name = "Dire Claw"
+name_en = "Dire Claw"
+type = 7
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você golpeia o alvo com garras ruinosas, podendo trazer problemas ao alvo. Faça um ataque corpo a corpo, causando 4d4 + MOVE de dano venenoso em um acerto. Em um resultado natural de 11 ou mais no acerto, role um d6, e cause o efeito com base na rolagem: 1-2: Envenenado / 3-4: Paralisado / 5-6: Sonolento."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["paralysis", "poison", "sleep"])

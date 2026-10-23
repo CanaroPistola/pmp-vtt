@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://e1lvp876xvew"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wo2ew"]
+
+[resource]
+script = ExtResource("1_wo2ew")
+dex_number = 307
+display_name = "Meditite"
+id = "meditite"
+types = Array[int]([6, 10])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 7.5
+}
+attributes = {
+0: 9,
+1: 12,
+2: 12,
+3: 8,
+4: 12,
+5: 10
+}
+skills = Array[int]([9])
+senses = Array[Dictionary]([{
+"range_m": 3.0,
+"type": 2
+}])
+abilities = Array[String](["Pure Power"])
+hidden_ability = "Telepathy"
+evolves_to = Array[String](["medicham"])
+evolution_level = 13
+evolution_points = 13
+level_moves = {
+2: ["Meditate"],
+3: ["Confusion", "Detect"],
+4: ["Endure"],
+5: ["Feint"],
+6: ["Force Palm"],
+7: ["Hidden Power", "Psybeam"],
+8: ["Calm Mind"],
+9: ["Mind Reader", "Zen Headbutt"],
+10: ["High Jump Kick"],
+11: ["Acupressure", "Psych Up"],
+12: ["Power Trick"],
+13: ["Reversal"],
+14: ["Recover"],
+15: ["Counter"]
+}
+starting_moves = Array[String](["Bide", "Work Up"])
+tms = Array[String](["tm_3", "tm_13", "tm_18", "tm_25", "tm_29", "tm_34", "tm_38", "tm_43", "tm_45", "tm_58", "tm_67", "tm_69", "tm_83", "tm_85", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_109", "tm_114", "tm_118", "tm_129", "tm_131", "tm_141", "tm_145", "tm_156", "tm_158", "tm_159", "tm_161", "tm_171", "tm_180", "tm_184", "tm_191", "tm_199", "tm_200", "tm_201", "tm_202", "tm_205", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_218", "tm_223", "tm_225", "tm_226", "tm_228", "tm_240", "tm_243", "tm_244", "tm_248", "tm_255", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_288", "tm_292", "tm_296", "tm_298", "tm_300", "tm_301", "tm_304", "tm_318", "tm_321"])
+egg_moves = Array[String](["Baton Pass", "Bullet Punch", "Drain Punch", "Dynamic Punch", "Fake Out", "Fire Punch", "Foresight", "Guard Swap", "Ice Punch", "Power Swap", "Psycho Cut", "Quick Guard", "Secret Power", "Thunder Punch"])

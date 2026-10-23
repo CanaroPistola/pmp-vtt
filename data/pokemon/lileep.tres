@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://crv5femkg32ws"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_5sjc6"]
+
+[resource]
+script = ExtResource("1_5sjc6")
+dex_number = 345
+display_name = "Lileep"
+id = "lileep"
+types = Array[int]([12, 4])
+sr = "2"
+evolution_stage = 1
+armor_class = 15
+hit_points = 21
+hit_dice = "d8"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 15,
+1: 9,
+2: 16,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([5, 17])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 1
+}])
+abilities = Array[String](["Suction Cups"])
+hidden_ability = "Storm Drain"
+evolves_to = Array[String](["cradily"])
+evolution_level = 14
+evolution_points = 10
+level_moves = {
+2: ["Acid"],
+3: ["Ingrain"],
+5: ["Confuse Ray"],
+6: ["Ancient Power"],
+7: ["Brine", "Mega Drain"],
+9: ["Giga Drain"],
+11: ["Gastro Acid"],
+12: ["Amnesia"],
+14: ["Energy Ball"],
+15: ["Spit Up", "Stockpile", "Swallow"],
+16: ["Wring Out"]
+}
+starting_moves = Array[String](["Astonish", "Constrict"])
+tms = Array[String](["tm_13", "tm_20", "tm_30", "tm_36", "tm_45", "tm_58", "tm_73", "tm_84", "tm_87", "tm_109", "tm_111", "tm_112", "tm_114", "tm_131", "tm_146", "tm_170", "tm_174", "tm_184", "tm_199", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_231", "tm_238", "tm_248", "tm_249", "tm_251", "tm_255", "tm_257", "tm_262", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_296", "tm_319"])
+egg_moves = Array[String](["Barrier", "Bind", "Curse", "Endure", "Mega Drain", "Mirror Coat", "Recover", "Stealth Rock", "Tickle", "Wring Out"])

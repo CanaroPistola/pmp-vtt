@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cfsmactwesqhs"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_igwoo"]
+
+[resource]
+script = ExtResource("1_igwoo")
+id = "rain_dance"
+display_name = "Rain Dance"
+name_en = "Rain Dance"
+type = 2
+pp = 3
+move_time = "1 ação"
+range_category = 5
+range_distance = 15.0
+duration_rounds = 5
+description = "Você convoca uma chuva intensa que cobre o campo de batalha em um raio de 50 pés (15 metros), sempre centrado em você e acompanhando seus movimentos. Em ambientes fechados, você invoca nuvens densas que geram os mesmos efeitos. O efeito dura 5 rodadas, a menos que seja cancelado por Air Lock ou Cloud Nine, ou caso outro clima seja ativado em seguida e a área dele esteja encostada na sua. Usar Rain Dance enquanto já houver uma chuva ativa não reinicia a duração. Durante esta chuva intensa, ocorrem os seguintes efeitos: • Os Moves do tipo água aumentam os dados de dano em metade da quantidade original (arredondado para baixo). Caso seja uma rolagem com apenas 1 dado, role o dano duas vezes e escolha o maior resultado. • Os Moves do tipo fogo, Solar Beam e Solar Blade reduzem seus dados de dano pela metade (arredondado para baixo). Caso seja uma rolagem com apenas 1 dado, role o dano duas vezes e escolha o menor resultado. • Os Moves Thunder e Hurricane acertam com garantia (mas role um d20 para chance de causar dano crítico e efeito secundário)."
+range_text_raw = "Pessoal (raio de 15 metros)"
+duration_text_raw = "5 rodadas"
+effect_tags = Array[String](["weather"])

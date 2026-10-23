@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://1lggqlmm64yw"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ajeho"]
+
+[resource]
+script = ExtResource("1_ajeho")
+id = "feather_dance"
+display_name = "Feather Dance"
+name_en = "Feather Dance"
+type = 9
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 1
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você agita suas asas e libera uma chuva de penas cintilantes que envolvem o alvo, reduzindo sua força ofensiva. Role 1d20 + MOVE + 9 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, o Ataque do alvo é reduzido em 2 estágios, podendo ser acumulado em até -6 estágios."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([1, 5])
+effect_tags = Array[String](["stat_change"])

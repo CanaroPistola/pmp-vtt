@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bttgynpeqtloe"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_i0ven"]
+
+[resource]
+script = ExtResource("1_i0ven")
+id = "stockpile"
+display_name = "Stockpile (Estocagem)"
+name_en = "Stockpile"
+name_pt = "Estocagem"
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+description = "Você consome algum objeto em sua frente, com intenção de armazenar energia para um ataque ou para se curar. Cada vez que ativar este Move, você aumenta sua Defesa e Defesa Especial em um estágio cada, e acumula energia para ser usada com os Moves complementares Spit Up ou Swallow. Pode ser usado até três vezes antes desses Moves, que respectivamente causa dano ou recupera pontos de vida. O dano de Spit Up e a cura de Swallow variam conforme o número de vezes que Stockpile foi usado. Após utilizar um desses Moves, o usuário perde os bônus de Defesa e Defesa Especial."
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea"
+effect_tags = Array[String](["stat_change"])

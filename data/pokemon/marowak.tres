@@ -1,0 +1,91 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://biawysojym8qn"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_1r27n"]
+
+[resource]
+script = ExtResource("1_1r27n")
+dex_number = 105
+display_name = "Marowak"
+id = "marowak"
+types = Array[int]([8])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 18,
+1: 12,
+2: 14,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Rock Head", "Lightning Rod"])
+hidden_ability = "Battle Armor"
+level_moves = {
+3: ["Bone Club"],
+4: ["Headbutt"],
+5: ["Leer"],
+6: ["Focus Energy"],
+7: ["Bonemerang"],
+8: ["Rage"],
+9: ["False Swipe"],
+11: ["Thrash"],
+13: ["Fling"],
+15: ["Endeavor", "Stomping Tantrum"],
+16: ["Double-Edge", "Retaliate"],
+17: ["Bone Rush"]
+}
+starting_moves = Array[String](["Growl", "Tail Whip"])
+tms = Array[String](["tm_3", "tm_13", "tm_22", "tm_29", "tm_31", "tm_35", "tm_45", "tm_55", "tm_58", "tm_73", "tm_74", "tm_75", "tm_82", "tm_87", "tm_89", "tm_91", "tm_94", "tm_97", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_131", "tm_136", "tm_139", "tm_144", "tm_147", "tm_148", "tm_149", "tm_150", "tm_151", "tm_158", "tm_165", "tm_166", "tm_182", "tm_199", "tm_214", "tm_215", "tm_216", "tm_223", "tm_225", "tm_228", "tm_231", "tm_235", "tm_236", "tm_248", "tm_251", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_288", "tm_289", "tm_292", "tm_296", "tm_305"])
+egg_moves = Array[String](["Ancient Power", "Belly Drum", "Chip Away", "Curse", "Detect", "Double Kick", "Endure", "Iron Head", "Leer", "Perish Song", "Screech", "Skull Bash"])
+is_variant = true
+variant_data = {
+"Marowak": {
+"diff": {},
+"display_name": "Marowak",
+"is_default": true
+},
+"Marowak de Alola": {
+"diff": {
+"abilities": ["Cursed Body", "Lightning Rod"],
+"attributes": {
+"CON": 12,
+"STR": 16,
+"WIS": 16
+},
+"hidden_ability": "Rock Head",
+"moves_diff": {
+"level_moves": {
+3: ["Bone Club"],
+4: ["Flame Wheel"],
+5: ["Leer"],
+6: ["Hex"],
+7: ["Bonemerang"],
+8: ["Will-O-Wisp"],
+9: ["Shadow Bone"],
+11: ["Thrash"],
+13: ["Fling"],
+15: ["Endeavor", "Stomping Tantrum"],
+16: ["Flare Blitz", "Retaliate"],
+17: ["Bone Rush"]
+},
+"starting_moves": ["Growl", "Tail Whip"],
+"tms": ["tm_3", "tm_9", "tm_13", "tm_22", "tm_29", "tm_31", "tm_35", "tm_37", "tm_45", "tm_52", "tm_55", "tm_58", "tm_69", "tm_73", "tm_74", "tm_75", "tm_82", "tm_87", "tm_89", "tm_91", "tm_94", "tm_95", "tm_96", "tm_97", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_127", "tm_130", "tm_131", "tm_136", "tm_139", "tm_144", "tm_145", "tm_147", "tm_148", "tm_149", "tm_150", "tm_151", "tm_158", "tm_165", "tm_166", "tm_182", "tm_184", "tm_194", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_223", "tm_225", "tm_228", "tm_231", "tm_235", "tm_236", "tm_240", "tm_248", "tm_251", "tm_255", "tm_261", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_288", "tm_289", "tm_290", "tm_292", "tm_294", "tm_296", "tm_305", "tm_316"]
+},
+"senses": [{
+"range_m": 15.0,
+"type": 0
+}],
+"types": [1, 13]
+},
+"display_name": "Marowak de Alola",
+"is_default": false
+}
+}

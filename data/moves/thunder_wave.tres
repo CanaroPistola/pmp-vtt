@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cl04t6duwcilv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_qu1mp"]
+
+[resource]
+script = ExtResource("1_qu1mp")
+id = "thunder_wave"
+display_name = "Thunder Wave"
+name_en = "Thunder Wave"
+type = 3
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 7
+status_roll_target_attribute = 1
+range_category = 2
+range_distance = 15.0
+description = "Você envia uma onda de energia elétrica que envolve uma criatura dentro do alcance. Role 1d20 + MOVE + 7 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, o alvo fica Paralisado."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0, 1])
+effect_tags = Array[String](["paralysis"])

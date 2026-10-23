@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dxce64x12d1jn"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_td75j"]
+
+[resource]
+script = ExtResource("1_td75j")
+dex_number = 185
+display_name = "Sudowoodo"
+id = "sudowoodo"
+types = Array[int]([12])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 18,
+1: 10,
+2: 14,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([12, 17])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 1
+}])
+abilities = Array[String](["Sturdy", "Rock Head"])
+hidden_ability = "Rattled"
+level_moves = {
+2: ["Flail"],
+3: ["Low Kick"],
+4: ["Rock Throw"],
+5: ["Mimic"],
+7: ["Feint Attack"],
+8: ["Tearful Look"],
+9: ["Rock Tomb"],
+10: ["Block"],
+11: ["Rock Slide"],
+12: ["Counter"],
+14: ["Sucker Punch"],
+15: ["Double-Edge", "Hammer Arm", "Stone Edge"],
+16: ["Head Smash"]
+}
+starting_moves = Array[String](["Copycat", "Fake Tears", "Slam", "Wood Hammer"])
+tms = Array[String](["tm_4", "tm_13", "tm_23", "tm_24", "tm_25", "tm_29", "tm_35", "tm_38", "tm_45", "tm_48", "tm_51", "tm_55", "tm_58", "tm_59", "tm_67", "tm_73", "tm_74", "tm_82", "tm_83", "tm_86", "tm_87", "tm_88", "tm_94", "tm_100", "tm_105", "tm_106", "tm_109", "tm_113", "tm_114", "tm_129", "tm_131", "tm_132", "tm_136", "tm_141", "tm_147", "tm_158", "tm_159", "tm_165", "tm_166", "tm_170", "tm_174", "tm_175", "tm_179", "tm_196", "tm_199", "tm_201", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_224", "tm_225", "tm_226", "tm_228", "tm_230", "tm_231", "tm_239", "tm_248", "tm_251", "tm_255", "tm_260", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_282", "tm_283", "tm_286", "tm_288", "tm_292", "tm_295", "tm_296", "tm_298"])
+egg_moves = Array[String](["Curse", "Defense Curl", "Endure", "Harden", "Headbutt", "Rock Polish", "Rollout", "Sand Tomb", "Self-Destruct", "Stealth Rock"])

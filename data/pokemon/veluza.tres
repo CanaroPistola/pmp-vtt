@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ble81yjvbpq3k"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_khieu"]
+
+[resource]
+script = ExtResource("1_khieu")
+dex_number = 976
+display_name = "Veluza"
+id = "veluza"
+types = Array[int]([2, 10])
+sr = "8"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 1.5,
+1: 10.5
+}
+attributes = {
+0: 16,
+1: 14,
+2: 18,
+3: 10,
+4: 6,
+5: 10
+}
+skills = Array[int]([0, 3, 8, 17])
+abilities = Array[String](["Mold Breaker"])
+hidden_ability = "Sharpness"
+level_moves = {
+3: ["Pluck"],
+4: ["Water Pulse"],
+5: ["Focus Energy"],
+7: ["Slash"],
+9: ["Aqua Cutter"],
+10: ["Fillet Away"],
+12: ["Night Slash"],
+14: ["Psycho Cut"],
+15: ["Crunch", "Liquidation"],
+16: ["Final Gambit"]
+}
+starting_moves = Array[String](["Aqua Jet", "Tackle"])
+tms = Array[String](["tm_5", "tm_22", "tm_25", "tm_42", "tm_50", "tm_59", "tm_70", "tm_82", "tm_83", "tm_85", "tm_101", "tm_113", "tm_135", "tm_136", "tm_139", "tm_140", "tm_144", "tm_157", "tm_184", "tm_199", "tm_202", "tm_203", "tm_205", "tm_209", "tm_214", "tm_233", "tm_248", "tm_256", "tm_268", "tm_270", "tm_275", "tm_282", "tm_286", "tm_311", "tm_312", "tm_321"])
+egg_moves = Array[String](["Recover", "Thrash"])

@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cxxogv4lspalc"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4kcsu"]
+
+[resource]
+script = ExtResource("1_4kcsu")
+dex_number = 69
+display_name = "Bellsprout"
+id = "bellsprout"
+types = Array[int]([4, 7])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 11
+hit_points = 18
+movement = {
+0: 6.0
+}
+attributes = {
+0: 10,
+1: 12,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([12, 17])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 1
+}])
+abilities = Array[String](["Chlorophyll"])
+hidden_ability = "Gluttony"
+evolves_to = Array[String](["weepinbell"])
+evolution_level = 7
+evolution_points = 8
+level_moves = {
+3: ["Growth"],
+4: ["Wrap"],
+5: ["Poison Powder", "Sleep Powder"],
+6: ["Stun Spore"],
+8: ["Acid"],
+9: ["Knock Off"],
+10: ["Sweet Scent"],
+12: ["Gastro Acid"],
+13: ["Razor Leaf"],
+14: ["Poison Jab"],
+15: ["Slam", "Wring Out"],
+16: ["Power Whip"]
+}
+starting_moves = Array[String](["Vine Whip"])
+tms = Array[String](["tm_1", "tm_13", "tm_20", "tm_36", "tm_45", "tm_58", "tm_81", "tm_83", "tm_84", "tm_87", "tm_109", "tm_111", "tm_112", "tm_114", "tm_116", "tm_117", "tm_131", "tm_146", "tm_150", "tm_154", "tm_155", "tm_160", "tm_163", "tm_179", "tm_191", "tm_195", "tm_199", "tm_212", "tm_214", "tm_216", "tm_228", "tm_238", "tm_248", "tm_249", "tm_250", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_286", "tm_288", "tm_296", "tm_298", "tm_307", "tm_313", "tm_319"])
+egg_moves = Array[String](["Acid Spray", "Belch", "Bullet Seed", "Clear Smog", "Encore", "Giga Drain", "Ingrain", "Leech Life", "Magical Leaf", "Natural Gift", "Power Whip", "Strength Sap", "Sucker Punch", "Synthesis", "Tickle", "Weather Ball", "Worry Seed"])

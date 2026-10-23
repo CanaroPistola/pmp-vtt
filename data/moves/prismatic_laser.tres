@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dyloqr8rir73q"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_wbjf7"]
+
+[resource]
+script = ExtResource("1_wbjf7")
+id = "prismatic_laser"
+display_name = "Prismatic Laser"
+name_en = "Prismatic Laser"
+type = 10
+pp = 5
+move_time = "1 ação, recarga"
+resolution = 2
+has_save = true
+needs_recharge = true
+range_category = 4
+range_distance = 18.0
+description = "Você concentra energia em seus prismas, liberando um feixe multicolorido de luz devastadora em uma linha de 60 pés (18 metros), com 5 pés (1,5 metros) de largura. Qualquer criatura pega na linha deve ter sucesso em um teste de DES contra sua CD de Move ou sofrer 4d8 + MOVE de dano psíquico em uma falha, e metade disso em um sucesso. Este Move drena sua energia, e você não pode realizar outra ação padrão ou reação até o final do seu próximo turno."
+scaling_text = "Os dados de dano para este Move mudam  para 4d12 no nível 5, 8d8 no nível 10 e 8d10 no nível 17."
+range_text_raw = "Pessoal (linha de 18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+},
+10: {
+"amount": 8,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 8,
+"dice_max": 10,
+"move": true
+}
+}

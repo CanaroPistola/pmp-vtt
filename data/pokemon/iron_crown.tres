@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b1f7jy2r3l8xg"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_n6lre"]
+
+[resource]
+script = ExtResource("1_n6lre")
+dex_number = 1023
+display_name = "Iron Crown"
+id = "iron_crown"
+types = Array[int]([16, 10])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 18
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 16,
+1: 16,
+2: 18,
+3: 10,
+4: 18,
+5: 10
+}
+skills = Array[int]([3, 14])
+abilities = Array[String](["Quark Drive"])
+level_moves = {
+3: ["Smart Strike"],
+5: ["Slash"],
+7: ["Iron Defense"],
+10: ["Psyshock"],
+12: ["Psycho Cut"],
+14: ["Flash Cannon"],
+15: ["Sacred Sword"],
+16: ["Tachyon Cutter"],
+17: ["Future Sight", "Volt Switch"],
+18: ["Quick Guard"],
+19: ["Metal Burst"],
+20: ["Hyper Beam"]
+}
+starting_moves = Array[String](["Confusion", "Electric Terrain", "Leer", "Metal Claw"])
+tms = Array[String](["tm_5", "tm_7", "tm_25", "tm_29", "tm_35", "tm_38", "tm_59", "tm_77", "tm_83", "tm_85", "tm_87", "tm_99", "tm_103", "tm_110", "tm_113", "tm_118", "tm_128", "tm_136", "tm_147", "tm_148", "tm_168", "tm_169", "tm_199", "tm_202", "tm_204", "tm_207", "tm_214", "tm_234", "tm_248", "tm_252", "tm_258", "tm_263", "tm_268", "tm_270", "tm_273", "tm_278", "tm_282", "tm_286", "tm_308", "tm_320", "tm_321"])

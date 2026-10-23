@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b3uhgmuo5kgep"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_vd2mc"]
+
+[resource]
+script = ExtResource("1_vd2mc")
+id = "power_gem"
+display_name = "Power Gem (Joia do Poder)"
+name_en = "Power Gem"
+name_pt = "Joia do Poder"
+type = 12
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Um raio de luz irrompe de sua pedra preciosa, causando dano a uma criatura dentro do alcance. Faça um ataque à distância, causando 4d4 + MOVE de dano de pedra em um acerto."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}

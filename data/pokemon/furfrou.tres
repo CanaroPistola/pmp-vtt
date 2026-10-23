@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dyj0x7c40hsri"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_hxu6u"]
+
+[resource]
+script = ExtResource("1_hxu6u")
+dex_number = 676
+display_name = "Furfrou"
+id = "furfrou"
+types = Array[int]([0])
+sr = "10"
+min_level = 5
+evolution_stage = 1
+armor_class = 16
+hit_points = 59
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 18,
+2: 17,
+3: 8,
+4: 10,
+5: 10
+}
+skills = Array[int]([14])
+abilities = Array[String](["Fur Coat"])
+level_moves = {
+2: ["Sand Attack"],
+3: ["Baby-Doll Eyes"],
+4: ["Headbutt"],
+5: ["Tail Whip"],
+8: ["Bite"],
+9: ["Odor Sleuth"],
+11: ["Retaliate"],
+12: ["Take Down"],
+13: ["Charm"],
+14: ["Sucker Punch"],
+15: ["Cotton Guard"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_13", "tm_40", "tm_45", "tm_52", "tm_58", "tm_75", "tm_82", "tm_87", "tm_109", "tm_113", "tm_114", "tm_129", "tm_131", "tm_137", "tm_149", "tm_153", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_226", "tm_228", "tm_248", "tm_253", "tm_255", "tm_270", "tm_271", "tm_275", "tm_276", "tm_293", "tm_296", "tm_303", "tm_305", "tm_315", "tm_318", "tm_321"])
+egg_moves = Array[String](["Captivate", "Mimic", "Refresh", "Role Play", "Work Up"])

@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ky8c5njh1g3j"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_hj51l"]
+
+[resource]
+script = ExtResource("1_hj51l")
+dex_number = 52
+display_name = "Meowth"
+id = "meowth"
+types = Array[int]([0])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 10,
+1: 15,
+2: 10,
+3: 8,
+4: 10,
+5: 12
+}
+skills = Array[int]([5, 14, 15])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Pickup", "Technician"])
+hidden_ability = "Unnerve"
+evolves_to = Array[String](["persian", "perrserker"])
+evolution_level = 10
+evolution_points = 11
+level_moves = {
+2: ["Bite"],
+3: ["Fake Out"],
+5: ["Fury Swipes"],
+6: ["Screech"],
+8: ["Feint Attack"],
+9: ["Taunt"],
+10: ["Pay Day"],
+11: ["Slash"],
+13: ["Nasty Plot"],
+14: ["Assurance"],
+15: ["Captivate", "Feint", "Night Slash", "Play Rough"]
+}
+starting_moves = Array[String](["Growl", "Scratch"])
+tms = Array[String](["tm_3", "tm_5", "tm_10", "tm_12", "tm_13", "tm_25", "tm_41", "tm_42", "tm_45", "tm_48", "tm_52", "tm_55", "tm_58", "tm_59", "tm_69", "tm_75", "tm_82", "tm_83", "tm_87", "tm_88", "tm_89", "tm_106", "tm_109", "tm_120", "tm_129", "tm_131", "tm_137", "tm_144", "tm_149", "tm_150", "tm_152", "tm_153", "tm_168", "tm_178", "tm_184", "tm_185", "tm_186", "tm_190", "tm_196", "tm_199", "tm_201", "tm_209", "tm_214", "tm_215", "tm_216", "tm_228", "tm_236", "tm_238", "tm_240", "tm_241", "tm_242", "tm_248", "tm_253", "tm_254", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_290", "tm_293", "tm_294", "tm_295", "tm_296", "tm_298", "tm_303", "tm_305", "tm_311", "tm_318"])
+egg_moves = Array[String](["Amnesia", "Assist", "Charm", "Covet", "Flail", "Foul Play", "Hypnosis", "Iron Tail", "Last Resort", "Odor Sleuth", "Punishment", "Snatch", "Spite", "Tail Whip"])
+is_variant = true
+variant_data = {
+"Meowth": {
+"diff": {},
+"display_name": "Meowth",
+"is_default": true
+},
+"Meowth de Alola": {
+"diff": {
+"Evolve": "Persian de Alola",
+"attributes": {
+"CON": 11,
+"DEX": 14
+},
+"hidden_ability": "Rattled",
+"moves_diff": {
+"egg_moves": ["Amnesia", "Assist", "Charm", "Covet", "Flail", "Flatter", "Foul Play", "Hypnosis", "Parting Shot", "Punishment", "Snatch", "Spite"],
+"level_moves": {
+2: ["Bite"],
+3: ["Fake Out"],
+5: ["Fury Swipes"],
+6: ["Screech"],
+8: ["Feint Attack"],
+9: ["Taunt"],
+10: ["Pay Day"],
+11: ["Slash"],
+13: ["Nasty Plot"],
+14: ["Assurance"],
+15: ["Captivate", "Feint", "Night Slash", "Play Rough"],
+16: ["Dark Pulse"]
+},
+"starting_moves": ["Growl", "Scratch"],
+"tms": ["tm_3", "tm_5", "tm_10", "tm_12", "tm_13", "tm_25", "tm_41", "tm_42", "tm_45", "tm_46", "tm_48", "tm_51", "tm_52", "tm_55", "tm_58", "tm_59", "tm_69", "tm_75", "tm_80", "tm_82", "tm_83", "tm_87", "tm_88", "tm_106", "tm_109", "tm_120", "tm_129", "tm_131", "tm_137", "tm_144", "tm_149", "tm_150", "tm_152", "tm_153", "tm_168", "tm_178", "tm_185", "tm_186", "tm_190", "tm_196", "tm_199", "tm_201", "tm_208", "tm_209", "tm_214", "tm_215", "tm_216", "tm_228", "tm_236", "tm_238", "tm_240", "tm_241", "tm_242", "tm_248", "tm_253", "tm_254", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_290", "tm_293", "tm_294", "tm_295", "tm_296", "tm_298", "tm_303", "tm_305", "tm_311", "tm_318"]
+},
+"types": [15]
+},
+"display_name": "Meowth de Alola",
+"is_default": false
+},
+"Meowth de Galar": {
+"diff": {
+"Evolve": "Perrserker",
+"abilities": ["Pickup", "Tough Claws"],
+"moves_diff": {
+"egg_moves": ["Covet", "Curse", "Double-Edge", "Flail", "Night Slash", "Spite"],
+"level_moves": {
+2: ["Hone Claws"],
+3: ["Scratch"],
+4: ["Pay Day"],
+6: ["Metal Claw"],
+7: ["Taunt"],
+8: ["Swagger"],
+10: ["Fury Swipes"],
+11: ["Screech"],
+12: ["Slash"],
+14: ["Metal Sound"],
+15: ["Thrash"]
+},
+"starting_moves": ["Fake Out", "Growl"],
+"tms": ["tm_3", "tm_10", "tm_12", "tm_13", "tm_25", "tm_29", "tm_41", "tm_50", "tm_51", "tm_52", "tm_55", "tm_59", "tm_82", "tm_83", "tm_87", "tm_88", "tm_89", "tm_99", "tm_100", "tm_106", "tm_120", "tm_121", "tm_129", "tm_137", "tm_147", "tm_148", "tm_150", "tm_152", "tm_168", "tm_169", "tm_171", "tm_178", "tm_185", "tm_186", "tm_190", "tm_199", "tm_209", "tm_214", "tm_215", "tm_228", "tm_236", "tm_238", "tm_240", "tm_241", "tm_248", "tm_255", "tm_261", "tm_262", "tm_263", "tm_270", "tm_271", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_290", "tm_294", "tm_298", "tm_303", "tm_320"]
+},
+"types": [16]
+},
+"display_name": "Meowth de Galar",
+"is_default": false
+}
+}

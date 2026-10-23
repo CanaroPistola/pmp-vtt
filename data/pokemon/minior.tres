@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cmdfkp04i480u"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_itimx"]
+
+[resource]
+script = ExtResource("1_itimx")
+dex_number = 774
+display_name = "Minior"
+id = "minior"
+types = Array[int]([12, 9])
+sr = "4"
+min_level = 5
+evolution_stage = 1
+armor_class = 18
+hit_points = 43
+hit_dice = "d10"
+movement = {
+0: 3.0
+}
+attributes = {
+0: 15,
+1: 12,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([2, 17])
+abilities = Array[String](["Shields Down"])
+level_moves = {
+3: ["Rollout"],
+4: ["Confuse Ray"],
+5: ["Swift"],
+6: ["Ancient Power"],
+8: ["Self-Destruct", "Stealth Rock"],
+10: ["Take Down"],
+11: ["Autotomize", "Rock Polish"],
+12: ["Cosmic Power"],
+13: ["Power Gem"],
+15: ["Double-Edge", "Explosion", "Shell Smash"]
+}
+starting_moves = Array[String](["Defense Curl", "Tackle"])
+tms = Array[String](["tm_2", "tm_13", "tm_35", "tm_38", "tm_40", "tm_45", "tm_46", "tm_53", "tm_58", "tm_59", "tm_73", "tm_74", "tm_82", "tm_83", "tm_86", "tm_87", "tm_109", "tm_113", "tm_118", "tm_121", "tm_131", "tm_136", "tm_148", "tm_153", "tm_156", "tm_164", "tm_170", "tm_196", "tm_199", "tm_201", "tm_202", "tm_212", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_229", "tm_231", "tm_235", "tm_248", "tm_255", "tm_257", "tm_262", "tm_267", "tm_270", "tm_276", "tm_277", "tm_282", "tm_284", "tm_286", "tm_296", "tm_303", "tm_321"])
+is_variant = true
+variant_data = {
+"Minior Forma Meteoro": {
+"diff": {},
+"display_name": "Minior Forma Meteoro",
+"is_default": true
+},
+"Minior Forma Núcleo": {
+"diff": {
+"armor_class": 14,
+"attributes": {
+"DEX": 18
+}
+},
+"display_name": "Minior Forma Núcleo",
+"is_default": false
+}
+}

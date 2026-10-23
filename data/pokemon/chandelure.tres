@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c10l2mfkhkpuq"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_d1uas"]
+
+[resource]
+script = ExtResource("1_d1uas")
+dex_number = 609
+display_name = "Chandelure"
+id = "chandelure"
+types = Array[int]([13, 1])
+sr = "14"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 107
+hit_dice = "d12"
+attributes = {
+0: 16,
+1: 17,
+2: 16,
+3: 6,
+4: 18,
+5: 10
+}
+skills = Array[int]([2, 8])
+abilities = Array[String](["Flash Fire", "Flame Body"])
+hidden_ability = "Infiltrator"
+starting_moves = Array[String](["Astonish", "Confuse Ray", "Curse", "Ember", "Fire Spin", "Flame Burst", "Hex", "Imprison", "Inferno", "Memento", "Minimize", "Night Shade", "Overheat", "Pain Split", "Shadow Ball", "Smog", "Will-O-Wisp"])
+tms = Array[String](["tm_9", "tm_13", "tm_37", "tm_38", "tm_45", "tm_46", "tm_51", "tm_52", "tm_58", "tm_69", "tm_80", "tm_83", "tm_84", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_109", "tm_113", "tm_124", "tm_127", "tm_130", "tm_131", "tm_136", "tm_145", "tm_151", "tm_152", "tm_177", "tm_180", "tm_183", "tm_184", "tm_186", "tm_194", "tm_199", "tm_201", "tm_202", "tm_214", "tm_216", "tm_228", "tm_229", "tm_240", "tm_242", "tm_245", "tm_248", "tm_255", "tm_257", "tm_261", "tm_270", "tm_271", "tm_276", "tm_283", "tm_284", "tm_285", "tm_286", "tm_288", "tm_296", "tm_298", "tm_300", "tm_301", "tm_316"])
+egg_moves = Array[String](["Acid", "Acid Armor", "Captivate", "Clear Smog", "Endure", "Haze", "Heat Wave", "Power Split"])

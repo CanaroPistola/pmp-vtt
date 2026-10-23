@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dmp06uqpmuro3"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_uand5"]
+
+[resource]
+script = ExtResource("1_uand5")
+id = "shelter"
+display_name = "Shelter"
+name_en = "Shelter"
+type = 16
+pp = 5
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você transforma sua pele em uma proteção tão dura quanto ferro, aumentando sua Defesa em 2 estágios, podendo ser acumulado em até 6 estágios."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

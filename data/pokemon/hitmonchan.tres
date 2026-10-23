@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://btkdjnp1ygr83"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_fy5dc"]
+
+[resource]
+script = ExtResource("1_fy5dc")
+dex_number = 107
+display_name = "Hitmonchan"
+id = "hitmonchan"
+types = Array[int]([6])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 45
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 14,
+2: 12,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 3])
+abilities = Array[String](["Keen Eye", "Iron Fist"])
+hidden_ability = "Inner Focus"
+level_moves = {
+2: ["Agility"],
+3: ["Power-Up Punch"],
+4: ["Pursuit"],
+6: ["Bullet Punch", "Mach Punch"],
+7: ["Feint"],
+9: ["Vacuum Wave"],
+11: ["Quick Guard"],
+12: ["Fire Punch", "Ice Punch", "Thunder Punch"],
+14: ["Sky Uppercut"],
+15: ["Detect", "Mega Punch"],
+16: ["Focus Punch"],
+17: ["Close Combat", "Counter"]
+}
+starting_moves = Array[String](["Comet Punch", "Drain Punch", "Fake Out", "Focus Energy", "Helping Hand", "Revenge", "Tackle"])
+tms = Array[String](["tm_5", "tm_13", "tm_14", "tm_18", "tm_25", "tm_29", "tm_34", "tm_35", "tm_43", "tm_44", "tm_45", "tm_48", "tm_58", "tm_59", "tm_67", "tm_74", "tm_81", "tm_82", "tm_83", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_129", "tm_131", "tm_141", "tm_150", "tm_151", "tm_158", "tm_159", "tm_165", "tm_166", "tm_171", "tm_175", "tm_191", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_218", "tm_223", "tm_225", "tm_226", "tm_228", "tm_234", "tm_248", "tm_255", "tm_267", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_292", "tm_296", "tm_298", "tm_304", "tm_305", "tm_306", "tm_318"])
+egg_moves = Array[String](["Bullet Punch", "Counter", "Endure", "Feint", "Helping Hand", "High Jump Kick", "Mach Punch", "Mind Reader", "Pursuit", "Rapid Spin", "Vacuum Wave"])

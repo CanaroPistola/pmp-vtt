@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bhfx7flhr8jk3"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_k2m2r"]
+
+[resource]
+script = ExtResource("1_k2m2r")
+dex_number = 313
+display_name = "Volbeat"
+id = "volbeat"
+types = Array[int]([11])
+sr = "7"
+min_level = 5
+evolution_stage = 1
+armor_class = 16
+hit_points = 45
+hit_dice = "d8"
+movement = {
+0: 6.0,
+2: 6.0
+}
+attributes = {
+0: 16,
+1: 14,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([12, 14])
+abilities = Array[String](["Illuminate", "Swarm"])
+hidden_ability = "Prankster"
+level_moves = {
+2: ["Double Team"],
+3: ["Confuse Ray"],
+4: ["Quick Attack"],
+5: ["Struggle Bug"],
+7: ["Moonlight"],
+8: ["Tail Glow"],
+9: ["Signal Beam"],
+10: ["Protect"],
+11: ["Zen Headbutt"],
+12: ["Helping Hand"],
+14: ["Bug Buzz"],
+15: ["Double-Edge", "Infestation", "Play Rough"]
+}
+starting_moves = Array[String](["Flash", "Tackle"])
+tms = Array[String](["tm_2", "tm_3", "tm_6", "tm_7", "tm_13", "tm_18", "tm_25", "tm_29", "tm_32", "tm_33", "tm_40", "tm_42", "tm_45", "tm_46", "tm_53", "tm_54", "tm_58", "tm_59", "tm_81", "tm_82", "tm_83", "tm_87", "tm_100", "tm_105", "tm_109", "tm_112", "tm_129", "tm_131", "tm_141", "tm_146", "tm_156", "tm_160", "tm_171", "tm_175", "tm_190", "tm_195", "tm_199", "tm_201", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_240", "tm_242", "tm_243", "tm_245", "tm_248", "tm_255", "tm_257", "tm_269", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_298", "tm_300", "tm_303", "tm_311", "tm_321"])
+egg_moves = Array[String](["Baton Pass", "Bug Buzz", "Counter", "Dizzy Punch", "Encore", "Lunge", "Roost", "Seismic Toss", "Silver Wind", "Swagger", "Trick"])

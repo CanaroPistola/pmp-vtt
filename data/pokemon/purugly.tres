@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cj2lnfdx6wo2v"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4qiiq"]
+
+[resource]
+script = ExtResource("1_4qiiq")
+dex_number = 432
+display_name = "Purugly"
+id = "purugly"
+types = Array[int]([0])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 10.5
+}
+attributes = {
+0: 14,
+1: 18,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([8, 13])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Thick Fat", "Own Tempo"])
+hidden_ability = "Defiant"
+level_moves = {
+2: ["Scratch"],
+3: ["Growl"],
+5: ["Hypnosis"],
+6: ["Feint Attack"],
+7: ["Fury Swipes"],
+9: ["Charm"],
+10: ["Assist"],
+11: ["Captivate"],
+13: ["Slash"],
+15: ["Body Slam"],
+16: ["Attract", "Hone Claws"]
+}
+starting_moves = Array[String](["Fake Out", "Swagger"])
+tms = Array[String](["tm_3", "tm_13", "tm_35", "tm_45", "tm_48", "tm_58", "tm_69", "tm_75", "tm_87", "tm_106", "tm_109", "tm_113", "tm_131", "tm_136", "tm_137", "tm_149", "tm_150", "tm_153", "tm_186", "tm_190", "tm_199", "tm_201", "tm_209", "tm_214", "tm_216", "tm_220", "tm_228", "tm_240", "tm_241", "tm_242", "tm_248", "tm_254", "tm_255", "tm_266", "tm_270", "tm_271", "tm_272", "tm_276", "tm_277", "tm_283", "tm_288", "tm_289", "tm_290", "tm_294", "tm_295", "tm_296", "tm_303", "tm_311", "tm_318"])
+egg_moves = Array[String](["Assurance", "Bite", "Fake Tears", "Flail", "Last Resort", "Quick Attack", "Sand Attack", "Snatch", "Tail Whip", "Wake-Up Slap"])

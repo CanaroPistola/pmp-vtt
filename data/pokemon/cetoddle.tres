@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dymg1e734by8p"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_u3pml"]
+
+[resource]
+script = ExtResource("1_u3pml")
+dex_number = 974
+display_name = "Cetoddle"
+id = "cetoddle"
+types = Array[int]([5])
+sr = "3"
+evolution_stage = 1
+armor_class = 12
+hit_points = 19
+movement = {
+0: 7.5,
+1: 4.5
+}
+attributes = {
+0: 14,
+1: 12,
+2: 16,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Thick Fat", "Snow Cloak"])
+hidden_ability = "Sheer Force"
+evolves_to = Array[String](["cetitan"])
+evolution_level = 8
+evolution_points = 12
+level_moves = {
+2: ["Growl"],
+3: ["Echoed Voice"],
+4: ["Ice Shard"],
+5: ["Rest"],
+7: ["Take Down"],
+9: ["Avalanche", "Flail"],
+11: ["Bounce"],
+12: ["Body Slam"],
+14: ["Amnesia"],
+15: ["Double-Edge", "Ice Spinner"],
+16: ["Blizzard"]
+}
+starting_moves = Array[String](["Powder Snow", "Tackle"])
+tms = Array[String](["tm_10", "tm_16", "tm_22", "tm_24", "tm_25", "tm_35", "tm_41", "tm_42", "tm_51", "tm_59", "tm_74", "tm_83", "tm_87", "tm_128", "tm_129", "tm_132", "tm_136", "tm_137", "tm_139", "tm_140", "tm_142", "tm_143", "tm_144", "tm_150", "tm_157", "tm_190", "tm_199", "tm_209", "tm_214", "tm_248", "tm_256", "tm_266", "tm_270", "tm_282", "tm_286", "tm_311"])
+egg_moves = Array[String](["Belly Drum", "Entrainment", "Icicle Crash", "Superpower", "Yawn"])

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bendydsm54rga"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_u1fhf"]
+
+[resource]
+script = ExtResource("1_u1fhf")
+id = "uproar"
+display_name = "Uproar (Tumulto)"
+name_en = "Uproar"
+name_pt = "Tumulto"
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 3
+range_distance = 9.0
+duration_rounds = 3
+duration_flags = Array[String](["concentration"])
+description = "Você solta um estrondo ensurdecedor que ataca os inimigos e impede todos de adormecer, liberando ondas sonoras em um cone de 9 metros, centrado em você. Qualquer criatura atingida pelo cone deve ter sucesso em um teste de CON contra sua CD de Move, sofrendo 3d6 + MOVE de dano normal em uma falha, ou metade disso em um sucesso. Esta ação é repetida pelos seus próximos 2 turnos, sem gastar PP. Além disso, durante o uso de Uproar, todos aqueles em um raio de 9 metros, centrado em você, são acordados e são impedidos de adormecer."
+scaling_text = "Os dados de dano para este Move mudam para 3d10 no nível 5, 3d12 no nível 10 e 4d12 no nível 17."
+range_text_raw = "Pessoal (cone de 9 metros)"
+duration_text_raw = "3 rodadas, Concentração"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["sleep"])

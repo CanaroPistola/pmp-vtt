@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://coxi3w7ecdgbx"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_y085y"]
+
+[resource]
+script = ExtResource("1_y085y")
+dex_number = 534
+display_name = "Conkeldurr"
+id = "conkeldurr"
+types = Array[int]([6])
+sr = "14"
+min_level = 10
+evolution_stage = 3
+armor_class = 15
+hit_points = 122
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 18,
+1: 13,
+2: 19,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Guts", "Sheer Force"])
+hidden_ability = "Iron Fist"
+level_moves = {
+2: ["Focus Energy"],
+3: ["Bide"],
+4: ["Low Kick"],
+6: ["Rock Throw"],
+7: ["Wake-Up Slap"],
+8: ["Chip Away", "Slam"],
+10: ["Bulk Up"],
+11: ["Rock Slide"],
+13: ["Dynamic Punch"],
+14: ["Scary Face"],
+15: ["Hammer Arm", "Stone Edge"],
+16: ["Focus Punch", "Superpower"]
+}
+starting_moves = Array[String](["Leer", "Pound"])
+tms = Array[String](["tm_13", "tm_23", "tm_25", "tm_29", "tm_31", "tm_34", "tm_35", "tm_43", "tm_44", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_67", "tm_74", "tm_83", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_114", "tm_123", "tm_129", "tm_131", "tm_132", "tm_136", "tm_141", "tm_150", "tm_158", "tm_159", "tm_165", "tm_166", "tm_186", "tm_191", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_218", "tm_221", "tm_223", "tm_225", "tm_228", "tm_234", "tm_248", "tm_251", "tm_255", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_283", "tm_286", "tm_288", "tm_292", "tm_296", "tm_304", "tm_318"])
+egg_moves = Array[String](["Comet Punch", "Counter", "Defog", "Detect", "Drain Punch", "Endure", "Force Palm", "Foresight", "Mach Punch", "Power-Up Punch", "Reversal", "Smelling Salts", "Wide Guard"])

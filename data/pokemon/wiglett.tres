@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://i2qv0af5qew7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vuiwh"]
+
+[resource]
+script = ExtResource("1_vuiwh")
+dex_number = 960
+display_name = "Wiglett"
+id = "wiglett"
+types = Array[int]([2])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 14
+movement = {
+0: 6.0
+}
+attributes = {
+0: 9,
+1: 13,
+2: 11,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([6, 13])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 1
+}])
+abilities = Array[String](["Gooey", "Rattled"])
+hidden_ability = "Sand Veil"
+evolves_to = Array[String](["wugtrio"])
+evolution_level = 9
+evolution_points = 10
+level_moves = {
+2: ["Mud-Slap"],
+3: ["Wrap"],
+4: ["Aqua Jet"],
+7: ["Slam", "Water Pulse"],
+8: ["Headbutt"],
+10: ["Dig"],
+11: ["Sucker Punch"],
+12: ["Throat Chop"],
+14: ["Liquidation"]
+}
+starting_moves = Array[String](["Sand Attack", "Water Gun"])
+tms = Array[String](["tm_5", "tm_22", "tm_35", "tm_42", "tm_55", "tm_73", "tm_83", "tm_87", "tm_106", "tm_129", "tm_135", "tm_139", "tm_157", "tm_174", "tm_175", "tm_176", "tm_199", "tm_209", "tm_214", "tm_231", "tm_248", "tm_266", "tm_270", "tm_275", "tm_277", "tm_282", "tm_286", "tm_289", "tm_311", "tm_314"])
+egg_moves = Array[String](["Final Gambit", "Memento"])

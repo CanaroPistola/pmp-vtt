@@ -1,12 +1,10 @@
-[gd_scene format=3 uid="uid://ddu7gcy7xgph2"]
+[gd_scene format=3 uid="uid://14l7wj11cnqi"]
 
 [ext_resource type="Script" uid="uid://b48nvr26ue0ff" path="res://scripts/trainer_sheet/image_change.gd" id="1_sxlm7"]
 [ext_resource type="Texture2D" uid="uid://cya7epnwlrqp1" path="res://assets/images/pokeball.png" id="1_ucmi3"]
 [ext_resource type="Script" uid="uid://cgfo54cx65exh" path="res://scripts/trainer_sheet.gd" id="1_yqoxd"]
-[ext_resource type="Texture2D" uid="uid://bkx3mwv3enhbh" path="res://assets/pc_sprites/eevee.png" id="2_0t5ym"]
 [ext_resource type="PackedScene" uid="uid://diy6aeqb81hmd" path="res://scenes/trainer_sheet/hp_panel.tscn" id="2_10w08"]
 [ext_resource type="Script" uid="uid://dedmctb0k3pi7" path="res://scripts/trainer_sheet/trainer_card.gd" id="2_ayiyf"]
-[ext_resource type="Texture2D" uid="uid://ctcg7jyoar3x0" path="res://assets/pc_sprites/greninja.png" id="2_sxlm7"]
 [ext_resource type="Script" uid="uid://c5q55e0hof7nv" path="res://scripts/trainer_sheet/atributos_pericias.gd" id="4_lp3lw"]
 [ext_resource type="Script" uid="uid://dj2hfa37ymon4" path="res://addons/godot_radar_graph/radar_graph.gd" id="4_xmc0x"]
 [ext_resource type="Script" uid="uid://doadutqjhxmyl" path="res://scripts/trainer_sheet/select_region.gd" id="6_eenh0"]
@@ -47,7 +45,9 @@ metadata/_tab_name = "Trainer Card"
 [node name="HPPanel" parent="TabContainer/TrainerCard" unique_id=434013711 instance=ExtResource("2_10w08")]
 layout_mode = 1
 offset_left = 305.0
+offset_top = 207.0
 offset_right = 445.0
+offset_bottom = 267.0
 
 [node name="Label2" type="Label" parent="TabContainer/TrainerCard/HPPanel" unique_id=209728193]
 layout_mode = 0
@@ -188,60 +188,25 @@ layout_mode = 2
 text = "2"
 alignment = 1
 
-[node name="Team Container" type="HBoxContainer" parent="TabContainer/TrainerCard" unique_id=1838814892]
+[node name="TeamContainer" type="HBoxContainer" parent="TabContainer/TrainerCard" unique_id=1838814892]
 layout_mode = 1
 offset_left = 305.0
 offset_top = 128.0
 offset_right = 733.0
 offset_bottom = 184.0
 
-[node name="Slot1" type="PanelContainer" parent="TabContainer/TrainerCard/Team Container" unique_id=333822432]
+[node name="Slot1" type="PanelContainer" parent="TabContainer/TrainerCard/TeamContainer" unique_id=1415452212]
+custom_minimum_size = Vector2(68, 56)
+custom_maximum_size = Vector2(68, 56)
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/Team Container/Slot1" unique_id=1938063703]
-layout_mode = 2
-texture = ExtResource("2_0t5ym")
-stretch_mode = 5
-
-[node name="Slot2" type="PanelContainer" parent="TabContainer/TrainerCard/Team Container" unique_id=351823759]
+[node name="Button" type="Button" parent="TabContainer/TrainerCard/TeamContainer/Slot1" unique_id=1118211448]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/Team Container/Slot2" unique_id=617170026]
+[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/TeamContainer/Slot1" unique_id=110338941]
 layout_mode = 2
-texture = ExtResource("2_sxlm7")
-stretch_mode = 5
-
-[node name="Slot3" type="PanelContainer" parent="TabContainer/TrainerCard/Team Container" unique_id=1956178721]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/Team Container/Slot3" unique_id=331906001]
-layout_mode = 2
-texture = ExtResource("2_sxlm7")
-stretch_mode = 5
-
-[node name="Slot4" type="PanelContainer" parent="TabContainer/TrainerCard/Team Container" unique_id=334180942]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/Team Container/Slot4" unique_id=1997086102]
-layout_mode = 2
-texture = ExtResource("2_sxlm7")
-stretch_mode = 5
-
-[node name="Slot5" type="PanelContainer" parent="TabContainer/TrainerCard/Team Container" unique_id=1464731121]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/Team Container/Slot5" unique_id=1762862028]
-layout_mode = 2
-texture = ExtResource("2_sxlm7")
-stretch_mode = 5
-
-[node name="Slot6" type="PanelContainer" parent="TabContainer/TrainerCard/Team Container" unique_id=1278554161]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/Team Container/Slot6" unique_id=1615231768]
-layout_mode = 2
-texture = ExtResource("2_sxlm7")
-stretch_mode = 5
+mouse_filter = 2
+stretch_mode = 4
 
 [node name="BadgesContainer" type="GridContainer" parent="TabContainer/TrainerCard" unique_id=1873814364]
 layout_mode = 1

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bnkdo2c5obqlc"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_78slk"]
+
+[resource]
+script = ExtResource("1_78slk")
+id = "poison_tail"
+display_name = "Poison Tail (Cauda Venenosa)"
+name_en = "Poison Tail"
+name_pt = "Cauda Venenosa"
+type = 7
+pp = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Espinhos venenosos brotam de sua cauda enquanto você a balança em direção a uma criatura. Faça um ataque corpo a corpo contra uma criatura, causando 1d10 + MOVE de dano venenoso em um acerto. Em um resultado natural de 19 ou 20 no acerto, o alvo é envenenado. Este Move causa um golpe crítico em rolagens naturais de 18 ou mais no acerto."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["poison"])

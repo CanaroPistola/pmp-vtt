@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://84pk46le8go0"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_324wn"]
+
+[resource]
+script = ExtResource("1_324wn")
+id = "harden"
+display_name = "Harden"
+name_en = "Harden"
+pp = 15
+move_time = "1 reação / ação"
+activation = 3
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você aumenta sua defesa, capaz de reduzir o dano recebido. Ao ser alvo de um ataque corpo a corpo, você pode usar sua reação para aumentar sua Defesa em 1 estágio, podendo ser acumulado em até 6 estágios. Caso faça isso, você abre mão de sua ação padrão em seu próximo turno . Você também pode usar este Move como uma ação em seu turno para o mesmo efeito."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

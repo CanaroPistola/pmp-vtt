@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://5orvmii7plf0"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_5i105"]
+
+[resource]
+script = ExtResource("1_5i105")
+dex_number = 736
+display_name = "Grubbin"
+id = "grubbin"
+types = Array[int]([11])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 17
+movement = {
+0: 7.5
+}
+attributes = {
+0: 10,
+1: 12,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Swarm"])
+evolves_to = Array[String](["charjabug"])
+evolution_level = 7
+evolution_points = 12
+level_moves = {
+2: ["String Shot"],
+3: ["Mud-Slap"],
+4: ["Bite"],
+5: ["Bug Bite"],
+6: ["Spark"],
+7: ["Acrobatics"],
+8: ["Crunch"],
+9: ["Sticky Web", "X-Scissor"],
+10: ["Dig"]
+}
+starting_moves = Array[String](["Vise Grip"])
+tms = Array[String](["tm_2", "tm_13", "tm_18", "tm_32", "tm_39", "tm_40", "tm_45", "tm_50", "tm_55", "tm_58", "tm_77", "tm_79", "tm_83", "tm_87", "tm_109", "tm_131", "tm_156", "tm_160", "tm_164", "tm_174", "tm_175", "tm_191", "tm_195", "tm_199", "tm_209", "tm_214", "tm_216", "tm_219", "tm_228", "tm_236", "tm_242", "tm_245", "tm_248", "tm_255", "tm_269", "tm_270", "tm_276", "tm_282", "tm_286", "tm_293", "tm_294", "tm_296", "tm_308", "tm_315", "tm_320"])
+egg_moves = Array[String](["Discharge", "Electroweb", "Endure", "Harden", "Mud Shot"])

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dgno66gf4s33k"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_5gvme"]
+
+[resource]
+script = ExtResource("1_5gvme")
+id = "volt_switch"
+display_name = "Volt Switch (Troca Elétrica)"
+name_en = "Volt Switch"
+name_pt = "Troca Elétrica"
+type = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 6.0
+description = "Você dispara um orbe elétrico cintilante contra o alvo, antes de se afastar. Faça um ataque à distância contra um alvo em alcance, causando 2d8 + MOVE de dano elétrico em um acerto. Após este Move ser ativado, o treinador deve trocar o usuário como uma ação livre, caso ele tenha outros Pokémon capazes de lutar."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 3d10 no nível 10 e 3d12 no nível 17."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+}
+}

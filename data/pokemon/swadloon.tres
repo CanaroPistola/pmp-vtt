@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bn0hj32uf2vte"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wvm2d"]
+
+[resource]
+script = ExtResource("1_wvm2d")
+dex_number = 541
+display_name = "Swadloon"
+id = "swadloon"
+types = Array[int]([11, 4])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 6.0,
+2: 6.0
+}
+attributes = {
+0: 13,
+1: 11,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Leaf Guard", "Chlorophyll"])
+hidden_ability = "Overcoat"
+evolves_to = Array[String](["leavanny"])
+evolution_level = 11
+evolution_points = 13
+level_moves = {
+8: ["Struggle Bug"],
+10: ["Endure"],
+11: ["Sticky Web"],
+12: ["Bug Buzz"],
+15: ["Flail"]
+}
+starting_moves = Array[String](["Bug Bite", "Grass Whistle", "Protect", "Razor Leaf", "String Shot", "Tackle"])
+tms = Array[String](["tm_13", "tm_18", "tm_32", "tm_33", "tm_38", "tm_41", "tm_45", "tm_58", "tm_69", "tm_79", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_114", "tm_116", "tm_117", "tm_131", "tm_147", "tm_156", "tm_160", "tm_161", "tm_163", "tm_179", "tm_186", "tm_195", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_243", "tm_245", "tm_248", "tm_255", "tm_257", "tm_269", "tm_270", "tm_271", "tm_276", "tm_279", "tm_282", "tm_286", "tm_296", "tm_298", "tm_319"])
+egg_moves = Array[String](["Agility", "Air Slash", "Baton Pass", "Camouflage", "Grassy Terrain", "Me First", "Mind Reader", "Razor Wind", "Screech", "Silver Wind", "Snore", "Switcheroo", "Synthesis", "Worry Seed"])

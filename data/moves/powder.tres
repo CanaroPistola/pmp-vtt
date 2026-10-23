@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://6a3bv127yli8"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_oab2e"]
+
+[resource]
+script = ExtResource("1_oab2e")
+id = "powder"
+display_name = "Powder (Pólvora Explosiva)"
+name_en = "Powder"
+name_pt = "Pólvora Explosiva"
+type = 11
+move_time = "1 reação"
+activation = 1
+range_category = 2
+range_distance = 9.0
+description = "Você rapidamente reveste uma criatura em um pó explosivo. Quando uma criatura dentro do alcance ativa um Move do tipo fogo, você pode usar sua reação para liberar um spray de pó inflamável que explode em contato com fogo, cancelando o ataque e fazendo o alvo receber dano sem tipo igual ao dobro do nível dele. Esta nuvem de pó permanece até o início do próximo turno do alvo, impedindo que ele use outros Moves de fogo pela duração. Ao usar esta reação, você abre mão de sua ação em seu próximo turno. Este Move ignora Substitute."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"

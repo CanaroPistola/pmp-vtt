@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://xwnlkv2sqsel"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ffcd4"]
+
+[resource]
+script = ExtResource("1_ffcd4")
+dex_number = 699
+display_name = "Aurorus"
+id = "aurorus"
+types = Array[int]([12, 5])
+sr = "13"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 118
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 15,
+2: 20,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Refrigerate"])
+hidden_ability = "Snow Warning"
+level_moves = {
+2: ["Thunder Wave"],
+4: ["Rock Throw"],
+5: ["Icy Wind", "Take Down"],
+6: ["Mist"],
+7: ["Aurora Beam"],
+9: ["Ancient Power"],
+10: ["Round"],
+12: ["Avalanche"],
+13: ["Hail"],
+15: ["Encore", "Light Screen", "Nature Power"],
+16: ["Ice Beam"],
+17: ["Hyper Beam"],
+18: ["Blizzard"]
+}
+starting_moves = Array[String](["Freeze-Dry", "Growl", "Powder Snow"])
+tms = Array[String](["tm_11", "tm_13", "tm_16", "tm_22", "tm_35", "tm_38", "tm_40", "tm_45", "tm_52", "tm_58", "tm_66", "tm_69", "tm_73", "tm_74", "tm_75", "tm_87", "tm_99", "tm_108", "tm_109", "tm_113", "tm_122", "tm_131", "tm_136", "tm_137", "tm_139", "tm_143", "tm_144", "tm_147", "tm_148", "tm_149", "tm_156", "tm_164", "tm_170", "tm_174", "tm_179", "tm_182", "tm_199", "tm_201", "tm_202", "tm_209", "tm_212", "tm_214", "tm_216", "tm_220", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_229", "tm_231", "tm_248", "tm_255", "tm_262", "tm_267", "tm_270", "tm_276", "tm_290", "tm_293", "tm_294", "tm_296", "tm_311", "tm_313", "tm_321"])
+egg_moves = Array[String](["Aurora Veil", "Barrier", "Discharge", "Haze", "Magnet Rise", "Mirror Coat", "Rock Throw", "Take Down"])

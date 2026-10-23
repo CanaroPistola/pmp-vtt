@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://btxl4w1orecgw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_xnvg5"]
+
+[resource]
+script = ExtResource("1_xnvg5")
+dex_number = 711
+display_name = "Gourgeist"
+id = "gourgeist"
+types = Array[int]([13, 4])
+sr = "12"
+min_level = 8
+evolution_stage = 2
+armor_class = 18
+hit_points = 84
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 16,
+1: 14,
+2: 17,
+3: 6,
+4: 16,
+5: 10
+}
+skills = Array[int]([5])
+senses = Array[Dictionary]([{
+"range_m": 22.5,
+"type": 0
+}])
+abilities = Array[String](["Pickup", "Frisk"])
+hidden_ability = "Insomnia"
+level_moves = {
+2: ["Trick-or-Treat"],
+4: ["Worry Seed"],
+6: ["Razor Leaf"],
+7: ["Leech Seed"],
+9: ["Bullet Seed"],
+10: ["Shadow Sneak"],
+12: ["Shadow Ball"],
+14: ["Pain Split"],
+15: ["Seed Bomb"]
+}
+starting_moves = Array[String](["Explosion", "Phantom Force", "Trick", "Astonish", "Confuse Ray", "Scary Face", "Moonblast"])
+tms = Array[String](["tm_9", "tm_13", "tm_31", "tm_36", "tm_40", "tm_45", "tm_52", "tm_58", "tm_69", "tm_84", "tm_86", "tm_87", "tm_91", "tm_96", "tm_97", "tm_103", "tm_106", "tm_109", "tm_112", "tm_113", "tm_114", "tm_116", "tm_121", "tm_130", "tm_131", "tm_136", "tm_145", "tm_156", "tm_161", "tm_177", "tm_179", "tm_184", "tm_188", "tm_194", "tm_199", "tm_202", "tm_214", "tm_216", "tm_223", "tm_226", "tm_228", "tm_229", "tm_234", "tm_238", "tm_240", "tm_244", "tm_245", "tm_248", "tm_249", "tm_255", "tm_257", "tm_261", "tm_270", "tm_271", "tm_276", "tm_279", "tm_284", "tm_288", "tm_296", "tm_300", "tm_301", "tm_316", "tm_319"])
+egg_moves = Array[String](["Bestow", "Curse", "Destiny Bond", "Disable"])
+is_variant = true
+variant_data = {
+"Tamanho Grande": {
+"diff": {
+"attributes": {
+"CON": 19,
+"DEX": 12
+}
+},
+"display_name": "Gourgeist Tamanho Grande",
+"is_default": false
+},
+"Tamanho Médio": {
+"diff": {
+"attributes": {
+"CON": 18,
+"DEX": 13
+},
+"moves_diff": {
+"level_moves": {
+2: ["Scary Face"],
+4: ["Worry Seed"],
+6: ["Razor Leaf"],
+7: ["Leech Seed"],
+9: ["Bullet Seed"],
+10: ["Shadow Sneak"],
+12: ["Shadow Ball"],
+14: ["Pain Split"],
+15: ["Seed Bomb"],
+16: ["Phantom Force"],
+17: ["Explosion", "Trick-or-Treat"]
+},
+"starting_moves": ["Astonish", "Confuse Ray", "Trick"]
+}
+},
+"display_name": "Gourgeist Tamanho Médio",
+"is_default": false
+},
+"Tamanho Pequeno": {
+"diff": {},
+"display_name": "Gourgeist Tamanho Pequeno",
+"is_default": true
+},
+"Tamanho Super": {
+"diff": {
+"attributes": {
+"CON": 20,
+"DEX": 11
+}
+},
+"display_name": "Gourgeist Tamanho Super",
+"is_default": false
+}
+}

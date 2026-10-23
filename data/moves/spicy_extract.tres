@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://uemlvs6xrpgr"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_gka72"]
+
+[resource]
+script = ExtResource("1_gka72")
+id = "spicy_extract"
+display_name = "Spicy Extract"
+name_en = "Spicy Extract"
+type = 4
+move_time = "1 ação"
+range_category = 2
+range_distance = 6.0
+description = "Você libera um extrato extremamente picante sobre o alvo, estimulando sua agressividade ao mesmo tempo em que deixa sua defesa exposta. Escolha um alvo em alcance. O Ataque dele é aumentado em 2 estágios, e a Defesa dele é reduzida em 2 estágios, podendo ser acumulado em até 6/-6 estágios cada. Você não pode mirar em si próprio com este Move."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Instantânea"
+effect_tags = Array[String](["stat_change"])

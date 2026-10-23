@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dtwe7oluirhsv"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wv8uw"]
+
+[resource]
+script = ExtResource("1_wv8uw")
+dex_number = 388
+display_name = "Grotle"
+id = "grotle"
+types = Array[int]([4])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 7.5,
+1: 7.5
+}
+attributes = {
+0: 15,
+1: 11,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([12, 17])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Shell Armor"
+evolves_to = Array[String](["torterra"])
+evolution_level = 11
+evolution_points = 10
+level_moves = {
+2: ["Withdraw"],
+3: ["Absorb"],
+5: ["Razor Leaf"],
+6: ["Curse"],
+8: ["Bite"],
+9: ["Mega Drain"],
+11: ["Leech Seed"],
+13: ["Synthesis"],
+14: ["Crunch"],
+15: ["Giga Drain"],
+16: ["Leaf Storm"]
+}
+starting_moves = Array[String](["Tackle"])
+tms = Array[String](["tm_10", "tm_13", "tm_25", "tm_35", "tm_36", "tm_45", "tm_50", "tm_51", "tm_58", "tm_59", "tm_73", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_114", "tm_115", "tm_116", "tm_117", "tm_128", "tm_131", "tm_148", "tm_149", "tm_154", "tm_156", "tm_163", "tm_174", "tm_175", "tm_179", "tm_199", "tm_212", "tm_214", "tm_216", "tm_220", "tm_224", "tm_228", "tm_229", "tm_230", "tm_238", "tm_248", "tm_251", "tm_255", "tm_257", "tm_262", "tm_270", "tm_271", "tm_274", "tm_276", "tm_278", "tm_279", "tm_282", "tm_286", "tm_296", "tm_298", "tm_318", "tm_319", "tm_321"])
+egg_moves = Array[String](["Amnesia", "Body Slam", "Double-Edge", "Earth Power", "Grassy Terrain", "Growth", "Heavy Slam", "Sand Tomb", "Seed Bomb", "Shell Smash", "Spit Up", "Stockpile", "Superpower", "Swallow", "Thrash", "Tickle", "Wide Guard", "Worry Seed"])

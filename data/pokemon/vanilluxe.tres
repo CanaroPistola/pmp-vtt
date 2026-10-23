@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b1e460u1rhooo"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_fp6v4"]
+
+[resource]
+script = ExtResource("1_fp6v4")
+dex_number = 584
+display_name = "Vanilluxe"
+id = "vanilluxe"
+types = Array[int]([5])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 107
+hit_dice = "d12"
+attributes = {
+0: 17,
+1: 18,
+2: 17,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Ice Body", "Snow Warning"])
+hidden_ability = "Weak Armor"
+level_moves = {
+2: ["Harden"],
+3: ["Astonish"],
+4: ["Uproar"],
+5: ["Icy Wind"],
+6: ["Mist"],
+7: ["Avalanche"],
+8: ["Taunt"],
+9: ["Mirror Shot"],
+11: ["Acid Armor"],
+12: ["Ice Beam"],
+14: ["Hail"],
+15: ["Mirror Coat"],
+16: ["Blizzard"],
+17: ["Sheer Cold"]
+}
+starting_moves = Array[String](["Freeze-Dry", "Icicle Spear", "Weather Ball"])
+tms = Array[String](["tm_9", "tm_13", "tm_16", "tm_19", "tm_22", "tm_45", "tm_58", "tm_86", "tm_87", "tm_99", "tm_108", "tm_109", "tm_113", "tm_122", "tm_131", "tm_136", "tm_139", "tm_143", "tm_144", "tm_145", "tm_147", "tm_156", "tm_161", "tm_164", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_239", "tm_243", "tm_248", "tm_255", "tm_270", "tm_276", "tm_283", "tm_296", "tm_305", "tm_311", "tm_313"])
+egg_moves = Array[String](["Aurora Veil", "Autotomize", "Explosion", "Ice Shard", "Icicle Crash", "Imprison", "Iron Defense", "Magnet Rise", "Natural Gift", "Powder Snow", "Water Pulse"])

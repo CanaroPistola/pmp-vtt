@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cl0mwem6b873b"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_hbuon"]
+
+[resource]
+script = ExtResource("1_hbuon")
+dex_number = 666
+display_name = "Vivillon"
+id = "vivillon"
+types = Array[int]([11, 9])
+sr = "8"
+min_level = 5
+evolution_stage = 3
+armor_class = 14
+hit_points = 61
+hit_dice = "d12"
+movement = {
+0: 3.0,
+2: 3.0
+}
+attributes = {
+0: 12,
+1: 17,
+2: 16,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([4, 17])
+abilities = Array[String](["Shield Dust", "Compound Eyes"])
+hidden_ability = "Friend Guard"
+level_moves = {
+4: ["Light Screen"],
+6: ["Psybeam"],
+7: ["Supersonic"],
+9: ["Draining Kiss"],
+11: ["Aromatherapy"],
+12: ["Bug Buzz"],
+14: ["Safeguard"],
+15: ["Hurricane", "Quiver Dance"],
+16: ["Powder"]
+}
+starting_moves = Array[String](["Gust", "Poison Powder", "Sleep Powder", "Struggle Bug", "Stun Spore"])
+tms = Array[String](["tm_2", "tm_3", "tm_6", "tm_7", "tm_13", "tm_32", "tm_33", "tm_38", "tm_45", "tm_46", "tm_54", "tm_58", "tm_68", "tm_69", "tm_79", "tm_82", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_113", "tm_131", "tm_133", "tm_136", "tm_146", "tm_147", "tm_151", "tm_156", "tm_193", "tm_195", "tm_199", "tm_200", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_229", "tm_243", "tm_245", "tm_248", "tm_255", "tm_257", "tm_269", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_286", "tm_288", "tm_296", "tm_303", "tm_313"])
+egg_moves = Array[String](["Poison Powder", "Rage Powder", "Stun Spore"])

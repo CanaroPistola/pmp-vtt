@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://3pyttf3h163s"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_crjlf"]
+
+[resource]
+script = ExtResource("1_crjlf")
+dex_number = 546
+display_name = "Cottonee"
+id = "cottonee"
+types = Array[int]([4, 17])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 1.5
+}
+attributes = {
+0: 12,
+1: 13,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([12])
+abilities = Array[String](["Prankster", "Infiltrator"])
+hidden_ability = "Chlorophyll"
+evolves_to = Array[String](["whimsicott"])
+evolution_level = 6
+evolution_points = 11
+level_moves = {
+2: ["Growth"],
+3: ["Leech Seed"],
+4: ["Stun Spore"],
+5: ["Mega Drain"],
+6: ["Cotton Spore"],
+7: ["Razor Leaf"],
+8: ["Poison Powder"],
+9: ["Giga Drain"],
+10: ["Charm"],
+11: ["Helping Hand"],
+12: ["Energy Ball"],
+13: ["Cotton Guard"],
+14: ["Sunny Day"],
+15: ["Endeavor", "Solar Beam"]
+}
+starting_moves = Array[String](["Absorb", "Fairy Wind"])
+tms = Array[String](["tm_13", "tm_19", "tm_41", "tm_45", "tm_48", "tm_53", "tm_54", "tm_58", "tm_69", "tm_81", "tm_82", "tm_83", "tm_84", "tm_87", "tm_88", "tm_109", "tm_112", "tm_114", "tm_116", "tm_117", "tm_129", "tm_131", "tm_150", "tm_173", "tm_179", "tm_199", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_283", "tm_286", "tm_296", "tm_319"])
+egg_moves = Array[String](["Beat Up", "Captivate", "Encore", "Fake Tears", "Grass Whistle", "Memento", "Misty Terrain", "Natural Gift", "Nature Power", "Switcheroo", "Tickle", "Worry Seed"])

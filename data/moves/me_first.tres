@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://3ds48fqwowtt"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_2el7y"]
+
+[resource]
+script = ExtResource("1_2el7y")
+id = "me_first"
+display_name = "Me First (Primeiro Eu)"
+name_en = "Me First"
+name_pt = "Primeiro Eu"
+move_time = "1 reação"
+activation = 1
+range_category = 2
+range_distance = 15.0
+description = "Quando for alvo de um Move danoso de alvo único, você pode usar sua reação para copiar esse Move e lançá-lo contra a criatura que o usou, imediatamente após sua ativação, mas antes que seus efeitos sejam aplicados. Ao fazer isso, você abre mão de sua ação no próximo turno. O Move copiado causa mais dano: aumente os dados de dano em metade da quantidade original (arredondado para baixo). O nível do dano/efeito para o Move é baseado em seu nível, não do alvo."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"

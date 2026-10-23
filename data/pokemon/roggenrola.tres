@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://knksw1865f6x"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_citvp"]
+
+[resource]
+script = ExtResource("1_citvp")
+dex_number = 524
+display_name = "Roggenrola"
+id = "roggenrola"
+types = Array[int]([12])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 18
+movement = {
+0: 4.5
+}
+attributes = {
+0: 13,
+1: 8,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+senses = Array[Dictionary]([{
+"range_m": 12.0,
+"type": 1
+}])
+abilities = Array[String](["Sturdy", "Weak Armor"])
+hidden_ability = "Sand Force"
+evolves_to = Array[String](["boldore"])
+evolution_level = 9
+evolution_points = 9
+level_moves = {
+2: ["Harden"],
+3: ["Sand Attack"],
+4: ["Headbutt"],
+5: ["Rock Blast"],
+6: ["Mud-Slap"],
+7: ["Iron Defense"],
+8: ["Smack Down"],
+9: ["Rock Slide"],
+10: ["Stealth Rock"],
+11: ["Sandstorm"],
+12: ["Stone Edge"],
+14: ["Explosion"]
+}
+starting_moves = Array[String](["Tackle"])
+tms = Array[String](["tm_13", "tm_23", "tm_35", "tm_45", "tm_58", "tm_73", "tm_74", "tm_86", "tm_87", "tm_99", "tm_109", "tm_118", "tm_131", "tm_147", "tm_170", "tm_179", "tm_199", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_248", "tm_251", "tm_255", "tm_262", "tm_267", "tm_270", "tm_276", "tm_296"])
+egg_moves = Array[String](["Autotomize", "Curse", "Gravity", "Heavy Slam", "Lock-On", "Magnitude", "Rock Tomb", "Take Down", "Wide Guard"])

@@ -1,0 +1,79 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c64533wj0goxn"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_hs3dg"]
+
+[resource]
+script = ExtResource("1_hs3dg")
+dex_number = 890
+display_name = "Eternatus"
+id = "eternatus"
+types = Array[int]([7, 14])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 18
+hit_points = 203
+hit_dice = "d20"
+attributes = {
+0: 18,
+1: 18,
+2: 24,
+3: 20,
+4: 20,
+5: 20
+}
+skills = Array[int]([2, 3, 5, 8, 9])
+abilities = Array[String](["Pressure"])
+level_moves = {
+3: ["Toxic"],
+6: ["Venoshock"],
+8: ["Dragon Dance"],
+11: ["Cross Poison"],
+14: ["Dragon Pulse"],
+15: ["Flamethrower"],
+16: ["Dynamax Cannon"],
+17: ["Cosmic Power"],
+18: ["Hyper Beam", "Recover"],
+19: ["Eternabeam", "Outrage"]
+}
+starting_moves = Array[String](["Agility", "Confuse Ray", "Dragon Tail", "Poison Tail"])
+tms = Array[String](["tm_5", "tm_12", "tm_25", "tm_31", "tm_46", "tm_49", "tm_60", "tm_64", "tm_65", "tm_66", "tm_83", "tm_87", "tm_91", "tm_95", "tm_97", "tm_99", "tm_102", "tm_113", "tm_118", "tm_120", "tm_136", "tm_156", "tm_170", "tm_177", "tm_182", "tm_186", "tm_191", "tm_192", "tm_199", "tm_209", "tm_212", "tm_214", "tm_228", "tm_234", "tm_236", "tm_240", "tm_248", "tm_249", "tm_250", "tm_255", "tm_257", "tm_270", "tm_271", "tm_282", "tm_286", "tm_296", "tm_297", "tm_307"])
+is_variant = true
+variant_data = {
+"Eternatus": {
+"diff": {},
+"display_name": "Eternatus",
+"is_default": true
+},
+"Eternatus Eternamax": {
+"diff": {
+"armor_class": 25,
+"attributes": {
+"CON": 30,
+"DEX": 26,
+"STR": 24,
+"WIS": 30
+},
+"hit_points": 323,
+"moves_diff": {
+"level_moves": {
+3: ["Toxic"],
+6: ["Venoshock"],
+8: ["Dragon Dance"],
+11: ["Cross Poison"],
+14: ["Dragon Pulse"],
+15: ["Flamethrower"],
+16: ["Dynamax Cannon"],
+17: ["Cosmic Power"],
+18: ["Hyper Beam", "Recover"],
+19: ["Eternabeam"]
+},
+"starting_moves": ["Agility", "Confuse Ray", "Dragon Tail", "Poison Tail"],
+"tms": ["tm_12", "tm_31", "tm_49", "tm_60", "tm_87", "tm_102", "tm_113", "tm_136", "tm_156", "tm_170", "tm_177", "tm_186", "tm_199", "tm_212", "tm_214", "tm_228", "tm_234", "tm_236", "tm_255", "tm_257", "tm_307"]
+},
+"size_meters": 100.0
+},
+"display_name": "Eternatus Eternamax",
+"is_default": false
+}
+}

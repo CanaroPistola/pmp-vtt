@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c5enxnnm5rcda"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ipk8g"]
+
+[resource]
+script = ExtResource("1_ipk8g")
+dex_number = 309
+display_name = "Electrike"
+id = "electrike"
+types = Array[int]([3])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 9.0
+}
+attributes = {
+0: 10,
+1: 14,
+2: 11,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0])
+abilities = Array[String](["Static", "Lightning Rod"])
+hidden_ability = "Minus"
+evolves_to = Array[String](["manectric"])
+evolution_level = 9
+evolution_points = 13
+level_moves = {
+2: ["Leer"],
+3: ["Howl"],
+4: ["Quick Attack"],
+5: ["Spark"],
+6: ["Odor Sleuth", "Shock Wave"],
+7: ["Thunder Fang"],
+8: ["Bite"],
+10: ["Discharge"],
+12: ["Roar"],
+13: ["Wild Charge"],
+15: ["Charge", "Thunder"]
+}
+starting_moves = Array[String](["Tackle", "Thunder Wave"])
+tms = Array[String](["tm_13", "tm_40", "tm_45", "tm_58", "tm_76", "tm_87", "tm_92", "tm_97", "tm_109", "tm_131", "tm_140", "tm_149", "tm_156", "tm_164", "tm_199", "tm_209", "tm_214", "tm_216", "tm_219", "tm_220", "tm_228", "tm_242", "tm_243", "tm_248", "tm_253", "tm_255", "tm_270", "tm_276", "tm_277", "tm_288", "tm_290", "tm_291", "tm_293", "tm_294", "tm_296", "tm_305", "tm_308", "tm_315"])
+egg_moves = Array[String](["Crunch", "Curse", "Discharge", "Eerie Impulse", "Electro Ball", "Fire Fang", "Flame Burst", "Headbutt", "Ice Fang", "Shock Wave", "Spark", "Swift", "Switcheroo", "Thunder Fang", "Uproar"])

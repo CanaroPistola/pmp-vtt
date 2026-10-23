@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dposlas5sql7u"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_sg3xc"]
+
+[resource]
+script = ExtResource("1_sg3xc")
+dex_number = 853
+display_name = "Grapploct"
+id = "grapploct"
+types = Array[int]([6])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0,
+1: 9.0
+}
+attributes = {
+0: 18,
+1: 14,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 3])
+abilities = Array[String](["Limber"])
+hidden_ability = "Technician"
+level_moves = {
+5: ["Detect"],
+7: ["Brick Break"],
+9: ["Bulk Up"],
+10: ["Submission"],
+12: ["Taunt"],
+14: ["Reversal"],
+15: ["Superpower", "Topsy-Turvy"]
+}
+starting_moves = Array[String](["Bind", "Feint", "Leer", "Octazooka", "Octolock", "Rock Smash"])
+tms = Array[String](["tm_13", "tm_29", "tm_30", "tm_31", "tm_44", "tm_55", "tm_57", "tm_67", "tm_87", "tm_113", "tm_136", "tm_141", "tm_166", "tm_174", "tm_186", "tm_199", "tm_214", "tm_215", "tm_217", "tm_228", "tm_234", "tm_245", "tm_255", "tm_266", "tm_314"])
+egg_moves = Array[String](["Circle Throw", "Pain Split", "Power-Up Punch", "Seismic Toss", "Soak", "Sucker Punch"])

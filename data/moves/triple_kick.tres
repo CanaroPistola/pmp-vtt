@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ds0w6hs5wqcl4"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_vd5k4"]
+
+[resource]
+script = ExtResource("1_vd5k4")
+id = "triple_kick"
+display_name = "Triple Kick (Chute Triplo)"
+name_en = "Triple Kick"
+name_pt = "Chute Triplo"
+type = 6
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você desfere três chutes consecutivos. Faça três rolagens de ataque corpo a corpo -1 em ordem. O Move termina imediatamente se qualquer uma delas falhar. No primeiro acerto, cause 1d4 + MOVE de dano lutador. A cada acerto subsequente, adicione um dado de dano extra."
+scaling_text = "O dado de dano para este Move muda para 1d6 no nível 10."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+}
+}

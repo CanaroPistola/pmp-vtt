@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d08fje6ej433d"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_pu3vn"]
+
+[resource]
+script = ExtResource("1_pu3vn")
+dex_number = 375
+display_name = "Metang"
+id = "metang"
+types = Array[int]([16, 10])
+sr = "9"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 17,
+1: 12,
+2: 15,
+3: 12,
+4: 14,
+5: 10
+}
+skills = Array[int]([3, 9])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}, {
+"range_m": 1.5,
+"type": 2
+}])
+abilities = Array[String](["Clear Body"])
+hidden_ability = "Light Metal"
+evolves_to = Array[String](["metagross"])
+evolution_level = 15
+evolution_points = 13
+level_moves = {
+6: ["Flash Cannon"],
+8: ["Pursuit"],
+9: ["Bullet Punch"],
+10: ["Miracle Eye"],
+11: ["Zen Headbutt"],
+12: ["Scary Face"],
+13: ["Psychic"],
+14: ["Agility"],
+15: ["Hyper Beam", "Iron Defense", "Meteor Mash"]
+}
+starting_moves = Array[String](["Confusion", "Hone Claws", "Magnet Rise", "Metal Claw", "Tackle", "Take Down"])
+tms = Array[String](["tm_3", "tm_5", "tm_9", "tm_25", "tm_29", "tm_35", "tm_45", "tm_58", "tm_59", "tm_74", "tm_83", "tm_85", "tm_86", "tm_87", "tm_99", "tm_105", "tm_109", "tm_110", "tm_113", "tm_114", "tm_118", "tm_121", "tm_123", "tm_128", "tm_131", "tm_136", "tm_141", "tm_144", "tm_147", "tm_148", "tm_156", "tm_164", "tm_168", "tm_170", "tm_199", "tm_201", "tm_202", "tm_204", "tm_206", "tm_207", "tm_209", "tm_212", "tm_214", "tm_216", "tm_222", "tm_223", "tm_225", "tm_228", "tm_231", "tm_234", "tm_239", "tm_240", "tm_243", "tm_248", "tm_249", "tm_255", "tm_262", "tm_263", "tm_264", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_284", "tm_286", "tm_292", "tm_296", "tm_298", "tm_300", "tm_321"])

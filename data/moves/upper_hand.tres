@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bmbsc4pnoojos"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_dypqm"]
+
+[resource]
+script = ExtResource("1_dypqm")
+id = "upper_hand"
+display_name = "Upper Hand"
+name_en = "Upper Hand"
+type = 6
+move_time = "1 reação"
+is_attack = true
+resolution = 1
+activation = 1
+description = "Você reage ao movimento do alvo e desfere um golpe rápido com a base da palma. Caso você ou um aliado dentro do alcance de seu deslocamento seja alvo de um Move classificado como Prioridade 1, 2 ou 3, antes de receber o dano, realize um ataque corpo a corpo contra o atacante, causando 2d6 + MOVE de dano do tipo Lutador em um acerto. Caso acerte, o alvo fica Atordoado, e o ataque que desencadeou essa reação é cancelado. Ao fazer isso, você abre mão de sua ação padrão em seu próximo turno. Caso a criatura não esteja em seu alcance corpo a corpo, mas esteja em seu alcance de deslocamento, você pode se mover até ela durante esta reação, mas fazer isso também abre mão de sua ação de movimento do próximo turno."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 4d6 no nível 10 e 4d8 no nível 17."
+range_text_raw = "Corpo a Corpo alcance de deslocamento"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["stun"])

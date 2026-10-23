@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c32um812exxc7"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_0iq77"]
+
+[resource]
+script = ExtResource("1_0iq77")
+id = "tar_shot"
+display_name = "Tar Shot"
+name_en = "Tar Shot"
+type = 12
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 1
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você arremessa uma quantidade de piche pegajoso contra uma criatura dentro do alcance, deixando -a grudenta e inflamável. Role 1d20 + Move + 9 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, o alvo passa a receber o dobro do dano de Moves  do tipo fogo, e tem sua Velocidade reduzida em 1 estágio, podendo ser acumulado em até -6 estágios."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([1])
+effect_tags = Array[String](["stat_change"])

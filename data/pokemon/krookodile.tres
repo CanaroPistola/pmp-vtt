@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b24maj7m41pmm"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_de0cb"]
+
+[resource]
+script = ExtResource("1_de0cb")
+dex_number = 553
+display_name = "Krookodile"
+id = "krookodile"
+types = Array[int]([8, 15])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 15
+hit_points = 117
+hit_dice = "d12"
+movement = {
+0: 9.0,
+1: 7.5
+}
+attributes = {
+0: 16,
+1: 17,
+2: 18,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([8, 17])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Intimidate", "Moxie"])
+hidden_ability = "Anger Point"
+level_moves = {
+2: ["Bite"],
+3: ["Sand Attack"],
+4: ["Torment"],
+5: ["Sand Tomb"],
+6: ["Assurance"],
+7: ["Mud-Slap"],
+8: ["Embargo"],
+9: ["Swagger"],
+10: ["Crunch"],
+11: ["Dig"],
+12: ["Scary Face"],
+14: ["Foul Play"],
+15: ["Sandstorm"],
+16: ["Earthquake", "Outrage", "Thrash"]
+}
+starting_moves = Array[String](["Hone Claws", "Leer", "Power Trip", "Rage"])
+tms = Array[String](["tm_3", "tm_11", "tm_12", "tm_13", "tm_19", "tm_23", "tm_25", "tm_28", "tm_29", "tm_31", "tm_34", "tm_35", "tm_43", "tm_45", "tm_50", "tm_51", "tm_52", "tm_55", "tm_58", "tm_59", "tm_63", "tm_65", "tm_66", "tm_73", "tm_74", "tm_80", "tm_82", "tm_83", "tm_87", "tm_92", "tm_100", "tm_103", "tm_105", "tm_106", "tm_109", "tm_113", "tm_114", "tm_120", "tm_129", "tm_131", "tm_132", "tm_136", "tm_149", "tm_150", "tm_152", "tm_158", "tm_159", "tm_165", "tm_166", "tm_174", "tm_175", "tm_182", "tm_186", "tm_199", "tm_214", "tm_215", "tm_216", "tm_217", "tm_220", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_233", "tm_234", "tm_235", "tm_241", "tm_245", "tm_248", "tm_249", "tm_251", "tm_253", "tm_254", "tm_255", "tm_261", "tm_262", "tm_266", "tm_267", "tm_270", "tm_274", "tm_276", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_291", "tm_295", "tm_296", "tm_305"])
+egg_moves = Array[String](["Aqua Tail", "Beat Up", "Counter", "Double-Edge", "Fire Fang", "Focus Energy", "Me First", "Mean Look", "Power Trip", "Pursuit", "Rock Climb", "Spite", "Thunder Fang", "Uproar"])

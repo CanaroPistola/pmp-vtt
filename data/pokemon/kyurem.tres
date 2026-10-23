@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dcq8hche1s5va"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0hg1n"]
+
+[resource]
+script = ExtResource("1_0hg1n")
+dex_number = 646
+display_name = "Kyurem"
+id = "kyurem"
+types = Array[int]([14, 5])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 19
+hit_points = 524
+hit_dice = "d20"
+attributes = {
+0: 19,
+1: 20,
+2: 22,
+3: 14,
+4: 20,
+5: 15
+}
+skills = Array[int]([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Pressure"])
+level_moves = {
+3: ["Imprison"],
+5: ["Ancient Power"],
+8: ["Ice Beam"],
+10: ["Dragon Breath"],
+12: ["Slash"],
+15: ["Glaciate", "Scary Face"],
+16: ["Dragon Pulse"],
+17: ["Noble Roar"],
+18: ["Blizzard", "Endeavor"],
+19: ["Outrage", "Sheer Cold"],
+20: ["Hyper Voice"]
+}
+starting_moves = Array[String](["Dragon Rage", "Freeze-Dry", "Icy Wind"])
+tms = Array[String](["tm_3", "tm_16", "tm_22", "tm_24", "tm_25", "tm_28", "tm_31", "tm_45", "tm_58", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_72", "tm_73", "tm_75", "tm_82", "tm_83", "tm_87", "tm_99", "tm_100", "tm_102", "tm_103", "tm_109", "tm_113", "tm_122", "tm_129", "tm_131", "tm_136", "tm_137", "tm_139", "tm_140", "tm_143", "tm_144", "tm_145", "tm_148", "tm_151", "tm_156", "tm_182", "tm_186", "tm_199", "tm_202", "tm_209", "tm_212", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_227", "tm_228", "tm_229", "tm_233", "tm_234", "tm_240", "tm_241", "tm_243", "tm_248", "tm_255", "tm_256", "tm_265", "tm_267", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_286", "tm_296", "tm_313", "tm_321"])
+is_variant = true
+variant_data = {
+"Kyurem": {
+"diff": {
+"Fsp": 60.0,
+"movement": {
+0: 12.0
+}
+},
+"display_name": "Kyurem",
+"is_default": true
+},
+"Kyurem Branco": {
+"diff": {
+"Fsp": 70.0,
+"abilities": ["Turboblaze"],
+"armor_class": 20,
+"attributes": {
+"CHA": 18,
+"STR": 20,
+"WIS": 22
+},
+"movement": {
+0: 15.0
+},
+"moves_diff": {
+"level_moves": {
+3: ["Imprison"],
+5: ["Ancient Power"],
+8: ["Ice Beam"],
+10: ["Dragon Breath"],
+12: ["Slash"],
+15: ["Fusion Flare", "Ice Burn"],
+16: ["Dragon Pulse"],
+17: ["Noble Roar"],
+18: ["Blizzard", "Endeavor"],
+19: ["Outrage", "Sheer Cold"],
+20: ["Hyper Voice"]
+},
+"starting_moves": ["Dragon Rage", "Freeze-Dry", "Icy Wind"]
+}
+},
+"display_name": "Kyurem Branco",
+"is_default": false
+},
+"Kyurem Preto": {
+"diff": {
+"Fsp": 70.0,
+"abilities": ["Teravolt"],
+"armor_class": 20,
+"attributes": {
+"CHA": 18,
+"DEX": 22,
+"STR": 22,
+"WIS": 18
+},
+"movement": {
+0: 15.0
+},
+"moves_diff": {
+"level_moves": {
+3: ["Imprison"],
+5: ["Ancient Power"],
+8: ["Ice Beam"],
+10: ["Dragon Breath"],
+12: ["Slash"],
+15: ["Freeze Shock", "Fusion Bolt"],
+16: ["Dragon Pulse"],
+17: ["Noble Roar"],
+18: ["Blizzard", "Endeavor"],
+19: ["Outrage", "Sheer Cold"],
+20: ["Hyper Voice"]
+},
+"starting_moves": ["Dragon Rage", "Freeze-Dry", "Icy Wind"]
+}
+},
+"display_name": "Kyurem Preto",
+"is_default": false
+}
+}

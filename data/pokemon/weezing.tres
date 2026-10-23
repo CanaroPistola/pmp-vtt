@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c2ulkea1no3hb"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_homkl"]
+
+[resource]
+script = ExtResource("1_homkl")
+dex_number = 110
+display_name = "Weezing"
+id = "weezing"
+types = Array[int]([7])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 88
+hit_dice = "d10"
+attributes = {
+0: 16,
+1: 14,
+2: 18,
+3: 6,
+4: 12,
+5: 8
+}
+skills = Array[int]([5])
+abilities = Array[String](["Levitate", "Neutralizing Gas"])
+hidden_ability = "Stench"
+level_moves = {
+2: ["Smog"],
+3: ["Smokescreen"],
+4: ["Assurance"],
+5: ["Clear Smog"],
+6: ["Sludge"],
+8: ["Self-Destruct"],
+9: ["Haze"],
+10: ["Gyro Ball"],
+12: ["Sludge Bomb"],
+13: ["Toxic"],
+14: ["Explosion"],
+15: ["Destiny Bond"],
+16: ["Belch", "Memento"]
+}
+starting_moves = Array[String](["Double Hit", "Heat Wave", "Poison Gas", "Tackle"])
+tms = Array[String](["tm_1", "tm_12", "tm_13", "tm_25", "tm_45", "tm_47", "tm_51", "tm_52", "tm_58", "tm_83", "tm_86", "tm_87", "tm_91", "tm_97", "tm_109", "tm_113", "tm_120", "tm_121", "tm_124", "tm_127", "tm_131", "tm_136", "tm_146", "tm_184", "tm_186", "tm_199", "tm_200", "tm_209", "tm_214", "tm_216", "tm_228", "tm_234", "tm_236", "tm_239", "tm_240", "tm_242", "tm_248", "tm_249", "tm_250", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_282", "tm_283", "tm_286", "tm_288", "tm_290", "tm_294", "tm_295", "tm_296", "tm_297", "tm_305", "tm_307", "tm_316"])
+egg_moves = Array[String](["Curse", "Destiny Bond", "Grudge", "Pain Split", "Psybeam", "Psywave", "Screech", "Spit Up", "Spite", "Stockpile", "Swallow", "Toxic Spikes", "Venom Drench"])
+is_variant = true
+variant_data = {
+"Weezing": {
+"diff": {},
+"display_name": "Weezing",
+"is_default": true
+},
+"Weezing de Galar": {
+"diff": {
+"hidden_ability": "Misty Surge",
+"moves_diff": {
+"egg_moves": ["Curse", "Grudge", "Pain Split", "Psybeam", "Spit Up", "Spite", "Stockpile", "Swallow"],
+"level_moves": {
+4: ["Clear Smog"],
+6: ["Assurance"],
+7: ["Sludge"],
+8: ["Aromatherapy", "Fairy Wind"],
+10: ["Self-Destruct"],
+11: ["Sludge Bomb"],
+13: ["Toxic"],
+15: ["Belch", "Explosion"],
+16: ["Memento"],
+17: ["Destiny Bond", "Misty Terrain"]
+},
+"starting_moves": ["Aromatic Mist", "Defog", "Double Hit", "Haze", "Heat Wave", "Poison Gas", "Smog", "Smokescreen", "Strange Steam", "Tackle"],
+"tms": ["tm_1", "tm_12", "tm_13", "tm_25", "tm_31", "tm_47", "tm_51", "tm_52", "tm_53", "tm_59", "tm_83", "tm_87", "tm_91", "tm_97", "tm_113", "tm_120", "tm_121", "tm_124", "tm_127", "tm_136", "tm_172", "tm_173", "tm_183", "tm_184", "tm_186", "tm_190", "tm_199", "tm_200", "tm_209", "tm_214", "tm_228", "tm_234", "tm_236", "tm_239", "tm_240", "tm_248", "tm_249", "tm_250", "tm_255", "tm_261", "tm_270", "tm_271", "tm_282", "tm_283", "tm_286", "tm_288", "tm_290", "tm_294", "tm_296", "tm_297", "tm_307", "tm_316", "tm_317"]
+},
+"types": [7, 17]
+},
+"display_name": "Weezing de Galar",
+"is_default": false
+}
+}

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cnba12ki7fnes"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_7wcyt"]
+
+[resource]
+script = ExtResource("1_7wcyt")
+id = "double_hit"
+display_name = "Double Hit (Golpe Duplo)"
+name_en = "Double Hit"
+name_pt = "Golpe Duplo"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você desfere rapidamente dois golpes. Faça duas rolagens de ataque corpo a corpo -1, causando 1d8 + MOVE de dano normal em cada acerto."
+scaling_text = "Os dados de dano para este Move mudam para 1d10 no nível 5, 2d8 no nível 10 e 3d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+}
+}

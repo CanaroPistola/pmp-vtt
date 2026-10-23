@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://vtvrfofj1dbj"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_7ngva"]
+
+[resource]
+script = ExtResource("1_7ngva")
+id = "jaw_lock"
+display_name = "Jaw Lock"
+name_en = "Jaw Lock"
+type = 15
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você prende a si mesmo e o alvo em um confronto direto, impedindo que ambos troquem de lugar até que um seja derrotado. Faça um ataque corpo a corpo, causando 4d4 + MOVE de dano sombrio em um acerto. Em um acerto, tanto você quanto o alvo ficam agarrados, e nem você e nem o alvo podem fugir ou serem substituídos do combate. Entretanto, o deslocamento de ambos não é zerado, mas cai pela metade, e uma tentativa de se mover requer um teste de FOR oposto. O efeito se mantém ativo enquanto o usuário quiser manter o alvo preso. Jaw Lock não impede um Pokémon de ser trocado por Wimp Out ou Emergency Exit, nem devido a Shed Shell ou Eject Button."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["grapple"])

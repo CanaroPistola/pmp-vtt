@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://iwfh4w1dyjrs"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_jxpi7"]
+
+[resource]
+script = ExtResource("1_jxpi7")
+dex_number = 448
+display_name = "Lucario"
+id = "lucario"
+types = Array[int]([6, 16])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 14,
+1: 17,
+2: 14,
+3: 10,
+4: 14,
+5: 10
+}
+skills = Array[int]([9])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 2
+}])
+abilities = Array[String](["Steadfast", "Inner Focus"])
+hidden_ability = "Justified"
+level_moves = {
+2: ["Counter"],
+4: ["Feint"],
+5: ["Power-Up Punch"],
+7: ["Force Palm", "Swords Dance"],
+8: ["Metal Sound"],
+10: ["Bone Rush"],
+11: ["Quick Guard"],
+13: ["Me First"],
+14: ["Work Up"],
+15: ["Calm Mind", "Meteor Mash"],
+16: ["Close Combat", "Dragon Pulse", "Heal Pulse"],
+17: ["Extreme Speed"]
+}
+starting_moves = Array[String](["Aura Sphere", "Copycat", "Detect", "Final Gambit", "Foresight", "Helping Hand", "Laser Focus", "Life Dew", "Metal Claw", "Quick Attack", "Reversal", "Rock Smash", "Screech", "Vacuum Wave"])
+tms = Array[String](["tm_3", "tm_5", "tm_13", "tm_14", "tm_25", "tm_29", "tm_34", "tm_35", "tm_38", "tm_43", "tm_44", "tm_45", "tm_50", "tm_52", "tm_55", "tm_58", "tm_65", "tm_67", "tm_71", "tm_74", "tm_83", "tm_87", "tm_99", "tm_100", "tm_103", "tm_104", "tm_105", "tm_109", "tm_113", "tm_129", "tm_131", "tm_136", "tm_141", "tm_147", "tm_149", "tm_151", "tm_158", "tm_159", "tm_164", "tm_165", "tm_166", "tm_168", "tm_169", "tm_171", "tm_178", "tm_186", "tm_191", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_218", "tm_220", "tm_223", "tm_224", "tm_225", "tm_226", "tm_228", "tm_234", "tm_236", "tm_240", "tm_241", "tm_248", "tm_255", "tm_263", "tm_267", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_282", "tm_286", "tm_287", "tm_292", "tm_296", "tm_298", "tm_304", "tm_306", "tm_311", "tm_318", "tm_321"])
+egg_moves = Array[String](["Agility", "Bite", "Blaze Kick", "Bullet Punch", "Circle Throw", "Cross Chop", "Crunch", "Detect", "Follow Me", "High Jump Kick", "Howl", "Iron Defense", "Low Kick", "Meteor Mash", "Mind Reader", "Sky Uppercut", "Vacuum Wave"])

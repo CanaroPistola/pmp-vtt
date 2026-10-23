@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c0er1wwx8ni12"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_k7unf"]
+
+[resource]
+script = ExtResource("1_k7unf")
+id = "dark_void"
+display_name = "Dark Void"
+name_en = "Dark Void"
+type = 15
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 4
+range_category = 3
+range_distance = 9.0
+description = "Você cria uma esfera sombria e vermelha nas mãos e a lança, envolvendo os alvos em uma aura escarlate que o s fazem adormecer. Todas as criaturas dentro de um cone de 30 pés  (9 metros) de você devem fazer um teste de SAB contra sua CD de Move -5, ficando Sonolentas em caso de falha."
+range_text_raw = "Pessoal (cone de 9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([4])
+move_power_modifier = -5
+effect_tags = Array[String](["sleep"])

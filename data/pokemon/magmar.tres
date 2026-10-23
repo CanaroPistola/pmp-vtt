@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dpb6gl24vx114"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_cr5g3"]
+
+[resource]
+script = ExtResource("1_cr5g3")
+dex_number = 126
+display_name = "Magmar"
+id = "magmar"
+types = Array[int]([1])
+sr = "9"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 68
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 15,
+1: 18,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Flame Body"])
+hidden_ability = "Vital Spirit"
+evolves_to = Array[String](["magmortar"])
+evolution_level = 12
+evolution_points = 6
+level_moves = {
+2: ["Ember"],
+3: ["Smokescreen"],
+4: ["Feint Attack"],
+5: ["Fire Spin"],
+6: ["Flame Wheel"],
+7: ["Clear Smog"],
+8: ["Flame Burst", "Scary Face"],
+9: ["Confuse Ray"],
+10: ["Fire Punch"],
+12: ["Lava Plume"],
+14: ["Low Kick", "Sunny Day"],
+15: ["Flamethrower"],
+16: ["Fire Blast"],
+17: ["Hyper Beam"]
+}
+starting_moves = Array[String](["Leer", "Smog"])
+tms = Array[String](["tm_1", "tm_13", "tm_25", "tm_29", "tm_37", "tm_45", "tm_46", "tm_48", "tm_51", "tm_58", "tm_59", "tm_71", "tm_83", "tm_87", "tm_91", "tm_94", "tm_95", "tm_96", "tm_97", "tm_98", "tm_100", "tm_103", "tm_104", "tm_105", "tm_109", "tm_113", "tm_126", "tm_127", "tm_129", "tm_131", "tm_136", "tm_149", "tm_150", "tm_158", "tm_159", "tm_165", "tm_166", "tm_171", "tm_183", "tm_191", "tm_198", "tm_199", "tm_202", "tm_214", "tm_216", "tm_220", "tm_224", "tm_228", "tm_234", "tm_235", "tm_236", "tm_248", "tm_255", "tm_270", "tm_271", "tm_276", "tm_282", "tm_283", "tm_285", "tm_286", "tm_288", "tm_292", "tm_296", "tm_305", "tm_316"])
+egg_moves = Array[String](["Barrier", "Belch", "Belly Drum", "Cross Chop", "Dynamic Punch", "Flare Blitz", "Focus Energy", "Focus Punch", "Follow Me", "Iron Tail", "Karate Chop", "Mach Punch", "Mega Punch", "Power Swap", "Screech", "Thunder Punch"])

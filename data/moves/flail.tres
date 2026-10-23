@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://byeoofs2rfql1"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_yh54l"]
+
+[resource]
+script = ExtResource("1_yh54l")
+id = "flail"
+display_name = "Flail (Debater)"
+name_en = "Flail"
+name_pt = "Debater"
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você se agita com um golpe selvagem que aumenta de poder quanto mais ferido você está. Faça um ataque corpo a corpo contra uma criatura, causando 1d4 + MOVE de dano do tipo normal em um acerto. Caso tenha recebido dano, aumente os dados de dano com base na sua porcentagem de vida atual (arredondado para baixo), seguindo a tabela abaixo. Confira a tabela no livro."
+scaling_text = "O dado de dano para este Move muda para 1d6 no nível 5, 1d8 no nível 10 e 1d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+}
+}

@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bcfeqhjyfk03p"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_kyxt5"]
+
+[resource]
+script = ExtResource("1_kyxt5")
+dex_number = 478
+display_name = "Froslass"
+id = "froslass"
+types = Array[int]([5, 13])
+sr = "11"
+min_level = 10
+evolution_stage = 2
+armor_class = 15
+hit_points = 97
+hit_dice = "d10"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 15,
+1: 18,
+2: 16,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([17])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Snow Cloak"])
+hidden_ability = "Cursed Body"
+level_moves = {
+2: ["Double Team"],
+4: ["Ice Shard"],
+5: ["Icy Wind"],
+7: ["Astonish"],
+8: ["Draining Kiss"],
+10: ["Frost Breath", "Will-O-Wisp"],
+11: ["Confuse Ray"],
+13: ["Wake-Up Slap"],
+14: ["Captivate", "Shadow Ball", "Snowscape"],
+15: ["Blizzard"],
+16: ["Aurora Veil", "Hail"],
+17: ["Destiny Bond"]
+}
+starting_moves = Array[String](["Bite", "Crunch", "Headbutt", "Hex", "Ice Fang", "Leer", "Ominous Wind", "Powder Snow", "Protect"])
+tms = Array[String](["tm_9", "tm_13", "tm_15", "tm_16", "tm_22", "tm_23", "tm_25", "tm_41", "tm_42", "tm_45", "tm_46", "tm_50", "tm_51", "tm_58", "tm_68", "tm_69", "tm_80", "tm_83", "tm_87", "tm_88", "tm_100", "tm_108", "tm_109", "tm_113", "tm_122", "tm_124", "tm_129", "tm_130", "tm_131", "tm_136", "tm_139", "tm_140", "tm_141", "tm_142", "tm_143", "tm_144", "tm_145", "tm_151", "tm_156", "tm_180", "tm_181", "tm_184", "tm_186", "tm_194", "tm_199", "tm_201", "tm_202", "tm_209", "tm_212", "tm_214", "tm_216", "tm_228", "tm_229", "tm_234", "tm_240", "tm_242", "tm_243", "tm_248", "tm_254", "tm_255", "tm_256", "tm_260", "tm_261", "tm_270", "tm_276", "tm_282", "tm_283", "tm_284", "tm_286", "tm_290", "tm_293", "tm_294", "tm_295", "tm_296", "tm_298", "tm_300", "tm_302", "tm_311", "tm_313", "tm_316"])
+egg_moves = Array[String](["Avalanche", "Bide", "Block", "Disable", "Fake Tears", "Hex", "Icicle Crash", "Rollout", "Spikes", "Switcheroo", "Weather Ball"])

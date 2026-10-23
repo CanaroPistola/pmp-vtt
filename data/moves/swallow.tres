@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://djka5qe80wltv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_kun6q"]
+
+[resource]
+script = ExtResource("1_kun6q")
+id = "swallow"
+display_name = "Swallow"
+name_en = "Swallow"
+pp = 5
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+description = "Você absorve sua energia armazenada para curar suas feridas. Quando ativado após usar o Move Stockpile, recupere 1d6 + MOVE pontos de vida. Os dados de cura são dobrados se Stockpile foi usado por duas rodadas, e triplicados se Stockpile foi usado por três rodadas."
+scaling_text = "O dado base de cura para este Move muda para 1d10 no nível 5, 2d8 no nível 10 e 2d12 no nível 17."
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea"
+role = 1
+move_power_attributes = Array[int]([2])
+has_healing = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["heal"])

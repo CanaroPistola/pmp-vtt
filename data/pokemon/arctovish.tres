@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bgukev1bhuidn"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_m14ik"]
+
+[resource]
+script = ExtResource("1_m14ik")
+dex_number = 883
+display_name = "Arctovish"
+id = "arctovish"
+types = Array[int]([2, 5])
+sr = "11"
+min_level = 8
+evolution_stage = 1
+armor_class = 16
+hit_points = 80
+hit_dice = "d12"
+movement = {
+0: 6.0,
+1: 9.0
+}
+attributes = {
+0: 16,
+1: 16,
+2: 20,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 7, 17])
+abilities = Array[String](["Water Absorb", "Ice Body"])
+hidden_ability = "Slush Rush"
+level_moves = {
+3: ["Protect"],
+5: ["Icy Wind"],
+7: ["Ancient Power"],
+10: ["Bite"],
+12: ["Aurora Veil"],
+14: ["Freeze-Dry"],
+15: ["Super Fang"],
+16: ["Crunch"],
+17: ["Fishious Rend", "Icicle Crash"],
+18: ["Blizzard"]
+}
+starting_moves = Array[String](["Powder Snow", "Water Gun"])
+tms = Array[String](["tm_16", "tm_30", "tm_57", "tm_87", "tm_113", "tm_122", "tm_136", "tm_140", "tm_143", "tm_144", "tm_170", "tm_199", "tm_209", "tm_214", "tm_221", "tm_223", "tm_225", "tm_228", "tm_255", "tm_314"])

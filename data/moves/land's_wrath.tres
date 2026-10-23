@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c3v2n5akxwo4o"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_n3v56"]
+
+[resource]
+script = ExtResource("1_n3v56")
+id = "land's_wrath"
+display_name = "Land's Wrath (Ira da Terra)"
+name_en = "Land's Wrath"
+name_pt = "Ira da Terra"
+type = 8
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 2
+range_distance = 30.0
+description = "Você reúne a energia natural da terra ao seu redor e a concentra em uma erupção súbita em um raio de 12 metros, centrado em um ponto dentro do alcance. Todas as criaturas pegas na explosão devem fazer um teste de DES contra sua CD de Move, sofrendo 3d6 + MOVE de dano de terra no fracasso, ou a metade no sucesso."
+scaling_text = "Os dados de dano para este Move mudam para 3d10 no nível 5, 3d12 no nível 10 e 4d12 no nível 17."
+range_text_raw = "(30 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}

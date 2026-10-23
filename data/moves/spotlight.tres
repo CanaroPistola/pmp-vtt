@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://lp4r8wrrt1w3"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_xgmta"]
+
+[resource]
+script = ExtResource("1_xgmta")
+id = "spotlight"
+display_name = "Spotlight"
+name_en = "Spotlight"
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 1
+range_category = 2
+range_distance = 12.0
+duration_rounds = 1
+duration_flags = Array[String](["concentration"])
+description = "Você projeta uma luz intensa sobre uma criatura dentro do alcance, colocando -a no centro das atenções no campo de batalha. Role 1d20 + MOVE + 9 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, até o início do seu próximo turno e enquanto você mantiver sua concentração, ataques e rolagens de Moves direcionadas contra essa criatura têm vantagem, e ela possui desvantagem em testes de resistência. Observações: Esse efeito anula qualquer Move de redirecionamento em relação ao alvo afe tado, como Follow Me e Rage Powder, Habilidades como Storm Drain e Lightning Rod, ou Ally Switch. Os efeitos de Spotlight não podem ser transferidos com Baton Pass. Spotlight não pode ser escolhido pelo Move Assist."
+range_text_raw = "(12 metros)"
+duration_text_raw = "1 rodada, Concentração"
+move_power_attributes = Array[int]([1, 5])

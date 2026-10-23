@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://0vxgkojrewqg"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ahfr2"]
+
+[resource]
+script = ExtResource("1_ahfr2")
+dex_number = 1021
+display_name = "Raging Bolt"
+id = "raging_bolt"
+types = Array[int]([3, 14])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 15,
+1: 15,
+2: 22,
+3: 6,
+4: 18,
+5: 10
+}
+skills = Array[int]([2, 3, 8])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Protosynthesis"])
+level_moves = {
+3: ["Charge"],
+5: ["Dragon Breath"],
+7: ["Electric Terrain"],
+10: ["Discharge"],
+12: ["Dragon Tail"],
+14: ["Calm Mind"],
+15: ["Thunderclap"],
+16: ["Dragon Hammer"],
+17: ["Dragon Pulse", "Rising Voltage"],
+18: ["Zap Cannon"],
+19: ["Body Press"],
+20: ["Thunder"]
+}
+starting_moves = Array[String](["Shock Wave", "Stomp", "Sunny Day", "Twister"])
+tms = Array[String](["tm_24", "tm_25", "tm_28", "tm_38", "tm_39", "tm_40", "tm_50", "tm_59", "tm_60", "tm_62", "tm_65", "tm_66", "tm_74", "tm_76", "tm_77", "tm_78", "tm_79", "tm_83", "tm_87", "tm_113", "tm_128", "tm_136", "tm_137", "tm_182", "tm_199", "tm_214", "tm_220", "tm_234", "tm_248", "tm_253", "tm_257", "tm_266", "tm_270", "tm_271", "tm_273", "tm_282", "tm_283", "tm_286", "tm_290", "tm_291", "tm_293", "tm_294", "tm_308", "tm_313", "tm_315"])

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://j644x4kervaf"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_v2c0j"]
+
+[resource]
+script = ExtResource("1_v2c0j")
+dex_number = 180
+display_name = "Flaaffy"
+id = "flaaffy"
+types = Array[int]([3])
+sr = "4"
+min_level = 5
+evolution_stage = 2
+armor_class = 13
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 13,
+1: 13,
+2: 14,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([17])
+abilities = Array[String](["Static"])
+hidden_ability = "Plus"
+evolves_to = Array[String](["ampharos"])
+evolution_level = 10
+evolution_points = 9
+level_moves = {
+2: ["Thunder Wave"],
+3: ["Thunder Shock"],
+4: ["Cotton Spore"],
+6: ["Charge"],
+7: ["Take Down"],
+9: ["Electro Ball"],
+10: ["Confuse Ray"],
+12: ["Power Gem"],
+13: ["Discharge"],
+15: ["Cotton Guard", "Dazzling Gleam", "Signal Beam"],
+16: ["Light Screen", "Thunder"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_4", "tm_5", "tm_13", "tm_25", "tm_29", "tm_39", "tm_40", "tm_45", "tm_46", "tm_53", "tm_55", "tm_58", "tm_59", "tm_75", "tm_76", "tm_77", "tm_78", "tm_79", "tm_82", "tm_83", "tm_87", "tm_94", "tm_100", "tm_105", "tm_109", "tm_125", "tm_129", "tm_131", "tm_141", "tm_149", "tm_156", "tm_158", "tm_164", "tm_196", "tm_199", "tm_209", "tm_212", "tm_214", "tm_216", "tm_220", "tm_228", "tm_229", "tm_242", "tm_243", "tm_248", "tm_255", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_286", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_298", "tm_308", "tm_315"])
+egg_moves = Array[String](["After You", "Agility", "Body Slam", "Charge", "Eerie Impulse", "Electric Terrain", "Electroweb", "Flatter", "Iron Tail", "Odor Sleuth", "Sand Attack", "Screech", "Take Down"])

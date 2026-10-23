@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dh8ure828te43"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_0dkqp"]
+
+[resource]
+script = ExtResource("1_0dkqp")
+id = "hex"
+display_name = "Hex"
+name_en = "Hex"
+type = 13
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 15.0
+description = "Você envia uma energia fantasmagórica a uma criatura, que causa dano prejudicial em alvos debilitados. Faça um ataque à distância, causando 2d6 + MOVE de dano fantasma no acerto. Se o alvo estiver afetado por uma Condição de Status, dobre os dados de dano."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 4d6 no nível 10, e 4d8 no nível 17."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+}
+}

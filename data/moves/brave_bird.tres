@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://r2fbn2b2sn40"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_sd56w"]
+
+[resource]
+script = ExtResource("1_sd56w")
+id = "brave_bird"
+display_name = "Brave Bird (Fúria dos Pássaros)"
+name_en = "Brave Bird"
+name_pt = "Fúria dos Pássaros"
+type = 9
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você recolhe suas asas e mergulha em direção a uma criatura. Faça um ataque corpo a corpo contra um alvo, causando 3d8 + MOVE de dano voador em caso de acerto. Em um acerto, você também sofre 1/3 do total (arredondado para baixo) em dano de recuo, sem tipo."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["recoil"])

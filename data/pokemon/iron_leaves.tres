@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://g5o5qef4asft"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ckd25"]
+
+[resource]
+script = ExtResource("1_ckd25")
+dex_number = 1010
+display_name = "Iron Leaves"
+id = "iron_leaves"
+types = Array[int]([4, 10])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 20,
+1: 18,
+2: 17,
+3: 16,
+4: 14,
+5: 10
+}
+skills = Array[int]([3, 6, 10])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}])
+abilities = Array[String](["Quark Drive"])
+level_moves = {
+3: ["Magical Leaf"],
+5: ["Retaliate"],
+7: ["Quick Guard"],
+10: ["Night Slash"],
+12: ["Swords Dance"],
+14: ["Sacred Sword"],
+15: ["Leaf Blade"],
+16: ["Psyblade"],
+17: ["Close Combat", "Imprison"],
+18: ["Megahorn"],
+19: ["Ally Switch"],
+20: ["Solar Blade"]
+}
+starting_moves = Array[String](["Helping Hand", "Leer", "Quick Attack", "Work Up"])
+tms = Array[String](["tm_3", "tm_5", "tm_7", "tm_29", "tm_38", "tm_43", "tm_44", "tm_59", "tm_77", "tm_83", "tm_84", "tm_87", "tm_89", "tm_103", "tm_112", "tm_113", "tm_114", "tm_117", "tm_118", "tm_129", "tm_136", "tm_145", "tm_147", "tm_154", "tm_163", "tm_169", "tm_199", "tm_205", "tm_214", "tm_218", "tm_234", "tm_248", "tm_252", "tm_257", "tm_258", "tm_270", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289", "tm_298", "tm_315", "tm_320"])

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://byo417pt7vvmf"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_fyryc"]
+
+[resource]
+script = ExtResource("1_fyryc")
+dex_number = 1022
+display_name = "Iron Boulder"
+id = "iron_boulder"
+types = Array[int]([12, 10])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 18
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 20,
+1: 18,
+2: 18,
+3: 10,
+4: 16,
+5: 10
+}
+skills = Array[int]([3, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}])
+abilities = Array[String](["Quark Drive"])
+level_moves = {
+3: ["Quick Attack"],
+5: ["Slash"],
+7: ["Agility"],
+10: ["Psycho Cut"],
+12: ["Counter"],
+14: ["Rock Tomb"],
+15: ["Sacred Sword"],
+16: ["Mighty Cleave"],
+17: ["Megahorn", "Swords Dance"],
+18: ["Quick Guard"],
+19: ["Stone Edge"],
+20: ["Giga Impact"]
+}
+starting_moves = Array[String](["Electric Terrain", "Horn Attack", "Leer", "Rock Throw"])
+tms = Array[String](["tm_3", "tm_5", "tm_7", "tm_25", "tm_29", "tm_35", "tm_43", "tm_59", "tm_74", "tm_77", "tm_83", "tm_87", "tm_113", "tm_136", "tm_147", "tm_148", "tm_170", "tm_191", "tm_199", "tm_202", "tm_207", "tm_214", "tm_221", "tm_225", "tm_231", "tm_234", "tm_248", "tm_258", "tm_267", "tm_270", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289", "tm_315", "tm_320", "tm_321"])

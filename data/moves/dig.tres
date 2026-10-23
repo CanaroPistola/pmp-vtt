@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://co8itgggd5cgh"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_akpup"]
+
+[resource]
+script = ExtResource("1_akpup")
+id = "dig"
+display_name = "Dig (Cavar)"
+name_en = "Dig"
+name_pt = "Cavar"
+type = 8
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+needs_charge = true
+range_category = 2
+range_distance = 12.0
+duration_rounds = 1
+duration_flags = Array[String](["charge"])
+description = "Você cava no subsolo, desaparecendo da vista antes de atacar um alvo de baixo para cima. Quando você ativa este Move, você usa 10 pés (3 metros) do seu deslocamento para cavar no subsolo (ignorando terreno difícil) e permanece lá até o seu próximo turno. Durante este tempo, você é imune ao dano e efeitos de qualquer Move (exceto os que especificam o contrário, como Earthquake). Se você não tiver deslocamento restante ou estiver agarrado/impedido antes de ativar este Move, o Move falha. No seu próximo turno, como uma ação, você pode reaparecer em um espaço desocupado dentro do alcance do Move, ou emergir do solo abaixo de uma criatura dentro do alcance (a partir do ponto em que usou o Move) e a até 30 pés (9 metros) de altura do solo, em um ataque corpo a corpo com vantagem, causando 4d4 + MOVE de dano do tipo terra em um acerto bem-sucedido. Se o alvo tiver Sentido Sísmico, o ataque não é rolado com vantagem. Caso o alvo saia do alcance estabelecido no momento em que o Move foi ativado, ele ainda pode ser atingido por esse Move, independente da distância que tenha percorrido (exceto em altura)."
+scaling_text = "Os dados de dano para este Move mudam para4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "1 rodada, carregar"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["grapple"])

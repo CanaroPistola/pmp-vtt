@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b6rnd5ssliue4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_stnyd"]
+
+[resource]
+script = ExtResource("1_stnyd")
+dex_number = 827
+display_name = "Nickit"
+id = "nickit"
+types = Array[int]([15])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 9.0
+}
+attributes = {
+0: 11,
+1: 14,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([6, 15])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Run Away", "Unburden"])
+hidden_ability = "Stakeout"
+evolves_to = Array[String](["thievul"])
+evolution_level = 6
+evolution_points = 9
+level_moves = {
+2: ["Beat Up"],
+3: ["Hone Claws"],
+4: ["Snarl"],
+6: ["Assurance"],
+7: ["Nasty Plot"],
+8: ["Sucker Punch"],
+10: ["Night Slash"],
+11: ["Tail Slap"],
+12: ["Foul Play"]
+}
+starting_moves = Array[String](["Quick Attack", "Tail Whip"])
+tms = Array[String](["tm_12", "tm_13", "tm_19", "tm_55", "tm_87", "tm_88", "tm_152", "tm_174", "tm_199", "tm_214", "tm_228", "tm_236", "tm_253", "tm_255", "tm_277", "tm_280", "tm_288"])
+egg_moves = Array[String](["Howl", "Knock Off", "Quick Guard", "Torment"])

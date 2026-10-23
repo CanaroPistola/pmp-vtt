@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cijhjagdomgvy"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_20buo"]
+
+[resource]
+script = ExtResource("1_20buo")
+dex_number = 247
+display_name = "Pupitar"
+id = "pupitar"
+types = Array[int]([12, 8])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 66
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 15,
+1: 10,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 1
+}])
+abilities = Array[String](["Shed Skin"])
+evolves_to = Array[String](["tyranitar"])
+evolution_level = 16
+evolution_points = 15
+level_moves = {
+2: ["Sandstorm"],
+4: ["Screech"],
+5: ["Chip Away"],
+6: ["Stomping Tantrum"],
+7: ["Rock Slide"],
+8: ["Scary Face", "Smack Down"],
+10: ["Thrash"],
+12: ["Dark Pulse"],
+14: ["Payback"],
+15: ["Crunch"],
+16: ["Earthquake", "Stone Edge"],
+17: ["Hyper Beam"]
+}
+starting_moves = Array[String](["Bite", "Iron Defense", "Leer", "Rock Throw", "Tackle"])
+tms = Array[String](["tm_3", "tm_12", "tm_13", "tm_25", "tm_29", "tm_35", "tm_45", "tm_50", "tm_51", "tm_52", "tm_55", "tm_58", "tm_59", "tm_64", "tm_73", "tm_74", "tm_83", "tm_87", "tm_109", "tm_113", "tm_129", "tm_131", "tm_132", "tm_136", "tm_147", "tm_148", "tm_149", "tm_152", "tm_174", "tm_175", "tm_182", "tm_186", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_234", "tm_236", "tm_248", "tm_251", "tm_253", "tm_255", "tm_261", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_283", "tm_286", "tm_295", "tm_296", "tm_305"])
+egg_moves = Array[String](["Ancient Power", "Assurance", "Curse", "Dragon Dance", "Focus Energy", "Iron Defense", "Iron Head", "Iron Tail", "Outrage", "Pursuit", "Stealth Rock", "Stomp"])

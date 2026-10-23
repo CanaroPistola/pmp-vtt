@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dysv4hmqjvd2h"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_h4r7w"]
+
+[resource]
+script = ExtResource("1_h4r7w")
+dex_number = 1003
+display_name = "Ting-Lu"
+id = "ting_lu"
+types = Array[int]([15, 8])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 218
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 18,
+1: 10,
+2: 22,
+3: 10,
+4: 14,
+5: 14
+}
+skills = Array[int]([2, 3, 5, 7, 8, 16])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}])
+abilities = Array[String](["Vessel of Ruin"])
+level_moves = {
+2: ["Spikes"],
+4: ["Payback"],
+5: ["Stomp"],
+7: ["Bulldoze"],
+9: ["Whirlwind"],
+10: ["Taunt"],
+12: ["Thrash"],
+14: ["Dark Pulse"],
+15: ["Ruination", "Stomping Tantrum"],
+16: ["Rock Slide", "Throat Chop"],
+17: ["Earthquake", "Memento"],
+18: ["Fissure"]
+}
+starting_moves = Array[String](["Mean Look", "Sand Tomb", "Spite"])
+tms = Array[String](["tm_24", "tm_25", "tm_35", "tm_52", "tm_55", "tm_59", "tm_73", "tm_74", "tm_83", "tm_87", "tm_113", "tm_128", "tm_130", "tm_136", "tm_152", "tm_174", "tm_175", "tm_199", "tm_214", "tm_223", "tm_225", "tm_230", "tm_231", "tm_234", "tm_248", "tm_253", "tm_260", "tm_261", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_282", "tm_283", "tm_286", "tm_289", "tm_321"])

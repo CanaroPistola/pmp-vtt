@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bcktvlj7k7vsv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_c0cqt"]
+
+[resource]
+script = ExtResource("1_c0cqt")
+id = "leech_life"
+display_name = "Leech Life (Suga-Vidas)"
+name_en = "Leech Life"
+name_pt = "Suga-Vidas"
+type = 11
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você morde uma criatura, tentando sugar parte da força vital dela. Faça um ataque corpo a corpo, causando 4d4 + MOVE de dano do tipo inseto em um acerto. Metade do dano causado retorna como cura ao usuário."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["drain"])

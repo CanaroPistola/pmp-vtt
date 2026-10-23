@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://okbh3xthw3y1"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vjbdk"]
+
+[resource]
+script = ExtResource("1_vjbdk")
+dex_number = 972
+display_name = "Houndstone"
+id = "houndstone"
+types = Array[int]([13])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 18,
+1: 14,
+2: 15,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([6, 8, 10, 13])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Sand Rush"])
+hidden_ability = "Fluffy"
+level_moves = {
+2: ["Bite", "Tail Whip"],
+3: ["Roar"],
+4: ["Headbutt"],
+6: ["Dig"],
+8: ["Rest"],
+10: ["Crunch"],
+12: ["Play Rough"],
+14: ["Helping Hand"],
+15: ["Phantom Force"],
+16: ["Charm", "Double-Edge"]
+}
+starting_moves = Array[String](["Growl", "Last Respects", "Lick", "Tackle"])
+tms = Array[String](["tm_24", "tm_35", "tm_41", "tm_46", "tm_50", "tm_55", "tm_59", "tm_82", "tm_83", "tm_87", "tm_92", "tm_113", "tm_129", "tm_130", "tm_136", "tm_140", "tm_174", "tm_175", "tm_180", "tm_184", "tm_188", "tm_190", "tm_194", "tm_199", "tm_203", "tm_209", "tm_214", "tm_220", "tm_231", "tm_234", "tm_240", "tm_248", "tm_253", "tm_266", "tm_270", "tm_271", "tm_282", "tm_286", "tm_288", "tm_291", "tm_300", "tm_305", "tm_316"])
+egg_moves = Array[String](["Ally Switch", "Destiny Bond", "Disable", "Howl", "Memento", "Shadow Sneak", "Yawn"])

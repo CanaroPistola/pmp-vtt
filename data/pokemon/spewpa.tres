@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dcxrf7i075mr3"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ug8sd"]
+
+[resource]
+script = ExtResource("1_ug8sd")
+dex_number = 665
+display_name = "Spewpa"
+id = "spewpa"
+types = Array[int]([11])
+sr = "1"
+min_level = 2
+evolution_stage = 2
+armor_class = 12
+hit_points = 24
+movement = {
+0: 4.5,
+2: 4.5
+}
+attributes = {
+0: 10,
+1: 9,
+2: 11,
+3: 6,
+4: 11,
+5: 10
+}
+skills = Array[int]([6, 17])
+abilities = Array[String](["Shed Skin"])
+hidden_ability = "Friend Guard"
+evolves_to = Array[String](["vivillon"])
+evolution_level = 4
+evolution_points = 18
+starting_moves = Array[String](["Harden", "Protect"])
+tms = Array[String](["tm_32", "tm_79", "tm_147", "tm_195", "tm_199", "tm_269", "tm_286"])
+egg_moves = Array[String](["Poison Powder", "Rage Powder", "Stun Spore"])

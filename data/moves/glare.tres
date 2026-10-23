@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://0q6875l2qjua"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_uitnu"]
+
+[resource]
+script = ExtResource("1_uitnu")
+id = "glare"
+display_name = "Glare"
+name_en = "Glare"
+pp = 15
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 12.0
+duration_is_permanent = true
+description = "Você encara nos olhos de uma criatura com ferocidade intensa. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o alvo fica Paralisado."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([0, 5])
+effect_tags = Array[String](["paralysis"])

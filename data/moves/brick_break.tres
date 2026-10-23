@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b1o5nf5m0ahfh"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_6x0a4"]
+
+[resource]
+script = ExtResource("1_6x0a4")
+id = "brick_break"
+display_name = "Brick Break"
+name_en = "Brick Break"
+type = 6
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você desfere um soco poderoso e concentrado. Faça um ataque corpo a corpo em uma criatura, causando 2d8 + MOVE de dano lutador em caso de acerto. Caso a criatura atingida esteja sendo beneficiada por Reflect, Light Screen ou Aurora Veil, o Move ignora os efeitos dessa barreira e a desfaz por completo, encerrando seus efeitos sobre todas as criaturas protegidas por ela."
+scaling_text = "Os dados de dano para este Move mudam para 2d10 no nível 5, 5d6 no nível 10 e 6d6 no nível 17. Feito por Yggdrassal 102"
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+}
+}

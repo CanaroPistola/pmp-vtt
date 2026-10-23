@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b5e6qsa7uelt7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_rdnwa"]
+
+[resource]
+script = ExtResource("1_rdnwa")
+dex_number = 384
+display_name = "Rayquaza"
+id = "rayquaza"
+types = Array[int]([14, 9])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 380
+hit_dice = "d20"
+movement = {
+0: 12.0,
+2: 12.0
+}
+attributes = {
+0: 22,
+1: 24,
+2: 20,
+3: 12,
+4: 16,
+5: 12
+}
+skills = Array[int]([3, 7, 17])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Air Lock"])
+level_moves = {
+2: ["Scary Face"],
+5: ["Ancient Power"],
+7: ["Crunch"],
+10: ["Air Slash"],
+12: ["Rest"],
+15: ["Dragon Pulse", "Extreme Speed"],
+16: ["Dragon Dance"],
+17: ["Fly"],
+18: ["Hurricane", "Hyper Voice", "Outrage"],
+19: ["Hyper Beam"]
+}
+starting_moves = Array[String](["Dragon Ascent", "Twister"])
+tms = Array[String](["tm_3", "tm_7", "tm_11", "tm_16", "tm_20", "tm_22", "tm_25", "tm_28", "tm_29", "tm_31", "tm_34", "tm_35", "tm_45", "tm_50", "tm_54", "tm_57", "tm_58", "tm_59", "tm_60", "tm_61", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_73", "tm_74", "tm_75", "tm_83", "tm_84", "tm_87", "tm_91", "tm_97", "tm_100", "tm_102", "tm_103", "tm_109", "tm_113", "tm_121", "tm_129", "tm_131", "tm_133", "tm_135", "tm_136", "tm_137", "tm_139", "tm_144", "tm_148", "tm_149", "tm_170", "tm_182", "tm_183", "tm_199", "tm_201", "tm_209", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_228", "tm_231", "tm_233", "tm_234", "tm_241", "tm_242", "tm_247", "tm_248", "tm_255", "tm_257", "tm_262", "tm_267", "tm_270", "tm_271", "tm_275", "tm_276", "tm_277", "tm_278", "tm_281", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294", "tm_296", "tm_303", "tm_305", "tm_311", "tm_312", "tm_314", "tm_315"])

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dopl8alvu6xpw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_u78ii"]
+
+[resource]
+script = ExtResource("1_u78ii")
+dex_number = 685
+display_name = "Slurpuff"
+id = "slurpuff"
+types = Array[int]([17])
+sr = "12"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 93
+hit_dice = "d12"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 13,
+1: 13,
+2: 16,
+3: 6,
+4: 12,
+5: 18
+}
+skills = Array[int]([10, 17])
+abilities = Array[String](["Sweet Veil"])
+hidden_ability = "Unburden"
+level_moves = {
+2: ["Fairy Wind"],
+3: ["Play Nice"],
+4: ["Fake Tears"],
+5: ["Round"],
+6: ["Cotton Spore"],
+7: ["Endeavor", "String Shot"],
+9: ["Aromatherapy"],
+11: ["Draining Kiss"],
+12: ["Energy Ball"],
+14: ["Cotton Guard", "Sticky Web"],
+15: ["Play Rough", "Wish"],
+16: ["Light Screen"],
+17: ["Safeguard"]
+}
+starting_moves = Array[String](["Sweet Scent", "Tackle"])
+tms = Array[String](["tm_4", "tm_13", "tm_38", "tm_41", "tm_45", "tm_48", "tm_53", "tm_58", "tm_67", "tm_68", "tm_69", "tm_82", "tm_84", "tm_87", "tm_88", "tm_97", "tm_109", "tm_111", "tm_113", "tm_125", "tm_129", "tm_131", "tm_136", "tm_156", "tm_161", "tm_172", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_248", "tm_255", "tm_270", "tm_271", "tm_275", "tm_276", "tm_288", "tm_294", "tm_296"])
+egg_moves = Array[String](["After You", "Belly Drum", "Copycat", "Sticky Web", "Yawn"])

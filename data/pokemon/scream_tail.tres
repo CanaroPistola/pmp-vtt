@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cualmklgbwhl4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_m2ase"]
+
+[resource]
+script = ExtResource("1_m2ase")
+dex_number = 985
+display_name = "Scream Tail"
+id = "scream_tail"
+types = Array[int]([17, 10])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 18
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 14,
+2: 20,
+3: 8,
+4: 16,
+5: 14
+}
+skills = Array[int]([0, 2, 7, 12, 14])
+abilities = Array[String](["Protosynthesis"])
+level_moves = {
+3: ["Howl"],
+5: ["Noble Roar"],
+7: ["Bite"],
+10: ["Body Slam"],
+12: ["Rest"],
+14: ["Play Rough"],
+15: ["Hyper Voice"],
+16: ["Psychic Fangs"],
+17: ["Crunch", "Wish"],
+18: ["Gyro Ball"],
+19: ["Perish Song"],
+20: ["Boomburst"]
+}
+starting_moves = Array[String](["Disable", "Pound", "Sing"])
+tms = Array[String](["tm_10", "tm_18", "tm_22", "tm_25", "tm_34", "tm_38", "tm_50", "tm_53", "tm_55", "tm_59", "tm_67", "tm_81", "tm_83", "tm_85", "tm_87", "tm_88", "tm_91", "tm_92", "tm_94", "tm_97", "tm_100", "tm_103", "tm_113", "tm_114", "tm_121", "tm_129", "tm_136", "tm_137", "tm_139", "tm_140", "tm_141", "tm_145", "tm_156", "tm_171", "tm_172", "tm_173", "tm_190", "tm_199", "tm_200", "tm_201", "tm_202", "tm_203", "tm_204", "tm_205", "tm_207", "tm_209", "tm_212", "tm_214", "tm_220", "tm_225", "tm_231", "tm_234", "tm_248", "tm_256", "tm_262", "tm_266", "tm_268", "tm_270", "tm_271", "tm_282", "tm_286", "tm_290", "tm_291", "tm_292", "tm_293", "tm_294", "tm_300", "tm_301", "tm_305", "tm_311", "tm_321"])

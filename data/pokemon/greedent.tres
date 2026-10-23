@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://8jv3uasy881j"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_b8koo"]
+
+[resource]
+script = ExtResource("1_b8koo")
+dex_number = 820
+display_name = "Greedent"
+id = "greedent"
+types = Array[int]([0])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 60
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 14,
+1: 13,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([13, 17])
+abilities = Array[String](["Cheek Pouch"])
+hidden_ability = "Gluttony"
+level_moves = {
+5: ["Spit Up", "Stockpile", "Swallow"],
+7: ["Body Slam"],
+9: ["Rest"],
+12: ["Counter"],
+14: ["Bullet Seed"],
+15: ["Super Fang"],
+16: ["Belch"]
+}
+starting_moves = Array[String](["Bite", "Covet", "Stuff Cheeks", "Tackle", "Tail Whip"])
+tms = Array[String](["tm_10", "tm_12", "tm_13", "tm_24", "tm_25", "tm_31", "tm_35", "tm_36", "tm_50", "tm_51", "tm_55", "tm_59", "tm_74", "tm_82", "tm_83", "tm_87", "tm_92", "tm_100", "tm_113", "tm_121", "tm_132", "tm_136", "tm_137", "tm_140", "tm_150", "tm_174", "tm_175", "tm_186", "tm_199", "tm_203", "tm_209", "tm_214", "tm_228", "tm_238", "tm_248", "tm_255", "tm_266", "tm_270", "tm_271", "tm_272", "tm_278", "tm_280", "tm_282", "tm_286", "tm_288", "tm_291", "tm_298", "tm_315"])
+egg_moves = Array[String](["Belly Drum", "Defense Curl", "Last Resort", "Rollout"])

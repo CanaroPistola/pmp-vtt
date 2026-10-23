@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bplxnmh58i1th"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_27gf3"]
+
+[resource]
+script = ExtResource("1_27gf3")
+dex_number = 518
+display_name = "Musharna"
+id = "musharna"
+types = Array[int]([10])
+sr = "13"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 105
+hit_dice = "d12"
+attributes = {
+0: 13,
+1: 12,
+2: 20,
+3: 8,
+4: 18,
+5: 10
+}
+skills = Array[int]([9])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 2
+}])
+abilities = Array[String](["Forewarn", "Synchronize"])
+hidden_ability = "Telepathy"
+starting_moves = Array[String](["Defense Curl", "Hypnosis", "Lucky Chant", "Psybeam", "Psychic Terrain"])
+tms = Array[String](["tm_4", "tm_9", "tm_13", "tm_38", "tm_40", "tm_45", "tm_53", "tm_58", "tm_69", "tm_84", "tm_85", "tm_87", "tm_109", "tm_113", "tm_118", "tm_119", "tm_121", "tm_125", "tm_129", "tm_131", "tm_136", "tm_145", "tm_156", "tm_161", "tm_172", "tm_184", "tm_198", "tm_199", "tm_201", "tm_202", "tm_205", "tm_207", "tm_209", "tm_212", "tm_214", "tm_216", "tm_223", "tm_225", "tm_228", "tm_229", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_255", "tm_270", "tm_276", "tm_277", "tm_284", "tm_293", "tm_295", "tm_296", "tm_300", "tm_301", "tm_317", "tm_319", "tm_321"])
+egg_moves = Array[String](["Barrier", "Baton Pass", "Curse", "Healing Wish", "Helping Hand", "Magic Coat", "Secret Power", "Sleep Talk", "Sonic Boom", "Swift"])

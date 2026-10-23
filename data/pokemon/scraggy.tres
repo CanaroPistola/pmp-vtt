@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dpwlpfecfs6rs"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_u3vbe"]
+
+[resource]
+script = ExtResource("1_u3vbe")
+dex_number = 559
+display_name = "Scraggy"
+id = "scraggy"
+types = Array[int]([15, 6])
+sr = "2"
+evolution_stage = 1
+armor_class = 14
+hit_points = 18
+movement = {
+0: 7.5
+}
+attributes = {
+0: 14,
+1: 12,
+2: 14,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Shed Skin", "Moxie"])
+hidden_ability = "Intimidate"
+evolves_to = Array[String](["scrafty"])
+evolution_level = 13
+evolution_points = 8
+level_moves = {
+2: ["Sand Attack"],
+3: ["Feint Attack"],
+4: ["Swagger"],
+6: ["Low Kick"],
+7: ["Payback", "Protect", "Torment"],
+8: ["Beat Up", "Brick Break"],
+9: ["Chip Away"],
+11: ["High Jump Kick"],
+12: ["Scary Face"],
+13: ["Crunch"],
+14: ["Facade"],
+15: ["Focus Punch", "Head Smash", "Rock Climb"]
+}
+starting_moves = Array[String](["Headbutt", "Leer"])
+tms = Array[String](["tm_1", "tm_10", "tm_12", "tm_13", "tm_19", "tm_29", "tm_34", "tm_43", "tm_44", "tm_45", "tm_50", "tm_51", "tm_52", "tm_55", "tm_58", "tm_59", "tm_63", "tm_64", "tm_65", "tm_66", "tm_67", "tm_71", "tm_81", "tm_82", "tm_83", "tm_87", "tm_88", "tm_94", "tm_100", "tm_103", "tm_105", "tm_106", "tm_109", "tm_114", "tm_129", "tm_131", "tm_141", "tm_147", "tm_148", "tm_149", "tm_150", "tm_152", "tm_158", "tm_159", "tm_165", "tm_166", "tm_186", "tm_191", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_220", "tm_223", "tm_225", "tm_228", "tm_234", "tm_248", "tm_249", "tm_251", "tm_253", "tm_254", "tm_255", "tm_261", "tm_267", "tm_270", "tm_271", "tm_272", "tm_276", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_292", "tm_295", "tm_296", "tm_298", "tm_304", "tm_305", "tm_318", "tm_321"])
+egg_moves = Array[String](["Acid Spray", "Amnesia", "Counter", "Detect", "Dragon Dance", "Drain Punch", "Fake Out", "Feint Attack", "Fire Punch", "Ice Punch", "Power-Up Punch", "Quick Guard", "Thunder Punch", "Zen Headbutt"])

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://8kkmgjtob0qv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_65xnb"]
+
+[resource]
+script = ExtResource("1_65xnb")
+id = "memento"
+display_name = "Memento"
+name_en = "Memento"
+type = 15
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 6.0
+duration_is_permanent = true
+description = "Você sacrifica sua própria força vital para deixar uma marca duradoura em uma criatura dentro do alcance. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, você desmaia, e o Ataque e o Ataque Especial do alvo são reduzidos em 2 estágios, podendo ser acumulados em até -6 estágios cada. Observações: O usuário não desmaia se Memento falhar (por exemplo, se não tiver alvo, se errar ou for bloqueado por Substitute), se o alvo for imune por ser do tipo Sombrio e a prioridade de Memento tiver sido aumentada por Prankster, ou se o golpe for bloqueado por um Move de proteção. No entanto, o usuário ainda desmaia se o golpe acertar, mas não puder afetar os atributos do alvo (como por causa de Clear Body ou se ambos os atributos já estiverem em -6)."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([4, 5])
+effect_tags = Array[String](["stat_change"])

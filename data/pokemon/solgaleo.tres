@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bd3yvwyyxxpu5"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_20lcp"]
+
+[resource]
+script = ExtResource("1_20lcp")
+dex_number = 791
+display_name = "Solgaleo"
+id = "solgaleo"
+types = Array[int]([10, 16])
+sr = "15"
+min_level = 15
+evolution_stage = 3
+armor_class = 18
+hit_points = 335
+hit_dice = "d20"
+movement = {
+0: 15.0
+}
+attributes = {
+0: 19,
+1: 19,
+2: 20,
+3: 14,
+4: 16,
+5: 14
+}
+skills = Array[int]([2, 3, 9])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 9.0,
+"type": 2
+}])
+abilities = Array[String](["Full Metal Body"])
+level_moves = {
+3: ["Iron Head"],
+5: ["Metal Sound"],
+7: ["Zen Headbutt"],
+8: ["Flash Cannon"],
+11: ["Morning Sun"],
+13: ["Crunch"],
+15: ["Metal Burst", "Solar Beam"],
+16: ["Noble Roar", "Wild Charge"],
+17: ["Flare Blitz", "Wide Guard"],
+18: ["Giga Impact"]
+}
+starting_moves = Array[String](["Cosmic Power", "Metal Claw", "Sunsteel Strike", "Teleport", "Wake-Up Slap"])
+tms = Array[String](["tm_5", "tm_25", "tm_35", "tm_38", "tm_43", "tm_45", "tm_50", "tm_58", "tm_59", "tm_74", "tm_82", "tm_83", "tm_85", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_99", "tm_103", "tm_109", "tm_110", "tm_113", "tm_121", "tm_126", "tm_128", "tm_129", "tm_131", "tm_136", "tm_137", "tm_147", "tm_148", "tm_149", "tm_150", "tm_153", "tm_156", "tm_168", "tm_169", "tm_170", "tm_177", "tm_182", "tm_199", "tm_201", "tm_202", "tm_203", "tm_207", "tm_212", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_228", "tm_229", "tm_234", "tm_242", "tm_248", "tm_253", "tm_255", "tm_257", "tm_263", "tm_264", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294", "tm_296", "tm_301", "tm_315", "tm_318", "tm_321"])

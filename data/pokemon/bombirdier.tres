@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b7lmhg2mcvnd2"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_3yqgk"]
+
+[resource]
+script = ExtResource("1_3yqgk")
+dex_number = 962
+display_name = "Bombirdier"
+id = "bombirdier"
+types = Array[int]([9, 15])
+sr = "9"
+min_level = 5
+evolution_stage = 1
+armor_class = 16
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 18,
+1: 15,
+2: 16,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([8, 13, 15])
+abilities = Array[String](["Big Pecks", "Keen Eye"])
+hidden_ability = "Rocky Payload"
+level_moves = {
+3: ["Thief"],
+4: ["Rock Throw"],
+6: ["Whirlwind"],
+7: ["Pluck"],
+8: ["Torment"],
+10: ["Rock Tomb"],
+12: ["Payback"],
+14: ["Dual Wingbeat"],
+15: ["Rock Slide"],
+16: ["Knock Off", "Parting Shot"]
+}
+starting_moves = Array[String](["Hone Claws", "Leer", "Memento", "Peck", "Wing Attack"])
+tms = Array[String](["tm_2", "tm_3", "tm_6", "tm_7", "tm_27", "tm_51", "tm_52", "tm_70", "tm_72", "tm_82", "tm_83", "tm_87", "tm_90", "tm_102", "tm_106", "tm_113", "tm_127", "tm_133", "tm_136", "tm_137", "tm_144", "tm_150", "tm_152", "tm_178", "tm_196", "tm_199", "tm_201", "tm_209", "tm_214", "tm_221", "tm_223", "tm_225", "tm_231", "tm_234", "tm_248", "tm_253", "tm_262", "tm_267", "tm_270", "tm_271", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_303"])
+egg_moves = Array[String](["Feather Dance", "Power Trip", "Roost", "Sky Attack", "Sucker Punch"])

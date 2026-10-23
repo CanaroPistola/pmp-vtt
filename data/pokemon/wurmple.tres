@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://byrgas2iajaut"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_72c0h"]
+
+[resource]
+script = ExtResource("1_72c0h")
+dex_number = 265
+display_name = "Wurmple"
+id = "wurmple"
+types = Array[int]([11])
+sr = "1/8"
+evolution_stage = 1
+armor_class = 11
+hit_points = 16
+movement = {
+0: 6.0,
+2: 6.0
+}
+attributes = {
+0: 9,
+1: 8,
+2: 10,
+3: 6,
+4: 10,
+5: 12
+}
+abilities = Array[String](["Shield Dust"])
+hidden_ability = "Run Away"
+evolves_to = Array[String](["silcoon", "cascoon"])
+evolution_level = 4
+evolution_points = 6
+level_moves = {
+2: ["Poison Sting"],
+5: ["Bug Bite"]
+}
+starting_moves = Array[String](["String Shot", "Tackle"])
+tms = Array[String](["tm_32", "tm_79", "tm_255"])

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cltqxr4hxfc5o"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_un6k5"]
+
+[resource]
+script = ExtResource("1_un6k5")
+id = "miracle_eye"
+display_name = "Miracle Eye"
+name_en = "Miracle Eye"
+type = 10
+pp = 20
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 15.0
+duration_is_permanent = true
+description = "Você lança um olhar intenso contra uma criatura dentro do alcance, enfraquecendo suas defesas e revelando suas brechas. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, quaisquer modificadores de Evasão do al vo são redefinidos. Além disso, se o alvo for do tipo Sombrio, sua imunidade contra o tipo Psíquico é renunciada. Observações: Este Move ignora Substitute."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([3, 4])

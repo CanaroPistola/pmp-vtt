@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cw3y1unuwanlx"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_rymuj"]
+
+[resource]
+script = ExtResource("1_rymuj")
+dex_number = 955
+display_name = "Flittle"
+id = "flittle"
+types = Array[int]([10])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 15
+movement = {
+0: 7.5
+}
+attributes = {
+0: 9,
+1: 13,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 13])
+abilities = Array[String](["Anticipation", "Frisk"])
+hidden_ability = "Speed Boost"
+evolves_to = Array[String](["espathra"])
+evolution_level = 12
+evolution_points = 14
+level_moves = {
+2: ["Confusion"],
+3: ["Baby-Doll Eyes"],
+4: ["Disarming Voice"],
+5: ["Quick Attack"],
+7: ["Psybeam"],
+8: ["Pluck"],
+10: ["Agility"],
+12: ["Uproar"]
+}
+starting_moves = Array[String](["Growl", "Peck"])
+tms = Array[String](["tm_5", "tm_18", "tm_38", "tm_46", "tm_56", "tm_83", "tm_87", "tm_106", "tm_129", "tm_156", "tm_175", "tm_195", "tm_199", "tm_200", "tm_202", "tm_205", "tm_207", "tm_209", "tm_212", "tm_214", "tm_231", "tm_238", "tm_244", "tm_248", "tm_268", "tm_270", "tm_271", "tm_277", "tm_282", "tm_286", "tm_288", "tm_300", "tm_301", "tm_303", "tm_305", "tm_321"])
+egg_moves = Array[String](["Ally Switch", "Hypnosis", "Roost"])

@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dqnwwrtomtmpg"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_d1n73"]
+
+[resource]
+script = ExtResource("1_d1n73")
+id = "flip_turn"
+display_name = "Flip Turn"
+name_en = "Flip Turn"
+type = 2
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você ataca o alvo e, logo em seguida, recua rapidamente para trocar de lugar com um aliado que esteja aguardando. Faça um ataque corpo a corpo, causando 2d6 + MOVE de dano de água em um acerto. Caso acerte, o treinador deve trocar o usuário como uma ação livre, caso ele tenha outros Pokémon capazes de lutar. Observações: Flip Turn troca o usuário mesmo que ele esteja sob efeito de Ingrain, Arena Trap, Magnet Pull, Shadow Tag, Mean Look ou Block."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}

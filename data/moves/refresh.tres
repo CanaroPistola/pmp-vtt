@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dftvi52cenbh7"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_p4et7"]
+
+[resource]
+script = ExtResource("1_p4et7")
+id = "refresh"
+display_name = "Refresh (Revigorar)"
+name_en = "Refresh"
+name_pt = "Revigorar"
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+description = "Uma onda de energia de cura se espalha sobre você, curando-o das condições de envenenamento, paralisia e queimadura."
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea"
+effect_tags = Array[String](["paralysis", "burn", "poison"])

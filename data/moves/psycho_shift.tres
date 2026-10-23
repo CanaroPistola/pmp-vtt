@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bnb3qfkw081yr"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ave5k"]
+
+[resource]
+script = ExtResource("1_ave5k")
+id = "psycho_shift"
+display_name = "Psycho Shift"
+name_en = "Psycho Shift"
+type = 10
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 12.0
+description = "Você canaliza seu poder psíquico para transferir uma Condição de Status para uma criatura dentro do alcance. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual , uma Condição de Status que esteja afetando você é transferida para o alvo. Se o alvo possuir alguma imunidade natural a essa condição, o efeito se dissipa."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([3, 4])

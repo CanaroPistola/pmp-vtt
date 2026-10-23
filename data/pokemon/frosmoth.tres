@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ch8bpiw5dy8vd"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_5ryd0"]
+
+[resource]
+script = ExtResource("1_5ryd0")
+dex_number = 873
+display_name = "Frosmoth"
+id = "frosmoth"
+types = Array[int]([5, 11])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 72
+hit_dice = "d10"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 16,
+1: 19,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 12, 14])
+abilities = Array[String](["Shield Dust"])
+hidden_ability = "Ice Scales"
+level_moves = {
+2: ["Stun Spore"],
+3: ["Infestation"],
+4: ["Mist"],
+6: ["Defog"],
+7: ["Feather Dance"],
+8: ["Aurora Beam"],
+10: ["Hail", "Snowscape"],
+11: ["Bug Buzz"],
+12: ["Aurora Veil"],
+14: ["Blizzard"],
+15: ["Tailwind", "Wide Guard"],
+16: ["Quiver Dance"]
+}
+starting_moves = Array[String](["Attract", "Helping Hand", "Icy Wind", "Powder Snow", "Struggle Bug"])
+tms = Array[String](["tm_2", "tm_7", "tm_13", "tm_16", "tm_22", "tm_32", "tm_33", "tm_38", "tm_53", "tm_72", "tm_83", "tm_87", "tm_90", "tm_112", "tm_113", "tm_122", "tm_129", "tm_133", "tm_136", "tm_139", "tm_142", "tm_143", "tm_144", "tm_145", "tm_155", "tm_156", "tm_160", "tm_190", "tm_195", "tm_199", "tm_212", "tm_214", "tm_228", "tm_229", "tm_245", "tm_248", "tm_255", "tm_256", "tm_269", "tm_270", "tm_277", "tm_281", "tm_282", "tm_286", "tm_302", "tm_303", "tm_313"])
+egg_moves = Array[String](["Bug Bite", "Fairy Wind", "Mirror Coat"])

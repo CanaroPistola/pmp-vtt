@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://n7y8bljx358f"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_crdxp"]
+
+[resource]
+script = ExtResource("1_crdxp")
+dex_number = 1007
+display_name = "Koraidon"
+id = "koraidon"
+types = Array[int]([6, 14])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 19
+hit_points = 486
+hit_dice = "d20"
+movement = {
+0: 15.0,
+1: 12.0,
+2: 12.0
+}
+attributes = {
+0: 22,
+1: 19,
+2: 21,
+3: 10,
+4: 14,
+5: 18
+}
+skills = Array[int]([3, 7, 8, 9, 12, 14, 17])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Orichalcum Pulse"])
+level_moves = {
+3: ["Rock Smash"],
+5: ["Ancient Power"],
+7: ["Drain Punch"],
+10: ["Brick Break"],
+12: ["Agility"],
+14: ["Dragon Claw"],
+15: ["Flamethrower"],
+16: ["Collision Course"],
+17: ["Counter", "Screech"],
+18: ["Outrage"],
+19: ["Close Combat"],
+20: ["Flare Blitz", "Giga Impact"]
+}
+starting_moves = Array[String](["Breaking Swipe", "Sunny Day"])
+tms = Array[String](["tm_2", "tm_5", "tm_24", "tm_25", "tm_28", "tm_29", "tm_34", "tm_35", "tm_43", "tm_50", "tm_55", "tm_59", "tm_60", "tm_62", "tm_63", "tm_65", "tm_66", "tm_67", "tm_72", "tm_83", "tm_87", "tm_91", "tm_92", "tm_95", "tm_96", "tm_97", "tm_98", "tm_103", "tm_105", "tm_113", "tm_126", "tm_127", "tm_128", "tm_129", "tm_136", "tm_140", "tm_148", "tm_158", "tm_159", "tm_170", "tm_174", "tm_175", "tm_182", "tm_183", "tm_199", "tm_214", "tm_218", "tm_220", "tm_233", "tm_234", "tm_241", "tm_248", "tm_253", "tm_257", "tm_266", "tm_270", "tm_271", "tm_278", "tm_282", "tm_283", "tm_285", "tm_286", "tm_291", "tm_303", "tm_305", "tm_315", "tm_321"])

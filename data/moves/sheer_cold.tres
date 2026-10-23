@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c3but5aw3ffl0"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_gjcqb"]
+
+[resource]
+script = ExtResource("1_gjcqb")
+id = "sheer_cold"
+display_name = "Sheer Cold"
+name_en = "Sheer Cold"
+type = 5
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "Você envia um arrepio na espinha de uma criatura, congelando seu interior. Faça um ataque à distância contra um alvo. Em um acerto, role um d20. Em um resultado de 15 ou mais, você faz a criatura desmaiar instantaneamente. Em qualquer outro resultado, este Move não tem efeito. Para cada 2 níveis em que você estiver acima do alvo, aumente em +1 a margem de acerto no efeito do d20 deste Move. Caso use em um alvo de nível maior que o seu, o ataque falha automaticamente."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0, 1])
+effect_tags = Array[String](["ohko"])

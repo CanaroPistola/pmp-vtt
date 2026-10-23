@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cwgbh57e0l3id"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ju20c"]
+
+[resource]
+script = ExtResource("1_ju20c")
+dex_number = 848
+display_name = "Toxel"
+id = "toxel"
+types = Array[int]([3, 7])
+sr = "1/8"
+evolution_stage = 1
+armor_class = 11
+hit_points = 16
+movement = {
+0: 6.0
+}
+attributes = {
+0: 9,
+1: 11,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([4])
+abilities = Array[String](["Rattled", "Static"])
+hidden_ability = "Klutz"
+evolves_to = Array[String](["toxtricity"])
+evolution_level = 10
+evolution_points = 18
+starting_moves = Array[String](["Acid", "Belch", "Flail", "Growl", "Nuzzle", "Tearful Look"])
+tms = Array[String](["tm_13", "tm_41", "tm_81", "tm_82", "tm_83", "tm_87", "tm_169", "tm_199", "tm_214", "tm_228", "tm_248", "tm_255", "tm_270", "tm_286"])
+egg_moves = Array[String](["Endeavor", "Metal Sound", "Power-Up Punch"])

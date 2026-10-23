@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bl4s56cuy6nky"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_mv5go"]
+
+[resource]
+script = ExtResource("1_mv5go")
+id = "mean_look"
+display_name = "Mean Look"
+name_en = "Mean Look"
+pp = 3
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 15.0
+duration_is_permanent = true
+description = "Você lança um olhar intimidador contra uma criatura dentro do alcance, cercando-a com imagens assustadoras de olhos que a impedem de fugir. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o alvo não pode fugir, ser substituído do combate, nem se afastar de você para além do alcance deste Move, embora ainda possa usar Teleport normalmente para escapar desse efeito . Você pode se mover livremente, mas se o alvo sair do alcance por causa da sua movimentação, ele deixa de ser afetado. O efeito se mantém enquanto você permanecer em batalha . Este Move não afeta Pokémon do tipo Fantasm a, ignora efeitos de proteção como Protect ou Detect, e não bloqueia Moves, habilidades passivas ou itens que forçam a troca do alvo, como Dragon Tail, Whirlwind ou Eject Button."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([4, 5])

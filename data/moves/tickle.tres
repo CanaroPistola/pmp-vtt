@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bp6edra82ai63"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_uslb8"]
+
+[resource]
+script = ExtResource("1_uslb8")
+id = "tickle"
+display_name = "Tickle"
+name_en = "Tickle"
+move_time = "1 ação bônus"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 2
+activation = 2
+description = "Você faz cócegas em uma criatura dentro do alcance, pegando-a de surpresa. Role 1d20 + MOVE  + 9 e compare o resultado com 10 + CON do alvo. Em um resultado maior ou igual, o Ataque e a Defesa do alvo são reduzidos em 1 estágio , podendo ser acumulados em at é -6 estágios. Caso acerte este Move, você abre mão de sua ação padrão em seu próximo turno."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([1])
+effect_tags = Array[String](["stat_change"])

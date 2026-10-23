@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://k8brr6txm23g"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_sj2u1"]
+
+[resource]
+script = ExtResource("1_sj2u1")
+dex_number = 704
+display_name = "Goomy"
+id = "goomy"
+types = Array[int]([14])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 6.0
+}
+attributes = {
+0: 13,
+1: 11,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Sap Sipper", "Hydration"])
+hidden_ability = "Gooey"
+evolves_to = Array[String](["sliggoo"])
+evolution_level = 14
+evolution_points = 9
+level_moves = {
+2: ["Absorb", "Water Gun"],
+3: ["Protect"],
+5: ["Bide"],
+6: ["Dragon Breath"],
+9: ["Rain Dance", "Water Pulse"],
+10: ["Flail"],
+11: ["Body Slam"],
+13: ["Muddy Water"],
+14: ["Curse", "Dragon Pulse"]
+}
+starting_moves = Array[String](["Bubble", "Tackle"])
+tms = Array[String](["tm_13", "tm_25", "tm_41", "tm_42", "tm_45", "tm_51", "tm_58", "tm_60", "tm_65", "tm_83", "tm_87", "tm_109", "tm_131", "tm_146", "tm_149", "tm_174", "tm_176", "tm_182", "tm_199", "tm_209", "tm_214", "tm_216", "tm_223", "tm_228", "tm_242", "tm_245", "tm_248", "tm_249", "tm_250", "tm_255", "tm_270", "tm_271", "tm_276", "tm_282", "tm_286", "tm_294", "tm_296", "tm_311"])
+egg_moves = Array[String](["Acid Armor", "Counter", "Curse", "Endure", "Iron Tail", "Life Dew", "Poison Tail"])

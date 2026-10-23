@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dva7qg5h1xvu"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_21rsa"]
+
+[resource]
+script = ExtResource("1_21rsa")
+id = "mind_reader"
+display_name = "Mind Reader"
+name_en = "Mind Reader"
+pp = 3
+move_time = "1 ação"
+range_category = 2
+range_distance = 18.0
+description = "Você sente as intenções e movimentos de uma criatura ao seu redor. Escolha um alvo em alcance ao ativar este Move. Um único ataque que você fizer no próximo turno é garantido de acertar este alvo , desde que você ainda possa vê -lo e ele esteja dentro do seu alcance . Você ainda pode rolar o dado para ver se acerta um ataque crítico ou causa um efeito a partir de uma rolagem alta. Observação: Embora esse efeito faça com que os golpes não 'errem', eles ainda podem falhar por outros motivos (como estar protegido por Protect, ou Fake Out sendo usado fora do primeiro turno) ou serem redirecionados por golpes que atraem ataques e Habilidades. O turno de dano de Future Sight e Doom Desire conta como uma verificação de precisão."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ddlbq18hfn5s2"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_cs8sd"]
+
+[resource]
+script = ExtResource("1_cs8sd")
+id = "meteor_mash"
+display_name = "Meteor Mash (Esmaga-Meteoro)"
+name_en = "Meteor Mash"
+name_pt = "Esmaga-Meteoro"
+type = 16
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você golpeia uma criatura com um punho tão rápido quanto um meteoro. Faça um ataque corpo a corpo -1 contra uma criatura, causando 3d6 + MOVE de dano de aço em um acerto. Em um resultado natural de 17 ou mais no acerto, seu Ataque é aumentado em 1 estágio, podendo ser acumulado em até 6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 3d10 no nível 5, 3d12 no nível 10 e 4d12 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

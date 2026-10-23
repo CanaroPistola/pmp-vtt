@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://daamhon0n5yry"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_mkuun"]
+
+[resource]
+script = ExtResource("1_mkuun")
+id = "arm_thrust"
+display_name = "Arm Thrust (Golpe de Braço)"
+name_en = "Arm Thrust"
+name_pt = "Golpe de Braço"
+type = 6
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você desencadeia uma sequência de socos em uma criatura. Faça um ataque corpo a corpo em uma criatura, causando 1d4 + MOVE de dano lutador em um acerto. Em um acerto, após isso, role um d8 e compare o resultado com a tabela abaixo para determinar a quantidade de golpes. Para cada golpe adicional, você pode imediatamente realizar um novo ataque contra o mesmo alvo com acerto garantido, causando 1d4 + MOVE de dano lutador. Cada golpe extra deve rolar separadamente 1d20 para verificar chance de crítico. Confira a tabela de ataques no livro."
+scaling_text = "O dado de dano para esse Move muda para 1d6 no nível 10 e 1d8 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+}
+}

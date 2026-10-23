@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://btpnm2sccxl4i"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_omia6"]
+
+[resource]
+script = ExtResource("1_omia6")
+id = "safeguard"
+display_name = "Safeguard (Salvaguarda)"
+name_en = "Safeguard"
+name_pt = "Salvaguarda"
+pp = 15
+move_time = "1 ação"
+range_category = 5
+range_distance = 6.0
+duration_rounds = 5
+description = "Você cria um campo de força ao redor de você e seus aliados. Durante a duração, você e qualquer aliado dentro da área estão protegidos contra quaisquer novas Condições de Status."
+range_text_raw = "Pessoal (raio de 6 metros)"
+duration_text_raw = "5 rodadas"

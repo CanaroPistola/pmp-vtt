@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://26yxf7h7knah"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_1rqwg"]
+
+[resource]
+script = ExtResource("1_1rqwg")
+dex_number = 278
+display_name = "Wingull"
+id = "wingull"
+types = Array[int]([2, 9])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 3.0
+}
+attributes = {
+0: 9,
+1: 15,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([13])
+abilities = Array[String](["Keen Eye", "Hydration"])
+hidden_ability = "Rain Dish"
+evolves_to = Array[String](["pelipper"])
+evolution_level = 9
+evolution_points = 13
+level_moves = {
+2: ["Supersonic"],
+3: ["Wing Attack"],
+4: ["Mist"],
+5: ["Water Pulse"],
+7: ["Quick Attack"],
+8: ["Air Cutter"],
+9: ["Pursuit"],
+10: ["Aerial Ace"],
+11: ["Roost"],
+12: ["Agility"],
+14: ["Air Slash"],
+15: ["Hurricane"]
+}
+starting_moves = Array[String](["Growl", "Water Gun"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_13", "tm_22", "tm_27", "tm_30", "tm_42", "tm_45", "tm_54", "tm_58", "tm_72", "tm_75", "tm_83", "tm_87", "tm_90", "tm_102", "tm_109", "tm_122", "tm_129", "tm_131", "tm_133", "tm_135", "tm_139", "tm_144", "tm_150", "tm_157", "tm_176", "tm_199", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_232", "tm_242", "tm_246", "tm_248", "tm_255", "tm_256", "tm_265", "tm_270", "tm_275", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_288", "tm_296", "tm_303", "tm_305", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Aerial Ace", "Agility", "Air Cutter", "Aqua Ring", "Brine", "Gust", "Knock Off", "Mist", "Roost", "Soak", "Twister", "Water Sport", "Wide Guard"])

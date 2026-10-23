@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://fa5hccs5mcqi"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vtwho"]
+
+[resource]
+script = ExtResource("1_vtwho")
+dex_number = 821
+display_name = "Rookidee"
+id = "rookidee"
+types = Array[int]([9])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 3.0
+}
+attributes = {
+0: 10,
+1: 13,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([8, 13])
+senses = Array[Dictionary]([{
+"range_m": 7.5,
+"type": 0
+}])
+abilities = Array[String](["Keen Eye", "Unnerve"])
+hidden_ability = "Big Pecks"
+evolves_to = Array[String](["corvisquire"])
+evolution_level = 6
+evolution_points = 9
+level_moves = {
+2: ["Power Trip"],
+3: ["Hone Claws"],
+4: ["Fury Attack"],
+6: ["Pluck"],
+7: ["Taunt"],
+8: ["Scary Face"],
+10: ["Drill Peck"],
+11: ["Swagger"],
+12: ["Brave Bird"]
+}
+starting_moves = Array[String](["Leer", "Peck"])
+tms = Array[String](["tm_3", "tm_5", "tm_6", "tm_7", "tm_12", "tm_13", "tm_27", "tm_72", "tm_83", "tm_87", "tm_88", "tm_102", "tm_178", "tm_186", "tm_199", "tm_214", "tm_215", "tm_217", "tm_218", "tm_228", "tm_234", "tm_248", "tm_255", "tm_261", "tm_270", "tm_277", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_303"])
+egg_moves = Array[String](["Defog", "Rock Smash", "Roost", "Sand Attack", "Sky Attack", "Spite", "Tailwind"])

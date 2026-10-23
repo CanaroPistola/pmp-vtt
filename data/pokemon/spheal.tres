@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b5ymjjx7gp6v7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_cx3c3"]
+
+[resource]
+script = ExtResource("1_cx3c3")
+dex_number = 363
+display_name = "Spheal"
+id = "spheal"
+types = Array[int]([5, 2])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 20
+hit_dice = "d8"
+movement = {
+0: 3.0,
+1: 9.0
+}
+attributes = {
+0: 12,
+1: 10,
+2: 15,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Thick Fat", "Ice Body"])
+hidden_ability = "Oblivious"
+evolves_to = Array[String](["sealeo"])
+evolution_level = 11
+evolution_points = 9
+level_moves = {
+2: ["Rollout"],
+3: ["Encore"],
+5: ["Ice Ball"],
+6: ["Brine"],
+7: ["Aurora Beam"],
+9: ["Body Slam"],
+11: ["Rest", "Snore"],
+12: ["Hail"],
+14: ["Blizzard", "Surf"],
+15: ["Sheer Cold"]
+}
+starting_moves = Array[String](["Defense Curl", "Growl", "Powder Snow", "Water Gun"])
+tms = Array[String](["tm_11", "tm_13", "tm_17", "tm_22", "tm_30", "tm_35", "tm_45", "tm_57", "tm_58", "tm_74", "tm_75", "tm_87", "tm_108", "tm_109", "tm_122", "tm_131", "tm_138", "tm_139", "tm_144", "tm_149", "tm_199", "tm_209", "tm_214", "tm_216", "tm_223", "tm_224", "tm_225", "tm_228", "tm_243", "tm_248", "tm_255", "tm_264", "tm_270", "tm_272", "tm_275", "tm_276", "tm_296", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Aqua Ring", "Belly Drum", "Curse", "Fissure", "Rollout", "Signal Beam", "Sleep Talk", "Spit Up", "Stockpile", "Swallow", "Water Pulse", "Water Sport", "Yawn"])

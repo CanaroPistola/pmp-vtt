@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bjog361mhbvsx"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_h08n0"]
+
+[resource]
+script = ExtResource("1_h08n0")
+id = "purify"
+display_name = "Purify"
+name_en = "Purify"
+type = 7
+move_time = "1 ação"
+range_category = 2
+range_distance = 4.5
+description = "Você estende uma energia de cura para remover todas as Condições de Status de um alvo. Se o alvo estiver com uma Condição de Status Não Volátil, Purify a cura e, em seguida, restaura os PV do usuário em 2d6 + MOVE pontos de vida . Você não pode utilizar este Move em si mesmo. Observações: Não tem efeito se o alvo não estiver com uma Condição de Status Não Volátil (mesmo que possua a habilidade Comatose)."
+scaling_text = "Os dados de cura para este Move mudam para 2d10 no nível 5, 4d8 no nível 10 e 4d12 no nível 17."
+range_text_raw = "(4,5 metros)"
+duration_text_raw = "Instantânea"
+role = 1
+move_power_attributes = Array[int]([2])
+has_healing = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["heal"])

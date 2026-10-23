@@ -1,0 +1,471 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dindcnywxuxuq"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_81ovy"]
+
+[resource]
+script = ExtResource("1_81ovy")
+dex_number = 773
+display_name = "Silvally"
+id = "silvally"
+types = Array[int]([0])
+sr = "14"
+min_level = 15
+evolution_stage = 2
+armor_class = 17
+hit_points = 234
+hit_dice = "d20"
+movement = {
+0: 12.0,
+1: 9.0,
+2: 12.0
+}
+attributes = {
+0: 18,
+1: 20,
+2: 19,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([7, 8, 16])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}, {
+"range_m": 3.0,
+"type": 2
+}])
+abilities = Array[String](["RKS System"])
+level_moves = {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Crunch", "Metal Sound"],
+16: ["Air Slash", "Double Hit"],
+17: ["Punishment", "Razor Wind"],
+18: ["Double-Edge", "Tri Attack"],
+19: ["Parting Shot"]
+}
+starting_moves = Array[String](["Fire Fang", "Heal Block", "Ice Fang", "Imprison", "Iron Head", "Multi-Attack", "Poison Fang", "Tackle", "Thunder Fang"])
+tms = Array[String](["tm_3", "tm_7", "tm_45", "tm_54", "tm_58", "tm_60", "tm_63", "tm_86", "tm_87", "tm_92", "tm_93", "tm_96", "tm_97", "tm_99", "tm_109", "tm_113", "tm_115", "tm_122", "tm_127", "tm_131", "tm_136", "tm_137", "tm_139", "tm_140", "tm_144", "tm_145", "tm_147", "tm_148", "tm_151", "tm_153", "tm_161", "tm_182", "tm_186", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_223", "tm_228", "tm_231", "tm_234", "tm_239", "tm_240", "tm_241", "tm_243", "tm_248", "tm_253", "tm_255", "tm_263", "tm_265", "tm_270", "tm_271", "tm_275", "tm_276", "tm_277", "tm_278", "tm_281", "tm_287", "tm_291", "tm_293", "tm_294", "tm_296", "tm_303", "tm_310", "tm_318", "tm_320", "tm_321"])
+is_variant = true
+variant_data = {
+"Aço": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Aço)",
+"is_default": false
+},
+"Dragão": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Dragão)",
+"is_default": false
+},
+"Elétrico": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Elétrico)",
+"is_default": false
+},
+"Fada": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Fada)",
+"is_default": false
+},
+"Fantasma": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Fantasma)",
+"is_default": false
+},
+"Fogo": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Fogo)",
+"is_default": false
+},
+"Gelo": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Gelo)",
+"is_default": false
+},
+"Grama": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Grama)",
+"is_default": false
+},
+"Inseto": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Inseto)",
+"is_default": false
+},
+"Lutador": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Lutador)",
+"is_default": false
+},
+"Normal": {
+"diff": {},
+"display_name": "Silvally (Normal)",
+"is_default": true
+},
+"Pedra": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Pedra)",
+"is_default": false
+},
+"Psíquico": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Psíquico)",
+"is_default": false
+},
+"Sombrio": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Sombrio)",
+"is_default": false
+},
+"Terra": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Terra)",
+"is_default": false
+},
+"Venenoso": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Venenoso)",
+"is_default": false
+},
+"Voador": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Voador)",
+"is_default": false
+},
+"Água": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+2: ["Rage"],
+4: ["Pursuit"],
+5: ["Bite"],
+7: ["Aerial Ace"],
+9: ["Crush Claw"],
+10: ["Scary Face"],
+12: ["X-Scissor"],
+14: ["Take Down"],
+15: ["Metal Sound", "Crunch"],
+16: ["Double Hit", "Air Slash"],
+17: ["Punishment", "Razor Wind"],
+18: ["Tri Attack", "Double-Edge"],
+19: ["Parting Shot"]
+},
+"starting_moves": ["Multi-Attack", "Heal Block", "Imprison", "Iron Head", "Poison Fang", "Fire Fang", "Ice Fang", "Thunder Fang", "Tackle", "Explosion"]
+}
+},
+"display_name": "Silvally (Água)",
+"is_default": false
+}
+}

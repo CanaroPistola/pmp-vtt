@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dh04ga3cl0c7j"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_jy3n7"]
+
+[resource]
+script = ExtResource("1_jy3n7")
+id = "double_shock"
+display_name = "Double Shock"
+name_en = "Double Shock"
+type = 3
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+duration_is_permanent = true
+description = "Você descarrega toda a eletricidade do seu corpo em um ataque de alto dano. Este Move só funciona se o usuário for do tipo Elétrico. Faça um ataque corpo a corpo, causando 3d8 + MOVE do tipo elétrico. Após usar este Move, o usuário se esgota e perde sua tipagem Elétrico pelo resto do combate, ou até ser trocado, ou através de outros efeitos de mudança de tipo, como Protean ou Reflect Type. Um Pokémon que tenha se Terastalizado em seu Tera Tipo Elétrico não perderá o tipo Elétrico. Portanto, um Pokémon Terastalizado pode usar Double Shock várias vezes seguidas sem precisar ser retirado de campo. Observações: Double Shock falha se o usuário não for do tipo Elétrico, fazendo com que o Move sempre falhe após o primeiro uso até que o Pokémon recupere seu tipo El étrico, seja ao ser trocado para fora de batalha ou por outros efeitos de mudança de tipo, como por meio de Protean ou Reflect Type. Se o usuário for um Pokémon puramente do tipo Elétrico, ele se tornará sem tipo."
+scaling_text = "Os dados de dano para e ste Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}

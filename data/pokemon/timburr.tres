@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://crkoqcjuft07v"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_pqjie"]
+
+[resource]
+script = ExtResource("1_pqjie")
+dex_number = 532
+display_name = "Timburr"
+id = "timburr"
+types = Array[int]([6])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 18
+movement = {
+0: 6.0
+}
+attributes = {
+0: 13,
+1: 10,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Guts", "Sheer Force"])
+hidden_ability = "Iron Fist"
+evolves_to = Array[String](["gurdurr"])
+evolution_level = 9
+evolution_points = 7
+level_moves = {
+2: ["Focus Energy"],
+3: ["Bide"],
+4: ["Low Kick"],
+6: ["Rock Throw"],
+7: ["Wake-Up Slap"],
+8: ["Chip Away", "Slam"],
+10: ["Bulk Up"],
+11: ["Rock Slide"],
+12: ["Dynamic Punch"],
+13: ["Scary Face"],
+14: ["Hammer Arm"],
+15: ["Focus Punch", "Stone Edge", "Superpower"]
+}
+starting_moves = Array[String](["Leer", "Pound"])
+tms = Array[String](["tm_13", "tm_23", "tm_29", "tm_31", "tm_34", "tm_43", "tm_44", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_67", "tm_83", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_109", "tm_114", "tm_129", "tm_131", "tm_141", "tm_150", "tm_158", "tm_159", "tm_165", "tm_166", "tm_186", "tm_191", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_218", "tm_223", "tm_225", "tm_228", "tm_234", "tm_248", "tm_251", "tm_255", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_283", "tm_286", "tm_288", "tm_292", "tm_296", "tm_318"])
+egg_moves = Array[String](["Comet Punch", "Counter", "Defog", "Detect", "Drain Punch", "Endure", "Force Palm", "Foresight", "Mach Punch", "Power-Up Punch", "Reversal", "Smelling Salts", "Wide Guard"])

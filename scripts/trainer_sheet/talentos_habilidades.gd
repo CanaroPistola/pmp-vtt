@@ -1,10 +1,4 @@
 extends Control
-## Aba "Talentos e Habilidades".
-## Layout: coluna esquerda (Região + Jornada no topo, Talentos embaixo) e
-## coluna direita (Classe com 4 slots em 2x2).
-##
-## Slots vazios são botões "+" que abrem o seletor correspondente.
-## Slots preenchidos são botões que abrem o popup com o texto completo.
 
 const FEATURE_POPUP := preload("res://scenes/trainer_sheet/feature_popup.tscn")
 const REGION_SELECTOR := preload("res://scenes/trainer_sheet/region_selector.tscn")
@@ -189,6 +183,9 @@ func _open_talent_popup(id: String, slot_index: int) -> void:
 	popup.exclusive = true
 	popup.always_on_top = true
 	
+	# Faz o botão X da janela fechar o popup
+	popup.close_requested.connect(popup.queue_free)
+	
 	var margin := MarginContainer.new()
 	margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	margin.add_theme_constant_override("margin_left", 16)
@@ -214,11 +211,6 @@ func _open_talent_popup(id: String, slot_index: int) -> void:
 	var hbox := HBoxContainer.new()
 	hbox.alignment = BoxContainer.ALIGNMENT_END
 	vbox.add_child(hbox)
-	
-	var close_btn := Button.new()
-	close_btn.text = "Fechar"
-	close_btn.pressed.connect(popup.queue_free)
-	hbox.add_child(close_btn)
 	
 	var remove_btn := Button.new()
 	remove_btn.text = "Remover"

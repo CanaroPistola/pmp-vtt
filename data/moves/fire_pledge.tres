@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cptgwg1lqa25"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_0ku75"]
+
+[resource]
+script = ExtResource("1_0ku75")
+id = "fire_pledge"
+display_name = "Fire Pledge (Pilar de Fogo)"
+name_en = "Fire Pledge"
+name_pt = "Pilar de Fogo"
+type = 1
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Você invoca chamas concentradas que emergem do chão como pilares sob a criatura alvo. Faça um ataque à distância, causando 4d4 + MOVE de dano de fogo em um acerto. Antes de realizar este ataque, se estiver em combate ao lado de um aliado que também esteja em alcance do alvo, você pode anunciar a intenção de formar um combo. Se esse aliado conhecer Water Pledge ou Grass Pledge, ele pode optar por usar o Move agora, gastando previamente a ação de seu próximo turno para combinar os ataques conforme as opções abaixo. Ao fazer isso, o teste de ataque passará a ser feito pelo aliado. Se o combo for declarado, mas o aliado não puder agir (ex: paralisia) ou errar o ataque, nenhum dos dois Moves será executado. O STAB sempre será contabilizado por ambos os usuários, caso haja (porém cada combinação é de um tipo único)."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["paralysis"])

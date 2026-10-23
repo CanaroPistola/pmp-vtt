@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dw5ttfkrew0bh"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_iujhp"]
+
+[resource]
+script = ExtResource("1_iujhp")
+id = "bestow"
+display_name = "Bestow"
+name_en = "Bestow"
+move_time = "1 ação bônus"
+activation = 2
+description = "Você faz um item que está segurando surgir nas mãos de outra criatura, e prendendo este item a ele. Como uma ação bônus, você pode pass ar o item que está segurando para uma criatura dentro de seu alcance corpo a corpo, fixando este item a ele, de maneira que o item não pode ser solto, a menos que através de algum Move ou Habilidade Passiva. Não funcionará se o alvo já estiver segurando um item. Observações: Pokémon com a habilidade Sticky Hold não podem ter seus itens segurados removidos. A Griseous Orb não pode ser removida de Giratina; as Type Plates não podem ser removidas de Arceus; os Drives não podem ser removidos de Genesect; e as Mega Pedras não podem ser removidas de seus respectivos Pokémon . Este Move ignora Substitute e Moves de proteção como Protect ou Detect. Bestow não pode ser escolhido pelo Move Assist."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"

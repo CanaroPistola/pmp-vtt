@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bpi2tplmn107f"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wt0ri"]
+
+[resource]
+script = ExtResource("1_wt0ri")
+dex_number = 924
+display_name = "Tandemaus"
+id = "tandemaus"
+types = Array[int]([0])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 9.0
+}
+attributes = {
+0: 10,
+1: 13,
+2: 12,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([6, 10, 13, 17])
+abilities = Array[String](["Run Away", "Pickup"])
+hidden_ability = "Own Tempo"
+evolves_to = Array[String](["maushold"])
+evolution_level = 9
+evolution_points = 11
+level_moves = {
+2: ["Echoed Voice"],
+3: ["Helping Hand"],
+4: ["Super Fang"],
+5: ["Double Hit"],
+6: ["Bullet Seed"],
+8: ["Encore"],
+9: ["Play Rough"],
+10: ["Hyper Voice"],
+11: ["Charm"],
+13: ["Beat Up"],
+14: ["Copycat"],
+15: ["Population Bomb"]
+}
+starting_moves = Array[String](["Baby-Doll Eyes", "Pound"])
+tms = Array[String](["tm_3", "tm_5", "tm_18", "tm_36", "tm_41", "tm_50", "tm_55", "tm_59", "tm_81", "tm_83", "tm_87", "tm_88", "tm_114", "tm_129", "tm_137", "tm_158", "tm_159", "tm_174", "tm_175", "tm_190", "tm_199", "tm_209", "tm_214", "tm_238", "tm_241", "tm_248", "tm_270", "tm_271", "tm_272", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_293", "tm_303", "tm_311"])
+egg_moves = Array[String](["After You", "Baton Pass", "Bite", "Feint", "Switcheroo", "Tickle"])

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dbq842v5qcydy"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_1ka04"]
+
+[resource]
+script = ExtResource("1_1ka04")
+dex_number = 175
+display_name = "Togepi"
+id = "togepi"
+types = Array[int]([17])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 7.5
+}
+attributes = {
+0: 13,
+1: 8,
+2: 12,
+3: 6,
+4: 12,
+5: 14
+}
+skills = Array[int]([2, 14])
+abilities = Array[String](["Hustle", "Serene Grace"])
+hidden_ability = "Super Luck"
+evolves_to = Array[String](["togetic"])
+evolution_level = 6
+evolution_points = 8
+level_moves = {
+2: ["Metronome"],
+3: ["Life Dew", "Sweet Kiss"],
+5: ["Yawn"],
+6: ["Encore"],
+7: ["Follow Me"],
+9: ["Bestow"],
+10: ["Wish"],
+11: ["Ancient Power"],
+13: ["Safeguard"],
+14: ["Baton Pass"],
+15: ["Double-Edge", "Last Resort"],
+16: ["After You"]
+}
+starting_moves = Array[String](["Charm", "Growl", "Pound"])
+tms = Array[String](["tm_4", "tm_13", "tm_17", "tm_38", "tm_41", "tm_45", "tm_48", "tm_53", "tm_58", "tm_68", "tm_69", "tm_75", "tm_82", "tm_87", "tm_91", "tm_97", "tm_100", "tm_109", "tm_114", "tm_125", "tm_129", "tm_131", "tm_137", "tm_153", "tm_156", "tm_161", "tm_165", "tm_166", "tm_177", "tm_190", "tm_199", "tm_201", "tm_202", "tm_207", "tm_209", "tm_212", "tm_214", "tm_216", "tm_224", "tm_228", "tm_229", "tm_240", "tm_242", "tm_243", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_277", "tm_284", "tm_293", "tm_296", "tm_299", "tm_300", "tm_305", "tm_311", "tm_318", "tm_321"])
+egg_moves = Array[String](["Aerial Ace", "Extrasensory", "Foresight", "Future Sight", "Lucky Chant", "Mirror Move", "Morning Sun", "Nasty Plot", "Peck", "Present", "Psycho Shift", "Secret Power", "Stored Power"])

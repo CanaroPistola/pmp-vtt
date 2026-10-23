@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c87k1roum73ca"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_vq2h0"]
+
+[resource]
+script = ExtResource("1_vq2h0")
+id = "shadow_punch"
+display_name = "Shadow Punch (Soco Sombrio)"
+name_en = "Shadow Punch"
+name_pt = "Soco Sombrio"
+type = 13
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você desfere um soco envolto de sombras que sempre acertam uma criatura. Este Move tem garantia de acertar, causando 2d6 + MOVE de dano fantasma, desde que você possa ver o alvo e ele esteja dentro do seu alcance. Role um d20 para chance de golpe crítico e outros efeitos."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}

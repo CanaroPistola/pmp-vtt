@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bvpjmcnng80sg"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_rck4k"]
+
+[resource]
+script = ExtResource("1_rck4k")
+id = "curse"
+display_name = "Curse"
+name_en = "Curse"
+type = 13
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 3.0
+duration_is_permanent = true
+description = "Este Move tem um efeito diferente com base no seu tipo: Se você for do tipo fantasma: Você tenta lançar uma maldição sobre uma criatura. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o alvo é amaldiçoado. Você perde uma quantidade de vida igual a 1/2 de seus pontos de vida máximos, e o alvo passa a sofrer 1/4 da vida máxima dele como dano sem tipo ao final de cada turno . Se você tiver menos de 1/2 de sua vida máxima ao acertar este Move, você desmaia, mas ainda aplica o efeito de Curse no inimigo. Se você for de qualquer outro tipo: Seu Ataque e Defesa aumentam em 1 estágio, podendo ser acumulado em até 6 estágios, porém sua Velocidade é reduzida em 1 estágio, podendo ser acumulado em até -6 estágios. Observações: Este Move ignora Substitute e Moves de pr oteção, como Protect e Detect, mas consegue ser bloqueado por Crafty Shield."
+range_text_raw = "(3 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([4, 5])
+effect_tags = Array[String](["stat_change"])

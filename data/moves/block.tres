@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bycc8t5glcufv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_i5q37"]
+
+[resource]
+script = ExtResource("1_i5q37")
+id = "block"
+display_name = "Block (Bloquear)"
+name_en = "Block"
+name_pt = "Bloquear"
+pp = 3
+move_time = "1 reação / ação"
+activation = 3
+range_category = 2
+range_distance = 15.0
+description = "Se uma criatura dentro do alcance tentar fugir, ser trocada ou se afastar para fora do alcance, você pode usar sua reação para criar uma barreira mística, impedindo que isso aconteça e impossibilitando esta criatura de fugir, ser trocada ou se afastar de você para além do alcance. O usuário, porém, pode se mover livremente, e caso o alvo saia do alcance devido à movimentação do usuário, ele deixa de ser afetado. O efeito dura enquanto você permanecer em combate. Ao fazer isso, você abre mão de sua ação em seu próximo turno. Block pode ser usado como uma ação para causar o mesmo efeito. Block não afeta Pokémon do tipo Fantasma, ignora efeitos de proteção como Protect ou Detect, e não bloqueia Moves, habilidades passivas ou itens que forçam a troca do alvo, como Dragon Tail, Whirlwind ou Eject Button."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"

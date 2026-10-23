@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bs5ehd0dhdob5"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_pring"]
+
+[resource]
+script = ExtResource("1_pring")
+dex_number = 441
+display_name = "Chatot"
+id = "chatot"
+types = Array[int]([0, 9])
+sr = "5"
+min_level = 5
+evolution_stage = 1
+armor_class = 13
+hit_points = 46
+hit_dice = "d10"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 11,
+1: 16,
+2: 13,
+3: 6,
+4: 12,
+5: 14
+}
+skills = Array[int]([4])
+abilities = Array[String](["Keen Eye", "Tangled Feet"])
+hidden_ability = "Big Pecks"
+level_moves = {
+2: ["Growl"],
+3: ["Mirror Move"],
+5: ["Sing"],
+6: ["Fury Attack"],
+7: ["Chatter"],
+9: ["Taunt"],
+10: ["Round"],
+11: ["Mimic"],
+13: ["Echoed Voice"],
+14: ["Roost"],
+15: ["Feather Dance", "Synchronoise", "Uproar"],
+16: ["Hyper Voice"]
+}
+starting_moves = Array[String](["Confide", "Peck"])
+tms = Array[String](["tm_3", "tm_13", "tm_45", "tm_54", "tm_58", "tm_75", "tm_87", "tm_102", "tm_109", "tm_127", "tm_131", "tm_137", "tm_181", "tm_190", "tm_197", "tm_199", "tm_209", "tm_214", "tm_216", "tm_226", "tm_227", "tm_228", "tm_246", "tm_248", "tm_253", "tm_255", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_283", "tm_288", "tm_295", "tm_296", "tm_303", "tm_305", "tm_318"])
+egg_moves = Array[String](["Agility", "Air Cutter", "Boomburst", "Defog", "Encore", "Nasty Plot", "Night Shade", "Sleep Talk", "Steel Wing", "Supersonic"])

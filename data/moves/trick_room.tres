@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://v5kiqxtqu3xs"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_sdiha"]
+
+[resource]
+script = ExtResource("1_sdiha")
+id = "trick_room"
+display_name = "Trick Room (Truque de Agilidade)"
+name_en = "Trick Room"
+name_pt = "Truque de Agilidade"
+type = 10
+pp = 3
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_rounds = 5
+description = "O mundo ao seu redor parece girar por um momento, e toda a arena é atingida por uma sensação bizarra. A partir do início da próxima rodada de combate após você ativar este Move, a ordem de iniciativa é invertida por 5 rodadas."
+range_text_raw = "Pessoal"
+duration_text_raw = "5 rodadas"

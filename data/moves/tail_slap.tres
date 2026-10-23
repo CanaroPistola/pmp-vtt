@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://crtvcospn65xc"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_c6e4a"]
+
+[resource]
+script = ExtResource("1_c6e4a")
+id = "tail_slap"
+display_name = "Tail Slap (Tapa de Cauda)"
+name_en = "Tail Slap"
+name_pt = "Tapa de Cauda"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você ataca uma criatura com uma cauda rápida e rígida, atingindo-a rapidamente múltiplas vezes. Faça um ataque corpo a corpo -2 em uma criatura, causando 1d4 + MOVE de dano normal em um acerto. Em um acerto, após isso, role um d8 e compare o resultado com a tabela abaixo para determinar a quantidade de golpes. Para cada golpe adicional, você pode imediatamente realizar um novo ataque contra o mesmo alvo com acerto garantido, causando 1d4 + MOVE de dano normal. Cada golpe extra deve rolar separadamente 1d20 para verificar chance de crítico. Confira a tabela no livro."
+scaling_text = "O dado de dano para esse Move muda para 1d8 no nível 5, 1d10 no nível 10 e 2d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+move_power_modifier = -2
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+}
+}

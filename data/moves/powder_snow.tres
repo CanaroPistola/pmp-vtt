@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bijiidul1kvfn"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_h52a0"]
+
+[resource]
+script = ExtResource("1_h52a0")
+id = "powder_snow"
+display_name = "Powder Snow (Pó de Neve)"
+name_en = "Powder Snow"
+name_pt = "Pó de Neve"
+type = 5
+pp = 15
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 3
+range_distance = 12.0
+description = "Você libera uma rajada gélida de neve fina e cortante em um cone de 12 metros. Qualquer criatura pega no cone deve ter sucesso em um teste de DES contra sua CD de Move, sofrendo 2d4 + MOVE de dano de gelo em uma falha, ou metade do dano em um sucesso. Qualquer criatura que falhar no teste por 10 ou mais, ou rolar um resultado natural de 1 ou 2 no teste, se torna congelada."
+scaling_text = "Os dados de dano para este Move mudam para 1d12 no nível 5, 4d4 no nível 10 e 2d10 no nível 17."
+range_text_raw = "Pessoal (cone de 12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["freeze"])

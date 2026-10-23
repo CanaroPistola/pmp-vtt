@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dp83l6hlldgqg"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_bf0jw"]
+
+[resource]
+script = ExtResource("1_bf0jw")
+id = "switcheroo"
+display_name = "Switcheroo"
+name_en = "Switcheroo"
+type = 15
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 1
+description = "Suas mãos se movem com velocidade incrível enquanto você tenta trocar itens segurados com uma criatura. Role 1d20 + MOVE + 9 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, você pega o item segurado pelo alvo e o substitui pel o seu próprio. Caso não esteja segurando um item, você apenas pega o item do alvo. Caso o alvo não esteja segurando um item, você pode entregar a ele um item que esteja segurando. Observações: A Griseous Orb não pode ser removida de Giratina; as Type Plates não podem ser removidas de Arceus; os Drives não podem ser removid os de Genesect; e as Mega Pedras não podem ser removidas de seus respectivos Pokémon. Switcheroo não pode ser escolhido pelo Move Assist."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([1])

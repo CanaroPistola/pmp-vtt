@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d04gs3mlc68c6"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_t7oxr"]
+
+[resource]
+script = ExtResource("1_t7oxr")
+dex_number = 614
+display_name = "Beartic"
+id = "beartic"
+types = Array[int]([5])
+sr = "12"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 97
+hit_dice = "d12"
+movement = {
+0: 9.0,
+1: 6.0
+}
+attributes = {
+0: 19,
+1: 14,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Snow Cloak", "Slush Rush"])
+hidden_ability = "Swift Swim"
+level_moves = {
+2: ["Powder Snow"],
+3: ["Bide"],
+5: ["Icy Wind", "Play Nice"],
+6: ["Frost Breath", "Fury Swipes"],
+7: ["Brine"],
+9: ["Endure"],
+10: ["Snowscape", "Swagger"],
+11: ["Slash"],
+12: ["Flail"],
+14: ["Rest"],
+15: ["Blizzard"],
+16: ["Hail", "Thrash"],
+17: ["Sheer Cold"]
+}
+starting_moves = Array[String](["Aqua Jet", "Charm", "Growl", "Icicle Crash", "Superpower"])
+tms = Array[String](["tm_3", "tm_12", "tm_13", "tm_16", "tm_22", "tm_24", "tm_25", "tm_29", "tm_30", "tm_34", "tm_35", "tm_41", "tm_42", "tm_43", "tm_45", "tm_48", "tm_50", "tm_51", "tm_55", "tm_57", "tm_58", "tm_59", "tm_74", "tm_75", "tm_81", "tm_82", "tm_83", "tm_87", "tm_100", "tm_103", "tm_105", "tm_108", "tm_109", "tm_113", "tm_114", "tm_122", "tm_123", "tm_128", "tm_131", "tm_136", "tm_139", "tm_140", "tm_141", "tm_143", "tm_144", "tm_157", "tm_158", "tm_165", "tm_166", "tm_168", "tm_174", "tm_175", "tm_190", "tm_199", "tm_209", "tm_214", "tm_216", "tm_218", "tm_220", "tm_223", "tm_225", "tm_228", "tm_234", "tm_241", "tm_248", "tm_253", "tm_255", "tm_256", "tm_267", "tm_270", "tm_274", "tm_275", "tm_276", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_296", "tm_298", "tm_311", "tm_320"])
+egg_moves = Array[String](["Assurance", "Avalanche", "Encore", "Focus Punch", "Ice Punch", "Night Slash", "Play Rough", "Sleep Talk", "Yawn"])

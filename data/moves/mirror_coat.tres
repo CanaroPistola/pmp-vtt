@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://0j4kd8xwglv0"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_wbcrr"]
+
+[resource]
+script = ExtResource("1_wbcrr")
+id = "mirror_coat"
+display_name = "Mirror Coat"
+name_en = "Mirror Coat"
+type = 10
+move_time = "1 reação"
+is_attack = true
+resolution = 1
+activation = 1
+range_category = 2
+range_distance = 30.0
+description = "Você rapidamente envolve seu corpo em uma aura brilhante, rebatendo todo ataque à distância. Após  você ser atingido por um ataque à distância, você pode usar sua reação para desferir um ataque à distância contra a criatura, causando o dobro do dano recebido como dano do tipo Psíquico em caso de acerto (máximo de 5 vezes o seu nível atual). Caso faça isso, você abre mão de sua ação padrão em seu próximo turno. Esse dano não pode ser aumentado ou re duzido por nenhuma fonte, incluindo Vulnerabilidades, STAB, itens, condições, habilidades (de Pokémon ou Treinador), outros Moves ou acertos críticos. Observações: Mirror Coat não reflete ataques absorvidos por Substitute. Mirror Coat não pode ser escolhido pelo Move Assist."
+range_text_raw = "(30 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([2, 4])

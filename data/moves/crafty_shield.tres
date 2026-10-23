@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bpigodpwfp13"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_vn2xd"]
+
+[resource]
+script = ExtResource("1_vn2xd")
+id = "crafty_shield"
+display_name = "Crafty Shield (Escudo Astuto)"
+name_en = "Crafty Shield"
+name_pt = "Escudo Astuto"
+type = 17
+pp = 5
+move_time = "1 reação"
+activation = 1
+range_category = 2
+range_distance = 3.0
+description = "Você convoca um poder misterioso que bloqueia Moves de Status direcionados a você ou seus aliados. Quando você ou um aliado a até 10 pés (3 metros) de você for alvo de um Move de Status, você pode usar sua reação para erguer uma barreira protetora. Até o início do seu próximo turno, você e todos os aliados dentro do alcance anulam automaticamente os efeitos de qualquer Move de Status direcionado a vocês. Caso faça isso, você abre mão de sua ação padrão em seu próximo turno.      Observações: Crafty Shield não protege contra os Moves Perish Song ou Sticky Web; e não impede golpes que tenham como alvo o próprio usuário (como Rest). Este Move funciona mesmo contra aqueles que ignoram Moves de proteção, como Protect ou Detect."
+range_text_raw = "(3 metros)"
+duration_text_raw = "Instantânea"

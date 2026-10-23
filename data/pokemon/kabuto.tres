@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://1fvwsng30oeg"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4svb7"]
+
+[resource]
+script = ExtResource("1_4svb7")
+dex_number = 140
+display_name = "Kabuto"
+id = "kabuto"
+types = Array[int]([12, 2])
+sr = "2"
+evolution_stage = 1
+armor_class = 14
+hit_points = 28
+hit_dice = "d8"
+movement = {
+0: 4.5,
+1: 7.5
+}
+attributes = {
+0: 14,
+1: 12,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 0
+}])
+abilities = Array[String](["Swift Swim", "Battle Armor"])
+hidden_ability = "Weak Armor"
+evolves_to = Array[String](["kabutops"])
+evolution_level = 14
+evolution_points = 9
+level_moves = {
+2: ["Absorb"],
+4: ["Leer"],
+6: ["Mud Shot"],
+7: ["Sand Attack"],
+9: ["Endure"],
+11: ["Aqua Jet"],
+12: ["Brine", "Mega Drain"],
+14: ["Metal Sound", "Protect"],
+15: ["Ancient Power", "Leech Life", "Liquidation", "Wring Out"],
+16: ["Stone Edge"]
+}
+starting_moves = Array[String](["Harden", "Scratch"])
+tms = Array[String](["tm_3", "tm_13", "tm_22", "tm_30", "tm_45", "tm_55", "tm_58", "tm_73", "tm_87", "tm_109", "tm_112", "tm_122", "tm_131", "tm_139", "tm_144", "tm_147", "tm_150", "tm_170", "tm_174", "tm_199", "tm_209", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_231", "tm_232", "tm_236", "tm_248", "tm_251", "tm_255", "tm_262", "tm_270", "tm_275", "tm_276", "tm_288", "tm_296", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Aurora Beam", "Bubble Beam", "Confuse Ray", "Flail", "Foresight", "Giga Drain", "Icy Wind", "Knock Off", "Mega Drain", "Mud Shot", "Rapid Spin", "Screech", "Take Down"])

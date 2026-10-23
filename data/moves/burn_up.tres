@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://mphfra3jul2o"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_cc8xy"]
+
+[resource]
+script = ExtResource("1_cc8xy")
+id = "burn_up"
+display_name = "Burn Up (Queimar)"
+name_en = "Burn Up"
+name_pt = "Queimar"
+type = 1
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 5
+range_distance = 6.0
+duration_is_permanent = true
+description = "Você usa toda a energia de fogo que tem para infligir um dano massivo em um raio de 6 metros, centrado em você. Criaturas dentro da área devem fazer um teste de DES contra sua CD de Move, sofrendo 4d6 + MOVE de dano do tipo fogo em caso de falha, e metade no sucesso. Após usar este Move, o usuário se esgota e perde sua tipagem de fogo pelo resto do combate, ou até ser trocado, ou através de outros efeitos de mudança de tipo, como Protean ou Reflect Type. Você precisa ser do tipo fogo para poder usar este Move. Caso você esteja congelado, Burn Up irá derreter o gelo imediatamente ao ser ativado."
+scaling_text = "Os dados de dano para este Move mudam para 2d20 no nível 5, 5d10 no nível 10 e 8d8 no nível 17."
+range_text_raw = "Pessoal (raio de 6 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 8,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["freeze"])

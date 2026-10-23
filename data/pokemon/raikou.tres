@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bv5it7wesvlqj"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_us2nm"]
+
+[resource]
+script = ExtResource("1_us2nm")
+dex_number = 243
+display_name = "Raikou"
+id = "raikou"
+types = Array[int]([3])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 218
+hit_dice = "d12"
+movement = {
+0: 15.0
+}
+attributes = {
+0: 18,
+1: 20,
+2: 15,
+3: 6,
+4: 12,
+5: 14
+}
+skills = Array[int]([0, 8])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Pressure"])
+hidden_ability = "Inner Focus"
+level_moves = {
+3: ["Thunder Shock"],
+5: ["Roar"],
+8: ["Quick Attack"],
+10: ["Spark"],
+12: ["Howl", "Reflect"],
+15: ["Crunch", "Thunder Fang"],
+16: ["Discharge"],
+17: ["Extrasensory"],
+18: ["Calm Mind", "Rain Dance", "Zap Cannon"],
+19: ["Thunder"]
+}
+starting_moves = Array[String](["Bite", "Charge", "Extreme Speed", "Leer"])
+tms = Array[String](["tm_5", "tm_14", "tm_25", "tm_35", "tm_38", "tm_39", "tm_40", "tm_45", "tm_50", "tm_55", "tm_58", "tm_59", "tm_76", "tm_77", "tm_78", "tm_79", "tm_83", "tm_87", "tm_109", "tm_113", "tm_129", "tm_131", "tm_136", "tm_148", "tm_149", "tm_151", "tm_156", "tm_164", "tm_175", "tm_199", "tm_201", "tm_208", "tm_209", "tm_212", "tm_214", "tm_216", "tm_219", "tm_220", "tm_228", "tm_231", "tm_232", "tm_234", "tm_240", "tm_242", "tm_243", "tm_248", "tm_253", "tm_255", "tm_270", "tm_271", "tm_273", "tm_276", "tm_277", "tm_282", "tm_286", "tm_289", "tm_290", "tm_291", "tm_293", "tm_294", "tm_296", "tm_298", "tm_308", "tm_313", "tm_315"])

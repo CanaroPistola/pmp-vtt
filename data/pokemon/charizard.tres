@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://4pf1ge4dmbk4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_y24lt"]
+
+[resource]
+script = ExtResource("1_y24lt")
+dex_number = 6
+display_name = "Charizard"
+id = "charizard"
+types = Array[int]([1, 9])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 102
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 19,
+2: 15,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([0, 3])
+abilities = Array[String](["Blaze"])
+hidden_ability = "Solar Power"
+level_moves = {
+3: ["Ember"],
+4: ["Dragon Breath", "Smokescreen"],
+6: ["Dragon Rage"],
+7: ["Scary Face"],
+10: ["Fire Fang"],
+11: ["Flame Burst"],
+14: ["Slash"],
+15: ["Flamethrower"],
+16: ["Fire Spin"],
+17: ["Inferno"],
+18: ["Flare Blitz", "Heat Wave"]
+}
+starting_moves = Array[String](["Air Slash", "Dragon Claw", "Growl", "Scratch", "Shadow Claw", "Wing Attack"])
+tms = Array[String](["tm_2", "tm_3", "tm_6", "tm_7", "tm_13", "tm_19", "tm_21", "tm_25", "tm_28", "tm_29", "tm_31", "tm_35", "tm_45", "tm_50", "tm_54", "tm_55", "tm_58", "tm_59", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_72", "tm_74", "tm_75", "tm_83", "tm_87", "tm_89", "tm_91", "tm_92", "tm_93", "tm_94", "tm_95", "tm_96", "tm_97", "tm_98", "tm_100", "tm_102", "tm_103", "tm_105", "tm_109", "tm_113", "tm_126", "tm_127", "tm_129", "tm_131", "tm_133", "tm_136", "tm_149", "tm_165", "tm_166", "tm_177", "tm_182", "tm_183", "tm_199", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_227", "tm_228", "tm_231", "tm_233", "tm_234", "tm_235", "tm_241", "tm_247", "tm_248", "tm_255", "tm_257", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_281", "tm_282", "tm_285", "tm_286", "tm_292", "tm_296", "tm_313", "tm_316", "tm_318"])
+egg_moves = Array[String](["Air Cutter", "Ancient Power", "Beat Up", "Belly Drum", "Bite", "Counter", "Crunch", "Dragon Dance", "Dragon Pulse", "Dragon Rush", "Dragon Tail", "Flare Blitz", "Focus Punch", "Iron Tail", "Metal Claw", "Outrage", "Wing Attack"])

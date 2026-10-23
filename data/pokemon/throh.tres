@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ck0mvwci8mo72"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_hirni"]
+
+[resource]
+script = ExtResource("1_hirni")
+dex_number = 538
+display_name = "Throh"
+id = "throh"
+types = Array[int]([6])
+sr = "8"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 80
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 12,
+2: 20,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Guts", "Inner Focus"])
+hidden_ability = "Mold Breaker"
+level_moves = {
+2: ["Seismic Toss"],
+3: ["Vital Throw"],
+5: ["Revenge"],
+6: ["Storm Throw"],
+7: ["Body Slam"],
+9: ["Bulk Up"],
+10: ["Circle Throw"],
+11: ["Endure"],
+13: ["Wide Guard"],
+14: ["Superpower"],
+15: ["Reversal"]
+}
+starting_moves = Array[String](["Bide", "Bind", "Focus Energy", "Leer", "Mat Block"])
+tms = Array[String](["tm_13", "tm_20", "tm_23", "tm_29", "tm_34", "tm_35", "tm_44", "tm_45", "tm_55", "tm_58", "tm_74", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_114", "tm_129", "tm_131", "tm_141", "tm_150", "tm_151", "tm_158", "tm_159", "tm_165", "tm_166", "tm_184", "tm_186", "tm_191", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_223", "tm_225", "tm_228", "tm_234", "tm_248", "tm_255", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_283", "tm_292", "tm_296", "tm_318", "tm_321"])

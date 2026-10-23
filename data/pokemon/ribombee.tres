@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b8d1vdaka7g3g"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_dr366"]
+
+[resource]
+script = ExtResource("1_dr366")
+dex_number = 743
+display_name = "Ribombee"
+id = "ribombee"
+types = Array[int]([11, 17])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 3.0
+}
+attributes = {
+0: 12,
+1: 18,
+2: 14,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 9])
+abilities = Array[String](["Honey Gather", "Shield Dust"])
+hidden_ability = "Sweet Veil"
+level_moves = {
+2: ["Fairy Wind"],
+3: ["Stun Spore"],
+4: ["Struggle Bug"],
+5: ["Silver Wind"],
+6: ["Draining Kiss"],
+7: ["Sweet Scent"],
+10: ["Bug Buzz"],
+11: ["Covet"],
+12: ["Dazzling Gleam"],
+14: ["Aromatherapy", "Switcheroo"],
+15: ["Quiver Dance"]
+}
+starting_moves = Array[String](["Absorb", "Pollen Puff"])
+tms = Array[String](["tm_2", "tm_3", "tm_4", "tm_5", "tm_8", "tm_9", "tm_13", "tm_18", "tm_32", "tm_33", "tm_38", "tm_41", "tm_45", "tm_48", "tm_53", "tm_54", "tm_58", "tm_68", "tm_69", "tm_72", "tm_83", "tm_84", "tm_87", "tm_88", "tm_109", "tm_113", "tm_114", "tm_129", "tm_131", "tm_136", "tm_145", "tm_146", "tm_153", "tm_155", "tm_156", "tm_160", "tm_162", "tm_163", "tm_179", "tm_190", "tm_193", "tm_195", "tm_199", "tm_201", "tm_202", "tm_204", "tm_212", "tm_214", "tm_216", "tm_227", "tm_228", "tm_229", "tm_243", "tm_244", "tm_245", "tm_248", "tm_255", "tm_257", "tm_259", "tm_268", "tm_269", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_284", "tm_286", "tm_288", "tm_296", "tm_298", "tm_300", "tm_303", "tm_317"])
+egg_moves = Array[String](["Aromatic Mist", "Baton Pass", "Bestow", "Moonblast", "Powder", "Skill Swap", "Speed Swap", "Sticky Web"])

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dc06arpoc0hkk"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_64afg"]
+
+[resource]
+script = ExtResource("1_64afg")
+id = "shadow_claw"
+display_name = "Shadow Claw (Garra Sombria)"
+name_en = "Shadow Claw"
+name_pt = "Garra Sombria"
+type = 13
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 7
+range_distance = 3.0
+range_secondary = 1.5
+description = "Você ataca com uma garra afiada feita de sombras. Faça um ataque corpo a corpo com alcance estendido de até 3 metros, causando 2d8 + MOVE de dano fantasma em um acerto. Este Move causa um golpe crítico em rolagens naturais de 18 ou mais no acerto."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 3d10 no nível 10 e 3d12 no nível 17."
+range_text_raw = "Corpo a corpo (3 metros de alcance)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+}
+}

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://gvcjs2r2rm7k"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qrgxx"]
+
+[resource]
+script = ExtResource("1_qrgxx")
+dex_number = 161
+display_name = "Sentret"
+id = "sentret"
+types = Array[int]([0])
+sr = "1/8"
+evolution_stage = 1
+armor_class = 11
+hit_points = 16
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 12,
+1: 10,
+2: 10,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([0, 13])
+abilities = Array[String](["Run Away", "Keen Eye"])
+hidden_ability = "Frisk"
+evolves_to = Array[String](["furret"])
+evolution_level = 5
+evolution_points = 10
+level_moves = {
+2: ["Defense Curl"],
+3: ["Quick Attack"],
+5: ["Fury Swipes"],
+6: ["Helping Hand"],
+7: ["Follow Me"],
+9: ["Slam"],
+10: ["Rest"],
+11: ["Sucker Punch"],
+12: ["Amnesia"],
+13: ["Baton Pass"],
+14: ["Double-Edge", "Me First"],
+15: ["Hyper Voice"]
+}
+starting_moves = Array[String](["Foresight", "Scratch"])
+tms = Array[String](["tm_10", "tm_11", "tm_13", "tm_18", "tm_22", "tm_25", "tm_29", "tm_31", "tm_40", "tm_41", "tm_42", "tm_45", "tm_48", "tm_55", "tm_58", "tm_59", "tm_75", "tm_82", "tm_83", "tm_87", "tm_94", "tm_97", "tm_100", "tm_105", "tm_109", "tm_114", "tm_129", "tm_131", "tm_137", "tm_139", "tm_141", "tm_149", "tm_150", "tm_153", "tm_190", "tm_199", "tm_209", "tm_214", "tm_216", "tm_218", "tm_228", "tm_238", "tm_240", "tm_241", "tm_242", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_272", "tm_275", "tm_276", "tm_277", "tm_282", "tm_286", "tm_288", "tm_290", "tm_292", "tm_294", "tm_296", "tm_298", "tm_300", "tm_303", "tm_305", "tm_311", "tm_318"])
+egg_moves = Array[String](["Assist", "Baby-Doll Eyes", "Captivate", "Charm", "Covet", "Double-Edge", "Focus Energy", "Iron Tail", "Last Resort", "Natural Gift", "Pursuit", "Reversal", "Slash", "Tidy Up", "Trick"])

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cfggkm3au6qjw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_5yv5y"]
+
+[resource]
+script = ExtResource("1_5yv5y")
+dex_number = 989
+display_name = "Sandy Shocks"
+id = "sandy_shocks"
+types = Array[int]([3, 8])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 18,
+1: 20,
+2: 18,
+3: 8,
+4: 12,
+5: 12
+}
+skills = Array[int]([0, 3, 7, 8, 14])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 1
+}])
+abilities = Array[String](["Protosynthesis"])
+level_moves = {
+3: ["Spark"],
+5: ["Bulldoze"],
+7: ["Charge Beam"],
+10: ["Tri Attack"],
+12: ["Screech"],
+14: ["Heavy Slam"],
+15: ["Metal Sound"],
+16: ["Discharge"],
+17: ["Earth Power", "Mirror Coat"],
+18: ["Gravity"],
+19: ["Zap Cannon"],
+20: ["Magnetic Flux"]
+}
+starting_moves = Array[String](["Electric Terrain", "Supersonic", "Thunder Shock", "Thunder Wave"])
+tms = Array[String](["tm_24", "tm_25", "tm_35", "tm_39", "tm_40", "tm_73", "tm_74", "tm_76", "tm_77", "tm_78", "tm_79", "tm_83", "tm_87", "tm_99", "tm_113", "tm_118", "tm_128", "tm_132", "tm_136", "tm_147", "tm_156", "tm_169", "tm_174", "tm_196", "tm_199", "tm_212", "tm_214", "tm_230", "tm_231", "tm_235", "tm_248", "tm_260", "tm_262", "tm_266", "tm_270", "tm_271", "tm_273", "tm_277", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294", "tm_308", "tm_315"])

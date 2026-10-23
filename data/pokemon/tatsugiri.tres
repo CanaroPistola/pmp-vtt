@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ujrc26ada0aw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_acc82"]
+
+[resource]
+script = ExtResource("1_acc82")
+dex_number = 978
+display_name = "Tatsugiri"
+id = "tatsugiri"
+types = Array[int]([14, 2])
+sr = "8"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 3.0,
+1: 9.0
+}
+attributes = {
+0: 11,
+1: 16,
+2: 12,
+3: 10,
+4: 12,
+5: 14
+}
+skills = Array[int]([0, 5, 14])
+abilities = Array[String](["Commander"])
+hidden_ability = "Storm Drain"
+level_moves = {
+2: ["Harden"],
+4: ["Helping Hand"],
+6: ["Water Pulse"],
+8: ["Soak"],
+10: ["Taunt"],
+12: ["Memento"],
+13: ["Muddy Water"],
+15: ["Mirror Coat", "Nasty Plot"],
+16: ["Dragon Pulse"]
+}
+starting_moves = Array[String](["Splash", "Water Gun"])
+tms = Array[String](["tm_18", "tm_42", "tm_60", "tm_62", "tm_64", "tm_65", "tm_83", "tm_87", "tm_113", "tm_129", "tm_135", "tm_136", "tm_144", "tm_160", "tm_176", "tm_178", "tm_182", "tm_199", "tm_209", "tm_214", "tm_248", "tm_270", "tm_275", "tm_282", "tm_283", "tm_286", "tm_311", "tm_314"])
+egg_moves = Array[String](["Baton Pass", "Counter", "Rapid Spin"])
+is_variant = true
+variant_data = {
+"Tatsugiri Forma Caída": {
+"diff": {},
+"display_name": "Tatsugiri Forma Caída",
+"is_default": false
+},
+"Tatsugiri Forma Curva": {
+"diff": {},
+"display_name": "Tatsugiri Forma Curva",
+"is_default": true
+},
+"Tatsugiri Forma Esticada": {
+"diff": {},
+"display_name": "Tatsugiri Forma Esticada",
+"is_default": false
+}
+}

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://df5todylnk5d0"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_a2nlh"]
+
+[resource]
+script = ExtResource("1_a2nlh")
+dex_number = 619
+display_name = "Mienfoo"
+id = "mienfoo"
+types = Array[int]([6])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 9.0
+}
+attributes = {
+0: 14,
+1: 13,
+2: 11,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 3])
+abilities = Array[String](["Inner Focus", "Regenerator"])
+hidden_ability = "Reckless"
+evolves_to = Array[String](["mienshao"])
+evolution_level = 15
+evolution_points = 11
+level_moves = {
+2: ["Meditate"],
+3: ["Detect"],
+5: ["Fake Out", "Fury Swipes"],
+6: ["Double Slap"],
+7: ["Swift"],
+9: ["Calm Mind"],
+10: ["Force Palm"],
+11: ["Drain Punch"],
+13: ["Jump Kick"],
+14: ["Hone Claws", "U-turn"],
+15: ["Bounce", "High Jump Kick", "Quick Guard"],
+16: ["Reversal"],
+17: ["Aura Sphere"]
+}
+starting_moves = Array[String](["Pound"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_9", "tm_13", "tm_14", "tm_18", "tm_26", "tm_29", "tm_34", "tm_38", "tm_43", "tm_44", "tm_45", "tm_55", "tm_58", "tm_67", "tm_71", "tm_83", "tm_87", "tm_100", "tm_103", "tm_105", "tm_109", "tm_114", "tm_129", "tm_131", "tm_150", "tm_158", "tm_159", "tm_165", "tm_166", "tm_186", "tm_191", "tm_199", "tm_201", "tm_209", "tm_212", "tm_214", "tm_215", "tm_216", "tm_217", "tm_218", "tm_223", "tm_225", "tm_226", "tm_228", "tm_248", "tm_255", "tm_267", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_296", "tm_298", "tm_303", "tm_304", "tm_318"])
+egg_moves = Array[String](["Ally Switch", "Baton Pass", "Endure", "Feint", "Focus Punch", "Knock Off", "Low Kick", "Me First", "Smelling Salts", "Vital Throw"])

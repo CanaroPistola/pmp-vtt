@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dojjveq7qc413"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wvy2h"]
+
+[resource]
+script = ExtResource("1_wvy2h")
+dex_number = 549
+display_name = "Lilligant"
+id = "lilligant"
+types = Array[int]([4])
+sr = "9"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 55
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 13,
+1: 15,
+2: 16,
+3: 6,
+4: 12,
+5: 14
+}
+skills = Array[int]([12, 17])
+abilities = Array[String](["Chlorophyll", "Own Tempo"])
+hidden_ability = "Leaf Guard"
+level_moves = {
+2: ["Magical Leaf"],
+4: ["Teeter Dance"],
+10: ["Quiver Dance"],
+15: ["Petal Blizzard", "Petal Dance"]
+}
+starting_moves = Array[String](["Absorb", "After You", "Charm", "Energy Ball", "Entrainment", "Giga Drain", "Growth", "Helping Hand", "Leaf Storm", "Leech Seed", "Mega Drain", "Sleep Powder", "Stun Spore", "Sunny Day", "Synthesis"])
+tms = Array[String](["tm_4", "tm_8", "tm_13", "tm_36", "tm_41", "tm_45", "tm_48", "tm_58", "tm_69", "tm_81", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_125", "tm_129", "tm_131", "tm_136", "tm_151", "tm_154", "tm_156", "tm_163", "tm_179", "tm_187", "tm_193", "tm_199", "tm_201", "tm_214", "tm_216", "tm_226", "tm_228", "tm_229", "tm_238", "tm_248", "tm_255", "tm_257", "tm_258", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_286", "tm_296", "tm_298", "tm_313", "tm_319"])
+egg_moves = Array[String](["Bide", "Charm", "Encore", "Endure", "Grass Whistle", "Healing Wish", "Ingrain", "Natural Gift", "Sweet Scent", "Worry Seed"])
+is_variant = true
+variant_data = {
+"Lilligant": {
+"diff": {},
+"display_name": "Lilligant",
+"is_default": true
+},
+"Lilligant de Hisui": {
+"diff": {
+"abilities": ["Chlorophyll", "Hustle"],
+"moves_diff": {
+"egg_moves": ["Healing Wish", "Ingrain", "Sweet Scent", "Worry Seed"],
+"level_moves": {
+2: ["Axe Kick"]
+},
+"starting_moves": ["Absorb", "After You", "Defog", "Energy Ball", "Entrainment", "Giga Drain", "Growth", "Helping Hand", "Leaf Blade", "Leaf Storm", "Leech Seed", "Magical Leaf", "Mega Drain", "Mega Kick", "Petal Blizzard", "Sleep Powder", "Solar Blade", "Stun Spore", "Sunny Day", "Synthesis", "Teeter Dance", "Victory Dance"],
+"tms": ["tm_2", "tm_3", "tm_7", "tm_17", "tm_29", "tm_36", "tm_41", "tm_43", "tm_44", "tm_67", "tm_81", "tm_83", "tm_84", "tm_87", "tm_104", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_129", "tm_133", "tm_136", "tm_142", "tm_154", "tm_158", "tm_159", "tm_163", "tm_171", "tm_187", "tm_191", "tm_193", "tm_199", "tm_201", "tm_209", "tm_214", "tm_224", "tm_238", "tm_248", "tm_257", "tm_258", "tm_270", "tm_271", "tm_278", "tm_282", "tm_286", "tm_298", "tm_302", "tm_304", "tm_306", "tm_313"]
+},
+"types": [4, 6]
+},
+"display_name": "Lilligant de Hisui",
+"is_default": false
+}
+}

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cmfgdjxwpfn2"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wqrqp"]
+
+[resource]
+script = ExtResource("1_wqrqp")
+dex_number = 884
+display_name = "Duraludon"
+id = "duraludon"
+types = Array[int]([16, 14])
+sr = "10"
+min_level = 8
+evolution_stage = 1
+armor_class = 16
+hit_points = 64
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 17,
+1: 12,
+2: 17,
+3: 6,
+4: 14,
+5: 11
+}
+skills = Array[int]([3, 8, 9])
+abilities = Array[String](["Light Metal", "Heavy Metal"])
+hidden_ability = "Stalwart"
+evolves_to = Array[String](["archaludon"])
+evolution_level = 14
+evolution_points = 9
+level_moves = {
+2: ["Rock Smash"],
+4: ["Hone Claws"],
+6: ["Metal Sound"],
+8: ["Breaking Swipe"],
+10: ["Dragon Tail"],
+12: ["Iron Defense"],
+14: ["Focus Energy", "Laser Focus"],
+15: ["Dragon Claw"],
+16: ["Flash Cannon", "Metal Burst"],
+17: ["Hyper Beam"]
+}
+starting_moves = Array[String](["Leer", "Metal Claw"])
+tms = Array[String](["tm_13", "tm_24", "tm_25", "tm_28", "tm_29", "tm_52", "tm_59", "tm_60", "tm_62", "tm_63", "tm_65", "tm_66", "tm_83", "tm_87", "tm_99", "tm_106", "tm_113", "tm_121", "tm_128", "tm_136", "tm_147", "tm_148", "tm_156", "tm_168", "tm_169", "tm_182", "tm_199", "tm_212", "tm_214", "tm_220", "tm_223", "tm_225", "tm_228", "tm_234", "tm_236", "tm_248", "tm_253", "tm_255", "tm_257", "tm_262", "tm_263", "tm_264", "tm_266", "tm_267", "tm_270", "tm_278", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294"])
+egg_moves = Array[String](["Mirror Coat", "Night Slash", "Slash"])

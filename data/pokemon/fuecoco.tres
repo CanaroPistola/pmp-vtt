@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cyd800eilunic"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4mcvr"]
+
+[resource]
+script = ExtResource("1_4mcvr")
+dex_number = 909
+display_name = "Fuecoco"
+id = "fuecoco"
+types = Array[int]([1])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 18
+movement = {
+0: 9.0
+}
+attributes = {
+0: 12,
+1: 11,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Blaze"])
+hidden_ability = "Unaware"
+evolves_to = Array[String](["crocalor"])
+evolution_level = 6
+evolution_points = 7
+level_moves = {
+3: ["Round"],
+4: ["Bite"],
+5: ["Incinerate"],
+6: ["Yawn"],
+7: ["Snarl"],
+9: ["Roar"],
+10: ["Flamethrower"],
+11: ["Hyper Voice"],
+12: ["Fire Blast"]
+}
+starting_moves = Array[String](["Ember", "Leer", "Tackle"])
+tms = Array[String](["tm_25", "tm_50", "tm_51", "tm_55", "tm_56", "tm_81", "tm_83", "tm_87", "tm_91", "tm_92", "tm_93", "tm_95", "tm_96", "tm_97", "tm_98", "tm_127", "tm_129", "tm_137", "tm_175", "tm_182", "tm_183", "tm_199", "tm_214", "tm_220", "tm_238", "tm_248", "tm_253", "tm_266", "tm_270", "tm_271", "tm_282", "tm_285", "tm_286", "tm_291", "tm_316", "tm_321"])
+egg_moves = Array[String](["Belch", "Curse", "Encore", "Slack Off"])

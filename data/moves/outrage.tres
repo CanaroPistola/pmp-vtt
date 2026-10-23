@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ca1p2knd8rsjc"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_dyjoj"]
+
+[resource]
+script = ExtResource("1_dyjoj")
+id = "outrage"
+display_name = "Outrage (Ultraje)"
+name_en = "Outrage"
+name_pt = "Ultraje"
+type = 14
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+duration_rounds = 3
+description = "Você entra em um frenesi, fazendo vários ataques sem controle. Neste e durante os próximos 1d2 turnos, faça um ataque corpo a corpo contra um alvo, causando 3d8 + MOVE de dano do tipo dragão em um acerto. Quando este Move termina após a última rodada, você fica confuso. Enquanto Outrage estiver sob efeito, você sempre deve utilizar sua movimentação para estar em alcance contra o alvo, não pode fazer uso de outros Moves, e não pode ser substituído. O PP só é gasto no primeiro golpe."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "2-3 rodadas"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["confusion"])

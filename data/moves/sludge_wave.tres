@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bqdrfiqkms5o3"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_nua4a"]
+
+[resource]
+script = ExtResource("1_nua4a")
+id = "sludge_wave"
+display_name = "Sludge Wave (Onda de Lama)"
+name_en = "Sludge Wave"
+name_pt = "Onda de Lama"
+type = 7
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 5
+range_distance = 6.0
+description = "Você invoca ondas de lodo venenoso que se chocam contra as criaturas em um raio de 6 metros, centrado em você. Qualquer criatura atingida pela explosão deve fazer um teste de resistência de CON contra sua CD do Move, sofrendo 1d20 + MOVE de dano venenoso em caso de falha, ou metade disso em caso de sucesso. Qualquer criatura que falhar no teste por 10 ou mais, ou rolar um resultado natural de 1 ou 2 no teste, se torna envenenada. Criaturas voando até 3 metros de altura são atingidas por este Move."
+scaling_text = "O dado de dano para este Move muda para 3d10 no nível 5, 4d10 no nível 10 e 6d8 no nível 17."
+range_text_raw = "Pessoal (raio de 6 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 20,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["poison"])

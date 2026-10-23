@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dk6kcxldmamp0"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_t65dt"]
+
+[resource]
+script = ExtResource("1_t65dt")
+dex_number = 644
+display_name = "Zekrom"
+id = "zekrom"
+types = Array[int]([14, 3])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 18
+hit_points = 505
+hit_dice = "d20"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 21,
+1: 19,
+2: 20,
+3: 14,
+4: 18,
+5: 10
+}
+skills = Array[int]([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Teravolt"])
+level_moves = {
+3: ["Imprison"],
+5: ["Ancient Power"],
+8: ["Thunderbolt"],
+10: ["Dragon Breath"],
+12: ["Slash"],
+15: ["Fusion Bolt", "Zen Headbutt"],
+16: ["Dragon Claw"],
+17: ["Noble Roar"],
+18: ["Crunch", "Thunder"],
+19: ["Outrage"],
+20: ["Bolt Strike", "Hyper Voice"]
+}
+starting_moves = Array[String](["Dragon Rage", "Thunder Fang"])
+tms = Array[String](["tm_24", "tm_25", "tm_28", "tm_29", "tm_31", "tm_39", "tm_40", "tm_45", "tm_50", "tm_54", "tm_58", "tm_59", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_72", "tm_73", "tm_75", "tm_77", "tm_78", "tm_83", "tm_87", "tm_99", "tm_100", "tm_102", "tm_103", "tm_105", "tm_109", "tm_113", "tm_124", "tm_129", "tm_131", "tm_136", "tm_137", "tm_145", "tm_151", "tm_156", "tm_164", "tm_182", "tm_186", "tm_199", "tm_202", "tm_209", "tm_212", "tm_214", "tm_216", "tm_219", "tm_220", "tm_223", "tm_225", "tm_227", "tm_228", "tm_229", "tm_233", "tm_234", "tm_240", "tm_241", "tm_242", "tm_243", "tm_248", "tm_255", "tm_262", "tm_265", "tm_267", "tm_270", "tm_271", "tm_273", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_290", "tm_291", "tm_292", "tm_293", "tm_294", "tm_296", "tm_308", "tm_313", "tm_315", "tm_321"])

@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bt63nqdy7hoj6"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_304l2"]
+
+[resource]
+script = ExtResource("1_304l2")
+dex_number = 802
+display_name = "Marshadow"
+id = "marshadow"
+types = Array[int]([6, 13])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 246
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 18,
+1: 21,
+2: 18,
+3: 8,
+4: 16,
+5: 12
+}
+skills = Array[int]([5, 9, 14])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 0
+}, {
+"range_m": 6.0,
+"type": 2
+}])
+abilities = Array[String](["Technician"])
+level_moves = {
+2: ["Force Palm"],
+4: ["Feint"],
+5: ["Rolling Kick"],
+7: ["Copycat"],
+9: ["Shadow Punch"],
+10: ["Role Play"],
+12: ["Jump Kick"],
+14: ["Psych Up"],
+15: ["Close Combat", "Spectral Thief"],
+16: ["Endeavor", "Sucker Punch"]
+}
+starting_moves = Array[String](["Assurance", "Counter", "Drain Punch", "Fire Punch", "Ice Punch", "Laser Focus", "Pursuit", "Shadow Sneak", "Thunder Punch"])
+tms = Array[String](["tm_2", "tm_12", "tm_26", "tm_29", "tm_34", "tm_38", "tm_44", "tm_45", "tm_58", "tm_67", "tm_75", "tm_82", "tm_87", "tm_89", "tm_94", "tm_100", "tm_103", "tm_105", "tm_106", "tm_109", "tm_113", "tm_114", "tm_130", "tm_131", "tm_136", "tm_141", "tm_148", "tm_150", "tm_151", "tm_153", "tm_158", "tm_159", "tm_165", "tm_166", "tm_182", "tm_186", "tm_188", "tm_191", "tm_194", "tm_199", "tm_201", "tm_214", "tm_216", "tm_217", "tm_223", "tm_225", "tm_226", "tm_228", "tm_240", "tm_241", "tm_245", "tm_248", "tm_251", "tm_254", "tm_255", "tm_267", "tm_270", "tm_274", "tm_276", "tm_277", "tm_288", "tm_289", "tm_292", "tm_296", "tm_316", "tm_318", "tm_321"])

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bxpag8o8uf15q"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ify8a"]
+
+[resource]
+script = ExtResource("1_ify8a")
+dex_number = 396
+display_name = "Starly"
+id = "starly"
+types = Array[int]([0, 9])
+sr = "1/8"
+evolution_stage = 1
+armor_class = 11
+hit_points = 16
+movement = {
+0: 7.5
+}
+attributes = {
+0: 9,
+1: 13,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([13])
+abilities = Array[String](["Keen Eye"])
+hidden_ability = "Reckless"
+evolves_to = Array[String](["staravia"])
+evolution_level = 5
+evolution_points = 10
+level_moves = {
+2: ["Quick Attack"],
+3: ["Wing Attack"],
+5: ["Double Team"],
+6: ["Endeavor"],
+7: ["Whirlwind"],
+9: ["Aerial Ace"],
+10: ["Take Down"],
+11: ["Agility"],
+13: ["Brave Bird"],
+14: ["Final Gambit"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_13", "tm_27", "tm_45", "tm_54", "tm_58", "tm_59", "tm_72", "tm_75", "tm_82", "tm_83", "tm_87", "tm_90", "tm_102", "tm_109", "tm_113", "tm_127", "tm_129", "tm_131", "tm_133", "tm_181", "tm_199", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_248", "tm_255", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_288", "tm_296", "tm_303", "tm_305", "tm_318"])
+egg_moves = Array[String](["Astonish", "Detect", "Double-Edge", "Feather Dance", "Foresight", "Fury Attack", "Mirror Move", "Pursuit", "Revenge", "Roost", "Sand Attack", "Steel Wing", "Uproar"])

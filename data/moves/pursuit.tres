@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bgvuqikde4op0"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_knj47"]
+
+[resource]
+script = ExtResource("1_knj47")
+id = "pursuit"
+display_name = "Pursuit (Perseguição)"
+name_en = "Pursuit"
+name_pt = "Perseguição"
+type = 15
+move_time = "1 ação / reação"
+is_attack = true
+resolution = 1
+activation = 3
+description = "Você é capaz de lançar um ataque sombrio e veloz que persegue os inimigos, principalmente quando tentam fugir ou trocar de posição. Você pode usar sua ação para realizar um ataque corpo a corpo contra um alvo, causando 2d4 + MOVE de dano sombrio em um acerto. Se alguma criatura no alcance de sua movimentação estiver prestes a fugir ou ser trocada pelo treinador, você pode gastar sua reação para imediatamente se mover até ela em grande velocidade, sem sofrer ataques de oportunidade, e efetuar um ataque contra ela com o dobro dos dados de dano em um acerto. Ao fazer isso, você abre mão de sua ação em seu próximo turno. Este ataque não impede a criatura de fugir ou ser trocada."
+scaling_text = "Os dados de dano para este Move mudam para 1d12 no nível 5, 4d4 no nível 10 e 2d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}

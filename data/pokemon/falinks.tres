@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://da3eh8mrhyrt7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_t352b"]
+
+[resource]
+script = ExtResource("1_t352b")
+dex_number = 870
+display_name = "Falinks"
+id = "falinks"
+types = Array[int]([6])
+sr = "9"
+min_level = 5
+evolution_stage = 1
+armor_class = 16
+hit_points = 45
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 17,
+1: 15,
+2: 16,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 8, 13, 17])
+abilities = Array[String](["Battle Armor"])
+hidden_ability = "Defiant"
+level_moves = {
+2: ["Rock Smash"],
+4: ["Focus Energy"],
+5: ["Headbutt"],
+7: ["Bulk Up"],
+9: ["Endure"],
+10: ["Reversal"],
+12: ["First Impression"],
+14: ["No Retreat"],
+15: ["Close Combat", "Iron Defense"],
+16: ["Counter", "Megahorn"]
+}
+starting_moves = Array[String](["Protect", "Tackle"])
+tms = Array[String](["tm_5", "tm_12", "tm_19", "tm_24", "tm_25", "tm_29", "tm_34", "tm_43", "tm_44", "tm_82", "tm_83", "tm_87", "tm_89", "tm_103", "tm_113", "tm_129", "tm_132", "tm_136", "tm_147", "tm_148", "tm_150", "tm_160", "tm_186", "tm_191", "tm_199", "tm_201", "tm_209", "tm_214", "tm_215", "tm_217", "tm_218", "tm_223", "tm_225", "tm_228", "tm_236", "tm_248", "tm_252", "tm_255", "tm_270", "tm_271", "tm_278", "tm_282", "tm_286", "tm_289", "tm_298", "tm_304", "tm_305", "tm_321"])

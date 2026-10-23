@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bqnck4ghwljfh"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_pxuwm"]
+
+[resource]
+script = ExtResource("1_pxuwm")
+id = "psychic"
+display_name = "Psychic (Psíquico)"
+name_en = "Psychic"
+name_pt = "Psíquico"
+type = 10
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 4
+range_category = 2
+range_distance = 12.0
+description = "Você entra na mente de um alvo, prejudicando sua vontade de lutar. O alvo deve fazer um teste de resistência de SAB contra sua CD de Move, sofrendo 3d6 + MOVE de dano psíquico em uma falha, ou metade disso em um sucesso. Caso a criatura falhe na resistência por 10 ou mais, ou role um resultado natural de 1 ou 2 no teste, ela tem sua Defesa Especial reduzida em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 3d10 no nível 5, 3d12 no nível 10 e 4d12 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 3])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

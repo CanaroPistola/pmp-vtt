@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c0le7rlf8nq5s"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_xsmk2"]
+
+[resource]
+script = ExtResource("1_xsmk2")
+dex_number = 15
+display_name = "Beedrill"
+id = "beedrill"
+types = Array[int]([11, 7])
+sr = "6"
+min_level = 5
+evolution_stage = 3
+armor_class = 14
+hit_points = 47
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 12,
+1: 16,
+2: 13,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 8])
+abilities = Array[String](["Swarm"])
+hidden_ability = "Sniper"
+level_moves = {
+4: ["Fury Attack"],
+5: ["Rage"],
+6: ["Pursuit"],
+7: ["Focus Energy"],
+8: ["Venoshock"],
+9: ["Assurance"],
+10: ["Toxic Spikes"],
+11: ["Pin Missile"],
+12: ["Poison Jab"],
+13: ["Agility"],
+14: ["Endeavor"],
+15: ["Fell Stinger"]
+}
+starting_moves = Array[String](["Twineedle"])
+tms = Array[String](["tm_2", "tm_3", "tm_13", "tm_29", "tm_31", "tm_32", "tm_45", "tm_54", "tm_58", "tm_70", "tm_79", "tm_82", "tm_87", "tm_89", "tm_109", "tm_112", "tm_113", "tm_131", "tm_136", "tm_146", "tm_150", "tm_151", "tm_186", "tm_191", "tm_199", "tm_214", "tm_216", "tm_227", "tm_228", "tm_248", "tm_249", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_281", "tm_288", "tm_289", "tm_296", "tm_303", "tm_307", "tm_320"])

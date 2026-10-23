@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ck3eos7ig8m5u"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ola1g"]
+
+[resource]
+script = ExtResource("1_ola1g")
+dex_number = 47
+display_name = "Parasect"
+id = "parasect"
+types = Array[int]([11, 4])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 55
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 12,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([12, 17])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}, {
+"range_m": 18.0,
+"type": 1
+}])
+abilities = Array[String](["Effect Spore", "Dry Skin"])
+hidden_ability = "Damp"
+level_moves = {
+2: ["Poison Powder", "Stun Spore"],
+4: ["Absorb"],
+6: ["Fury Cutter"],
+8: ["Spore"],
+10: ["Slash"],
+13: ["Growth"],
+15: ["Giga Drain"],
+16: ["Aromatherapy", "Rage Powder"],
+17: ["X-Scissor"]
+}
+starting_moves = Array[String](["Cross Poison", "Scratch"])
+tms = Array[String](["tm_3", "tm_4", "tm_13", "tm_29", "tm_32", "tm_45", "tm_58", "tm_84", "tm_87", "tm_89", "tm_109", "tm_112", "tm_113", "tm_114", "tm_131", "tm_136", "tm_150", "tm_155", "tm_156", "tm_179", "tm_199", "tm_214", "tm_216", "tm_224", "tm_228", "tm_238", "tm_248", "tm_249", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_288", "tm_289", "tm_296", "tm_307", "tm_319", "tm_320"])
+egg_moves = Array[String](["Agility", "Bug Bite", "Counter", "Cross Poison", "Endure", "Fell Stinger", "Flail", "Grassy Terrain", "Leech Seed", "Metal Claw", "Natural Gift", "Psybeam", "Pursuit", "Rototiller", "Screech", "Sweet Scent", "Wide Guard"])

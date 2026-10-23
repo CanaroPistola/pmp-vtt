@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cyrr4ppmuopdw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_7fcok"]
+
+[resource]
+script = ExtResource("1_7fcok")
+dex_number = 916
+display_name = "Oinkologne"
+id = "oinkologne"
+types = Array[int]([0])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 60
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 14,
+1: 12,
+2: 17,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([10, 17])
+abilities = Array[String](["Lingering Aroma", "Gluttony"])
+hidden_ability = "Thick Fat"
+level_moves = {
+2: ["Disarming Voice"],
+3: ["Echoed Voice"],
+4: ["Mud Shot"],
+5: ["Covet"],
+6: ["Dig"],
+8: ["Headbutt"],
+9: ["Take Down", "Yawn"],
+12: ["Work Up"],
+13: ["Uproar"],
+14: ["Double-Edge"],
+15: ["Earth Power"],
+16: ["Belch"]
+}
+starting_moves = Array[String](["Tackle", "Tail Whip"])
+tms = Array[String](["tm_24", "tm_25", "tm_35", "tm_36", "tm_42", "tm_51", "tm_55", "tm_56", "tm_59", "tm_73", "tm_82", "tm_83", "tm_84", "tm_87", "tm_113", "tm_129", "tm_132", "tm_136", "tm_137", "tm_148", "tm_152", "tm_174", "tm_175", "tm_190", "tm_199", "tm_209", "tm_214", "tm_238", "tm_248", "tm_266", "tm_270", "tm_271", "tm_272", "tm_282", "tm_286", "tm_288", "tm_298", "tm_305", "tm_321"])
+egg_moves = Array[String](["Endeavor", "Spit Up", "Stockpile", "Stuff Cheeks", "Swallow"])
+is_variant = true
+variant_data = {
+"Oinkologne Fêmea": {
+"diff": {
+"abilities": ["Aroma Veil", "Gluttony"],
+"moves_diff": {
+"level_moves": {
+2: ["Echoed Voice"],
+3: ["Mud Shot"],
+4: ["Covet"],
+5: ["Dig"],
+6: ["Headbutt"],
+8: ["Yawn"],
+10: ["Take Down", "Work Up"],
+12: ["Uproar"],
+13: ["Double-Edge"],
+15: ["Earth Power"],
+16: ["Belch"]
+},
+"starting_moves": ["Disarming Voice", "Tackle", "Tail Whip"]
+}
+},
+"display_name": "Oinkologne Fêmea",
+"is_default": false
+},
+"Oinkologne Macho": {
+"diff": {},
+"display_name": "Oinkologne Macho",
+"is_default": true
+}
+}

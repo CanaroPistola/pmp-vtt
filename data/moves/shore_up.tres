@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://knioja1vs88a"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_yx1rf"]
+
+[resource]
+script = ExtResource("1_yx1rf")
+id = "shore_up"
+display_name = "Shore Up"
+name_en = "Shore Up"
+type = 8
+pp = 3
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+description = "Você usa o poder da terra ao seu redor para ajudar a curar suas feridas, recuperando 2d6 + MOVE pontos de vida. Se usado durante uma tempestade de areia ( Sandstorm), adicione mais 1 dado de cura."
+scaling_text = "Os dados de cura para este Move mudam para 2d10 no nível 5, 4d8 no nível 10 e 4d12 no nível 17."
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea"
+role = 1
+move_power_attributes = Array[int]([2])
+has_healing = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["heal"])

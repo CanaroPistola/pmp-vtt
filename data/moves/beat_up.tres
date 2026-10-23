@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://uk16qrk8cs01"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_73vda"]
+
+[resource]
+script = ExtResource("1_73vda")
+id = "beat_up"
+display_name = "Beat Up (Espancar)"
+name_en = "Beat Up"
+name_pt = "Espancar"
+type = 15
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você usa a força em números para atacar uma criatura. Faça um ataque corpo a corpo em uma criatura e um ataque adicional para qualquer outra criatura consciente e que não tenha um status não-volátil que seu treinador esteja carregando atualmente, causando 2d6 + FOR (mínimo de 0) de cada Pokémon que bater, com dano do tipo sombrio em cada acerto. O STAB é aplicado em todos os ataques, mesmo que os aliados não sejam do tipo Sombrio, entretanto bônus e reduções de Ataque contam apenas no primeiro golpe."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0])

@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dr1ssvs0nndp8"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wxool"]
+
+[resource]
+script = ExtResource("1_wxool")
+dex_number = 982
+display_name = "Dudunsparce"
+id = "dudunsparce"
+types = Array[int]([0])
+sr = "11"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 88
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 17,
+1: 16,
+2: 19,
+3: 6,
+4: 12,
+5: 8
+}
+skills = Array[int]([0, 13, 17])
+abilities = Array[String](["Serene Grace", "Run Away"])
+hidden_ability = "Rattled"
+level_moves = {
+2: ["Mud-Slap"],
+3: ["Rollout"],
+4: ["Glare"],
+6: ["Screech"],
+7: ["Ancient Power"],
+8: ["Drill Run"],
+10: ["Yawn"],
+11: ["Hyper Drill"],
+12: ["Roost"],
+14: ["Dragon Rush"],
+15: ["Coil", "Double-Edge"],
+16: ["Endeavor", "Hurricane"],
+17: ["Boomburst"]
+}
+starting_moves = Array[String](["Defense Curl", "Flail"])
+tms = Array[String](["tm_5", "tm_7", "tm_10", "tm_18", "tm_22", "tm_24", "tm_25", "tm_28", "tm_35", "tm_38", "tm_42", "tm_51", "tm_55", "tm_59", "tm_66", "tm_70", "tm_72", "tm_73", "tm_74", "tm_82", "tm_83", "tm_87", "tm_91", "tm_97", "tm_113", "tm_121", "tm_128", "tm_129", "tm_130", "tm_133", "tm_136", "tm_137", "tm_139", "tm_142", "tm_160", "tm_174", "tm_175", "tm_182", "tm_184", "tm_191", "tm_192", "tm_195", "tm_199", "tm_201", "tm_209", "tm_214", "tm_223", "tm_225", "tm_231", "tm_233", "tm_234", "tm_240", "tm_245", "tm_248", "tm_252", "tm_257", "tm_261", "tm_262", "tm_266", "tm_267", "tm_268", "tm_270", "tm_271", "tm_281", "tm_282", "tm_286", "tm_288", "tm_289", "tm_290", "tm_294", "tm_296", "tm_305", "tm_315", "tm_321"])
+egg_moves = Array[String](["Aqua Tail", "Astonish", "Bite", "Curse", "Headbutt", "Last Resort"])
+is_variant = true
+variant_data = {
+"Dudunsparce Forma de Dois Segmentos": {
+"diff": {},
+"display_name": "Dudunsparce Forma de Dois Segmentos",
+"is_default": true
+},
+"Dudunsparce Forma de Três Segmentos": {
+"diff": {},
+"display_name": "Dudunsparce Forma de Três Segmentos",
+"is_default": false
+}
+}

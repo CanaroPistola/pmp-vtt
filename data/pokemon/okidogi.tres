@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ccedk8vmdcmmf"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_lcla0"]
+
+[resource]
+script = ExtResource("1_lcla0")
+dex_number = 1014
+display_name = "Okidogi"
+id = "okidogi"
+types = Array[int]([7, 6])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 173
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 20,
+1: 13,
+2: 15,
+3: 10,
+4: 10,
+5: 14
+}
+skills = Array[int]([3, 8])
+abilities = Array[String](["Toxic Chain"])
+hidden_ability = "Guard Dog"
+level_moves = {
+3: ["Howl"],
+6: ["Poison Fang"],
+8: ["Force Palm"],
+11: ["Counter"],
+14: ["Poison Jab"],
+15: ["Brutal Swing"],
+16: ["Crunch"],
+17: ["Superpower"],
+18: ["Giga Impact"]
+}
+starting_moves = Array[String](["Bite", "Bulk Up", "Low Kick"])
+tms = Array[String](["tm_24", "tm_25", "tm_29", "tm_34", "tm_43", "tm_50", "tm_51", "tm_55", "tm_59", "tm_67", "tm_83", "tm_87", "tm_92", "tm_94", "tm_100", "tm_103", "tm_105", "tm_113", "tm_120", "tm_123", "tm_132", "tm_136", "tm_140", "tm_141", "tm_148", "tm_150", "tm_152", "tm_158", "tm_159", "tm_168", "tm_182", "tm_191", "tm_192", "tm_199", "tm_203", "tm_214", "tm_218", "tm_220", "tm_225", "tm_234", "tm_241", "tm_248", "tm_249", "tm_250", "tm_253", "tm_261", "tm_266", "tm_270", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_291", "tm_292", "tm_296", "tm_304", "tm_305"])

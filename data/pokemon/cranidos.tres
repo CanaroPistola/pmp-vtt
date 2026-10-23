@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cs8l51iviskjr"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0g77t"]
+
+[resource]
+script = ExtResource("1_0g77t")
+dex_number = 408
+display_name = "Cranidos"
+id = "cranidos"
+types = Array[int]([12])
+sr = "2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 20
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 15,
+1: 13,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Mold Breaker"])
+hidden_ability = "Sheer Force"
+evolves_to = Array[String](["rampardos"])
+evolution_level = 10
+evolution_points = 8
+level_moves = {
+2: ["Focus Energy"],
+4: ["Pursuit", "Rock Smash"],
+5: ["Take Down"],
+7: ["Scary Face"],
+8: ["Assurance"],
+10: ["Chip Away", "Slam"],
+11: ["Ancient Power"],
+13: ["Zen Headbutt"],
+14: ["Screech"],
+15: ["Head Smash"]
+}
+starting_moves = Array[String](["Headbutt", "Leer"])
+tms = Array[String](["tm_13", "tm_22", "tm_25", "tm_35", "tm_45", "tm_50", "tm_51", "tm_55", "tm_58", "tm_59", "tm_62", "tm_65", "tm_73", "tm_74", "tm_82", "tm_83", "tm_87", "tm_91", "tm_94", "tm_97", "tm_100", "tm_104", "tm_109", "tm_131", "tm_139", "tm_148", "tm_149", "tm_175", "tm_186", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_221", "tm_222", "tm_223", "tm_224", "tm_225", "tm_228", "tm_231", "tm_234", "tm_242", "tm_248", "tm_251", "tm_255", "tm_261", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_278", "tm_282", "tm_286", "tm_288", "tm_290", "tm_292", "tm_294", "tm_296", "tm_298", "tm_305", "tm_321"])
+egg_moves = Array[String](["Crunch", "Curse", "Double-Edge", "Hammer Arm", "Iron Head", "Iron Tail", "Leer", "Slam", "Stomp", "Thrash", "Whirlwind"])

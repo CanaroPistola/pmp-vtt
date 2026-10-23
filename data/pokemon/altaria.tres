@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://pirq2cg0asnp"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_s8s50"]
+
+[resource]
+script = ExtResource("1_s8s50")
+dex_number = 334
+display_name = "Altaria"
+id = "altaria"
+types = Array[int]([14, 9])
+sr = "12"
+min_level = 8
+evolution_stage = 2
+armor_class = 17
+hit_points = 88
+hit_dice = "d10"
+movement = {
+0: 1.5
+}
+attributes = {
+0: 18,
+1: 16,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([2, 14])
+abilities = Array[String](["Natural Cure"])
+hidden_ability = "Cloud Nine"
+level_moves = {
+2: ["Sing"],
+3: ["Fury Attack", "Safeguard"],
+4: ["Disarming Voice"],
+5: ["Mist"],
+6: ["Round"],
+7: ["Natural Gift"],
+8: ["Take Down"],
+9: ["Refresh"],
+10: ["Dragon Dance"],
+12: ["Cotton Guard"],
+14: ["Dragon Pulse"],
+15: ["Perish Song"],
+16: ["Moonblast", "Sky Attack"]
+}
+starting_moves = Array[String](["Astonish", "Dragon Breath", "Growl", "Peck", "Pluck"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_8", "tm_13", "tm_25", "tm_27", "tm_28", "tm_35", "tm_45", "tm_53", "tm_54", "tm_56", "tm_58", "tm_59", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_69", "tm_72", "tm_74", "tm_75", "tm_82", "tm_83", "tm_87", "tm_89", "tm_90", "tm_91", "tm_95", "tm_97", "tm_102", "tm_109", "tm_113", "tm_124", "tm_125", "tm_127", "tm_129", "tm_131", "tm_133", "tm_136", "tm_137", "tm_139", "tm_149", "tm_182", "tm_190", "tm_198", "tm_199", "tm_201", "tm_209", "tm_214", "tm_216", "tm_220", "tm_227", "tm_228", "tm_229", "tm_246", "tm_248", "tm_255", "tm_256", "tm_257", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_288", "tm_296", "tm_298", "tm_305", "tm_313", "tm_316", "tm_317"])
+egg_moves = Array[String](["Agility", "Astonish", "Defog", "Dragon Rush", "Feather Dance", "Haze", "Hyper Voice", "Play Rough", "Power Swap", "Pursuit", "Rage", "Roost", "Steel Wing", "Tailwind"])

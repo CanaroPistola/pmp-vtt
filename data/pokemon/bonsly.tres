@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bqgfj3js0jt4w"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_t4mt7"]
+
+[resource]
+script = ExtResource("1_t4mt7")
+dex_number = 438
+display_name = "Bonsly"
+id = "bonsly"
+types = Array[int]([12])
+sr = "1"
+evolution_stage = 1
+armor_class = 14
+hit_points = 17
+movement = {
+0: 3.0
+}
+attributes = {
+0: 15,
+1: 8,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 1
+}])
+abilities = Array[String](["Sturdy", "Rock Head"])
+hidden_ability = "Rattled"
+evolves_to = Array[String](["sudowoodo"])
+evolution_level = 1
+evolution_points = 8
+level_moves = {
+2: ["Flail"],
+3: ["Low Kick"],
+4: ["Rock Throw"],
+5: ["Mimic"],
+7: ["Feint Attack"],
+8: ["Tearful Look"],
+9: ["Rock Tomb"],
+10: ["Block"],
+11: ["Rock Slide"],
+12: ["Counter"],
+14: ["Sucker Punch"],
+15: ["Double-Edge"]
+}
+starting_moves = Array[String](["Copycat", "Fake Tears", "Tackle"])
+tms = Array[String](["tm_4", "tm_13", "tm_23", "tm_25", "tm_29", "tm_35", "tm_38", "tm_45", "tm_48", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_83", "tm_86", "tm_87", "tm_88", "tm_106", "tm_109", "tm_114", "tm_129", "tm_131", "tm_158", "tm_174", "tm_175", "tm_179", "tm_196", "tm_199", "tm_201", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_226", "tm_228", "tm_230", "tm_231", "tm_239", "tm_248", "tm_251", "tm_255", "tm_260", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_282", "tm_286", "tm_288", "tm_296", "tm_298", "tm_305"])
+egg_moves = Array[String](["Curse", "Defense Curl", "Endure", "Harden", "Headbutt", "Rock Polish", "Rollout", "Sand Tomb", "Self-Destruct", "Stealth Rock"])

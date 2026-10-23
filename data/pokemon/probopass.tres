@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c5bc1jnm6lglg"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_xies5"]
+
+[resource]
+script = ExtResource("1_xies5")
+dex_number = 476
+display_name = "Probopass"
+id = "probopass"
+types = Array[int]([12, 16])
+sr = "13"
+min_level = 8
+evolution_stage = 2
+armor_class = 20
+hit_points = 97
+hit_dice = "d12"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 20,
+1: 12,
+2: 19,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Sturdy", "Magnet Pull"])
+hidden_ability = "Sand Force"
+level_moves = {
+2: ["Iron Defense"],
+3: ["Block"],
+4: ["Magnet Bomb"],
+5: ["Thunder Wave"],
+6: ["Rest"],
+7: ["Spark"],
+8: ["Rock Slide"],
+9: ["Power Gem"],
+10: ["Rock Blast"],
+11: ["Discharge"],
+12: ["Sandstorm"],
+13: ["Earth Power"],
+14: ["Stone Edge"],
+15: ["Lock-On", "Zap Cannon"]
+}
+starting_moves = Array[String](["Gravity", "Magnet Rise", "Magnetic Flux", "Tackle", "Tri Attack", "Wide Guard"])
+tms = Array[String](["tm_9", "tm_13", "tm_23", "tm_24", "tm_25", "tm_35", "tm_45", "tm_51", "tm_53", "tm_58", "tm_59", "tm_73", "tm_74", "tm_83", "tm_86", "tm_87", "tm_94", "tm_99", "tm_109", "tm_113", "tm_118", "tm_123", "tm_128", "tm_129", "tm_131", "tm_132", "tm_136", "tm_141", "tm_147", "tm_148", "tm_161", "tm_164", "tm_169", "tm_170", "tm_184", "tm_196", "tm_197", "tm_199", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_224", "tm_225", "tm_228", "tm_230", "tm_231", "tm_242", "tm_248", "tm_251", "tm_255", "tm_262", "tm_263", "tm_266", "tm_267", "tm_270", "tm_271", "tm_273", "tm_276", "tm_282", "tm_283", "tm_284", "tm_286", "tm_290", "tm_292", "tm_293", "tm_294", "tm_295", "tm_296", "tm_299", "tm_308"])
+egg_moves = Array[String](["Block", "Double-Edge", "Endure", "Head Smash", "Magnitude", "Rollout", "Stealth Rock", "Wide Guard"])

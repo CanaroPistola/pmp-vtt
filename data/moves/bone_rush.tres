@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cv6q8s821hloh"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_5mp73"]
+
+[resource]
+script = ExtResource("1_5mp73")
+id = "bone_rush"
+display_name = "Bone Rush (Sabre de Osso)"
+name_en = "Bone Rush"
+name_pt = "Sabre de Osso"
+type = 8
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você avança para desferir uma série de golpes com um osso em um alvo. Faça um ataque corpo a corpo -1 em uma criatura, causando 1d4 + MOVE de dano de terra em um acerto. Em um acerto, após isso, role um d8 e compare o resultado com a tabela abaixo para determinar a quantidade de golpes. Para cada golpe adicional, você pode imediatamente realizar um novo ataque contra o mesmo alvo com acerto garantido, causando 1d4 + MOVE de dano de terra. Cada golpe extra deve rolar separadamente 1d20 para verificar chance de crítico. Confira a tabela no livro."
+scaling_text = "O dado de dano para esse Move muda para 1d8 no nível 5, 1d10 no nível 10 e 2d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+}
+}

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ce08v7ow5ky6d"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_o4j4l"]
+
+[resource]
+script = ExtResource("1_o4j4l")
+id = "mist"
+display_name = "Mist"
+name_en = "Mist"
+type = 5
+pp = 15
+move_time = "1 ação"
+range_category = 5
+range_distance = 9.0
+duration_rounds = 5
+description = "Uma leve névoa envolve você e seus aliados no alcance. Você e todos os aliados dentro da área, incluindo aqueles que entrarem na área após a ativação, recebem uma barreira protetora, garantindo imunidade a alterações negativas de Mudanças de Status causad os por inimigos durante a duração, mas quaisquer efeitos atuais ainda permanecem em vigor. O próprio usuário e aliados protegidos ainda podem baixar seus atributos."
+range_text_raw = "Pessoal (raio de 9 metros)"
+duration_text_raw = "5 rodadas"

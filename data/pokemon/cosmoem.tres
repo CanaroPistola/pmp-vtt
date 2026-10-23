@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ljn872or6fqx"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_00ed3"]
+
+[resource]
+script = ExtResource("1_00ed3")
+dex_number = 790
+display_name = "Cosmoem"
+id = "cosmoem"
+types = Array[int]([10])
+sr = "13"
+min_level = 8
+evolution_stage = 2
+armor_class = 18
+hit_points = 236
+hit_dice = "d12"
+attributes = {
+0: 12,
+1: 14,
+2: 18,
+3: 12,
+4: 16,
+5: 14
+}
+skills = Array[int]([2, 9])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 0
+}, {
+"range_m": 6.0,
+"type": 2
+}])
+abilities = Array[String](["Sturdy"])
+evolves_to = Array[String](["solgaleo", "lunala"])
+evolution_level = 16
+evolution_points = 14
+starting_moves = Array[String](["Cosmic Power", "Teleport"])

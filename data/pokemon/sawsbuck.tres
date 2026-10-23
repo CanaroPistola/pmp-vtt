@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://v505c4fcjmqr"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_c8vog"]
+
+[resource]
+script = ExtResource("1_c8vog")
+dex_number = 586
+display_name = "Sawsbuck"
+id = "sawsbuck"
+types = Array[int]([0, 4])
+sr = "10"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 55
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 16,
+1: 17,
+2: 17,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([13, 17])
+abilities = Array[String](["Chlorophyll", "Sap Sipper"])
+hidden_ability = "Serene Grace"
+level_moves = {
+2: ["Growl"],
+3: ["Sand Attack"],
+4: ["Double Kick"],
+5: ["Leech Seed"],
+6: ["Bullet Seed", "Feint Attack"],
+7: ["Take Down"],
+8: ["Jump Kick", "Zen Headbutt"],
+10: ["Aromatherapy"],
+11: ["Energy Ball"],
+12: ["Charm"],
+15: ["Nature Power"],
+16: ["Double-Edge", "Solar Beam"]
+}
+starting_moves = Array[String](["Camouflage", "Horn Leech", "Megahorn", "Tackle"])
+tms = Array[String](["tm_5", "tm_13", "tm_18", "tm_25", "tm_26", "tm_35", "tm_36", "tm_41", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_75", "tm_82", "tm_83", "tm_84", "tm_87", "tm_88", "tm_109", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_129", "tm_131", "tm_132", "tm_136", "tm_153", "tm_154", "tm_156", "tm_163", "tm_179", "tm_187", "tm_190", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_240", "tm_248", "tm_252", "tm_255", "tm_257", "tm_266", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_282", "tm_286", "tm_289", "tm_293", "tm_296", "tm_298", "tm_315", "tm_318", "tm_319", "tm_321"])
+egg_moves = Array[String](["Agility", "Baton Pass", "Fake Tears", "Grass Whistle", "Headbutt", "Natural Gift", "Odor Sleuth", "Sleep Talk", "Synthesis", "Worry Seed"])

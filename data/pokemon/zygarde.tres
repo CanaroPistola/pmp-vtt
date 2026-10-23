@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cxrot4a2sm0gu"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_hr8pt"]
+
+[resource]
+script = ExtResource("1_hr8pt")
+dex_number = 718
+display_name = "Zygarde"
+id = "zygarde"
+types = Array[int]([14, 8])
+sr = "15"
+size_category = "médio"
+size_meters = 1.2
+min_level = 20
+evolution_stage = 1
+armor_class = 16
+hit_points = 448
+hit_dice = "d20"
+attributes = {
+0: 16,
+1: 19,
+2: 15,
+3: 14,
+4: 14,
+5: 14
+}
+skills = Array[int]([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Aura Break", "Power Construct"])
+level_moves = {
+2: ["Safeguard"],
+4: ["Dig"],
+6: ["Bind"],
+9: ["Land’s Wrath"],
+12: ["Sandstorm"],
+15: ["Haze"],
+16: ["Camouflage", "Crunch", "Earthquake"],
+17: ["Dragon Pulse"],
+18: ["Coil", "Outrage"]
+}
+starting_moves = Array[String](["Bite", "Bulldoze", "Core Enforcer", "Dragon Breath", "Dragon Dance", "Extreme Speed", "Glare", "Thousand Arrows", "Thousand Waves"])
+tms = Array[String](["tm_20", "tm_23", "tm_28", "tm_29", "tm_35", "tm_45", "tm_55", "tm_58", "tm_60", "tm_65", "tm_66", "tm_73", "tm_74", "tm_87", "tm_103", "tm_109", "tm_113", "tm_114", "tm_131", "tm_136", "tm_137", "tm_149", "tm_182", "tm_184", "tm_186", "tm_199", "tm_214", "tm_215", "tm_216", "tm_223", "tm_228", "tm_229", "tm_231", "tm_233", "tm_235", "tm_242", "tm_245", "tm_248", "tm_250", "tm_255", "tm_261", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_296", "tm_321"])
+is_variant = true
+variant_data = {
+"Zygarde Forma 10": {
+"diff": {
+"movement": {
+0: 10.5
+}
+},
+"display_name": "Zygarde Forma 10",
+"is_default": true
+},
+"Zygarde Forma 50": {
+"diff": {
+"armor_class": 18,
+"attributes": {
+"CHA": 16,
+"CON": 20,
+"DEX": 18,
+"INT": 16,
+"STR": 19,
+"WIS": 16
+},
+"movement": {
+0: 10.5
+}
+},
+"display_name": "Zygarde Forma 50",
+"is_default": false
+},
+"Zygarde Forma Completa": {
+"diff": {
+"Fsp": 40.0,
+"abilities": ["Power Construct"],
+"armor_class": 20,
+"attributes": {
+"CHA": 18,
+"CON": 30,
+"DEX": 17,
+"INT": 18,
+"STR": 19,
+"WIS": 18
+},
+"movement": {
+0: 12.0
+}
+},
+"display_name": "Zygarde Forma Completa",
+"is_default": false
+}
+}

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cdx2nnfp74q6m"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_mqt8l"]
+
+[resource]
+script = ExtResource("1_mqt8l")
+id = "mist_ball"
+display_name = "Mist Ball (Bola de Névoa)"
+name_en = "Mist Ball"
+name_pt = "Bola de Névoa"
+type = 10
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 30.0
+description = "Você dispara uma bola explosiva de névoa prejudicial em uma criatura dentro do alcance. Faça um ataque à distância contra um alvo, causando 1d20 + MOVE de dano psíquico em um acerto. Em um resultado natural de 11 ou mais no acerto, o Ataque Especial do alvo é reduzido em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "O dado de dano para este Move muda para 3d10 no nível 5, 4d10 no nível 10 e 6d8 no nível 17."
+range_text_raw = "(30 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 20,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

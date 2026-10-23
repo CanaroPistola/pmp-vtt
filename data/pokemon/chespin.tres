@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cb07s3xarc2d5"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_p0mip"]
+
+[resource]
+script = ExtResource("1_p0mip")
+dex_number = 650
+display_name = "Chespin"
+id = "chespin"
+types = Array[int]([4])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 7.5
+}
+attributes = {
+0: 13,
+1: 11,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Bulletproof"
+evolves_to = Array[String](["quilladin"])
+evolution_level = 6
+evolution_points = 6
+level_moves = {
+3: ["Rollout"],
+4: ["Bite"],
+5: ["Leech Seed"],
+6: ["Pin Missile"],
+9: ["Take Down"],
+11: ["Seed Bomb"],
+12: ["Mud Shot"],
+13: ["Bulk Up"],
+14: ["Body Slam"],
+15: ["Pain Split", "Wood Hammer"]
+}
+starting_moves = Array[String](["Growl", "Vine Whip"])
+tms = Array[String](["tm_3", "tm_13", "tm_25", "tm_29", "tm_34", "tm_35", "tm_36", "tm_45", "tm_51", "tm_55", "tm_58", "tm_67", "tm_71", "tm_82", "tm_83", "tm_84", "tm_87", "tm_100", "tm_105", "tm_109", "tm_112", "tm_114", "tm_115", "tm_116", "tm_117", "tm_121", "tm_129", "tm_131", "tm_147", "tm_148", "tm_149", "tm_154", "tm_158", "tm_159", "tm_163", "tm_168", "tm_174", "tm_179", "tm_184", "tm_186", "tm_191", "tm_199", "tm_209", "tm_212", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_228", "tm_238", "tm_241", "tm_248", "tm_249", "tm_251", "tm_255", "tm_257", "tm_260", "tm_266", "tm_267", "tm_270", "tm_271", "tm_272", "tm_274", "tm_276", "tm_277", "tm_278", "tm_279", "tm_282", "tm_283", "tm_286", "tm_292", "tm_296", "tm_298", "tm_318", "tm_319", "tm_321"])
+egg_moves = Array[String](["Belly Drum", "Curse", "Defense Curl", "Power-Up Punch", "Quick Guard", "Rollout", "Spikes", "Super Fang", "Synthesis", "Wide Guard"])

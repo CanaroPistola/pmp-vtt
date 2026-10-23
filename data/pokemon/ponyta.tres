@@ -1,0 +1,82 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dq0s54shtp5ri"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_rt8le"]
+
+[resource]
+script = ExtResource("1_rt8le")
+dex_number = 77
+display_name = "Ponyta"
+id = "ponyta"
+types = Array[int]([1])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 14
+hit_points = 18
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 12,
+1: 15,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Run Away", "Flash Fire"])
+hidden_ability = "Flame Body"
+evolves_to = Array[String](["rapidash"])
+evolution_level = 14
+evolution_points = 12
+level_moves = {
+2: ["Tail Whip"],
+3: ["Ember"],
+5: ["Flame Wheel"],
+6: ["Stomp"],
+7: ["Flame Charge"],
+9: ["Fire Spin"],
+10: ["Take Down"],
+11: ["Inferno"],
+13: ["Agility"],
+14: ["Fire Blast"],
+15: ["Bounce", "Flare Blitz"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_9", "tm_13", "tm_26", "tm_41", "tm_45", "tm_58", "tm_75", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_109", "tm_127", "tm_131", "tm_132", "tm_149", "tm_158", "tm_177", "tm_183", "tm_199", "tm_214", "tm_216", "tm_228", "tm_248", "tm_255", "tm_257", "tm_258", "tm_270", "tm_271", "tm_276", "tm_277", "tm_296", "tm_315", "tm_316"])
+egg_moves = Array[String](["Ally Switch", "Captivate", "Charm", "Double Kick", "Double-Edge", "Flame Wheel", "High Horsepower", "Horn Drill", "Hypnosis", "Low Kick", "Morning Sun", "Thrash"])
+is_variant = true
+variant_data = {
+"Ponyta": {
+"diff": {},
+"display_name": "Ponyta",
+"is_default": true
+},
+"Ponyta de Galar": {
+"diff": {
+"abilities": ["Run Away", "Pastel Veil"],
+"hidden_ability": "Anticipation",
+"moves_diff": {
+"egg_moves": ["Double Kick", "Double-Edge", "Horn Drill", "Hypnosis", "Morning Sun", "Thrash"],
+"level_moves": {
+2: ["Tail Whip"],
+4: ["Confusion"],
+5: ["Fairy Wind"],
+7: ["Agility"],
+9: ["Psybeam"],
+10: ["Stomp"],
+12: ["Heal Pulse"],
+14: ["Take Down"],
+15: ["Dazzling Gleam", "Psychic"],
+16: ["Healing Wish"]
+},
+"starting_moves": ["Growl", "Tackle"],
+"tms": ["tm_13", "tm_26", "tm_41", "tm_85", "tm_87", "tm_145", "tm_177", "tm_199", "tm_214", "tm_228", "tm_255", "tm_277"]
+},
+"types": [10]
+},
+"display_name": "Ponyta de Galar",
+"is_default": false
+}
+}

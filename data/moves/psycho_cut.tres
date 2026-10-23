@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://daud0jjhunlmf"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_amtdn"]
+
+[resource]
+script = ExtResource("1_amtdn")
+id = "psycho_cut"
+display_name = "Psycho Cut"
+name_en = "Psycho Cut"
+type = 10
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 7
+range_distance = 9.0
+range_secondary = 1.5
+description = "Você rasga um alvo com lâminas formadas por poder psíquico. Faça um ataque corpo a corpo ou à distância contra uma criatura em alcance, causando 2d8 + MOVE de dano psíquico em um acerto. Este Move causa um acerto crítico em rolagens naturais de 18 ou mais."
+scaling_text = "Os dados de dano para este Move mudam para 2d10 no nível 5, 3d10 no nível 10 e 3d12 no nível 17."
+range_text_raw = "Corpo a corpo (9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+}
+}

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bgfrbk47mgm2q"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_so8vb"]
+
+[resource]
+script = ExtResource("1_so8vb")
+id = "fire_punch"
+display_name = "Fire Punch (Soco de Fogo)"
+name_en = "Fire Punch"
+name_pt = "Soco de Fogo"
+type = 1
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você ataca com punhos envoltos em fogo. Faça um ataque corpo a corpo, causando 2d8 + MOVE de dano de fogo em um acerto. Em um resultado natural de 19 ou 20 no acerto, o alvo é queimado."
+scaling_text = "Os dados de dano para este Move mudam para 2d10 no nível 5, 5d6 no nível 10 e 6d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["burn"])

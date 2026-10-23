@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://o0k6gehee1ty"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_csbap"]
+
+[resource]
+script = ExtResource("1_csbap")
+id = "spider_web"
+display_name = "Spider Web (Teia de Aranha)"
+name_en = "Spider Web"
+name_pt = "Teia de Aranha"
+type = 11
+pp = 5
+move_time = "1 reação"
+is_attack = true
+resolution = 3
+has_save = true
+save_attribute = 0
+activation = 1
+range_category = 2
+range_distance = 15.0
+description = "Você dispara uma teia pegajosa que tenta impedir uma criatura de fugir. Quando uma criatura em alcance estiver prestes a fugir, ser substituída ou se afastar de você para além do alcance, você pode gastar sua reação para realizar um ataque à distância contra ela. Se o ataque acertar, o alvo fica coberto de teia. Enquanto estiver preso, o deslocamento dele se torna 0, ele não pode se beneficiar de qualquer bônus em seu deslocamento, e não pode fugir ou ser trocado, exceto por item, Move ou habilidade. O alvo pode usar uma ação em seu turno para escapar com um teste de FOR contra sua CD de Move. Este Move ignora reações de proteção, como Protect ou Detect."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([1])

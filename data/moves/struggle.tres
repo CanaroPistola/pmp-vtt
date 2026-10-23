@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cbe122hyw1f33"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4rvfp"]
+
+[resource]
+script = ExtResource("1_4rvfp")
+id = "struggle"
+display_name = "Struggle (Insistência)"
+name_en = "Struggle"
+name_pt = "Insistência"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 7
+range_distance = 18.0
+range_secondary = 1.5
+description = "Este Move é conhecido por todos os Pokémon e pode ser usado a qualquer momento. Você usa seus últimos esforços para atacar com um golpe desarmado ou usa uma arma improvisada de perto ou à distância para causar dano a uma criatura. Faça um ataque corpo a corpo ou à distância, causando 1d10 + MOVE de dano normal em um acerto. Em caso de acerto, você perde 1/4 de sua vida máxima."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "Corpo a corpo / (18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}

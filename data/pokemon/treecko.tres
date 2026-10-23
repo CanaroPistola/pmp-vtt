@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://lmebsmwnlj4a"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_mpg2t"]
+
+[resource]
+script = ExtResource("1_mpg2t")
+dex_number = 252
+display_name = "Treecko"
+id = "treecko"
+types = Array[int]([4])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 12,
+1: 14,
+2: 11,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Unburden"
+evolves_to = Array[String](["grovyle"])
+evolution_level = 6
+evolution_points = 6
+level_moves = {
+2: ["Absorb"],
+3: ["Quick Attack"],
+5: ["Mega Drain"],
+6: ["Assurance", "Pursuit"],
+7: ["Giga Drain"],
+9: ["Agility", "Double Team"],
+10: ["Slam"],
+11: ["Detect"],
+13: ["Energy Ball", "Leaf Storm"],
+14: ["Quick Guard"],
+15: ["Endeavor", "Screech"]
+}
+starting_moves = Array[String](["Leafage", "Leer", "Pound"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_12", "tm_13", "tm_28", "tm_29", "tm_36", "tm_45", "tm_50", "tm_55", "tm_58", "tm_66", "tm_67", "tm_82", "tm_83", "tm_84", "tm_87", "tm_100", "tm_105", "tm_109", "tm_112", "tm_114", "tm_115", "tm_116", "tm_117", "tm_129", "tm_131", "tm_149", "tm_154", "tm_158", "tm_163", "tm_165", "tm_166", "tm_179", "tm_199", "tm_214", "tm_216", "tm_223", "tm_225", "tm_228", "tm_229", "tm_236", "tm_238", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_279", "tm_282", "tm_286", "tm_288", "tm_292", "tm_296", "tm_298", "tm_304", "tm_318", "tm_319"])
+egg_moves = Array[String](["Absorb", "Bullet Seed", "Crunch", "Crush Claw", "Double Kick", "Dragon Breath", "Endeavor", "Grass Whistle", "Grassy Terrain", "Leaf Storm", "Leech Seed", "Magical Leaf", "Mud Sport", "Natural Gift", "Night Slash", "Razor Wind", "Slash", "Synthesis", "Worry Seed"])

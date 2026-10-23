@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://pqk3moh3n3u"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_cxfy6"]
+
+[resource]
+script = ExtResource("1_cxfy6")
+dex_number = 943
+display_name = "Mabosstiff"
+id = "mabosstiff"
+types = Array[int]([15])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 72
+hit_dice = "d10"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 18,
+1: 14,
+2: 16,
+3: 6,
+4: 12,
+5: 14
+}
+skills = Array[int]([3, 8, 13])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Intimidate", "Guard Dog"])
+hidden_ability = "Stakeout"
+level_moves = {
+2: ["Lick"],
+3: ["Snarl"],
+4: ["Hone Claws"],
+5: ["Bite"],
+6: ["Roar"],
+8: ["Headbutt"],
+9: ["Payback"],
+12: ["Crunch"],
+13: ["Swagger"],
+15: ["Jaw Lock", "Reversal"],
+16: ["Double-Edge", "Outrage"]
+}
+starting_moves = Array[String](["Comeuppance", "Leer", "Scary Face", "Tackle"])
+tms = Array[String](["tm_25", "tm_41", "tm_50", "tm_51", "tm_52", "tm_55", "tm_59", "tm_82", "tm_83", "tm_87", "tm_88", "tm_92", "tm_113", "tm_129", "tm_136", "tm_137", "tm_140", "tm_152", "tm_182", "tm_184", "tm_190", "tm_199", "tm_203", "tm_209", "tm_214", "tm_218", "tm_220", "tm_234", "tm_248", "tm_253", "tm_261", "tm_270", "tm_271", "tm_282", "tm_283", "tm_286", "tm_288", "tm_291", "tm_298", "tm_315"])
+egg_moves = Array[String](["Destiny Bond", "Endeavor", "Play Rough", "Retaliate"])

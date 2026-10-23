@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cweovrgu3hpbg"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_j2pl0"]
+
+[resource]
+script = ExtResource("1_j2pl0")
+dex_number = 865
+display_name = "Sirfetchd"
+id = "sirfetchd"
+types = Array[int]([6])
+sr = "11"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 72
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 18,
+1: 15,
+2: 14,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([3, 8, 13])
+abilities = Array[String](["Steadfast"])
+hidden_ability = "Scrappy"
+level_moves = {
+5: ["Rock Smash"],
+7: ["Brutal Swing"],
+9: ["Detect"],
+10: ["Knock Off"],
+12: ["Defog"],
+14: ["Brick Break"],
+15: ["Slam", "Swords Dance"],
+16: ["Final Gambit", "Leaf Blade"],
+17: ["Brave Bird", "Meteor Assault"]
+}
+starting_moves = Array[String](["First Impression", "Fury Cutter", "Iron Defense", "Leer", "Peck", "Sand Attack"])
+tms = Array[String](["tm_12", "tm_13", "tm_29", "tm_31", "tm_44", "tm_72", "tm_87", "tm_116", "tm_129", "tm_199", "tm_214", "tm_215", "tm_217", "tm_228", "tm_255", "tm_258", "tm_265", "tm_271"])
+egg_moves = Array[String](["Counter", "Covet", "Curse", "Double-Edge", "Feint", "Flail", "Night Slash", "Quick Attack", "Quick Guard", "Simple Beam", "Sky Attack"])

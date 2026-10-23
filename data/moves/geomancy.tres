@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c3db3t6hbpd8l"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_pad7u"]
+
+[resource]
+script = ExtResource("1_pad7u")
+id = "geomancy"
+display_name = "Geomancy (Geomancia)"
+name_en = "Geomancy"
+name_pt = "Geomancia"
+type = 17
+pp = 5
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_rounds = 2
+duration_flags = Array[String](["concentration"])
+description = "Ao usar este Move, você passa tempo absorvendo a energia natural ao seu redor, aumentando a sua eficácia em batalha. Na ação de seu próximo turno, se você mantiver sua concentração, você recebe um aumento de seu Ataque Especial, Defesa Especial e Velocidade em 2 estágios, podendo ser acumulado em até 6 estágios cada."
+range_text_raw = "Pessoal"
+duration_text_raw = "2 rodadas, Concentração"
+effect_tags = Array[String](["stat_change"])

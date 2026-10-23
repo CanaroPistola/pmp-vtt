@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://beupr2tb5h61g"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_6mexc"]
+
+[resource]
+script = ExtResource("1_6mexc")
+id = "karate_chop"
+display_name = "Karate Chop (Golpe Caratê)"
+name_en = "Karate Chop"
+name_pt = "Golpe Caratê"
+type = 6
+pp = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você acerta o oponente com a lateral da sua mão em um golpe preciso. Faça um ataque corpo a corpo contra um alvo, causando 1d10 + MOVE de dano lutador no acerto. Este Move causa um golpe crítico em rolagens naturais de 18 ou mais no acerto."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}

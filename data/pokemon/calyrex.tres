@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c7tidgncw35pi"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_h12c4"]
+
+[resource]
+script = ExtResource("1_h12c4")
+dex_number = 898
+display_name = "Calyrex"
+id = "calyrex"
+types = Array[int]([10, 4])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 173
+hit_dice = "d20"
+attributes = {
+0: 14,
+1: 13,
+2: 15,
+3: 16,
+4: 14,
+5: 14
+}
+skills = Array[int]([1, 2, 3, 6, 7, 8, 9, 10, 12, 13, 14])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 2
+}])
+abilities = Array[String](["Unnerve"])
+level_moves = {
+3: ["Life Dew"],
+6: ["Giga Drain"],
+8: ["Psyshock"],
+11: ["Helping Hand"],
+14: ["Aromatherapy", "Grassy Terrain", "Psychic Terrain"],
+15: ["Energy Ball"],
+16: ["Psychic"],
+17: ["Leech Seed"],
+18: ["Heal Pulse", "Solar Beam"],
+19: ["Future Sight"]
+}
+starting_moves = Array[String](["Confusion", "Growth", "Mega Drain", "Pound"])
+tms = Array[String](["tm_5", "tm_18", "tm_24", "tm_36", "tm_38", "tm_68", "tm_81", "tm_83", "tm_84", "tm_85", "tm_87", "tm_110", "tm_112", "tm_113", "tm_114", "tm_117", "tm_118", "tm_119", "tm_129", "tm_136", "tm_145", "tm_154", "tm_156", "tm_162", "tm_163", "tm_171", "tm_174", "tm_185", "tm_193", "tm_198", "tm_199", "tm_200", "tm_201", "tm_202", "tm_205", "tm_207", "tm_212", "tm_214", "tm_228", "tm_229", "tm_234", "tm_238", "tm_244", "tm_248", "tm_253", "tm_255", "tm_257", "tm_258", "tm_259", "tm_268", "tm_270", "tm_271", "tm_277", "tm_282", "tm_286", "tm_300", "tm_301", "tm_317", "tm_321"])
+is_variant = true
+variant_data = {
+"Calyrex": {
+"diff": {
+"Fsp": 30.0,
+"movement": {
+0: 9.0
+}
+},
+"display_name": "Calyrex",
+"is_default": true
+},
+"Calyrex Cavaleiro Espectral": {
+"diff": {
+"abilities": ["As One"],
+"armor_class": 18,
+"attributes": {
+"CON": 17,
+"DEX": 23
+},
+"movement": {
+0: 15.0
+},
+"moves_diff": {
+"level_moves": {
+3: ["Life Dew"],
+6: ["Giga Drain"],
+8: ["Psyshock"],
+11: ["Helping Hand"],
+14: ["Aromatherapy", "Grassy Terrain", "Psychic Terrain"],
+15: ["Energy Ball"],
+16: ["Psychic"],
+17: ["Leech Seed"],
+18: ["Heal Pulse", "Solar Beam"],
+19: ["Future Sight"]
+},
+"starting_moves": ["Agility", "Astral Barrage", "Confuse Ray", "Confusion", "Disable", "Double Kick", "Double-Edge", "Growth", "Haze", "Hex", "Mega Drain", "Nasty Plot", "Pound", "Shadow Ball", "Stomp", "Tackle", "Tail Whip", "Take Down", "Thrash"],
+"tms": ["tm_5", "tm_12", "tm_18", "tm_25", "tm_35", "tm_36", "tm_38", "tm_46", "tm_50", "tm_51", "tm_52", "tm_59", "tm_68", "tm_81", "tm_83", "tm_84", "tm_85", "tm_87", "tm_106", "tm_110", "tm_112", "tm_113", "tm_114", "tm_117", "tm_118", "tm_119", "tm_124", "tm_129", "tm_130", "tm_136", "tm_145", "tm_152", "tm_154", "tm_156", "tm_162", "tm_163", "tm_171", "tm_174", "tm_178", "tm_180", "tm_184", "tm_185", "tm_186", "tm_188", "tm_193", "tm_198", "tm_199", "tm_200", "tm_201", "tm_202", "tm_205", "tm_206", "tm_207", "tm_212", "tm_214", "tm_228", "tm_229", "tm_234", "tm_238", "tm_240", "tm_244", "tm_248", "tm_253", "tm_255", "tm_257", "tm_258", "tm_259", "tm_266", "tm_268", "tm_270", "tm_271", "tm_277", "tm_282", "tm_283", "tm_286", "tm_300", "tm_301", "tm_316", "tm_317", "tm_321"]
+},
+"skills": [0, 1, 2, 3, 6, 7, 8, 9, 10, 12, 13, 14, 17],
+"types": [10, 13]
+},
+"display_name": "Calyrex Cavaleiro Espectral",
+"is_default": false
+},
+"Calyrex Cavaleiro Glacial": {
+"diff": {
+"abilities": ["As One"],
+"armor_class": 20,
+"attributes": {
+"CON": 16,
+"STR": 22
+},
+"hit_points": 188,
+"movement": {
+0: 15.0
+},
+"moves_diff": {
+"level_moves": {
+3: ["Life Dew"],
+6: ["Giga Drain"],
+8: ["Psyshock"],
+11: ["Helping Hand"],
+14: ["Aromatherapy", "Grassy Terrain", "Psychic Terrain"],
+15: ["Energy Ball"],
+16: ["Psychic"],
+17: ["Leech Seed"],
+18: ["Heal Pulse", "Solar Beam"],
+19: ["Future Sight"]
+},
+"starting_moves": ["Avalanche", "Confusion", "Double Kick", "Double-Edge", "Glacial Lance", "Growth", "Icicle Crash", "Iron Defense", "Mega Drain", "Mist", "Pound", "Stomp", "Swords Dance", "Tackle", "Tail Whip", "Take Down", "Taunt", "Thrash", "Torment"],
+"tms": ["tm_5", "tm_12", "tm_16", "tm_18", "tm_22", "tm_24", "tm_25", "tm_35", "tm_36", "tm_38", "tm_43", "tm_50", "tm_51", "tm_59", "tm_68", "tm_81", "tm_83", "tm_84", "tm_85", "tm_87", "tm_110", "tm_112", "tm_113", "tm_114", "tm_117", "tm_118", "tm_119", "tm_122", "tm_128", "tm_129", "tm_132", "tm_136", "tm_139", "tm_143", "tm_144", "tm_145", "tm_147", "tm_152", "tm_154", "tm_156", "tm_162", "tm_163", "tm_171", "tm_174", "tm_182", "tm_185", "tm_186", "tm_193", "tm_198", "tm_199", "tm_200", "tm_201", "tm_202", "tm_205", "tm_207", "tm_212", "tm_214", "tm_220", "tm_228", "tm_229", "tm_234", "tm_238", "tm_244", "tm_248", "tm_252", "tm_253", "tm_255", "tm_256", "tm_257", "tm_258", "tm_259", "tm_266", "tm_268", "tm_270", "tm_271", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289", "tm_298", "tm_300", "tm_301", "tm_317", "tm_321"]
+},
+"skills": [0, 1, 2, 3, 6, 7, 8, 9, 10, 12, 13, 14, 17],
+"types": [10, 5]
+},
+"display_name": "Calyrex Cavaleiro Glacial",
+"is_default": false
+}
+}

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dukk2q55l4aub"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_dk2qo"]
+
+[resource]
+script = ExtResource("1_dk2qo")
+id = "eternabeam"
+display_name = "Eternabeam"
+name_en = "Eternabeam"
+type = 14
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 4
+range_distance = 36.0
+description = "Você dispara um feixe de energia a partir do rosto enquanto vários feixes menores se projetam ao redor do seu corpo, todos convergindo em uma linha de 120 pés (36 metros). Qualquer criatura pega na linha deve ter sucesso em um teste de DES contra sua CD de Move, sofrendo 4d8 + MOVE de dano dragão em uma falha, ou metade do dano em um sucesso. Este Move drena sua energia, e você não pode realizar outra ação padrão ou reação até o final do seu próximo turno."
+scaling_text = "Os dados de dano para este Move mudam para 4d12 no nível 5, 8d8 no nível 10 e 8d10 no nível 17."
+range_text_raw = "Pessoal (linha de 36 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+},
+10: {
+"amount": 8,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 8,
+"dice_max": 10,
+"move": true
+}
+}

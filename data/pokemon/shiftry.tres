@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://o4a7tqy8bjia"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_reywc"]
+
+[resource]
+script = ExtResource("1_reywc")
+dex_number = 275
+display_name = "Shiftry"
+id = "shiftry"
+types = Array[int]([4, 15])
+sr = "9"
+min_level = 8
+evolution_stage = 3
+armor_class = 14
+hit_points = 88
+hit_dice = "d12"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 15,
+1: 15,
+2: 16,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([9, 15])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 1
+}])
+abilities = Array[String](["Chlorophyll", "Wind Rider"])
+hidden_ability = "Pickpocket"
+level_moves = {
+7: ["Leaf Tornado"],
+11: ["Hurricane"],
+15: ["Leaf Storm"]
+}
+starting_moves = Array[String](["Air Cutter", "Feint Attack", "Leaf Blade", "Nasty Plot", "Payback", "Razor Leaf", "Sunny Day", "Whirlwind"])
+tms = Array[String](["tm_3", "tm_6", "tm_7", "tm_10", "tm_12", "tm_13", "tm_19", "tm_25", "tm_26", "tm_29", "tm_31", "tm_36", "tm_42", "tm_45", "tm_46", "tm_51", "tm_52", "tm_54", "tm_55", "tm_58", "tm_59", "tm_80", "tm_82", "tm_83", "tm_84", "tm_86", "tm_87", "tm_89", "tm_100", "tm_103", "tm_106", "tm_109", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_127", "tm_130", "tm_131", "tm_133", "tm_136", "tm_144", "tm_145", "tm_150", "tm_152", "tm_154", "tm_158", "tm_159", "tm_163", "tm_165", "tm_178", "tm_179", "tm_186", "tm_187", "tm_198", "tm_199", "tm_201", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_218", "tm_223", "tm_225", "tm_228", "tm_234", "tm_236", "tm_238", "tm_239", "tm_240", "tm_248", "tm_253", "tm_255", "tm_257", "tm_258", "tm_261", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_279", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_295", "tm_296", "tm_297", "tm_298", "tm_304", "tm_305", "tm_306", "tm_313", "tm_316", "tm_319", "tm_320"])
+egg_moves = Array[String](["Amnesia", "Beat Up", "Bullet Seed", "Defog", "Foul Play", "Grassy Terrain", "Leech Seed", "Nasty Plot", "Night Slash", "Power Swap", "Quick Attack", "Razor Wind", "Take Down", "Worry Seed"])

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cgso56wwhijtv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_r5d3i"]
+
+[resource]
+script = ExtResource("1_r5d3i")
+id = "scary_face"
+display_name = "Scary Face"
+name_en = "Scary Face"
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você faz sua cara mais assustadora, tentando amedrontar uma criatura dentro do alcance. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o alvo fica Amedrontado e tem sua Velocidade reduzida em 2 estágios, podendo ser acumulado em até -6 estágios. Uma criatura Amedrontada dessa forma deve fazer um teste de SAB no final de cada um de seus turnos contra uma CD igual a 10 + o bônus de proficiência do usuário deste Move + 1 para cada acúmulo de Scary Face no alvo. Em caso de sucesso, ela deixa de estar Amedrontada, mas mantém a redução de Velocidade."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([0, 5])
+effect_tags = Array[String](["stat_change", "flinch"])

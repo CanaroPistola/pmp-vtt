@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bdcq7ov021vnn"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_xg8ma"]
+
+[resource]
+script = ExtResource("1_xg8ma")
+id = "wonder_room"
+display_name = "Wonder Room"
+name_en = "Wonder Room"
+type = 10
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 15.0
+duration_rounds = 5
+description = "Você cria uma vibração bizarra no ar em um raio de 50 pés (15 metros), centrado em você. Por 5 rodadas , todas as criaturas dentro da área trocam seu valor d e CA pelo valor de SAB, e vice - versa."
+range_text_raw = "Pessoal (raio de 15 metros)"
+duration_text_raw = "5 rodadas"

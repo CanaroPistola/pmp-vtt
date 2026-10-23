@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://oqo2gk4b1wyd"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_qom4u"]
+
+[resource]
+script = ExtResource("1_qom4u")
+id = "lovely_kiss"
+display_name = "Lovely Kiss"
+name_en = "Lovely Kiss"
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 4
+status_roll_target_attribute = 5
+range_category = 2
+range_distance = 6.0
+description = "Você manda um beijo para uma criatura dentro do alcance, tentando deixá-la sonolenta . Role 1d20 + MOVE  + 4 e compare o resultado com 10 + CAR do alvo. Em um resultado maior ou igual, o alvo fica Sonolento."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([4, 5])
+effect_tags = Array[String](["sleep"])

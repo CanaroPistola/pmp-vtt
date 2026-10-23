@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c37a3vogi61bc"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_dwgcw"]
+
+[resource]
+script = ExtResource("1_dwgcw")
+dex_number = 93
+display_name = "Haunter"
+id = "haunter"
+types = Array[int]([13, 7])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 45
+hit_dice = "d10"
+attributes = {
+0: 12,
+1: 15,
+2: 13,
+3: 6,
+4: 15,
+5: 10
+}
+skills = Array[int]([5, 6])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Levitate"])
+evolves_to = Array[String](["gengar"])
+evolution_level = 12
+evolution_points = 8
+level_moves = {
+2: ["Spite"],
+3: ["Mean Look"],
+4: ["Curse"],
+5: ["Night Shade"],
+7: ["Confuse Ray"],
+8: ["Sucker Punch"],
+10: ["Payback"],
+11: ["Shadow Ball"],
+13: ["Dream Eater"],
+15: ["Dark Pulse", "Destiny Bond"],
+16: ["Hex"],
+17: ["Nightmare"]
+}
+starting_moves = Array[String](["Hypnosis", "Lick", "Shadow Punch"])
+tms = Array[String](["tm_1", "tm_9", "tm_13", "tm_45", "tm_46", "tm_47", "tm_51", "tm_52", "tm_53", "tm_58", "tm_69", "tm_80", "tm_81", "tm_83", "tm_84", "tm_86", "tm_87", "tm_94", "tm_100", "tm_103", "tm_106", "tm_109", "tm_112", "tm_120", "tm_124", "tm_130", "tm_131", "tm_141", "tm_144", "tm_145", "tm_146", "tm_150", "tm_171", "tm_178", "tm_180", "tm_181", "tm_184", "tm_186", "tm_188", "tm_191", "tm_194", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_228", "tm_234", "tm_239", "tm_240", "tm_241", "tm_244", "tm_245", "tm_248", "tm_249", "tm_250", "tm_254", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_283", "tm_284", "tm_286", "tm_288", "tm_290", "tm_292", "tm_294", "tm_295", "tm_296", "tm_297", "tm_300", "tm_301", "tm_305", "tm_307", "tm_316", "tm_317"])
+egg_moves = Array[String](["Astonish", "Clear Smog", "Disable", "Fire Punch", "Grudge", "Haze", "Ice Punch", "Perish Song", "Psywave", "Reflect Type", "Scary Face", "Smog", "Thunder Punch", "Toxic"])

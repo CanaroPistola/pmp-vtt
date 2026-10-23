@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bynrkc04sm43"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ny3ha"]
+
+[resource]
+script = ExtResource("1_ny3ha")
+id = "raging_fury"
+display_name = "Raging Fury"
+name_en = "Raging Fury"
+type = 1
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+duration_rounds = 3
+description = "Você se envolve em chamas e parte em uma fúria descontrolada, atacando tudo ao seu redor. Neste e durante os próximos 1d2 turnos, faça um ataque corpo a corpo contra um alvo, causando 3d8 + MOVE de dano de fogo em um acerto. Quando este Move termina após a última rodada, você fica confuso. Enquanto Raging Fury estiver sob efeito, você sempre deve utilizar seu deslocamento para estar em alcance contra o alvo, não pode fazer uso de outros Moves, e não pode ser substituído voluntariamente. O PP só é gasto no primeiro golpe. Observações: Se Raging Fury for interrompido (por exemplo, se o golpe errar, o usuário não puder atacar devido à paralisia, não houver mais alvos ou outra causa), ele será encerrado e não causará confusão, a menos que isso ocorra no turno em que ele naturalmente seria cessado. Se seu alvo não estiver mais em alcance, você pode optar por atacar outro inimigo mais próximo."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "2-3 rodadas"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["paralysis", "confusion"])

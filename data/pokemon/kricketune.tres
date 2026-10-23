@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cdhw3vhly6qsh"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_k6eu5"]
+
+[resource]
+script = ExtResource("1_k6eu5")
+dex_number = 402
+display_name = "Kricketune"
+id = "kricketune"
+types = Array[int]([11])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 13
+hit_points = 45
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 12,
+1: 14,
+2: 12,
+3: 6,
+4: 12,
+5: 16
+}
+skills = Array[int]([4])
+senses = Array[Dictionary]([{
+"range_m": 12.0,
+"type": 0
+}])
+abilities = Array[String](["Swarm"])
+hidden_ability = "Technician"
+level_moves = {
+5: ["Absorb"],
+6: ["Sing"],
+8: ["Focus Energy"],
+9: ["Slash"],
+10: ["X-Scissor"],
+12: ["Fell Stinger", "Screech"],
+13: ["Taunt"],
+14: ["Night Slash"],
+15: ["Bug Buzz", "Perish Song", "Sticky Web"]
+}
+starting_moves = Array[String](["Bide", "Fury Cutter", "Growl", "Tackle"])
+tms = Array[String](["tm_3", "tm_13", "tm_18", "tm_29", "tm_32", "tm_33", "tm_45", "tm_58", "tm_75", "tm_82", "tm_83", "tm_87", "tm_89", "tm_104", "tm_109", "tm_112", "tm_113", "tm_125", "tm_129", "tm_131", "tm_136", "tm_137", "tm_146", "tm_150", "tm_151", "tm_155", "tm_160", "tm_195", "tm_199", "tm_209", "tm_214", "tm_216", "tm_224", "tm_228", "tm_245", "tm_248", "tm_255", "tm_269", "tm_270", "tm_271", "tm_276", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289", "tm_296", "tm_298", "tm_305", "tm_320"])

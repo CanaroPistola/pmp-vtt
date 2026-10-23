@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c7bmfg6rcboa"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ejkw7"]
+
+[resource]
+script = ExtResource("1_ejkw7")
+id = "psychic_noise"
+display_name = "Psychic Noise"
+name_en = "Psychic Noise"
+type = 10
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+duration_rounds = 3
+description = "Você ataca o alvo com ondas sonoras psíquicas desagradáveis, perturbando sua mente e bloqueando temporariamente sua capacidade de cura. Faça um ataque à distância contra um alvo em alcance, causando 2d8 + MOVE de dano do tipo Psíquico em um acerto. Caso acerte, o alvo se torna incapaz de recuperar pontos de vida nesta e nas próximas duas rodadas. Observações: Psychic Noise é um Move baseado em som. A propriedade de Heal Block deste Move é considerada um efeito adicional e, por isso, é bloqueada por Shield Dust e suprimida por Sheer Force. Aroma Veil também impede que o efeito secundário seja ativado. Usar Psychic Noise novamente enquanto Heal Block já estiver ativo não renova sua duração."
+scaling_text = "Os dados de dano para este Move mudam para 2d10 no nível 5, 5d6 no nível 10 e 6d6 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea, 3 rodadas."
+role = 0
+move_power_attributes = Array[int]([1, 3, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["sleep"])

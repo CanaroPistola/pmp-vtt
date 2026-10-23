@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c42n5n80wj3sh"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_crutr"]
+
+[resource]
+script = ExtResource("1_crutr")
+dex_number = 500
+display_name = "Emboar"
+id = "emboar"
+types = Array[int]([1, 6])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 14
+hit_points = 122
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 16,
+2: 18,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Blaze"])
+hidden_ability = "Reckless"
+level_moves = {
+3: ["Ember", "Odor Sleuth"],
+5: ["Defense Curl", "Flame Charge"],
+7: ["Smog"],
+8: ["Rollout"],
+10: ["Take Down"],
+11: ["Heat Crash"],
+13: ["Assurance"],
+15: ["Flamethrower", "Head Smash"],
+16: ["Roar"],
+17: ["Flare Blitz"]
+}
+starting_moves = Array[String](["Arm Thrust", "Hammer Arm", "Tackle", "Tail Whip"])
+tms = Array[String](["tm_13", "tm_21", "tm_23", "tm_24", "tm_25", "tm_29", "tm_34", "tm_35", "tm_43", "tm_44", "tm_45", "tm_48", "tm_51", "tm_55", "tm_58", "tm_59", "tm_67", "tm_74", "tm_75", "tm_82", "tm_83", "tm_87", "tm_91", "tm_93", "tm_94", "tm_95", "tm_96", "tm_97", "tm_98", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_114", "tm_121", "tm_123", "tm_126", "tm_127", "tm_128", "tm_129", "tm_131", "tm_132", "tm_136", "tm_148", "tm_149", "tm_150", "tm_158", "tm_159", "tm_175", "tm_183", "tm_191", "tm_199", "tm_214", "tm_216", "tm_218", "tm_220", "tm_223", "tm_225", "tm_228", "tm_232", "tm_234", "tm_248", "tm_251", "tm_255", "tm_257", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_283", "tm_285", "tm_286", "tm_292", "tm_296", "tm_298", "tm_315", "tm_316", "tm_318", "tm_321"])
+egg_moves = Array[String](["Body Slam", "Burn Up", "Covet", "Curse", "Endeavor", "Heavy Slam", "Magnitude", "Sleep Talk", "Sucker Punch", "Superpower", "Thrash", "Yawn"])

@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ce6omdrhiuv7s"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_w3w13"]
+
+[resource]
+script = ExtResource("1_w3w13")
+dex_number = 1024
+display_name = "Terapagos"
+id = "terapagos"
+types = Array[int]([0])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 173
+hit_dice = "d12"
+attributes = {
+0: 14,
+1: 10,
+2: 16,
+3: 6,
+4: 15,
+5: 14
+}
+skills = Array[int]([2, 9])
+abilities = Array[String](["Tera Shift"])
+level_moves = {
+4: ["Ancient Power"],
+7: ["Headbutt"],
+10: ["Protect"],
+14: ["Earth Power"],
+15: ["Heavy Slam"],
+16: ["Tera Starstorm"],
+17: ["Double-Edge"],
+18: ["Rock Polish"],
+19: ["Gyro Ball"]
+}
+starting_moves = Array[String](["Rapid Spin", "Tri Attack", "Withdraw"])
+tms = Array[String](["tm_14", "tm_24", "tm_25", "tm_33", "tm_38", "tm_50", "tm_52", "tm_53", "tm_59", "tm_65", "tm_73", "tm_74", "tm_83", "tm_84", "tm_87", "tm_97", "tm_98", "tm_99", "tm_113", "tm_118", "tm_121", "tm_126", "tm_128", "tm_136", "tm_139", "tm_142", "tm_148", "tm_170", "tm_196", "tm_199", "tm_209", "tm_214", "tm_220", "tm_223", "tm_235", "tm_248", "tm_257", "tm_262", "tm_267", "tm_268", "tm_270", "tm_271", "tm_273", "tm_275", "tm_282", "tm_290", "tm_294", "tm_296", "tm_311", "tm_313", "tm_315", "tm_321"])
+is_variant = true
+variant_data = {
+"Terapagos": {
+"diff": {
+"movement": {
+0: 7.5
+}
+},
+"display_name": "Terapagos",
+"is_default": true
+},
+"Terapagos Forma Estelar": {
+"diff": {
+"Fsp": 30.0,
+"abilities": ["Teraform Zero"],
+"armor_class": 18,
+"attributes": {
+"CHA": 16,
+"CON": 20,
+"DEX": 13,
+"STR": 16,
+"WIS": 19
+},
+"hit_points": 218
+},
+"display_name": "Terapagos Forma Estelar",
+"is_default": false
+},
+"Terapagos Forma Terastal": {
+"diff": {
+"Fsp": 30.0,
+"abilities": ["Tera Shell"],
+"armor_class": 18,
+"attributes": {
+"CON": 17,
+"DEX": 13,
+"STR": 16,
+"WIS": 17
+}
+},
+"display_name": "Terapagos Forma Terastal",
+"is_default": false
+}
+}

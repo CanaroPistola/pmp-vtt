@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cc8o7aepq6uh7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_jbq8i"]
+
+[resource]
+script = ExtResource("1_jbq8i")
+dex_number = 90
+display_name = "Shellder"
+id = "shellder"
+types = Array[int]([2])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 14
+hit_points = 18
+movement = {
+0: 1.5,
+1: 4.5
+}
+attributes = {
+0: 12,
+1: 10,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Shell Armor", "Skill Link"])
+hidden_ability = "Overcoat"
+evolves_to = Array[String](["cloyster"])
+evolution_level = 6
+evolution_points = 9
+level_moves = {
+2: ["Withdraw"],
+3: ["Supersonic"],
+5: ["Icicle Spear"],
+6: ["Protect"],
+7: ["Leer"],
+9: ["Clamp"],
+10: ["Ice Shard"],
+11: ["Razor Shell"],
+13: ["Aurora Beam"],
+14: ["Whirlpool"],
+15: ["Brine", "Iron Defense"],
+16: ["Ice Beam", "Shell Smash"],
+17: ["Hydro Pump"]
+}
+starting_moves = Array[String](["Tackle", "Water Gun"])
+tms = Array[String](["tm_13", "tm_16", "tm_22", "tm_30", "tm_42", "tm_45", "tm_57", "tm_58", "tm_83", "tm_86", "tm_87", "tm_109", "tm_122", "tm_129", "tm_131", "tm_135", "tm_139", "tm_142", "tm_143", "tm_144", "tm_147", "tm_157", "tm_174", "tm_186", "tm_199", "tm_209", "tm_210", "tm_214", "tm_216", "tm_221", "tm_228", "tm_236", "tm_239", "tm_248", "tm_255", "tm_256", "tm_260", "tm_270", "tm_275", "tm_276", "tm_277", "tm_282", "tm_286", "tm_296", "tm_297", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Aqua Ring", "Avalanche", "Barrier", "Bubble Beam", "Icicle Spear", "Life Dew", "Mud Shot", "Rapid Spin", "Rock Blast", "Screech", "Take Down", "Twineedle", "Water Pulse"])

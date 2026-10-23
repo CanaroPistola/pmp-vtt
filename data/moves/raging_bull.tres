@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dva42a3efke2"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_jf3ha"]
+
+[resource]
+script = ExtResource("1_jf3ha")
+id = "raging_bull"
+display_name = "Raging Bull"
+name_en = "Raging Bull"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você avança com a força de um touro enfurecido, atingindo o alvo com uma investida brutal capaz de romper barreiras. Faça um ataque corpo a corpo em uma criatura, causando 3d6 + MOVE de dano do tipo Normal em um acerto. Caso a criatura atingida esteja sendo beneficiada por Reflect, Light Screen ou Aurora Veil, o Move ignora os efeitos dessa barreira e a desfaz por completo, encerrando seus efeitos sobre todas as criaturas protegidas por ela. Se você for um Tauros de Paldea, o tipo do Move muda dependendo de sua forma. O Raging Bull do Tauros Raça de Combate é do tipo Lutador, o do Tauros Raça Incandescente é do tipo Fogo, e o do Tauros Raça Aquática é do tipo Água."
+scaling_text = "Os dados de dano para este Move mudam para 3d10 no nível 5, 3d12 no nível 10 e 4d12 no nível 17."
+range_text_raw = "Corpo a Corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}

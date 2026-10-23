@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://uqvjmfjxm1km"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_d3dki"]
+
+[resource]
+script = ExtResource("1_d3dki")
+dex_number = 232
+display_name = "Donphan"
+id = "donphan"
+types = Array[int]([8])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 55
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 12,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Sturdy"])
+hidden_ability = "Sand Veil"
+level_moves = {
+2: ["Rapid Spin"],
+4: ["Rollout"],
+5: ["Assurance"],
+7: ["Knock Off"],
+8: ["Slam"],
+10: ["Magnitude", "Stomping Tantrum"],
+13: ["Scary Face"],
+15: ["Earthquake", "Giga Impact"]
+}
+starting_moves = Array[String](["Bulldoze", "Defense Curl", "Fire Fang", "Fury Attack", "Growl", "Horn Attack", "Thunder Fang"])
+tms = Array[String](["tm_13", "tm_23", "tm_24", "tm_25", "tm_26", "tm_31", "tm_35", "tm_41", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_75", "tm_81", "tm_82", "tm_83", "tm_87", "tm_92", "tm_109", "tm_113", "tm_120", "tm_121", "tm_128", "tm_129", "tm_131", "tm_132", "tm_136", "tm_137", "tm_140", "tm_142", "tm_147", "tm_148", "tm_149", "tm_150", "tm_153", "tm_174", "tm_175", "tm_190", "tm_191", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_222", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_234", "tm_238", "tm_248", "tm_251", "tm_252", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_286", "tm_288", "tm_289", "tm_291", "tm_296", "tm_298"])
+egg_moves = Array[String](["Ancient Power", "Body Slam", "Counter", "Endeavor", "Fissure", "Focus Energy", "Head Smash", "Heavy Slam", "High Horsepower", "Ice Shard", "Mud-Slap", "Play Rough", "Snore"])

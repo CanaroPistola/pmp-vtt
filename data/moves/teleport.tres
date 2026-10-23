@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://t06s05d7onn0"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_irpg7"]
+
+[resource]
+script = ExtResource("1_irpg7")
+id = "teleport"
+display_name = "Teleport"
+name_en = "Teleport"
+type = 10
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 2
+range_distance = 9.0
+description = "Em batalha, você desaparece da vista e reaparece em um ponto desocupado dentro do alcance. Este Move também pode ser ativado para contar automaticamente como um sucesso em um teste de DES em grupo para fugir. Fora de combate, você pode se teletransportar da mesma forma e levar consigo um número de criaturas igual ao seu bônus de SAB, desde que elas estejam em alcance corpo a corpo de você no momento em que este Move for usado. Este Move pode ser usado normalmente mesmo que você esteja preso ou sob o efeito de qualquer Move, Habilidade Passiva ou outro efeito que impeça você de fugir ou ser trocado."
+range_text_raw = "(9 metros) + (1,5 metros) para cada ponto de modificador de Sabedoria."
+duration_text_raw = "Instantânea"

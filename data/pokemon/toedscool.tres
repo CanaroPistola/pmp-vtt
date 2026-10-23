@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://biyhpaq3q5gsu"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_oi6cn"]
+
+[resource]
+script = ExtResource("1_oi6cn")
+dex_number = 948
+display_name = "Toedscool"
+id = "toedscool"
+types = Array[int]([8, 4])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 14
+hit_points = 17
+movement = {
+0: 10.5
+}
+attributes = {
+0: 14,
+1: 13,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 12])
+abilities = Array[String](["Mycelium Might"])
+evolves_to = Array[String](["toedscruel"])
+evolution_level = 10
+evolution_points = 11
+level_moves = {
+2: ["Absorb"],
+3: ["Poison Powder", "Stun Spore"],
+4: ["Supersonic"],
+5: ["Tackle"],
+6: ["Mega Drain"],
+7: ["Screech"],
+8: ["Mud Shot"],
+10: ["Hex"],
+11: ["Seed Bomb"],
+12: ["Spore"],
+14: ["Growth"],
+15: ["Earth Power", "Giga Drain"],
+16: ["Power Whip"]
+}
+starting_moves = Array[String](["Mud-Slap", "Wrap"])
+tms = Array[String](["tm_1", "tm_36", "tm_46", "tm_53", "tm_73", "tm_83", "tm_84", "tm_99", "tm_106", "tm_112", "tm_114", "tm_116", "tm_117", "tm_130", "tm_150", "tm_154", "tm_156", "tm_160", "tm_163", "tm_174", "tm_175", "tm_184", "tm_199", "tm_209", "tm_212", "tm_214", "tm_234", "tm_238", "tm_248", "tm_249", "tm_257", "tm_260", "tm_270", "tm_277", "tm_283", "tm_286", "tm_296", "tm_297", "tm_298", "tm_301", "tm_307"])
+egg_moves = Array[String](["Acupressure", "Knock Off", "Leech Seed", "Mirror Coat", "Rage Powder", "Rapid Spin", "Tickle", "Toxic"])

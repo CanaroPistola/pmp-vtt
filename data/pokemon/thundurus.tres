@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dltsrfxkebp8q"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_jyiaa"]
+
+[resource]
+script = ExtResource("1_jyiaa")
+dex_number = 642
+display_name = "Thundurus"
+id = "thundurus"
+types = Array[int]([3, 9])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 232
+hit_dice = "d12"
+attributes = {
+0: 17,
+1: 20,
+2: 17,
+3: 12,
+4: 16,
+5: 10
+}
+skills = Array[int]([0, 3, 12])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Prankster"])
+hidden_ability = "Defiant"
+level_moves = {
+2: ["Leer"],
+3: ["Bite"],
+5: ["Revenge"],
+7: ["Shock Wave"],
+9: ["Heal Block"],
+11: ["Agility"],
+12: ["Volt Switch"],
+13: ["Discharge"],
+15: ["Charge", "Crunch"],
+16: ["Nasty Plot", "Rain Dance"],
+17: ["Dark Pulse", "Thunder"],
+18: ["Hammer Arm", "Thrash", "Wildbolt Storm"]
+}
+starting_moves = Array[String](["Astonish", "Swagger", "Thunder Shock", "Uproar"])
+tms = Array[String](["tm_2", "tm_5", "tm_12", "tm_13", "tm_25", "tm_29", "tm_31", "tm_34", "tm_39", "tm_40", "tm_45", "tm_50", "tm_52", "tm_54", "tm_58", "tm_76", "tm_77", "tm_78", "tm_79", "tm_80", "tm_83", "tm_87", "tm_99", "tm_100", "tm_102", "tm_103", "tm_106", "tm_109", "tm_113", "tm_114", "tm_131", "tm_136", "tm_149", "tm_150", "tm_152", "tm_178", "tm_186", "tm_197", "tm_199", "tm_202", "tm_209", "tm_214", "tm_216", "tm_217", "tm_219", "tm_224", "tm_226", "tm_228", "tm_234", "tm_242", "tm_247", "tm_248", "tm_249", "tm_250", "tm_251", "tm_252", "tm_253", "tm_255", "tm_270", "tm_271", "tm_273", "tm_274", "tm_276", "tm_282", "tm_283", "tm_286", "tm_288", "tm_290", "tm_292", "tm_293", "tm_294", "tm_295", "tm_296", "tm_303", "tm_305", "tm_308", "tm_313", "tm_315", "tm_321"])
+is_variant = true
+variant_data = {
+"Thundurus Forma Encarnada": {
+"diff": {},
+"display_name": "Thundurus Forma Encarnada",
+"is_default": true
+},
+"Thundurus Forma Therian": {
+"diff": {
+"abilities": ["Volt Absorb"]
+},
+"display_name": "Thundurus Forma Therian",
+"is_default": false
+}
+}

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://22b6glmvacfw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ekv4d"]
+
+[resource]
+script = ExtResource("1_ekv4d")
+dex_number = 1015
+display_name = "Munkidori"
+id = "munkidori"
+types = Array[int]([7, 10])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 173
+hit_dice = "d12"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 13,
+1: 16,
+2: 15,
+3: 12,
+4: 16,
+5: 14
+}
+skills = Array[int]([0, 9])
+abilities = Array[String](["Toxic Chain"])
+hidden_ability = "Frisk"
+level_moves = {
+3: ["Helping Hand"],
+6: ["Psybeam"],
+8: ["Clear Smog"],
+11: ["Poison Jab"],
+14: ["Psychic"],
+15: ["Sludge Wave"],
+16: ["Nasty Plot"],
+17: ["Future Sight"],
+18: ["Parting Shot"]
+}
+starting_moves = Array[String](["Confusion", "Fake Out", "Flatter", "Scratch"])
+tms = Array[String](["tm_1", "tm_18", "tm_38", "tm_46", "tm_83", "tm_87", "tm_100", "tm_103", "tm_110", "tm_113", "tm_114", "tm_120", "tm_129", "tm_130", "tm_136", "tm_145", "tm_152", "tm_156", "tm_171", "tm_175", "tm_178", "tm_180", "tm_191", "tm_194", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_214", "tm_240", "tm_241", "tm_248", "tm_249", "tm_250", "tm_261", "tm_268", "tm_270", "tm_277", "tm_283", "tm_286", "tm_288", "tm_296", "tm_298", "tm_300", "tm_303", "tm_305", "tm_307"])

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cf7g7kavmqdnf"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_v0pje"]
+
+[resource]
+script = ExtResource("1_v0pje")
+id = "power_swap"
+display_name = "Power Swap"
+name_en = "Power Swap"
+type = 10
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "ocê usa seu po der psíquico para trocar seus atributos ofensivos com os de uma criatura dentro do alcance. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, a FOR, DES e SAB de vocês são trocadas durante a duração. Observações: Este Move ignora Substitute."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([3, 4])

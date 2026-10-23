@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bj0paqsd132el"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_11gb4"]
+
+[resource]
+script = ExtResource("1_11gb4")
+id = "tera_blast"
+display_name = "Tera Blast"
+name_en = "Tera Blast"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 7
+range_distance = 15.0
+range_secondary = 1.5
+description = "Você libera uma explosão de energia cristalina, que assume o brilho e a força do seu Tipo Tera quando você está Teracristalizado. Faça um ataque à distância contra um alvo em alcance, causando 4d4 + MOVE de dano do tipo Normal, ou do Tipo Tera do usuário se ele estiver Teracristalizado. Se você estiver Teracristalizado, o tipo deste Move não pode ser alterado por Moves ou efeitos que mudam o tipo de um ataque, e este Move passa a poder ser usado também como corpo a corpo, sem acionar efeitos de inimigos que se ativam ao contato corpo a corpo. Se você estiver Teracristalizado no tipo Estelar, este Move é considerado super efetivo contra qualquer alvo que também esteja Teracristalizado, e causa dano neutro contra qualquer alvo que não esteja. Além disso, seu dano aumenta em mais um dado de dano, porém seu Ataque e o Ataque Especial são reduzidos em 1 estágio cada, podendo ser acumulados em até -6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(15 metros) Corpo a corpo situacional"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1, 3, 4, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

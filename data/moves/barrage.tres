@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dq8krtcedn2iy"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_st71x"]
+
+[resource]
+script = ExtResource("1_st71x")
+id = "barrage"
+display_name = "Barrage (Barragem)"
+name_en = "Barrage"
+name_pt = "Barragem"
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "Você dispara uma rápida sequência de pequenos projéteis contra o alvo. Faça um ataque à distância -2 em uma criatura, causando 1d4 + MOVE de dano normal em um acerto. Em um acerto, após isso, role um d8 e compare o resultado com a tabela abaixo para determinar a quantidade de golpes. Para cada golpe adicional, você pode imediatamente realizar um novo ataque contra o mesmo alvo com acerto garantido, causando 1d4 + MOVE de dano normal. Cada golpe extra deve rolar separadamente 1d20 para verificar chance de crítico. Confira a tabela no livro."
+scaling_text = "O dado de dano para esse Move muda para 1d6 no nível 10 e 1d8 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+}
+}

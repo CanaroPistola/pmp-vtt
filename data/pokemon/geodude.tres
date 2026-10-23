@@ -1,0 +1,79 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cjedfslvcjei2"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_r61u0"]
+
+[resource]
+script = ExtResource("1_r61u0")
+dex_number = 74
+display_name = "Geodude"
+id = "geodude"
+types = Array[int]([12, 8])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 18
+movement = {
+0: 6.0
+}
+attributes = {
+0: 14,
+1: 9,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 17])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 1
+}])
+abilities = Array[String](["Rock Head", "Sturdy"])
+hidden_ability = "Sand Veil"
+evolves_to = Array[String](["graveler"])
+evolution_level = 9
+evolution_points = 7
+level_moves = {
+2: ["Mud Sport", "Rock Polish"],
+4: ["Magnitude", "Rollout"],
+6: ["Rock Throw", "Smack Down"],
+8: ["Bulldoze", "Self-Destruct"],
+10: ["Rock Blast", "Stealth Rock"],
+12: ["Earthquake", "Explosion"],
+14: ["Double-Edge", "Stone Edge"]
+}
+starting_moves = Array[String](["Defense Curl", "Tackle"])
+tms = Array[String](["tm_13", "tm_23", "tm_25", "tm_29", "tm_35", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_83", "tm_86", "tm_87", "tm_91", "tm_94", "tm_97", "tm_100", "tm_105", "tm_109", "tm_121", "tm_131", "tm_132", "tm_147", "tm_171", "tm_174", "tm_175", "tm_179", "tm_199", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_224", "tm_225", "tm_228", "tm_231", "tm_234", "tm_248", "tm_251", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_286", "tm_292", "tm_296"])
+egg_moves = Array[String](["Autotomize", "Block", "Curse", "Dynamic Punch", "Endure", "Flail", "Focus Punch", "Hammer Arm", "Mega Punch", "Rock Climb", "Wide Guard"])
+is_variant = true
+variant_data = {
+"Geodude": {
+"diff": {},
+"display_name": "Geodude",
+"is_default": true
+},
+"Geodude de Alola": {
+"diff": {
+"Evolve": "Graveler de Alola",
+"abilities": ["Magnet Pull", "Sturdy"],
+"hidden_ability": "Galvanize",
+"moves_diff": {
+"egg_moves": ["Autotomize", "Block", "Counter", "Curse", "Endure", "Flail", "Magnet Rise", "Rock Climb", "Screech", "Wide Guard", "Zap Cannon"],
+"level_moves": {
+2: ["Charge", "Rock Polish"],
+4: ["Rollout", "Spark"],
+6: ["Rock Throw", "Smack Down"],
+8: ["Self-Destruct", "Thunder Punch"],
+10: ["Rock Blast", "Stealth Rock"],
+12: ["Discharge", "Explosion"],
+14: ["Double-Edge", "Stone Edge"]
+},
+"starting_moves": ["Defense Curl", "Tackle"],
+"tms": ["tm_13", "tm_23", "tm_25", "tm_29", "tm_31", "tm_35", "tm_39", "tm_40", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_79", "tm_83", "tm_86", "tm_87", "tm_91", "tm_94", "tm_97", "tm_100", "tm_105", "tm_109", "tm_121", "tm_131", "tm_132", "tm_147", "tm_164", "tm_174", "tm_175", "tm_179", "tm_199", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_231", "tm_248", "tm_251", "tm_255", "tm_262", "tm_267", "tm_270", "tm_271", "tm_273", "tm_274", "tm_276", "tm_282", "tm_286", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_308", "tm_315"]
+},
+"types": [12, 3]
+},
+"display_name": "Geodude de Alola",
+"is_default": false
+}
+}

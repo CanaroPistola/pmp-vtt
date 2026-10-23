@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bh0064reo2n35"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_px1xr"]
+
+[resource]
+script = ExtResource("1_px1xr")
+id = "tidy_up"
+display_name = "Tidy Up"
+name_en = "Tidy Up"
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 15.0
+duration_is_permanent = true
+description = "Você arruma rapidamente o campo de batalha ao seu redor, removendo obstáculos e armadilhas enquanto se prepara melhor para atacar e se mover. Seu Ataque e sua Velocidade aumentam em 1 estágio cada, podendo ser acumulados em até 6 estágios. Além disso, todos os efeitos de Substitute, incluindo Shed Tail, Spikes, Toxic Spikes, Stealth Rock e Sticky Web são dissipados caso estejam em contato com uma área de 50 pés (15 metros) ao seu redor no momento em que este Move é ativado."
+range_text_raw = "Pessoal (raio de 15 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

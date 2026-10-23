@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c1fa1qg6yc7ve"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_h12cf"]
+
+[resource]
+script = ExtResource("1_h12cf")
+dex_number = 885
+display_name = "Dreepy"
+id = "dreepy"
+types = Array[int]([14, 13])
+sr = "1"
+evolution_stage = 1
+armor_class = 12
+hit_points = 15
+attributes = {
+0: 12,
+1: 14,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([6])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Clear Body", "Infiltrator"])
+hidden_ability = "Cursed Body"
+evolves_to = Array[String](["drakloak"])
+evolution_level = 15
+evolution_points = 9
+starting_moves = Array[String](["Astonish", "Bite", "Infestation", "Quick Attack"])
+tms = Array[String](["tm_13", "tm_18", "tm_46", "tm_51", "tm_60", "tm_66", "tm_83", "tm_87", "tm_129", "tm_199", "tm_214", "tm_228", "tm_248", "tm_255", "tm_270", "tm_277", "tm_286", "tm_293"])
+egg_moves = Array[String](["Confuse Ray", "Curse", "Disable", "Double Team", "Dragon Tail", "Grudge", "Sucker Punch"])

@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c620sgm1wusjf"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_jp1jd"]
+
+[resource]
+script = ExtResource("1_jp1jd")
+dex_number = 167
+display_name = "Spinarak"
+id = "spinarak"
+types = Array[int]([11, 7])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 18
+movement = {
+0: 6.0,
+2: 6.0
+}
+attributes = {
+0: 11,
+1: 10,
+2: 15,
+3: 6,
+4: 10,
+5: 8
+}
+skills = Array[int]([6])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Swarm", "Insomnia"])
+hidden_ability = "Sniper"
+evolves_to = Array[String](["ariados"])
+evolution_level = 8
+evolution_points = 10
+level_moves = {
+2: ["Absorb"],
+3: ["Infestation"],
+4: ["Scary Face"],
+5: ["Night Shade"],
+7: ["Shadow Sneak"],
+8: ["Fury Swipes"],
+9: ["Sucker Punch"],
+10: ["Spider Web"],
+11: ["Agility"],
+12: ["Pin Missile"],
+14: ["Psychic"],
+15: ["Cross Poison", "Poison Jab", "Sticky Web"],
+16: ["Toxic Thread"]
+}
+starting_moves = Array[String](["Constrict", "Poison Sting", "String Shot"])
+tms = Array[String](["tm_1", "tm_5", "tm_13", "tm_18", "tm_26", "tm_32", "tm_33", "tm_45", "tm_55", "tm_58", "tm_79", "tm_83", "tm_87", "tm_106", "tm_109", "tm_112", "tm_130", "tm_131", "tm_146", "tm_150", "tm_155", "tm_160", "tm_180", "tm_191", "tm_195", "tm_199", "tm_202", "tm_214", "tm_216", "tm_228", "tm_234", "tm_243", "tm_245", "tm_248", "tm_249", "tm_250", "tm_255", "tm_257", "tm_261", "tm_269", "tm_270", "tm_271", "tm_276", "tm_286", "tm_288", "tm_296", "tm_297", "tm_298", "tm_307", "tm_320"])
+egg_moves = Array[String](["Baton Pass", "Disable", "Electroweb", "Lunge", "Megahorn", "Night Slash", "Psybeam", "Pursuit", "Rage Powder", "Signal Beam", "Sonic Boom", "Toxic Spikes", "Twineedle"])

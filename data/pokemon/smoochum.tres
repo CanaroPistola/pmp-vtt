@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://vur4tmxurv8d"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_lsf11"]
+
+[resource]
+script = ExtResource("1_lsf11")
+dex_number = 238
+display_name = "Smoochum"
+id = "smoochum"
+types = Array[int]([5, 10])
+sr = "2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 24
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 10,
+1: 14,
+2: 11,
+3: 8,
+4: 12,
+5: 14
+}
+skills = Array[int]([5, 9])
+abilities = Array[String](["Oblivious", "Forewarn"])
+hidden_ability = "Hydration"
+evolves_to = Array[String](["jynx"])
+evolution_level = 10
+evolution_points = 11
+level_moves = {
+2: ["Lick"],
+3: ["Sweet Kiss"],
+4: ["Powder Snow"],
+5: ["Confusion"],
+6: ["Covet", "Sing"],
+7: ["Heart Stamp"],
+9: ["Mean Look"],
+10: ["Fake Tears", "Ice Punch"],
+11: ["Lucky Chant"],
+12: ["Avalanche"],
+13: ["Psychic"],
+14: ["Copycat"],
+15: ["Blizzard", "Perish Song"]
+}
+starting_moves = Array[String](["Pound"])
+tms = Array[String](["tm_13", "tm_15", "tm_16", "tm_22", "tm_38", "tm_41", "tm_45", "tm_48", "tm_58", "tm_68", "tm_69", "tm_75", "tm_87", "tm_88", "tm_100", "tm_108", "tm_109", "tm_114", "tm_122", "tm_125", "tm_129", "tm_131", "tm_139", "tm_141", "tm_144", "tm_156", "tm_161", "tm_162", "tm_165", "tm_166", "tm_186", "tm_199", "tm_201", "tm_202", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_226", "tm_228", "tm_240", "tm_243", "tm_244", "tm_248", "tm_255", "tm_270", "tm_276", "tm_288", "tm_296", "tm_300", "tm_301", "tm_305", "tm_311", "tm_317", "tm_321"])
+egg_moves = Array[String](["Captivate", "Fake Out", "Ice Punch", "Meditate", "Miracle Eye", "Nasty Plot", "Role Play", "Wake-Up Slap", "Wish"])

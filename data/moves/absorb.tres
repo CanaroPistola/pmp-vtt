@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://pe5dtmlpsgp5"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_hfprc"]
+
+[resource]
+script = ExtResource("1_hfprc")
+id = "absorb"
+display_name = "Absorb (Absorver)"
+name_en = "Absorb"
+name_pt = "Absorver"
+type = 4
+pp = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 6.0
+description = "Você dispara feixes vermelhos que envolvem o alvo e drenam sua força vital. Faça um ataque à distância em uma criatura, causando 1d4 + MOVE de dano de grama. Metade do dano causado é convertido em cura para o usuário (arredondado para cima)."
+scaling_text = "O dado de dano para esse Move muda para 1d6 no nível 5, 1d8 no nível 10 e 1d10 no nível 17."
+range_text_raw = "6 m"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["drain"])

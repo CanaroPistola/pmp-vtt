@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://tmiay4bhfuxh"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_71oou"]
+
+[resource]
+script = ExtResource("1_71oou")
+dex_number = 812
+display_name = "Rillaboom"
+id = "rillaboom"
+types = Array[int]([4])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 112
+hit_dice = "d12"
+movement = {
+0: 9.0,
+2: 6.0
+}
+attributes = {
+0: 17,
+1: 14,
+2: 19,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([3, 4, 12])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Grassy Surge"
+level_moves = {
+4: ["Razor Leaf"],
+7: ["Screech"],
+8: ["Knock Off"],
+10: ["Slam"],
+13: ["Uproar"],
+15: ["Wood Hammer"],
+16: ["Endeavor"],
+17: ["Boomburst"]
+}
+starting_moves = Array[String](["Branch Poke", "Double Hit", "Drum Beating", "Grassy Terrain", "Growl", "Noble Roar", "Scratch", "Taunt"])
+tms = Array[String](["tm_2", "tm_12", "tm_13", "tm_24", "tm_25", "tm_29", "tm_31", "tm_34", "tm_35", "tm_36", "tm_59", "tm_67", "tm_73", "tm_74", "tm_82", "tm_83", "tm_84", "tm_87", "tm_89", "tm_100", "tm_103", "tm_105", "tm_107", "tm_112", "tm_113", "tm_114", "tm_115", "tm_116", "tm_117", "tm_132", "tm_136", "tm_137", "tm_150", "tm_154", "tm_158", "tm_159", "tm_163", "tm_165", "tm_166", "tm_174", "tm_199", "tm_214", "tm_228", "tm_234", "tm_236", "tm_238", "tm_248", "tm_253", "tm_255", "tm_257", "tm_258", "tm_266", "tm_270", "tm_271", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_298", "tm_303", "tm_305"])
+egg_moves = Array[String](["Fake Out", "Growth", "Hammer Arm", "Leech Seed", "Nature Power", "Strength", "Worry Seed"])

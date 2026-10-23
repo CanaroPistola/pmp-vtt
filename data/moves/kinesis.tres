@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cxymmcakeq0b4"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_d1h4s"]
+
+[resource]
+script = ExtResource("1_d1h4s")
+id = "kinesis"
+display_name = "Kinesis"
+name_en = "Kinesis"
+type = 10
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 5
+range_category = 2
+range_distance = 12.0
+duration_is_permanent = true
+description = "Você lança ondas psíquicas que deturpam os sentidos de uma criatura dentro do alcance. Role 1d20 + MOVE + 5 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, a Precisão do alvo é reduzida em 1 estágio, podendo ser acumulada em até -6 estágios."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([3, 4])
+effect_tags = Array[String](["stat_change"])

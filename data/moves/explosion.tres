@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://davab84dlsoyh"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_qo5vp"]
+
+[resource]
+script = ExtResource("1_qo5vp")
+id = "explosion"
+display_name = "Explosion (Explosão)"
+name_en = "Explosion"
+name_pt = "Explosão"
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 2
+range_distance = 6.0
+description = "Você concentra energia em si para formar uma explosão devastadora, desmaiando imediatamente antes do dano ser causado. Todos na área de efeito devem fazer um teste de resistência de DES contra sua CD de Move, sofrendo 5d10 + MOVE de dano normal em uma falha, ou metade disso em um sucesso. O usuário desmaia ao utilizar o Move, mas antes do dano ser causado."
+scaling_text = "Os dados de dano para este Move mudam para 6d12 no nível 5, 10d10 no nível 10 e 12d10 no nível 17."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 12,
+"move": true
+},
+10: {
+"amount": 10,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 12,
+"dice_max": 10,
+"move": true
+}
+}

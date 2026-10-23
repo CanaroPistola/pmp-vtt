@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://clch78xl470w3"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ya3t5"]
+
+[resource]
+script = ExtResource("1_ya3t5")
+dex_number = 1000
+display_name = "Gholdengo"
+id = "gholdengo"
+types = Array[int]([16, 13])
+sr = "13"
+min_level = 10
+evolution_stage = 2
+armor_class = 17
+hit_points = 112
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 17,
+1: 18,
+2: 17,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([0, 9, 14])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Good as Gold"])
+level_moves = {
+3: ["Night Shade"],
+5: ["Confuse Ray"],
+7: ["Substitute"],
+10: ["Metal Sound"],
+12: ["Shadow Ball"],
+14: ["Recover"],
+15: ["Power Gem"],
+16: ["Make It Rain"],
+17: ["Memento", "Nasty Plot"]
+}
+starting_moves = Array[String](["Astonish", "Tackle"])
+tms = Array[String](["tm_40", "tm_46", "tm_53", "tm_78", "tm_83", "tm_99", "tm_100", "tm_103", "tm_105", "tm_113", "tm_128", "tm_130", "tm_136", "tm_148", "tm_156", "tm_158", "tm_159", "tm_169", "tm_178", "tm_180", "tm_194", "tm_196", "tm_199", "tm_202", "tm_207", "tm_212", "tm_214", "tm_231", "tm_240", "tm_248", "tm_263", "tm_270", "tm_282", "tm_286", "tm_288", "tm_290", "tm_292", "tm_293", "tm_294", "tm_300"])

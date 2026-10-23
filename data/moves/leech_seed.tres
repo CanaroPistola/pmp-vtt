@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c4m5j82l8c2hj"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_hdb2a"]
+
+[resource]
+script = ExtResource("1_hdb2a")
+id = "leech_seed"
+display_name = "Leech Seed (Semente Sanguessuga)"
+name_en = "Leech Seed"
+name_pt = "Semente Sanguessuga"
+type = 4
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 24.0
+duration_is_permanent = true
+description = "Você envia uma semente que se implanta na pele de uma criatura dentro do alcance. Faça um ataque à distância -1. Em um acerto, uma semente se implanta na pele do alvo. O alvo recebe dano sem tipo igual ao nível dele no final de cada um dos próprios turnos subsequentes até desmaiar ou ser trocado. O dano causado retorna como cura ao usuário, ou qualquer outra criatura ativa que o treinador tenha na batalha, mesmo que o atacante original desmaie ou seja devolvido à sua Pokébola. Apenas uma criatura pode ser semeada pelo atacante de cada vez. Criaturas do tipo grama são imunes ao dano deste Move."
+range_text_raw = "(24 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([1])
+move_power_modifier = -1

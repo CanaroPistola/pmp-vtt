@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://balrf4viro6yf"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_5irqn"]
+
+[resource]
+script = ExtResource("1_5irqn")
+dex_number = 87
+display_name = "Dewgong"
+id = "dewgong"
+types = Array[int]([2, 5])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 72
+hit_dice = "d12"
+movement = {
+0: 4.5,
+1: 12.0
+}
+attributes = {
+0: 17,
+1: 16,
+2: 14,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([0])
+abilities = Array[String](["Thick Fat", "Hydration"])
+hidden_ability = "Ice Body"
+level_moves = {
+3: ["Signal Beam"],
+4: ["Icy Wind"],
+5: ["Encore"],
+6: ["Ice Shard"],
+7: ["Rest"],
+8: ["Aqua Ring"],
+9: ["Aurora Beam"],
+11: ["Aqua Jet", "Brine"],
+13: ["Take Down"],
+15: ["Aqua Tail", "Dive"],
+16: ["Ice Beam"],
+17: ["Hail", "Safeguard", "Snowscape"]
+}
+starting_moves = Array[String](["Growl", "Headbutt", "Sheer Cold"])
+tms = Array[String](["tm_8", "tm_11", "tm_13", "tm_16", "tm_22", "tm_25", "tm_41", "tm_42", "tm_45", "tm_51", "tm_58", "tm_59", "tm_70", "tm_75", "tm_81", "tm_82", "tm_83", "tm_87", "tm_100", "tm_101", "tm_108", "tm_109", "tm_113", "tm_122", "tm_124", "tm_129", "tm_131", "tm_135", "tm_136", "tm_139", "tm_142", "tm_143", "tm_144", "tm_149", "tm_150", "tm_157", "tm_176", "tm_190", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_243", "tm_248", "tm_252", "tm_255", "tm_256", "tm_270", "tm_275", "tm_276", "tm_282", "tm_286", "tm_288", "tm_296", "tm_302", "tm_305", "tm_311", "tm_312", "tm_313", "tm_314"])
+egg_moves = Array[String](["Belch", "Disable", "Encore", "Entrainment", "Fake Out", "Horn Drill", "Icicle Spear", "Iron Tail", "Lick", "Perish Song", "Signal Beam", "Slam", "Sleep Talk", "Spit Up", "Stockpile", "Swallow", "Water Pulse"])

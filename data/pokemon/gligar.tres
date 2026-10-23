@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c7qw7153qum7v"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_iqww8"]
+
+[resource]
+script = ExtResource("1_iqww8")
+dex_number = 207
+display_name = "Gligar"
+id = "gligar"
+types = Array[int]([8, 9])
+sr = "3"
+evolution_stage = 1
+armor_class = 16
+hit_points = 18
+hit_dice = "d8"
+movement = {
+0: 9.0,
+2: 7.5
+}
+attributes = {
+0: 16,
+1: 15,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 6])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Hyper Cutter", "Sand Veil"])
+hidden_ability = "Immunity"
+evolves_to = Array[String](["gliscor"])
+evolution_level = 11
+evolution_points = 9
+level_moves = {
+2: ["Sand Attack"],
+3: ["Harden"],
+4: ["Knock Off"],
+5: ["Quick Attack"],
+6: ["Fury Cutter"],
+7: ["Feint Attack", "Poison Tail"],
+8: ["Acrobatics"],
+9: ["Slash"],
+10: ["U-turn"],
+12: ["Screech"],
+14: ["X-Scissor"],
+15: ["Crabhammer", "Sky Uppercut", "Swords Dance"],
+16: ["Guillotine"]
+}
+starting_moves = Array[String](["Poison Sting"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_11", "tm_13", "tm_18", "tm_28", "tm_29", "tm_32", "tm_35", "tm_45", "tm_50", "tm_52", "tm_54", "tm_58", "tm_59", "tm_72", "tm_73", "tm_74", "tm_83", "tm_87", "tm_89", "tm_92", "tm_100", "tm_109", "tm_120", "tm_131", "tm_132", "tm_140", "tm_149", "tm_150", "tm_160", "tm_168", "tm_174", "tm_175", "tm_186", "tm_191", "tm_192", "tm_199", "tm_203", "tm_209", "tm_214", "tm_216", "tm_222", "tm_223", "tm_224", "tm_225", "tm_227", "tm_228", "tm_230", "tm_231", "tm_233", "tm_234", "tm_245", "tm_248", "tm_249", "tm_255", "tm_260", "tm_262", "tm_265", "tm_267", "tm_269", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_291", "tm_295", "tm_296", "tm_297", "tm_303", "tm_307", "tm_320"])
+egg_moves = Array[String](["Agility", "Baton Pass", "Counter", "Cross Poison", "Double-Edge", "Feint", "Metal Claw", "Night Slash", "Poison Tail", "Power Trick", "Razor Wind", "Rock Climb", "Sand Tomb", "Wing Attack"])

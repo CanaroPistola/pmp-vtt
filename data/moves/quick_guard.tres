@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://4eyx5j05r8w3"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_hwk2w"]
+
+[resource]
+script = ExtResource("1_hwk2w")
+id = "quick_guard"
+display_name = "Quick Guard"
+name_en = "Quick Guard"
+type = 6
+move_time = "1 reação"
+activation = 1
+range_category = 2
+range_distance = 9.0
+duration_rounds = 1
+description = "Você é capaz de erguer rapidamente uma barreira de energia para proteger aliados contra golpes rápidos. Quando você ou um aliado dentro do alcance for alvo de um Move danoso de Prioridade 1 ou 2, ou de Prioridade 3 (havendo desempate pela Destreza), você p ode usar sua reação para erguer uma guarda instantânea. Até o início do seu próximo turno, você e todos os aliados dentro do alcance anulam automaticamente o dano e os efeitos de qualquer Move de Prioridade que os tenha como alvo . Caso faça isso, você abre mão de sua ação padrão em seu próximo turno. A precisão de Quick Guard não diminui se ele for usado em rodadas consecutivas após ele mesmo ou Wide Guard. No entanto, cada uso consecutivo bem -sucedido de Quick Guard conta para a redução da precisão de Protect, Detect, Endure, Spiky Shield, King's Shield, Baneful Bunker, Burning Bulwark, Max Guard, Obstruct e Silk Trap: role 1d6 para cada uso consecutivo bem -sucedido desses Moves, até o máximo de 6d6, e o Move só será bem -sucedido se todos os dados resultarem em 5 ou 6."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Até o início do próximo turno"

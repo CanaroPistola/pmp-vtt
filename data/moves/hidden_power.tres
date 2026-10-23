@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://03wjajsu4w7n"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_nllnc"]
+
+[resource]
+script = ExtResource("1_nllnc")
+id = "hidden_power"
+display_name = "Hidden Power (Poder Oculto)"
+name_en = "Hidden Power"
+name_pt = "Poder Oculto"
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "Você libera uma onda de poder desconhecido em uma criatura no alcance. Faça um ataque à distância em uma criatura, causando 2d6 + MOVE de dano de um tipo aleatório. Role um d20 para determinar qual tipo de dano é causado. Confira a tabela no livro."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10, e 5d6 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1, 2, 3, 4, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}

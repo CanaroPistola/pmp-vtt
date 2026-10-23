@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://fbtggxvsjvg2"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_my6c8"]
+
+[resource]
+script = ExtResource("1_my6c8")
+dex_number = 984
+display_name = "Great Tusk"
+id = "great_tusk"
+types = Array[int]([8, 6])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 21,
+1: 15,
+2: 22,
+3: 8,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 5, 7, 8, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 1
+}])
+abilities = Array[String](["Protosynthesis"])
+level_moves = {
+3: ["Bulldoze"],
+5: ["Taunt"],
+7: ["Rapid Spin"],
+10: ["Brick Break"],
+12: ["Stomping Tantrum"],
+14: ["Knock Off"],
+15: ["Earthquake"],
+16: ["Giga Impact"],
+17: ["Close Combat", "Endeavor"],
+18: ["Megahorn"],
+19: ["Head Smash"],
+20: ["Headlong Rush"]
+}
+starting_moves = Array[String](["Defense Curl", "Horn Attack", "Rollout", "Sunny Day"])
+tms = Array[String](["tm_24", "tm_25", "tm_29", "tm_34", "tm_35", "tm_43", "tm_55", "tm_59", "tm_73", "tm_74", "tm_82", "tm_83", "tm_87", "tm_92", "tm_99", "tm_113", "tm_128", "tm_132", "tm_136", "tm_140", "tm_142", "tm_148", "tm_150", "tm_174", "tm_175", "tm_190", "tm_199", "tm_207", "tm_214", "tm_218", "tm_220", "tm_223", "tm_225", "tm_231", "tm_234", "tm_248", "tm_251", "tm_252", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_273", "tm_282", "tm_283", "tm_285", "tm_286", "tm_289", "tm_291", "tm_321"])

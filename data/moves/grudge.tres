@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b5soluag6q335"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ywe2f"]
+
+[resource]
+script = ExtResource("1_ywe2f")
+id = "grudge"
+display_name = "Grudge"
+name_en = "Grudge"
+type = 13
+pp = 3
+move_time = "1 reação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+activation = 1
+range_category = 2
+range_distance = 18.0
+description = "Quando você sofre dano de um Move em alcance que o reduz a zero pontos de vida, você pode usar sua reação, antes de desmaiar, para afetar o atacante. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do atacante. Em um resultado maior ou igual, todos os PP do Move que o fez desmaiar são esgotados."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([4, 5])

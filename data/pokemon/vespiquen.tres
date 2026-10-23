@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bvytu6c6hnl5p"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_cbfup"]
+
+[resource]
+script = ExtResource("1_cbfup")
+dex_number = 416
+display_name = "Vespiquen"
+id = "vespiquen"
+types = Array[int]([11, 9])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 55
+hit_dice = "d10"
+movement = {
+0: 6.0,
+2: 4.5
+}
+attributes = {
+0: 16,
+1: 15,
+2: 17,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Pressure"])
+hidden_ability = "Unnerve"
+level_moves = {
+2: ["Fury Cutter"],
+3: ["Aromatic Mist", "Pursuit"],
+5: ["Fury Swipes"],
+6: ["Defend Order"],
+8: ["Aromatherapy", "Roost"],
+9: ["Power Gem"],
+10: ["Heal Order"],
+11: ["Toxic"],
+13: ["Air Slash"],
+14: ["Captivate"],
+15: ["Attack Order", "Swagger"],
+16: ["Destiny Bond", "Fell Stinger"]
+}
+starting_moves = Array[String](["Bug Bite", "Confuse Ray", "Gust", "Poison Sting", "Slash", "Struggle Bug", "Sweet Scent"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_7", "tm_12", "tm_13", "tm_19", "tm_32", "tm_33", "tm_45", "tm_46", "tm_49", "tm_54", "tm_58", "tm_72", "tm_82", "tm_83", "tm_87", "tm_100", "tm_109", "tm_113", "tm_129", "tm_130", "tm_131", "tm_133", "tm_136", "tm_146", "tm_151", "tm_160", "tm_181", "tm_189", "tm_193", "tm_195", "tm_196", "tm_197", "tm_199", "tm_204", "tm_208", "tm_209", "tm_214", "tm_216", "tm_217", "tm_218", "tm_227", "tm_228", "tm_234", "tm_236", "tm_243", "tm_245", "tm_248", "tm_249", "tm_255", "tm_260", "tm_261", "tm_269", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_296", "tm_297", "tm_303", "tm_307", "tm_320"])

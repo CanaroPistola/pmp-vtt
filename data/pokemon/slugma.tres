@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bxs12cukcgg5m"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_as0ys"]
+
+[resource]
+script = ExtResource("1_as0ys")
+dex_number = 218
+display_name = "Slugma"
+id = "slugma"
+types = Array[int]([1])
+sr = "1/8"
+evolution_stage = 1
+armor_class = 11
+hit_points = 18
+movement = {
+0: 6.0,
+2: 6.0
+}
+attributes = {
+0: 10,
+1: 9,
+2: 15,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Magma Armor", "Flame Body"])
+hidden_ability = "Weak Armor"
+evolves_to = Array[String](["magcargo"])
+evolution_level = 13
+evolution_points = 12
+level_moves = {
+2: ["Ember"],
+3: ["Rock Throw"],
+5: ["Harden", "Incinerate"],
+7: ["Clear Smog"],
+8: ["Ancient Power"],
+9: ["Flame Burst"],
+10: ["Rock Slide"],
+12: ["Amnesia", "Lava Plume"],
+14: ["Body Slam"],
+15: ["Earth Power", "Flamethrower", "Recover"]
+}
+starting_moves = Array[String](["Smog", "Yawn"])
+tms = Array[String](["tm_4", "tm_10", "tm_13", "tm_25", "tm_35", "tm_45", "tm_51", "tm_58", "tm_73", "tm_74", "tm_83", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_109", "tm_126", "tm_127", "tm_131", "tm_132", "tm_146", "tm_147", "tm_156", "tm_174", "tm_175", "tm_179", "tm_183", "tm_184", "tm_196", "tm_199", "tm_212", "tm_214", "tm_216", "tm_221", "tm_223", "tm_225", "tm_228", "tm_231", "tm_248", "tm_251", "tm_255", "tm_262", "tm_267", "tm_270", "tm_271", "tm_276", "tm_282", "tm_285", "tm_286", "tm_296", "tm_316"])
+egg_moves = Array[String](["Acid Armor", "Curse", "Earth Power", "Guard Swap", "Heat Wave", "Inferno", "Memento", "Rollout", "Smokescreen", "Spit Up", "Stockpile", "Swallow"])

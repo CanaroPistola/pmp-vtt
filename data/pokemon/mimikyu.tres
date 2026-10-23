@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dabv6xbtrx13r"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0bxus"]
+
+[resource]
+script = ExtResource("1_0bxus")
+dex_number = 778
+display_name = "Mimikyu"
+id = "mimikyu"
+types = Array[int]([13, 17])
+sr = "8"
+min_level = 5
+evolution_stage = 1
+armor_class = 17
+hit_points = 43
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 12,
+1: 14,
+2: 16,
+3: 6,
+4: 16,
+5: 10
+}
+skills = Array[int]([2, 4])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Disguise"])
+level_moves = {
+2: ["Double Team"],
+4: ["Baby-Doll Eyes"],
+5: ["Shadow Sneak"],
+7: ["Mimic"],
+8: ["Feint Attack"],
+10: ["Charm"],
+11: ["Slash"],
+13: ["Shadow Claw"],
+14: ["Hone Claws"],
+15: ["Pain Split", "Play Rough"]
+}
+starting_moves = Array[String](["Astonish", "Copycat", "Scratch", "Splash", "Wood Hammer"])
+tms = Array[String](["tm_4", "tm_13", "tm_19", "tm_34", "tm_37", "tm_40", "tm_41", "tm_45", "tm_46", "tm_48", "tm_51", "tm_52", "tm_53", "tm_58", "tm_67", "tm_68", "tm_69", "tm_80", "tm_83", "tm_87", "tm_100", "tm_109", "tm_112", "tm_113", "tm_130", "tm_131", "tm_136", "tm_146", "tm_153", "tm_155", "tm_156", "tm_162", "tm_173", "tm_180", "tm_184", "tm_186", "tm_188", "tm_190", "tm_195", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_236", "tm_240", "tm_241", "tm_248", "tm_254", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_278", "tm_282", "tm_283", "tm_284", "tm_286", "tm_288", "tm_290", "tm_293", "tm_294", "tm_296", "tm_298", "tm_300", "tm_301", "tm_316", "tm_318", "tm_320"])
+egg_moves = Array[String](["Curse", "Destiny Bond", "Grudge", "Nightmare"])

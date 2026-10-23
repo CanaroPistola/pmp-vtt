@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://brylvtq000ksl"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_sa6hf"]
+
+[resource]
+script = ExtResource("1_sa6hf")
+id = "super_fang"
+display_name = "Super Fang"
+name_en = "Super Fang"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você avança com um ataque incrível de presa. Faça um ataque corpo a corpo -1 contra um alvo. Em um acerto, você causa dano igual à metade dos pontos de vida atuais do alvo (até um máximo de 5x seu nível). A imunidade de tipo não é ignorada, então Super Fang não afeta Pokémon do tipo Fantasma . Esse dano não pode ser aumentado ou reduzido por nenhuma fonte, incluindo STAB, itens,  condições, habilidades (de Pokémon ou Treinador), outros Moves ou acertos críticos."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0])
+move_power_modifier = -1

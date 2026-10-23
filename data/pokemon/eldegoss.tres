@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://vygfgx46610p"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ty66r"]
+
+[resource]
+script = ExtResource("1_ty66r")
+dex_number = 830
+display_name = "Eldegoss"
+id = "eldegoss"
+types = Array[int]([4])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 12,
+1: 14,
+2: 15,
+3: 6,
+4: 16,
+5: 10
+}
+skills = Array[int]([11, 12])
+abilities = Array[String](["Cotton Down", "Regenerator"])
+hidden_ability = "Effect Spore"
+level_moves = {
+4: ["Razor Leaf"],
+6: ["Round"],
+8: ["Leaf Tornado"],
+10: ["Synthesis"],
+12: ["Hyper Voice"],
+14: ["Aromatherapy"],
+15: ["Leaf Storm"],
+16: ["Cotton Guard"]
+}
+starting_moves = Array[String](["Cotton Spore", "Leafage", "Rapid Spin", "Sing", "Sweet Scent"])
+tms = Array[String](["tm_13", "tm_36", "tm_41", "tm_87", "tm_112", "tm_113", "tm_116", "tm_117", "tm_129", "tm_136", "tm_156", "tm_163", "tm_199", "tm_214", "tm_228", "tm_255", "tm_257", "tm_271", "tm_313"])
+egg_moves = Array[String](["Growth", "Leech Seed", "Poison Powder", "Sleep Powder", "Stun Spore", "Worry Seed"])

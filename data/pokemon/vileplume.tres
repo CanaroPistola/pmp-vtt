@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://fmwg4v30hep0"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ji3li"]
+
+[resource]
+script = ExtResource("1_ji3li")
+dex_number = 45
+display_name = "Vileplume"
+id = "vileplume"
+types = Array[int]([4, 7])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 107
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 14,
+2: 16,
+3: 6,
+4: 14,
+5: 14
+}
+skills = Array[int]([12, 14, 17])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 0
+}])
+abilities = Array[String](["Chlorophyll"])
+hidden_ability = "Effect Spore"
+level_moves = {
+15: ["Petal Blizzard"],
+16: ["Petal Dance"],
+17: ["Solar Beam"]
+}
+starting_moves = Array[String](["Absorb", "Acid", "Aromatherapy", "Giga Drain", "Grassy Terrain", "Growth", "Mega Drain", "Moonblast", "Moonlight", "Poison Powder", "Sleep Powder", "Stun Spore", "Sweet Scent", "Toxic"])
+tms = Array[String](["tm_1", "tm_4", "tm_13", "tm_25", "tm_36", "tm_41", "tm_45", "tm_47", "tm_53", "tm_58", "tm_67", "tm_83", "tm_84", "tm_87", "tm_100", "tm_109", "tm_111", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_129", "tm_131", "tm_136", "tm_146", "tm_154", "tm_163", "tm_179", "tm_187", "tm_193", "tm_199", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_248", "tm_249", "tm_250", "tm_255", "tm_257", "tm_258", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_286", "tm_296", "tm_298", "tm_307", "tm_313", "tm_319"])
+egg_moves = Array[String](["After You", "Charm", "Flail", "Ingrain", "Leech Seed", "Nature Power", "Razor Leaf", "Secret Power", "Strength Sap", "Synthesis", "Teeter Dance", "Tickle"])

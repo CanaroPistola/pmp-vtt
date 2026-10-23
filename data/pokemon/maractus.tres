@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c7gluehld0wi0"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_kgp3u"]
+
+[resource]
+script = ExtResource("1_kgp3u")
+dex_number = 556
+display_name = "Maractus"
+id = "maractus"
+types = Array[int]([4])
+sr = "5"
+min_level = 5
+evolution_stage = 1
+armor_class = 14
+hit_points = 40
+hit_dice = "d10"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 14,
+1: 13,
+2: 15,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([4, 17])
+abilities = Array[String](["Water Absorb", "Chlorophyll"])
+hidden_ability = "Storm Drain"
+level_moves = {
+2: ["Growth"],
+4: ["Leech Seed", "Pin Missile"],
+5: ["Mega Drain", "Synthesis"],
+6: ["Cotton Spore"],
+8: ["Needle Arm"],
+9: ["Giga Drain"],
+10: ["Acupressure"],
+11: ["Ingrain"],
+13: ["Petal Dance"],
+14: ["Sucker Punch"],
+15: ["Petal Blizzard", "Solar Beam", "Sunny Day"],
+16: ["After You", "Cotton Guard"]
+}
+starting_moves = Array[String](["Absorb", "Peck", "Spiky Shield", "Sweet Scent"])
+tms = Array[String](["tm_3", "tm_4", "tm_12", "tm_13", "tm_26", "tm_36", "tm_45", "tm_58", "tm_67", "tm_82", "tm_84", "tm_87", "tm_109", "tm_112", "tm_114", "tm_116", "tm_117", "tm_129", "tm_131", "tm_137", "tm_150", "tm_179", "tm_189", "tm_191", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_236", "tm_238", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_279", "tm_289", "tm_296", "tm_305", "tm_313", "tm_319"])
+egg_moves = Array[String](["Bounce", "Bullet Seed", "Grass Whistle", "Grassy Terrain", "Leech Seed", "Seed Bomb", "Spikes", "Wood Hammer", "Worry Seed"])

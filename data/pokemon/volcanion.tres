@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://crul2mj3o1363"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0a1f1"]
+
+[resource]
+script = ExtResource("1_0a1f1")
+dex_number = 721
+display_name = "Volcanion"
+id = "volcanion"
+types = Array[int]([1, 2])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 19
+hit_points = 380
+hit_dice = "d20"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 20,
+1: 17,
+2: 20,
+3: 8,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 8, 17])
+senses = Array[Dictionary]([{
+"range_m": 27.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 1
+}])
+abilities = Array[String](["Water Absorb"])
+level_moves = {
+2: ["Leer"],
+3: ["Mist"],
+4: ["Haze"],
+5: ["Flame Charge"],
+7: ["Water Pulse"],
+10: ["Scary Face", "Stomp"],
+11: ["Scald"],
+12: ["Incinerate"],
+14: ["Weather Ball"],
+15: ["Body Slam", "Hydro Pump"],
+16: ["Flare Blitz"],
+17: ["Overheat"],
+18: ["Explosion"],
+19: ["Steam Eruption"]
+}
+starting_moves = Array[String](["Fire Spin", "Take Down", "Water Gun"])
+tms = Array[String](["tm_24", "tm_25", "tm_29", "tm_35", "tm_45", "tm_54", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_83", "tm_86", "tm_87", "tm_91", "tm_92", "tm_95", "tm_96", "tm_97", "tm_98", "tm_99", "tm_100", "tm_103", "tm_109", "tm_113", "tm_121", "tm_124", "tm_126", "tm_127", "tm_128", "tm_131", "tm_135", "tm_136", "tm_157", "tm_173", "tm_174", "tm_183", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_228", "tm_231", "tm_232", "tm_234", "tm_235", "tm_239", "tm_248", "tm_249", "tm_250", "tm_251", "tm_255", "tm_257", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_283", "tm_286", "tm_291", "tm_296", "tm_311", "tm_313", "tm_315", "tm_316"])

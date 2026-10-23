@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cfof5dr0f00cy"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_wuoia"]
+
+[resource]
+script = ExtResource("1_wuoia")
+id = "sandstorm"
+display_name = "Sandstorm (Tempestade de Areia)"
+name_en = "Sandstorm"
+name_pt = "Tempestade de Areia"
+type = 12
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 15.0
+duration_rounds = 5
+description = "Você provoca uma tempestade de areia maciça em um raio de 50 pés (15 metros), sempre centrado em você e acompanhando seus movimentos. O efeito dura 5 rodadas, a menos que seja cancelado por Air Lock ou Cloud Nine, ou caso outro clima seja ativado em seguida e a área dele esteja encostada na sua. Usar Sandstorm enquanto já houver uma tempestade de areia ativa não reinicia a duração. Confira os efeitos no livro."
+range_text_raw = "Pessoal (raio de 15 metros)"
+duration_text_raw = "5 rodadas"
+effect_tags = Array[String](["weather"])

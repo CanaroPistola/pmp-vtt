@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c0c7q42yorlnq"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_h41n3"]
+
+[resource]
+script = ExtResource("1_h41n3")
+id = "psychic_terrain"
+display_name = "Psychic Terrain (Terreno Psíquico)"
+name_en = "Psychic Terrain"
+name_pt = "Terreno Psíquico"
+type = 10
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 12.0
+duration_rounds = 5
+description = "Energia psíquica emerge do solo em um raio de 40 pés (12 metros), centrado em você. Começando no final do seu turno, por cinco rodadas, todas as criaturas no chão na área afetada não podem usar ações bônus. Criaturas no chão são aquelas que não estão utilizando sua velocidade de vôo ou sobre efeito de Levitate, Magnet Rise ou Telekinesis. Além disso, os Moves do tipo Psíquico ativados dentro da área aumentam os dados de dano em metade da quantidade original (arredondado para baixo). Caso seja uma rolagem com apenas 1 dado, role o dano duas vezes e escolha o maior resultado. Psychic Terrain é uma condição de terreno e pode coexistir ao mesmo tempo que condições climáticas, mas não com outras condições de terreno. Se uma nova condição de terreno for ativada na mesma área, ela substitui a anterior"
+range_text_raw = "Pessoal (raio de 12 metros)"
+duration_text_raw = "5 rodadas"

@@ -1,0 +1,82 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://djt501mxkw4b5"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_pls3x"]
+
+[resource]
+script = ExtResource("1_pls3x")
+dex_number = 101
+display_name = "Electrode"
+id = "electrode"
+types = Array[int]([3])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 14,
+1: 17,
+2: 15,
+3: 6,
+4: 12,
+5: 8
+}
+skills = Array[int]([6])
+abilities = Array[String](["Soundproof", "Static"])
+hidden_ability = "Aftermath"
+level_moves = {
+2: ["Eerie Impulse", "Sonic Boom"],
+3: ["Spark"],
+4: ["Rollout"],
+5: ["Screech"],
+6: ["Charge Beam"],
+7: ["Swift"],
+8: ["Electro Ball"],
+9: ["Self-Destruct"],
+10: ["Light Screen"],
+12: ["Magnet Rise"],
+14: ["Discharge"],
+15: ["Explosion"],
+16: ["Gyro Ball", "Mirror Coat"]
+}
+starting_moves = Array[String](["Charge", "Magnetic Flux", "Tackle", "Thunder Shock"])
+tms = Array[String](["tm_5", "tm_39", "tm_40", "tm_45", "tm_51", "tm_58", "tm_59", "tm_76", "tm_77", "tm_78", "tm_79", "tm_83", "tm_86", "tm_87", "tm_106", "tm_109", "tm_113", "tm_121", "tm_129", "tm_131", "tm_136", "tm_156", "tm_161", "tm_164", "tm_169", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_234", "tm_242", "tm_243", "tm_248", "tm_255", "tm_270", "tm_273", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_288", "tm_290", "tm_293", "tm_294", "tm_295", "tm_296", "tm_308", "tm_315"])
+egg_moves = Array[String](["Metal Sound", "Recycle"])
+is_variant = true
+variant_data = {
+"Electrode": {
+"diff": {},
+"display_name": "Electrode",
+"is_default": true
+},
+"Electrode de Hisui": {
+"diff": {
+"moves_diff": {
+"egg_moves": ["Leech Seed", "Recycle", "Worry Seed"],
+"level_moves": {
+2: ["Stun Spore", "Thunder Shock"],
+3: ["Bullet Seed"],
+4: ["Rollout"],
+5: ["Screech"],
+6: ["Charge Beam"],
+7: ["Swift"],
+8: ["Electro Ball"],
+9: ["Self-Destruct"],
+10: ["Energy Ball"],
+12: ["Discharge", "Seed Bomb"],
+14: ["Explosion"],
+15: ["Grassy Terrain", "Gyro Ball"]
+},
+"starting_moves": ["Charge", "Chloroblast", "Tackle"],
+"tms": ["tm_5", "tm_36", "tm_39", "tm_40", "tm_51", "tm_59", "tm_77", "tm_78", "tm_79", "tm_83", "tm_84", "tm_87", "tm_106", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_121", "tm_136", "tm_138", "tm_154", "tm_163", "tm_199", "tm_209", "tm_212", "tm_214", "tm_234", "tm_238", "tm_248", "tm_257", "tm_270", "tm_273", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_290", "tm_293", "tm_294", "tm_308", "tm_315"]
+},
+"types": [3, 4]
+},
+"display_name": "Electrode de Hisui",
+"is_default": false
+}
+}

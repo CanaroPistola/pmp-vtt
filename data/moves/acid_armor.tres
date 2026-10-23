@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://vd1cjn5fsbyk"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_swc0h"]
+
+[resource]
+script = ExtResource("1_swc0h")
+id = "acid_armor"
+display_name = "Acid Armor (Armadura Ácida)"
+name_en = "Acid Armor"
+name_pt = "Armadura Ácida"
+type = 7
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você é cercado por um escudo de ácido espesso. Sua Defesa aumenta em 2 estágios, podendo ser acumulado em até 6 estágios, e qualquer criatura que atingi-lo com um ataque corpo a corpo deve ter sucesso em um teste de CON contra sua CD de MOVE, ou sofrer 1d6 de dano venenoso."
+scaling_text = "O dado de dano para esse Move muda para 2d6 no nível 10."
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 6,
+"move": false
+},
+5: {
+"amount": 1,
+"dice_max": 6,
+"move": false
+},
+10: {
+"amount": 2,
+"dice_max": 6,
+"move": false
+},
+17: {
+"amount": 1,
+"dice_max": 6,
+"move": false
+}
+}
+effect_tags = Array[String](["stat_change"])

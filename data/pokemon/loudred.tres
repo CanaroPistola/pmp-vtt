@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bnd0gfq6coj44"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_3na5n"]
+
+[resource]
+script = ExtResource("1_3na5n")
+dex_number = 294
+display_name = "Loudred"
+id = "loudred"
+types = Array[int]([0])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 12
+hit_points = 45
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 14,
+1: 13,
+2: 13,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([4])
+abilities = Array[String](["Soundproof"])
+hidden_ability = "Scrappy"
+evolves_to = Array[String](["exploud"])
+evolution_level = 14
+evolution_points = 8
+level_moves = {
+2: ["Echoed Voice"],
+3: ["Astonish"],
+4: ["Howl"],
+5: ["Screech"],
+6: ["Supersonic"],
+8: ["Stomp"],
+9: ["Uproar"],
+11: ["Roar"],
+12: ["Rest"],
+14: ["Sleep Talk"],
+15: ["Hyper Voice", "Synchronoise"]
+}
+starting_moves = Array[String](["Bite", "Pound"])
+tms = Array[String](["tm_13", "tm_22", "tm_29", "tm_35", "tm_45", "tm_58", "tm_74", "tm_75", "tm_82", "tm_87", "tm_88", "tm_91", "tm_94", "tm_97", "tm_100", "tm_109", "tm_131", "tm_137", "tm_139", "tm_141", "tm_144", "tm_158", "tm_165", "tm_166", "tm_183", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_220", "tm_223", "tm_225", "tm_228", "tm_236", "tm_240", "tm_242", "tm_248", "tm_251", "tm_255", "tm_257", "tm_266", "tm_270", "tm_271", "tm_276", "tm_283", "tm_292", "tm_295", "tm_296", "tm_305", "tm_311", "tm_318", "tm_321"])
+egg_moves = Array[String](["Circle Throw", "Disarming Voice", "Endeavor", "Extrasensory", "Fake Tears", "Hammer Arm", "Smelling Salts", "Smokescreen", "Snore", "Take Down", "Whirlwind"])

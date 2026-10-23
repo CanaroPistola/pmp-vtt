@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://btait5yo88cm1"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_n3qan"]
+
+[resource]
+script = ExtResource("1_n3qan")
+id = "rage_fist"
+display_name = "Rage Fist"
+name_en = "Rage Fist"
+type = 13
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você converte sua raiva em energia para desferir um ataque devastador. Faça um ataque corpo a corpo, causando 1d10 + MOVE de dano do tipo fantasma em um acerto. Sempre que for atingido por um Move danoso durante este combate, os dados de dano deste Move aumentam em uma quantidade igual ao valor base, até o máximo de 7x o dano inicial. Cada golpe de um Move de múltiplos golpes conta como um acerto separado para este efeito. Trocar de Pokémon ou desmaiar não reinicia o contador de acúmulo do dano. Observações: Rage Fist não aumenta o dano se o usuário atacar a si mesmo, nem quando o Substitute do usuário é atingido. Ao usar Transform, o contador de acertos acumulados do alvo também é copiado."
+scaling_text = "Os dados de dano para este Move mudam para 2d8 no nível 5, 2d10 no nível 10 e 2d12 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 12,
+"move": true
+}
+}

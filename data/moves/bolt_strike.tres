@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://pgavgt33scrd"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_mmicx"]
+
+[resource]
+script = ExtResource("1_mmicx")
+id = "bolt_strike"
+display_name = "Bolt Strike (Ataque de Raios)"
+name_en = "Bolt Strike"
+name_pt = "Ataque de Raios"
+type = 3
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+range_category = 7
+range_distance = 12.0
+range_secondary = 1.5
+description = "Você concentra eletricidade em seu corpo, envolto por relâmpagos dourados, e se lança como um raio contra o alvo dentro de 12 metros de você em uma investida explosiva, sem desencadear ataques de oportunidade. Faça um ataque corpo a corpo -2 em uma criatura no alcance, causando 4d6 + MOVE de dano elétrico em um acerto. Qualquer criatura dentro de 3 metros do alvo deve fazer um teste de resistência de DES contra sua CD de Move e sofrer a mesma quantidade de dano em uma falha, ou metade desse valor em um sucesso. Em um resultado natural de 17 ou mais no acerto, o alvo recebe o status Paralisado."
+scaling_text = "Os dados de dano para este Move mudam para 2d20 no nível 5, 5d10 no nível 10 e 8d8 no nível 17."
+range_text_raw = "Corpo a corpo / (12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -2
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 8,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["paralysis"])

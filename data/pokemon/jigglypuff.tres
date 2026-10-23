@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cdqgqjgjg6dcx"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vjedt"]
+
+[resource]
+script = ExtResource("1_vjedt")
+dex_number = 39
+display_name = "Jigglypuff"
+id = "jigglypuff"
+types = Array[int]([0, 17])
+sr = "1"
+evolution_stage = 2
+armor_class = 13
+hit_points = 18
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 12,
+1: 12,
+2: 10,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([4, 14])
+abilities = Array[String](["Cute Charm", "Competitive"])
+hidden_ability = "Friend Guard"
+evolves_to = Array[String](["wigglytuff"])
+evolution_level = 6
+evolution_points = 11
+level_moves = {
+2: ["Echoed Voice", "Pound"],
+3: ["Covet", "Play Nice"],
+4: ["Disarming Voice"],
+5: ["Disable"],
+6: ["Double Slap"],
+7: ["Rollout"],
+8: ["Round"],
+9: ["Spit Up", "Stockpile", "Swallow", "Wake-Up Slap"],
+10: ["Rest"],
+11: ["Body Slam"],
+12: ["Gyro Ball"],
+13: ["Mimic"],
+14: ["Hyper Voice", "Play Rough"],
+15: ["Double-Edge"]
+}
+starting_moves = Array[String](["Charm", "Copycat", "Defense Curl", "Sing", "Sweet Kiss"])
+tms = Array[String](["tm_8", "tm_9", "tm_10", "tm_13", "tm_18", "tm_22", "tm_24", "tm_25", "tm_26", "tm_29", "tm_38", "tm_40", "tm_41", "tm_42", "tm_45", "tm_48", "tm_52", "tm_53", "tm_55", "tm_56", "tm_58", "tm_59", "tm_67", "tm_68", "tm_69", "tm_75", "tm_81", "tm_82", "tm_83", "tm_84", "tm_87", "tm_88", "tm_91", "tm_94", "tm_97", "tm_100", "tm_105", "tm_109", "tm_114", "tm_118", "tm_121", "tm_125", "tm_129", "tm_131", "tm_137", "tm_139", "tm_141", "tm_142", "tm_144", "tm_150", "tm_153", "tm_156", "tm_161", "tm_163", "tm_165", "tm_166", "tm_171", "tm_172", "tm_173", "tm_178", "tm_184", "tm_190", "tm_199", "tm_201", "tm_202", "tm_204", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_215", "tm_216", "tm_226", "tm_228", "tm_229", "tm_231", "tm_236", "tm_239", "tm_240", "tm_242", "tm_244", "tm_248", "tm_254", "tm_255", "tm_257", "tm_262", "tm_264", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_288", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_298", "tm_305", "tm_311", "tm_315", "tm_318", "tm_321"])
+egg_moves = Array[String](["Captivate", "Covet", "Fake Tears", "Feint Attack", "Gravity", "Heal Pulse", "Last Resort", "Misty Terrain", "Perish Song", "Present", "Punishment", "Rollout", "Sleep Talk", "Wish"])

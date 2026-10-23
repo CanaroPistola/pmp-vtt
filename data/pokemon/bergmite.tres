@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bh5c8daqy483j"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_404fd"]
+
+[resource]
+script = ExtResource("1_404fd")
+dex_number = 712
+display_name = "Bergmite"
+id = "bergmite"
+types = Array[int]([5])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 13
+hit_points = 19
+hit_dice = "d8"
+movement = {
+0: 4.5,
+1: 4.5
+}
+attributes = {
+0: 14,
+1: 9,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Own Tempo", "Ice Body"])
+hidden_ability = "Sturdy"
+evolves_to = Array[String](["avalugg"])
+evolution_level = 13
+evolution_points = 11
+level_moves = {
+2: ["Powder Snow"],
+4: ["Icy Wind"],
+5: ["Protect", "Take Down"],
+7: ["Sharpen"],
+8: ["Curse"],
+9: ["Ice Fang", "Iron Defense"],
+10: ["Ice Ball"],
+11: ["Crunch"],
+12: ["Rapid Spin"],
+13: ["Avalanche"],
+15: ["Blizzard", "Double-Edge", "Recover"]
+}
+starting_moves = Array[String](["Bite", "Harden", "Tackle"])
+tms = Array[String](["tm_4", "tm_13", "tm_16", "tm_22", "tm_25", "tm_35", "tm_42", "tm_45", "tm_50", "tm_51", "tm_58", "tm_59", "tm_83", "tm_87", "tm_99", "tm_108", "tm_109", "tm_121", "tm_122", "tm_131", "tm_138", "tm_139", "tm_140", "tm_142", "tm_143", "tm_144", "tm_147", "tm_199", "tm_209", "tm_214", "tm_216", "tm_222", "tm_223", "tm_224", "tm_225", "tm_228", "tm_229", "tm_248", "tm_255", "tm_256", "tm_267", "tm_270", "tm_275", "tm_276", "tm_282", "tm_286", "tm_296", "tm_311"])
+egg_moves = Array[String](["Aurora Veil", "Barrier", "Mirror Coat", "Mist", "Recover"])

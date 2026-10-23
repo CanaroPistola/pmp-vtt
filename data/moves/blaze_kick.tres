@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dde3t0wj0o7d0"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_rfmj3"]
+
+[resource]
+script = ExtResource("1_rfmj3")
+id = "blaze_kick"
+display_name = "Blaze Kick (Chute Flamejante)"
+name_en = "Blaze Kick"
+name_pt = "Chute Flamejante"
+type = 1
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Chamas irrompem de seus pés enquanto você desfere um chute poderoso. Faça um ataque corpo a corpo -1 em uma criatura, causando 4d4 + MOVE de dano de fogo em um acerto. Em um resultado natural de 19 ou 20 no acerto, o alvo fica queimado. Este Move causa um golpe crítico em rolagens naturais de 18 ou mais no acerto."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 5d8 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["burn"])

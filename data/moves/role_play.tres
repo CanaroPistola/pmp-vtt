@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://g3lp2eqmqdd7"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4xv56"]
+
+[resource]
+script = ExtResource("1_4xv56")
+id = "role_play"
+display_name = "Role Play"
+name_en = "Role Play"
+type = 10
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 15.0
+duration_is_permanent = true
+description = "Você tenta copiar a habilidade passiva de uma criatura dentro do alcance. Role 1d20 + MOVE  + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, sua habilidade passiva atual é substituída pela habilidade passiva do alvo. Observações: Role Play não é afetado por Substitute ou Moves de proteção, como Protect ou Detect, mas falhará se o alvo estiver protegido por Crafty Shield. Role Play falha se a Habilidade do alvo for Trace, Wonder Guard, Forecast, Flower Gift, Multitype, Illusion, Zen Mode, Imposter, Stance Change, Power of Alchemy, Receiver, Schooling, Comatose, Shields Down, Disguise, RKS System, Power Construct, Battle Bond, Ice Face, Gulp Missile, Neutralizing Gas, Zero to Hero, Commander, Quark Drive ou Protosynthesis. Role Play falha se a Habilidade do usuário for Multitype, Zen Mode, Stance Change, Schooling, Comatose, Shields Down, Disguise, RK S System, Power Construct, Battle Bond, Ice Face, Gulp Missile, Zero to Hero ou Commander. Se o usuário estiver sob o efeito de Illusion, usar Role Play fará com que sua ilusão se desfaça. Se o usuário tiver mudado de forma devido a Forecast, retornará à sua forma original após o uso bem - sucedido do Move."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([4])

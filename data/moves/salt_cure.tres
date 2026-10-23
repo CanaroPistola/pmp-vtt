@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://8uljdll8nlg3"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_3jmhh"]
+
+[resource]
+script = ExtResource("1_3jmhh")
+id = "salt_cure"
+display_name = "Salt Cure"
+name_en = "Salt Cure"
+type = 12
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você recobre o alvo com uma camada corrosiva de sal cristalizado, ferindo-o no impacto e fazendo o sal continuar a desgastá-lo. Faça um ataque à distância contra um alvo em alcance, causando 2d4 + MOVE de dano do tipo Pedra. Em um acerto, o alvo sofre dano sem tipo igual ao próprio nível ao final de cada turno, mantendo o efeito enquanto permanecer ativo. Se o alvo for um Pokémon do tipo Aço ou Água, o dano por turno passa a ser igual ao dobro do nível. Observações: Salt Cure não pode ser passado por Baton Pass. Os Starmobiles da Team Star não são afetados pelos efeitos secundários de Salt Cure."
+scaling_text = "Os dados de dano para este Move mudam para 2d6 no nível 5, 2d8 no nível 10 e 2d10 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}

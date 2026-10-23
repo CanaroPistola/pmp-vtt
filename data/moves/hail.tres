@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://doqgdln5u2whj"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_oxnm6"]
+
+[resource]
+script = ExtResource("1_oxnm6")
+id = "hail"
+display_name = "Hail (Granizo)"
+name_en = "Hail"
+name_pt = "Granizo"
+type = 5
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 15.0
+duration_rounds = 5
+description = "Você provoca uma tempestade de granizo maciça em um raio de 50 pés (15 metros), sempre centrado em você e acompanhando seus movimentos. O efeito dura 5 rodadas, a menos que seja cancelado por Air Lock ou Cloud Nine, ou caso outro clima seja ativado em seguida e a área dele esteja encostada na sua. Usar Hail enquanto já houver uma tempestade de granizo ativa não reinicia a duração. Confira os efeitos no livro."
+range_text_raw = "Pessoal (raio de 15 metros)"
+duration_text_raw = "5 rodadas"
+effect_tags = Array[String](["weather"])

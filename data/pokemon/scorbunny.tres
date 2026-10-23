@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bc51bpw8r1n4i"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_a3578"]
+
+[resource]
+script = ExtResource("1_a3578")
+dex_number = 813
+display_name = "Scorbunny"
+id = "scorbunny"
+types = Array[int]([1])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 9.0
+}
+attributes = {
+0: 12,
+1: 14,
+2: 11,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 3])
+abilities = Array[String](["Blaze"])
+hidden_ability = "Libero"
+evolves_to = Array[String](["raboot"])
+evolution_level = 6
+evolution_points = 6
+level_moves = {
+2: ["Ember"],
+3: ["Quick Attack"],
+4: ["Double Kick"],
+6: ["Flame Charge"],
+7: ["Agility"],
+8: ["Headbutt"],
+10: ["Counter"],
+11: ["Bounce"],
+12: ["Double-Edge"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_2", "tm_5", "tm_12", "tm_13", "tm_18", "tm_26", "tm_37", "tm_59", "tm_78", "tm_83", "tm_87", "tm_91", "tm_92", "tm_93", "tm_95", "tm_96", "tm_97", "tm_98", "tm_120", "tm_127", "tm_129", "tm_158", "tm_159", "tm_165", "tm_174", "tm_183", "tm_199", "tm_214", "tm_218", "tm_228", "tm_248", "tm_255", "tm_270", "tm_271", "tm_272", "tm_277", "tm_282", "tm_283", "tm_285", "tm_286", "tm_298", "tm_303"])
+egg_moves = Array[String](["High Jump Kick", "Sand Attack", "Sucker Punch", "Super Fang"])

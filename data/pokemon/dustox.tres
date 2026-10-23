@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://byq5du6s8u14d"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_eqil5"]
+
+[resource]
+script = ExtResource("1_eqil5")
+dex_number = 269
+display_name = "Dustox"
+id = "dustox"
+types = Array[int]([11, 7])
+sr = "7"
+min_level = 5
+evolution_stage = 3
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 3.0,
+2: 3.0
+}
+attributes = {
+0: 12,
+1: 14,
+2: 14,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([0])
+senses = Array[Dictionary]([{
+"range_m": 12.0,
+"type": 0
+}])
+abilities = Array[String](["Shield Dust"])
+hidden_ability = "Compound Eyes"
+level_moves = {
+4: ["Confusion"],
+5: ["Poison Powder"],
+6: ["Moonlight"],
+7: ["Venoshock"],
+8: ["Psybeam"],
+9: ["Light Screen", "Silver Wind"],
+10: ["Whirlwind"],
+11: ["Toxic"],
+12: ["Bug Buzz"],
+13: ["Protect"],
+14: ["Quiver Dance"]
+}
+starting_moves = Array[String](["Gust"])
+tms = Array[String](["tm_2", "tm_3", "tm_13", "tm_32", "tm_45", "tm_54", "tm_58", "tm_79", "tm_84", "tm_87", "tm_109", "tm_112", "tm_113", "tm_131", "tm_136", "tm_146", "tm_151", "tm_156", "tm_181", "tm_199", "tm_202", "tm_214", "tm_216", "tm_227", "tm_228", "tm_240", "tm_243", "tm_248", "tm_249", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_288", "tm_296", "tm_303", "tm_307"])

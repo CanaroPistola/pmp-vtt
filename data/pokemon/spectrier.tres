@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bmugnnd3q6q61"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_xyfls"]
+
+[resource]
+script = ExtResource("1_xyfls")
+dex_number = 897
+display_name = "Spectrier"
+id = "spectrier"
+types = Array[int]([13])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 173
+hit_dice = "d20"
+movement = {
+0: 15.0
+}
+attributes = {
+0: 14,
+1: 21,
+2: 17,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 6, 8])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 2
+}])
+abilities = Array[String](["Grim Neigh"])
+level_moves = {
+2: ["Double Kick"],
+4: ["Hex"],
+6: ["Stomp"],
+8: ["Confuse Ray"],
+10: ["Haze"],
+12: ["Shadow Ball"],
+14: ["Take Down"],
+15: ["Agility"],
+16: ["Disable", "Thrash"],
+17: ["Double-Edge"],
+18: ["Nasty Plot"]
+}
+starting_moves = Array[String](["Tackle", "Tail Whip"])
+tms = Array[String](["tm_5", "tm_12", "tm_25", "tm_35", "tm_38", "tm_46", "tm_50", "tm_51", "tm_52", "tm_59", "tm_68", "tm_83", "tm_87", "tm_106", "tm_113", "tm_124", "tm_130", "tm_136", "tm_152", "tm_174", "tm_178", "tm_180", "tm_184", "tm_186", "tm_188", "tm_194", "tm_199", "tm_202", "tm_206", "tm_214", "tm_228", "tm_234", "tm_240", "tm_248", "tm_253", "tm_255", "tm_266", "tm_270", "tm_277", "tm_282", "tm_283", "tm_286", "tm_316"])

@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d3s6qtd3hgbgs"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_h3kat"]
+
+[resource]
+script = ExtResource("1_h3kat")
+dex_number = 321
+display_name = "Wailord"
+id = "wailord"
+types = Array[int]([2])
+sr = "9"
+min_level = 8
+evolution_stage = 2
+armor_class = 13
+hit_points = 105
+hit_dice = "d12"
+movement = {
+0: 1.5,
+1: 15.0
+}
+attributes = {
+0: 13,
+1: 15,
+2: 20,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([12, 17])
+abilities = Array[String](["Water Veil", "Oblivious"])
+hidden_ability = "Pressure"
+level_moves = {
+2: ["Growl"],
+3: ["Water Gun"],
+4: ["Rollout"],
+5: ["Whirlpool"],
+6: ["Astonish"],
+7: ["Water Pulse"],
+8: ["Mist"],
+9: ["Brine"],
+10: ["Rest"],
+11: ["Water Spout"],
+12: ["Body Slam"],
+13: ["Amnesia"],
+15: ["Dive"],
+16: ["Bounce", "Hydro Pump"],
+17: ["Heavy Slam"]
+}
+starting_moves = Array[String](["Noble Roar", "Soak", "Splash"])
+tms = Array[String](["tm_13", "tm_16", "tm_22", "tm_23", "tm_26", "tm_30", "tm_35", "tm_45", "tm_57", "tm_58", "tm_74", "tm_75", "tm_87", "tm_109", "tm_113", "tm_122", "tm_131", "tm_136", "tm_137", "tm_139", "tm_144", "tm_148", "tm_157", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_225", "tm_228", "tm_232", "tm_239", "tm_248", "tm_255", "tm_264", "tm_270", "tm_275", "tm_276", "tm_296", "tm_311", "tm_312", "tm_313", "tm_314", "tm_321"])
+egg_moves = Array[String](["Aqua Ring", "Body Slam", "Clear Smog", "Curse", "Defense Curl", "Double-Edge", "Fissure", "Rollout", "Sleep Talk", "Snore", "Soak", "Thrash", "Tickle", "Zen Headbutt"])

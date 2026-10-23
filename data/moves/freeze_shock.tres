@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bb5ayal45rjeo"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ajagj"]
+
+[resource]
+script = ExtResource("1_ajagj")
+id = "freeze_shock"
+display_name = "Freeze Shock (Choque Congelante)"
+name_en = "Freeze Shock"
+name_pt = "Choque Congelante"
+type = 5
+pp = 3
+move_time = "1 ação, carga"
+is_attack = true
+resolution = 1
+needs_charge = true
+range_category = 2
+range_distance = 15.0
+duration_rounds = 2
+duration_flags = Array[String](["concentration"])
+description = "Quando você usa este Move, você carrega uma esfera elétrica e congelante que vai aumentando cada vez mais. Na ação de seu próximo turno, se você mantiver sua concentração, você lança uma esfera de gelo carregada eletricamente em uma criatura. Faça um ataque à distância -1, causando 3d10 + MOVE de dano de gelo em um acerto. Em um resultado natural de 15 ou mais no acerto, o alvo fica paralisado."
+scaling_text = "Os dados de dano para este Move mudam para 4d10 no nível 5, 7d8 no nível 10 e 7d10 no nível 17."
+range_text_raw = "(15 metros)"
+duration_text_raw = "2 rodadas, Concentração"
+role = 0
+move_power_attributes = Array[int]([1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 7,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 7,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["paralysis"])

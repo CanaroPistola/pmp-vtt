@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://t4o1vbmnbt6g"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_qtg00"]
+
+[resource]
+script = ExtResource("1_qtg00")
+id = "magic_coat"
+display_name = "Magic Coat"
+name_en = "Magic Coat"
+type = 10
+move_time = "1 reação"
+activation = 1
+range_category = 2
+range_distance = 15.0
+duration_rounds = 1
+description = "Um lampejo de energia mágica se forma entre você e uma criatura, refletindo energia negativa de volta para um atacante dentro do alcance. Quando você é alvo de um Move de Status, você pode usar sua reação para ativar este efeito. Até o início do seu próximo turno, qualquer Move de Status dir ecionado a você será refletido automaticamente contra o usuário original. Ao fazer isso, você abre mão de sua ação padrão em seu próximo turno. Observações: O efeito refletido não pode ser refletido novamente por outro Magic Coat ou Move semelhante."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Até o início do próximo turno"

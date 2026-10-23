@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://btx4g2r5kh4v2"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ibelf"]
+
+[resource]
+script = ExtResource("1_ibelf")
+id = "disable"
+display_name = "Disable"
+name_en = "Disable"
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 18.0
+duration_rounds = 4
+description = "Seus olhos brilham, envolvendo o inimigo em uma aura que momentaneamente bloqueia o uso de uma técnica. Escolha um alvo no alcance. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igu al, o último Move que ele ativou não poderá ser usado nos próximos 4 turnos. (Se isso encerraria um Solar Beam, Skull Bash, etc. durante a fase de carga do Move, o Move falha automaticamente no próximo turno do alvo). Disable não funciona com o Move Struggle. Observações: Este Move ignora Substitute."
+range_text_raw = "(18 metros)"
+duration_text_raw = "4 turnos"
+move_power_attributes = Array[int]([4, 5])

@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://vx1d7ny00hrd"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_142ec"]
+
+[resource]
+script = ExtResource("1_142ec")
+dex_number = 793
+display_name = "Nihilego"
+id = "nihilego"
+types = Array[int]([12, 7])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 260
+hit_dice = "d12"
+movement = {
+1: 12.0
+}
+attributes = {
+0: 16,
+1: 18,
+2: 20,
+3: 8,
+4: 17,
+5: 12
+}
+skills = Array[int]([5, 12, 17])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 0
+}, {
+"range_m": 6.0,
+"type": 2
+}])
+abilities = Array[String](["Beast Boost"])
+level_moves = {
+3: ["Clear Smog"],
+5: ["Psywave"],
+7: ["Headbutt"],
+8: ["Venoshock"],
+10: ["Toxic Spikes"],
+11: ["Safeguard"],
+13: ["Power Gem"],
+15: ["Acid Spray", "Mirror Coat"],
+16: ["Stealth Rock", "Venom Drench"],
+17: ["Wonder Room"],
+18: ["Head Smash"]
+}
+starting_moves = Array[String](["Acid", "Constrict", "Guard Split", "Pound", "Power Split", "Tickle"])
+tms = Array[String](["tm_9", "tm_20", "tm_31", "tm_40", "tm_45", "tm_47", "tm_49", "tm_53", "tm_58", "tm_75", "tm_87", "tm_106", "tm_109", "tm_114", "tm_120", "tm_130", "tm_131", "tm_148", "tm_150", "tm_156", "tm_161", "tm_170", "tm_184", "tm_191", "tm_199", "tm_202", "tm_207", "tm_212", "tm_214", "tm_216", "tm_223", "tm_225", "tm_226", "tm_228", "tm_229", "tm_231", "tm_248", "tm_249", "tm_250", "tm_255", "tm_261", "tm_262", "tm_270", "tm_276", "tm_284", "tm_290", "tm_293", "tm_294", "tm_296", "tm_301", "tm_307", "tm_317", "tm_319", "tm_321"])

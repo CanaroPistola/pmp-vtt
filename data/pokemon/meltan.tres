@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bdbq1iodrjqg0"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_p8t86"]
+
+[resource]
+script = ExtResource("1_p8t86")
+dex_number = 808
+display_name = "Meltan"
+id = "meltan"
+types = Array[int]([16])
+sr = "5"
+min_level = 5
+evolution_stage = 1
+armor_class = 13
+hit_points = 58
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 15,
+1: 10,
+2: 14,
+3: 8,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Magnet Pull"])
+evolves_to = Array[String](["melmetal"])
+evolution_level = 12
+evolution_points = 16
+level_moves = {
+3: ["Tail Whip"],
+6: ["Headbutt"],
+8: ["Thunder Wave"],
+11: ["Acid Armor"],
+14: ["Flash Cannon"]
+}
+starting_moves = Array[String](["Harden", "Thunder Shock"])
+tms = Array[String](["tm_87", "tm_199", "tm_214", "tm_228", "tm_255", "tm_263", "tm_293"])

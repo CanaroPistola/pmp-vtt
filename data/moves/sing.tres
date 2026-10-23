@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dwrhpv4d0mblc"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_xks1o"]
+
+[resource]
+script = ExtResource("1_xks1o")
+id = "sing"
+display_name = "Sing"
+name_en = "Sing"
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 4
+range_category = 5
+range_distance = 6.0
+description = "Você canta uma bela canção na tentativa de fazer as criaturas ficarem sonolentas. Todas as criaturas em um raio de 20 pés (6 metros), centrado em você,  devem fazer um teste de SAB contra sua CD de Move -5, ficando Sonolentas em caso de falha. Observações: Sing é um Move baseado em som."
+range_text_raw = "Pessoal (raio de 6 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([5])
+move_power_modifier = -5
+effect_tags = Array[String](["sleep"])

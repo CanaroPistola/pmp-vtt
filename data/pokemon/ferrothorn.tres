@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b01tma53lu0qr"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ixhvo"]
+
+[resource]
+script = ExtResource("1_ixhvo")
+dex_number = 598
+display_name = "Ferrothorn"
+id = "ferrothorn"
+types = Array[int]([4, 16])
+sr = "10"
+min_level = 5
+evolution_stage = 2
+armor_class = 18
+hit_points = 66
+hit_dice = "d12"
+movement = {
+0: 7.5,
+2: 7.5
+}
+attributes = {
+0: 18,
+1: 9,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([12, 17])
+abilities = Array[String](["Iron Barbs"])
+hidden_ability = "Anticipation"
+level_moves = {
+2: ["Rollout"],
+3: ["Curse"],
+5: ["Metal Claw"],
+6: ["Pin Missile"],
+7: ["Gyro Ball"],
+9: ["Iron Defense"],
+10: ["Mirror Shot"],
+12: ["Ingrain"],
+13: ["Self-Destruct"],
+15: ["Iron Head"],
+16: ["Payback"],
+17: ["Explosion", "Flash Cannon"]
+}
+starting_moves = Array[String](["Harden", "Power Whip", "Rock Climb", "Tackle"])
+tms = Array[String](["tm_3", "tm_12", "tm_13", "tm_23", "tm_31", "tm_35", "tm_36", "tm_45", "tm_58", "tm_82", "tm_84", "tm_86", "tm_87", "tm_99", "tm_109", "tm_112", "tm_113", "tm_114", "tm_118", "tm_121", "tm_131", "tm_136", "tm_147", "tm_148", "tm_150", "tm_164", "tm_179", "tm_186", "tm_189", "tm_191", "tm_199", "tm_214", "tm_216", "tm_217", "tm_222", "tm_228", "tm_231", "tm_238", "tm_239", "tm_241", "tm_248", "tm_255", "tm_257", "tm_262", "tm_263", "tm_264", "tm_270", "tm_271", "tm_276", "tm_278", "tm_290", "tm_293", "tm_294", "tm_296", "tm_319"])
+egg_moves = Array[String](["Acid Spray", "Bullet Seed", "Gravity", "Knock Off", "Leech Seed", "Rock Climb", "Seed Bomb", "Spikes", "Stealth Rock", "Toxic", "Worry Seed"])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c5prst7delygp"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8cxx5"]
+
+[resource]
+script = ExtResource("1_8cxx5")
+id = "grassy_terrain"
+display_name = "Grassy Terrain (Terreno de Plantas)"
+name_en = "Grassy Terrain"
+name_pt = "Terreno de Plantas"
+type = 4
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 12.0
+duration_rounds = 5
+description = "Um campo de grama começa a surgir do solo em um círculo ao seu redor, revestindo a terra com energia de cura. Por 5 rodadas, todas as criaturas no chão na área afetada se curam em um montante de pontos de vida igual a seus bônus de proficiência no final de seus turnos. Criaturas no chão são aquelas que não estão utilizando sua velocidade de vôo ou sobre efeito de Levitate, Magnet Rise ou Telekinesis. Confira os efeitos no livro."
+range_text_raw = "Pessoal (raio de 12 metros)"
+duration_text_raw = "5 rodadas"

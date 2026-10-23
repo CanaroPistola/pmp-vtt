@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dh4sa36ef1sqo"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_gfln3"]
+
+[resource]
+script = ExtResource("1_gfln3")
+dex_number = 415
+display_name = "Combee"
+id = "combee"
+types = Array[int]([11, 9])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 3.0,
+2: 3.0
+}
+attributes = {
+0: 10,
+1: 13,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0])
+abilities = Array[String](["Honey Gather"])
+hidden_ability = "Hustle"
+evolves_to = Array[String](["vespiquen"])
+evolution_level = 7
+evolution_points = 17
+level_moves = {
+5: ["Bug Bite"],
+10: ["Bug Buzz"]
+}
+starting_moves = Array[String](["Gust", "Struggle Bug", "Sweet Scent"])
+tms = Array[String](["tm_32", "tm_33", "tm_72", "tm_82", "tm_160", "tm_181", "tm_245", "tm_248", "tm_255", "tm_269", "tm_277", "tm_281", "tm_286"])

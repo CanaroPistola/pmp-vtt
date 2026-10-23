@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b6kqy54p4a7vn"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_el55u"]
+
+[resource]
+script = ExtResource("1_el55u")
+dex_number = 810
+display_name = "Grookey"
+id = "grookey"
+types = Array[int]([4])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 13,
+1: 12,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 12])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Grassy Surge"
+evolves_to = Array[String](["thwackey"])
+evolution_level = 6
+evolution_points = 6
+level_moves = {
+2: ["Branch Poke"],
+3: ["Taunt"],
+4: ["Razor Leaf"],
+6: ["Screech"],
+7: ["Knock Off"],
+8: ["Slam"],
+10: ["Uproar"],
+11: ["Wood Hammer"],
+12: ["Endeavor"]
+}
+starting_moves = Array[String](["Growl", "Scratch"])
+tms = Array[String](["tm_2", "tm_12", "tm_13", "tm_25", "tm_36", "tm_67", "tm_82", "tm_83", "tm_84", "tm_87", "tm_89", "tm_100", "tm_112", "tm_114", "tm_115", "tm_116", "tm_117", "tm_150", "tm_154", "tm_158", "tm_163", "tm_165", "tm_166", "tm_199", "tm_214", "tm_228", "tm_236", "tm_238", "tm_248", "tm_255", "tm_257", "tm_258", "tm_270", "tm_271", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_298", "tm_303", "tm_305"])
+egg_moves = Array[String](["Fake Out", "Growth", "Hammer Arm", "Leech Seed", "Nature Power", "Strength", "Worry Seed"])

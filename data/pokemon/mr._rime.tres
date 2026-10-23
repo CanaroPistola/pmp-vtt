@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://t4qd1oajmg5o"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_27vfd"]
+
+[resource]
+script = ExtResource("1_27vfd")
+dex_number = 866
+display_name = "Mr. Rime"
+id = "mr_rime"
+types = Array[int]([5, 10])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 82
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 13,
+1: 18,
+2: 11,
+3: 14,
+4: 14,
+5: 14
+}
+skills = Array[int]([2, 4, 14])
+senses = Array[Dictionary]([{
+"range_m": 4.5,
+"type": 2
+}])
+abilities = Array[String](["Tangled Feet", "Screen Cleaner"])
+hidden_ability = "Ice Body"
+level_moves = {
+4: ["Confusion"],
+6: ["Ally Switch"],
+7: ["Icy Wind"],
+8: ["Double Kick"],
+10: ["Psybeam"],
+11: ["Hypnosis"],
+12: ["Mirror Coat"],
+14: ["Sucker Punch"],
+15: ["Freeze-Dry", "Psychic"],
+16: ["Teeter Dance"]
+}
+starting_moves = Array[String](["After You", "Baton Pass", "Block", "Copycat", "Dazzling Gleam", "Encore", "Fake Tears", "Ice Shard", "Light Screen", "Mimic", "Misty Terrain", "Pound", "Protect", "Rapid Spin", "Recycle", "Reflect", "Role Play", "Safeguard", "Slack Off"])
+tms = Array[String](["tm_13", "tm_16", "tm_29", "tm_41", "tm_67", "tm_85", "tm_87", "tm_88", "tm_100", "tm_113", "tm_119", "tm_122", "tm_129", "tm_136", "tm_141", "tm_143", "tm_144", "tm_156", "tm_162", "tm_165", "tm_166", "tm_173", "tm_186", "tm_198", "tm_199", "tm_205", "tm_209", "tm_212", "tm_214", "tm_228", "tm_229", "tm_236", "tm_255", "tm_257", "tm_266", "tm_271", "tm_288", "tm_293", "tm_301", "tm_302", "tm_317"])
+egg_moves = Array[String](["Confuse Ray", "Fake Out", "Hypnosis", "Power Split", "Tickle"])

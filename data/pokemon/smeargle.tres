@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dcecho2lkab5m"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_aykgn"]
+
+[resource]
+script = ExtResource("1_aykgn")
+dex_number = 235
+display_name = "Smeargle"
+id = "smeargle"
+types = Array[int]([0])
+sr = "1"
+evolution_stage = 1
+armor_class = 12
+hit_points = 18
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 10,
+1: 13,
+2: 10,
+3: 6,
+4: 10,
+5: 14
+}
+skills = Array[int]([4, 15])
+abilities = Array[String](["Own Tempo", "Technician"])
+hidden_ability = "Moody"
+level_moves = {
+4: ["Sketch"],
+7: ["Sketch"],
+11: ["Sketch"],
+14: ["Sketch"],
+16: ["Sketch"],
+17: ["Sketch"],
+18: ["Sketch"],
+19: ["Sketch"],
+20: ["Sketch"]
+}
+starting_moves = Array[String](["Sketch"])

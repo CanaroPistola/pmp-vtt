@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c4s4fbjoha3m1"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ulnlc"]
+
+[resource]
+script = ExtResource("1_ulnlc")
+id = "last_respects"
+display_name = "Last Respects"
+name_en = "Last Respects"
+type = 13
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 7
+range_distance = 6.0
+range_secondary = 1.5
+description = "Você ataca em vingança pelos seus aliados. Faça um ataque corpo a corpo com alcance estendido de 20 pés (6 metros), causando 2d6 + MOVE de dano do tipo fantasma em um acerto. Para cada Pokémon do seu treinador que tenha desmaiado durante este combate, adicione mais dois dados de dano. Pokémon que forem revividos e desmaiarem novamente também contam para esse aumento. Este Move não aciona efeitos de inimigos que se ativam ao contato corpo a corpo."
+scaling_text = "Os dados de dano para este Move mudam para 2d8 no nível 5, 2d10 no nível 10 e 2d12 no nível 17."
+range_text_raw = "Corpo a corpo (6 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 12,
+"move": true
+}
+}

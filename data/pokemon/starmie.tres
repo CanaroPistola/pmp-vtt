@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dfmsfcw1ydg1s"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_cqhlo"]
+
+[resource]
+script = ExtResource("1_cqhlo")
+dex_number = 121
+display_name = "Starmie"
+id = "starmie"
+types = Array[int]([2, 10])
+sr = "9"
+min_level = 8
+evolution_stage = 2
+armor_class = 17
+hit_points = 64
+hit_dice = "d10"
+movement = {
+0: 9.0,
+1: 12.0
+}
+attributes = {
+0: 14,
+1: 17,
+2: 13,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([0])
+senses = Array[Dictionary]([{
+"range_m": 36.0,
+"type": 3
+}])
+abilities = Array[String](["Illuminate", "Natural Cure"])
+hidden_ability = "Analytic"
+level_moves = {
+14: ["Confuse Ray"]
+}
+starting_moves = Array[String](["Hydro Pump", "Rapid Spin", "Recover", "Spotlight", "Swift", "Water Gun"])
+tms = Array[String](["tm_9", "tm_16", "tm_22", "tm_30", "tm_45", "tm_53", "tm_57", "tm_58", "tm_69", "tm_85", "tm_87", "tm_99", "tm_101", "tm_109", "tm_113", "tm_114", "tm_118", "tm_121", "tm_122", "tm_131", "tm_136", "tm_139", "tm_144", "tm_156", "tm_161", "tm_170", "tm_184", "tm_199", "tm_201", "tm_202", "tm_206", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_228", "tm_232", "tm_243", "tm_244", "tm_248", "tm_255", "tm_270", "tm_275", "tm_276", "tm_277", "tm_284", "tm_290", "tm_293", "tm_294", "tm_296", "tm_300", "tm_301", "tm_311", "tm_312", "tm_314", "tm_317"])

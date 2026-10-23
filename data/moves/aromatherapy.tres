@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cboh6f6m4d3pe"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_inbmn"]
+
+[resource]
+script = ExtResource("1_inbmn")
+id = "aromatherapy"
+display_name = "Aromatherapy (Aromaterapia)"
+name_en = "Aromatherapy"
+name_pt = "Aromaterapia"
+type = 4
+pp = 3
+move_time = "1 ação"
+range_category = 5
+range_distance = 3.0
+description = "Você libera um aroma agradável que fortalece seus aliados. Todos os aliados dentro de um círculo de 6 metros, centrado em você, são curados de todas as Condições de Status."
+range_text_raw = "Pessoal (raio de 3 metros)"
+duration_text_raw = "Instantânea"

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://qdn7275xw3ay"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_kpwe3"]
+
+[resource]
+script = ExtResource("1_kpwe3")
+dex_number = 127
+display_name = "Pinsir"
+id = "pinsir"
+types = Array[int]([11])
+sr = "9"
+min_level = 5
+evolution_stage = 1
+armor_class = 16
+hit_points = 60
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 18,
+1: 15,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Hyper Cutter", "Mold Breaker"])
+hidden_ability = "Moxie"
+level_moves = {
+2: ["Bind"],
+3: ["Seismic Toss"],
+4: ["Harden"],
+5: ["Revenge"],
+6: ["Bug Bite", "Vital Throw"],
+8: ["Double Hit"],
+9: ["Brick Break"],
+10: ["X-Scissor"],
+11: ["Submission"],
+12: ["Storm Throw", "Strength"],
+14: ["Swords Dance"],
+15: ["Guillotine", "Superpower", "Thrash"]
+}
+starting_moves = Array[String](["Focus Energy", "Vise Grip"])
+tms = Array[String](["tm_13", "tm_20", "tm_29", "tm_31", "tm_32", "tm_34", "tm_35", "tm_45", "tm_55", "tm_58", "tm_74", "tm_87", "tm_89", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_129", "tm_131", "tm_136", "tm_147", "tm_150", "tm_199", "tm_209", "tm_214", "tm_216", "tm_217", "tm_223", "tm_225", "tm_228", "tm_248", "tm_251", "tm_255", "tm_262", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_278", "tm_288", "tm_289", "tm_296", "tm_320"])
+egg_moves = Array[String](["Bug Bite", "Close Combat", "Feint", "Feint Attack", "Flail", "Fury Attack", "Me First", "Quick Attack", "Superpower", "Thrash"])

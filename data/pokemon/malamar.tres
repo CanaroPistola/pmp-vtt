@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c7l3xsm12yvk7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vs2hu"]
+
+[resource]
+script = ExtResource("1_vs2hu")
+dex_number = 687
+display_name = "Malamar"
+id = "malamar"
+types = Array[int]([15, 10])
+sr = "11"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 57
+hit_dice = "d12"
+movement = {
+0: 7.5,
+1: 9.0
+}
+attributes = {
+0: 14,
+1: 13,
+2: 16,
+3: 10,
+4: 18,
+5: 14
+}
+skills = Array[int]([5, 8])
+abilities = Array[String](["Contrary", "Suction Cups"])
+hidden_ability = "Infiltrator"
+level_moves = {
+2: ["Reflect"],
+3: ["Foul Play"],
+4: ["Swagger"],
+5: ["Psywave", "Topsy-Turvy"],
+6: ["Hypnosis"],
+7: ["Psybeam"],
+8: ["Switcheroo"],
+9: ["Payback"],
+11: ["Light Screen"],
+12: ["Pluck"],
+13: ["Psycho Cut"],
+15: ["Night Slash", "Slash", "Superpower"]
+}
+starting_moves = Array[String](["Constrict", "Peck", "Reversal", "Tackle", "Wrap"])
+tms = Array[String](["tm_3", "tm_9", "tm_13", "tm_18", "tm_20", "tm_23", "tm_31", "tm_38", "tm_45", "tm_52", "tm_58", "tm_80", "tm_83", "tm_85", "tm_87", "tm_88", "tm_97", "tm_100", "tm_106", "tm_109", "tm_110", "tm_113", "tm_118", "tm_119", "tm_129", "tm_131", "tm_136", "tm_150", "tm_152", "tm_156", "tm_157", "tm_160", "tm_178", "tm_186", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_206", "tm_207", "tm_209", "tm_212", "tm_214", "tm_215", "tm_216", "tm_218", "tm_223", "tm_226", "tm_228", "tm_234", "tm_243", "tm_244", "tm_248", "tm_254", "tm_255", "tm_261", "tm_268", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_283", "tm_284", "tm_286", "tm_288", "tm_289", "tm_294", "tm_295", "tm_296", "tm_298", "tm_300", "tm_301"])
+egg_moves = Array[String](["Acupressure", "Camouflage", "Destiny Bond", "Disable", "Flatter", "Guard Swap", "Power Split", "Simple Beam"])

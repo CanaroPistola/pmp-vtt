@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b4afjd5urcsnj"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0gohg"]
+
+[resource]
+script = ExtResource("1_0gohg")
+dex_number = 404
+display_name = "Luxio"
+id = "luxio"
+types = Array[int]([3])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 13
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 13,
+1: 14,
+2: 14,
+3: 6,
+4: 12,
+5: 14
+}
+skills = Array[int]([13])
+abilities = Array[String](["Rivalry", "Intimidate"])
+hidden_ability = "Guts"
+evolves_to = Array[String](["luxray"])
+evolution_level = 10
+evolution_points = 10
+level_moves = {
+2: ["Leer"],
+3: ["Charge"],
+5: ["Spark"],
+6: ["Bite"],
+8: ["Roar"],
+10: ["Swagger"],
+11: ["Thunder Fang", "Volt Switch"],
+13: ["Crunch"],
+14: ["Thunder Wave"],
+15: ["Discharge", "Scary Face"],
+16: ["Wild Charge"]
+}
+starting_moves = Array[String](["Tackle", "Thunder Shock"])
+tms = Array[String](["tm_13", "tm_17", "tm_39", "tm_40", "tm_45", "tm_46", "tm_50", "tm_58", "tm_59", "tm_76", "tm_77", "tm_78", "tm_79", "tm_83", "tm_87", "tm_88", "tm_92", "tm_109", "tm_129", "tm_131", "tm_140", "tm_149", "tm_156", "tm_164", "tm_190", "tm_199", "tm_203", "tm_209", "tm_214", "tm_216", "tm_219", "tm_220", "tm_228", "tm_234", "tm_242", "tm_243", "tm_248", "tm_253", "tm_255", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_286", "tm_288", "tm_290", "tm_291", "tm_293", "tm_294", "tm_296", "tm_298", "tm_308", "tm_315"])
+egg_moves = Array[String](["Baby-Doll Eyes", "Double Kick", "Eerie Impulse", "Fake Tears", "Fire Fang", "Helping Hand", "Howl", "Ice Fang", "Night Slash", "Quick Attack", "Shock Wave", "Signal Beam", "Swift", "Take Down", "Thunder Fang"])

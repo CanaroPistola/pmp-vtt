@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://sdgfom2u1ckn"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_jddy8"]
+
+[resource]
+script = ExtResource("1_jddy8")
+dex_number = 12
+display_name = "Butterfree"
+id = "butterfree"
+types = Array[int]([11, 9])
+sr = "6"
+min_level = 5
+evolution_stage = 3
+armor_class = 14
+hit_points = 38
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 14,
+1: 15,
+2: 10,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([0, 14])
+abilities = Array[String](["Compound Eyes"])
+hidden_ability = "Tinted Lens"
+level_moves = {
+4: ["Confusion"],
+5: ["Poison Powder", "Sleep Powder", "Stun Spore"],
+6: ["Psybeam"],
+7: ["Silver Wind"],
+8: ["Supersonic"],
+9: ["Safeguard"],
+10: ["Whirlwind"],
+11: ["Bug Buzz"],
+12: ["Rage Powder"],
+13: ["Captivate"],
+14: ["Tailwind"],
+15: ["Air Slash", "Quiver Dance"]
+}
+starting_moves = Array[String](["Gust"])
+tms = Array[String](["tm_2", "tm_3", "tm_7", "tm_13", "tm_32", "tm_45", "tm_54", "tm_58", "tm_68", "tm_69", "tm_72", "tm_79", "tm_84", "tm_87", "tm_109", "tm_112", "tm_113", "tm_131", "tm_136", "tm_146", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_229", "tm_240", "tm_243", "tm_244", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_288", "tm_296", "tm_303", "tm_307"])

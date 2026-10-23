@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://x0c3cg3du04e"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_tl3vn"]
+
+[resource]
+script = ExtResource("1_tl3vn")
+dex_number = 832
+display_name = "Dubwool"
+id = "dubwool"
+types = Array[int]([0])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 15,
+2: 18,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 13])
+abilities = Array[String](["Fluffy", "Steadfast"])
+hidden_ability = "Bulletproof"
+level_moves = {
+4: ["Guard Split"],
+6: ["Double Kick"],
+7: ["Headbutt"],
+9: ["Take Down"],
+11: ["Guard Swap"],
+13: ["Reversal"],
+15: ["Cotton Guard", "Double-Edge"],
+16: ["Last Resort"]
+}
+starting_moves = Array[String](["Copycat", "Defense Curl", "Growl", "Tackle"])
+tms = Array[String](["tm_13", "tm_26", "tm_87", "tm_113", "tm_116", "tm_119", "tm_136", "tm_165", "tm_186", "tm_199", "tm_214", "tm_215", "tm_228", "tm_255", "tm_293"])
+egg_moves = Array[String](["Counter", "Stomp", "Swagger"])

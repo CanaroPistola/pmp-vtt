@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://lfyqa1k3wr8e"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_1kow0"]
+
+[resource]
+script = ExtResource("1_1kow0")
+id = "poison_gas"
+display_name = "Poison Gas (Gás Venenoso)"
+name_en = "Poison Gas"
+name_pt = "Gás Venenoso"
+type = 7
+pp = 20
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 2
+range_distance = 9.0
+target_area_radius = 4.5
+duration_rounds = 1
+description = "Você cria uma névoa de gás venenoso em um raio de  (4,5 metros), centrado em um ponto dentro do alcance. Criaturas que começam ou terminam seu turno na área devem ter sucesso em um teste de CON contra sua CD de Move -1 ou ficarem envenenadas. Cada criatura realiza esse teste apenas uma vez, enquanto permanecer na área. A nuvem de gás se dissipa no início do seu próximo turno."
+range_text_raw = "(9 metros)"
+duration_text_raw = "1 rodada"
+effect_tags = Array[String](["poison"])

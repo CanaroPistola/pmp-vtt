@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cuxcfcvqtmhky"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_73uk3"]
+
+[resource]
+script = ExtResource("1_73uk3")
+dex_number = 918
+display_name = "Spidops"
+id = "spidops"
+types = Array[int]([11])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 16,
+1: 14,
+2: 12,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 6])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Insomnia"])
+hidden_ability = "Stakeout"
+level_moves = {
+2: ["Struggle Bug"],
+3: ["Assurance"],
+4: ["Feint"],
+5: ["Bug Bite"],
+7: ["Block"],
+8: ["Counter"],
+10: ["Headbutt"],
+11: ["Sticky Web"],
+13: ["Gastro Acid"],
+14: ["Circle Throw"],
+15: ["Skitter Smack", "Throat Chop"]
+}
+starting_moves = Array[String](["Silk Trap", "String Shot", "Tackle"])
+tms = Array[String](["tm_3", "tm_25", "tm_29", "tm_32", "tm_33", "tm_36", "tm_79", "tm_83", "tm_87", "tm_89", "tm_100", "tm_112", "tm_113", "tm_114", "tm_150", "tm_155", "tm_158", "tm_160", "tm_184", "tm_191", "tm_195", "tm_199", "tm_209", "tm_214", "tm_218", "tm_225", "tm_234", "tm_241", "tm_245", "tm_248", "tm_260", "tm_269", "tm_270", "tm_271", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_297", "tm_298", "tm_303", "tm_304", "tm_320"])
+egg_moves = Array[String](["First Impression", "Lunge", "Memento", "Sucker Punch"])

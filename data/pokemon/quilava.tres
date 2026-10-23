@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://sxd88ekk5ag2"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_rd0wn"]
+
+[resource]
+script = ExtResource("1_rd0wn")
+dex_number = 156
+display_name = "Quilava"
+id = "quilava"
+types = Array[int]([1])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 45
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 14,
+1: 15,
+2: 12,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Blaze"])
+hidden_ability = "Flash Fire"
+evolves_to = Array[String](["typhlosion"])
+evolution_level = 12
+evolution_points = 10
+level_moves = {
+2: ["Smokescreen"],
+4: ["Ember"],
+5: ["Quick Attack"],
+7: ["Flame Wheel"],
+8: ["Defense Curl"],
+11: ["Swift"],
+12: ["Flame Charge"],
+14: ["Lava Plume"],
+15: ["Flamethrower"],
+16: ["Inferno", "Rollout"],
+17: ["Burn Up", "Double-Edge", "Overheat"],
+18: ["Eruption"]
+}
+starting_moves = Array[String](["Leer", "Tackle"])
+tms = Array[String](["tm_3", "tm_13", "tm_25", "tm_29", "tm_37", "tm_45", "tm_48", "tm_51", "tm_55", "tm_58", "tm_59", "tm_82", "tm_83", "tm_87", "tm_91", "tm_92", "tm_93", "tm_95", "tm_96", "tm_97", "tm_98", "tm_105", "tm_109", "tm_127", "tm_131", "tm_148", "tm_149", "tm_179", "tm_183", "tm_190", "tm_199", "tm_214", "tm_216", "tm_218", "tm_220", "tm_224", "tm_228", "tm_248", "tm_255", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_285", "tm_286", "tm_296", "tm_315", "tm_316", "tm_318", "tm_321"])
+egg_moves = Array[String](["Covet", "Crush Claw", "Curse", "Double Kick", "Double-Edge", "Extrasensory", "Flame Burst", "Flare Blitz", "Foresight", "Fury Swipes", "Howl", "Nature Power", "Quick Attack", "Reversal", "Thrash"])

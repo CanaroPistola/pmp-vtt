@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bk6wpnyg4pfif"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_0c3o1"]
+
+[resource]
+script = ExtResource("1_0c3o1")
+id = "mud_slap"
+display_name = "Mud-Slap (Ataque de Lama)"
+name_en = "Mud-Slap"
+name_pt = "Ataque de Lama"
+type = 8
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+save_attribute = 2
+range_category = 2
+range_distance = 12.0
+description = "Você atira lama em um alvo dentro do alcance. Faça um ataque à distância, causando 1d4 + MOVE de dano de terra em um acerto. Em um acerto, o alvo deve fazer um teste de CON contra sua CD de Move, ou ter sua Precisão reduzida em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "O dado de dano para este Move muda para 1d6 no nível 5, 1d8 no nível 10 e 1d10 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

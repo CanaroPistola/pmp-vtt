@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c1c7xyj1foynn"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_t1vqr"]
+
+[resource]
+script = ExtResource("1_t1vqr")
+dex_number = 787
+display_name = "Tapu Bulu"
+id = "tapu_bulu"
+types = Array[int]([4, 17])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 20
+hit_points = 366
+hit_dice = "d20"
+attributes = {
+0: 22,
+1: 17,
+2: 18,
+3: 12,
+4: 14,
+5: 18
+}
+skills = Array[int]([4, 12, 13])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 12.0,
+"type": 2
+}])
+abilities = Array[String](["Grassy Surge"])
+hidden_ability = "Telepathy"
+level_moves = {
+3: ["Horn Attack"],
+5: ["Giga Drain"],
+7: ["Mega Drain", "Scary Face"],
+9: ["Leech Seed"],
+11: ["Horn Leech"],
+13: ["Rototiller"],
+15: ["Nature’s Madness", "Zen Headbutt"],
+16: ["Megahorn", "Skull Bash"]
+}
+starting_moves = Array[String](["Disable", "Grassy Terrain", "Leafage", "Mean Look", "Superpower", "Whirlwind", "Withdraw", "Wood Hammer"])
+tms = Array[String](["tm_29", "tm_31", "tm_34", "tm_36", "tm_38", "tm_45", "tm_53", "tm_71", "tm_75", "tm_84", "tm_87", "tm_89", "tm_100", "tm_103", "tm_105", "tm_109", "tm_112", "tm_113", "tm_114", "tm_117", "tm_119", "tm_131", "tm_136", "tm_147", "tm_156", "tm_166", "tm_179", "tm_186", "tm_198", "tm_199", "tm_201", "tm_212", "tm_214", "tm_216", "tm_217", "tm_220", "tm_223", "tm_225", "tm_228", "tm_229", "tm_234", "tm_238", "tm_248", "tm_252", "tm_253", "tm_255", "tm_257", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_278", "tm_279", "tm_283", "tm_284", "tm_295", "tm_296", "tm_318", "tm_319", "tm_321"])

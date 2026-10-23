@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cqhgj3gist7al"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_05r31"]
+
+[resource]
+script = ExtResource("1_05r31")
+dex_number = 264
+display_name = "Linoone"
+id = "linoone"
+types = Array[int]([0])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 10.5,
+2: 12.0
+}
+attributes = {
+0: 14,
+1: 17,
+2: 14,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([15])
+abilities = Array[String](["Pickup", "Gluttony"])
+hidden_ability = "Quick Feet"
+evolves_to = Array[String](["obstagoon"])
+evolution_level = 12
+evolution_points = 9
+level_moves = {
+2: ["Tail Whip"],
+3: ["Sand Attack"],
+4: ["Headbutt"],
+5: ["Hone Claws", "Odor Sleuth"],
+6: ["Mud Sport"],
+7: ["Fury Swipes"],
+8: ["Covet"],
+9: ["Bestow"],
+10: ["Take Down"],
+11: ["Slash"],
+12: ["Double-Edge"],
+13: ["Flail"],
+14: ["Rest"],
+15: ["Belly Drum", "Fling"]
+}
+starting_moves = Array[String](["Growl", "Play Rough", "Rototiller", "Switcheroo", "Tackle"])
+tms = Array[String](["tm_13", "tm_22", "tm_40", "tm_41", "tm_45", "tm_48", "tm_55", "tm_58", "tm_75", "tm_87", "tm_100", "tm_109", "tm_113", "tm_114", "tm_120", "tm_129", "tm_131", "tm_136", "tm_137", "tm_139", "tm_144", "tm_149", "tm_153", "tm_174", "tm_189", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_220", "tm_228", "tm_238", "tm_240", "tm_241", "tm_242", "tm_248", "tm_255", "tm_266", "tm_270", "tm_271", "tm_272", "tm_275", "tm_276", "tm_277", "tm_280", "tm_288", "tm_289", "tm_290", "tm_293", "tm_294", "tm_296", "tm_300", "tm_311", "tm_314", "tm_318"])
+egg_moves = Array[String](["Charm", "Extreme Speed", "Helping Hand", "Mud-Slap", "Pursuit", "Rock Climb", "Simple Beam", "Sleep Talk", "Tickle", "Trick"])
+is_variant = true
+variant_data = {
+"Linoone": {
+"diff": {},
+"display_name": "Linoone",
+"is_default": true
+},
+"Linoone de Galar": {
+"diff": {
+"Evolve": "Obstagoon",
+"moves_diff": {
+"egg_moves": ["Knock Off", "Parting Shot", "Quick Guard"],
+"level_moves": {
+3: ["Snarl"],
+4: ["Headbutt"],
+5: ["Hone Claws"],
+6: ["Fury Swipes"],
+8: ["Rest"],
+10: ["Take Down"],
+11: ["Scary Face"],
+13: ["Counter"],
+15: ["Double-Edge", "Taunt"]
+},
+"starting_moves": ["Baby-Doll Eyes", "Leer", "Lick", "Night Slash", "Pin Missile", "Sand Attack", "Switcheroo", "Tackle"],
+"tms": ["tm_12", "tm_13", "tm_55", "tm_87", "tm_88", "tm_100", "tm_113", "tm_129", "tm_136", "tm_144", "tm_152", "tm_174", "tm_186", "tm_189", "tm_199", "tm_209", "tm_214", "tm_215", "tm_228", "tm_234", "tm_236", "tm_241", "tm_253", "tm_255", "tm_266", "tm_271", "tm_277", "tm_288", "tm_293", "tm_314"]
+},
+"types": [15, 0]
+},
+"display_name": "Linoone de Galar",
+"is_default": false
+}
+}

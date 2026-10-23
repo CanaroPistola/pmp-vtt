@@ -1,0 +1,80 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ypttq0r3eh4g"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_uswgb"]
+
+[resource]
+script = ExtResource("1_uswgb")
+dex_number = 570
+display_name = "Zorua"
+id = "zorua"
+types = Array[int]([15])
+sr = "1"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 7.5
+}
+attributes = {
+0: 11,
+1: 14,
+2: 11,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([5])
+abilities = Array[String](["Illusion"])
+evolves_to = Array[String](["zoroark"])
+evolution_level = 10
+evolution_points = 15
+level_moves = {
+2: ["Pursuit"],
+3: ["Fake Tears", "Hone Claws"],
+5: ["Fury Swipes"],
+6: ["Feint Attack"],
+7: ["Scary Face"],
+8: ["Knock Off"],
+9: ["Taunt"],
+10: ["Foul Play"],
+11: ["Torment"],
+13: ["Agility"],
+14: ["Embargo"],
+15: ["Nasty Plot", "Punishment"],
+16: ["Imprison", "Night Daze"]
+}
+starting_moves = Array[String](["Leer", "Scratch"])
+tms = Array[String](["tm_3", "tm_5", "tm_12", "tm_13", "tm_26", "tm_37", "tm_38", "tm_45", "tm_46", "tm_48", "tm_52", "tm_55", "tm_58", "tm_80", "tm_81", "tm_83", "tm_87", "tm_88", "tm_100", "tm_106", "tm_109", "tm_114", "tm_129", "tm_130", "tm_131", "tm_137", "tm_145", "tm_150", "tm_152", "tm_178", "tm_180", "tm_184", "tm_186", "tm_199", "tm_201", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_220", "tm_228", "tm_234", "tm_240", "tm_241", "tm_245", "tm_248", "tm_249", "tm_253", "tm_254", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_295", "tm_296", "tm_300", "tm_303", "tm_305"])
+egg_moves = Array[String](["Captivate", "Copycat", "Counter", "Dark Pulse", "Detect", "Extrasensory", "Memento", "Snatch", "Sucker Punch"])
+is_variant = true
+variant_data = {
+"Zorua": {
+"diff": {},
+"display_name": "Zorua",
+"is_default": true
+},
+"Zorua de Hisui": {
+"diff": {
+"moves_diff": {
+"egg_moves": ["Comeuppance", "Detect", "Extrasensory", "Memento"],
+"level_moves": {
+2: ["Torment"],
+3: ["Hone Claws"],
+4: ["Shadow Sneak"],
+6: ["Curse"],
+7: ["Taunt"],
+8: ["Knock Off"],
+11: ["Agility"],
+12: ["Shadow Ball"],
+14: ["Bitter Malice"],
+15: ["Foul Play", "Nasty Plot"]
+},
+"starting_moves": ["Leer", "Scratch"],
+"tms": ["tm_3", "tm_5", "tm_37", "tm_38", "tm_46", "tm_51", "tm_52", "tm_55", "tm_83", "tm_87", "tm_88", "tm_100", "tm_105", "tm_106", "tm_113", "tm_130", "tm_136", "tm_144", "tm_145", "tm_150", "tm_152", "tm_178", "tm_180", "tm_184", "tm_188", "tm_199", "tm_201", "tm_209", "tm_214", "tm_220", "tm_240", "tm_241", "tm_245", "tm_248", "tm_249", "tm_253", "tm_256", "tm_261", "tm_270", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_300", "tm_303", "tm_316"]
+},
+"types": [0, 13]
+},
+"display_name": "Zorua de Hisui",
+"is_default": false
+}
+}

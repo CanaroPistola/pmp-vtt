@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ckgeql01m86u6"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_bu76u"]
+
+[resource]
+script = ExtResource("1_bu76u")
+dex_number = 977
+display_name = "Dondozo"
+id = "dondozo"
+types = Array[int]([2])
+sr = "13"
+min_level = 10
+evolution_stage = 1
+armor_class = 16
+hit_points = 132
+hit_dice = "d12"
+movement = {
+0: 1.5,
+1: 12.0
+}
+attributes = {
+0: 19,
+1: 15,
+2: 20,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 8, 17])
+abilities = Array[String](["Unaware", "Oblivious"])
+hidden_ability = "Water Veil"
+level_moves = {
+2: ["Tickle"],
+4: ["Flail"],
+5: ["Rest", "Sleep Talk"],
+7: ["Dive"],
+9: ["Noble Roar"],
+10: ["Soak"],
+12: ["Body Slam"],
+14: ["Aqua Tail"],
+15: ["Order Up", "Rain Dance"],
+16: ["Double-Edge", "Heavy Slam"],
+17: ["Wave Crash"]
+}
+starting_moves = Array[String](["Supersonic", "Tackle", "Water Gun"])
+tms = Array[String](["tm_16", "tm_24", "tm_25", "tm_35", "tm_42", "tm_50", "tm_51", "tm_59", "tm_74", "tm_83", "tm_87", "tm_113", "tm_128", "tm_135", "tm_136", "tm_140", "tm_157", "tm_182", "tm_199", "tm_209", "tm_214", "tm_223", "tm_234", "tm_248", "tm_266", "tm_270", "tm_275", "tm_282", "tm_286", "tm_311", "tm_312", "tm_321"])
+egg_moves = Array[String](["Curse", "Fissure", "Thrash", "Yawn"])

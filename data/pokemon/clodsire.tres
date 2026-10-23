@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dfvwcqfqokadr"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_od8xr"]
+
+[resource]
+script = ExtResource("1_od8xr")
+dex_number = 980
+display_name = "Clodsire"
+id = "clodsire"
+types = Array[int]([7, 8])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 65
+hit_dice = "d10"
+movement = {
+0: 9.0,
+1: 6.0
+}
+attributes = {
+0: 14,
+1: 10,
+2: 14,
+3: 6,
+4: 15,
+5: 12
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Poison Point", "Water Absorb"])
+hidden_ability = "Unaware"
+level_moves = {
+2: ["Toxic Spikes"],
+3: ["Mud Shot"],
+4: ["Poison Tail"],
+6: ["Slam"],
+7: ["Yawn"],
+8: ["Poison Jab"],
+10: ["Sludge Wave"],
+12: ["Megahorn"],
+14: ["Toxic"],
+15: ["Earthquake"]
+}
+starting_moves = Array[String](["Amnesia", "Poison Sting", "Tail Whip"])
+tms = Array[String](["tm_1", "tm_10", "tm_24", "tm_25", "tm_35", "tm_42", "tm_51", "tm_55", "tm_59", "tm_73", "tm_74", "tm_83", "tm_87", "tm_113", "tm_120", "tm_124", "tm_128", "tm_129", "tm_132", "tm_135", "tm_136", "tm_148", "tm_157", "tm_158", "tm_174", "tm_175", "tm_176", "tm_191", "tm_192", "tm_199", "tm_209", "tm_214", "tm_223", "tm_225", "tm_231", "tm_248", "tm_249", "tm_250", "tm_260", "tm_262", "tm_266", "tm_267", "tm_270", "tm_275", "tm_282", "tm_286", "tm_296", "tm_297", "tm_298", "tm_307", "tm_311", "tm_312", "tm_321"])
+egg_moves = Array[String](["Acid Spray", "After You", "Ancient Power", "Counter", "Curse", "Double Kick", "Haze", "Mist", "Recover", "Spit Up", "Stockpile", "Swallow"])

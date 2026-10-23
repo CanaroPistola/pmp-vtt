@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b3bsdnvwhrwac"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_a3dqh"]
+
+[resource]
+script = ExtResource("1_a3dqh")
+id = "lash_out"
+display_name = "Lash Out"
+name_en = "Lash Out"
+type = 15
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você descarrega sua frustração em um golpe violento contra o alvo. Faça um ataque corpo a corpo, causando 2d8 + MOVE de dano sombrio em um acerto. Caso você tenha alguma mudança de status negativa, dobre os dados de dano. Observações: Lash Out não recebe esse aumento caso as mudanças de status sejam modificadas diretamente por efeitos como Haze, Clear Smog ou Topsy-Turvy."
+scaling_text = "Os dados de dano para este Move mudam para 2d10 no nível 5, 5d6 no nível 10 e 6d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+}
+}

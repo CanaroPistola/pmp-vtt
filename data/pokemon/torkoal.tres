@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://sbb7n0ccw7qe"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_njcc5"]
+
+[resource]
+script = ExtResource("1_njcc5")
+dex_number = 324
+display_name = "Torkoal"
+id = "torkoal"
+types = Array[int]([1])
+sr = "8"
+min_level = 5
+evolution_stage = 1
+armor_class = 16
+hit_points = 55
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 19,
+1: 10,
+2: 16,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["White Smoke", "Drought"])
+hidden_ability = "Shell Armor"
+level_moves = {
+2: ["Smog"],
+3: ["Withdraw"],
+4: ["Rapid Spin"],
+5: ["Fire Spin", "Smokescreen"],
+6: ["Clear Smog", "Flame Wheel"],
+8: ["Curse"],
+9: ["Body Slam", "Lava Plume"],
+10: ["Protect"],
+12: ["Flamethrower"],
+13: ["Iron Defense"],
+14: ["Amnesia", "Flail"],
+15: ["Heat Wave", "Inferno", "Shell Smash"],
+17: ["Eruption"]
+}
+starting_moves = Array[String](["Ember"])
+tms = Array[String](["tm_4", "tm_10", "tm_13", "tm_24", "tm_25", "tm_35", "tm_37", "tm_45", "tm_51", "tm_58", "tm_59", "tm_73", "tm_74", "tm_83", "tm_86", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_109", "tm_113", "tm_121", "tm_126", "tm_127", "tm_128", "tm_129", "tm_131", "tm_136", "tm_147", "tm_149", "tm_179", "tm_183", "tm_199", "tm_214", "tm_216", "tm_223", "tm_225", "tm_228", "tm_231", "tm_235", "tm_239", "tm_248", "tm_249", "tm_255", "tm_257", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_285", "tm_286", "tm_296", "tm_313", "tm_316", "tm_321"])
+egg_moves = Array[String](["Ancient Power", "Clear Smog", "Endure", "Eruption", "Fissure", "Flail", "Flame Burst", "Skull Bash", "Sleep Talk", "Superpower", "Yawn"])

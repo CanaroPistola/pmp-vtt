@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dac87b0lax4ax"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_7whqd"]
+
+[resource]
+script = ExtResource("1_7whqd")
+id = "defend_order"
+display_name = "Defend Order (Ordem de Defesa)"
+name_en = "Defend Order"
+name_pt = "Ordem de Defesa"
+type = 11
+pp = 5
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você convoca seus subordinados para formar um escudo natural à sua frente, aumentando sua Defesa e Defesa Especial em 1 estágio, podendo ser acumulado em até 6 estágios cada."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

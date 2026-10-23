@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://blngc0nw57l1b"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_2wrk8"]
+
+[resource]
+script = ExtResource("1_2wrk8")
+dex_number = 636
+display_name = "Larvesta"
+id = "larvesta"
+types = Array[int]([11, 1])
+sr = "4"
+evolution_stage = 1
+armor_class = 13
+hit_points = 42
+movement = {
+0: 7.5,
+2: 7.5
+}
+attributes = {
+0: 15,
+1: 15,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+senses = Array[Dictionary]([{
+"range_m": 7.5,
+"type": 0
+}])
+abilities = Array[String](["Flame Body"])
+hidden_ability = "Swarm"
+evolves_to = Array[String](["volcarona"])
+evolution_level = 16
+evolution_points = 8
+level_moves = {
+4: ["Absorb", "Struggle Bug"],
+7: ["Take Down"],
+10: ["Flame Charge", "Screech"],
+12: ["Leech Life"],
+14: ["Bug Bite"],
+15: ["Double-Edge"],
+16: ["Flame Wheel"],
+17: ["Bug Buzz"],
+18: ["Amnesia"],
+19: ["Thrash"],
+20: ["Flare Blitz"]
+}
+starting_moves = Array[String](["Ember", "String Shot"])
+tms = Array[String](["tm_2", "tm_10", "tm_13", "tm_25", "tm_32", "tm_33", "tm_38", "tm_45", "tm_58", "tm_59", "tm_83", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_109", "tm_112", "tm_127", "tm_131", "tm_155", "tm_156", "tm_160", "tm_164", "tm_183", "tm_195", "tm_199", "tm_202", "tm_214", "tm_216", "tm_228", "tm_229", "tm_236", "tm_243", "tm_245", "tm_248", "tm_255", "tm_257", "tm_269", "tm_270", "tm_271", "tm_276", "tm_282", "tm_286", "tm_296", "tm_298", "tm_303", "tm_315", "tm_316", "tm_321"])
+egg_moves = Array[String](["Absorb", "Endure", "Foresight", "Harden", "Magnet Rise", "Morning Sun", "String Shot", "Thrash", "Zen Headbutt"])

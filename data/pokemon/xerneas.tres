@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bxnheuqn3iifl"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_a7xya"]
+
+[resource]
+script = ExtResource("1_a7xya")
+dex_number = 716
+display_name = "Xerneas"
+id = "xerneas"
+types = Array[int]([17])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 17
+hit_points = 505
+hit_dice = "d20"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 17,
+1: 18,
+2: 20,
+3: 14,
+4: 18,
+5: 20
+}
+skills = Array[int]([9, 11, 14, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Fairy Aura"])
+level_moves = {
+2: ["Light Screen"],
+4: ["Aurora Beam"],
+6: ["Gravity"],
+9: ["Geomancy"],
+12: ["Moonblast"],
+15: ["Megahorn"],
+16: ["Horn Leech", "Night Slash", "Psych Up"],
+17: ["Misty Terrain"],
+18: ["Close Combat", "Nature Power"],
+19: ["Giga Impact"],
+20: ["Outrage"]
+}
+starting_moves = Array[String](["Aromatherapy", "Heal Pulse", "Ingrain", "Take Down"])
+tms = Array[String](["tm_23", "tm_38", "tm_45", "tm_53", "tm_54", "tm_58", "tm_68", "tm_75", "tm_82", "tm_87", "tm_99", "tm_103", "tm_109", "tm_113", "tm_114", "tm_118", "tm_122", "tm_131", "tm_136", "tm_137", "tm_151", "tm_156", "tm_172", "tm_173", "tm_179", "tm_182", "tm_199", "tm_201", "tm_202", "tm_207", "tm_209", "tm_212", "tm_214", "tm_216", "tm_220", "tm_223", "tm_228", "tm_248", "tm_252", "tm_255", "tm_270", "tm_271", "tm_276", "tm_277", "tm_287", "tm_290", "tm_293", "tm_294", "tm_296", "tm_317", "tm_321"])

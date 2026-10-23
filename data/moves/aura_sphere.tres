@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bo0krj7noyq3c"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_pd8si"]
+
+[resource]
+script = ExtResource("1_pd8si")
+id = "aura_sphere"
+display_name = "Aura Sphere (Aura Esférica)"
+name_en = "Aura Sphere"
+name_pt = "Aura Esférica"
+type = 6
+move_time = "1 ação"
+range_category = 2
+range_distance = 9.0
+description = "Você concentra sua aura em uma esfera de energia concentrada que atinge uma criatura no alcance. Este Move é garantido para acertar, causando 4d4 + MOVE de dano lutador, desde que você possa ver o alvo e ele esteja dentro do seu alcance. Role um d20 para chance de golpe crítico e outros efeitos."
+scaling_text = "Os dados de dano para esse Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}

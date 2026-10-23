@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://csceaphw4b7mq"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wjsrm"]
+
+[resource]
+script = ExtResource("1_wjsrm")
+dex_number = 240
+display_name = "Magby"
+id = "magby"
+types = Array[int]([1])
+sr = "2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 26
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 12,
+1: 16,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Flame Body"])
+hidden_ability = "Vital Spirit"
+evolves_to = Array[String](["magmar"])
+evolution_level = 10
+evolution_points = 8
+level_moves = {
+2: ["Ember"],
+3: ["Smokescreen"],
+4: ["Feint Attack"],
+5: ["Fire Spin"],
+6: ["Flame Wheel"],
+7: ["Clear Smog"],
+8: ["Flame Burst", "Scary Face"],
+9: ["Confuse Ray"],
+10: ["Fire Punch"],
+11: ["Lava Plume"],
+12: ["Low Kick", "Sunny Day"],
+14: ["Flamethrower"],
+15: ["Fire Blast"]
+}
+starting_moves = Array[String](["Leer", "Smog"])
+tms = Array[String](["tm_1", "tm_13", "tm_25", "tm_29", "tm_37", "tm_45", "tm_46", "tm_48", "tm_51", "tm_58", "tm_59", "tm_71", "tm_83", "tm_87", "tm_91", "tm_94", "tm_95", "tm_96", "tm_97", "tm_98", "tm_100", "tm_104", "tm_105", "tm_109", "tm_127", "tm_129", "tm_131", "tm_149", "tm_158", "tm_165", "tm_166", "tm_183", "tm_191", "tm_198", "tm_199", "tm_202", "tm_214", "tm_216", "tm_224", "tm_228", "tm_234", "tm_236", "tm_248", "tm_255", "tm_270", "tm_271", "tm_276", "tm_282", "tm_285", "tm_286", "tm_288", "tm_292", "tm_296", "tm_305", "tm_316"])
+egg_moves = Array[String](["Barrier", "Belch", "Belly Drum", "Cross Chop", "Dynamic Punch", "Flare Blitz", "Focus Energy", "Focus Punch", "Follow Me", "Iron Tail", "Karate Chop", "Mach Punch", "Mega Punch", "Power Swap", "Screech", "Thunder Punch"])

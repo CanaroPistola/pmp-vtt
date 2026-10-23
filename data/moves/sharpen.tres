@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://x5qwv3gcca18"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_rhobs"]
+
+[resource]
+script = ExtResource("1_rhobs")
+id = "sharpen"
+display_name = "Sharpen (Afiar)"
+name_en = "Sharpen"
+name_pt = "Afiar"
+pp = 15
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você reforça suas bordas, tornando-as mais afiadas e irregulares, aumentando seu Ataque em 1 estágio, podendo ser acumulado em até 6 estágios."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

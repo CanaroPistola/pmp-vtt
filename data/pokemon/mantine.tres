@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://u67ak1n5chh3"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6xj35"]
+
+[resource]
+script = ExtResource("1_6xj35")
+dex_number = 226
+display_name = "Mantine"
+id = "mantine"
+types = Array[int]([2, 9])
+sr = "11"
+min_level = 8
+evolution_stage = 2
+armor_class = 17
+hit_points = 72
+hit_dice = "d10"
+movement = {
+0: 1.5,
+1: 9.0
+}
+attributes = {
+0: 18,
+1: 15,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Swift Swim", "Water Absorb"])
+hidden_ability = "Water Veil"
+level_moves = {
+3: ["Bubble Beam"],
+4: ["Confuse Ray"],
+5: ["Wing Attack"],
+6: ["Headbutt"],
+7: ["Water Pulse"],
+8: ["Wide Guard"],
+9: ["Take Down"],
+11: ["Agility"],
+12: ["Air Slash"],
+13: ["Aqua Ring"],
+15: ["Bounce", "Hydro Pump"]
+}
+starting_moves = Array[String](["Bubble", "Bullet Seed", "Psybeam", "Roost", "Signal Beam", "Supersonic", "Tackle"])
+tms = Array[String](["tm_2", "tm_3", "tm_7", "tm_11", "tm_12", "tm_13", "tm_22", "tm_26", "tm_30", "tm_35", "tm_36", "tm_45", "tm_54", "tm_57", "tm_58", "tm_72", "tm_74", "tm_87", "tm_109", "tm_113", "tm_120", "tm_122", "tm_129", "tm_131", "tm_136", "tm_139", "tm_144", "tm_148", "tm_157", "tm_197", "tm_199", "tm_209", "tm_214", "tm_216", "tm_221", "tm_223", "tm_225", "tm_227", "tm_228", "tm_232", "tm_238", "tm_243", "tm_248", "tm_255", "tm_270", "tm_275", "tm_276", "tm_277", "tm_281", "tm_296", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Amnesia", "Confuse Ray", "Haze", "Hydro Pump", "Mirror Coat", "Mud Sport", "Signal Beam", "Slam", "Splash", "Tailwind", "Twister", "Water Sport", "Wide Guard"])

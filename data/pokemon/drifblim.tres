@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bd4ovs3rymwji"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0y4ae"]
+
+[resource]
+script = ExtResource("1_0y4ae")
+dex_number = 426
+display_name = "Drifblim"
+id = "drifblim"
+types = Array[int]([13, 9])
+sr = "9"
+min_level = 5
+evolution_stage = 2
+armor_class = 13
+hit_points = 77
+hit_dice = "d12"
+attributes = {
+0: 13,
+1: 16,
+2: 20,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Aftermath", "Unburden"])
+hidden_ability = "Flare Boost"
+level_moves = {
+2: ["Astonish"],
+3: ["Gust"],
+5: ["Focus Energy"],
+6: ["Payback"],
+7: ["Ominous Wind"],
+9: ["Hex", "Stockpile"],
+11: ["Self-Destruct"],
+12: ["Destiny Bond", "Spit Up", "Swallow"],
+14: ["Shadow Ball"],
+15: ["Amnesia", "Tailwind"],
+16: ["Baton Pass", "Explosion"],
+17: ["Phantom Force"]
+}
+starting_moves = Array[String](["Constrict", "Minimize", "Strength Sap"])
+tms = Array[String](["tm_2", "tm_3", "tm_6", "tm_7", "tm_9", "tm_10", "tm_13", "tm_18", "tm_20", "tm_25", "tm_31", "tm_38", "tm_40", "tm_45", "tm_51", "tm_54", "tm_58", "tm_69", "tm_80", "tm_83", "tm_86", "tm_87", "tm_100", "tm_102", "tm_104", "tm_109", "tm_113", "tm_121", "tm_124", "tm_129", "tm_130", "tm_131", "tm_136", "tm_144", "tm_145", "tm_150", "tm_161", "tm_177", "tm_180", "tm_181", "tm_184", "tm_186", "tm_188", "tm_197", "tm_199", "tm_200", "tm_201", "tm_202", "tm_209", "tm_211", "tm_214", "tm_216", "tm_228", "tm_239", "tm_240", "tm_242", "tm_244", "tm_248", "tm_255", "tm_261", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_284", "tm_285", "tm_286", "tm_288", "tm_290", "tm_293", "tm_294", "tm_296", "tm_300", "tm_301", "tm_313", "tm_316"])
+egg_moves = Array[String](["Body Slam", "Clear Smog", "Defog", "Destiny Bond", "Disable", "Haze", "Hypnosis", "Memento", "Tailwind", "Weather Ball"])

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://d1hq6n5qlljtm"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_rtelk"]
+
+[resource]
+script = ExtResource("1_rtelk")
+id = "icy_wind"
+display_name = "Icy Wind (Vento Gelado)"
+name_en = "Icy Wind"
+name_pt = "Vento Gelado"
+type = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 3
+range_distance = 12.0
+description = "Você cria um vento gélido que sopra à sua frente em um cone de 12 metros. Qualquer criatura pega no cone deve ter sucesso em um teste de DES contra sua CD de Move -1, sofrendo 1d12 + MOVE de dano de gelo em uma falha, ou metade do dano em um sucesso. Além disso, aqueles que falharem também terão suas Velocidades reduzidas em 1 estágio, podendo ser acumulado em até -6 estágios. Uma criatura cuja Velocidade seja reduzida a 0 com este Move fica impedida. O alvo pode gastar uma ação para tentar se livrar de qualquer gelo com um teste de FOR contra sua CD de Move."
+scaling_text = "O dado de dano para este Move muda para 4d4 no nível 5, 2d12 no nível 10 e 3d10 no nível 17."
+range_text_raw = "Pessoal (cone de 12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

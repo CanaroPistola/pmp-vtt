@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cley7xjrc5nms"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_7n47n"]
+
+[resource]
+script = ExtResource("1_7n47n")
+id = "wish"
+display_name = "Wish"
+name_en = "Wish"
+pp = 5
+move_time = "1 ação, carga"
+needs_charge = true
+range_category = 0
+range_distance = 0.0
+duration_rounds = 1
+description = "Você envia um desejo de cura que leva tempo para se tornar realidade. No final do seu próximo turno, cure a si mesmo ou um Pokémon que tenha substituído você em 2d6 + MOVE pontos de vida."
+scaling_text = "Os dados de cura para este Move mudam para 2d10 no nível 5, 4d8 no nível 10 e 4d12 no nível 17."
+range_text_raw = "Pessoal"
+duration_text_raw = "1 rodada"
+role = 1
+move_power_attributes = Array[int]([4, 5])
+has_healing = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["heal"])

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bs3epedmwx8op"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_pdolm"]
+
+[resource]
+script = ExtResource("1_pdolm")
+id = "iron_tail"
+display_name = "Iron Tail (Cauda de Ferro)"
+name_en = "Iron Tail"
+name_pt = "Cauda de Ferro"
+type = 16
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você balança sua cauda, tentando esmagar uma criatura. Faça um ataque corpo a corpo -3 contra um alvo, causando 2d10 + MOVE de dano de aço no acerto. Em um resultado natural de 15 ou mais no acerto, a Defesa do alvo é reduzida em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+move_power_modifier = -3
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

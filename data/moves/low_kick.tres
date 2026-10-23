@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ddn4udygep2cd"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_87kx3"]
+
+[resource]
+script = ExtResource("1_87kx3")
+id = "low_kick"
+display_name = "Low Kick (Chute baixo)"
+name_en = "Low Kick"
+name_pt = "Chute baixo"
+type = 6
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você chuta a parte inferior de uma criatura, causando dano e tentando desequilibrá-la. Faça um ataque corpo a corpo, causando 3d4 + MOVE de dano lutador em um acerto. Para cada escala de tamanho que o alvo estiver acima de médio, acrescente mais 1 dado de dano, e para cada escala de tamanho abaixo, reduza 1 dado de dano. Em um resultado natural de 19 ou 20 no acerto, o alvo fica caído."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 3d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["prone"])

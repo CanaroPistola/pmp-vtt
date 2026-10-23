@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dj0ir77g17376"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_g7by1"]
+
+[resource]
+script = ExtResource("1_g7by1")
+dex_number = 312
+display_name = "Minun"
+id = "minun"
+types = Array[int]([3])
+sr = "6"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 45
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 13,
+1: 17,
+2: 16,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([14])
+abilities = Array[String](["Minus"])
+hidden_ability = "Volt Absorb"
+level_moves = {
+2: ["Helping Hand"],
+3: ["Spark"],
+4: ["Encore"],
+5: ["Switcheroo"],
+6: ["Swift"],
+7: ["Electro Ball"],
+8: ["Copycat"],
+9: ["Fake Tears"],
+10: ["Charge"],
+11: ["Discharge"],
+12: ["Baton Pass"],
+13: ["Agility"],
+14: ["Last Resort", "Trump Card"],
+15: ["Entrainment", "Nasty Plot", "Thunder"]
+}
+starting_moves = Array[String](["Growl", "Nuzzle", "Play Nice", "Quick Attack", "Thunder Wave"])
+tms = Array[String](["tm_5", "tm_8", "tm_13", "tm_18", "tm_39", "tm_40", "tm_41", "tm_45", "tm_48", "tm_58", "tm_75", "tm_77", "tm_78", "tm_79", "tm_81", "tm_82", "tm_83", "tm_87", "tm_88", "tm_100", "tm_109", "tm_114", "tm_129", "tm_131", "tm_149", "tm_153", "tm_156", "tm_164", "tm_175", "tm_178", "tm_190", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_242", "tm_243", "tm_248", "tm_255", "tm_270", "tm_272", "tm_276", "tm_277", "tm_286", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_298", "tm_305", "tm_308", "tm_315"])
+egg_moves = Array[String](["Charm", "Discharge", "Fake Tears", "Lucky Chant", "Sing", "Sweet Kiss", "Tearful Look", "Wish"])

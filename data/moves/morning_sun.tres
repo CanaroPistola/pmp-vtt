@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bb64w3rq0xkl3"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_a86e8"]
+
+[resource]
+script = ExtResource("1_a86e8")
+id = "morning_sun"
+display_name = "Morning Sun"
+name_en = "Morning Sun"
+pp = 3
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+description = "Um raio de luz do sol brilha sobre você, banhando-o em luz curativa cuja potência depende do clima em que se encontra. Confira a tabela no livro. Se usado durante a noite , recebe metade da cura total (mesmo com o efeito de Luz Solar Intensa). Clima Nível 1 Nível 5 Nível 10 Nível 17 Sem clima 2d6 2d10 4d8 4d12 Luz Solar Intensa 3d6 3d10 5d8 5d12 Chuva, Granizo ou Tempestade de Areia 1d6 1d10 2d8 2d12"
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}

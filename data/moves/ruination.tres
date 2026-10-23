@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://masqp6q58pqj"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_qgr3t"]
+
+[resource]
+script = ExtResource("1_qgr3t")
+id = "ruination"
+display_name = "Ruination"
+name_en = "Ruination"
+type = 15
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "Você invoca uma calamidade sombria e devastadora sobre o alvo. Faça um ataque à distância -1 contra um alvo em alcance. Em um acerto, você causa dano igual à metade dos pontos de vida atuais do alvo (até um máximo de 5x seu nível). Esse dano não pode ser aumentado ou reduzido por nenhuma fonte, incluindo STAB, itens, condições, habilidades (de Pokémon ou Treinador), outros Moves ou acertos críticos."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0])
+move_power_modifier = -1

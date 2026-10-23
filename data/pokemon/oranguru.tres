@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bg020bodfw31l"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_b406o"]
+
+[resource]
+script = ExtResource("1_b406o")
+dex_number = 765
+display_name = "Oranguru"
+id = "oranguru"
+types = Array[int]([0, 10])
+sr = "10"
+min_level = 8
+evolution_stage = 1
+armor_class = 16
+hit_points = 90
+hit_dice = "d12"
+movement = {
+0: 7.5,
+2: 4.5
+}
+attributes = {
+0: 16,
+1: 14,
+2: 19,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([2, 11])
+abilities = Array[String](["Inner Focus", "Telepathy"])
+hidden_ability = "Symbiosis"
+level_moves = {
+2: ["After You"],
+3: ["Taunt"],
+4: ["Quash"],
+5: ["Stored Power"],
+6: ["Psych Up"],
+8: ["Feint Attack"],
+9: ["Nasty Plot"],
+10: ["Zen Headbutt"],
+11: ["Instruct"],
+12: ["Foul Play"],
+13: ["Calm Mind"],
+15: ["Future Sight", "Psychic", "Trick Room"]
+}
+starting_moves = Array[String](["Confusion"])
+tms = Array[String](["tm_4", "tm_9", "tm_13", "tm_23", "tm_25", "tm_29", "tm_31", "tm_35", "tm_38", "tm_40", "tm_42", "tm_45", "tm_48", "tm_58", "tm_69", "tm_74", "tm_80", "tm_81", "tm_82", "tm_83", "tm_84", "tm_85", "tm_87", "tm_100", "tm_103", "tm_106", "tm_109", "tm_110", "tm_113", "tm_118", "tm_131", "tm_136", "tm_137", "tm_145", "tm_150", "tm_156", "tm_161", "tm_162", "tm_165", "tm_166", "tm_178", "tm_179", "tm_184", "tm_186", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_208", "tm_209", "tm_212", "tm_214", "tm_216", "tm_223", "tm_228", "tm_229", "tm_234", "tm_240", "tm_244", "tm_248", "tm_254", "tm_255", "tm_261", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_287", "tm_290", "tm_294", "tm_296", "tm_298", "tm_300", "tm_301", "tm_317", "tm_318", "tm_321"])
+egg_moves = Array[String](["Dream Eater", "Extrasensory", "Last Resort", "Psychic Terrain", "Wonder Room", "Yawn"])

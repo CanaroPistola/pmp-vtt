@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cm5j5gpfp6u0b"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0olhm"]
+
+[resource]
+script = ExtResource("1_0olhm")
+dex_number = 847
+display_name = "Barraskewda"
+id = "barraskewda"
+types = Array[int]([2])
+sr = "9"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 64
+hit_dice = "d10"
+movement = {
+0: 1.5,
+1: 15.0
+}
+attributes = {
+0: 16,
+1: 19,
+2: 14,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 3, 8, 17])
+abilities = Array[String](["Swift Swim"])
+hidden_ability = "Propeller Tail"
+level_moves = {
+6: ["Agility"],
+8: ["Dive"],
+11: ["Focus Energy", "Laser Focus"],
+14: ["Crunch"],
+15: ["Liquidation"],
+16: ["Double-Edge"]
+}
+starting_moves = Array[String](["Aqua Jet", "Bite", "Fury Attack", "Peck", "Throat Chop"])
+tms = Array[String](["tm_5", "tm_12", "tm_13", "tm_22", "tm_26", "tm_29", "tm_42", "tm_43", "tm_50", "tm_57", "tm_59", "tm_70", "tm_83", "tm_87", "tm_101", "tm_113", "tm_135", "tm_136", "tm_139", "tm_140", "tm_157", "tm_191", "tm_199", "tm_203", "tm_209", "tm_214", "tm_228", "tm_233", "tm_234", "tm_248", "tm_255", "tm_270", "tm_275", "tm_277", "tm_282", "tm_286", "tm_289", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Acupressure", "Night Slash", "Slash", "Thrash"])

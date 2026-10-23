@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://t6op7s4g3typ"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4qdu8"]
+
+[resource]
+script = ExtResource("1_4qdu8")
+dex_number = 564
+display_name = "Tirtouga"
+id = "tirtouga"
+types = Array[int]([2, 12])
+sr = "2"
+evolution_stage = 1
+armor_class = 15
+hit_points = 17
+movement = {
+0: 4.5,
+1: 9.0
+}
+attributes = {
+0: 15,
+1: 9,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Solid Rock", "Sturdy"])
+hidden_ability = "Swift Swim"
+evolves_to = Array[String](["carracosta"])
+evolution_level = 13
+evolution_points = 11
+level_moves = {
+2: ["Rollout"],
+3: ["Bite"],
+4: ["Protect"],
+5: ["Aqua Jet"],
+6: ["Ancient Power"],
+7: ["Crunch"],
+9: ["Wide Guard"],
+10: ["Brine"],
+11: ["Iron Defense", "Smack Down"],
+12: ["Curse"],
+13: ["Shell Smash"],
+14: ["Aqua Tail"],
+15: ["Hydro Pump", "Rain Dance", "Rock Slide"]
+}
+starting_moves = Array[String](["Bide", "Water Gun", "Withdraw"])
+tms = Array[String](["tm_11", "tm_13", "tm_22", "tm_23", "tm_30", "tm_35", "tm_45", "tm_55", "tm_57", "tm_58", "tm_73", "tm_74", "tm_87", "tm_109", "tm_119", "tm_131", "tm_139", "tm_144", "tm_147", "tm_149", "tm_150", "tm_157", "tm_170", "tm_174", "tm_199", "tm_209", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_231", "tm_232", "tm_248", "tm_251", "tm_255", "tm_262", "tm_267", "tm_270", "tm_275", "tm_276", "tm_296", "tm_311", "tm_312", "tm_314", "tm_321"])
+egg_moves = Array[String](["Bide", "Block", "Body Slam", "Flail", "Guard Swap", "Iron Defense", "Knock Off", "Liquidation", "Rock Throw", "Rollout", "Slam", "Water Pulse", "Whirlpool"])

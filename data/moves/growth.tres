@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://jm2y4ikvdtvn"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_sg4aj"]
+
+[resource]
+script = ExtResource("1_sg4aj")
+id = "growth"
+display_name = "Growth"
+name_en = "Growth"
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você gera forças interiores que fortificam seu corpo, aumentando seu Ataque e Ataque Especial em 1 estágio, podendo ser acumulado em até 6 estágios cada. Durante luz solar intensa, o aumento passa a ser de 2 estágios cada."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

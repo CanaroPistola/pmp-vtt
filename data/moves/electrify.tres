@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cbt7tp5hpfpue"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_c3wya"]
+
+[resource]
+script = ExtResource("1_c3wya")
+id = "electrify"
+display_name = "Electrify"
+name_en = "Electrify"
+type = 3
+move_time = "1 reação / ação"
+is_attack = true
+resolution = 1
+activation = 3
+range_category = 7
+range_distance = 15.0
+range_secondary = 1.5
+description = "Você rapidamente lança uma descarga elétrica em um atacante, transformando seu Move usado em tipo elétrico. Quando qualquer criatura utilizar um Move dentro do alcance, você pode imediatamente usar sua reação para realizar um ataque corpo a corpo ou à distância contra o alvo (com acerto garantido em um aliado, desde que você possa vê -lo e ele esteja  dentro do seu alcance). Em um acerto, o tipo do Move é alterado para elétrico. Ao fazer isso, você abre mão de sua ação padrão em seu próximo turno. Observações: Electrify não afeta Struggle."
+range_text_raw = "Corpo a Corpo (15 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0, 1])

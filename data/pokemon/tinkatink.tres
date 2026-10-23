@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bpwr0xqq10f3a"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ig70y"]
+
+[resource]
+script = ExtResource("1_ig70y")
+dex_number = 957
+display_name = "Tinkatink"
+id = "tinkatink"
+types = Array[int]([17, 16])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 7.5
+}
+attributes = {
+0: 14,
+1: 11,
+2: 13,
+3: 6,
+4: 10,
+5: 11
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Mold Breaker", "Own Tempo"])
+hidden_ability = "Pickpocket"
+evolves_to = Array[String](["tinkatuff"])
+evolution_level = 8
+evolution_points = 10
+level_moves = {
+2: ["Baby-Doll Eyes"],
+3: ["Metal Claw"],
+4: ["Covet"],
+5: ["Rock Smash"],
+6: ["Draining Kiss"],
+7: ["Sweet Kiss"],
+8: ["Brutal Swing"],
+9: ["Slam"],
+11: ["Flash Cannon"],
+12: ["Play Rough"],
+13: ["Fake Out"],
+15: ["Flatter", "Skitter Smack"],
+16: ["Knock Off"]
+}
+starting_moves = Array[String](["Astonish", "Fairy Wind"])
+tms = Array[String](["tm_68", "tm_81", "tm_82", "tm_83", "tm_87", "tm_88", "tm_99", "tm_100", "tm_106", "tm_129", "tm_150", "tm_156", "tm_168", "tm_169", "tm_171", "tm_190", "tm_195", "tm_199", "tm_212", "tm_214", "tm_223", "tm_225", "tm_244", "tm_245", "tm_248", "tm_262", "tm_263", "tm_267", "tm_270", "tm_278", "tm_286", "tm_288", "tm_293"])
+egg_moves = Array[String](["Feint", "Ice Hammer", "Quash"])

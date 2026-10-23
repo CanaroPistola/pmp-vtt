@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://g0ms5055ls6n"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_fnjs8"]
+
+[resource]
+script = ExtResource("1_fnjs8")
+dex_number = 588
+display_name = "Karrablast"
+id = "karrablast"
+types = Array[int]([11])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 7.5,
+2: 7.5
+}
+attributes = {
+0: 12,
+1: 13,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Swarm", "Shed Skin"])
+hidden_ability = "No Guard"
+evolves_to = Array[String](["escavalier"])
+evolution_level = 10
+evolution_points = 10
+level_moves = {
+2: ["Leer"],
+3: ["Endure"],
+5: ["Fury Cutter"],
+6: ["Acid Spray", "Fury Attack"],
+7: ["Headbutt"],
+9: ["False Swipe"],
+10: ["Bug Buzz"],
+11: ["Slash"],
+13: ["Take Down"],
+14: ["Scary Face"],
+15: ["Flail", "X-Scissor"],
+16: ["Double-Edge", "Swords Dance"]
+}
+starting_moves = Array[String](["Peck"])
+tms = Array[String](["tm_3", "tm_13", "tm_32", "tm_45", "tm_58", "tm_70", "tm_84", "tm_87", "tm_89", "tm_109", "tm_112", "tm_131", "tm_146", "tm_147", "tm_150", "tm_191", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_234", "tm_236", "tm_243", "tm_248", "tm_255", "tm_270", "tm_276", "tm_278", "tm_296", "tm_320"])
+egg_moves = Array[String](["Bug Bite", "Counter", "Drill Run", "Feint Attack", "Horn Attack", "Knock Off", "Megahorn", "Night Slash", "Pursuit", "Screech", "Slash"])

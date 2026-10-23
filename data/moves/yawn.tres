@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bes3gmhap2e7b"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_0fx3g"]
+
+[resource]
+script = ExtResource("1_0fx3g")
+id = "yawn"
+display_name = "Yawn"
+name_en = "Yawn"
+pp = 5
+move_time = "1 ação"
+range_category = 2
+range_distance = 9.0
+duration_rounds = 1
+description = "Você solta um grande bocejo que faz uma criatura ficar com muito sono . Escolha um alvo dentro do alcance. O alvo fica Sonolento. Se ainda estiver em batalha ao final da próxima rodada, ele Dorme. Caso retorne para a Pokébola antes de dormir, o alvo perde a condição Sonolento."
+range_text_raw = "(9 metros)"
+duration_text_raw = "1 rodada"
+effect_tags = Array[String](["sleep"])

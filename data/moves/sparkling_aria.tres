@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bcwiwxv7gokdg"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4fey8"]
+
+[resource]
+script = ExtResource("1_4fey8")
+id = "sparkling_aria"
+display_name = "Sparkling Aria"
+name_en = "Sparkling Aria"
+type = 2
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 5
+range_distance = 6.0
+description = "Você irrompe em um canto, liberando uma enxurrada de bolhas em um raio de 20 pés (6 metros), centrado em você. Todas as criaturas no alcance devem fazer um teste de DES contra sua CD de Move, sofrendo 3d6 + MOVE de dano de água em caso de falha e metade disso em caso de sucesso. Qualquer criatura sofrendo da condição queimado será curada ao tocar as bolhas. Observações: Sparkling Aria é um Move baseado em som."
+scaling_text = "Os dados de dano para este Move mudam  para 3d10 no nível 5, 3d12 no nível 10 e 4d12 no nível 17."
+range_text_raw = "Pessoal (raio de 6 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["burn"])

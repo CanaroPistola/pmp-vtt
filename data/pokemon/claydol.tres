@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dqfgylnvci7nm"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wflub"]
+
+[resource]
+script = ExtResource("1_wflub")
+dex_number = 344
+display_name = "Claydol"
+id = "claydol"
+types = Array[int]([8, 10])
+sr = "11"
+min_level = 8
+evolution_stage = 2
+armor_class = 18
+hit_points = 88
+hit_dice = "d10"
+attributes = {
+0: 16,
+1: 15,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([2])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Levitate"])
+level_moves = {
+2: ["Rapid Spin"],
+3: ["Mud-Slap"],
+4: ["Heal Block"],
+5: ["Rock Tomb"],
+6: ["Psybeam"],
+7: ["Ancient Power"],
+8: ["Cosmic Power"],
+9: ["Power Trick"],
+10: ["Self-Destruct"],
+11: ["Extrasensory"],
+12: ["Guard Split", "Power Split"],
+14: ["Earth Power"],
+15: ["Sandstorm"],
+16: ["Explosion", "Imprison"]
+}
+starting_moves = Array[String](["Confusion", "Harden", "Hyper Beam", "Teleport"])
+tms = Array[String](["tm_9", "tm_35", "tm_38", "tm_40", "tm_45", "tm_53", "tm_55", "tm_58", "tm_69", "tm_70", "tm_73", "tm_74", "tm_76", "tm_85", "tm_86", "tm_87", "tm_109", "tm_113", "tm_114", "tm_118", "tm_119", "tm_121", "tm_130", "tm_131", "tm_136", "tm_139", "tm_145", "tm_156", "tm_161", "tm_198", "tm_199", "tm_201", "tm_202", "tm_205", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_222", "tm_223", "tm_225", "tm_228", "tm_229", "tm_230", "tm_231", "tm_235", "tm_239", "tm_240", "tm_243", "tm_244", "tm_248", "tm_251", "tm_255", "tm_257", "tm_262", "tm_267", "tm_270", "tm_271", "tm_276", "tm_284", "tm_296", "tm_300", "tm_301", "tm_317", "tm_321"])

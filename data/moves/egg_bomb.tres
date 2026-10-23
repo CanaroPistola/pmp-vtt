@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b7imo2j5evqbj"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_1iwub"]
+
+[resource]
+script = ExtResource("1_1iwub")
+id = "egg_bomb"
+display_name = "Egg Bomb (Ovo Bomba)"
+name_en = "Egg Bomb"
+name_pt = "Ovo Bomba"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 18.0
+description = "Você lança um projétil em forma de ovo que explode ao atingir o alvo. Faça um ataque à distância -3 em uma criatura, causando 2d10 + MOVE de dano normal em um acerto bem-sucedido."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+move_power_modifier = -3
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://j6igmshlwokv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_yoih3"]
+
+[resource]
+script = ExtResource("1_yoih3")
+id = "confusion"
+display_name = "Confusion (Confusão)"
+name_en = "Confusion"
+name_pt = "Confusão"
+type = 10
+pp = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 15.0
+description = "Você tenta entrar na mente de um alvo e causar confusão. Faça um ataque à distância em uma criatura dentro do alcance. Em caso de acerto, o alvo sofre 1d10 + MOVE de dano do tipo psíquico. Em um resultado natural de 19 ou 20 no acerto, o alvo fica confuso."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 3])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["confusion"])

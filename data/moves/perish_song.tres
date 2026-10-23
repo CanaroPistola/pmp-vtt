@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bqkkhwfiyepw3"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_fyphg"]
+
+[resource]
+script = ExtResource("1_fyphg")
+id = "perish_song"
+display_name = "Perish Song"
+name_en = "Perish Song"
+pp = 3
+move_time = "1 ação"
+range_category = 5
+range_distance = 18.0
+duration_rounds = 3
+description = "Você executa uma música com consequ ências devastadoras para as criaturas que a ouvem. Todas as criaturas dentro da área (incluindo você) desmaiam em 3 rodadas, no final de seus turnos, a menos que fujam ou sejam substituídos por seu treinador antes do final das três rodadas. Criaturas de nível superior ao seu não desmaiam, mas perdem PV iguais a 5 vezes o próprio nível. Perish Song ignora Moves de proteção como Protect ou Detect. Criaturas que já estejam sob a contagem de Perish Song não sofrem os efeitos de outro Perish Song  (o contador atu al não é alterado e uma nova contagem paralela não é iniciada). Observações: Se o Pokémon for trocado usando Baton Pass, a contagem é transferida para o Pokémon que entra (mesmo que ele tenha Soundproof). Perish Song é um Move baseado em som."
+range_text_raw = "Pessoal (raio de 18 metros)"
+duration_text_raw = "3 rodadas"

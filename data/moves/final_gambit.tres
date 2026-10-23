@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dkjwo3j6w423i"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_dkoym"]
+
+[resource]
+script = ExtResource("1_dkoym")
+id = "final_gambit"
+display_name = "Final Gambit"
+name_en = "Final Gambit"
+type = 6
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 2
+range_distance = 9.0
+description = "Você arrisca tudo e usa sua pró pria força de vida para causar dano a uma criatura em alcance. Quando você ativa este Move, force um alvo em alcance a fazer um teste de CON contra sua CD de Move. Em caso de falha, você desmaia imediatamente (independente do efeito de itens ou outros Moves), e o alvo recebe dano fixo do tipo lutador igual aos seus PVs restantes antes de desmaiar. O dano fixo  independe do tipo do alvo (não há resistências ou super efetivos, porém não causa dano quando há imunidade). Esse dano não pode ser aumentado ou reduz ido por nenhuma fonte, incluindo STAB, itens, condições, habilidades (de Pokémon ou Treinador), outros Moves ou acertos críticos . Se Final Gambit fizer o alvo desmaiar, o usuário desmaia antes do alvo. Caso este Move não atinja o oponente devido a imunidad e de tipo ou proteção, ou se o alvo passar no teste de CON,  então o Move falhará, e o usuário não desmaiará. Observações: O desmaio causado por este Move não é considerado como receber dano, portanto não ativa itens, Moves ou Habilidades que reduzam ou previnam dano recebido. Entretanto, para o alvo o efeito é tratado como dano, permitindo que ele utilize tais recursos, como Sturdy ou Endure."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0])

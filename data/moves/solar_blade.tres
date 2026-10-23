@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cwwwtqlommeh1"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_pbeky"]
+
+[resource]
+script = ExtResource("1_pbeky")
+id = "solar_blade"
+display_name = "Solar Blade (Lâmina Solar)"
+name_en = "Solar Blade"
+name_pt = "Lâmina Solar"
+type = 4
+pp = 5
+move_time = "1 ação, carga"
+is_attack = true
+resolution = 1
+needs_charge = true
+duration_rounds = 1
+duration_flags = Array[String](["concentration"])
+description = "Quando você ativa este Move, você usa sua ação para reunir energia solar e se preparar para atacar com lâminas energizadas. No seu próximo turno, se você mantiver a concentração, use uma ação para realizar um ataque corpo a corpo contra um alvo, causando 3d8 + MOVE de dano de grama em um acerto. Se este Move for usado sob luz solar intensa, ele pode ser executado imediatamente no momento em que for ativado, sem necessidade de concentração."
+scaling_text = "Os dados de dano para este Move mudam para 2d20 no nível 5, 5d10 no nível 10 e 8d8 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "1 rodada, Concentração"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 8,
+"dice_max": 8,
+"move": true
+}
+}

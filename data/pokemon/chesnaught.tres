@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://hyp1ebwrqh78"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_p5eqi"]
+
+[resource]
+script = ExtResource("1_p5eqi")
+dex_number = 652
+display_name = "Chesnaught"
+id = "chesnaught"
+types = Array[int]([4, 6])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 17
+hit_points = 117
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 18,
+1: 15,
+2: 17,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Bulletproof"
+level_moves = {
+2: ["Vine Whip"],
+3: ["Rollout"],
+4: ["Bite"],
+5: ["Leech Seed"],
+7: ["Pin Missile"],
+10: ["Take Down"],
+12: ["Seed Bomb"],
+14: ["Mud Shot"],
+15: ["Bulk Up"],
+16: ["Body Slam", "Pain Split"],
+17: ["Wood Hammer"],
+18: ["Giga Impact", "Hammer Arm"]
+}
+starting_moves = Array[String](["Belly Drum", "Feint", "Growl", "Needle Arm", "Spiky Shield", "Tackle"])
+tms = Array[String](["tm_3", "tm_13", "tm_23", "tm_24", "tm_25", "tm_29", "tm_34", "tm_35", "tm_36", "tm_43", "tm_44", "tm_45", "tm_50", "tm_51", "tm_55", "tm_58", "tm_59", "tm_63", "tm_67", "tm_71", "tm_74", "tm_82", "tm_83", "tm_84", "tm_87", "tm_100", "tm_103", "tm_105", "tm_107", "tm_109", "tm_112", "tm_113", "tm_114", "tm_115", "tm_116", "tm_117", "tm_121", "tm_129", "tm_131", "tm_132", "tm_136", "tm_147", "tm_148", "tm_149", "tm_150", "tm_154", "tm_158", "tm_159", "tm_163", "tm_168", "tm_174", "tm_175", "tm_179", "tm_184", "tm_186", "tm_191", "tm_199", "tm_209", "tm_212", "tm_214", "tm_216", "tm_218", "tm_220", "tm_223", "tm_225", "tm_228", "tm_234", "tm_238", "tm_241", "tm_248", "tm_249", "tm_251", "tm_255", "tm_257", "tm_260", "tm_266", "tm_267", "tm_270", "tm_271", "tm_272", "tm_274", "tm_276", "tm_277", "tm_278", "tm_279", "tm_282", "tm_283", "tm_286", "tm_292", "tm_296", "tm_298", "tm_318", "tm_319", "tm_321"])
+egg_moves = Array[String](["Belly Drum", "Curse", "Defense Curl", "Power-Up Punch", "Quick Guard", "Rollout", "Spikes", "Super Fang", "Synthesis", "Wide Guard"])

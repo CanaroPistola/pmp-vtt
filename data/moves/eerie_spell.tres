@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://uys4njtn8q8y"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4hbv8"]
+
+[resource]
+script = ExtResource("1_4hbv8")
+id = "eerie_spell"
+display_name = "Eerie Spell"
+name_en = "Eerie Spell"
+type = 10
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 4
+range_category = 2
+range_distance = 12.0
+description = "Você desfere um ataque usando um poder psíquico imenso, drenando também parte da energia do último Move usado pela criatura. O alvo deve fazer um teste de resistência de SAB contra sua CD de Move, sofrendo 4d4 + MOVE de dano psíquico em uma falha, ou metade disso em um sucesso. Em uma falha, o último Move usado pelo alvo tem seus PP reduzidos em 1. Observações: Eerie Spell é um Move baseado em som."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([3, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}

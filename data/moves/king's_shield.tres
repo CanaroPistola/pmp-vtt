@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dv25dxaq8wb1k"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_k7el0"]
+
+[resource]
+script = ExtResource("1_k7el0")
+id = "king's_shield"
+display_name = "King's Shield"
+name_en = "King's Shield"
+type = 16
+pp = 5
+move_time = "1 reação"
+activation = 1
+range_category = 0
+range_distance = 0.0
+duration_rounds = 1
+description = "Seu corpo é envolto por um escudo protetor que anula todo o dano para você. Quando você é alvo direto de um Move danoso de alvo único, você pode usar sua reação para evitar automaticamente o dano e efeitos desse e de qualquer outro Move danoso de alvo único direcionado a você até o início de seu próximo turno. Caso faça isso, você abre mão de sua ação padrão em seu próximo turno. Se algum ataque corpo a corpo for direcionado a você durante o efeito do King's Shield, o atacante tem seu Ataque reduzido em 2 estágios após o golpe , podendo ser acumulado em até -6 estágios. Se na rodada anterior você tiver usado King's Shield ou algum d os Moves Protect, Detect, Endure, Wide Guard, Quick Guard, Spiky Shield, Baneful Bunker, Burning Bulwark, Max Guard, Obstruct ou Silk Trap, role 1d6 para cada uso consecutivo bem - sucedido desses Moves, até o máximo de 6d6. Este Move só é bem- sucedido se todos os dados rolados resultarem em 5 ou 6. Observações: King's Shield não pode ser escolhido pelo Move Assist."
+range_text_raw = "Pessoal"
+duration_text_raw = "Até o início do próximo turno"
+effect_tags = Array[String](["stat_change", "protect"])

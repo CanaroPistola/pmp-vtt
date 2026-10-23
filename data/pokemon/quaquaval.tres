@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://5tpyiuh25a8u"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qin1s"]
+
+[resource]
+script = ExtResource("1_qin1s")
+dex_number = 914
+display_name = "Quaquaval"
+id = "quaquaval"
+types = Array[int]([2, 6])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 102
+hit_dice = "d12"
+movement = {
+0: 9.0,
+1: 9.0
+}
+attributes = {
+0: 16,
+1: 16,
+2: 15,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 4])
+abilities = Array[String](["Torrent"])
+hidden_ability = "Moxie"
+level_moves = {
+3: ["Work Up"],
+4: ["Wing Attack"],
+5: ["Aqua Jet"],
+6: ["Low Sweep", "Water Pulse"],
+7: ["Aqua Cutter"],
+9: ["Air Slash"],
+11: ["Focus Energy"],
+13: ["Mega Kick"],
+15: ["Acrobatics", "Liquidation"],
+16: ["Close Combat", "Feather Dance"],
+17: ["Wave Crash"]
+}
+starting_moves = Array[String](["Aqua Step", "Double Hit", "Growl", "Pound", "Water Gun"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_18", "tm_27", "tm_29", "tm_34", "tm_42", "tm_43", "tm_44", "tm_56", "tm_81", "tm_82", "tm_83", "tm_87", "tm_90", "tm_100", "tm_101", "tm_113", "tm_129", "tm_133", "tm_134", "tm_135", "tm_136", "tm_142", "tm_144", "tm_150", "tm_157", "tm_158", "tm_159", "tm_173", "tm_199", "tm_201", "tm_209", "tm_214", "tm_218", "tm_248", "tm_270", "tm_275", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_302", "tm_303", "tm_304", "tm_310", "tm_311", "tm_314"])
+egg_moves = Array[String](["Detect", "Last Resort", "Rapid Spin", "Roost"])

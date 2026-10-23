@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b1i7qvis83jjj"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ovcm1"]
+
+[resource]
+script = ExtResource("1_ovcm1")
+id = "multi_attack"
+display_name = "Multi-Attack (Multi-Ataque)"
+name_en = "Multi-Attack"
+name_pt = "Multi-Ataque"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você golpeia com poder interior, dependendo do seu tipo. Faça um ataque corpo a corpo em um alvo, causando 3d8 + MOVE de dano do seu tipo atual."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cu3jwlfbbtytv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_uy0os"]
+
+[resource]
+script = ExtResource("1_uy0os")
+id = "lunar_dance"
+display_name = "Lunar Dance (Dança Lunar)"
+name_en = "Lunar Dance"
+name_pt = "Dança Lunar"
+type = 10
+pp = 5
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+description = "Você se sacrifica, emanando uma pequena área de cura para o próximo Pokémon de seu treinador. Ao ativar este Move, o usuário desmaia, mas a próxima criatura libertada por seu treinador tem sua vida completamente restaurada, todos os PP restaurados e curada de quaisquer condições de status. Para receber esta cura, o Pokémon que entra deve estar a pelo menos  (1,5 metros) do exato local em que o usuário desmaiou."
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea"

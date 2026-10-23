@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c6vuk4ncp2ij"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_txd8h"]
+
+[resource]
+script = ExtResource("1_txd8h")
+id = "magnetic_flux"
+display_name = "Magnetic Flux (Fluxo Magnético)"
+name_en = "Magnetic Flux"
+name_pt = "Fluxo Magnético"
+type = 3
+move_time = "1 ação"
+range_category = 5
+range_distance = 12.0
+duration_is_permanent = true
+description = "Você usa sua energia elétrica para manipular campos magnéticos e aumentar a defesa de criaturas aliadas em alcance que possuam a habilidade passiva Plus ou Minus, aumentando a Defesa e Defesa Especial destes em 1 estágio, podendo ser acumulado em até 6 estágios."
+range_text_raw = "Pessoal (raio de 12 metros)"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

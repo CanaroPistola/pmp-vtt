@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ktg31fpiyvxj"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_te43i"]
+
+[resource]
+script = ExtResource("1_te43i")
+dex_number = 288
+display_name = "Vigoroth"
+id = "vigoroth"
+types = Array[int]([0])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 15,
+1: 16,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Vital Spirit"])
+evolves_to = Array[String](["slaking"])
+evolution_level = 12
+evolution_points = 9
+level_moves = {
+2: ["Encore"],
+3: ["Uproar"],
+5: ["Fury Swipes"],
+6: ["Endure"],
+8: ["Slash"],
+9: ["Chip Away", "Throat Chop"],
+11: ["Counter"],
+13: ["Focus Punch"],
+15: ["Reversal"]
+}
+starting_moves = Array[String](["Focus Energy", "Scratch"])
+tms = Array[String](["tm_3", "tm_4", "tm_10", "tm_13", "tm_22", "tm_25", "tm_29", "tm_34", "tm_35", "tm_42", "tm_45", "tm_48", "tm_51", "tm_55", "tm_58", "tm_59", "tm_67", "tm_74", "tm_81", "tm_82", "tm_83", "tm_87", "tm_89", "tm_91", "tm_94", "tm_97", "tm_100", "tm_103", "tm_105", "tm_109", "tm_120", "tm_129", "tm_131", "tm_137", "tm_139", "tm_141", "tm_144", "tm_150", "tm_152", "tm_158", "tm_159", "tm_168", "tm_171", "tm_174", "tm_175", "tm_182", "tm_190", "tm_191", "tm_199", "tm_209", "tm_214", "tm_216", "tm_218", "tm_220", "tm_223", "tm_225", "tm_228", "tm_234", "tm_238", "tm_240", "tm_241", "tm_242", "tm_248", "tm_255", "tm_257", "tm_266", "tm_270", "tm_271", "tm_276", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_298", "tm_305", "tm_311", "tm_318", "tm_320", "tm_321"])
+egg_moves = Array[String](["After You", "Body Slam", "Crush Claw", "Curse", "Hammer Arm", "Night Slash", "Pursuit", "Slash", "Sleep Talk", "Snore", "Tickle"])

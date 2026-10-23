@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dvoq7q26p3bva"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_l1tg1"]
+
+[resource]
+script = ExtResource("1_l1tg1")
+id = "mud_sport"
+display_name = "Mud Sport (Campo de Lama)"
+name_en = "Mud Sport"
+name_pt = "Campo de Lama"
+type = 8
+move_time = "1 ação"
+range_category = 5
+range_distance = 12.0
+duration_rounds = 5
+description = "Você cobre todo o ambiente em alcance num campo de lama pela duração, reduzindo o dano de ataques do tipo Elétrico pela metade, sejam estes ativados dentro da área ou contra alvos dentro da área."
+range_text_raw = "Pessoal (raio de 12 metros)"
+duration_text_raw = "5 rodadas"

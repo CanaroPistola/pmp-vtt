@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cixk4divtl2st"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_5fk75"]
+
+[resource]
+script = ExtResource("1_5fk75")
+dex_number = 483
+display_name = "Dialga"
+id = "dialga"
+types = Array[int]([16, 14])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 20
+hit_points = 505
+hit_dice = "d20"
+movement = {
+0: 24.0
+}
+attributes = {
+0: 20,
+1: 19,
+2: 20,
+3: 20,
+4: 24,
+5: 16
+}
+skills = Array[int]([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Pressure"])
+hidden_ability = "Telepathy"
+level_moves = {
+2: ["Metal Claw"],
+4: ["Ancient Power"],
+5: ["Slash"],
+7: ["Power Gem"],
+8: ["Metal Burst"],
+10: ["Dragon Claw"],
+11: ["Earth Power"],
+13: ["Aura Sphere"],
+14: ["Iron Tail"],
+15: ["Flash Cannon", "Roar of Time"]
+}
+starting_moves = Array[String](["Dragon Breath", "Scary Face"])
+tms = Array[String](["tm_3", "tm_14", "tm_22", "tm_24", "tm_25", "tm_28", "tm_29", "tm_34", "tm_35", "tm_45", "tm_58", "tm_60", "tm_63", "tm_65", "tm_66", "tm_73", "tm_74", "tm_75", "tm_83", "tm_87", "tm_91", "tm_97", "tm_99", "tm_103", "tm_109", "tm_113", "tm_118", "tm_128", "tm_131", "tm_136", "tm_137", "tm_139", "tm_147", "tm_148", "tm_149", "tm_164", "tm_168", "tm_169", "tm_182", "tm_183", "tm_196", "tm_199", "tm_201", "tm_209", "tm_214", "tm_216", "tm_220", "tm_223", "tm_224", "tm_225", "tm_228", "tm_229", "tm_231", "tm_233", "tm_234", "tm_241", "tm_242", "tm_248", "tm_255", "tm_262", "tm_263", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294", "tm_296", "tm_300", "tm_301"])
+is_variant = true
+variant_data = {
+"Dialga": {
+"diff": {},
+"display_name": "Dialga",
+"is_default": true
+},
+"Dialga Forma Origem": {
+"diff": {
+"attributes": {
+"STR": 24,
+"WIS": 20
+},
+"moves_diff": {
+"level_moves": {
+3: ["Dragon Breath"],
+6: ["Ancient Power"],
+8: ["Slash"],
+11: ["Flash Cannon"],
+14: ["Dragon Claw"],
+15: ["Aura Sphere"],
+16: ["Power Gem"],
+17: ["Metal Burst"],
+18: ["Earth Power", "Iron Tail"],
+19: ["Roar of Time"]
+},
+"starting_moves": ["Metal Claw", "Scary Face"],
+"tms": ["tm_3", "tm_14", "tm_22", "tm_24", "tm_25", "tm_28", "tm_29", "tm_34", "tm_35", "tm_60", "tm_63", "tm_65", "tm_66", "tm_73", "tm_74", "tm_83", "tm_87", "tm_91", "tm_97", "tm_99", "tm_103", "tm_113", "tm_118", "tm_128", "tm_136", "tm_137", "tm_139", "tm_147", "tm_148", "tm_149", "tm_168", "tm_169", "tm_182", "tm_183", "tm_196", "tm_199", "tm_201", "tm_209", "tm_214", "tm_220", "tm_223", "tm_224", "tm_225", "tm_231", "tm_233", "tm_234", "tm_241", "tm_248", "tm_262", "tm_263", "tm_266", "tm_267", "tm_270", "tm_271", "tm_277", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294", "tm_300", "tm_301"]
+}
+},
+"display_name": "Dialga Forma Origem",
+"is_default": false
+}
+}

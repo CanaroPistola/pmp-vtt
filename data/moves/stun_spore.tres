@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dkhu8rfg1wffo"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_nx2i3"]
+
+[resource]
+script = ExtResource("1_nx2i3")
+id = "stun_spore"
+display_name = "Stun Spore"
+name_en = "Stun Spore"
+type = 4
+pp = 15
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 4
+status_roll_target_attribute = 2
+range_category = 2
+range_distance = 4.5
+description = "Você libera uma nuvem de esporos em direção a uma criatura dentro do alcance. Role 1d20 + MOVE  + 4 e compare o resultado com 10 + CON do alvo. Em um resultado maior ou igual, o alvo fica Paralisado."
+range_text_raw = "(4,5 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([2])
+effect_tags = Array[String](["paralysis"])

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bokgk6t8lruma"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_e6m1v"]
+
+[resource]
+script = ExtResource("1_e6m1v")
+id = "hammer_arm"
+display_name = "Hammer Arm (Braço-Martelo)"
+name_en = "Hammer Arm"
+name_pt = "Braço-Martelo"
+type = 6
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você coloca toda a sua força em um ataque de punho forte e pesado. Faça um ataque corpo a corpo -1, causando 2d10 + MOVE de dano lutador no acerto. Após realizar este ataque, sua Velocidade é reduzida em 1 estágio, podendo ser acumulado em até -6 estágios. Além disso, até o final do seu próximo turno, você tem desvantagem em todos os testes de DES."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10, e 5d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://beroarf3mud77"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_er42v"]
+
+[resource]
+script = ExtResource("1_er42v")
+id = "confuse_ray"
+display_name = "Confuse Ray"
+name_en = "Confuse Ray"
+type = 13
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 1
+range_category = 2
+range_distance = 12.0
+description = "Você convoca esferas douradas de energia que orbitam o alvo antes de se fundirem em um único brilho intenso, deixando a criatura desorientada. Role 1d20 + MOVE + 9 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, ela fica Confusa."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([3, 4])
+effect_tags = Array[String](["confusion"])

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://x5q1ordm652u"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_nx5pm"]
+
+[resource]
+script = ExtResource("1_nx5pm")
+dex_number = 952
+display_name = "Scovillain"
+id = "scovillain"
+types = Array[int]([4, 1])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 45
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 15,
+1: 16,
+2: 18,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([8, 17])
+abilities = Array[String](["Chlorophyll", "Insomnia"])
+hidden_ability = "Moody"
+level_moves = {
+2: ["Bite"],
+4: ["Growth"],
+5: ["Razor Leaf"],
+6: ["Sunny Day"],
+7: ["Bullet Seed"],
+8: ["Headbutt"],
+10: ["Zen Headbutt"],
+11: ["Worry Seed"],
+13: ["Crunch"],
+15: ["Overheat", "Seed Bomb", "Solar Beam"]
+}
+starting_moves = Array[String](["Fire Fang", "Flamethrower", "Leafage", "Leer", "Spicy Extract"])
+tms = Array[String](["tm_36", "tm_37", "tm_50", "tm_82", "tm_83", "tm_84", "tm_87", "tm_91", "tm_92", "tm_97", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_129", "tm_136", "tm_152", "tm_154", "tm_163", "tm_183", "tm_199", "tm_214", "tm_231", "tm_234", "tm_238", "tm_248", "tm_257", "tm_266", "tm_270", "tm_271", "tm_272", "tm_282", "tm_285", "tm_286", "tm_288", "tm_298", "tm_316", "tm_321"])
+egg_moves = Array[String](["Ingrain", "Leech Seed", "Rage Powder", "Rollout", "Worry Seed"])

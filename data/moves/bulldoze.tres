@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://delyxr338f0vm"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_48hyg"]
+
+[resource]
+script = ExtResource("1_48hyg")
+id = "bulldoze"
+display_name = "Bulldoze"
+name_en = "Bulldoze"
+type = 8
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 5
+range_distance = 6.0
+description = "Você golpeia o chão com tanta força que a energia se espalha de você em um raio de 20 pés (6 metros). Qualquer criatura pega na área deve fazer um teste de DES contra sua CD de Move, sofrendo 2d6 + MOVE de dano do tipo terra em caso de f alha, ou metade disso em caso de sucesso. Criaturas que falharem no teste também têm suas Velocidades reduzidas em 1 estágio, podendo ser acumulado em até -6 estágios . Criaturas voando são imunes aos efeitos e dano deste Move."
+scaling_text = "Os dados d e dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "Pessoal (raio de 6 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

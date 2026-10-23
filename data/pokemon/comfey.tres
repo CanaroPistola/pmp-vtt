@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cu30drowcwgrg"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_fgq03"]
+
+[resource]
+script = ExtResource("1_fgq03")
+dex_number = 764
+display_name = "Comfey"
+id = "comfey"
+types = Array[int]([17])
+sr = "9"
+min_level = 5
+evolution_stage = 1
+armor_class = 18
+hit_points = 43
+hit_dice = "d8"
+attributes = {
+0: 17,
+1: 17,
+2: 16,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([11, 12])
+abilities = Array[String](["Flower Veil", "Triage"])
+hidden_ability = "Natural Cure"
+level_moves = {
+2: ["Leech Seed"],
+3: ["Draining Kiss"],
+4: ["Charm", "Magical Leaf"],
+5: ["Growth"],
+6: ["Wrap"],
+7: ["Sweet Kiss"],
+8: ["Natural Gift"],
+9: ["Petal Blizzard"],
+10: ["Synthesis"],
+11: ["Sweet Scent"],
+12: ["Bind", "Grass Knot"],
+13: ["Floral Healing"],
+14: ["Petal Dance"],
+15: ["Aromatherapy", "Grassy Terrain", "Play Rough"]
+}
+starting_moves = Array[String](["Flower Shield", "Helping Hand", "Vine Whip"])
+tms = Array[String](["tm_2", "tm_4", "tm_8", "tm_9", "tm_10", "tm_13", "tm_20", "tm_36", "tm_38", "tm_41", "tm_45", "tm_48", "tm_53", "tm_54", "tm_56", "tm_58", "tm_68", "tm_75", "tm_81", "tm_83", "tm_84", "tm_87", "tm_100", "tm_109", "tm_112", "tm_114", "tm_116", "tm_117", "tm_125", "tm_129", "tm_131", "tm_136", "tm_150", "tm_156", "tm_161", "tm_163", "tm_179", "tm_184", "tm_187", "tm_190", "tm_193", "tm_199", "tm_201", "tm_214", "tm_216", "tm_226", "tm_228", "tm_229", "tm_238", "tm_248", "tm_255", "tm_257", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_279", "tm_281", "tm_283", "tm_284", "tm_286", "tm_288", "tm_296", "tm_298", "tm_300", "tm_301", "tm_303", "tm_319"])
+egg_moves = Array[String](["After You", "Amnesia", "Endure", "Leaf Tornado", "Lucky Chant", "Worry Seed"])

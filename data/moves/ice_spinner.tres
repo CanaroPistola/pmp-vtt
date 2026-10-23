@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://byxgp5colppoi"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_cgwa8"]
+
+[resource]
+script = ExtResource("1_cgwa8")
+id = "ice_spinner"
+display_name = "Ice Spinner"
+name_en = "Ice Spinner"
+type = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você envolve os pés em uma fina camada de gelo, gira rapidamente e se lança contra o alvo como um redemoinho. Faça um ataque corpo a corpo, causando 4d4 + MOVE de dano do tipo gelo em um acerto. Se atingir um alvo dentro de um terreno (Electric Terrain, Grassy Terrain, Misty Terrain ou Psychic Terrain), o terreno é dissipado."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}

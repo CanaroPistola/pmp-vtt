@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cgmqkaq7xjs2g"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_sjb8u"]
+
+[resource]
+script = ExtResource("1_sjb8u")
+dex_number = 551
+display_name = "Sandile"
+id = "sandile"
+types = Array[int]([8, 15])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 17
+movement = {
+0: 7.5,
+1: 4.5
+}
+attributes = {
+0: 10,
+1: 13,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 0
+}])
+abilities = Array[String](["Intimidate", "Moxie"])
+hidden_ability = "Anger Point"
+evolves_to = Array[String](["krokorok"])
+evolution_level = 10
+evolution_points = 9
+level_moves = {
+2: ["Bite", "Hone Claws"],
+3: ["Sand Attack"],
+4: ["Torment"],
+5: ["Sand Tomb"],
+6: ["Assurance"],
+7: ["Mud-Slap"],
+8: ["Embargo"],
+9: ["Swagger"],
+10: ["Crunch"],
+11: ["Dig"],
+12: ["Scary Face"],
+13: ["Foul Play"],
+14: ["Sandstorm"],
+15: ["Earthquake", "Thrash"]
+}
+starting_moves = Array[String](["Leer", "Power Trip", "Rage"])
+tms = Array[String](["tm_11", "tm_12", "tm_13", "tm_19", "tm_25", "tm_29", "tm_35", "tm_45", "tm_50", "tm_51", "tm_52", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_80", "tm_83", "tm_87", "tm_92", "tm_100", "tm_106", "tm_109", "tm_114", "tm_129", "tm_131", "tm_149", "tm_152", "tm_174", "tm_175", "tm_186", "tm_199", "tm_214", "tm_215", "tm_216", "tm_220", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_234", "tm_235", "tm_241", "tm_245", "tm_248", "tm_249", "tm_253", "tm_254", "tm_255", "tm_261", "tm_262", "tm_266", "tm_267", "tm_270", "tm_276", "tm_282", "tm_283", "tm_286", "tm_288", "tm_291", "tm_295", "tm_296", "tm_305"])
+egg_moves = Array[String](["Aqua Tail", "Beat Up", "Counter", "Double-Edge", "Fire Fang", "Focus Energy", "Me First", "Mean Look", "Power Trip", "Pursuit", "Rock Climb", "Spite", "Thunder Fang", "Uproar"])

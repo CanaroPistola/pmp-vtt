@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://6v0o17p1mgtw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_1o36d"]
+
+[resource]
+script = ExtResource("1_1o36d")
+dex_number = 485
+display_name = "Heatran"
+id = "heatran"
+types = Array[int]([1, 16])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 20
+hit_points = 486
+hit_dice = "d20"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 19,
+1: 15,
+2: 19,
+3: 10,
+4: 14,
+5: 16
+}
+skills = Array[int]([3, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 1
+}])
+abilities = Array[String](["Flash Fire"])
+hidden_ability = "Flame Body"
+level_moves = {
+2: ["Metal Claw"],
+3: ["Leer"],
+6: ["Fire Fang"],
+9: ["Metal Sound"],
+11: ["Crunch"],
+14: ["Scary Face"],
+15: ["Lava Plume"],
+16: ["Fire Spin"],
+17: ["Iron Head"],
+18: ["Earth Power"],
+19: ["Heat Wave", "Stone Edge"],
+20: ["Magma Storm"]
+}
+starting_moves = Array[String](["Ancient Power"])
+tms = Array[String](["tm_13", "tm_24", "tm_25", "tm_32", "tm_35", "tm_37", "tm_45", "tm_50", "tm_52", "tm_55", "tm_58", "tm_65", "tm_73", "tm_74", "tm_83", "tm_86", "tm_87", "tm_91", "tm_92", "tm_95", "tm_96", "tm_97", "tm_98", "tm_99", "tm_109", "tm_113", "tm_123", "tm_126", "tm_127", "tm_128", "tm_131", "tm_136", "tm_147", "tm_148", "tm_160", "tm_168", "tm_169", "tm_179", "tm_183", "tm_186", "tm_195", "tm_196", "tm_199", "tm_214", "tm_216", "tm_220", "tm_221", "tm_223", "tm_224", "tm_225", "tm_228", "tm_231", "tm_234", "tm_235", "tm_239", "tm_248", "tm_255", "tm_257", "tm_262", "tm_263", "tm_264", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_282", "tm_283", "tm_286", "tm_295", "tm_296", "tm_305", "tm_316"])

@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c5ysjhprplwr"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qulgq"]
+
+[resource]
+script = ExtResource("1_qulgq")
+dex_number = 211
+display_name = "Qwilfish"
+id = "qwilfish"
+types = Array[int]([2, 7])
+sr = "5"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 20
+movement = {
+0: 1.5,
+1: 9.0
+}
+attributes = {
+0: 15,
+1: 16,
+2: 14,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([8])
+abilities = Array[String](["Poison Point", "Swift Swim"])
+hidden_ability = "Intimidate"
+evolves_to = Array[String](["overqwil"])
+evolution_level = 11
+evolution_points = 15
+level_moves = {
+3: ["Harden", "Minimize"],
+5: ["Bubble"],
+6: ["Rollout"],
+7: ["Toxic Spikes"],
+9: ["Spit Up", "Stockpile"],
+10: ["Revenge"],
+11: ["Brine"],
+13: ["Pin Missile"],
+14: ["Take Down"],
+15: ["Aqua Tail", "Poison Jab", "Toxic"],
+16: ["Acupressure", "Destiny Bond", "Fell Stinger", "Hydro Pump"]
+}
+starting_moves = Array[String](["Poison Sting", "Spikes", "Tackle", "Water Gun"])
+tms = Array[String](["tm_1", "tm_5", "tm_11", "tm_12", "tm_13", "tm_22", "tm_26", "tm_30", "tm_42", "tm_45", "tm_50", "tm_51", "tm_57", "tm_58", "tm_59", "tm_83", "tm_86", "tm_87", "tm_101", "tm_109", "tm_113", "tm_120", "tm_121", "tm_122", "tm_124", "tm_130", "tm_131", "tm_135", "tm_139", "tm_144", "tm_157", "tm_174", "tm_184", "tm_186", "tm_189", "tm_191", "tm_192", "tm_199", "tm_209", "tm_214", "tm_216", "tm_217", "tm_218", "tm_228", "tm_232", "tm_233", "tm_234", "tm_239", "tm_240", "tm_242", "tm_243", "tm_248", "tm_249", "tm_250", "tm_255", "tm_260", "tm_261", "tm_264", "tm_270", "tm_275", "tm_276", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289", "tm_293", "tm_296", "tm_297", "tm_307", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Acid Spray", "Aqua Jet", "Astonish", "Barb Barrage", "Brine", "Bubble Beam", "Flail", "Haze", "Self-Destruct", "Signal Beam", "Supersonic", "Water Pulse"])
+is_variant = true
+variant_data = {
+"Qwilfish": {
+"diff": {},
+"display_name": "Qwilfish",
+"is_default": true
+},
+"Qwilfish de Hisui": {
+"diff": {
+"moves_diff": {
+"egg_moves": ["Acid Spray", "Aqua Jet", "Aqua Tail", "Astonish", "Bubble Beam", "Flail", "Haze", "Self-Destruct", "Supersonic", "Water Pulse"],
+"level_moves": {
+2: ["Harden"],
+3: ["Bite"],
+4: ["Fell Stinger"],
+6: ["Minimize"],
+7: ["Spikes"],
+8: ["Brine"],
+10: ["Barb Barrage"],
+11: ["Pin Missile"],
+12: ["Toxic Spikes"],
+14: ["Spit Up", "Stockpile"],
+15: ["Crunch", "Toxic"],
+16: ["Acupressure", "Destiny Bond"]
+},
+"starting_moves": ["Poison Sting", "Tackle"],
+"tms": ["tm_1", "tm_5", "tm_11", "tm_22", "tm_42", "tm_50", "tm_51", "tm_52", "tm_59", "tm_83", "tm_87", "tm_113", "tm_120", "tm_121", "tm_124", "tm_130", "tm_135", "tm_138", "tm_139", "tm_144", "tm_152", "tm_157", "tm_174", "tm_184", "tm_191", "tm_192", "tm_199", "tm_209", "tm_214", "tm_218", "tm_233", "tm_234", "tm_240", "tm_248", "tm_249", "tm_260", "tm_261", "tm_270", "tm_275", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289", "tm_296", "tm_297", "tm_307", "tm_311", "tm_312"]
+},
+"types": [15, 7]
+},
+"display_name": "Qwilfish de Hisui",
+"is_default": false
+}
+}

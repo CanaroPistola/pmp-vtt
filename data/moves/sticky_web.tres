@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dfg78fkxwl1ia"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_dkh4r"]
+
+[resource]
+script = ExtResource("1_dkh4r")
+id = "sticky_web"
+display_name = "Sticky Web"
+name_en = "Sticky Web"
+type = 11
+move_time = "1 ação"
+range_category = 2
+range_distance = 15.0
+target_area_radius = 6.0
+description = "Você rapidamente invoca uma área de teias grudentas no chão em um raio de 20 pés (6 metros), centrado em um ponto dentro do alcance. Sempre que uma criatura entrar nessa área, ou quando um Pokémon for substituído e o próximo surgir dentro dela, a criatura tem sua Velocidade reduzida em 1 estágio, podendo ser acumulado em até -6 estágios. Mover-se dentro da área ou sair dela não reduz a Velocidade , mas é considerado terreno difícil . Um mesmo Pokémon pode manter até duas áreas de Sticky Web ativas simultaneamente. Caso tente criar uma terceira, a mais antiga desaparece automaticamente . Pokémon elevados não sofrem o efeito deste Move. Pokémon elevados são quaisquer do tipo Voador, aqueles sob os efeitos de Levitate, Magnet Rise, Telekinesis ou por segurarem um Air Balloon."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+effect_tags = Array[String](["stat_change", "hazard"])

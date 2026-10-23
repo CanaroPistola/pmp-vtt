@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://o1ebhte2nbnw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_65w3b"]
+
+[resource]
+script = ExtResource("1_65w3b")
+dex_number = 959
+display_name = "Tinkaton"
+id = "tinkaton"
+types = Array[int]([17, 16])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 17
+hit_points = 112
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 18,
+1: 14,
+2: 16,
+3: 6,
+4: 14,
+5: 14
+}
+skills = Array[int]([3, 8, 10, 17])
+abilities = Array[String](["Mold Breaker", "Own Tempo"])
+hidden_ability = "Pickpocket"
+level_moves = {
+2: ["Baby-Doll Eyes"],
+3: ["Metal Claw"],
+4: ["Covet"],
+5: ["Rock Smash"],
+6: ["Draining Kiss"],
+7: ["Sweet Kiss"],
+8: ["Brutal Swing"],
+9: ["Slam"],
+11: ["Flash Cannon"],
+12: ["Play Rough"],
+13: ["Fake Out"],
+15: ["Flatter", "Skitter Smack"],
+16: ["Knock Off"]
+}
+starting_moves = Array[String](["Astonish", "Fairy Wind", "Gigaton Hammer"])
+tms = Array[String](["tm_29", "tm_35", "tm_68", "tm_81", "tm_82", "tm_83", "tm_87", "tm_88", "tm_99", "tm_100", "tm_106", "tm_123", "tm_128", "tm_129", "tm_150", "tm_156", "tm_168", "tm_169", "tm_171", "tm_190", "tm_195", "tm_199", "tm_212", "tm_214", "tm_223", "tm_225", "tm_244", "tm_245", "tm_248", "tm_251", "tm_262", "tm_263", "tm_267", "tm_270", "tm_278", "tm_286", "tm_288", "tm_293"])
+egg_moves = Array[String](["Feint", "Ice Hammer", "Quash"])

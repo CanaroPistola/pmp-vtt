@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://crpt1jt40cbe"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_g8jjd"]
+
+[resource]
+script = ExtResource("1_g8jjd")
+dex_number = 38
+display_name = "Ninetales"
+id = "ninetales"
+types = Array[int]([1])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 40
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 14,
+1: 18,
+2: 11,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([10, 13])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Flash Fire"])
+hidden_ability = "Drought"
+starting_moves = Array[String](["Confuse Ray", "Flamethrower", "Imprison", "Nasty Plot", "Quick Attack", "Safeguard", "Tail Whip"])
+tms = Array[String](["tm_5", "tm_13", "tm_17", "tm_18", "tm_25", "tm_37", "tm_38", "tm_41", "tm_45", "tm_46", "tm_48", "tm_52", "tm_55", "tm_58", "tm_59", "tm_69", "tm_81", "tm_83", "tm_84", "tm_87", "tm_88", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_106", "tm_109", "tm_113", "tm_127", "tm_129", "tm_130", "tm_131", "tm_136", "tm_145", "tm_149", "tm_151", "tm_177", "tm_178", "tm_180", "tm_181", "tm_183", "tm_184", "tm_186", "tm_198", "tm_199", "tm_201", "tm_207", "tm_214", "tm_216", "tm_220", "tm_226", "tm_228", "tm_229", "tm_235", "tm_240", "tm_248", "tm_253", "tm_255", "tm_257", "tm_261", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_280", "tm_282", "tm_286", "tm_296", "tm_313", "tm_316", "tm_321"])
+egg_moves = Array[String](["Baby-Doll Eyes", "Captivate", "Disable", "Extrasensory", "Feint Attack", "Flail", "Flame Charge", "Flare Blitz", "Healing Wish", "Heat Wave", "Hex", "Howl", "Hypnosis", "Memento", "Power Swap", "Roar", "Secret Power", "Spite", "Tail Slap"])
+is_variant = true
+variant_data = {
+"Ninetales": {
+"diff": {},
+"display_name": "Ninetales",
+"is_default": true
+},
+"Ninetales de Alola": {
+"diff": {
+"abilities": ["Snow Cloak"],
+"attributes": {
+"CON": 13,
+"DEX": 16
+},
+"hidden_ability": "Snow Warning",
+"moves_diff": {
+"egg_moves": ["Agility", "Baby-Doll Eyes", "Charm", "Disable", "Encore", "Extrasensory", "Flail", "Freeze-Dry", "Howl", "Hypnosis", "Moonblast", "Power Swap", "Roar", "Secret Power", "Spite", "Tail Slap"],
+"level_moves": {},
+"starting_moves": ["Blizzard", "Confuse Ray", "Dazzling Gleam", "Ice Beam", "Ice Shard", "Icy Wind", "Imprison", "Nasty Plot", "Safeguard", "Tail Whip"],
+"tms": ["tm_5", "tm_11", "tm_13", "tm_15", "tm_16", "tm_17", "tm_18", "tm_22", "tm_25", "tm_38", "tm_41", "tm_42", "tm_45", "tm_46", "tm_48", "tm_52", "tm_53", "tm_55", "tm_56", "tm_58", "tm_59", "tm_68", "tm_69", "tm_81", "tm_83", "tm_84", "tm_87", "tm_88", "tm_106", "tm_108", "tm_109", "tm_113", "tm_122", "tm_125", "tm_129", "tm_130", "tm_131", "tm_136", "tm_139", "tm_140", "tm_143", "tm_144", "tm_145", "tm_149", "tm_151", "tm_173", "tm_178", "tm_184", "tm_186", "tm_190", "tm_198", "tm_199", "tm_201", "tm_207", "tm_209", "tm_214", "tm_216", "tm_220", "tm_226", "tm_228", "tm_229", "tm_248", "tm_255", "tm_256", "tm_257", "tm_261", "tm_268", "tm_270", "tm_276", "tm_277", "tm_280", "tm_282", "tm_286", "tm_296", "tm_302", "tm_313", "tm_317", "tm_321"]
+},
+"types": [5, 17]
+},
+"display_name": "Ninetales de Alola",
+"is_default": false
+}
+}

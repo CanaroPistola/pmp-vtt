@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://clpnswbrpdnu4"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_bscbd"]
+
+[resource]
+script = ExtResource("1_bscbd")
+id = "instruct"
+display_name = "Instruct (Instrução)"
+name_en = "Instruct"
+name_pt = "Instrução"
+type = 10
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 5
+range_category = 2
+range_distance = 6.0
+description = "Você instrui uma criatura a agir novamente. Como uma ação, escolha um alvo dentro do alcance. O alvo deve repetir imediatamente o Move que usou em sua última ação ou ação bônus. Em outras palavras, permite que um companheiro de equipe ataque duas vezes na rodada em vez de os dois Pokémon atacarem uma vez cada. Caso seja algo contra a vontade do alvo, ele deve fazer um teste de CAR contra sua CD de Move. Caso seja um Move que não possa ser ativado novamente, o efeito falha, e nenhum PP do alvo é gasto."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([4, 5])

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bwrragsjblq"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_6l5hj"]
+
+[resource]
+script = ExtResource("1_6l5hj")
+id = "dynamax_cannon"
+display_name = "Dynamax Cannon"
+name_en = "Dynamax Cannon"
+type = 14
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 4
+range_distance = 36.0
+description = "Você concentra uma energia massiva em seu núcleo e a libera em um feixe devastador em uma linha de 120 pés (36 metros). Qualquer criatura pega na linha deve ter sucesso em um teste de DES contra sua CD de Move, sofrendo 2d10 + MOVE de dano dragão em uma falha, ou metade do dano em um sucesso. Alvos que estiverem sob efeito de Dynamax ou Gigantamax recebem dano dobrado."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "Pessoal (linha de 36 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}

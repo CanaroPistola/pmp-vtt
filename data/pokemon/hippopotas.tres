@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://xrk8l2b11yjy"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_24hbh"]
+
+[resource]
+script = ExtResource("1_24hbh")
+dex_number = 449
+display_name = "Hippopotas"
+id = "hippopotas"
+types = Array[int]([8])
+sr = "1"
+evolution_stage = 1
+armor_class = 14
+hit_points = 20
+hit_dice = "d8"
+movement = {
+0: 6.0,
+1: 4.5
+}
+attributes = {
+0: 14,
+1: 10,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 1
+}])
+abilities = Array[String](["Sand Stream"])
+hidden_ability = "Sand Force"
+evolves_to = Array[String](["hippowdon"])
+evolution_level = 12
+evolution_points = 12
+level_moves = {
+3: ["Bite"],
+5: ["Yawn"],
+7: ["Dig", "Take Down"],
+8: ["Sandstorm"],
+9: ["Sand Tomb"],
+11: ["Crunch", "Roar"],
+12: ["Rest"],
+13: ["Earthquake"],
+15: ["Double-Edge", "Fissure"],
+16: ["Slack Off"]
+}
+starting_moves = Array[String](["Sand Attack", "Tackle"])
+tms = Array[String](["tm_10", "tm_13", "tm_24", "tm_25", "tm_35", "tm_45", "tm_50", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_83", "tm_87", "tm_92", "tm_109", "tm_129", "tm_131", "tm_132", "tm_140", "tm_149", "tm_174", "tm_175", "tm_176", "tm_199", "tm_214", "tm_216", "tm_217", "tm_220", "tm_223", "tm_224", "tm_225", "tm_228", "tm_230", "tm_231", "tm_235", "tm_248", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_286", "tm_291", "tm_296", "tm_311", "tm_313"])
+egg_moves = Array[String](["Body Slam", "Curse", "Revenge", "Sand Tomb", "Slack Off", "Sleep Talk", "Spit Up", "Stockpile", "Swallow", "Whirlwind"])

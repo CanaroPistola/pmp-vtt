@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://qg41dpn3v60l"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_fmv1l"]
+
+[resource]
+script = ExtResource("1_fmv1l")
+dex_number = 999
+display_name = "Gimmighoul"
+id = "gimmighoul"
+types = Array[int]([13])
+sr = "1"
+evolution_stage = 1
+armor_class = 14
+hit_points = 18
+attributes = {
+0: 14,
+1: 8,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([5, 6, 15])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Rattled"])
+evolves_to = Array[String](["gholdengo"])
+evolution_level = 14
+evolution_points = 20
+starting_moves = Array[String](["Astonish", "Tackle"])
+tms = Array[String](["tm_46", "tm_83", "tm_130", "tm_156", "tm_178", "tm_180", "tm_196", "tm_199", "tm_212", "tm_214", "tm_240", "tm_248", "tm_270", "tm_282", "tm_286", "tm_288"])
+is_variant = true
+variant_data = {
+"Gimmighoul Forma Andarilha": {
+"diff": {
+"abilities": ["Run Away"],
+"armor_class": 12,
+"attributes": {
+"DEX": 15
+},
+"hit_points": 16,
+"movement": {
+0: 9.0
+},
+"skills": [6, 15]
+},
+"display_name": "Gimmighoul Forma Andarilha",
+"is_default": false
+},
+"Gimmighoul Forma Baú": {
+"diff": {
+"movement": {
+0: 1.5
+}
+},
+"display_name": "Gimmighoul Forma Baú",
+"is_default": true
+}
+}

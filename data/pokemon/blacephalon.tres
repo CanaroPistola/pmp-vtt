@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dkad4087kjhmb"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6rir2"]
+
+[resource]
+script = ExtResource("1_6rir2")
+dex_number = 806
+display_name = "Blacephalon"
+id = "blacephalon"
+types = Array[int]([1, 13])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 15
+hit_points = 218
+hit_dice = "d12"
+movement = {
+0: 15.0
+}
+attributes = {
+0: 16,
+1: 18,
+2: 14,
+3: 8,
+4: 18,
+5: 18
+}
+skills = Array[int]([4, 5])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 2
+}])
+abilities = Array[String](["Beast Boost"])
+level_moves = {
+3: ["Magic Coat"],
+5: ["Stored Power"],
+6: ["Flame Burst"],
+7: ["Confuse Ray"],
+8: ["Night Shade"],
+10: ["Incinerate", "Light Screen"],
+11: ["Calm Mind"],
+12: ["Hypnosis"],
+13: ["Fire Blast"],
+14: ["Mystical Fire", "Shadow Ball"],
+15: ["Trick"],
+16: ["Mind Blown", "Will-O-Wisp"]
+}
+starting_moves = Array[String](["Astonish", "Ember"])
+tms = Array[String](["tm_4", "tm_38", "tm_45", "tm_52", "tm_58", "tm_85", "tm_86", "tm_87", "tm_91", "tm_94", "tm_95", "tm_96", "tm_97", "tm_100", "tm_106", "tm_109", "tm_127", "tm_131", "tm_136", "tm_150", "tm_153", "tm_156", "tm_177", "tm_183", "tm_184", "tm_186", "tm_199", "tm_202", "tm_207", "tm_208", "tm_211", "tm_214", "tm_216", "tm_221", "tm_228", "tm_239", "tm_240", "tm_241", "tm_248", "tm_251", "tm_255", "tm_257", "tm_261", "tm_270", "tm_271", "tm_276", "tm_283", "tm_288", "tm_295", "tm_296", "tm_300", "tm_305", "tm_316"])

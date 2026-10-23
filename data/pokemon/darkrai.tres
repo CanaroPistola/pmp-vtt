@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cykb44xp8rslp"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_c467k"]
+
+[resource]
+script = ExtResource("1_c467k")
+dex_number = 491
+display_name = "Darkrai"
+id = "darkrai"
+types = Array[int]([15])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 17
+hit_points = 467
+hit_dice = "d20"
+attributes = {
+0: 17,
+1: 20,
+2: 16,
+3: 18,
+4: 18,
+5: 15
+}
+skills = Array[int]([2, 5, 6, 8, 9])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Bad Dreams"])
+level_moves = {
+4: ["Quick Attack"],
+7: ["Hypnosis"],
+10: ["Feint Attack", "Sucker Punch"],
+13: ["Night Shade", "Nightmare"],
+15: ["Double Team"],
+16: ["Haze"],
+17: ["Dark Void"],
+18: ["Nasty Plot"],
+19: ["Dream Eater"],
+20: ["Dark Pulse"]
+}
+starting_moves = Array[String](["Disable", "Ominous Wind"])
+tms = Array[String](["tm_3", "tm_22", "tm_29", "tm_38", "tm_40", "tm_45", "tm_46", "tm_51", "tm_52", "tm_58", "tm_67", "tm_69", "tm_80", "tm_83", "tm_87", "tm_100", "tm_103", "tm_105", "tm_106", "tm_109", "tm_113", "tm_124", "tm_130", "tm_131", "tm_136", "tm_139", "tm_144", "tm_150", "tm_152", "tm_153", "tm_178", "tm_180", "tm_181", "tm_186", "tm_191", "tm_199", "tm_201", "tm_202", "tm_207", "tm_209", "tm_214", "tm_216", "tm_223", "tm_224", "tm_225", "tm_228", "tm_234", "tm_240", "tm_241", "tm_242", "tm_248", "tm_249", "tm_253", "tm_254", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_283", "tm_286", "tm_288", "tm_289", "tm_290", "tm_293", "tm_294", "tm_295", "tm_296", "tm_300", "tm_316", "tm_317", "tm_320"])

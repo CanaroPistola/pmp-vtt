@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dkrork7cpaxd"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_to20l"]
+
+[resource]
+script = ExtResource("1_to20l")
+id = "venom_drench"
+display_name = "Venom Drench (Poção Venenosa)"
+name_en = "Venom Drench"
+name_pt = "Poção Venenosa"
+type = 7
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 3
+range_distance = 9.0
+description = "Você atinge criaturas já envenenadas para piorar ainda mais o efeito do veneno. Criaturas atingidas dentro de um cone de 9 metros devem fazer um teste de CON contra sua CD de Move, reduzindo seu Ataque, Ataque Especial e Velocidade em 1 estágio em caso de falha, podendo ser acumulado em até -6 estágios. Este Move não tem efeito em alvos que não estejam envenenados. Uma criatura cuja velocidade seja reduzida a 0 com este Move fica impedida."
+range_text_raw = "Pessoal (cone de 9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([2, 1])
+effect_tags = Array[String](["stat_change", "poison"])

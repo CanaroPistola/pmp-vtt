@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bttue0d0sqr7l"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_apsx3"]
+
+[resource]
+script = ExtResource("1_apsx3")
+id = "laser_focus"
+display_name = "Laser Focus (Laser Concentrado)"
+name_en = "Laser Focus"
+name_pt = "Laser Concentrado"
+pp = 15
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_rounds = 1
+duration_flags = Array[String](["concentration"])
+description = "Ao ativar este Move, você se concentra intensamente. Se você mantiver a concentração, seu primeiro ataque em seu próximo turno será um acerto crítico."
+range_text_raw = "Pessoal"
+duration_text_raw = "1 rodada, Concentração"

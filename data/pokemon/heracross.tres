@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://vw5ylntjdg1k"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_h2p07"]
+
+[resource]
+script = ExtResource("1_h2p07")
+dex_number = 214
+display_name = "Heracross"
+id = "heracross"
+types = Array[int]([11, 6])
+sr = "9"
+min_level = 5
+evolution_stage = 1
+armor_class = 18
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 18,
+1: 16,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Swarm", "Guts"])
+hidden_ability = "Moxie"
+level_moves = {
+3: ["Feint"],
+4: ["Aerial Ace"],
+6: ["Chip Away"],
+7: ["Counter"],
+9: ["Fury Attack"],
+10: ["Brick Break"],
+11: ["Pin Missile"],
+12: ["Take Down"],
+13: ["Megahorn"],
+14: ["Throat Chop"],
+15: ["Close Combat", "Reversal", "Swords Dance", "Thrash"]
+}
+starting_moves = Array[String](["Arm Thrust", "Bullet Seed", "Endure", "Horn Attack", "Leer", "Night Slash", "Tackle"])
+tms = Array[String](["tm_3", "tm_12", "tm_13", "tm_25", "tm_29", "tm_31", "tm_32", "tm_33", "tm_34", "tm_35", "tm_36", "tm_38", "tm_43", "tm_44", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_74", "tm_82", "tm_83", "tm_87", "tm_89", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_129", "tm_131", "tm_132", "tm_136", "tm_147", "tm_150", "tm_158", "tm_160", "tm_167", "tm_182", "tm_189", "tm_195", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_218", "tm_221", "tm_223", "tm_224", "tm_225", "tm_228", "tm_241", "tm_245", "tm_248", "tm_251", "tm_252", "tm_255", "tm_260", "tm_267", "tm_269", "tm_270", "tm_271", "tm_276", "tm_278", "tm_282", "tm_286", "tm_288", "tm_289", "tm_296", "tm_298", "tm_304", "tm_306", "tm_307", "tm_318"])
+egg_moves = Array[String](["Bide", "Double-Edge", "Feint", "Flail", "Focus Punch", "Harden", "Megahorn", "Night Slash", "Pursuit", "Revenge", "Rock Blast", "Seismic Toss", "Take Down"])

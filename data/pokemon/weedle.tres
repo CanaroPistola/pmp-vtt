@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bbf5qd085ohip"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_maooc"]
+
+[resource]
+script = ExtResource("1_maooc")
+dex_number = 13
+display_name = "Weedle"
+id = "weedle"
+types = Array[int]([11, 7])
+sr = "1/8"
+evolution_stage = 1
+armor_class = 11
+hit_points = 17
+movement = {
+0: 6.0,
+2: 6.0
+}
+attributes = {
+0: 9,
+1: 10,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+abilities = Array[String](["Shield Dust"])
+hidden_ability = "Run Away"
+evolves_to = Array[String](["kakuna"])
+evolution_level = 3
+evolution_points = 5
+level_moves = {
+3: ["Bug Bite"]
+}
+starting_moves = Array[String](["Poison Sting", "String Shot"])
+tms = Array[String](["tm_32", "tm_79"])

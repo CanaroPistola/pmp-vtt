@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://vlmx54k4h6lg"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ujj7t"]
+
+[resource]
+script = ExtResource("1_ujj7t")
+id = "heart_stamp"
+display_name = "Heart Stamp (Selo de Coração)"
+name_en = "Heart Stamp"
+name_pt = "Selo de Coração"
+type = 10
+pp = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você desfere um golpe cruel depois de agir de forma fofa. Faça um ataque corpo a corpo contra uma criatura, causando 2d6 + MOVE de dano psíquico no acerto. Em um resultado natural de 15 ou mais no acerto, o alvo fica atordoado."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10, e 5d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["stun"])

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bkwhu3mcawwgv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_6h1gd"]
+
+[resource]
+script = ExtResource("1_6h1gd")
+id = "storm_throw"
+display_name = "Storm Throw (Lançamento de Tempestade)"
+name_en = "Storm Throw"
+name_pt = "Lançamento de Tempestade"
+type = 6
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você agarra o alvo e o arremessa com um golpe feroz contra o chão. Faça um ataque corpo a corpo contra uma criatura, causando 2d6 + MOVE de dano lutador em um acerto. Este Move sempre causa um golpe crítico."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}

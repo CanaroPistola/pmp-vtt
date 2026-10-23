@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b3ef0d7wpec2"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_584fy"]
+
+[resource]
+script = ExtResource("1_584fy")
+id = "parting_shot"
+display_name = "Parting Shot"
+name_en = "Parting Shot"
+type = 15
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 15.0
+description = "Você entrega uma ameaça brutal contra uma criatura dentro do alcance antes de recuar. Role 1d20 + MOVE  + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o Ataque e o Ataque Especial do alvo são reduzidos em 1 estágio cada, podendo ser acumulados em até -6 estágios cada, e o treinador deve trocar o usuário por outro Pokémon como uma ação livre. Observações: Parting Shot é um Move baseado em som.  O usuário não será trocado se o Move falhar (como por causa de Soundproof), ou se o alvo já estiver com -6 em seu Ataque ou Ataque Especial. Se Parting Shot for usado em um Pokémon sob o efeito de Magic Coat ou que possua a habilidade Magic Bounce, o efeito é refletido de volta para o usuário, reduzindo seu próprio Ataque e Ataque Especial, e o alvo é quem é trocado no lugar."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([5])
+effect_tags = Array[String](["stat_change"])

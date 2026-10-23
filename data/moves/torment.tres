@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ddp08clurhf06"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_5ply3"]
+
+[resource]
+script = ExtResource("1_5ply3")
+id = "torment"
+display_name = "Torment"
+name_en = "Torment"
+type = 15
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você envia energia sombria para atormentar uma criatura dentro do alcance. Role 1d20 + MOVE  + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o alvo não pode usar o mesmo Move em turnos consecutivos. Observações: Este Move ignora Substitute."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([0, 5])

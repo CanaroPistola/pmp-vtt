@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bx0a0c7cp6tgd"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_xudqd"]
+
+[resource]
+script = ExtResource("1_xudqd")
+dex_number = 409
+display_name = "Rampardos"
+id = "rampardos"
+types = Array[int]([12])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 13
+hit_points = 61
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 17,
+1: 15,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Mold Breaker"])
+hidden_ability = "Sheer Force"
+level_moves = {
+2: ["Focus Energy"],
+4: ["Pursuit", "Rock Smash"],
+5: ["Take Down"],
+7: ["Scary Face"],
+8: ["Assurance"],
+10: ["Chip Away", "Slam"],
+12: ["Ancient Power"],
+15: ["Zen Headbutt"],
+16: ["Head Smash", "Screech"]
+}
+starting_moves = Array[String](["Endeavor", "Headbutt", "Leer"])
+tms = Array[String](["tm_13", "tm_16", "tm_22", "tm_24", "tm_25", "tm_28", "tm_29", "tm_35", "tm_45", "tm_50", "tm_51", "tm_55", "tm_58", "tm_59", "tm_62", "tm_63", "tm_65", "tm_66", "tm_73", "tm_74", "tm_82", "tm_83", "tm_87", "tm_91", "tm_94", "tm_97", "tm_100", "tm_103", "tm_104", "tm_105", "tm_109", "tm_113", "tm_128", "tm_131", "tm_136", "tm_139", "tm_148", "tm_149", "tm_151", "tm_175", "tm_182", "tm_184", "tm_186", "tm_197", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_221", "tm_222", "tm_223", "tm_224", "tm_225", "tm_228", "tm_231", "tm_234", "tm_242", "tm_248", "tm_251", "tm_255", "tm_261", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_273", "tm_274", "tm_275", "tm_276", "tm_278", "tm_282", "tm_286", "tm_288", "tm_290", "tm_292", "tm_294", "tm_296", "tm_298", "tm_305", "tm_321"])
+egg_moves = Array[String](["Crunch", "Curse", "Double-Edge", "Hammer Arm", "Iron Head", "Iron Tail", "Leer", "Slam", "Stomp", "Thrash", "Whirlwind"])

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c2qclewujney7"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_5gf73"]
+
+[resource]
+script = ExtResource("1_5gf73")
+id = "nature's_madness"
+display_name = "Nature's Madness"
+name_en = "Nature's Madness"
+type = 17
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 7
+status_roll_target_attribute = 2
+range_category = 2
+range_distance = 12.0
+description = "Você canaliza todo o poder da natureza e o envia a uma criatura no alcance. Role 1d20 + MOVE + 7 e compare o resultado com 10 + CON do alvo. Em um resultado maior ou igual, o alvo perde metade de seus pontos de vida atuais, arredondados para baixo (mínimo de 1 de dano, máximo de 5 vezes o seu nível atual). Arte feita por freqrexy 153"
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([4, 5])

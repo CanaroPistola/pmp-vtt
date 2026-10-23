@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bcuf25dchivep"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vgnd1"]
+
+[resource]
+script = ExtResource("1_vgnd1")
+dex_number = 900
+display_name = "Kleavor"
+id = "kleavor"
+types = Array[int]([11, 12])
+sr = "12"
+min_level = 10
+evolution_stage = 2
+armor_class = 16
+hit_points = 102
+hit_dice = "d12"
+movement = {
+0: 9.0,
+2: 7.5
+}
+attributes = {
+0: 22,
+1: 20,
+2: 15,
+3: 6,
+4: 12,
+5: 8
+}
+skills = Array[int]([3, 8, 17])
+abilities = Array[String](["Swarm", "Sheer Force"])
+hidden_ability = "Sharpness"
+level_moves = {
+2: ["Fury Cutter"],
+3: ["False Swipe"],
+4: ["Smack Down"],
+6: ["Double Team"],
+7: ["Double Hit"],
+8: ["Slash"],
+10: ["Focus Energy"],
+11: ["Agility"],
+12: ["Rock Slide"],
+14: ["X-Scissor"],
+15: ["Swords Dance"]
+}
+starting_moves = Array[String](["Leer", "Quick Attack", "Stone Axe"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_18", "tm_29", "tm_32", "tm_33", "tm_38", "tm_43", "tm_59", "tm_72", "tm_83", "tm_87", "tm_89", "tm_104", "tm_113", "tm_129", "tm_136", "tm_156", "tm_160", "tm_181", "tm_195", "tm_199", "tm_206", "tm_209", "tm_214", "tm_218", "tm_221", "tm_223", "tm_224", "tm_225", "tm_231", "tm_234", "tm_245", "tm_248", "tm_251", "tm_262", "tm_267", "tm_269", "tm_270", "tm_271", "tm_277", "tm_278", "tm_281", "tm_282", "tm_286", "tm_288", "tm_298", "tm_303", "tm_306", "tm_320"])
+egg_moves = Array[String](["Counter", "Defog", "Feint", "Night Slash", "Quick Guard"])

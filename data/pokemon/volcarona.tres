@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bg81h3m7vd2n5"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0pvqp"]
+
+[resource]
+script = ExtResource("1_0pvqp")
+dex_number = 637
+display_name = "Volcarona"
+id = "volcarona"
+types = Array[int]([11, 1])
+sr = "13"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 105
+hit_dice = "d12"
+movement = {
+0: 7.5,
+2: 7.5
+}
+attributes = {
+0: 16,
+1: 19,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Flame Body"])
+hidden_ability = "Swarm"
+level_moves = {
+4: ["Absorb"],
+7: ["Gust"],
+8: ["Bug Bite"],
+10: ["Fire Spin", "Screech"],
+12: ["Leech Life"],
+14: ["Whirlwind"],
+15: ["Silver Wind"],
+16: ["Heat Wave"],
+17: ["Bug Buzz", "Fire Blast"],
+18: ["Rage Powder"],
+19: ["Hurricane"],
+20: ["Fiery Dance"]
+}
+starting_moves = Array[String](["Amnesia", "Double-Edge", "Ember", "Flame Charge", "Flame Wheel", "Flare Blitz", "Quiver Dance", "String Shot", "Struggle Bug", "Take Down", "Thrash"])
+tms = Array[String](["tm_2", "tm_3", "tm_6", "tm_7", "tm_10", "tm_13", "tm_25", "tm_32", "tm_33", "tm_38", "tm_45", "tm_54", "tm_58", "tm_59", "tm_72", "tm_83", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_102", "tm_109", "tm_112", "tm_113", "tm_127", "tm_131", "tm_133", "tm_136", "tm_155", "tm_156", "tm_160", "tm_164", "tm_177", "tm_183", "tm_191", "tm_195", "tm_199", "tm_202", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_229", "tm_236", "tm_243", "tm_245", "tm_248", "tm_255", "tm_257", "tm_269", "tm_270", "tm_271", "tm_276", "tm_281", "tm_282", "tm_286", "tm_296", "tm_298", "tm_303", "tm_315", "tm_316", "tm_321"])
+egg_moves = Array[String](["Absorb", "Endure", "Foresight", "Harden", "Magnet Rise", "Morning Sun", "String Shot", "Thrash", "Zen Headbutt"])

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dtm1dfxlinpqn"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_lfp7l"]
+
+[resource]
+script = ExtResource("1_lfp7l")
+id = "struggle_bug"
+display_name = "Struggle Bug (Ira de Inseto)"
+name_en = "Struggle Bug"
+name_pt = "Ira de Inseto"
+type = 11
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 3
+range_distance = 12.0
+duration_is_permanent = true
+description = "Você dispara uma rajada de feixes em um cone de 12 metros. Qualquer criatura pega no cone deve ter sucesso em um teste de DES contra sua CD de Move, sofrendo 1d10 + MOVE de dano do tipo inseto em uma falha, ou metade do dano em um sucesso. Criaturas que falham também têm seu Ataque Especial reduzido em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "Pessoal (cone de 12 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c72r85h1fsdbs"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_hww1t"]
+
+[resource]
+script = ExtResource("1_hww1t")
+dex_number = 517
+display_name = "Munna"
+id = "munna"
+types = Array[int]([10])
+sr = "2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 20
+hit_dice = "d8"
+attributes = {
+0: 11,
+1: 9,
+2: 15,
+3: 8,
+4: 16,
+5: 10
+}
+skills = Array[int]([9])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 2
+}])
+abilities = Array[String](["Forewarn", "Synchronize"])
+hidden_ability = "Telepathy"
+evolves_to = Array[String](["musharna"])
+evolution_level = 14
+evolution_points = 10
+level_moves = {
+2: ["Lucky Chant"],
+3: ["Yawn"],
+4: ["Psybeam"],
+5: ["Imprison"],
+6: ["Moonlight"],
+7: ["Hypnosis", "Magic Coat"],
+8: ["Zen Headbutt"],
+9: ["Synchronoise"],
+10: ["Nightmare"],
+11: ["Future Sight"],
+12: ["Calm Mind"],
+13: ["Psychic"],
+14: ["Dream Eater", "Moonblast"],
+15: ["Stored Power", "Telekinesis"],
+16: ["Wonder Room"]
+}
+starting_moves = Array[String](["Defense Curl", "Psywave"])
+tms = Array[String](["tm_4", "tm_9", "tm_13", "tm_38", "tm_40", "tm_45", "tm_53", "tm_58", "tm_69", "tm_84", "tm_85", "tm_87", "tm_109", "tm_118", "tm_119", "tm_121", "tm_125", "tm_129", "tm_131", "tm_145", "tm_156", "tm_161", "tm_184", "tm_198", "tm_199", "tm_201", "tm_202", "tm_207", "tm_209", "tm_212", "tm_214", "tm_216", "tm_223", "tm_225", "tm_228", "tm_229", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_255", "tm_270", "tm_276", "tm_277", "tm_284", "tm_293", "tm_295", "tm_296", "tm_300", "tm_301", "tm_317", "tm_319", "tm_321"])
+egg_moves = Array[String](["Barrier", "Baton Pass", "Curse", "Healing Wish", "Helping Hand", "Magic Coat", "Secret Power", "Sleep Talk", "Sonic Boom", "Swift"])

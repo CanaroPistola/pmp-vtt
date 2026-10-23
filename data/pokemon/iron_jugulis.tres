@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://w6n44utyq5s7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_l3uex"]
+
+[resource]
+script = ExtResource("1_l3uex")
+dex_number = 993
+display_name = "Iron Jugulis"
+id = "iron_jugulis"
+types = Array[int]([15, 9])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 18,
+1: 20,
+2: 16,
+3: 8,
+4: 14,
+5: 12
+}
+skills = Array[int]([0, 5, 6, 7, 8])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 0
+}])
+abilities = Array[String](["Quark Drive"])
+level_moves = {
+3: ["Roar"],
+5: ["Assurance"],
+7: ["Dragon Breath"],
+10: ["Snarl"],
+12: ["Crunch"],
+14: ["Hyper Voice"],
+16: ["Air Slash"],
+17: ["Dark Pulse", "Knock Off"],
+18: ["Outrage"],
+19: ["Dragon Pulse"],
+20: ["Hyper Beam"]
+}
+starting_moves = Array[String](["Air Cutter", "Electric Terrain", "Focus Energy", "Tri Attack", "Work Up"])
+tms = Array[String](["tm_2", "tm_6", "tm_7", "tm_25", "tm_40", "tm_50", "tm_52", "tm_59", "tm_62", "tm_65", "tm_66", "tm_72", "tm_73", "tm_77", "tm_83", "tm_87", "tm_91", "tm_92", "tm_97", "tm_99", "tm_102", "tm_103", "tm_113", "tm_127", "tm_133", "tm_135", "tm_136", "tm_137", "tm_148", "tm_150", "tm_152", "tm_169", "tm_170", "tm_182", "tm_199", "tm_209", "tm_214", "tm_220", "tm_225", "tm_234", "tm_248", "tm_253", "tm_270", "tm_271", "tm_281", "tm_282", "tm_283", "tm_286", "tm_289", "tm_303", "tm_321"])

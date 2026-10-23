@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bbtpddq23ujka"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_w1dj0"]
+
+[resource]
+script = ExtResource("1_w1dj0")
+id = "revival_blessing"
+display_name = "Revival Blessing"
+name_en = "Revival Blessing"
+pp = 1
+move_time = "1 ação"
+range_category = 2
+range_distance = 6.0
+description = "Você concede uma bênção afetuosa a um Pokémon aliado desmaiado, envolvendo-o em energia restauradora para trazê-lo de volta à batalha. Escolha um Pokémon desmaiado, seja este selvagem ou do grupo de seu Treinador. O Pokémon escolhido é revivido com metade de seus pontos de vida máximos restaurados. Observações: Este Move não pode ser copiado por Sketch. Revival Blessing não pode ser usado se você estiver sob o efeito de Heal Block causado por Psychic Noise."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Instantânea"

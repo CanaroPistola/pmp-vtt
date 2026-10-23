@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bvea7rwk3dpc4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_y3bd7"]
+
+[resource]
+script = ExtResource("1_y3bd7")
+dex_number = 892
+display_name = "Urshifu"
+id = "urshifu"
+types = Array[int]([6, 15])
+sr = "12"
+min_level = 10
+evolution_stage = 2
+armor_class = 16
+hit_points = 112
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 18,
+1: 19,
+2: 16,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([0, 3, 8, 9])
+abilities = Array[String](["Unseen Fist"])
+level_moves = {
+4: ["Aerial Ace"],
+6: ["Scary Face"],
+7: ["Headbutt"],
+8: ["Brick Break"],
+10: ["Detect"],
+11: ["Bulk Up"],
+12: ["Iron Head"],
+14: ["Dynamic Punch"],
+15: ["Close Combat", "Counter"],
+16: ["Focus Punch"]
+}
+starting_moves = Array[String](["Endure", "Focus Energy", "Leer", "Rock Smash", "Sucker Punch", "Wicked Blow"])
+tms = Array[String](["tm_2", "tm_3", "tm_12", "tm_13", "tm_14", "tm_19", "tm_24", "tm_25", "tm_29", "tm_34", "tm_43", "tm_44", "tm_50", "tm_52", "tm_55", "tm_59", "tm_67", "tm_83", "tm_87", "tm_89", "tm_94", "tm_100", "tm_103", "tm_105", "tm_106", "tm_113", "tm_129", "tm_141", "tm_147", "tm_148", "tm_152", "tm_158", "tm_159", "tm_165", "tm_166", "tm_168", "tm_186", "tm_191", "tm_199", "tm_214", "tm_215", "tm_217", "tm_218", "tm_220", "tm_223", "tm_225", "tm_228", "tm_234", "tm_248", "tm_253", "tm_255", "tm_267", "tm_270", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289", "tm_292", "tm_298", "tm_303", "tm_321"])
+is_variant = true
+variant_data = {
+"Urshifu Estilo Golpe Rápido": {
+"diff": {
+"movement": {
+1: 6.0
+},
+"moves_diff": {
+"level_moves": {
+4: ["Aerial Ace"],
+6: ["Scary Face"],
+7: ["Headbutt"],
+8: ["Brick Break"],
+10: ["Detect"],
+11: ["Bulk Up"],
+12: ["Iron Head"],
+14: ["Dynamic Punch"],
+15: ["Close Combat", "Counter"],
+16: ["Focus Punch"]
+},
+"starting_moves": ["Aqua Jet", "Endure", "Focus Energy", "Leer", "Rock Smash", "Surging Strikes"],
+"tms": ["tm_2", "tm_3", "tm_13", "tm_14", "tm_24", "tm_25", "tm_29", "tm_30", "tm_34", "tm_42", "tm_43", "tm_44", "tm_55", "tm_57", "tm_59", "tm_67", "tm_83", "tm_87", "tm_89", "tm_94", "tm_100", "tm_103", "tm_105", "tm_113", "tm_129", "tm_141", "tm_142", "tm_147", "tm_148", "tm_157", "tm_158", "tm_159", "tm_165", "tm_166", "tm_191", "tm_199", "tm_209", "tm_214", "tm_215", "tm_217", "tm_218", "tm_223", "tm_225", "tm_228", "tm_234", "tm_248", "tm_255", "tm_267", "tm_270", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_292", "tm_298", "tm_303", "tm_312", "tm_314", "tm_321"]
+},
+"types": [6, 2]
+},
+"display_name": "Urshifu Estilo Golpe Rápido",
+"is_default": false
+},
+"Urshifu Estilo Golpe Único": {
+"diff": {},
+"display_name": "Urshifu Estilo Golpe Único",
+"is_default": true
+}
+}

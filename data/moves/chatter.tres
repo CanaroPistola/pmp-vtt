@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://wlhxfms1v0p2"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_axy7x"]
+
+[resource]
+script = ExtResource("1_axy7x")
+id = "chatter"
+display_name = "Chatter"
+name_en = "Chatter"
+type = 9
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "Você grita uma série de palavras desorientadoras para uma criatura, embaralhando seus sentidos. Faça um ataque à distância. Em caso de acerto, cause 2d6 + MOVE de dano do tipo voador e faça com que o alvo fique confuso. Observações: Chatter é um Move baseado em som. Chatter não pode ser escolhido pelo Move Assist."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 4d6 no nível 10 e 4d8 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["confusion"])

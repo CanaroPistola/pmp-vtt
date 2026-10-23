@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://xq7bto8k7pk1"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_g1afm"]
+
+[resource]
+script = ExtResource("1_g1afm")
+dex_number = 475
+display_name = "Gallade"
+id = "gallade"
+types = Array[int]([10, 6])
+sr = "12"
+min_level = 8
+evolution_stage = 3
+armor_class = 16
+hit_points = 101
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 20,
+1: 18,
+2: 18,
+3: 10,
+4: 14,
+5: 10
+}
+skills = Array[int]([0, 14])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 2
+}])
+abilities = Array[String](["Steadfast", "Sharpness"])
+hidden_ability = "Justified"
+level_moves = {
+2: ["Confusion", "Double Team"],
+3: ["Teleport"],
+4: ["Quick Guard"],
+5: ["Fury Cutter"],
+6: ["Aerial Ace"],
+7: ["Heal Pulse"],
+8: ["Wide Guard"],
+9: ["Swords Dance"],
+11: ["Psycho Cut"],
+12: ["Helping Hand"],
+14: ["Feint"],
+15: ["False Swipe", "Protect"],
+16: ["Close Combat", "Stored Power"]
+}
+starting_moves = Array[String](["Aqua Cutter", "Calm Mind", "Charm", "Disarming Voice", "Draining Kiss", "Dream Eater", "Future Sight", "Growl", "Hypnosis", "Imprison", "Leaf Blade", "Leer", "Life Dew", "Night Slash", "Psybeam", "Psychic", "Sacred Sword", "Slash"])
+tms = Array[String](["tm_3", "tm_5", "tm_7", "tm_8", "tm_9", "tm_13", "tm_14", "tm_25", "tm_29", "tm_34", "tm_35", "tm_38", "tm_40", "tm_41", "tm_43", "tm_44", "tm_45", "tm_46", "tm_53", "tm_56", "tm_58", "tm_67", "tm_68", "tm_69", "tm_71", "tm_74", "tm_75", "tm_81", "tm_83", "tm_84", "tm_85", "tm_87", "tm_89", "tm_94", "tm_100", "tm_103", "tm_104", "tm_105", "tm_109", "tm_110", "tm_113", "tm_114", "tm_129", "tm_130", "tm_131", "tm_136", "tm_137", "tm_139", "tm_141", "tm_144", "tm_145", "tm_150", "tm_151", "tm_156", "tm_158", "tm_159", "tm_161", "tm_162", "tm_163", "tm_165", "tm_166", "tm_171", "tm_173", "tm_180", "tm_184", "tm_191", "tm_199", "tm_200", "tm_201", "tm_202", "tm_205", "tm_206", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_215", "tm_216", "tm_217", "tm_218", "tm_223", "tm_224", "tm_225", "tm_228", "tm_229", "tm_240", "tm_241", "tm_242", "tm_243", "tm_244", "tm_248", "tm_254", "tm_255", "tm_258", "tm_267", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_282", "tm_283", "tm_284", "tm_286", "tm_288", "tm_289", "tm_292", "tm_293", "tm_294", "tm_295", "tm_296", "tm_300", "tm_301", "tm_302", "tm_304", "tm_306", "tm_316", "tm_317", "tm_318", "tm_320", "tm_321"])
+egg_moves = Array[String](["Ally Switch", "Confuse Ray", "Destiny Bond", "Disable", "Encore", "Grudge", "Knock Off", "Mean Look", "Memento", "Misty Terrain", "Mystical Fire", "Shadow Sneak", "Skill Swap", "Synchronoise"])

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dasorhmusa8q2"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6f2tm"]
+
+[resource]
+script = ExtResource("1_6f2tm")
+dex_number = 842
+display_name = "Appletun"
+id = "appletun"
+types = Array[int]([4, 14])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 60
+hit_dice = "d10"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 13,
+1: 11,
+2: 18,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([5, 12, 17])
+abilities = Array[String](["Ripen", "Gluttony"])
+hidden_ability = "Thick Fat"
+level_moves = {
+2: ["Curse"],
+3: ["Stomp"],
+4: ["Leech Seed"],
+6: ["Protect"],
+7: ["Bullet Seed"],
+8: ["Recover"],
+10: ["Apple Acid"],
+11: ["Body Slam"],
+12: ["Iron Defense"],
+14: ["Dragon Pulse"],
+15: ["Energy Ball"]
+}
+starting_moves = Array[String](["Astonish", "Growth", "Headbutt", "Recycle", "Sweet Scent", "Withdraw"])
+tms = Array[String](["tm_10", "tm_13", "tm_24", "tm_25", "tm_35", "tm_36", "tm_51", "tm_60", "tm_65", "tm_66", "tm_74", "tm_83", "tm_84", "tm_87", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_121", "tm_128", "tm_129", "tm_132", "tm_136", "tm_147", "tm_148", "tm_154", "tm_156", "tm_163", "tm_182", "tm_186", "tm_195", "tm_199", "tm_209", "tm_212", "tm_214", "tm_228", "tm_229", "tm_238", "tm_248", "tm_255", "tm_257", "tm_266", "tm_270", "tm_271", "tm_282", "tm_286", "tm_298", "tm_321"])
+egg_moves = Array[String](["Defense Curl", "Recycle", "Rollout", "Sucker Punch"])

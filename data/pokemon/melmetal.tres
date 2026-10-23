@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dwtffcd5rno5t"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qyx2v"]
+
+[resource]
+script = ExtResource("1_qyx2v")
+dex_number = 809
+display_name = "Melmetal"
+id = "melmetal"
+types = Array[int]([16])
+sr = "14"
+min_level = 15
+evolution_stage = 2
+armor_class = 20
+hit_points = 198
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 22,
+1: 14,
+2: 20,
+3: 8,
+4: 14,
+5: 10
+}
+skills = Array[int]([3, 17])
+senses = Array[Dictionary]([{
+"range_m": 3.0,
+"type": 2
+}])
+abilities = Array[String](["Iron Fist"])
+level_moves = {
+8: ["Thunder Wave"],
+11: ["Acid Armor"],
+14: ["Flash Cannon"],
+15: ["Mega Punch"],
+16: ["Protect"],
+17: ["Discharge"],
+18: ["Dynamic Punch", "Superpower"],
+19: ["Double Iron Bash"],
+20: ["Hyper Beam"]
+}
+starting_moves = Array[String](["Harden", "Headbutt", "Tail Whip", "Thunder Punch", "Thunder Shock"])
+tms = Array[String](["tm_29", "tm_31", "tm_77", "tm_87", "tm_113", "tm_136", "tm_141", "tm_165", "tm_166", "tm_199", "tm_214", "tm_223", "tm_225", "tm_228", "tm_239", "tm_255", "tm_257", "tm_263", "tm_264", "tm_292", "tm_293"])

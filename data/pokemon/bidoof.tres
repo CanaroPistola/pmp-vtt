@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dk8mo1xfdthq6"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_w4wqn"]
+
+[resource]
+script = ExtResource("1_w4wqn")
+dex_number = 399
+display_name = "Bidoof"
+id = "bidoof"
+types = Array[int]([0])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 17
+movement = {
+0: 6.0,
+1: 7.5
+}
+attributes = {
+0: 10,
+1: 9,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Simple", "Unaware"])
+hidden_ability = "Moody"
+evolves_to = Array[String](["bibarel"])
+evolution_level = 5
+evolution_points = 15
+level_moves = {
+2: ["Defense Curl"],
+3: ["Rollout"],
+5: ["Headbutt"],
+6: ["Hyper Fang"],
+7: ["Yawn"],
+9: ["Crunch"],
+10: ["Take Down"],
+11: ["Super Fang"],
+13: ["Swords Dance"],
+14: ["Amnesia"],
+15: ["Curse", "Superpower"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_11", "tm_13", "tm_22", "tm_40", "tm_45", "tm_48", "tm_58", "tm_75", "tm_87", "tm_109", "tm_114", "tm_131", "tm_139", "tm_144", "tm_149", "tm_153", "tm_199", "tm_209", "tm_214", "tm_216", "tm_224", "tm_228", "tm_240", "tm_242", "tm_248", "tm_255", "tm_262", "tm_270", "tm_271", "tm_272", "tm_274", "tm_276", "tm_277", "tm_278", "tm_283", "tm_288", "tm_290", "tm_293", "tm_294", "tm_296", "tm_318"])
+egg_moves = Array[String](["Aqua Tail", "Defense Curl", "Double-Edge", "Endure", "Fury Swipes", "Mud Sport", "Odor Sleuth", "Quick Attack", "Rock Climb", "Rollout", "Skull Bash", "Sleep Talk", "Water Sport"])

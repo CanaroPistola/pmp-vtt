@@ -1,0 +1,80 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dirxqp16ff2vw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_rw5y5"]
+
+[resource]
+script = ExtResource("1_rw5y5")
+dex_number = 83
+display_name = "Farfetch'd"
+id = "farfetch'd"
+types = Array[int]([0, 9])
+sr = "3"
+evolution_stage = 1
+armor_class = 14
+hit_points = 25
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 14,
+1: 14,
+2: 12,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([8, 13])
+abilities = Array[String](["Keen Eye", "Inner Focus"])
+hidden_ability = "Defiant"
+evolves_to = Array[String](["sirfetchd"])
+evolution_level = 11
+evolution_points = 10
+level_moves = {
+3: ["Aerial Ace", "Fury Attack"],
+5: ["Cut", "Knock Off"],
+7: ["Air Cutter", "Slash"],
+9: ["Swords Dance"],
+11: ["Agility", "Night Slash"],
+13: ["Acrobatics"],
+15: ["Air Slash", "False Swipe", "Feint"],
+16: ["Brave Bird", "Leaf Blade"]
+}
+starting_moves = Array[String](["Fury Cutter", "Leer", "Peck", "Poison Jab", "Sand Attack"])
+tms = Array[String](["tm_1", "tm_3", "tm_7", "tm_13", "tm_30", "tm_44", "tm_46", "tm_52", "tm_56", "tm_85", "tm_87", "tm_100", "tm_106", "tm_124", "tm_126", "tm_128", "tm_145", "tm_146", "tm_147", "tm_149", "tm_185", "tm_192", "tm_194", "tm_207", "tm_208", "tm_209", "tm_210", "tm_218", "tm_219", "tm_237", "tm_239", "tm_246", "tm_249", "tm_255", "tm_260", "tm_261", "tm_266", "tm_267", "tm_268", "tm_271", "tm_277", "tm_278", "tm_285", "tm_291", "tm_293", "tm_306"])
+egg_moves = Array[String](["Covet", "Curse", "Feather Dance", "Feint", "Final Gambit", "First Impression", "Flail", "Foresight", "Gust", "Leaf Blade", "Mirror Move", "Mud-Slap", "Night Slash", "Quick Attack", "Revenge", "Roost", "Simple Beam", "Sky Attack", "Steel Wing", "Trump Card"])
+is_variant = true
+variant_data = {
+"Farfetch'd": {
+"diff": {},
+"display_name": "Farfetch'd",
+"is_default": true
+},
+"Farfetch'd de Galar": {
+"diff": {
+"abilities": ["Steadfast"],
+"hidden_ability": "Scrappy",
+"moves_diff": {
+"egg_moves": ["Counter", "Covet", "Curse", "Double-Edge", "Feather Dance", "Feint", "Final Gambit", "First Impression", "Flail", "Foresight", "Gust", "Leaf Blade", "Mirror Move", "Mud-Slap", "Night Slash", "Quick Attack", "Quick Guard", "Revenge", "Roost", "Simple Beam", "Sky Attack", "Steel Wing", "Trump Card"],
+"level_moves": {
+2: ["Leer"],
+4: ["Fury Cutter"],
+5: ["Rock Smash"],
+7: ["Brutal Swing"],
+9: ["Detect"],
+10: ["Knock Off"],
+12: ["Defog"],
+14: ["Brick Break"],
+15: ["Slam", "Swords Dance"],
+16: ["Final Gambit", "Leaf Blade"],
+17: ["Brave Bird"]
+},
+"starting_moves": ["Peck", "Sand Attack"],
+"tms": ["tm_1", "tm_3", "tm_12", "tm_13", "tm_28", "tm_30", "tm_44", "tm_46", "tm_52", "tm_56", "tm_85", "tm_87", "tm_100", "tm_106", "tm_124", "tm_126", "tm_128", "tm_145", "tm_146", "tm_147", "tm_149", "tm_185", "tm_192", "tm_194", "tm_207", "tm_208", "tm_209", "tm_210", "tm_218", "tm_219", "tm_237", "tm_239", "tm_246", "tm_249", "tm_255", "tm_260", "tm_261", "tm_266", "tm_268", "tm_271", "tm_277", "tm_278", "tm_285", "tm_291", "tm_293", "tm_306"]
+},
+"types": [6]
+},
+"display_name": "Farfetch'd de Galar",
+"is_default": false
+}
+}

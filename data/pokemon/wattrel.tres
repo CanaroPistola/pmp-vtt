@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://j1qgkhyrtwlt"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_olf7r"]
+
+[resource]
+script = ExtResource("1_olf7r")
+dex_number = 940
+display_name = "Wattrel"
+id = "wattrel"
+types = Array[int]([3, 9])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 7.5
+}
+attributes = {
+0: 11,
+1: 15,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 13])
+abilities = Array[String](["Wind Power", "Volt Absorb"])
+hidden_ability = "Competitive"
+evolves_to = Array[String](["kilowattrel"])
+evolution_level = 9
+evolution_points = 11
+level_moves = {
+2: ["Thunder Shock"],
+3: ["Quick Attack"],
+4: ["Pluck"],
+5: ["Spark"],
+7: ["Uproar"],
+8: ["Roost"],
+9: ["Dual Wingbeat"],
+11: ["Agility"],
+13: ["Volt Switch"],
+15: ["Discharge"]
+}
+starting_moves = Array[String](["Growl", "Peck"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_27", "tm_39", "tm_40", "tm_72", "tm_76", "tm_77", "tm_78", "tm_79", "tm_82", "tm_83", "tm_87", "tm_90", "tm_102", "tm_133", "tm_199", "tm_214", "tm_248", "tm_270", "tm_277", "tm_281", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294", "tm_303", "tm_305", "tm_308", "tm_313", "tm_315"])
+egg_moves = Array[String](["Endeavor", "Feather Dance", "Spit Up", "Stockpile", "Swallow", "Weather Ball"])

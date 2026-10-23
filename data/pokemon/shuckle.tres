@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cc1oi06bv7vs4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_m7fas"]
+
+[resource]
+script = ExtResource("1_m7fas")
+dex_number = 213
+display_name = "Shuckle"
+id = "shuckle"
+types = Array[int]([11, 12])
+sr = "4"
+min_level = 5
+evolution_stage = 1
+armor_class = 22
+hit_points = 25
+hit_dice = "d8"
+movement = {
+0: 3.0
+}
+attributes = {
+0: 10,
+1: 8,
+2: 12,
+3: 6,
+4: 16,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Sturdy", "Gluttony"])
+hidden_ability = "Contrary"
+level_moves = {
+2: ["Encore"],
+3: ["Wrap"],
+4: ["Struggle Bug"],
+6: ["Safeguard"],
+7: ["Rest"],
+8: ["Rock Throw"],
+9: ["Gastro Acid"],
+11: ["Power Trick"],
+12: ["Shell Smash"],
+13: ["Rock Slide"],
+14: ["Bug Bite"],
+15: ["Guard Split", "Power Split", "Stone Edge"],
+16: ["Sticky Web"]
+}
+starting_moves = Array[String](["Bide", "Constrict", "Rollout", "Withdraw"])
+tms = Array[String](["tm_4", "tm_13", "tm_20", "tm_32", "tm_35", "tm_45", "tm_55", "tm_58", "tm_73", "tm_74", "tm_87", "tm_109", "tm_111", "tm_121", "tm_129", "tm_131", "tm_146", "tm_150", "tm_170", "tm_174", "tm_199", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_229", "tm_230", "tm_231", "tm_245", "tm_248", "tm_249", "tm_250", "tm_251", "tm_255", "tm_262", "tm_264", "tm_267", "tm_270", "tm_271", "tm_276", "tm_296", "tm_307"])
+egg_moves = Array[String](["Acid", "Acupressure", "Covet", "Defense Curl", "Final Gambit", "Helping Hand", "Infestation", "Knock Off", "Mud-Slap", "Rock Blast", "Sand Tomb", "Sweet Scent", "Toxic"])

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ds11r41g7ayrn"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_k4e3w"]
+
+[resource]
+script = ExtResource("1_k4e3w")
+id = "trick_or_treat"
+display_name = "Trick-or-Treat"
+name_en = "Trick-or-Treat"
+type = 13
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 5
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você invoca energia fantasmagórica para alterar os tipos de uma criatura dentro do alcance. Role 1d20 + MOVE  + 9 e compare o resultado com 10 + CAR do alvo. Em um resultado maior ou igual, Trick-or-Treat adiciona o tipo Fantasma ao alvo. Se o alvo já possuir dois tipos, ele passa a ter três tipos. Caso esteja sob o efeito de Forest's Curse, seu tipo Grama é substituído pelo tipo Fantasma."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([4, 5])

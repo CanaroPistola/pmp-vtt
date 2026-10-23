@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c45oj5w7352un"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_tjy7g"]
+
+[resource]
+script = ExtResource("1_tjy7g")
+dex_number = 807
+display_name = "Zeraora"
+id = "zeraora"
+types = Array[int]([3])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 232
+hit_dice = "d12"
+movement = {
+0: 15.0,
+2: 10.5
+}
+attributes = {
+0: 18,
+1: 22,
+2: 17,
+3: 8,
+4: 14,
+5: 12
+}
+skills = Array[int]([0, 3])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}])
+abilities = Array[String](["Volt Absorb"])
+level_moves = {
+2: ["Hone Claws"],
+3: ["Quick Attack"],
+4: ["Fury Swipes"],
+5: ["Volt Switch"],
+7: ["Snarl"],
+8: ["Fake Out"],
+9: ["Charge"],
+10: ["Thunder Punch"],
+11: ["Slash"],
+12: ["Wild Charge"],
+14: ["Quick Guard"],
+15: ["Close Combat", "Discharge", "Plasma Fists"],
+18: ["Agility"]
+}
+starting_moves = Array[String](["Scratch", "Spark"])
+tms = Array[String](["tm_2", "tm_3", "tm_12", "tm_26", "tm_29", "tm_31", "tm_34", "tm_38", "tm_44", "tm_45", "tm_58", "tm_67", "tm_71", "tm_75", "tm_77", "tm_79", "tm_82", "tm_87", "tm_89", "tm_94", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_114", "tm_129", "tm_131", "tm_136", "tm_149", "tm_150", "tm_151", "tm_158", "tm_159", "tm_165", "tm_166", "tm_182", "tm_185", "tm_199", "tm_214", "tm_216", "tm_217", "tm_219", "tm_228", "tm_234", "tm_242", "tm_248", "tm_253", "tm_254", "tm_255", "tm_270", "tm_274", "tm_277", "tm_283", "tm_289", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_308", "tm_315", "tm_318"])

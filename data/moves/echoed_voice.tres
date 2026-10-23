@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://djulcys4iput7"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_40ylx"]
+
+[resource]
+script = ExtResource("1_40ylx")
+id = "echoed_voice"
+display_name = "Echoed Voice (Voz Ecoante)"
+name_en = "Echoed Voice"
+name_pt = "Voz Ecoante"
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Você solta um grito que ecoa pelo campo de batalha em direção a uma criatura. Faça um ataque à distância, causando 2d4 + MOVE de dano normal em um acerto. Na rodada seguinte, se você ou qualquer outra criatura dentro do alcance usar este Move, os dados de dano são dobrados. Esse multiplicador pode continuar a se acumular, até um máximo de 5 vezes os dados de dano base. O dano deste Move só aumenta uma vez por rodada, independentemente de quantos Pokémon o utilizem. Mesmo que o Move erre ou não cause dano (por exemplo, por ter sido protegido por Moves como Protect), o dano base ainda aumentará, desde que o Move seja executado em rodadas consecutivas. Não é necessário que o mesmo Pokémon use este Move em todos os turnos para que o dano aumente."
+scaling_text = "Os dados de dano para este Move mudam para 1d12 no nível 5, 4d4 no nível 10 e 2d10 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}

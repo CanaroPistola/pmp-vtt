@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cqse07u2f1yjj"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_srdqn"]
+
+[resource]
+script = ExtResource("1_srdqn")
+dex_number = 919
+display_name = "Nymble"
+id = "nymble"
+types = Array[int]([11])
+sr = "1/8"
+evolution_stage = 1
+armor_class = 11
+hit_points = 15
+movement = {
+0: 9.0,
+2: 6.0
+}
+attributes = {
+0: 9,
+1: 10,
+2: 9,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 4])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 0
+}])
+abilities = Array[String](["Swarm"])
+hidden_ability = "Tinted Lens"
+evolves_to = Array[String](["lokix"])
+evolution_level = 8
+evolution_points = 20
+level_moves = {
+2: ["Astonish", "Struggle Bug"],
+3: ["Assurance"],
+4: ["Double Kick"],
+5: ["Screech"],
+6: ["Endure"],
+8: ["Bug Bite"],
+9: ["Feint"],
+10: ["Agility"],
+13: ["Sucker Punch"],
+14: ["First Impression"]
+}
+starting_moves = Array[String](["Leer", "Tackle"])
+tms = Array[String](["tm_5", "tm_32", "tm_33", "tm_83", "tm_87", "tm_155", "tm_195", "tm_199", "tm_209", "tm_214", "tm_245", "tm_248", "tm_269", "tm_270", "tm_271", "tm_282", "tm_286", "tm_288", "tm_298", "tm_303", "tm_320"])
+egg_moves = Array[String](["Counter", "Skitter Smack"])

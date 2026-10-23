@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b5gqsjho3tcpp"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_t2bew"]
+
+[resource]
+script = ExtResource("1_t2bew")
+dex_number = 150
+display_name = "Mewtwo"
+id = "mewtwo"
+types = Array[int]([10])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 18
+hit_points = 486
+hit_dice = "d20"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 19,
+1: 24,
+2: 18,
+3: 20,
+4: 20,
+5: 18
+}
+skills = Array[int]([2, 7, 9, 16])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}, {
+"range_m": 9.0,
+"type": 2
+}])
+abilities = Array[String](["Pressure"])
+hidden_ability = "Unnerve"
+level_moves = {
+3: ["Ancient Power", "Swift"],
+5: ["Future Sight"],
+8: ["Psych Up"],
+10: ["Miracle Eye"],
+12: ["Psycho Cut"],
+15: ["Guard Swap", "Power Swap", "Recover"],
+16: ["Psychic"],
+17: ["Aura Sphere", "Barrier"],
+18: ["Amnesia"],
+19: ["Mist"],
+20: ["Me First", "Psystrike"]
+}
+starting_moves = Array[String](["Confusion", "Disable", "Laser Focus", "Life Dew", "Psywave", "Safeguard"])
+tms = Array[String](["tm_3", "tm_5", "tm_10", "tm_11", "tm_14", "tm_16", "tm_22", "tm_25", "tm_29", "tm_31", "tm_34", "tm_35", "tm_38", "tm_40", "tm_42", "tm_45", "tm_46", "tm_51", "tm_52", "tm_57", "tm_58", "tm_59", "tm_67", "tm_69", "tm_73", "tm_74", "tm_78", "tm_80", "tm_83", "tm_84", "tm_85", "tm_87", "tm_91", "tm_94", "tm_97", "tm_100", "tm_103", "tm_105", "tm_106", "tm_109", "tm_110", "tm_113", "tm_114", "tm_118", "tm_119", "tm_122", "tm_129", "tm_130", "tm_131", "tm_133", "tm_136", "tm_139", "tm_141", "tm_144", "tm_145", "tm_149", "tm_150", "tm_151", "tm_152", "tm_156", "tm_158", "tm_159", "tm_161", "tm_162", "tm_165", "tm_166", "tm_171", "tm_178", "tm_180", "tm_185", "tm_191", "tm_196", "tm_198", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_206", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_218", "tm_223", "tm_225", "tm_226", "tm_228", "tm_229", "tm_231", "tm_234", "tm_239", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_254", "tm_255", "tm_257", "tm_259", "tm_261", "tm_266", "tm_267", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_290", "tm_292", "tm_293", "tm_294", "tm_295", "tm_296", "tm_298", "tm_300", "tm_301", "tm_311", "tm_313", "tm_316", "tm_317", "tm_321"])

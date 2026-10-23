@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://u64dk7wgqgrd"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ociuo"]
+
+[resource]
+script = ExtResource("1_ociuo")
+dex_number = 216
+display_name = "Teddiursa"
+id = "teddiursa"
+types = Array[int]([0])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 7.5
+}
+attributes = {
+0: 13,
+1: 11,
+2: 11,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([11, 14])
+abilities = Array[String](["Pickup", "Quick Feet"])
+hidden_ability = "Honey Gather"
+evolves_to = Array[String](["ursaring"])
+evolution_level = 10
+evolution_points = 9
+level_moves = {
+3: ["Fury Swipes"],
+5: ["Feint Attack", "Payback"],
+8: ["Sweet Scent"],
+9: ["Play Nice"],
+10: ["Play Rough", "Slash"],
+12: ["Charm"],
+15: ["Rest", "Snore", "Thrash"],
+16: ["Fling"]
+}
+starting_moves = Array[String](["Baby-Doll Eyes", "Covet", "Fake Tears", "Lick", "Scratch"])
+tms = Array[String](["tm_3", "tm_13", "tm_16", "tm_17", "tm_25", "tm_29", "tm_34", "tm_35", "tm_41", "tm_43", "tm_45", "tm_48", "tm_50", "tm_55", "tm_58", "tm_59", "tm_74", "tm_83", "tm_87", "tm_88", "tm_94", "tm_100", "tm_104", "tm_105", "tm_109", "tm_120", "tm_129", "tm_131", "tm_132", "tm_137", "tm_141", "tm_153", "tm_158", "tm_168", "tm_171", "tm_186", "tm_190", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_223", "tm_224", "tm_225", "tm_228", "tm_238", "tm_241", "tm_248", "tm_251", "tm_255", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_292", "tm_295", "tm_296", "tm_298", "tm_305", "tm_318"])
+egg_moves = Array[String](["Belly Drum", "Chip Away", "Close Combat", "Counter", "Cross Chop", "Crunch", "Double-Edge", "Fake Tears", "Fury Cutter", "Metal Claw", "Night Slash", "Play Rough", "Seismic Toss", "Sleep Talk", "Take Down", "Yawn"])

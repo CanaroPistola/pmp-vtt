@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b75ljiu12ctjw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_h3oee"]
+
+[resource]
+script = ExtResource("1_h3oee")
+dex_number = 991
+display_name = "Iron Bundle"
+id = "iron_bundle"
+types = Array[int]([5, 2])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 22,
+2: 14,
+3: 8,
+4: 14,
+5: 14
+}
+skills = Array[int]([0, 4, 6, 7, 15])
+abilities = Array[String](["Quark Drive"])
+level_moves = {
+3: ["Powder Snow"],
+5: ["Whirlpool"],
+7: ["Take Down"],
+10: ["Drill Peck"],
+12: ["Helping Hand"],
+14: ["Freeze-Dry"],
+15: ["Flip Turn"],
+16: ["Ice Beam"],
+17: ["Agility", "Snowscape"],
+18: ["Hydro Pump"],
+19: ["Aurora Veil"],
+20: ["Blizzard"]
+}
+starting_moves = Array[String](["Present"])
+tms = Array[String](["tm_2", "tm_5", "tm_6", "tm_16", "tm_22", "tm_25", "tm_42", "tm_77", "tm_81", "tm_83", "tm_87", "tm_100", "tm_101", "tm_113", "tm_129", "tm_135", "tm_136", "tm_139", "tm_141", "tm_142", "tm_144", "tm_190", "tm_199", "tm_209", "tm_214", "tm_248", "tm_256", "tm_270", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_303", "tm_311", "tm_314"])

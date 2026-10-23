@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bwh41cpaitn80"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qju7k"]
+
+[resource]
+script = ExtResource("1_qju7k")
+dex_number = 437
+display_name = "Bronzong"
+id = "bronzong"
+types = Array[int]([16, 10])
+sr = "11"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 60
+hit_dice = "d10"
+attributes = {
+0: 18,
+1: 11,
+2: 18,
+3: 8,
+4: 18,
+5: 10
+}
+skills = Array[int]([7, 16])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Levitate", "Heatproof"])
+hidden_ability = "Heavy Metal"
+level_moves = {
+2: ["Hypnosis"],
+3: ["Imprison"],
+4: ["Confuse Ray"],
+5: ["Psywave"],
+7: ["Feint Attack", "Iron Defense"],
+9: ["Safeguard"],
+10: ["Future Sight"],
+11: ["Metal Sound"],
+12: ["Gyro Ball"],
+14: ["Extrasensory"],
+15: ["Payback"],
+16: ["Heal Block", "Heavy Slam"]
+}
+starting_moves = Array[String](["Block", "Confusion", "Rain Dance", "Sunny Day", "Tackle", "Weather Ball"])
+tms = Array[String](["tm_9", "tm_23", "tm_24", "tm_25", "tm_35", "tm_38", "tm_40", "tm_45", "tm_46", "tm_58", "tm_69", "tm_74", "tm_83", "tm_85", "tm_86", "tm_87", "tm_99", "tm_109", "tm_110", "tm_113", "tm_114", "tm_118", "tm_119", "tm_121", "tm_123", "tm_128", "tm_129", "tm_130", "tm_131", "tm_136", "tm_142", "tm_145", "tm_147", "tm_148", "tm_156", "tm_169", "tm_170", "tm_180", "tm_186", "tm_196", "tm_198", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_224", "tm_225", "tm_228", "tm_229", "tm_231", "tm_240", "tm_243", "tm_244", "tm_248", "tm_255", "tm_257", "tm_259", "tm_262", "tm_263", "tm_264", "tm_266", "tm_268", "tm_270", "tm_271", "tm_276", "tm_282", "tm_284", "tm_286", "tm_296", "tm_300", "tm_301", "tm_313", "tm_317", "tm_321"])
+egg_moves = Array[String](["Gravity", "Recycle"])

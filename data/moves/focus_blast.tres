@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ru40it16xt6o"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_vm73a"]
+
+[resource]
+script = ExtResource("1_vm73a")
+id = "focus_blast"
+display_name = "Focus Blast (Explosão Focalizada)"
+name_en = "Focus Blast"
+name_pt = "Explosão Focalizada"
+type = 6
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 18.0
+description = "Você concentra um foco de energia, formando uma esfera luminosa que cresce antes de ser lançada com força explosiva contra um alvo. Faça um ataque à distância -3 contra um alvo em alcance, causando 3d8 + MOVE de dano lutador em um acerto. Em um resultado natural de 19 ou 20 no acerto, a Defesa Especial do alvo é reduzida em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+move_power_modifier = -3
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

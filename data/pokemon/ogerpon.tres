@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bwam4m2ldhhuu"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ieg7v"]
+
+[resource]
+script = ExtResource("1_ieg7v")
+dex_number = 1017
+display_name = "Ogerpon"
+id = "ogerpon"
+types = Array[int]([4])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 173
+hit_dice = "d12"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 18,
+1: 18,
+2: 15,
+3: 10,
+4: 14,
+5: 14
+}
+skills = Array[int]([0, 4, 5, 15])
+abilities = Array[String](["Defiant"])
+hidden_ability = "Embody Aspect"
+level_moves = {
+2: ["Focus Energy"],
+4: ["Growth"],
+6: ["Slam"],
+8: ["Low Sweep"],
+10: ["Ivy Cudgel"],
+12: ["Throat Chop"],
+14: ["Synthesis"],
+15: ["Spiky Shield"],
+16: ["Power Whip", "Superpower"],
+17: ["Wood Hammer"]
+}
+starting_moves = Array[String](["Follow Me", "Leech Seed", "Quick Attack", "Vine Whip"])
+tms = Array[String](["tm_29", "tm_36", "tm_41", "tm_81", "tm_83", "tm_84", "tm_87", "tm_89", "tm_100", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_129", "tm_150", "tm_152", "tm_154", "tm_158", "tm_159", "tm_163", "tm_190", "tm_199", "tm_209", "tm_214", "tm_218", "tm_225", "tm_231", "tm_234", "tm_238", "tm_248", "tm_257", "tm_258", "tm_260", "tm_266", "tm_270", "tm_271", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289", "tm_298", "tm_303", "tm_321"])
+is_variant = true
+variant_data = {
+"Ogerpon Máscara Alicerce": {
+"diff": {
+"abilities": ["Sturdy"],
+"types": [4, 12]
+},
+"display_name": "Ogerpon Máscara Alicerce",
+"is_default": false
+},
+"Ogerpon Máscara Fornalha": {
+"diff": {
+"abilities": ["Mold Breaker"],
+"types": [4, 1]
+},
+"display_name": "Ogerpon Máscara Fornalha",
+"is_default": false
+},
+"Ogerpon Máscara Nascente": {
+"diff": {
+"abilities": ["Water Absorb"],
+"types": [4, 2]
+},
+"display_name": "Ogerpon Máscara Nascente",
+"is_default": false
+},
+"Ogerpon Máscara Turquesa": {
+"diff": {},
+"display_name": "Ogerpon Máscara Turquesa",
+"is_default": true
+}
+}

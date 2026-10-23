@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ythxw7xe2k5c"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_86t36"]
+
+[resource]
+script = ExtResource("1_86t36")
+dex_number = 48
+display_name = "Venonat"
+id = "venonat"
+types = Array[int]([11, 7])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 6.0
+}
+attributes = {
+0: 13,
+1: 11,
+2: 11,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([12])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Compound Eyes", "Tinted Lens"])
+hidden_ability = "Run Away"
+evolves_to = Array[String](["venomoth"])
+evolution_level = 11
+evolution_points = 8
+level_moves = {
+2: ["Supersonic"],
+4: ["Confusion"],
+5: ["Poison Powder"],
+6: ["Psybeam"],
+8: ["Stun Spore"],
+9: ["Bug Buzz", "Signal Beam"],
+10: ["Sleep Powder"],
+12: ["Leech Life"],
+13: ["Zen Headbutt"],
+14: ["Poison Fang"],
+15: ["Psychic"]
+}
+starting_moves = Array[String](["Disable", "Foresight", "Tackle"])
+tms = Array[String](["tm_1", "tm_5", "tm_13", "tm_18", "tm_32", "tm_33", "tm_45", "tm_46", "tm_58", "tm_82", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_131", "tm_146", "tm_155", "tm_160", "tm_180", "tm_195", "tm_199", "tm_200", "tm_202", "tm_204", "tm_214", "tm_216", "tm_228", "tm_243", "tm_244", "tm_245", "tm_248", "tm_249", "tm_255", "tm_257", "tm_269", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_286", "tm_288", "tm_296", "tm_297", "tm_307", "tm_321"])
+egg_moves = Array[String](["Agility", "Baton Pass", "Bug Bite", "Giga Drain", "Morning Sun", "Rage Powder", "Screech", "Secret Power", "Signal Beam", "Skill Swap", "Toxic Spikes", "Venoshock"])

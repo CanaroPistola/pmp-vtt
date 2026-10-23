@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://4mt0ljp62rgv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_46pnk"]
+
+[resource]
+script = ExtResource("1_46pnk")
+id = "double_team"
+display_name = "Double Team (Multiplicar)"
+name_en = "Double Team"
+name_pt = "Multiplicar"
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você cria uma imagem duplicada de si mesmo, a  (1,5 metros) de distância de você. A imagem imita você e tenta enganar seus oponentes para atacá-la, em vez disso. Ao ser alvo de qualquer Move (ataque ou teste de resistência, danoso ou não), com uma área de efeito de até 1,5 metros de largura, role um d4. Em um resultado de 3 ou 4, a imagem absorve o dano e/ou efeitos do ataque e desaparece. Criaturas com Visão Verdadeira ignoram esta ilusão. Se estiver agarrado ou impedido por uma criatura enquanto a ilusão do Double Team estiver ativo, ela não tem efeito. Além disso, quando a ilusão se desfaz, você ganha um aumento em sua Evasão em 1 estágio, podendo ser acumulado em até 6 estágios."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change", "grapple"])

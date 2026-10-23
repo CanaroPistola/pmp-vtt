@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://7fitxwiqibq7"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_s0uh3"]
+
+[resource]
+script = ExtResource("1_s0uh3")
+id = "silver_wind"
+display_name = "Silver Wind (Vento de Prata)"
+name_en = "Silver Wind"
+name_pt = "Vento de Prata"
+type = 11
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 4.5
+description = "Você atinge um alvo com um vento forte de poeira prateada. Faça uma rolagem de ataque à distância contra uma criatura, causando 2d6 + MOVE de dano de inseto em um acerto. Em um resultado natural de 19 ou 20 no acerto, seu Ataque, Defesa, Ataque Especial, Defesa Especial e Velocidade são aumentados em 1 estágio, podendo ser acumulados em até 6 estágios cada."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "(4,5 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

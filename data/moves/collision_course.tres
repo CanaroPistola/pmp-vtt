@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b8kru7fxkfmf5"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_fn1uy"]
+
+[resource]
+script = ExtResource("1_fn1uy")
+id = "collision_course"
+display_name = "Collision Course"
+name_en = "Collision Course"
+type = 6
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você se transforma e despenca contra o chão, provocando uma enorme explosão pré-histórica. Avance obrigatoriamente 20 pés (6 metros) em linha reta sem sofrer ataques de oportunidade, e realize um ataque corpo a corpo contra cada criatura no trajeto, causando 2d10 + MOVE de dano do tipo lutador em um acerto. Se atingir um alvo que seja duas ou mais escalas de tamanho maior que a sua, você ricocheteia ao colidir, continuando o movimento na direção oposta do golpe. Caso este Move seja super efetivo contra um alvo, role os dados de dano duas vezes e escolha o maior resultado apenas para ele. Durante este Move, cada criatura só pode sofrer dano uma única vez, mesmo que seja atingida novamente no trajeto."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}

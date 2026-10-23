@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bq67q3xl4wvpv"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_mvqf6"]
+
+[resource]
+script = ExtResource("1_mvqf6")
+dex_number = 872
+display_name = "Snom"
+id = "snom"
+types = Array[int]([5, 11])
+sr = "1/8"
+evolution_stage = 1
+armor_class = 11
+hit_points = 15
+movement = {
+0: 4.5,
+2: 4.5
+}
+attributes = {
+0: 13,
+1: 15,
+2: 15,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([12])
+senses = Array[Dictionary]([{
+"range_m": 7.5,
+"type": 0
+}])
+abilities = Array[String](["Shield Dust"])
+hidden_ability = "Ice Scales"
+evolves_to = Array[String](["frosmoth"])
+evolution_level = 8
+evolution_points = 10
+starting_moves = Array[String](["Powder Snow", "Struggle Bug"])
+tms = Array[String](["tm_13", "tm_32", "tm_33", "tm_87", "tm_143", "tm_144", "tm_160", "tm_195", "tm_199", "tm_214", "tm_228", "tm_245", "tm_248", "tm_255", "tm_269", "tm_270", "tm_286"])
+egg_moves = Array[String](["Bug Bite", "Fairy Wind", "Mirror Coat"])

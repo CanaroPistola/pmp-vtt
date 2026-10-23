@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://oed6x2m1eebq"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ile43"]
+
+[resource]
+script = ExtResource("1_ile43")
+dex_number = 661
+display_name = "Fletchling"
+id = "fletchling"
+types = Array[int]([0, 9])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 6.0
+}
+attributes = {
+0: 10,
+1: 13,
+2: 11,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([13])
+abilities = Array[String](["Big Pecks"])
+hidden_ability = "Gale Wings"
+evolves_to = Array[String](["fletchinder"])
+evolution_level = 6
+evolution_points = 10
+level_moves = {
+2: ["Quick Attack"],
+4: ["Ember", "Peck"],
+5: ["Agility"],
+6: ["Flail"],
+7: ["Roost"],
+9: ["Razor Wind"],
+10: ["Aerial Ace", "Natural Gift"],
+12: ["Flame Charge"],
+13: ["Acrobatics"],
+14: ["Me First"],
+15: ["Fly", "Steel Wing", "Tailwind"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_13", "tm_27", "tm_45", "tm_54", "tm_58", "tm_59", "tm_72", "tm_83", "tm_87", "tm_90", "tm_96", "tm_98", "tm_102", "tm_109", "tm_127", "tm_131", "tm_133", "tm_183", "tm_199", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_248", "tm_254", "tm_255", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_296", "tm_303", "tm_316", "tm_318"])
+egg_moves = Array[String](["Defog", "Flame Charge", "Quick Guard", "Snatch", "Tailwind"])

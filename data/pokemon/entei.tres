@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dvkluaa1qeqin"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_blqmf"]
+
+[resource]
+script = ExtResource("1_blqmf")
+dex_number = 244
+display_name = "Entei"
+id = "entei"
+types = Array[int]([1])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 232
+hit_dice = "d12"
+movement = {
+0: 15.0
+}
+attributes = {
+0: 18,
+1: 19,
+2: 16,
+3: 6,
+4: 12,
+5: 14
+}
+skills = Array[int]([3, 8])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Pressure"])
+hidden_ability = "Inner Focus"
+level_moves = {
+2: ["Flame Wheel"],
+3: ["Ember"],
+5: ["Roar"],
+8: ["Fire Spin"],
+10: ["Stomp"],
+12: ["Flamethrower", "Scary Face"],
+14: ["Crunch"],
+15: ["Fire Fang", "Swagger"],
+16: ["Lava Plume"],
+17: ["Extrasensory", "Sunny Day"],
+18: ["Calm Mind", "Fire Blast"],
+19: ["Eruption"]
+}
+starting_moves = Array[String](["Bite", "Leer", "Sacred Fire", "Smokescreen"])
+tms = Array[String](["tm_5", "tm_25", "tm_35", "tm_38", "tm_45", "tm_50", "tm_55", "tm_58", "tm_59", "tm_83", "tm_87", "tm_91", "tm_92", "tm_95", "tm_96", "tm_97", "tm_98", "tm_109", "tm_113", "tm_127", "tm_129", "tm_131", "tm_136", "tm_148", "tm_149", "tm_151", "tm_183", "tm_199", "tm_201", "tm_208", "tm_209", "tm_212", "tm_214", "tm_216", "tm_218", "tm_220", "tm_228", "tm_231", "tm_234", "tm_235", "tm_240", "tm_248", "tm_253", "tm_255", "tm_257", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_286", "tm_296", "tm_298", "tm_313", "tm_316"])

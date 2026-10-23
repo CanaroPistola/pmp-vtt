@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://delkgplbd6xp3"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_x8j68"]
+
+[resource]
+script = ExtResource("1_x8j68")
+id = "venoshock"
+display_name = "Venoshock"
+name_en = "Venoshock"
+type = 7
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 4.5
+description = "Você tenta encharcar uma criatura com líquido venenoso. Faça um ataque à distância contra um alvo em alcance, causando 2d6 + MOVE de dano venenoso em um acerto. Se o alvo já estiver envenenado, dobre os dados de dano."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 4d6 no nível 10 e 4d8 no nível 17."
+range_text_raw = "(4,5 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["poison"])

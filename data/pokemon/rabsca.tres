@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b7xehfjqrtsys"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_xg1y3"]
+
+[resource]
+script = ExtResource("1_xg1y3")
+dex_number = 954
+display_name = "Rabsca"
+id = "rabsca"
+types = Array[int]([11, 10])
+sr = "7"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 50
+hit_dice = "d10"
+attributes = {
+0: 17,
+1: 12,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([2, 9, 12])
+abilities = Array[String](["Synchronize"])
+hidden_ability = "Telepathy"
+level_moves = {
+2: ["Sand Attack"],
+3: ["Struggle Bug"],
+4: ["Rollout"],
+5: ["Psybeam"],
+7: ["Bug Bite"],
+8: ["Take Down"],
+10: ["Extrasensory"],
+12: ["Lunge"],
+14: ["Guard Swap", "Power Swap", "Speed Swap"],
+15: ["Bug Buzz", "Psychic"]
+}
+starting_moves = Array[String](["Confusion", "Defense Curl", "Revival Blessing", "Tackle"])
+tms = Array[String](["tm_32", "tm_33", "tm_38", "tm_46", "tm_53", "tm_55", "tm_73", "tm_78", "tm_83", "tm_84", "tm_85", "tm_87", "tm_100", "tm_110", "tm_113", "tm_118", "tm_120", "tm_136", "tm_145", "tm_147", "tm_155", "tm_156", "tm_160", "tm_174", "tm_175", "tm_194", "tm_195", "tm_196", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_209", "tm_212", "tm_214", "tm_225", "tm_231", "tm_240", "tm_244", "tm_245", "tm_248", "tm_249", "tm_268", "tm_269", "tm_270", "tm_271", "tm_282", "tm_286", "tm_288", "tm_300", "tm_301", "tm_313", "tm_320", "tm_321"])
+egg_moves = Array[String](["Cosmic Power", "Memento", "Recover", "Weather Ball"])

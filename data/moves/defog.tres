@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bpiaxqww2qf53"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_221xl"]
+
+[resource]
+script = ExtResource("1_221xl")
+id = "defog"
+display_name = "Defog"
+name_en = "Defog"
+type = 9
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 1
+range_category = 5
+range_distance = 15.0
+description = "Você convoca uma brisa mágica rápida em um raio de 50 pés (15 metros), centrado em você, que dissipa neblina, poeira e barreiras no ar, revelando o campo limpo. Escolha um alvo em alcance. Role 1d20 + MOVE + 9 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, a Evasão do alvo é reduzida em 1 estágio, podendo ser acumulado em até -6 estágios. Além disso, se usado em alcance ou dentro da área dos Moves Light Screen, Reflect, Mist, Safeguard , Aurora Veil, Spikes, Stealth Rock, Sticky Web, Toxic Spikes, os Terrenos e G-Max Steelsurge, eles são desfeitos imediatamente."
+range_text_raw = "Pessoal (raio de 15 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0, 1])
+effect_tags = Array[String](["stat_change"])

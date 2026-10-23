@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://deaa52exk4smp"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_glftp"]
+
+[resource]
+script = ExtResource("1_glftp")
+id = "mega_drain"
+display_name = "Mega Drain (Mega Dreno)"
+name_en = "Mega Drain"
+name_pt = "Mega Dreno"
+type = 4
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 15.0
+description = "Você cria feixes verdes de energia que tentam drenar a força vital de um alvo. Faça um ataque à distância, causando 2d4 + MOVE de dano de grama em um acerto. Metade do dano causado retorna como cura ao usuário."
+scaling_text = "Os dados de dano para este Move mudam para 1d12 no nível 5, 4d4 no nível 10 e 2d10 no nível 17."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["drain"])

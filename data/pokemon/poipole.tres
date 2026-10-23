@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cydaadintwmta"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wac1x"]
+
+[resource]
+script = ExtResource("1_wac1x")
+dex_number = 803
+display_name = "Poipole"
+id = "poipole"
+types = Array[int]([7])
+sr = "12"
+min_level = 8
+evolution_stage = 1
+armor_class = 14
+hit_points = 120
+hit_dice = "d12"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 15,
+1: 15,
+2: 15,
+3: 8,
+4: 14,
+5: 10
+}
+skills = Array[int]([5, 8])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Beast Boost"])
+evolves_to = Array[String](["naganadel"])
+evolution_level = 1
+evolution_points = 9
+level_moves = {
+3: ["Fury Attack"],
+5: ["Venoshock"],
+7: ["Charm"],
+8: ["Venom Drench"],
+11: ["Nasty Plot"],
+13: ["Poison Jab"],
+14: ["Toxic"],
+15: ["Fell Stinger"],
+16: ["Gastro Acid"]
+}
+starting_moves = Array[String](["Acid", "Dragon Pulse", "Growl", "Helping Hand", "Peck"])
+tms = Array[String](["tm_41", "tm_45", "tm_48", "tm_65", "tm_75", "tm_87", "tm_109", "tm_111", "tm_120", "tm_129", "tm_131", "tm_149", "tm_189", "tm_191", "tm_199", "tm_214", "tm_216", "tm_228", "tm_243", "tm_248", "tm_249", "tm_250", "tm_254", "tm_255", "tm_270", "tm_296", "tm_305", "tm_307"])

@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bpbj0hgl8vqgm"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_e01iq"]
+
+[resource]
+script = ExtResource("1_e01iq")
+dex_number = 73
+display_name = "Tentacruel"
+id = "tentacruel"
+types = Array[int]([2, 7])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 6.0,
+1: 10.5
+}
+attributes = {
+0: 17,
+1: 18,
+2: 15,
+3: 6,
+4: 10,
+5: 8
+}
+skills = Array[int]([15])
+abilities = Array[String](["Clear Body", "Liquid Ooze"])
+hidden_ability = "Rain Dish"
+level_moves = {
+2: ["Supersonic"],
+3: ["Constrict"],
+4: ["Acid"],
+5: ["Toxic Spikes"],
+6: ["Water Pulse"],
+7: ["Wrap"],
+8: ["Acid Spray"],
+9: ["Bubble Beam"],
+10: ["Barrier"],
+11: ["Poison Jab"],
+12: ["Acid Armor", "Brine"],
+14: ["Screech"],
+15: ["Hex", "Sludge Wave", "Surf"],
+16: ["Hydro Pump", "Wring Out"]
+}
+starting_moves = Array[String](["Poison Sting", "Reflect Type", "Water Gun"])
+tms = Array[String](["tm_1", "tm_13", "tm_20", "tm_22", "tm_30", "tm_31", "tm_42", "tm_45", "tm_46", "tm_47", "tm_49", "tm_53", "tm_57", "tm_58", "tm_83", "tm_87", "tm_101", "tm_109", "tm_112", "tm_113", "tm_120", "tm_122", "tm_124", "tm_130", "tm_131", "tm_135", "tm_136", "tm_139", "tm_144", "tm_146", "tm_150", "tm_157", "tm_161", "tm_174", "tm_176", "tm_186", "tm_191", "tm_195", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_232", "tm_234", "tm_236", "tm_245", "tm_248", "tm_249", "tm_250", "tm_255", "tm_270", "tm_275", "tm_276", "tm_277", "tm_278", "tm_286", "tm_288", "tm_289", "tm_296", "tm_297", "tm_307", "tm_311", "tm_312", "tm_313", "tm_314"])
+egg_moves = Array[String](["Acupressure", "Aqua Ring", "Aurora Beam", "Bubble", "Confuse Ray", "Haze", "Knock Off", "Mirror Coat", "Muddy Water", "Rapid Spin", "Tickle"])

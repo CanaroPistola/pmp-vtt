@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://br7n8db6kgusr"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_3t5lc"]
+
+[resource]
+script = ExtResource("1_3t5lc")
+id = "noxious_torque"
+display_name = "Noxious Torque"
+name_en = "Noxious Torque"
+type = 7
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você cospe veneno pela frente do corpo e em seguida investe contra o oponente. Faça um ataque corpo a corpo, causando 2d10 + MOVE de dano do tipo Venenoso em um acerto. Em um resultado natural de 15 ou mais no acerto, o alvo fica Envenenado. Este Move não aciona efeitos de inimigos que se ativam ao contato corpo a corpo. Observações: Encore, Instruct, Mimic e Sketch falham se o último Move usado pelo alvo foi Noxious Torque. Copycat falha se o último Move usado foi Noxious Torque."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["poison"])

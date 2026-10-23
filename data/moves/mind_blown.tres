@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cnqgf1csm4itl"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_6pb4b"]
+
+[resource]
+script = ExtResource("1_6pb4b")
+id = "mind_blown"
+display_name = "Mind Blown (Explosão Mental)"
+name_en = "Mind Blown"
+name_pt = "Explosão Mental"
+type = 1
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 5
+range_distance = 6.0
+description = "Você enche sua cabeça com fogo quente que explode ao seu redor. Force todas as criaturas dentro de 6 metros de você a fazer um teste de DES contra sua CD de Move, sofrendo 5d6 + MOVE de dano de fogo em caso de falha, ou metade disso em caso de sucesso. Após ativar este Move, você sofre uma quantidade de dano sem tipo igual ao dobro do dano total."
+scaling_text = "Os dados de dano para este Move mudam para 5d8 no nível 5, 6d10 no nível 10 e 6d12 no nível 17."
+range_text_raw = "Pessoal (6 metros de raio)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 12,
+"move": true
+}
+}

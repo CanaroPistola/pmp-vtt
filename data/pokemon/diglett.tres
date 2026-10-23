@@ -1,0 +1,91 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dp3n6l1cqiq0"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0dugp"]
+
+[resource]
+script = ExtResource("1_0dugp")
+dex_number = 50
+display_name = "Diglett"
+id = "diglett"
+types = Array[int]([8])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 18
+movement = {
+0: 6.0
+}
+attributes = {
+0: 12,
+1: 12,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 6])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 1
+}])
+abilities = Array[String](["Sand Veil", "Arena Trap"])
+hidden_ability = "Sand Force"
+evolves_to = Array[String](["dugtrio"])
+evolution_level = 9
+evolution_points = 13
+level_moves = {
+2: ["Growl"],
+3: ["Astonish"],
+4: ["Mud-Slap"],
+5: ["Magnitude"],
+6: ["Bulldoze"],
+8: ["Sucker Punch"],
+9: ["Mud Bomb"],
+10: ["Earth Power", "Sandstorm"],
+11: ["Dig"],
+12: ["Slash"],
+13: ["Earthquake"],
+15: ["Fissure"]
+}
+starting_moves = Array[String](["Sand Attack", "Scratch"])
+tms = Array[String](["tm_3", "tm_5", "tm_12", "tm_13", "tm_19", "tm_25", "tm_35", "tm_41", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_75", "tm_82", "tm_83", "tm_87", "tm_106", "tm_109", "tm_129", "tm_131", "tm_174", "tm_175", "tm_199", "tm_214", "tm_216", "tm_218", "tm_221", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_235", "tm_236", "tm_241", "tm_248", "tm_249", "tm_251", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_278", "tm_282", "tm_286", "tm_288", "tm_289", "tm_296", "tm_305"])
+egg_moves = Array[String](["Ancient Power", "Astonish", "Beat Up", "Endure", "Feint Attack", "Final Gambit", "Headbutt", "Hone Claws", "Memento", "Mud Bomb", "Pursuit", "Reversal", "Screech", "Uproar"])
+is_variant = true
+variant_data = {
+"Diglett": {
+"diff": {},
+"display_name": "Diglett",
+"is_default": true
+},
+"Diglett de Alola": {
+"diff": {
+"Evolve": "Dugtrio de Alola",
+"abilities": ["Sand Veil", "Tangling Hair"],
+"attributes": {
+"DEX": 10
+},
+"moves_diff": {
+"egg_moves": ["Ancient Power", "Beat Up", "Endure", "Feint Attack", "Final Gambit", "Headbutt", "Hone Claws", "Memento", "Metal Sound", "Pursuit", "Reversal", "Thrash"],
+"level_moves": {
+2: ["Growl"],
+3: ["Astonish"],
+4: ["Mud-Slap"],
+5: ["Magnitude"],
+6: ["Bulldoze"],
+8: ["Sucker Punch"],
+9: ["Mud Bomb"],
+10: ["Earth Power", "Sandstorm"],
+11: ["Dig"],
+12: ["Iron Head"],
+13: ["Earthquake"],
+15: ["Fissure"]
+},
+"starting_moves": ["Metal Claw", "Sand Attack"],
+"tms": ["tm_3", "tm_5", "tm_12", "tm_13", "tm_19", "tm_25", "tm_35", "tm_41", "tm_45", "tm_55", "tm_58", "tm_73", "tm_74", "tm_75", "tm_83", "tm_87", "tm_99", "tm_106", "tm_109", "tm_129", "tm_131", "tm_147", "tm_148", "tm_168", "tm_169", "tm_174", "tm_175", "tm_199", "tm_214", "tm_216", "tm_218", "tm_221", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_234", "tm_235", "tm_236", "tm_241", "tm_248", "tm_249", "tm_251", "tm_255", "tm_262", "tm_263", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_278", "tm_282", "tm_286", "tm_288", "tm_296", "tm_318"]
+},
+"types": [8, 16]
+},
+"display_name": "Diglett de Alola",
+"is_default": false
+}
+}

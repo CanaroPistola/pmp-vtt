@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ctegpo58cbui8"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_gnh7k"]
+
+[resource]
+script = ExtResource("1_gnh7k")
+id = "order_up"
+display_name = "Order Up"
+name_en = "Order Up"
+type = 14
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você ataca o alvo com uma postura elegante. Faça um ataque corpo a corpo, causando 4d4 + MOVE de dano do tipo Dragão em um acerto. Este Move não aciona efeitos de inimigos que se ativam ao contato corpo a corpo. Se você tiver um Tatsugiri na boca por meio da habilidade Commander, você receberá um bônus ao acertar o Move, com base na forma do Tatsugiri: Forma Curva aumenta o Ataque em 1 estágio, Forma Caída aumenta a Defesa em 1 estágio e Forma Esticada aumenta a Velocidade em 1 estágio. Observações: Order Up é fortalecido por Sheer Force mesmo que Commander não esteja ativado, e as Mudanças de Status, se houver, são aplicadas normalmente."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "Corpo a Corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

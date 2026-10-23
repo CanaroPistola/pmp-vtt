@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d1uqajtebkot7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_s2qo4"]
+
+[resource]
+script = ExtResource("1_s2qo4")
+dex_number = 920
+display_name = "Lokix"
+id = "lokix"
+types = Array[int]([11, 15])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 45
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 17,
+1: 13,
+2: 15,
+3: 6,
+4: 12,
+5: 11
+}
+skills = Array[int]([0, 4])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Swarm"])
+hidden_ability = "Tinted Lens"
+level_moves = {
+2: ["Astonish", "Struggle Bug"],
+3: ["Assurance"],
+4: ["Double Kick"],
+5: ["Screech"],
+6: ["Endure"],
+8: ["Bug Bite"],
+10: ["Feint"],
+11: ["Agility"],
+12: ["Throat Chop"],
+14: ["Sucker Punch"],
+15: ["Bounce", "First Impression"],
+16: ["Axe Kick"]
+}
+starting_moves = Array[String](["Detect", "Leer", "Low Kick", "Lunge", "Tackle"])
+tms = Array[String](["tm_3", "tm_5", "tm_29", "tm_32", "tm_33", "tm_52", "tm_59", "tm_83", "tm_87", "tm_100", "tm_113", "tm_150", "tm_152", "tm_155", "tm_158", "tm_159", "tm_160", "tm_195", "tm_199", "tm_209", "tm_214", "tm_218", "tm_234", "tm_245", "tm_248", "tm_261", "tm_269", "tm_270", "tm_271", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_298", "tm_303", "tm_320"])
+egg_moves = Array[String](["Counter", "Skitter Smack"])

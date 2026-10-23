@@ -1,0 +1,181 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://btevg06pnpmus"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_dprpf"]
+
+[resource]
+script = ExtResource("1_dprpf")
+dex_number = 479
+display_name = "Rotom"
+id = "rotom"
+types = Array[int]([3, 13])
+sr = "8"
+min_level = 5
+evolution_stage = 1
+armor_class = 14
+hit_points = 44
+hit_dice = "d8"
+attributes = {
+0: 15,
+1: 17,
+2: 14,
+3: 8,
+4: 10,
+5: 10
+}
+skills = Array[int]([2])
+abilities = Array[String](["Levitate"])
+level_moves = {
+3: ["Uproar"],
+5: ["Double Team"],
+8: ["Shock Wave"],
+10: ["Ominous Wind"],
+12: ["Substitute"],
+15: ["Electro Ball", "Hex"],
+16: ["Charge"],
+17: ["Discharge"]
+}
+starting_moves = Array[String](["Astonish", "Confuse Ray", "Thunder Shock", "Thunder Wave", "Trick"])
+tms = Array[String](["tm_9", "tm_39", "tm_40", "tm_45", "tm_46", "tm_52", "tm_54", "tm_58", "tm_69", "tm_76", "tm_77", "tm_78", "tm_79", "tm_83", "tm_87", "tm_106", "tm_109", "tm_129", "tm_130", "tm_131", "tm_137", "tm_156", "tm_178", "tm_180", "tm_181", "tm_184", "tm_194", "tm_199", "tm_201", "tm_209", "tm_212", "tm_214", "tm_216", "tm_219", "tm_228", "tm_240", "tm_242", "tm_243", "tm_248", "tm_254", "tm_255", "tm_261", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_284", "tm_286", "tm_288", "tm_290", "tm_293", "tm_294", "tm_296", "tm_300", "tm_305", "tm_308", "tm_316"])
+is_variant = true
+variant_data = {
+"Rotom": {
+"diff": {},
+"display_name": "Rotom",
+"is_default": true
+},
+"Rotom Calor": {
+"diff": {
+"armor_class": 16,
+"attributes": {
+"DEX": 16,
+"INT": 10,
+"STR": 16,
+"WIS": 12
+},
+"moves_diff": {
+"level_moves": {
+3: ["Uproar"],
+5: ["Double Team"],
+8: ["Shock Wave"],
+10: ["Ominous Wind"],
+12: ["Substitute"],
+15: ["Electro Ball", "Hex"],
+16: ["Charge"],
+17: ["Discharge"]
+},
+"starting_moves": ["Astonish", "Confuse Ray", "Overheat", "Thunder Shock", "Thunder Wave", "Trick"]
+},
+"types": [3, 1]
+},
+"display_name": "Rotom Calor",
+"is_default": false
+},
+"Rotom Corte": {
+"diff": {
+"armor_class": 16,
+"attributes": {
+"DEX": 16,
+"INT": 10,
+"STR": 16,
+"WIS": 12
+},
+"moves_diff": {
+"level_moves": {
+3: ["Uproar"],
+5: ["Double Team"],
+8: ["Shock Wave"],
+10: ["Ominous Wind"],
+12: ["Substitute"],
+15: ["Electro Ball", "Hex"],
+16: ["Charge"],
+17: ["Discharge"]
+},
+"starting_moves": ["Astonish", "Confuse Ray", "Leaf Storm", "Thunder Shock", "Thunder Wave", "Trick"]
+},
+"types": [3, 4]
+},
+"display_name": "Rotom Corte",
+"is_default": false
+},
+"Rotom Frio": {
+"diff": {
+"armor_class": 16,
+"attributes": {
+"DEX": 16,
+"INT": 10,
+"STR": 16,
+"WIS": 12
+},
+"moves_diff": {
+"level_moves": {
+3: ["Uproar"],
+5: ["Double Team"],
+8: ["Shock Wave"],
+10: ["Ominous Wind"],
+12: ["Substitute"],
+15: ["Electro Ball", "Hex"],
+16: ["Charge"],
+17: ["Discharge"]
+},
+"starting_moves": ["Astonish", "Blizzard", "Confuse Ray", "Thunder Shock", "Thunder Wave", "Trick"]
+},
+"types": [3, 5]
+},
+"display_name": "Rotom Frio",
+"is_default": false
+},
+"Rotom Lavagem": {
+"diff": {
+"armor_class": 16,
+"attributes": {
+"DEX": 16,
+"INT": 10,
+"STR": 16,
+"WIS": 12
+},
+"moves_diff": {
+"level_moves": {
+3: ["Uproar"],
+5: ["Double Team"],
+8: ["Shock Wave"],
+10: ["Ominous Wind"],
+12: ["Substitute"],
+15: ["Electro Ball", "Hex"],
+16: ["Charge"],
+17: ["Discharge"]
+},
+"starting_moves": ["Astonish", "Confuse Ray", "Hydro Pump", "Thunder Shock", "Thunder Wave", "Trick"]
+},
+"types": [3, 2]
+},
+"display_name": "Rotom Lavagem",
+"is_default": false
+},
+"Rotom Ventilador": {
+"diff": {
+"armor_class": 16,
+"attributes": {
+"DEX": 16,
+"INT": 10,
+"STR": 16,
+"WIS": 12
+},
+"moves_diff": {
+"level_moves": {
+3: ["Uproar"],
+5: ["Double Team"],
+8: ["Shock Wave"],
+10: ["Ominous Wind"],
+12: ["Substitute"],
+15: ["Electro Ball", "Hex"],
+16: ["Charge"],
+17: ["Discharge"]
+},
+"starting_moves": ["Air Slash", "Astonish", "Confuse Ray", "Thunder Shock", "Thunder Wave", "Trick"]
+},
+"types": [3, 9]
+},
+"display_name": "Rotom Ventilador",
+"is_default": false
+}
+}

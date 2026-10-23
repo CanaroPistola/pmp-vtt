@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://2gqplmiwcl1o"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_fxodw"]
+
+[resource]
+script = ExtResource("1_fxodw")
+id = "gastro_acid"
+display_name = "Gastro Acid"
+name_en = "Gastro Acid"
+type = 7
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 1
+range_category = 2
+range_distance = 6.0
+duration_is_permanent = true
+description = "Você lança ácido estomacal em direção a um alvo. Role 1d20 + MOVE + 9 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, o alvo fica coberto pela substância repugnante e não pode se beneficiar dos efeitos de sua habilidade passiva durante a duração. Observações: Gastro Acid falha se a Habilidade do alvo for Multitype, Stance Change, Schooling, C omatose, Shields Down, Disguise, RKS System, Battle Bond, Power Construct, Ice Face, Gulp Missile, As One, Zero to Hero, Commander, Quark Drive ou Protosynthesis. Gastro Acid pode ser refletido por Magic Coat e Magic Bounce (mas Gastro Acid ainda suprimir á Magic Bounce caso não seja refletido por ele, por exemplo, se usado por um Pokémon com Mold Breaker)."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([1, 2])

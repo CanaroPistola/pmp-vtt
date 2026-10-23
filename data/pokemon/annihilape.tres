@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bie3004wywu5x"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0jt56"]
+
+[resource]
+script = ExtResource("1_0jt56")
+dex_number = 979
+display_name = "Annihilape"
+id = "annihilape"
+types = Array[int]([6, 13])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 122
+hit_dice = "d12"
+movement = {
+0: 10.5,
+2: 9.0
+}
+attributes = {
+0: 19,
+1: 18,
+2: 15,
+3: 6,
+4: 14,
+5: 8
+}
+skills = Array[int]([0, 3, 8])
+abilities = Array[String](["Vital Spirit", "Inner Focus"])
+hidden_ability = "Defiant"
+level_moves = {
+2: ["Fury Swipes"],
+3: ["Low Kick"],
+4: ["Seismic Toss"],
+6: ["Swagger"],
+8: ["Cross Chop"],
+9: ["Assurance"],
+10: ["Thrash"],
+12: ["Rage Fist"],
+13: ["Close Combat"],
+15: ["Screech", "Stomping Tantrum"],
+16: ["Final Gambit", "Outrage"]
+}
+starting_moves = Array[String](["Counter", "Fling", "Focus Energy", "Leer", "Scratch", "Shadow Punch"])
+tms = Array[String](["tm_2", "tm_25", "tm_29", "tm_34", "tm_35", "tm_43", "tm_44", "tm_51", "tm_55", "tm_59", "tm_67", "tm_74", "tm_81", "tm_82", "tm_83", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_113", "tm_120", "tm_129", "tm_136", "tm_141", "tm_152", "tm_158", "tm_159", "tm_171", "tm_180", "tm_182", "tm_183", "tm_188", "tm_191", "tm_199", "tm_209", "tm_214", "tm_218", "tm_223", "tm_225", "tm_234", "tm_238", "tm_240", "tm_241", "tm_248", "tm_251", "tm_261", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_290", "tm_292", "tm_294", "tm_303", "tm_305", "tm_306"])
+egg_moves = Array[String](["Beat Up", "Counter", "Curse", "Encore", "Night Slash", "Spite"])

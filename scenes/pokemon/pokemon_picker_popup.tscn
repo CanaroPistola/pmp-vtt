@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://cdnhp0el4vlp0"]
+
+[ext_resource type="Script" uid="uid://gbx51n7bhudf" path="res://scripts/pokemon/pokemon_picker_popup.gd" id="1_poke"]
+
+[node name="PokemonPickerPopup" type="Window" unique_id=1413118974]
+oversampling_override = 1.0
+title = "Adicionar Pokémon"
+initial_position = 1
+size = Vector2i(800, 600)
+visible = false
+exclusive = true
+unresizable = true
+script = ExtResource("1_poke")
+
+[node name="Panel" type="Panel" parent="." unique_id=2122011518]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=88912971]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin" unique_id=1613353584]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="Panel/Margin/VBox" unique_id=9431071]
+layout_mode = 2
+text = "Escolha um Pokémon"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/Margin/VBox" unique_id=1602805773]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="List" type="VBoxContainer" parent="Panel/Margin/VBox/Scroll" unique_id=1843848282]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Footer" type="HBoxContainer" parent="Panel/Margin/VBox" unique_id=246198269]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 2
+
+[node name="CancelButton" type="Button" parent="Panel/Margin/VBox/Footer" unique_id=1724710765]
+layout_mode = 2
+text = "Cancelar"
+
+[node name="AddButton" type="Button" parent="Panel/Margin/VBox/Footer" unique_id=1605270012]
+layout_mode = 2
+disabled = true
+text = "Adicionar"

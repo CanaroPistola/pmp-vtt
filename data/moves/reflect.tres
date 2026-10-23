@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dfn5atsgvtr5g"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_th7aw"]
+
+[resource]
+script = ExtResource("1_th7aw")
+id = "reflect"
+display_name = "Reflect (Refletir)"
+name_en = "Reflect"
+name_pt = "Refletir"
+type = 10
+move_time = "1 ação"
+range_category = 5
+range_distance = 4.5
+duration_rounds = 5
+description = "Placas luminosas e semitransparentes se formam no ar ao redor do usuário. Pela duração, você recebe apenas metade do dano causado por ataques corpo a corpo. Você também pode ampliar o escudo para proteger aliados dentro do alcance, porém, caso faça isso, tanto você quanto eles receberão apenas 1/3 da redução de dano de ataques corpo a corpo, ao invés de metade do dano. Reflect não surte efeito contra um ataque crítico ou certos Moves específicos."
+range_text_raw = "Pessoal / raio de (4,5 metros)"
+duration_text_raw = "5 rodadas"

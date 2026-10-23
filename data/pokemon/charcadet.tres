@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://crsg1enxf1egb"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_kt6a8"]
+
+[resource]
+script = ExtResource("1_kt6a8")
+dex_number = 935
+display_name = "Charcadet"
+id = "charcadet"
+types = Array[int]([1])
+sr = "1"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 9.0
+}
+attributes = {
+0: 10,
+1: 11,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 3, 8])
+abilities = Array[String](["Flash Fire"])
+hidden_ability = "Flame Body"
+evolves_to = Array[String](["armarouge", "ceruledge"])
+evolution_level = 11
+evolution_points = 24
+level_moves = {
+3: ["Clear Smog"],
+4: ["Fire Spin"],
+6: ["Will-O-Wisp"],
+7: ["Night Shade"],
+8: ["Flame Charge"],
+10: ["Incinerate"],
+11: ["Lava Plume"]
+}
+starting_moves = Array[String](["Astonish", "Ember", "Leer"])
+tms = Array[String](["tm_46", "tm_83", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_127", "tm_129", "tm_180", "tm_183", "tm_199", "tm_214", "tm_248", "tm_261", "tm_270", "tm_271", "tm_282", "tm_286", "tm_316"])
+egg_moves = Array[String](["Destiny Bond", "Disable", "Spite"])

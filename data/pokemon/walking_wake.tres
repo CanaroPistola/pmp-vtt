@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dmcf30dsqst7w"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_oqfuf"]
+
+[resource]
+script = ExtResource("1_oqfuf")
+dex_number = 1009
+display_name = "Walking Wake"
+id = "walking_wake"
+types = Array[int]([2, 14])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 12.0,
+1: 12.0
+}
+attributes = {
+0: 17,
+1: 18,
+2: 18,
+3: 8,
+4: 16,
+5: 10
+}
+skills = Array[int]([3, 7, 17])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Protosynthesis"])
+level_moves = {
+3: ["Bite"],
+5: ["Water Pulse"],
+7: ["Noble Roar"],
+10: ["Dragon Breath"],
+12: ["Breaking Swipe"],
+14: ["Dragon Rush"],
+16: ["Hydro Steam"],
+17: ["Dragon Pulse", "Outrage"],
+18: ["Flamethrower"],
+19: ["Hydro Pump"]
+}
+starting_moves = Array[String](["Aqua Jet", "Leer", "Roar", "Twister"])
+tms = Array[String](["tm_5", "tm_25", "tm_28", "tm_42", "tm_50", "tm_59", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_83", "tm_87", "tm_92", "tm_97", "tm_101", "tm_113", "tm_133", "tm_135", "tm_136", "tm_150", "tm_157", "tm_158", "tm_174", "tm_182", "tm_199", "tm_209", "tm_214", "tm_220", "tm_232", "tm_234", "tm_248", "tm_253", "tm_270", "tm_271", "tm_275", "tm_277", "tm_282", "tm_286", "tm_311", "tm_312", "tm_313", "tm_314"])

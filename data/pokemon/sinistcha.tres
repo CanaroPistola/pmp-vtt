@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bw62nwckoahxq"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_2m7s0"]
+
+[resource]
+script = ExtResource("1_2m7s0")
+dex_number = 1013
+display_name = "Sinistcha"
+id = "sinistcha"
+types = Array[int]([4, 13])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 50
+hit_dice = "d10"
+attributes = {
+0: 16,
+1: 13,
+2: 16,
+3: 8,
+4: 16,
+5: 10
+}
+skills = Array[int]([5, 6, 7])
+abilities = Array[String](["Hospitality"])
+hidden_ability = "Heatproof"
+level_moves = {
+2: ["Absorb"],
+4: ["Life Dew"],
+6: ["Foul Play"],
+8: ["Mega Drain"],
+10: ["Hex"],
+12: ["Rage Powder"],
+14: ["Strength Sap"],
+15: ["Shadow Ball"],
+16: ["Leaf Storm", "Memento"]
+}
+starting_moves = Array[String](["Astonish", "Matcha Gotcha", "Stun Spore", "Withdraw"])
+tms = Array[String](["tm_38", "tm_51", "tm_83", "tm_84", "tm_106", "tm_112", "tm_117", "tm_130", "tm_136", "tm_145", "tm_147", "tm_154", "tm_163", "tm_178", "tm_180", "tm_184", "tm_188", "tm_194", "tm_199", "tm_201", "tm_212", "tm_214", "tm_232", "tm_240", "tm_248", "tm_257", "tm_261", "tm_270", "tm_286", "tm_301", "tm_305"])

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cdi72av4tgws4"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_xcwjr"]
+
+[resource]
+script = ExtResource("1_xcwjr")
+id = "ion_deluge"
+display_name = "Ion Deluge (Dilúvio de Íons)"
+name_en = "Ion Deluge"
+name_pt = "Dilúvio de Íons"
+type = 3
+pp = 15
+move_time = "1 reação / ação"
+activation = 3
+range_category = 5
+range_distance = 15.0
+duration_rounds = 1
+description = "Você dispersa partículas elétricas que carregam o campo de batalha. Ao ser alvo de um ataque do tipo normal dentro do alcance, você pode usar sua reação para ativar este Move antes de ser acertado, porém abrindo mão de sua ação em seu próximo turno. Até o início do seu próximo turno, qualquer Move do tipo Normal ativado dentro de 15 metros de você passa a ser considerado do tipo Elétrico. Você também pode ativar este Move usando uma ação em seu turno, obtendo o mesmo efeito."
+range_text_raw = "Pessoal (raio de 15 metros)"
+duration_text_raw = "1 rodada"

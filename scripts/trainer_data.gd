@@ -93,28 +93,39 @@ func get_effective_attribute(attr: Constants.Attribute) -> int:
 	var value: int = attributes.get(attr, 8)
 	value += int(region_attr_bonus.get(attr, 0))
 	value += _spec_attr_bonus_for(attr)
-	value += _talent_attr_bonus_for(attr) # NOVO
+	value += _talent_attr_bonus_for(attr)
 	return clampi(value, 0, 30)
+
+## Recalcula os derivados e avisa a UI de todos os atributos.
+func _refresh_attributes() -> void:
+	recalculate()
+	for attr in Constants.Attribute.values():
+		attribute_changed.emit(attr, get_effective_attribute(attr))
+	emit_changed()
+
+## Talentos preenchidos, normalizados como {"id", "choices"}.
+## Aceita o formato antigo (String) e o atual (Dictionary); ignora slots vazios.
+func _talent_entries() -> Array[Dictionary]:
+	var out: Array[Dictionary] = []
+	for slot in talents:
+		var entry := {"id": "", "choices": {}}
+		if typeof(slot) == TYPE_STRING:
+			entry["id"] = slot
+		elif typeof(slot) == TYPE_DICTIONARY:
+			entry["id"] = slot.get("id", "")
+			entry["choices"] = slot.get("choices", {})
+		if entry["id"] != "":
+			out.append(entry)
+	return out
 
 func _talent_attr_bonus_for(attr: Constants.Attribute) -> int:
 	var total := 0
-	for slot in talents:
-		var t_id := ""
-		var choices := {}
-		if typeof(slot) == TYPE_STRING:
-			t_id = slot
-		elif typeof(slot) == TYPE_DICTIONARY:
-			t_id = slot.get("id", "")
-			choices = slot.get("choices", {})
-			
-		if t_id == "": continue
-		
-		var b := TrainersTalents.get_attribute_bonus(t_id)
+	for t in _talent_entries():
+		var b := TrainersTalents.get_attribute_bonus(t["id"])
 		if b.has(attr):
 			total += b[attr]
-		elif b.has("choice"):
-			if choices.get("attribute", -1) == attr:
-				total += 1
+		elif b.has("choice") and t["choices"].get("attribute", -1) == attr:
+			total += 1
 	return total
 
 func _spec_attr_bonus_for(attr: Constants.Attribute) -> int:
@@ -176,11 +187,15 @@ func get_portrait() -> Image:
 		return null
 	return image
 
-func set_saving_throw_trained(attr: Constants.Attribute, value: bool) -> void:
-	if value and attr not in saving_throws:
-		saving_throws.append(attr)
+## Adiciona ou remove `item` de `list` conforme `value`.
+func _set_in_list(list: Array, item, value: bool) -> void:
+	if value and item not in list:
+		list.append(item)
 	elif not value:
-		saving_throws.erase(attr)
+		list.erase(item)
+
+func set_saving_throw_trained(attr: Constants.Attribute, value: bool) -> void:
+	_set_in_list(saving_throws, attr, value)
 	emit_changed()
 
 ## Aplica uma região de origem (id "" limpa a região).
@@ -197,31 +212,17 @@ func set_region(id: String, choices: Dictionary = {}) -> void:
 	region_attr_bonus = attr_bonus.duplicate()
 	region_extra_skills = extra_skills.duplicate()
 	region_skill = Regions.get_skill(id)
-	recalculate()  # CA (Sinnoh), PV (CON) etc.
-	for attr in Constants.Attribute.values():
-		attribute_changed.emit(attr, get_effective_attribute(attr))
-	emit_changed()
+	_refresh_attributes()  # CA (Sinnoh), PV (CON) etc.
 
 func is_skill_from_region(skill: Constants.Skill) -> bool:
 	return skill == region_skill or skill in region_extra_skills
 
 func is_skill_trained(skill: Constants.Skill) -> bool:
-	for slot in talents:
-		var t_id := ""
-		var choices := {}
-		if typeof(slot) == TYPE_STRING:
-			t_id = slot
-		elif typeof(slot) == TYPE_DICTIONARY:
-			t_id = slot.get("id", "")
-			choices = slot.get("choices", {})
-			
-		if t_id == "": continue
-		
-		if skill in TrainersTalents.get_skills_fixed(t_id):
+	for t in _talent_entries():
+		if skill in TrainersTalents.get_skills_fixed(t["id"]):
 			return true
-		if t_id == "perito" and skill in choices.get("skills", []):
+		if t["id"] == "perito" and skill in t["choices"].get("skills", []):
 			return true
-			
 	return skill in trained_skills \
 		or is_skill_from_region(skill) \
 		or is_skill_from_journey(skill) \
@@ -240,18 +241,12 @@ func set_level(value: int) -> void:
 	emit_changed()
 
 func set_skill_trained(skill: Constants.Skill, value: bool) -> void:
-	if value and skill not in trained_skills:
-		trained_skills.append(skill)
-	elif not value:
-		trained_skills.erase(skill)
+	_set_in_list(trained_skills, skill, value)
 	skill_changed.emit(skill)
 	emit_changed()
 
 func set_skill_expert(skill: Constants.Skill, value: bool) -> void:
-	if value and skill not in expert_skills:
-		expert_skills.append(skill)
-	elif not value:
-		expert_skills.erase(skill)
+	_set_in_list(expert_skills, skill, value)
 	skill_changed.emit(skill)
 	emit_changed()
 
@@ -266,21 +261,15 @@ func recalculate() -> void:
 	
 	var ca_bonus := 0
 	var hp_bonus := 0
+	var init_bonus := 0
 	
-	for slot in talents:
-		var t_id := ""
-		if typeof(slot) == TYPE_STRING:
-			t_id = slot
-		elif typeof(slot) == TYPE_DICTIONARY:
-			t_id = slot.get("id", "")
-			
-		if t_id == "aumento_ca":
-			ca_bonus += 1
-		elif t_id == "robusto":
-			hp_bonus += 2 * level
-			
+	for t in _talent_entries():
+		match t["id"]:
+			"aumento_ca": ca_bonus += 1
+			"alerta": init_bonus += 5
+			"robusto": hp_bonus += 2 * level
 	armor_class = 10 + dex_mod + Regions.get_ac_bonus(region) + ca_bonus
-	initiative = dex_mod
+	initiative = dex_mod + init_bonus
 	profficiency_bonus = get_profficiency_bonus(level)
 	max_hp = 10 + (level * con_mod) + (level * 2 - 2) + hp_bonus
 	
@@ -303,16 +292,9 @@ func get_skill_bonus(skill: Constants.Skill) -> int:
 	if skill in expert_skills:
 		return mod + prof * 2
 		
-	for slot in talents:
-		var t_id := ""
-		if typeof(slot) == TYPE_STRING:
-			t_id = slot
-		elif typeof(slot) == TYPE_DICTIONARY:
-			t_id = slot.get("id", "")
-		
-		if t_id != "" and skill in TrainersTalents.get_skills_expert(t_id):
+	for t in _talent_entries():
+		if skill in TrainersTalents.get_skills_expert(t["id"]):
 			return mod + prof * 2
-			
 	if is_skill_trained(skill):
 		return mod + prof
 	return mod
@@ -401,19 +383,12 @@ func set_specialization(slot_index: int, id: String, choices: Dictionary = {}) -
 		"skill": choices.get("skill", -1),
 		"attribute": choices.get("attribute", -1),
 	}
-	recalculate()
-	for attr in Constants.Attribute.values():
-		attribute_changed.emit(attr, get_effective_attribute(attr))
-	emit_changed()
+	_refresh_attributes()
 
 func remove_specialization(slot_index: int) -> void:
-	if slot_index < 0 or slot_index >= specializations.size():
-		return
-	specializations[slot_index] = {"id": "", "skill": -1, "attribute": -1}
-	recalculate()
-	for attr in Constants.Attribute.values():
-		attribute_changed.emit(attr, get_effective_attribute(attr))
-	emit_changed()
+	if slot_index >= 0 and slot_index < specializations.size():
+		specializations[slot_index] = {"id": "", "skill": -1, "attribute": -1}
+		_refresh_attributes()
 
 func get_specialization(slot_index: int) -> Dictionary:
 	if slot_index < 0 or slot_index >= specializations.size():
@@ -504,9 +479,6 @@ func has_item(id: String, quantity: int = 1) -> bool:
 ## Talentos escolhidos. Array de IDs de talentos.
 @export var talents: Array = []
 
-## Escolhas feitas nos talentos que pedem opções.
-@export var talent_choices: Dictionary = {} 
-
 func set_talent(slot_index: int, id: String, choices: Dictionary = {}) -> void:
 	if not TrainersTalents.has_data(id):
 		return
@@ -516,25 +488,32 @@ func set_talent(slot_index: int, id: String, choices: Dictionary = {}) -> void:
 		
 	talents[slot_index] = {"id": id, "choices": choices}
 	
-	recalculate()
-	for attr in Constants.Attribute.values():
-		attribute_changed.emit(attr, get_effective_attribute(attr))
-	emit_changed()
+	_refresh_attributes()
 
 func remove_talent(slot_index: int) -> void:
-	if slot_index < 0 or slot_index >= talents.size():
-		return
-	talents[slot_index] = {}
-	recalculate()
-	for attr in Constants.Attribute.values():
-		attribute_changed.emit(attr, get_effective_attribute(attr))
-	emit_changed()
+	if slot_index >= 0 and slot_index < talents.size():
+		talents[slot_index] = {}
+		_refresh_attributes()
 
 ## Retorna o tipo de Pokémon escolhido no talento "Mestre do Tipo",
 ## ou -1 se não tiver escolhido ou não tiver o talento.
 func get_master_type() -> int:
-	for slot in talents:
-		if typeof(slot) == TYPE_DICTIONARY and slot.get("id", "") == "mestre_do_tipo":
-			var choices = slot.get("choices", {})
-			return choices.get("pokemon_type", -1)
+	for t in _talent_entries():
+		if t["id"] == "mestre_do_tipo":
+			return t["choices"].get("pokemon_type", -1)
 	return -1
+
+@export var pokemons: Array[PokemonInstance] = []
+
+func add_pokemon(pkmn: PokemonInstance) -> bool:
+	if pokemons.size() >= POKESLOTS[level]:
+		push_warning("Pokéslots cheios. Envie um Pokémon para o PC ou libere espaço.")
+		return false
+	pokemons.append(pkmn)
+	emit_changed()
+	return true
+
+func remove_pokemon(index: int) -> void:
+	if index >= 0 and index < pokemons.size():
+		pokemons.remove_at(index)
+		emit_changed()

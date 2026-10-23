@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://5ukbskucmxqo"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_1yu8o"]
+
+[resource]
+script = ExtResource("1_1yu8o")
+dex_number = 691
+display_name = "Dragalge"
+id = "dragalge"
+types = Array[int]([7, 14])
+sr = "12"
+min_level = 8
+evolution_stage = 2
+armor_class = 17
+hit_points = 92
+hit_dice = "d8"
+movement = {
+0: 1.5,
+1: 9.0
+}
+attributes = {
+0: 17,
+1: 13,
+2: 19,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([5, 6])
+abilities = Array[String](["Poison Point", "Poison Touch"])
+hidden_ability = "Adaptability"
+level_moves = {
+2: ["Feint Attack"],
+3: ["Tail Whip"],
+4: ["Bubble"],
+5: ["Acid"],
+7: ["Camouflage"],
+8: ["Poison Tail"],
+9: ["Water Pulse"],
+10: ["Double Team"],
+11: ["Toxic"],
+12: ["Aqua Tail"],
+13: ["Sludge Bomb"],
+14: ["Hydro Pump"],
+16: ["Dragon Pulse", "Dragon Tail"],
+17: ["Outrage"]
+}
+starting_moves = Array[String](["Smokescreen", "Tackle", "Twister", "Water Gun"])
+tms = Array[String](["tm_1", "tm_11", "tm_13", "tm_26", "tm_42", "tm_45", "tm_57", "tm_58", "tm_60", "tm_65", "tm_66", "tm_83", "tm_87", "tm_101", "tm_103", "tm_109", "tm_113", "tm_120", "tm_122", "tm_124", "tm_131", "tm_135", "tm_136", "tm_144", "tm_149", "tm_157", "tm_174", "tm_175", "tm_176", "tm_182", "tm_190", "tm_192", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_232", "tm_233", "tm_234", "tm_240", "tm_242", "tm_248", "tm_249", "tm_250", "tm_255", "tm_256", "tm_261", "tm_270", "tm_275", "tm_276", "tm_282", "tm_286", "tm_288", "tm_290", "tm_294", "tm_296", "tm_297", "tm_307", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Acid Armor", "Dragon Tail", "Haze", "Play Rough", "Toxic Spikes", "Twister", "Venom Drench"])

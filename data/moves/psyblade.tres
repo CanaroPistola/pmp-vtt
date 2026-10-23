@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://deiypwmye6tg4"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_5k2fv"]
+
+[resource]
+script = ExtResource("1_5k2fv")
+id = "psyblade"
+display_name = "Psyblade"
+name_en = "Psyblade"
+type = 10
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você rasga o alvo com uma lâmina etérea de energia psíquica. Faça um ataque corpo a corpo, causando 4d4 + MOVE de dano do tipo Psíquico em um acerto. Se este Move for usado enquanto estiver dentro de um Electric Terrain, os dados de dano deste Move aumentam em metade da quantidade original (arredondado para baixo)."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}

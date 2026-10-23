@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bh8ed5q0ks6ik"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_cqxgq"]
+
+[resource]
+script = ExtResource("1_cqxgq")
+dex_number = 355
+display_name = "Duskull"
+id = "duskull"
+types = Array[int]([13])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 18
+attributes = {
+0: 11,
+1: 8,
+2: 14,
+3: 8,
+4: 12,
+5: 10
+}
+skills = Array[int]([5, 8])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Levitate"])
+hidden_ability = "Frisk"
+evolves_to = Array[String](["dusclops"])
+evolution_level = 13
+evolution_points = 13
+level_moves = {
+2: ["Disable"],
+3: ["Astonish"],
+5: ["Foresight"],
+6: ["Shadow Sneak"],
+8: ["Pursuit"],
+9: ["Will-O-Wisp"],
+10: ["Confuse Ray"],
+11: ["Curse"],
+13: ["Hex"],
+14: ["Shadow Ball"],
+15: ["Mean Look", "Payback"],
+16: ["Future Sight"]
+}
+starting_moves = Array[String](["Leer", "Night Shade"])
+tms = Array[String](["tm_9", "tm_13", "tm_22", "tm_38", "tm_40", "tm_45", "tm_46", "tm_51", "tm_52", "tm_58", "tm_69", "tm_80", "tm_83", "tm_87", "tm_100", "tm_109", "tm_110", "tm_118", "tm_124", "tm_129", "tm_130", "tm_131", "tm_139", "tm_144", "tm_145", "tm_146", "tm_155", "tm_180", "tm_181", "tm_184", "tm_186", "tm_188", "tm_194", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_217", "tm_228", "tm_240", "tm_244", "tm_245", "tm_248", "tm_254", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_283", "tm_284", "tm_286", "tm_288", "tm_295", "tm_296", "tm_300", "tm_301", "tm_316", "tm_317"])
+egg_moves = Array[String](["Dark Pulse", "Destiny Bond", "Feint Attack", "Grudge", "Haze", "Imprison", "Memento", "Ominous Wind", "Pain Split", "Skill Swap"])

@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d1c1it88yk6uf"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_871w8"]
+
+[resource]
+script = ExtResource("1_871w8")
+dex_number = 221
+display_name = "Piloswine"
+id = "piloswine"
+types = Array[int]([5, 8])
+sr = "8"
+min_level = 8
+evolution_stage = 2
+armor_class = 14
+hit_points = 80
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 13,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Oblivious", "Snow Cloak"])
+hidden_ability = "Thick Fat"
+evolves_to = Array[String](["mamoswine"])
+evolution_level = 14
+evolution_points = 10
+level_moves = {
+2: ["Mud Sport"],
+3: ["Powder Snow"],
+4: ["Mud-Slap"],
+5: ["Endure", "Ice Shard"],
+6: ["Mud Bomb"],
+7: ["Icy Wind"],
+8: ["Ice Fang"],
+10: ["Take Down"],
+13: ["Mist"],
+14: ["Thrash"],
+15: ["Earthquake"],
+16: ["Amnesia", "Blizzard"]
+}
+starting_moves = Array[String](["Ancient Power", "Flail", "Fury Attack", "Odor Sleuth", "Peck", "Tackle"])
+tms = Array[String](["tm_10", "tm_13", "tm_16", "tm_17", "tm_22", "tm_25", "tm_35", "tm_41", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_82", "tm_83", "tm_87", "tm_109", "tm_113", "tm_122", "tm_124", "tm_131", "tm_132", "tm_136", "tm_139", "tm_140", "tm_143", "tm_144", "tm_156", "tm_174", "tm_175", "tm_199", "tm_209", "tm_212", "tm_214", "tm_216", "tm_218", "tm_220", "tm_223", "tm_224", "tm_225", "tm_228", "tm_230", "tm_231", "tm_234", "tm_248", "tm_251", "tm_255", "tm_256", "tm_262", "tm_266", "tm_267", "tm_270", "tm_274", "tm_276", "tm_282", "tm_286", "tm_289", "tm_296", "tm_298"])
+egg_moves = Array[String](["Ancient Power", "Avalanche", "Bite", "Body Slam", "Curse", "Double-Edge", "Fissure", "Freeze-Dry", "Icicle Crash", "Icicle Spear", "Mud Shot", "Stealth Rock", "Take Down"])

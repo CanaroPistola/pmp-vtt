@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cawxp2o8xl3iu"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_u7xly"]
+
+[resource]
+script = ExtResource("1_u7xly")
+id = "rest"
+display_name = "Rest"
+name_en = "Rest"
+type = 10
+pp = 3
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_rounds = 3
+description = "Você entra em sono profundo, cercado por uma aura suave, enquanto seu corpo se regenera e todas as aflições desaparecem. Ao ativar este Move, você adormece por este e pelos 2 turnos seguintes (acordando ao final do terceiro turno dormindo), e não é capaz de rolar nenhum teste para acordar. No momento em que adormece, você imediatamente recupera 4d6 + MOVE pontos de vida e é curado de todas as condições de status não voláteis (com exceção do próprio sono) . Você não recupera saúde se não adormecer, mas pode acordar previamente através de outras fontes, como itens ou Moves."
+scaling_text = "Os dados de cura para este Move mudam para 4d10 no nível 5, 8d8 no nível 10 e 8d12 no nível 17."
+range_text_raw = "Pessoal"
+duration_text_raw = "3 rodadas"
+role = 1
+move_power_attributes = Array[int]([4, 5])
+has_healing = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 8,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 8,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["heal", "sleep"])

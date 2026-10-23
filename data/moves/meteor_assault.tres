@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cwsu5ffh3e2rd"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_aio2p"]
+
+[resource]
+script = ExtResource("1_aio2p")
+id = "meteor_assault"
+display_name = "Meteor Assault"
+name_en = "Meteor Assault"
+type = 6
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você ataca de forma selvagem com um alho-poró espesso, mas o esforço faz você cambalear e ficar incapaz de agir por um curto período. Faça um ataque corpo a corpo com alcance estendido de 5 pés (1,5 metros), causando 5d6 + MOVE de dano lutador em um acerto. Este Move drena sua energia, e você não pode realizar outra ação até o final do seu próximo turno. Meteor Assault não aciona efeitos de inimigos que se ativam ao contato corpo a corpo."
+scaling_text = "Os dados de dano para este Move mudam para 5d8 no nível 5, 6d10 no nível 10 e 6d12 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 12,
+"move": true
+}
+}

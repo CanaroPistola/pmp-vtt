@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://crt0adwf34xod"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_p8yhw"]
+
+[resource]
+script = ExtResource("1_p8yhw")
+dex_number = 43
+display_name = "Oddish"
+id = "oddish"
+types = Array[int]([4, 7])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 6.0
+}
+attributes = {
+0: 11,
+1: 11,
+2: 12,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([12, 17])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Chlorophyll"])
+hidden_ability = "Run Away"
+evolves_to = Array[String](["gloom"])
+evolution_level = 7
+evolution_points = 7
+level_moves = {
+2: ["Sweet Scent"],
+3: ["Acid"],
+5: ["Poison Powder", "Sleep Powder", "Stun Spore"],
+7: ["Mega Drain"],
+8: ["Lucky Chant"],
+9: ["Moonlight"],
+11: ["Giga Drain"],
+12: ["Toxic"],
+13: ["Natural Gift"],
+15: ["Grassy Terrain", "Moonblast"],
+16: ["Petal Dance"]
+}
+starting_moves = Array[String](["Absorb", "Growth"])
+tms = Array[String](["tm_1", "tm_4", "tm_13", "tm_36", "tm_41", "tm_45", "tm_53", "tm_58", "tm_83", "tm_84", "tm_87", "tm_109", "tm_111", "tm_112", "tm_114", "tm_116", "tm_117", "tm_129", "tm_131", "tm_146", "tm_154", "tm_163", "tm_179", "tm_199", "tm_214", "tm_216", "tm_228", "tm_238", "tm_248", "tm_249", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_286", "tm_296", "tm_298", "tm_307", "tm_319"])
+egg_moves = Array[String](["After You", "Charm", "Flail", "Ingrain", "Leech Seed", "Nature Power", "Razor Leaf", "Secret Power", "Strength Sap", "Synthesis", "Teeter Dance", "Tickle"])

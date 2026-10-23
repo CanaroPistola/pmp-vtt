@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://df1gi54y8cb0w"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_aplsn"]
+
+[resource]
+script = ExtResource("1_aplsn")
+id = "weather_ball"
+display_name = "Weather Ball (Esfera Climática)"
+name_en = "Weather Ball"
+name_pt = "Esfera Climática"
+pp = 5
+move_time = "1 ação"
+range_category = 2
+range_distance = 9.0
+description = "Você envia uma bola de energia poderosa que muda de tipo com base no clima circundante. Sem nenhuma condição climática, este Move causa 1d10 + MOVE de dano normal. Se houver uma condição climática em efeito, dobre os dados de dano e o Move se torna de outro tipo, conforme a tabela abaixo: Confira a tabela no livro."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}

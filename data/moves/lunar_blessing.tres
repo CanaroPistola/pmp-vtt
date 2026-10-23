@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://xw4uy2gjrg1"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8uinm"]
+
+[resource]
+script = ExtResource("1_8uinm")
+id = "lunar_blessing"
+display_name = "Lunar Blessing"
+name_en = "Lunar Blessing"
+type = 10
+pp = 3
+move_time = "1 ação"
+range_category = 5
+range_distance = 12.0
+description = "Você recebe a bênção da lua crescente, emanando uma aura de cura em um raio de 40 pés (12 metros) centrado em você, curando você e todos os aliados próximos em 1d6 + MOVE pontos de vida, além de curá-los de qualquer condição de status não volátil."
+scaling_text = "Os dados de cura para este Move mudam para 1d10 no nível 5, 2d8 no nível 10 e 2d12 no nível 17."
+range_text_raw = "Pessoal (raio de 12 metros)"
+duration_text_raw = "Instantânea"
+role = 1
+move_power_attributes = Array[int]([2])
+has_healing = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["heal"])

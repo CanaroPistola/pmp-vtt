@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bou8h6gsox1ei"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_fng6h"]
+
+[resource]
+script = ExtResource("1_fng6h")
+id = "fire_lash"
+display_name = "Fire Lash (Chicote de Fogo)"
+name_en = "Fire Lash"
+name_pt = "Chicote de Fogo"
+type = 1
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+save_attribute = 2
+range_category = 7
+range_distance = 4.5
+range_secondary = 1.5
+duration_is_permanent = true
+description = "Você golpeia um alvo em alcance com um chicote ardente. Faça um ataque corpo a corpo com alcance estendido de até  (4,5 metros), causando 4d4 + MOVE de dano de fogo. Em um acerto, o alvo deve fazer um teste de CON contra sua CD de Move, ou ter a Defesa reduzida em 1 estágio em caso de falha, podendo ser acumulado em até -6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "Corpo a corpo / (4,5 metros)"
+duration_text_raw = "Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([1, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

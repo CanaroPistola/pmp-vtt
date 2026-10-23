@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://brsmuxhh8uwoi"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_txc7e"]
+
+[resource]
+script = ExtResource("1_txc7e")
+dex_number = 177
+display_name = "Natu"
+id = "natu"
+types = Array[int]([10, 9])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 6.0
+}
+attributes = {
+0: 10,
+1: 14,
+2: 11,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([9, 13])
+abilities = Array[String](["Synchronize", "Early Bird"])
+hidden_ability = "Magic Bounce"
+evolves_to = Array[String](["xatu"])
+evolution_level = 9
+evolution_points = 12
+level_moves = {
+2: ["Night Shade"],
+3: ["Teleport"],
+4: ["Lucky Chant"],
+6: ["Stored Power"],
+7: ["Ominous Wind"],
+8: ["Confuse Ray"],
+10: ["Wish"],
+11: ["Psychic"],
+12: ["Miracle Eye"],
+13: ["Psycho Shift"],
+15: ["Future Sight", "Guard Swap", "Me First", "Power Swap"]
+}
+starting_moves = Array[String](["Leer", "Peck"])
+tms = Array[String](["tm_3", "tm_7", "tm_9", "tm_13", "tm_38", "tm_45", "tm_53", "tm_58", "tm_69", "tm_72", "tm_85", "tm_87", "tm_109", "tm_112", "tm_114", "tm_119", "tm_127", "tm_131", "tm_145", "tm_156", "tm_161", "tm_162", "tm_184", "tm_198", "tm_199", "tm_201", "tm_202", "tm_207", "tm_209", "tm_212", "tm_214", "tm_216", "tm_227", "tm_228", "tm_240", "tm_243", "tm_244", "tm_246", "tm_248", "tm_255", "tm_257", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_284", "tm_288", "tm_293", "tm_296", "tm_300", "tm_301", "tm_303", "tm_321"])
+egg_moves = Array[String](["Ally Switch", "Drill Peck", "Feather Dance", "Feint Attack", "Haze", "Quick Attack", "Refresh", "Roost", "Simple Beam", "Skill Swap", "Steel Wing", "Sucker Punch", "Synchronoise", "Zen Headbutt"])

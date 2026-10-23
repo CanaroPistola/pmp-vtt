@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c7cvrxkwgxv7o"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6n8vi"]
+
+[resource]
+script = ExtResource("1_6n8vi")
+dex_number = 784
+display_name = "Kommo-o"
+id = "kommo_o"
+types = Array[int]([14, 6])
+sr = "14"
+min_level = 15
+evolution_stage = 3
+armor_class = 18
+hit_points = 170
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 20,
+1: 17,
+2: 18,
+3: 6,
+4: 14,
+5: 14
+}
+skills = Array[int]([4, 13])
+abilities = Array[String](["Bulletproof", "Soundproof"])
+hidden_ability = "Overcoat"
+level_moves = {
+2: ["Leer"],
+3: ["Bide"],
+5: ["Protect"],
+6: ["Dragon Tail"],
+7: ["Scary Face"],
+9: ["Headbutt"],
+10: ["Work Up"],
+11: ["Screech"],
+13: ["Iron Defense"],
+15: ["Dragon Claw"],
+16: ["Dragon Dance", "Noble Roar"],
+17: ["Clangorous Soul", "Outrage"],
+18: ["Boomburst", "Close Combat"]
+}
+starting_moves = Array[String](["Autotomize", "Belly Drum", "Clanging Scales", "Sky Uppercut", "Tackle"])
+tms = Array[String](["tm_3", "tm_11", "tm_13", "tm_14", "tm_24", "tm_25", "tm_28", "tm_29", "tm_31", "tm_34", "tm_35", "tm_43", "tm_44", "tm_45", "tm_58", "tm_59", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_67", "tm_71", "tm_74", "tm_75", "tm_82", "tm_83", "tm_87", "tm_89", "tm_94", "tm_97", "tm_99", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_129", "tm_131", "tm_136", "tm_137", "tm_141", "tm_147", "tm_148", "tm_149", "tm_151", "tm_158", "tm_165", "tm_166", "tm_168", "tm_169", "tm_182", "tm_186", "tm_191", "tm_199", "tm_209", "tm_214", "tm_216", "tm_217", "tm_218", "tm_220", "tm_222", "tm_223", "tm_225", "tm_228", "tm_229", "tm_231", "tm_233", "tm_234", "tm_236", "tm_241", "tm_242", "tm_248", "tm_255", "tm_262", "tm_266", "tm_270", "tm_271", "tm_274", "tm_276", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289", "tm_292", "tm_296", "tm_304", "tm_305", "tm_306", "tm_311", "tm_318", "tm_320"])
+egg_moves = Array[String](["Counter", "Dragon Breath", "Focus Punch", "Reversal"])

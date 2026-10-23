@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bmvdntv7mxao5"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_5y7rx"]
+
+[resource]
+script = ExtResource("1_5y7rx")
+dex_number = 568
+display_name = "Trubbish"
+id = "trubbish"
+types = Array[int]([7])
+sr = "1"
+evolution_stage = 1
+armor_class = 14
+hit_points = 19
+movement = {
+0: 7.5
+}
+attributes = {
+0: 13,
+1: 13,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Stench", "Sticky Hold"])
+hidden_ability = "Aftermath"
+evolves_to = Array[String](["garbodor"])
+evolution_level = 12
+evolution_points = 9
+level_moves = {
+3: ["Toxic Spikes"],
+4: ["Acid Spray"],
+5: ["Double Slap"],
+6: ["Sludge"],
+8: ["Stockpile", "Swallow"],
+9: ["Take Down"],
+10: ["Sludge Bomb"],
+12: ["Clear Smog", "Toxic"],
+13: ["Pain Split"],
+14: ["Amnesia", "Belch"],
+15: ["Explosion", "Gunk Shot"]
+}
+starting_moves = Array[String](["Poison Gas", "Pound", "Recycle"])
+tms = Array[String](["tm_13", "tm_45", "tm_47", "tm_52", "tm_58", "tm_67", "tm_86", "tm_87", "tm_109", "tm_112", "tm_120", "tm_131", "tm_146", "tm_184", "tm_186", "tm_199", "tm_209", "tm_211", "tm_214", "tm_216", "tm_221", "tm_228", "tm_238", "tm_239", "tm_248", "tm_249", "tm_250", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_288", "tm_296", "tm_307"])
+egg_moves = Array[String](["Autotomize", "Curse", "Haze", "Mud Sport", "Rock Blast", "Rollout", "Sand Attack", "Self-Destruct", "Spikes"])

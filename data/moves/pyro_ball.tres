@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cu6k3x3s5h51s"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_dggm8"]
+
+[resource]
+script = ExtResource("1_dggm8")
+id = "pyro_ball"
+display_name = "Pyro Ball"
+name_en = "Pyro Ball"
+type = 1
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Você chuta uma pedra várias vezes, incendiando-a e transformando-a em uma bola de fogo, e então a lança contra o oponente. Faça um ataque à distância -1 contra um alvo em alcance, causando 3d8 + MOVE de dano de fogo em um acerto. Em um resultado natural de 19 ou 20 no acerto, o alvo fica queimado. Se você estiver congelado, ainda pode usar este Move, sendo descongelado imediatamente antes de realizar o ataque."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17"
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["burn", "freeze"])

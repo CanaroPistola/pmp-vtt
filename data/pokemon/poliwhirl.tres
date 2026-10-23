@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://sy0xkm8dc6wq"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_najov"]
+
+[resource]
+script = ExtResource("1_najov")
+dex_number = 61
+display_name = "Poliwhirl"
+id = "poliwhirl"
+types = Array[int]([2])
+sr = "3"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 45
+hit_dice = "d8"
+movement = {
+0: 7.5,
+1: 9.0
+}
+attributes = {
+0: 12,
+1: 15,
+2: 12,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 3])
+abilities = Array[String](["Water Absorb", "Damp"])
+hidden_ability = "Swift Swim"
+evolves_to = Array[String](["poliwrath", "politoed"])
+evolution_level = 11
+evolution_points = 12
+level_moves = {
+2: ["Water Gun"],
+3: ["Hypnosis"],
+4: ["Bubble"],
+5: ["Double Slap"],
+6: ["Rain Dance"],
+7: ["Body Slam"],
+9: ["Bubble Beam"],
+11: ["Mud Shot"],
+13: ["Belly Drum"],
+14: ["Earth Power"],
+15: ["Hydro Pump", "Wake-Up Slap"],
+16: ["Mud Bomb"],
+17: ["Double-Edge"]
+}
+starting_moves = Array[String](["Pound", "Water Sport"])
+tms = Array[String](["tm_10", "tm_13", "tm_22", "tm_25", "tm_29", "tm_35", "tm_42", "tm_45", "tm_55", "tm_57", "tm_58", "tm_59", "tm_73", "tm_74", "tm_81", "tm_82", "tm_83", "tm_87", "tm_100", "tm_105", "tm_109", "tm_122", "tm_124", "tm_129", "tm_131", "tm_135", "tm_139", "tm_141", "tm_144", "tm_157", "tm_158", "tm_159", "tm_165", "tm_166", "tm_171", "tm_174", "tm_175", "tm_176", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_228", "tm_232", "tm_248", "tm_255", "tm_270", "tm_275", "tm_276", "tm_277", "tm_282", "tm_286", "tm_288", "tm_296", "tm_311", "tm_312", "tm_313", "tm_314"])
+egg_moves = Array[String](["Bubble Beam", "Encore", "Endeavor", "Endure", "Haze", "Ice Ball", "Mind Reader", "Mist", "Mud Shot", "Muddy Water", "Refresh", "Splash", "Water Pulse", "Water Sport"])

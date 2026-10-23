@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://1eg4gv476l83"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_d571l"]
+
+[resource]
+script = ExtResource("1_d571l")
+dex_number = 361
+display_name = "Snorunt"
+id = "snorunt"
+types = Array[int]([5])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 7.5
+}
+attributes = {
+0: 12,
+1: 12,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Inner Focus", "Ice Body"])
+hidden_ability = "Moody"
+evolves_to = Array[String](["glalie", "froslass"])
+evolution_level = 14
+evolution_points = 13
+level_moves = {
+2: ["Double Team"],
+4: ["Ice Shard"],
+5: ["Icy Wind"],
+7: ["Bite"],
+8: ["Ice Fang"],
+10: ["Headbutt"],
+11: ["Protect"],
+13: ["Frost Breath"],
+14: ["Crunch"],
+15: ["Blizzard", "Hail", "Snowscape", "Weather Ball"]
+}
+starting_moves = Array[String](["Astonish", "Leer", "Powder Snow"])
+tms = Array[String](["tm_13", "tm_16", "tm_22", "tm_23", "tm_25", "tm_42", "tm_45", "tm_50", "tm_58", "tm_83", "tm_87", "tm_88", "tm_108", "tm_109", "tm_122", "tm_129", "tm_130", "tm_131", "tm_139", "tm_140", "tm_142", "tm_143", "tm_144", "tm_156", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_240", "tm_248", "tm_255", "tm_256", "tm_260", "tm_261", "tm_270", "tm_276", "tm_282", "tm_286", "tm_296", "tm_298", "tm_311", "tm_313"])
+egg_moves = Array[String](["Avalanche", "Bide", "Block", "Disable", "Fake Tears", "Hex", "Icicle Crash", "Rollout", "Spikes", "Switcheroo", "Weather Ball"])

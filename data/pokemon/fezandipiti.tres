@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bd14rivua3e5k"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_twnym"]
+
+[resource]
+script = ExtResource("1_twnym")
+dex_number = 1016
+display_name = "Fezandipiti"
+id = "fezandipiti"
+types = Array[int]([7, 17])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 18
+hit_points = 173
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 14,
+1: 16,
+2: 15,
+3: 10,
+4: 18,
+5: 16
+}
+skills = Array[int]([0, 14])
+abilities = Array[String](["Toxic Chain"])
+hidden_ability = "Technician"
+level_moves = {
+3: ["Quick Attack"],
+6: ["Attract"],
+8: ["Wing Attack"],
+11: ["Cross Poison"],
+14: ["Tail Slap"],
+15: ["Beat Up"],
+16: ["Flatter", "Swagger"],
+17: ["Roost"],
+18: ["Moonblast"]
+}
+starting_moves = Array[String](["Disarming Voice", "Double Kick", "Peck", "Poison Gas"])
+tms = Array[String](["tm_1", "tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_8", "tm_27", "tm_38", "tm_41", "tm_52", "tm_53", "tm_56", "tm_72", "tm_83", "tm_87", "tm_102", "tm_113", "tm_120", "tm_127", "tm_130", "tm_133", "tm_136", "tm_144", "tm_152", "tm_156", "tm_178", "tm_190", "tm_191", "tm_192", "tm_199", "tm_201", "tm_214", "tm_240", "tm_241", "tm_248", "tm_249", "tm_261", "tm_270", "tm_277", "tm_278", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_296", "tm_303", "tm_305", "tm_307"])

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://d4de1gxcoxqag"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_1sml4"]
+
+[resource]
+script = ExtResource("1_1sml4")
+id = "tri_attack"
+display_name = "Tri Attack"
+name_en = "Tri Attack"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Você lança três rajadas de energia ao mesmo tempo, capazes de queimar, congelar ou paralisar o alvo. Faça um ataque à distância contra um alvo em alcance, causando 4d4 + MOVE em um acerto. Em um resultado natural de 1 7 ou mais no acerto, o alvo deve rolar um d6, ganhando a condição de status conforme a seguir: 1-2: queimado / 3-4: congelado / 5-6: paralisado."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["paralysis", "burn", "freeze"])

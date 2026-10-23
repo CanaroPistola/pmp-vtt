@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dsjnsfi67hvy5"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_hy16a"]
+
+[resource]
+script = ExtResource("1_hy16a")
+id = "entrainment"
+display_name = "Entrainment"
+name_en = "Entrainment"
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 18.0
+duration_is_permanent = true
+description = "Você dança com um ritmo estranho que faz uma criatura imitar você. Escolha um alvo dentro do alcance, role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, a habilidade passiva do alvo se torna idêntica à sua. Observações: Entrainment falha se a Habilidade passiva do alvo for Truant, Multitype, Stance Change, Schooling, Comatose, Shields Down, Disguise, RKS System, Battle Bond, Power Construct, Ice Face, Gulp Missile, As One, Zero to Hero, Commander, Orichalcum Pulse ou Hadron Engine. Entrainment falha se a Habilidade passiva do usuário for Trace, Forecast, Flower Gift, Zen Mode, Illusion, Imposter, Power of Alchemy, Receiver, Disguise, Power Construct, Ice Face, Hunger Switch, Gulp Missile,  Neutralizing Gas, As One, Zero to Hero ou Commander."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([4, 5])

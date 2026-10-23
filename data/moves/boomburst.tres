@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cqpfsxdf7i7qp"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_tkgcx"]
+
+[resource]
+script = ExtResource("1_tkgcx")
+id = "boomburst"
+display_name = "Boomburst (Rajada Explosiva)"
+name_en = "Boomburst"
+name_pt = "Rajada Explosiva"
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 5
+range_distance = 6.0
+description = "Você cria um som ensurdecedor e explosivo que causa dano a todas as criaturas dentro de 6 metros de você. Force qualquer criatura dentro do alcance a fazer um teste de CON contra sua CD de Move, sofrendo 3d10 + MOVE de dano normal em caso de falha, ou metade disso em caso de sucesso."
+scaling_text = "Os dados de dano para este Move mudam para 4d10 no nível 5, 7d8 no nível 10 e 7d10 no nível 17."
+range_text_raw = "Pessoal (raio de 6 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([5, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 7,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 7,
+"dice_max": 10,
+"move": true
+}
+}

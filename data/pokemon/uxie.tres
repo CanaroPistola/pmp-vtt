@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bithdv4ojl38x"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_tbt8v"]
+
+[resource]
+script = ExtResource("1_tbt8v")
+dex_number = 480
+display_name = "Uxie"
+id = "uxie"
+types = Array[int]([10])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 20
+hit_points = 218
+hit_dice = "d12"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 16,
+1: 17,
+2: 14,
+3: 28,
+4: 16,
+5: 18
+}
+skills = Array[int]([2, 7, 8, 9, 14, 16])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}, {
+"range_m": 15.0,
+"type": 2
+}])
+abilities = Array[String](["Levitate"])
+level_moves = {
+2: ["Imprison"],
+6: ["Endure"],
+7: ["Psybeam", "Swift"],
+11: ["Yawn"],
+12: ["Future Sight"],
+15: ["Amnesia", "Extrasensory", "Psychic"],
+17: ["Flail", "Natural Gift"],
+18: ["Memento"],
+19: ["Mystical Power"]
+}
+starting_moves = Array[String](["Confusion", "Rest"])
+tms = Array[String](["tm_2", "tm_9", "tm_10", "tm_18", "tm_38", "tm_40", "tm_45", "tm_46", "tm_53", "tm_58", "tm_67", "tm_68", "tm_69", "tm_81", "tm_83", "tm_84", "tm_85", "tm_87", "tm_94", "tm_100", "tm_106", "tm_109", "tm_110", "tm_112", "tm_113", "tm_114", "tm_125", "tm_129", "tm_131", "tm_136", "tm_141", "tm_145", "tm_149", "tm_150", "tm_151", "tm_156", "tm_161", "tm_162", "tm_171", "tm_175", "tm_178", "tm_184", "tm_190", "tm_197", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_206", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_226", "tm_228", "tm_229", "tm_231", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_255", "tm_257", "tm_262", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_284", "tm_286", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_299", "tm_300", "tm_301", "tm_303", "tm_311", "tm_317", "tm_321"])

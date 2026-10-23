@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://col48no0laqgc"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_8gaqk"]
+
+[resource]
+script = ExtResource("1_8gaqk")
+dex_number = 968
+display_name = "Orthworm"
+id = "orthworm"
+types = Array[int]([16])
+sr = "10"
+min_level = 5
+evolution_stage = 1
+armor_class = 17
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 18,
+1: 11,
+2: 17,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 6, 8])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 1
+}])
+abilities = Array[String](["Earth Eater"])
+hidden_ability = "Sand Veil"
+level_moves = {
+3: ["Mud-Slap"],
+4: ["Smack Down"],
+6: ["Bulldoze"],
+7: ["Iron Head"],
+9: ["Take Down"],
+10: ["Dig"],
+12: ["Sandstorm"],
+13: ["Iron Defense"],
+15: ["Earthquake", "Iron Tail"],
+16: ["Shed Tail"]
+}
+starting_moves = Array[String](["Harden", "Tackle", "Wrap"])
+tms = Array[String](["tm_24", "tm_25", "tm_35", "tm_51", "tm_55", "tm_59", "tm_73", "tm_74", "tm_83", "tm_87", "tm_99", "tm_113", "tm_128", "tm_129", "tm_132", "tm_136", "tm_147", "tm_148", "tm_169", "tm_174", "tm_175", "tm_199", "tm_214", "tm_221", "tm_223", "tm_225", "tm_230", "tm_231", "tm_248", "tm_251", "tm_260", "tm_262", "tm_263", "tm_266", "tm_270", "tm_282", "tm_286"])
+egg_moves = Array[String](["Coil", "Curse", "Metal Burst"])

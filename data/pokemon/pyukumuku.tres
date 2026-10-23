@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cp6mc367sh2rr"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_xxy0n"]
+
+[resource]
+script = ExtResource("1_xxy0n")
+dex_number = 771
+display_name = "Pyukumuku"
+id = "pyukumuku"
+types = Array[int]([2])
+sr = "6"
+min_level = 5
+evolution_stage = 1
+armor_class = 18
+hit_points = 43
+hit_dice = "d8"
+movement = {
+0: 1.5,
+1: 3.0
+}
+attributes = {
+0: 16,
+1: 8,
+2: 17,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Innards Out"])
+hidden_ability = "Unaware"
+level_moves = {
+2: ["Helping Hand"],
+3: ["Taunt"],
+5: ["Safeguard"],
+6: ["Counter"],
+7: ["Purify"],
+9: ["Curse"],
+10: ["Gastro Acid"],
+11: ["Pain Split"],
+13: ["Recover"],
+14: ["Soak"],
+15: ["Memento", "Toxic"]
+}
+starting_moves = Array[String](["Baton Pass", "Bide", "Harden", "Mud Sport", "Water Sport"])
+tms = Array[String](["tm_13", "tm_23", "tm_45", "tm_58", "tm_111", "tm_122", "tm_129", "tm_156", "tm_184", "tm_199", "tm_201", "tm_208", "tm_209", "tm_211", "tm_212", "tm_214", "tm_229", "tm_236", "tm_248", "tm_261", "tm_270", "tm_276", "tm_283", "tm_296"])
+egg_moves = Array[String](["Bestow", "Endure", "Mirror Coat", "Spite", "Swagger", "Tickle", "Venom Drench"])

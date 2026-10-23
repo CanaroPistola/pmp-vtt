@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bw8na2mcer8hv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_6v7yr"]
+
+[resource]
+script = ExtResource("1_6v7yr")
+id = "flash"
+display_name = "Flash"
+name_en = "Flash"
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 5
+range_distance = 6.0
+description = "Você emite um imenso flash de luz em um raio de 20 pés (6 metros), centrado em você. Criaturas na área devem fazer um teste de CON contra sua CD de Move. Em caso de falha, ficam cegas até o final do próximo turno delas . Ao sair da cegueira, a criatura permanece com sua Precisão reduzida em 1 estágio, podendo ser acumulado em até -6 estágios. Criaturas naturalmente cegas não sofrem o efeito deste Move."
+range_text_raw = "Pessoal (raio de 6 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([2])
+effect_tags = Array[String](["stat_change", "blind"])

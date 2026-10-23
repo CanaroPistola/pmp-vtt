@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c1k0yr4uj5bx2"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_nbv1o"]
+
+[resource]
+script = ExtResource("1_nbv1o")
+id = "dazzling_gleam"
+display_name = "Dazzling Gleam (Clarão Deslumbrante)"
+name_en = "Dazzling Gleam"
+name_pt = "Clarão Deslumbrante"
+type = 17
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 3
+range_distance = 12.0
+description = "Seu corpo é envolvido por um brilho iridescente intenso que se expande em feixes multicoloridos à sua frente. Criaturas em um cone de 12 metros de você devem fazer um teste de CON contra sua CD de Move, sofrendo 4d4 + MOVE de dano do tipo fada em caso de falha, ou metade desse dano em caso de sucesso."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "Pessoal (cone de 12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([5, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}

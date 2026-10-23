@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://nnta53c7irci"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_y4p64"]
+
+[resource]
+script = ExtResource("1_y4p64")
+id = "fairy_lock"
+display_name = "Fairy Lock"
+name_en = "Fairy Lock"
+type = 17
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 12.0
+duration_rounds = 1
+description = "Você convoca um poder místico que tranca o campo de batalha. Criaturas dentro de um raio de 40 pés ( 12 metros), centrado em você, não podem fugir , serem trocadas ou se afastar de você para além dessa distância até o início de seu próximo turno, incluindo aliados, embora ainda possam usar Teleport normalmente para escapar desse efeito . Você pode se mover livremente, mas se os alvos saírem do alcance por causa da sua movimentação, eles deixam de ser afetados. Este Move não afeta Pokémon do tipo Fantasma, ignora efeitos de proteção como Protect ou Detect, e não bloqueia Moves, habilidades passivas ou itens que forçam a troca do alvo, como Dragon Tail, Whirlwind ou Eject Button."
+range_text_raw = "Pessoal (raio de 12 metros)"
+duration_text_raw = "1 rodada"

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ckirgeueb6ooi"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_snpwi"]
+
+[resource]
+script = ExtResource("1_snpwi")
+dex_number = 301
+display_name = "Delcatty"
+id = "delcatty"
+types = Array[int]([0])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 45
+hit_dice = "d8"
+movement = {
+0: 10.5,
+2: 10.5
+}
+attributes = {
+0: 12,
+1: 16,
+2: 12,
+3: 6,
+4: 12,
+5: 14
+}
+skills = Array[int]([9, 14])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Cute Charm", "Normalize"])
+hidden_ability = "Wonder Skin"
+starting_moves = Array[String](["Attract", "Double Slap", "Fake Out", "Sing"])
+tms = Array[String](["tm_13", "tm_22", "tm_38", "tm_40", "tm_45", "tm_48", "tm_58", "tm_69", "tm_75", "tm_87", "tm_109", "tm_113", "tm_114", "tm_125", "tm_129", "tm_131", "tm_136", "tm_137", "tm_139", "tm_144", "tm_149", "tm_151", "tm_153", "tm_186", "tm_199", "tm_201", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_240", "tm_242", "tm_248", "tm_255", "tm_257", "tm_266", "tm_270", "tm_271", "tm_276", "tm_290", "tm_293", "tm_294", "tm_296", "tm_305", "tm_311", "tm_315", "tm_318", "tm_321"])
+egg_moves = Array[String](["Baton Pass", "Captivate", "Cosmic Power", "Fake Out", "Fake Tears", "Helping Hand", "Last Resort", "Mud Bomb", "Simple Beam", "Sucker Punch", "Tickle", "Uproar", "Wish", "Zen Headbutt"])

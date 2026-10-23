@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://blh46lyf0rdh8"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_724or"]
+
+[resource]
+script = ExtResource("1_724or")
+id = "hold_hands"
+display_name = "Hold Hands (Dar as Mãos)"
+name_en = "Hold Hands"
+name_pt = "Dar as Mãos"
+pp = 20
+move_time = "1 reação"
+activation = 1
+description = "Se você estiver dentro do alcance corpo a corpo de um aliado, você segura a mão dele para espalhar felicidade. Use esta reação quando um aliado está atacando para adicionar +1 em suas rolagens de ataque, ou quando está sendo alvo de um ataque para adicionar +1 à sua CA. Esta reação só pode ser usada antes que o resultado de qualquer rolagem de ataque (do aliado ou da criatura) seja anunciado."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"

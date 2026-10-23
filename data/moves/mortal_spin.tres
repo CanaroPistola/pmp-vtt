@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cdmupnuin1hav"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_sap6c"]
+
+[resource]
+script = ExtResource("1_sap6c")
+id = "mortal_spin"
+display_name = "Mortal Spin"
+name_en = "Mortal Spin"
+type = 7
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 3
+range_distance = 9.0
+description = "Você realiza um ataque giratório, liberando uma onda de veneno em um cone de 30 pés (9 metros). Qualquer criatura pega no cone deve ter sucesso em um teste de DES contra sua CD de Move, sofrendo 1d6 + MOVE de dano do tipo Venenoso em uma falha, ou metade do dano em um sucesso. Aqueles que falharem no teste também ficam Envenenados. Este Move automaticamente liberta o usuário de Bind, Clamp, Leech Seed e Wrap ou qualquer coisa que o mantenha agarrado ou impedido (exceto Sky Drop), sendo removido desses estados antes do teste de resistência ser feito, além de desfazer uma área de Fire Spin, Infestation, Magma Storm, Sand Tomb, Whirlpool, Spikes, Stealth Rock, Sticky Web e Toxic Spikes caso estejam dentro ou em contato com o cone."
+scaling_text = "Os dados de dano para este Move mudam para 1d10 no nível 5, 1d12 no nível 10 e 2d8 no nível 17."
+range_text_raw = "Pessoal (cone de 9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["poison", "grapple"])

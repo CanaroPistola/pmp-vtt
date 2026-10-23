@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dw4mnhwo52kpo"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_xc8pe"]
+
+[resource]
+script = ExtResource("1_xc8pe")
+dex_number = 305
+display_name = "Lairon"
+id = "lairon"
+types = Array[int]([16, 12])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 55
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 18,
+1: 11,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 1
+}])
+abilities = Array[String](["Sturdy", "Rock Head"])
+hidden_ability = "Heavy Metal"
+evolves_to = Array[String](["aggron"])
+evolution_level = 14
+evolution_points = 7
+level_moves = {
+2: ["Mud-Slap"],
+3: ["Headbutt"],
+4: ["Metal Claw"],
+5: ["Rock Tomb"],
+6: ["Protect"],
+7: ["Roar"],
+8: ["Iron Head"],
+9: ["Rock Slide"],
+10: ["Take Down"],
+11: ["Metal Sound"],
+12: ["Iron Tail"],
+13: ["Iron Defense"],
+15: ["Autotomize", "Double-Edge"],
+16: ["Heavy Slam", "Metal Burst"]
+}
+starting_moves = Array[String](["Harden", "Tackle"])
+tms = Array[String](["tm_3", "tm_13", "tm_35", "tm_45", "tm_55", "tm_58", "tm_73", "tm_74", "tm_82", "tm_87", "tm_109", "tm_131", "tm_147", "tm_148", "tm_149", "tm_164", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_236", "tm_241", "tm_242", "tm_248", "tm_255", "tm_261", "tm_262", "tm_263", "tm_264", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_296", "tm_305", "tm_311"])
+egg_moves = Array[String](["Body Slam", "Curse", "Dragon Rush", "Endeavor", "Head Smash", "Iron Head", "Mud-Slap", "Reversal", "Screech", "Smelling Salts", "Stealth Rock", "Stomp", "Superpower"])

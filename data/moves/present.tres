@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bwmxt3hkjhpsy"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4dssr"]
+
+[resource]
+script = ExtResource("1_4dssr")
+id = "present"
+display_name = "Present"
+name_en = "Present"
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "Você envia um presente armadilhado a uma criatura, podendo feri-la ou curá-la. Faça um ataque à distância -1 contra um alvo no alcance. Confira a tabela no livro. Adicione seu MOVE a qualquer rolagem da tabela. D20 Efeito Nível 1 Nível 5 Nível 10 Nível 17 1-8 Causa dano 2d4 1d12 4d4 2d10 9-14 Causa dano 4d4 4d6 4d8 4d10 15-16 Causa dano 3d8 6d6 6d8 6d10 17-20 Cura 1d6 1d10 2d8 2d12"
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([1, 5])
+move_power_modifier = -1

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bfa284t5ktexx"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_arsds"]
+
+[resource]
+script = ExtResource("1_arsds")
+id = "heal_block"
+display_name = "Heal Block"
+name_en = "Heal Block"
+type = 10
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 4
+range_category = 3
+range_distance = 18.0
+description = "Você envia ondas psíquicas para a mente dos alvos, impedindo que seus corpos se curem. Todas as criaturas inimigas pegas em um cone de 60 pés (18 metros) devem ter sucesso em um teste de resistência de SAB contra sua CD de Move, ou serem incapazes de recuperarem vida por 5 turnos, seja por Moves, itens ou qualquer outra fonte."
+range_text_raw = "Pessoal (cone de 18 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([3, 4])

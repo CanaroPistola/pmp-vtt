@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://d2kmgqir1dk43"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_gosib"]
+
+[resource]
+script = ExtResource("1_gosib")
+id = "bubble"
+display_name = "Bubble (Bolhas)"
+name_en = "Bubble"
+name_pt = "Bolhas"
+type = 2
+pp = 15
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 3
+range_distance = 12.0
+duration_is_permanent = true
+description = "Você dispara uma série de bolhas em movimento rápido em um cone de 12 metros. Qualquer criatura pega no cone deve ter sucesso em um teste de DES contra sua CD de Move, sofrendo 2d4 + MOVE de dano de água em caso de falha, ou metade disso em um sucesso. Se uma criatura falhar no teste por 10 ou mais, ou caso role um resultado natural de 1 ou 2 no teste, ela tem sua Velocidade reduzida em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 1d12 no nível 5, 4d4 no nível 10 e 2d10 no nível 17."
+range_text_raw = "Pessoal (cone de 12 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

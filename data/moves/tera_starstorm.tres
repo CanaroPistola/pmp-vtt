@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://0m5rtbxyivtu"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8g1nl"]
+
+[resource]
+script = ExtResource("1_8g1nl")
+id = "tera_starstorm"
+display_name = "Tera Starstorm"
+name_en = "Tera Starstorm"
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 3
+range_distance = 15.0
+description = "Você bombardeia o alvo com o poder dos seus cristais, liberando uma tempestade de energia cristalina sobre ele. Faça um ataque à distância contra um alvo em alcance, causando 3d8 + MOVE de dano do tipo Normal em um acerto. Quando usado por Terapagos em sua Forma Estelar, Tera Starstorm se torna do tipo Estelar e passa a atingir múltiplos oponentes. Ao usar este Move dessa forma, escolha entre realizar um ataque corpo a corpo, podendo atingir todos os alvos dentro do seu alcance corpo a corpo, ou disparar a tempestade de energia cristalina em um cone de 50 pés (15 metros). Nesse cone, cada alvo deve fazer um teste de resistência de DES contra sua CD de Move, sofrendo metade do dano em um sucesso. Este Move não aciona efeitos de inimigos que se ativam ao contato corpo a corpo. Observações: Este Move não pode ser copiado por Sketch."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "(15 metros) Corpo a Corpo cone ( 15 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1, 3, 4, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}

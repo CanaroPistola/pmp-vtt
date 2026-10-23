@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dxdw81wk8tnpv"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ovq4j"]
+
+[resource]
+script = ExtResource("1_ovq4j")
+dex_number = 643
+display_name = "Reshiram"
+id = "reshiram"
+types = Array[int]([14, 1])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 18
+hit_points = 505
+hit_dice = "d20"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 21,
+1: 19,
+2: 20,
+3: 14,
+4: 18,
+5: 10
+}
+skills = Array[int]([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Turboblaze"])
+level_moves = {
+3: ["Imprison"],
+5: ["Ancient Power"],
+8: ["Flamethrower"],
+10: ["Dragon Breath"],
+12: ["Slash"],
+15: ["Extrasensory", "Fusion Flare"],
+16: ["Dragon Pulse"],
+17: ["Noble Roar"],
+18: ["Crunch", "Fire Blast"],
+19: ["Outrage"],
+20: ["Blue Flare", "Hyper Voice"]
+}
+starting_moves = Array[String](["Dragon Rage", "Fire Fang"])
+tms = Array[String](["tm_24", "tm_25", "tm_28", "tm_31", "tm_45", "tm_50", "tm_54", "tm_58", "tm_59", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_72", "tm_73", "tm_75", "tm_83", "tm_87", "tm_91", "tm_92", "tm_95", "tm_96", "tm_97", "tm_98", "tm_100", "tm_102", "tm_103", "tm_109", "tm_113", "tm_126", "tm_127", "tm_129", "tm_131", "tm_136", "tm_137", "tm_145", "tm_151", "tm_156", "tm_177", "tm_182", "tm_183", "tm_186", "tm_199", "tm_202", "tm_209", "tm_212", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_227", "tm_228", "tm_229", "tm_233", "tm_234", "tm_235", "tm_240", "tm_241", "tm_248", "tm_255", "tm_257", "tm_265", "tm_267", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_296", "tm_313", "tm_316", "tm_321"])

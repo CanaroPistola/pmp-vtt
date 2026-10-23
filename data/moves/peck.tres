@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dh52jg3t8qxoe"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_pbdms"]
+
+[resource]
+script = ExtResource("1_pbdms")
+id = "peck"
+display_name = "Peck (Bicada)"
+name_en = "Peck"
+name_pt = "Bicada"
+type = 9
+pp = 20
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você martela um alvo com um ataque de bicada. Você pode se mover imediatamente até 3 metros e fazer um ataque corpo a corpo em um alvo, causando 1d8 + MOVE de dano voador em um acerto bem-sucedido."
+scaling_text = "O dado de dano para este Move muda para 1d10 no nível 5, 2d8 no nível 10 e 3d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+}
+}

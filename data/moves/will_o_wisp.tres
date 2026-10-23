@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://wigydlx5yrd3"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_y388b"]
+
+[resource]
+script = ExtResource("1_y388b")
+id = "will_o_wisp"
+display_name = "Will-O-Wisp"
+name_en = "Will-O-Wisp"
+type = 1
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 6
+status_roll_target_attribute = 1
+range_category = 2
+range_distance = 9.0
+description = "Você envia uma chama sinistra e incandescente em direção a uma criatura. Role 1d20 + MOVE  + 6 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, o alvo fica Queimado."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([1, 4])
+effect_tags = Array[String](["burn"])

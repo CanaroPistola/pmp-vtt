@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://1bpunjwv11uq"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_i0aec"]
+
+[resource]
+script = ExtResource("1_i0aec")
+id = "power_trip"
+display_name = "Power Trip (Topada de Poder)"
+name_en = "Power Trip"
+name_pt = "Topada de Poder"
+type = 15
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você exibe sua força e desfere um golpe sombrio contra um alvo. Faça um ataque corpo a corpo, causando 1d4 + MOVE de dano sombrio em um acerto. Para cada estágio positivo que você tiver no aumento de qualquer Mudança de Status, adicione mais um dado de dano."
+scaling_text = "O dado de dano para este Move muda para 1d6 no nível 5, 1d8 no nível 10 e 1d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

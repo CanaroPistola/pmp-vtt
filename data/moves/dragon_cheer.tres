@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ds82tq7ln3ev7"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_kfjpg"]
+
+[resource]
+script = ExtResource("1_kfjpg")
+id = "dragon_cheer"
+display_name = "Dragon Cheer"
+name_en = "Dragon Cheer"
+type = 14
+move_time = "1 ação"
+range_category = 5
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você solta um grito dracônico que eleva a moral dos aliados em um raio de 30 pés (9 metros) ao seu redor, aumentando a Margem de Crítico deles em 1 estágio. Aliados que sejam do tipo Dragão aumentam em 2 estágios em vez disso. Este Move não afeta aliados que já estejam sob os efeitos de Focus Energy ou Dragon Cheer. O usuário não recebe benefícios deste Move."
+range_text_raw = "Pessoal (raio de 9 metros)"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

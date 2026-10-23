@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://gcky1i5ehkod"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_tb2f5"]
+
+[resource]
+script = ExtResource("1_tb2f5")
+id = "mat_block"
+display_name = "Mat Block (Esteira Bloqueio)"
+name_en = "Mat Block"
+name_pt = "Esteira Bloqueio"
+type = 6
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 4.5
+duration_rounds = 1
+description = "Você conjura um tapete etéreo para proteger você e seus aliados. Até o final do seu próximo turno, você e qualquer criatura aliada dentro de  (4,5 metros) ao seu redor se tornam imunes a danos causados por Moves que causem dano. Moves de Status ainda podem afetar seus alvos. Este Move funciona apenas no primeiro turno em que o usuário age em batalha. Para poder usar Mat Block novamente, o Pokémon precisa ser retirado e enviado de volta à batalha."
+range_text_raw = "Pessoal (raio de / 4,5 metros)"
+duration_text_raw = "1 rodada"

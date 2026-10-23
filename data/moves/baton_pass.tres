@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://6egk7op5ta8b"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_nmcwi"]
+
+[resource]
+script = ExtResource("1_nmcwi")
+id = "baton_pass"
+display_name = "Baton Pass (Passa Bastão)"
+name_en = "Baton Pass"
+name_pt = "Passa Bastão"
+pp = 20
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+description = "Você pode trocar de lugar com outro Pokémon guardado do grupo de seu treinador, passando suas mudanças de estatísticas para a nova criatura. Siga os pontos a seguir para saber o que pode ser passado ou não: Confira no livro."
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea"

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b6hjrh0nelcx8"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_et226"]
+
+[resource]
+script = ExtResource("1_et226")
+id = "feint"
+display_name = "Feint (Finta)"
+name_en = "Feint"
+name_pt = "Finta"
+pp = 5
+move_time = "1 ação / ação bônus"
+is_attack = true
+resolution = 1
+activation = 2
+description = "Você engana uma criatura antes de atacar. Use sua ação para fazer um ataque corpo a corpo contra um alvo, causando 1d6 + MOVE de dano normal em um acerto. Este Move ignora completamente reações de proteção, como Protect e Detect. Caso o alvo tente ativar uma dessas reações contra Feint, a proteção falha automaticamente, e o usuário não sofre quaisquer efeitos secundários associados a ela, como o envenenamento de Baneful Bunker. Caso o alvo já esteja sob proteção, Feint a dissipa imediatamente, permitindo que outros Moves também o acertem após isso. Você pode usar Feint como uma ação bônus apenas caso um Move utilizado anteriormente no mesmo turno tenha sido bloqueado por um Move de proteção.      Observações: Feint não pode ser escolhido pelo Move Assist. Feint não pode remover os efeitos de Moves de proteção se errar ou não afetar o alvo (como no caso de um alvo do tipo Fantasma)."
+scaling_text = "Os dados de dano para este Move mudam para 1d10 no nível 5, 1d12 no nível 10 e 2d8 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["poison"])

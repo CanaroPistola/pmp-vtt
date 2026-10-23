@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://hp17vdsg4d5j"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_xmbga"]
+
+[resource]
+script = ExtResource("1_xmbga")
+id = "astral_barrage"
+display_name = "Astral Barrage"
+name_en = "Astral Barrage"
+type = 13
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 4
+range_category = 3
+range_distance = 18.0
+description = "Você lança uma quantidade assustadora de pequenos fantasmas em todos à sua frente. Qualquer criatura pega no cone deve ter sucesso em um teste de resistência de SAB contra sua CD de Move, sofrendo 3d6 + MOVE de dano fantasma em uma falha."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Pessoal (cone de 18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}

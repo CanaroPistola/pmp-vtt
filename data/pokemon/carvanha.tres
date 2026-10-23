@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cnx2v5l0kow5u"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ur7ia"]
+
+[resource]
+script = ExtResource("1_ur7ia")
+dex_number = 318
+display_name = "Carvanha"
+id = "carvanha"
+types = Array[int]([2, 15])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 11
+hit_points = 17
+movement = {
+0: 1.5,
+1: 9.0
+}
+attributes = {
+0: 10,
+1: 14,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([8])
+abilities = Array[String](["Rough Skin"])
+hidden_ability = "Speed Boost"
+evolves_to = Array[String](["sharpedo"])
+evolution_level = 10
+evolution_points = 14
+level_moves = {
+2: ["Rage"],
+3: ["Focus Energy"],
+4: ["Aqua Jet"],
+5: ["Assurance"],
+6: ["Screech"],
+8: ["Swagger"],
+9: ["Ice Fang"],
+10: ["Scary Face"],
+11: ["Poison Fang"],
+12: ["Crunch"],
+13: ["Agility"],
+14: ["Liquidation"],
+15: ["Take Down"]
+}
+starting_moves = Array[String](["Bite", "Leer"])
+tms = Array[String](["tm_12", "tm_13", "tm_22", "tm_26", "tm_30", "tm_45", "tm_52", "tm_57", "tm_58", "tm_87", "tm_101", "tm_109", "tm_122", "tm_131", "tm_139", "tm_140", "tm_144", "tm_186", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_228", "tm_232", "tm_233", "tm_234", "tm_236", "tm_248", "tm_253", "tm_255", "tm_261", "tm_270", "tm_272", "tm_275", "tm_276", "tm_277", "tm_283", "tm_288", "tm_295", "tm_296", "tm_305", "tm_311", "tm_312", "tm_314", "tm_321"])
+egg_moves = Array[String](["Ancient Power", "Brine", "Destiny Bond", "Double-Edge", "Hydro Pump", "Psychic Fangs", "Swift", "Thrash", "Water Pulse"])

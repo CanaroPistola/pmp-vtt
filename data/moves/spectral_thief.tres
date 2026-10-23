@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://d3w80oalnc0yc"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_80eph"]
+
+[resource]
+script = ExtResource("1_80eph")
+id = "spectral_thief"
+display_name = "Spectral Thief (Ladrão Espectral)"
+name_en = "Spectral Thief"
+name_pt = "Ladrão Espectral"
+type = 13
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 30.0
+description = "Você sucumbe à escuridão e se transporta para a sombra de uma criatura. Teleporte-se imediatamente para um ponto no alcance e faça um ataque corpo a corpo em uma criatura. Em um acerto, você rouba todas as Mudanças de Status positivas que afetam a criatura, e logo em seguida causa 3d6 + MOVE de dano fantasma."
+scaling_text = "Os dados de dano para este Move mudam para 3d10 no nível 5, 3d12 no nível 10 e 4d12 no nível 17."
+range_text_raw = "(30 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}

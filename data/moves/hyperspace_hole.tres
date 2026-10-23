@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dk372j7odskgh"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_1oso3"]
+
+[resource]
+script = ExtResource("1_1oso3")
+id = "hyperspace_hole"
+display_name = "Hyperspace Hole"
+name_en = "Hyperspace Hole"
+type = 10
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 18.0
+description = "Você cria um portal de hiperespaço que permite que você se teleporte instantaneamente para uma criatura dentro do alcance, surgindo em uma enorme explosão psíquica. Teletransporte-se a até 10 pés (3 metros) de um alvo em alcance, e faça um ataque à distância contra ele  com acerto garantido, causando 4d4 + MOVE de dano psíquico. Este Move ignora reações que anulam dano, como Protect ou Detect . Role um d20 para chance de golpe crítico e outros efeitos. Observações: Este Move ignora Substitute."
+scaling_text = "Os dados de dano para este Move mudam  para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}

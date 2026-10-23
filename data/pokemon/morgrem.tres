@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://lnvm84x3iu02"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_fkhkc"]
+
+[resource]
+script = ExtResource("1_fkhkc")
+dex_number = 860
+display_name = "Morgrem"
+id = "morgrem"
+types = Array[int]([15, 17])
+sr = "3"
+min_level = 5
+evolution_stage = 2
+armor_class = 13
+hit_points = 45
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 10,
+1: 15,
+2: 16,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([5, 6, 15])
+senses = Array[Dictionary]([{
+"range_m": 3.0,
+"type": 2
+}])
+abilities = Array[String](["Prankster", "Frisk"])
+hidden_ability = "Pickpocket"
+evolves_to = Array[String](["grimmsnarl"])
+evolution_level = 14
+evolution_points = 9
+level_moves = {
+4: ["Fake Tears"],
+6: ["Assurance"],
+7: ["Swagger"],
+8: ["Sucker Punch"],
+10: ["Torment"],
+12: ["Dark Pulse"],
+14: ["Nasty Plot"],
+15: ["Play Rough"],
+16: ["Foul Play"]
+}
+starting_moves = Array[String](["Bite", "Confide", "Fake Out", "False Surrender", "Flatter"])
+tms = Array[String](["tm_12", "tm_13", "tm_37", "tm_42", "tm_52", "tm_53", "tm_67", "tm_68", "tm_83", "tm_87", "tm_88", "tm_100", "tm_106", "tm_145", "tm_152", "tm_155", "tm_156", "tm_158", "tm_165", "tm_166", "tm_171", "tm_173", "tm_178", "tm_190", "tm_199", "tm_212", "tm_214", "tm_215", "tm_217", "tm_228", "tm_234", "tm_241", "tm_248", "tm_255", "tm_270", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_293", "tm_298", "tm_300"])
+egg_moves = Array[String](["Parting Shot"])

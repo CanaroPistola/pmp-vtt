@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c6daaybh16d7b"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_dd8b5"]
+
+[resource]
+script = ExtResource("1_dd8b5")
+dex_number = 981
+display_name = "Farigiraf"
+id = "farigiraf"
+types = Array[int]([0, 10])
+sr = "11"
+min_level = 8
+evolution_stage = 2
+armor_class = 14
+hit_points = 88
+hit_dice = "d10"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 17,
+1: 19,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 5, 9, 13])
+abilities = Array[String](["Cud Chew", "Armor Tail"])
+hidden_ability = "Sap Sipper"
+level_moves = {
+2: ["Confusion"],
+4: ["Assurance"],
+5: ["Stomp"],
+7: ["Psybeam"],
+8: ["Agility"],
+10: ["Double Hit"],
+11: ["Twin Beam"],
+13: ["Crunch"],
+14: ["Baton Pass"],
+15: ["Nasty Plot", "Psychic"]
+}
+starting_moves = Array[String](["Astonish", "Growl", "Guard Swap", "Power Swap", "Tackle"])
+tms = Array[String](["tm_5", "tm_10", "tm_18", "tm_25", "tm_35", "tm_38", "tm_40", "tm_46", "tm_50", "tm_51", "tm_53", "tm_59", "tm_74", "tm_82", "tm_83", "tm_84", "tm_85", "tm_87", "tm_106", "tm_110", "tm_113", "tm_114", "tm_118", "tm_129", "tm_132", "tm_136", "tm_137", "tm_145", "tm_148", "tm_156", "tm_158", "tm_178", "tm_180", "tm_199", "tm_200", "tm_201", "tm_202", "tm_203", "tm_204", "tm_205", "tm_207", "tm_209", "tm_212", "tm_214", "tm_220", "tm_240", "tm_244", "tm_248", "tm_266", "tm_268", "tm_270", "tm_271", "tm_277", "tm_282", "tm_286", "tm_288", "tm_290", "tm_293", "tm_294", "tm_298", "tm_300", "tm_301", "tm_305", "tm_321"])
+egg_moves = Array[String](["Ally Switch", "Beat Up", "Double Kick", "Future Sight", "Mean Look", "Mirror Coat", "Take Down", "Uproar", "Wish"])

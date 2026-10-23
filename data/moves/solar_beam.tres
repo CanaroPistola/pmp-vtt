@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dj58u16gko4dw"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8mjup"]
+
+[resource]
+script = ExtResource("1_8mjup")
+id = "solar_beam"
+display_name = "Solar Beam (Raio Solar)"
+name_en = "Solar Beam"
+name_pt = "Raio Solar"
+type = 4
+pp = 5
+move_time = "1 ação, carga"
+resolution = 2
+has_save = true
+needs_charge = true
+range_category = 4
+range_distance = 24.0
+duration_rounds = 1
+duration_flags = Array[String](["concentration"])
+description = "Ao usar este Move, você absorve energia solar e se prepara para liberar um raio devastador. No seu próximo turno, se você mantiver a concentração, use uma ação para criar uma linha de energia solar de 24 metros, com  (1,5 metros) de largura. Qualquer criatura pega na linha deve ter sucesso em um teste de DES ou sofrer 3d8 + MOVE de dano de grama em caso de falha e metade disso em caso de sucesso. Se este Move for usado sob luz solar intensa, ele pode ser executado imediatamente no momento em que for ativado, sem necessidade de concentração."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Pessoal (linha de 24 metros)"
+duration_text_raw = "1 rodada, Concentração"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}

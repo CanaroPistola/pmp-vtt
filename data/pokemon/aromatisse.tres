@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b1b541ry8mvth"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_55j0o"]
+
+[resource]
+script = ExtResource("1_55j0o")
+dex_number = 683
+display_name = "Aromatisse"
+id = "aromatisse"
+types = Array[int]([17])
+sr = "12"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 110
+hit_dice = "d12"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 14,
+1: 11,
+2: 18,
+3: 6,
+4: 12,
+5: 18
+}
+skills = Array[int]([5, 14])
+abilities = Array[String](["Healer"])
+hidden_ability = "Aroma Veil"
+level_moves = {
+2: ["Sweet Kiss"],
+3: ["Odor Sleuth"],
+5: ["Echoed Voice"],
+6: ["Calm Mind"],
+7: ["Draining Kiss"],
+9: ["Aromatherapy"],
+10: ["Attract"],
+11: ["Moonblast"],
+12: ["Charm"],
+13: ["Flail"],
+14: ["Misty Terrain"],
+15: ["Psychic", "Skill Swap"],
+16: ["Disarming Voice", "Reflect"],
+17: ["Psych Up"]
+}
+starting_moves = Array[String](["Aromatic Mist", "Fairy Wind", "Heal Pulse", "Sweet Scent"])
+tms = Array[String](["tm_4", "tm_9", "tm_13", "tm_38", "tm_40", "tm_41", "tm_45", "tm_48", "tm_53", "tm_58", "tm_67", "tm_68", "tm_69", "tm_75", "tm_82", "tm_84", "tm_87", "tm_88", "tm_99", "tm_109", "tm_113", "tm_121", "tm_125", "tm_129", "tm_131", "tm_136", "tm_156", "tm_161", "tm_172", "tm_173", "tm_199", "tm_201", "tm_202", "tm_207", "tm_209", "tm_212", "tm_214", "tm_216", "tm_228", "tm_244", "tm_248", "tm_255", "tm_270", "tm_271", "tm_276", "tm_284", "tm_290", "tm_294", "tm_295", "tm_296", "tm_301"])
+egg_moves = Array[String](["After You", "Captivate", "Disable", "Nasty Plot", "Refresh", "Wish"])

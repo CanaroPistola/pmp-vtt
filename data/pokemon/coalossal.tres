@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cd6dburx4rlxu"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_3n3rm"]
+
+[resource]
+script = ExtResource("1_3n3rm")
+dex_number = 839
+display_name = "Coalossal"
+id = "coalossal"
+types = Array[int]([12, 1])
+sr = "12"
+min_level = 10
+evolution_stage = 3
+armor_class = 17
+hit_points = 122
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 10,
+2: 18,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([3, 8, 17])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 1
+}])
+abilities = Array[String](["Steam Engine", "Flame Body"])
+hidden_ability = "Flash Fire"
+level_moves = {
+5: ["Rock Polish"],
+7: ["Ancient Power"],
+9: ["Incinerate"],
+13: ["Stealth Rock"],
+15: ["Heat Crash"],
+16: ["Rock Blast"],
+17: ["Burn Up", "Stone Edge"]
+}
+starting_moves = Array[String](["Flame Charge", "Rapid Spin", "Smack Down", "Smokescreen", "Tackle", "Tar Shot"])
+tms = Array[String](["tm_13", "tm_24", "tm_25", "tm_35", "tm_51", "tm_55", "tm_73", "tm_74", "tm_83", "tm_87", "tm_91", "tm_94", "tm_95", "tm_96", "tm_97", "tm_98", "tm_113", "tm_121", "tm_126", "tm_127", "tm_128", "tm_132", "tm_136", "tm_147", "tm_148", "tm_165", "tm_166", "tm_170", "tm_175", "tm_183", "tm_196", "tm_199", "tm_212", "tm_214", "tm_221", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_232", "tm_235", "tm_239", "tm_248", "tm_251", "tm_255", "tm_257", "tm_260", "tm_262", "tm_267", "tm_270", "tm_271", "tm_282", "tm_285", "tm_286", "tm_316"])
+egg_moves = Array[String](["Block", "Explosion", "Mud-Slap"])

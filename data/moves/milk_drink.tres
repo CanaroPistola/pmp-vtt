@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://y8v6glhgxrmn"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_3i3ru"]
+
+[resource]
+script = ExtResource("1_3i3ru")
+id = "milk_drink"
+display_name = "Milk Drink"
+name_en = "Milk Drink"
+pp = 3
+move_time = "1 ação"
+range_category = 2
+range_distance = 3.0
+description = "Você cria uma bebida saborosa que cura suas feridas, recuperando 2d6 + MOVE pontos de vida . A cura desta bebida funciona apenas para si."
+scaling_text = "Os dados de cura para este Move mudam para 2d10 no nível 5, 4d8 no nível 10 e 4d12 no nível 17."
+range_text_raw = "(3 metros)"
+duration_text_raw = "Instantânea"
+role = 1
+move_power_attributes = Array[int]([2])
+has_healing = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}
+effect_tags = Array[String](["heal"])

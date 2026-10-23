@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ccdap1l6u6nrs"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ywoe2"]
+
+[resource]
+script = ExtResource("1_ywoe2")
+id = "core_enforcer"
+display_name = "Core Enforcer (Núcleo Executor)"
+name_en = "Core Enforcer"
+name_pt = "Núcleo Executor"
+type = 14
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 2
+range_distance = 13.5
+duration_is_permanent = true
+description = "Você envia um laser focado que queima um padrão 'Z' no chão, atingindo uma área com raio de 6 metros, centrado em um ponto dentro do alcance. Todas as criaturas pegas na explosão devem fazer um teste de resistência de DES contra sua CD de Move, sofrendo 2d10 + MOVE de dano do tipo dragão em caso de falha, e metade em um sucesso. Em caso de falha, e caso o alvo já tenha agido nesta rodada, ele perde todos os efeitos de sua habilidade passiva, até ser trocado."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "(13,5 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([0, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}

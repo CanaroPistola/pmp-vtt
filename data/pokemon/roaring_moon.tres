@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d1itepdws7gyu"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6ghe8"]
+
+[resource]
+script = ExtResource("1_6ghe8")
+dex_number = 1005
+display_name = "Roaring Moon"
+id = "roaring_moon"
+types = Array[int]([14, 15])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 16,
+2: 20,
+3: 12,
+4: 14,
+5: 14
+}
+skills = Array[int]([0, 2, 7, 8, 13])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Protosynthesis"])
+level_moves = {
+3: ["Incinerate"],
+5: ["Headbutt"],
+7: ["Scary Face"],
+10: ["Dragon Claw"],
+12: ["Zen Headbutt"],
+14: ["Flamethrower"],
+15: ["Night Slash"],
+16: ["Dragon Dance"],
+17: ["Dragon Rush", "Fly"],
+18: ["Throat Chop"],
+19: ["Roost"],
+20: ["Double-Edge"]
+}
+starting_moves = Array[String](["Bite", "Dragon Breath", "Focus Energy", "Leer"])
+tms = Array[String](["tm_2", "tm_3", "tm_7", "tm_24", "tm_25", "tm_28", "tm_29", "tm_50", "tm_52", "tm_55", "tm_59", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_74", "tm_83", "tm_87", "tm_91", "tm_92", "tm_95", "tm_97", "tm_102", "tm_113", "tm_127", "tm_133", "tm_135", "tm_136", "tm_137", "tm_148", "tm_150", "tm_152", "tm_168", "tm_182", "tm_199", "tm_214", "tm_220", "tm_223", "tm_233", "tm_234", "tm_241", "tm_248", "tm_253", "tm_266", "tm_267", "tm_270", "tm_271", "tm_281", "tm_282", "tm_283", "tm_286", "tm_289", "tm_291", "tm_303", "tm_320", "tm_321"])

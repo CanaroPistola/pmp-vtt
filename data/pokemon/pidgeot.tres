@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bsg1ot5vvedyv"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_kbi8n"]
+
+[resource]
+script = ExtResource("1_kbi8n")
+dex_number = 18
+display_name = "Pidgeot"
+id = "pidgeot"
+types = Array[int]([0, 9])
+sr = "10"
+min_level = 8
+evolution_stage = 3
+armor_class = 16
+hit_points = 77
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 14,
+1: 20,
+2: 12,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([13])
+abilities = Array[String](["Keen Eye", "Tangled Feet"])
+hidden_ability = "Big Pecks"
+level_moves = {
+2: ["Sand Attack"],
+3: ["Gust"],
+5: ["Quick Attack"],
+6: ["Whirlwind"],
+8: ["Twister"],
+9: ["Feather Dance"],
+11: ["Agility"],
+13: ["Wing Attack"],
+15: ["Roost", "Tailwind"],
+16: ["Mirror Move"],
+17: ["Air Slash", "Hurricane"]
+}
+starting_moves = Array[String](["Tackle"])
+tms = Array[String](["tm_3", "tm_13", "tm_45", "tm_54", "tm_58", "tm_87", "tm_102", "tm_109", "tm_113", "tm_127", "tm_131", "tm_136", "tm_151", "tm_199", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_246", "tm_248", "tm_255", "tm_265", "tm_270", "tm_271", "tm_276", "tm_281", "tm_288", "tm_296", "tm_303", "tm_305", "tm_318"])
+egg_moves = Array[String](["Air Cutter", "Air Slash", "Brave Bird", "Defog", "Feint Attack", "Foresight", "Pursuit", "Steel Wing", "Uproar"])

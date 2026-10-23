@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cdsx45q3jnxvd"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_7613n"]
+
+[resource]
+script = ExtResource("1_7613n")
+dex_number = 798
+display_name = "Kartana"
+id = "kartana"
+types = Array[int]([4, 16])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 218
+hit_dice = "d12"
+movement = {
+0: 15.0
+}
+attributes = {
+0: 20,
+1: 20,
+2: 14,
+3: 8,
+4: 14,
+5: 12
+}
+skills = Array[int]([0, 5, 15])
+abilities = Array[String](["Beast Boost"])
+level_moves = {
+3: ["False Swipe"],
+5: ["Razor Leaf"],
+7: ["Synthesis"],
+8: ["Aerial Ace"],
+10: ["Laser Focus"],
+11: ["Night Slash"],
+13: ["Swords Dance"],
+15: ["Leaf Blade", "X-Scissor"],
+16: ["Air Slash", "Detect"],
+17: ["Psycho Cut"],
+18: ["Guillotine"]
+}
+starting_moves = Array[String](["Air Cutter", "Cut", "Defog", "Fury Cutter", "Sacred Sword", "Vacuum Wave"])
+tms = Array[String](["tm_3", "tm_7", "tm_29", "tm_38", "tm_45", "tm_54", "tm_58", "tm_89", "tm_109", "tm_112", "tm_113", "tm_131", "tm_147", "tm_150", "tm_151", "tm_153", "tm_199", "tm_206", "tm_214", "tm_216", "tm_228", "tm_236", "tm_248", "tm_252", "tm_255", "tm_258", "tm_263", "tm_270", "tm_276", "tm_278", "tm_279", "tm_281", "tm_296", "tm_320"])

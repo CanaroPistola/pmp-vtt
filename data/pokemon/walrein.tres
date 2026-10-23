@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c8crabqakv07l"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4yu84"]
+
+[resource]
+script = ExtResource("1_4yu84")
+dex_number = 365
+display_name = "Walrein"
+id = "walrein"
+types = Array[int]([5, 2])
+sr = "14"
+min_level = 12
+evolution_stage = 3
+armor_class = 16
+hit_points = 165
+hit_dice = "d12"
+movement = {
+0: 4.5,
+1: 12.0
+}
+attributes = {
+0: 18,
+1: 15,
+2: 20,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Thick Fat", "Ice Body"])
+hidden_ability = "Oblivious"
+level_moves = {
+3: ["Encore", "Rollout"],
+5: ["Ice Ball"],
+7: ["Aurora Beam", "Brine"],
+9: ["Body Slam"],
+11: ["Rest", "Snore"],
+13: ["Hail"],
+15: ["Blizzard", "Surf"],
+16: ["Sheer Cold"]
+}
+starting_moves = Array[String](["Crunch", "Defense Curl", "Growl", "Ice Fang", "Powder Snow", "Swagger", "Water Gun"])
+tms = Array[String](["tm_11", "tm_13", "tm_16", "tm_17", "tm_22", "tm_23", "tm_30", "tm_35", "tm_45", "tm_57", "tm_58", "tm_74", "tm_75", "tm_87", "tm_108", "tm_109", "tm_113", "tm_122", "tm_131", "tm_136", "tm_138", "tm_139", "tm_140", "tm_143", "tm_144", "tm_148", "tm_149", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_223", "tm_224", "tm_225", "tm_228", "tm_243", "tm_248", "tm_255", "tm_264", "tm_266", "tm_270", "tm_272", "tm_275", "tm_276", "tm_296", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Aqua Ring", "Belly Drum", "Curse", "Fissure", "Rollout", "Signal Beam", "Sleep Talk", "Spit Up", "Stockpile", "Swallow", "Water Pulse", "Water Sport", "Yawn"])

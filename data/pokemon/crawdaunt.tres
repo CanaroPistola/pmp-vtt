@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c5i7k4ymc6c0d"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_13sff"]
+
+[resource]
+script = ExtResource("1_13sff")
+dex_number = 342
+display_name = "Crawdaunt"
+id = "crawdaunt"
+types = Array[int]([2, 15])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 6.0,
+1: 10.5
+}
+attributes = {
+0: 16,
+1: 13,
+2: 14,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 12])
+abilities = Array[String](["Hyper Cutter", "Shell Armor"])
+hidden_ability = "Adaptability"
+level_moves = {
+2: ["Harden"],
+3: ["Vise Grip"],
+4: ["Leer"],
+5: ["Bubble Beam"],
+6: ["Protect"],
+7: ["Double Hit"],
+8: ["Knock Off"],
+9: ["Night Slash"],
+11: ["Razor Shell"],
+12: ["Taunt"],
+14: ["Swords Dance"],
+15: ["Crabhammer", "Crunch"],
+16: ["Endeavor", "Guillotine"]
+}
+starting_moves = Array[String](["Bubble", "Swift", "Water Gun"])
+tms = Array[String](["tm_3", "tm_13", "tm_16", "tm_22", "tm_25", "tm_29", "tm_42", "tm_43", "tm_45", "tm_50", "tm_52", "tm_55", "tm_57", "tm_58", "tm_59", "tm_64", "tm_82", "tm_83", "tm_87", "tm_89", "tm_100", "tm_109", "tm_113", "tm_122", "tm_123", "tm_131", "tm_135", "tm_136", "tm_139", "tm_144", "tm_147", "tm_150", "tm_152", "tm_157", "tm_168", "tm_174", "tm_176", "tm_178", "tm_179", "tm_186", "tm_199", "tm_209", "tm_210", "tm_214", "tm_215", "tm_216", "tm_217", "tm_223", "tm_225", "tm_228", "tm_232", "tm_234", "tm_248", "tm_249", "tm_250", "tm_253", "tm_255", "tm_261", "tm_270", "tm_274", "tm_275", "tm_276", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_296", "tm_311", "tm_312", "tm_314", "tm_320"])
+egg_moves = Array[String](["Ancient Power", "Aqua Jet", "Body Slam", "Chip Away", "Double-Edge", "Dragon Dance", "Endeavor", "Knock Off", "Metal Claw", "Mud Sport", "Slash", "Superpower", "Switcheroo", "Trump Card"])

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c1qnuclrbey01"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_i22f2"]
+
+[resource]
+script = ExtResource("1_i22f2")
+id = "sky_drop"
+display_name = "Sky Drop (Queda Livre)"
+name_en = "Sky Drop"
+name_pt = "Queda Livre"
+type = 9
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+save_attribute = 0
+duration_rounds = 1
+duration_flags = Array[String](["concentration"])
+description = "Você leva o alvo para o céu e, em seguida, o solta ao mergulhar em alta velocidade em direção ao chão. Ao ativar este Move, faça um ataque corpo a corpo contra um alvo de até uma categoria de tamanho maior que a sua. Em um acerto, o alvo fica agarrado, e ambos sobem aos céus, tornando-se invulneráveis a outros ataques. Enquanto estiver no ar, o alvo não pode agir nem usar reações, exceto para realizar um teste de FOR contra sua CD do Move para tentar se libertar. Se falhar, você poderá usar sua ação no próximo turno para arremessá-lo ao chão, a até 20 pés (6 metros) do ponto em que o Move foi usado, causando 2d6 + MOVE de dano do tipo voador e deixando-o caído. Após realizar o golpe, você retorna à altura do solo, ao lado do inimigo derrubado. Inimigos que se libertam durante o turno invulnerável atrapalham sua capacidade de permanecer no ar, fazendo com que ambos retornem ao chão sem sofrer dano de queda. Criaturas do tipo Voador ou afetadas por Levitate, Magnet Rise ou efeitos semelhantes não recebem dano ao final do Move, mas ainda podem ser agarradas por 1 rodada."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "1 rodada, Concentração"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["grapple", "prone"])

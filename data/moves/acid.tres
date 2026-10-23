@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cjdyoybyyjs2b"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_lthxm"]
+
+[resource]
+script = ExtResource("1_lthxm")
+id = "acid"
+display_name = "Acid"
+name_en = "Acid"
+type = 7
+pp = 15
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 3
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você cria um fluxo de ácido quente em um cone de 30 pés (9 metros), centrado em você. Criaturas pegas no cone devem fazer um teste de DES contra sua CD de Move, sofrendo 2d4 + MOVE de dano venenoso em uma falha, além de reduzir a Defesa Especial do alvo em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "Os dados de dano para es te Move mudam para 2d6 no nível 5, 2d8 no nível 10 e 2d10 no nível 17."
+range_text_raw = "Pessoal (cone de 9 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

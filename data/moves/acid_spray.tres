@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://drpjhust82dtf"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_sxdm6"]
+
+[resource]
+script = ExtResource("1_sxdm6")
+id = "acid_spray"
+display_name = "Acid Spray"
+name_en = "Acid Spray"
+type = 7
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+save_attribute = 2
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você cospe um jato de fluido ácido que trabalha para derreter a defesa de uma criatura. Faça um ataque à distância contra um alvo, causando 2d4 + MOVE de dano venenoso em um acerto. Em um acerto, o alvo deve fazer um teste de CON contra sua CD de Move, re duzindo sua Defesa Especial em 2 estágios em caso de falha, podendo ser acumulado em até -6 estágios."
+scaling_text = "Os dados de dano para es te Move mudam para 2d6 no nível 5, 2d8 no nível 10 e 2d10 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([1, 2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

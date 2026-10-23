@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://7x1m36kh65yr"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_tpy3y"]
+
+[resource]
+script = ExtResource("1_tpy3y")
+dex_number = 571
+display_name = "Zoroark"
+id = "zoroark"
+types = Array[int]([15])
+sr = "12"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 72
+hit_dice = "d10"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 15,
+1: 18,
+2: 14,
+3: 6,
+4: 16,
+5: 14
+}
+skills = Array[int]([5, 8])
+abilities = Array[String](["Illusion"])
+level_moves = {
+2: ["Pursuit"],
+3: ["Hone Claws"],
+5: ["Fury Swipes"],
+6: ["Feint Attack"],
+7: ["Scary Face"],
+8: ["Knock Off"],
+9: ["Taunt"],
+10: ["Fake Tears", "Foul Play"],
+12: ["Torment"],
+13: ["Agility"],
+15: ["Embargo", "Punishment"],
+16: ["Imprison", "Nasty Plot"],
+17: ["Night Daze"]
+}
+starting_moves = Array[String](["Leer", "Night Slash", "Scratch", "U-turn"])
+tms = Array[String](["tm_3", "tm_5", "tm_12", "tm_13", "tm_25", "tm_26", "tm_29", "tm_37", "tm_38", "tm_45", "tm_46", "tm_48", "tm_50", "tm_52", "tm_55", "tm_58", "tm_80", "tm_81", "tm_83", "tm_87", "tm_88", "tm_97", "tm_100", "tm_103", "tm_106", "tm_109", "tm_113", "tm_114", "tm_129", "tm_130", "tm_131", "tm_136", "tm_137", "tm_145", "tm_150", "tm_151", "tm_152", "tm_158", "tm_159", "tm_165", "tm_166", "tm_178", "tm_180", "tm_184", "tm_186", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_220", "tm_228", "tm_234", "tm_240", "tm_241", "tm_245", "tm_248", "tm_249", "tm_253", "tm_254", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_295", "tm_296", "tm_300", "tm_303", "tm_305"])
+egg_moves = Array[String](["Captivate", "Copycat", "Counter", "Dark Pulse", "Detect", "Extrasensory", "Memento", "Snatch", "Sucker Punch"])
+is_variant = true
+variant_data = {
+"Zoroark": {
+"diff": {},
+"display_name": "Zoroark",
+"is_default": true
+},
+"Zoroark de Hisui": {
+"diff": {
+"moves_diff": {
+"egg_moves": ["Comeuppance", "Detect", "Extrasensory", "Memento"],
+"level_moves": {
+4: ["Shadow Sneak"],
+6: ["Curse"],
+7: ["Taunt"],
+8: ["Knock Off"],
+10: ["Spite"],
+12: ["Agility"],
+14: ["Shadow Ball"],
+15: ["Bitter Malice"],
+16: ["Foul Play", "Nasty Plot"]
+},
+"starting_moves": ["Hone Claws", "Leer", "Scratch", "Shadow Claw", "Torment", "U-turn"],
+"tms": ["tm_3", "tm_5", "tm_25", "tm_29", "tm_37", "tm_38", "tm_46", "tm_50", "tm_51", "tm_52", "tm_55", "tm_83", "tm_87", "tm_88", "tm_97", "tm_100", "tm_103", "tm_105", "tm_106", "tm_113", "tm_114", "tm_129", "tm_130", "tm_136", "tm_137", "tm_144", "tm_145", "tm_150", "tm_152", "tm_158", "tm_159", "tm_178", "tm_180", "tm_181", "tm_184", "tm_188", "tm_194", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_220", "tm_224", "tm_234", "tm_240", "tm_241", "tm_245", "tm_248", "tm_249", "tm_253", "tm_256", "tm_261", "tm_270", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_300", "tm_303", "tm_316"]
+},
+"types": [0, 13]
+},
+"display_name": "Zoroark de Hisui",
+"is_default": false
+}
+}

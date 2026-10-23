@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ldejr65pbqa6"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_vgynp"]
+
+[resource]
+script = ExtResource("1_vgynp")
+id = "glaive_rush"
+display_name = "Glaive Rush"
+name_en = "Glaive Rush"
+type = 14
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você se lança em um ataque imprudente com todo o corpo, ficando vulnerável por um breve período. Você pode se mover no ar até uma distância igual ao seu deslocamento restante para alcançar o alvo, e realizar um ataque corpo a corpo, causando 3d8 + MOVE de dano do tipo dragão em um acerto. Caso o Move acerte, todos os golpes direcionados a você até o início de seu próximo turno causam o dobro do dano e possuem acerto garantido (devendo rolar um d20 para chance de golpe crítico e outros efeitos). Cair de uma altura igual ou inferior ao deslocamento que você gastou no ar não causa dano de queda."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}

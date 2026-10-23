@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://clodcf6n82btd"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_gfr82"]
+
+[resource]
+script = ExtResource("1_gfr82")
+dex_number = 800
+display_name = "Necrozma"
+id = "necrozma"
+types = Array[int]([10])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 18
+hit_points = 486
+hit_dice = "d20"
+attributes = {
+0: 20,
+1: 18,
+2: 18,
+3: 12,
+4: 20,
+5: 18
+}
+skills = Array[int]([2, 5, 8, 9])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 0
+}, {
+"range_m": 6.0,
+"type": 2
+}])
+abilities = Array[String](["Prism Armor"])
+level_moves = {
+3: ["Slash"],
+5: ["Stored Power"],
+7: ["Rock Blast"],
+8: ["Night Slash"],
+11: ["Gravity"],
+13: ["Psycho Cut"],
+15: ["Autotomize", "Photon Geyser", "Power Gem"],
+16: ["Iron Defense", "Stealth Rock"],
+17: ["Wring Out"],
+18: ["Prismatic Laser"]
+}
+starting_moves = Array[String](["Charge Beam", "Confusion", "Metal Claw", "Mirror Shot", "Moonlight", "Morning Sun"])
+tms = Array[String](["tm_3", "tm_9", "tm_25", "tm_28", "tm_29", "tm_31", "tm_35", "tm_38", "tm_40", "tm_45", "tm_52", "tm_58", "tm_64", "tm_65", "tm_73", "tm_74", "tm_80", "tm_83", "tm_85", "tm_87", "tm_99", "tm_100", "tm_109", "tm_110", "tm_113", "tm_118", "tm_121", "tm_127", "tm_131", "tm_136", "tm_137", "tm_145", "tm_147", "tm_148", "tm_150", "tm_156", "tm_164", "tm_168", "tm_170", "tm_182", "tm_196", "tm_199", "tm_202", "tm_203", "tm_206", "tm_207", "tm_211", "tm_212", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_231", "tm_234", "tm_241", "tm_242", "tm_243", "tm_248", "tm_252", "tm_255", "tm_257", "tm_262", "tm_267", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_284", "tm_286", "tm_288", "tm_293", "tm_296", "tm_301", "tm_320"])
+is_variant = true
+variant_data = {
+"Necrozma": {
+"diff": {
+"movement": {
+0: 15.0
+}
+},
+"display_name": "Necrozma",
+"is_default": true
+},
+"Necrozma Asas da Alvorada": {
+"diff": {
+"armor_class": 19,
+"attributes": {
+"CHA": 20,
+"INT": 14,
+"WIS": 24
+},
+"senses": [{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 9.0,
+"type": 2
+}],
+"types": [10, 13]
+},
+"display_name": "Necrozma Asas da Alvorada",
+"is_default": false
+},
+"Necrozma Juba Crepúsculo": {
+"diff": {
+"armor_class": 19,
+"attributes": {
+"DEX": 22,
+"INT": 14,
+"STR": 22
+},
+"movement": {
+0: 15.0
+},
+"senses": [{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 9.0,
+"type": 2
+}],
+"types": [10, 16]
+},
+"display_name": "Necrozma Juba Crepúsculo",
+"is_default": false
+},
+"Ultra Necrozma": {
+"diff": {
+"abilities": ["Neuroforce"],
+"armor_class": 22,
+"attributes": {
+"CHA": 20,
+"CON": 20,
+"DEX": 22,
+"INT": 16,
+"STR": 22,
+"WIS": 24
+},
+"movement": {
+0: 15.0
+},
+"moves_diff": {
+"tms": ["tm_3", "tm_9", "tm_29", "tm_31", "tm_35", "tm_38", "tm_40", "tm_45", "tm_52", "tm_58", "tm_65", "tm_73", "tm_74", "tm_80", "tm_87", "tm_99", "tm_100", "tm_109", "tm_113", "tm_118", "tm_121", "tm_127", "tm_131", "tm_136", "tm_137", "tm_147", "tm_148", "tm_150", "tm_156", "tm_164", "tm_182", "tm_199", "tm_202", "tm_207", "tm_211", "tm_212", "tm_214", "tm_216", "tm_222", "tm_223", "tm_225", "tm_228", "tm_241", "tm_242", "tm_243", "tm_248", "tm_252", "tm_255", "tm_257", "tm_262", "tm_267", "tm_270", "tm_276", "tm_278", "tm_284", "tm_288", "tm_293", "tm_296", "tm_301", "tm_320"]
+},
+"senses": [{
+"range_m": 45.0,
+"type": 0
+}, {
+"range_m": 15.0,
+"type": 2
+}],
+"types": [10, 14]
+},
+"display_name": "Ultra Necrozma",
+"is_default": false
+}
+}

@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dc8huwj1njdmb"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8mje2"]
+
+[resource]
+script = ExtResource("1_8mje2")
+id = "frustration"
+display_name = "Frustration (Frustração)"
+name_en = "Frustration"
+name_pt = "Frustração"
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você ataca uma criatura, desabafando sua frustração com seu treinador. Faça um ataque corpo a corpo contra uma criatura, causando 2d6 + MOVE de dano normal em um acerto. Ao fazer este ataque, acrescente um dado de dano adicional igual ao número de níveis abaixo de zero na tabela de Lealdade, ou remova um dado de dano igual ao número de níveis acima (mínimo de 1 de dano). Este Move ignora a penalidade de rolagem de Lealdade, exceto para criaturas incontroláveis com base em limitações do SR."
+scaling_text = "Os dados de dano para este Move mudam para 2d8 no nível 5, 2d10 no nível 10 e 3d8 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+}
+}

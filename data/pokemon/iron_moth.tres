@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://brse7m5fmiur4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_uy82a"]
+
+[resource]
+script = ExtResource("1_uy82a")
+dex_number = 994
+display_name = "Iron Moth"
+id = "iron_moth"
+types = Array[int]([1, 7])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 6.0,
+2: 6.0
+}
+attributes = {
+0: 17,
+1: 21,
+2: 17,
+3: 8,
+4: 12,
+5: 13
+}
+skills = Array[int]([0, 7, 8, 12, 13])
+abilities = Array[String](["Quark Drive"])
+level_moves = {
+3: ["Struggle Bug"],
+5: ["Fire Spin"],
+7: ["Take Down"],
+10: ["Lunge"],
+12: ["Screech"],
+14: ["Discharge"],
+15: ["Sludge Wave"],
+16: ["Fiery Dance"],
+17: ["Metal Sound", "Morning Sun"],
+18: ["Hurricane"],
+19: ["Bug Buzz"],
+20: ["Overheat"]
+}
+starting_moves = Array[String](["Acid Spray", "Ember", "Gust", "Whirlwind"])
+tms = Array[String](["tm_1", "tm_2", "tm_5", "tm_7", "tm_33", "tm_40", "tm_46", "tm_53", "tm_77", "tm_83", "tm_84", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_99", "tm_113", "tm_127", "tm_129", "tm_133", "tm_136", "tm_156", "tm_160", "tm_169", "tm_170", "tm_183", "tm_195", "tm_199", "tm_202", "tm_214", "tm_248", "tm_250", "tm_257", "tm_269", "tm_270", "tm_271", "tm_277", "tm_282", "tm_286", "tm_296", "tm_297", "tm_303", "tm_307"])

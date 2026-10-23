@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bdseklhu1w7mr"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_48bj8"]
+
+[resource]
+script = ExtResource("1_48bj8")
+id = "dynamic_punch"
+display_name = "Dynamic Punch (Soco Dinâmico)"
+name_en = "Dynamic Punch"
+name_pt = "Soco Dinâmico"
+type = 6
+pp = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você concentra energia em seu punho e desfere um soco poderoso contra o alvo, liberando uma explosão de força ao acertar. Faça um ataque corpo a corpo -5 contra uma criatura, causando 2d10 + MOVE de dano lutador em um acerto. Em um acerto, o alvo também fica confuso."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "Corpo a Corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -5
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["confusion"])

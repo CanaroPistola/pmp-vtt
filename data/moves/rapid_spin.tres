@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://buxtifextr8co"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_pu18e"]
+
+[resource]
+script = ExtResource("1_pu18e")
+id = "rapid_spin"
+display_name = "Rapid Spin (Giro Rápido)"
+name_en = "Rapid Spin"
+name_pt = "Giro Rápido"
+pp = 20
+move_time = "1 ação"
+resolution = 2
+has_save = true
+duration_is_permanent = true
+description = "Você ataca com um movimento de rotação incrivelmente rápido. Todas as criaturas dentro do alcance corpo a corpo devem fazer um teste de resistência de DES contra sua CD de Move, sofrendo 1d10 + MOVE de dano normal em uma falha, ou metade desse valor em um sucesso. Ao usar este Move, sua Velocidade aumenta em 1 estágio, podendo ser acumulado em até 6 estágios. Além disso, este Move automaticamente liberta o usuário de Bind, Clamp, Fire Spin, Infestation, Leech Seed, Magma Storm, Sand Tomb, Whirlpool, Wrap ou qualquer coisa que o mantenha agarrado ou impedido (exceto Sky Drop), sendo removido desses estados antes do teste de resistência ser feito, além de desfazer uma área de Spikes, Stealth Rock, Sticky Web e Toxic Spikes caso usado em alcance dela."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change", "grapple"])

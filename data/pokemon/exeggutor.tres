@@ -1,0 +1,66 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://crpmt0mde47lh"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_m6akl"]
+
+[resource]
+script = ExtResource("1_m6akl")
+dex_number = 103
+display_name = "Exeggutor"
+id = "exeggutor"
+types = Array[int]([4, 10])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 56
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 14,
+2: 14,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([12])
+abilities = Array[String](["Chlorophyll"])
+hidden_ability = "Harvest"
+level_moves = {
+6: ["Psyshock"],
+9: ["Egg Bomb"],
+13: ["Wood Hammer"],
+15: ["Leaf Storm"]
+}
+starting_moves = Array[String](["Absorb", "Barrage", "Bullet Seed", "Confusion", "Extrasensory", "Giga Drain", "Hypnosis", "Leech Seed", "Mega Drain", "Reflect", "Seed Bomb", "Solar Beam", "Stomp", "Synthesis", "Uproar", "Worry Seed"])
+tms = Array[String](["tm_13", "tm_23", "tm_25", "tm_35", "tm_36", "tm_38", "tm_45", "tm_51", "tm_58", "tm_59", "tm_69", "tm_74", "tm_83", "tm_84", "tm_85", "tm_86", "tm_87", "tm_109", "tm_110", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_118", "tm_129", "tm_131", "tm_136", "tm_145", "tm_146", "tm_154", "tm_156", "tm_158", "tm_163", "tm_179", "tm_198", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_206", "tm_207", "tm_212", "tm_214", "tm_216", "tm_228", "tm_238", "tm_239", "tm_244", "tm_248", "tm_249", "tm_255", "tm_257", "tm_266", "tm_268", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_282", "tm_284", "tm_286", "tm_287", "tm_288", "tm_296", "tm_300", "tm_301", "tm_305", "tm_319", "tm_321"])
+egg_moves = Array[String](["Ancient Power", "Block", "Curse", "Giga Drain", "Grassy Terrain", "Ingrain", "Leaf Storm", "Lucky Chant", "Moonlight", "Natural Gift", "Nature Power", "Poison Powder", "Power Swap", "Skill Swap", "Sleep Powder", "Stun Spore", "Synthesis"])
+is_variant = true
+variant_data = {
+"Exeggutor": {
+"diff": {},
+"display_name": "Exeggutor",
+"is_default": true
+},
+"Exeggutor de Alola": {
+"diff": {
+"abilities": ["Frisk"],
+"hit_points": 61,
+"moves_diff": {
+"level_moves": {
+6: ["Psyshock"],
+9: ["Egg Bomb"],
+13: ["Wood Hammer"],
+15: ["Leaf Storm"]
+},
+"starting_moves": ["Absorb", "Barrage", "Bullet Seed", "Confusion", "Dragon Hammer", "Extrasensory", "Giga Drain", "Hypnosis", "Leech Seed", "Mega Drain", "Reflect", "Seed Bomb", "Solar Beam", "Synthesis", "Uproar", "Worry Seed"],
+"tms": ["tm_13", "tm_23", "tm_25", "tm_28", "tm_29", "tm_31", "tm_35", "tm_36", "tm_38", "tm_45", "tm_51", "tm_58", "tm_59", "tm_60", "tm_62", "tm_65", "tm_66", "tm_69", "tm_74", "tm_83", "tm_84", "tm_86", "tm_87", "tm_97", "tm_109", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_118", "tm_129", "tm_131", "tm_136", "tm_145", "tm_146", "tm_148", "tm_149", "tm_150", "tm_154", "tm_156", "tm_158", "tm_163", "tm_179", "tm_182", "tm_198", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_212", "tm_214", "tm_216", "tm_228", "tm_238", "tm_239", "tm_244", "tm_248", "tm_249", "tm_255", "tm_257", "tm_266", "tm_268", "tm_270", "tm_271", "tm_274", "tm_276", "tm_278", "tm_279", "tm_282", "tm_284", "tm_286", "tm_287", "tm_288", "tm_296", "tm_298", "tm_300", "tm_301", "tm_305", "tm_319", "tm_321"]
+},
+"types": [4, 14]
+},
+"display_name": "Exeggutor de Alola",
+"is_default": false
+}
+}

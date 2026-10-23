@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b6poiwj6bndyc"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_y2mg3"]
+
+[resource]
+script = ExtResource("1_y2mg3")
+id = "endeavor"
+display_name = "Endeavor (Esforço)"
+name_en = "Endeavor"
+name_pt = "Esforço"
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 4
+range_category = 2
+range_distance = 9.0
+description = "Quando você ativa este Move, selecione uma criatura dentro do alcance. O alvo deve fazer um teste de resistência de SAB contra sua CD de Move. Em uma falha, os PV atuais do alvo são reduzidos para serem iguais aos seus próprios. O máximo de pontos de vida que podem ser reduzidos é igual a 5x o seu nível atual. A imunidade de tipo não é ignorada, então Endeavor não afeta Pokémon do tipo Fantasma."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([4, 2])

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://d58f044uadi8"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_cgn3a"]
+
+[resource]
+script = ExtResource("1_cgn3a")
+id = "focus_punch"
+display_name = "Focus Punch (Soco Focalizado)"
+name_en = "Focus Punch"
+name_pt = "Soco Focalizado"
+type = 6
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+duration_rounds = 1
+duration_flags = Array[String](["concentration"])
+description = "Ao ativar este Move, você entra em estado de foco, preparando um poderoso ataque. Você não realiza um ataque imediatamente. Em vez disso, você gasta sua ação atual focando. No início de seu próximo turno, se você mantiver a concentração, você executa o golpe com uma ação livre, realizando um ataque corpo a corpo contra uma criatura, causando 5d6 + MOVE de dano lutador em um acerto. Para este Move, você pode escolher usar sua movimentação em seu turno ou ao executar o ataque (sem gastar movimentação adicional no próximo turno)."
+scaling_text = "Os dados de dano para este Move mudam para 5d8 no nível 5, 6d10 no nível 10 e 6d12 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "1 rodada, Concentração"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 12,
+"move": true
+}
+}

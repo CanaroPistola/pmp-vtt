@@ -108,6 +108,29 @@ const TYPE_FROM_STRING := {
 	"fairy": PokemonType.FAIRY,
 }
 
+enum Nature {
+	ARROGANTE,
+	IMPULSIVO,
+	CORAJOSO,
+	SERIO,
+	DETERMINADO,
+	APRESSADO,
+	ENERGETICO,
+	CURIOSO,
+	SERENO,
+	TEIMOSO,
+	APATICO,
+	PREGUICOSO,
+	PRUDENTE,
+	SABIO,
+	TRAVESSO,
+	ALEGRE,
+	SOCIAVEL,
+	INGENUO,
+	TIMIDO,
+	ASTUTO
+}
+
 func get_attribute_modifier(value: int) -> int:
 	return floori((value - 10) / 2.0)
 

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cerjl1hl7lff1"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vq27u"]
+
+[resource]
+script = ExtResource("1_vq27u")
+dex_number = 748
+display_name = "Toxapex"
+id = "toxapex"
+types = Array[int]([7, 2])
+sr = "12"
+min_level = 8
+evolution_stage = 2
+armor_class = 20
+hit_points = 97
+hit_dice = "d10"
+movement = {
+0: 3.0,
+1: 6.0
+}
+attributes = {
+0: 20,
+1: 10,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([11])
+abilities = Array[String](["Merciless", "Limber"])
+hidden_ability = "Regenerator"
+level_moves = {
+2: ["Peck"],
+3: ["Bite"],
+5: ["Toxic Spikes"],
+6: ["Wide Guard"],
+7: ["Toxic"],
+9: ["Venoshock"],
+10: ["Spike Cannon"],
+11: ["Recover"],
+13: ["Poison Jab"],
+14: ["Acid Spray"],
+15: ["Venom Drench"],
+16: ["Liquidation", "Pin Missile"]
+}
+starting_moves = Array[String](["Baneful Bunker", "Poison Sting"])
+tms = Array[String](["tm_1", "tm_4", "tm_13", "tm_22", "tm_23", "tm_25", "tm_30", "tm_42", "tm_45", "tm_48", "tm_49", "tm_58", "tm_83", "tm_87", "tm_108", "tm_109", "tm_111", "tm_113", "tm_120", "tm_122", "tm_124", "tm_130", "tm_131", "tm_135", "tm_136", "tm_139", "tm_142", "tm_144", "tm_146", "tm_147", "tm_150", "tm_156", "tm_157", "tm_160", "tm_161", "tm_174", "tm_176", "tm_184", "tm_186", "tm_189", "tm_191", "tm_195", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_232", "tm_234", "tm_248", "tm_249", "tm_250", "tm_251", "tm_254", "tm_255", "tm_261", "tm_270", "tm_275", "tm_276", "tm_286", "tm_296", "tm_297", "tm_307", "tm_311"])
+egg_moves = Array[String](["Haze", "Infestation", "Spit Up", "Stockpile", "Swallow"])

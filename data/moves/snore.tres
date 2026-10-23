@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bbsxm41fqs4xi"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4mo01"]
+
+[resource]
+script = ExtResource("1_4mo01")
+id = "snore"
+display_name = "Snore (Roncar)"
+name_en = "Snore"
+name_pt = "Roncar"
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 2
+range_distance = 6.0
+description = "Você ronca alto enquanto dorme, fazendo os oponentes taparem os ouvidos de dor. Você apenas pode ativar este Move enquanto estiver dormindo, forçando todas as criaturas dentro do alcance a realizarem um teste de CON contra sua CD de Move, causando 1d10 + MOVE de dano normal e ficando atordoadas em uma falha, ou metade do dano sem ficarem atordoadas em um sucesso."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["sleep", "stun"])

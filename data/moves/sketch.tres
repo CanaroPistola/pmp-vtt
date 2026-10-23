@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://blun82qcmgdfj"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_pur27"]
+
+[resource]
+script = ExtResource("1_pur27")
+id = "sketch"
+display_name = "Sketch (Rascunho)"
+name_en = "Sketch"
+name_pt = "Rascunho"
+pp = 1
+move_time = "1 reação"
+activation = 1
+range_category = 0
+range_distance = 0.0
+description = "Quando qualquer Move é ativado dentro de seu alcance de visão, use uma reação para copiá-lo para sua lista de Moves permanentemente, substituindo-o pelo Sketch em sua lista de Moves."
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea"

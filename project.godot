@@ -13,11 +13,13 @@ config_version=5
 config/name="Pokémon: Mundo Perfeito VTT"
 config/description="Virtual Table Top especificamente feito para o sistema Pokémon: Mundo Perfeito"
 config/version="0.1"
+run/main_scene="uid://bnod8lhnr63h8"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
 [autoload]
 
 Constants="*uid://bp554u384osmr"
+PokemonDB="*uid://b6prthrhbedi4"
 
 [display]
 

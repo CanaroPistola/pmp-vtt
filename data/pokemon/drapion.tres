@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://myy560xxyei5"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_sgite"]
+
+[resource]
+script = ExtResource("1_sgite")
+dex_number = 452
+display_name = "Drapion"
+id = "drapion"
+types = Array[int]([7, 15])
+sr = "10"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 55
+hit_dice = "d10"
+movement = {
+0: 10.5,
+2: 7.5
+}
+attributes = {
+0: 18,
+1: 17,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([5, 8])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Battle Armor", "Sniper"])
+hidden_ability = "Keen Eye"
+level_moves = {
+2: ["Knock Off"],
+3: ["Pin Missile"],
+5: ["Acupressure"],
+6: ["Pursuit"],
+7: ["Bug Bite"],
+8: ["Poison Fang"],
+9: ["Venoshock"],
+10: ["Hone Claws"],
+11: ["Toxic"],
+12: ["Toxic Spikes"],
+13: ["Night Slash"],
+15: ["Crunch", "Scary Face", "X-Scissor"],
+16: ["Cross Poison", "Fell Stinger"]
+}
+starting_moves = Array[String](["Bite", "Fire Fang", "Ice Fang", "Leer", "Poison Sting", "Thunder Fang"])
+tms = Array[String](["tm_3", "tm_11", "tm_12", "tm_13", "tm_29", "tm_31", "tm_32", "tm_35", "tm_45", "tm_49", "tm_52", "tm_55", "tm_58", "tm_74", "tm_87", "tm_89", "tm_92", "tm_100", "tm_109", "tm_113", "tm_131", "tm_136", "tm_140", "tm_146", "tm_149", "tm_150", "tm_152", "tm_155", "tm_186", "tm_189", "tm_191", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_220", "tm_223", "tm_224", "tm_225", "tm_228", "tm_230", "tm_234", "tm_236", "tm_240", "tm_245", "tm_248", "tm_249", "tm_253", "tm_255", "tm_266", "tm_270", "tm_271", "tm_276", "tm_278", "tm_283", "tm_288", "tm_289", "tm_291", "tm_295", "tm_296", "tm_307", "tm_320"])
+egg_moves = Array[String](["Agility", "Confuse Ray", "Feint Attack", "Iron Tail", "Night Slash", "Poison Tail", "Pursuit", "Sand Attack", "Screech", "Slash", "Twineedle", "Whirlwind"])

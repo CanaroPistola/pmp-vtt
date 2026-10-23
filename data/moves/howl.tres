@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cqkd6l6ceh5e2"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ykkdu"]
+
+[resource]
+script = ExtResource("1_ykkdu")
+id = "howl"
+display_name = "Howl (Uivo)"
+name_en = "Howl"
+name_pt = "Uivo"
+pp = 20
+move_time = "1 ação"
+range_category = 5
+range_distance = 18.0
+duration_is_permanent = true
+description = "Você perfura o ar com um uivo intimidador, encorajando seus aliados. Você e seus aliados dentro do alcance recebem um aumento de Ataque em 1 estágio, podendo ser acumulado em até 6 estágios."
+range_text_raw = "Pessoal (raio de 18 metros)"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

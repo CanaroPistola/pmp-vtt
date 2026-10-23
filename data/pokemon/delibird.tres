@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cwbg0my4fy8rq"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_f1ulg"]
+
+[resource]
+script = ExtResource("1_f1ulg")
+dex_number = 225
+display_name = "Delibird"
+id = "delibird"
+types = Array[int]([5, 9])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 9.0
+}
+attributes = {
+0: 11,
+1: 15,
+2: 10,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([0, 17])
+abilities = Array[String](["Vital Spirit", "Hustle"])
+hidden_ability = "Insomnia"
+level_moves = {
+9: ["Drill Peck"]
+}
+starting_moves = Array[String](["Present"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_12", "tm_13", "tm_15", "tm_16", "tm_18", "tm_22", "tm_25", "tm_26", "tm_27", "tm_29", "tm_31", "tm_42", "tm_45", "tm_54", "tm_58", "tm_70", "tm_72", "tm_82", "tm_83", "tm_87", "tm_90", "tm_100", "tm_102", "tm_105", "tm_106", "tm_108", "tm_109", "tm_113", "tm_120", "tm_122", "tm_124", "tm_129", "tm_131", "tm_136", "tm_139", "tm_141", "tm_142", "tm_143", "tm_144", "tm_165", "tm_166", "tm_199", "tm_209", "tm_211", "tm_214", "tm_216", "tm_218", "tm_228", "tm_238", "tm_243", "tm_246", "tm_248", "tm_255", "tm_256", "tm_260", "tm_265", "tm_270", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_288", "tm_296", "tm_298", "tm_302", "tm_311", "tm_313"])
+egg_moves = Array[String](["Aurora Beam", "Aurora Veil", "Bestow", "Counter", "Destiny Bond", "Fake Out", "Freeze-Dry", "Future Sight", "Ice Ball", "Ice Punch", "Ice Shard", "Icy Wind", "Memento", "Quick Attack", "Rapid Spin", "Spikes", "Splash"])

@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bpi2pyitdvj4j"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_djtnn"]
+
+[resource]
+script = ExtResource("1_djtnn")
+dex_number = 720
+display_name = "Hoopa"
+id = "hoopa"
+types = Array[int]([10, 13])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 17
+hit_points = 326
+hit_dice = "d12"
+attributes = {
+0: 15,
+1: 17,
+2: 18,
+3: 14,
+4: 20,
+5: 16
+}
+skills = Array[int]([5, 6, 15])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Magician"])
+level_moves = {
+2: ["Astonish"],
+4: ["Magic Coat"],
+5: ["Light Screen"],
+7: ["Psybeam"],
+9: ["Skill Swap"],
+10: ["Guard Split", "Power Split"],
+12: ["Phantom Force"],
+15: ["Trick Room", "Wonder Room", "Zen Headbutt"],
+16: ["Shadow Ball"],
+17: ["Nasty Plot"],
+18: ["Psychic"],
+19: ["Hyperspace Hole"]
+}
+starting_moves = Array[String](["Ally Switch", "Confusion", "Destiny Bond", "Trick"])
+tms = Array[String](["tm_9", "tm_23", "tm_29", "tm_38", "tm_40", "tm_45", "tm_48", "tm_52", "tm_58", "tm_67", "tm_69", "tm_71", "tm_80", "tm_83", "tm_84", "tm_85", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_106", "tm_109", "tm_110", "tm_113", "tm_114", "tm_118", "tm_120", "tm_131", "tm_136", "tm_141", "tm_150", "tm_151", "tm_152", "tm_153", "tm_156", "tm_161", "tm_162", "tm_178", "tm_188", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_205", "tm_207", "tm_208", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_225", "tm_226", "tm_228", "tm_229", "tm_231", "tm_234", "tm_240", "tm_242", "tm_243", "tm_244", "tm_245", "tm_248", "tm_254", "tm_255", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_288", "tm_289", "tm_292", "tm_293", "tm_294", "tm_295", "tm_296", "tm_300", "tm_301", "tm_305", "tm_317", "tm_321"])
+is_variant = true
+variant_data = {
+"Hoopa Confinado": {
+"diff": {},
+"display_name": "Hoopa Confinado",
+"is_default": true
+},
+"Hoopa Liberto": {
+"diff": {
+"attributes": {
+"CON": 19,
+"DEX": 19,
+"INT": 16,
+"STR": 20
+},
+"movement": {
+0: 10.5
+},
+"moves_diff": {
+"level_moves": {
+2: ["Astonish"],
+4: ["Magic Coat"],
+5: ["Light Screen"],
+7: ["Psybeam"],
+9: ["Skill Swap"],
+10: ["Guard Split", "Power Split"],
+15: ["Knock Off", "Trick Room", "Wonder Room"],
+16: ["Dark Pulse"],
+18: ["Psychic"],
+19: ["Hyperspace Fury"]
+},
+"starting_moves": ["Ally Switch", "Confusion", "Destiny Bond", "Trick"]
+},
+"types": [10, 15]
+},
+"display_name": "Hoopa Liberto",
+"is_default": false
+}
+}

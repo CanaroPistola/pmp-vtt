@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://go3jfudodkt7"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_fjb55"]
+
+[resource]
+script = ExtResource("1_fjb55")
+id = "mud_shot"
+display_name = "Mud Shot (Tiro de Lama)"
+name_en = "Mud Shot"
+name_pt = "Tiro de Lama"
+type = 8
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+save_attribute = 0
+range_category = 2
+range_distance = 18.0
+description = "Você dispara uma bola de lama em uma criatura, causando dano com chance de prejudicar seu movimento. Faça um ataque à distância -1 contra uma criatura no alcance, causando 1d12 + MOVE de dano de terra em um acerto. Em um acerto, o alvo deve fazer um teste de FOR contra sua CD de Move, ou ter sua Velocidade reduzida em 1 estágio, podendo ser acumulado em até -6 estágios. Uma criatura cuja velocidade seja reduzida a 0 com este Move fica impedida. O alvo pode gastar uma ação para tentar se livrar de qualquer lama com um teste de FOR contra sua CD de Move"
+scaling_text = "O dado de dano para este Move muda para 4d4 no nível 5, 2d12 no nível 10 e 3d10 no nível 17."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

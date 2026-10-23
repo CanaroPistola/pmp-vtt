@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://blb34dashhf8o"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_lr063"]
+
+[resource]
+script = ExtResource("1_lr063")
+dex_number = 241
+display_name = "Miltank"
+id = "miltank"
+types = Array[int]([0])
+sr = "10"
+min_level = 8
+evolution_stage = 1
+armor_class = 17
+hit_points = 80
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 17,
+1: 17,
+2: 14,
+3: 6,
+4: 14,
+5: 11
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Thick Fat", "Scrappy"])
+hidden_ability = "Sap Sipper"
+level_moves = {
+2: ["Defense Curl"],
+3: ["Stomp"],
+4: ["Milk Drink"],
+5: ["Bide"],
+7: ["Rollout"],
+8: ["Body Slam"],
+9: ["Headbutt"],
+10: ["Zen Headbutt"],
+12: ["Captivate"],
+14: ["Gyro Ball"],
+15: ["Charm", "Heal Bell", "Play Rough", "Wake-Up Slap"],
+16: ["High Horsepower"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_4", "tm_13", "tm_22", "tm_23", "tm_29", "tm_35", "tm_41", "tm_45", "tm_58", "tm_74", "tm_75", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_121", "tm_125", "tm_129", "tm_131", "tm_136", "tm_139", "tm_141", "tm_144", "tm_148", "tm_149", "tm_165", "tm_166", "tm_199", "tm_201", "tm_209", "tm_214", "tm_215", "tm_216", "tm_223", "tm_225", "tm_228", "tm_231", "tm_240", "tm_242", "tm_248", "tm_255", "tm_257", "tm_262", "tm_264", "tm_266", "tm_270", "tm_271", "tm_275", "tm_276", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_311", "tm_314", "tm_318", "tm_321"])
+egg_moves = Array[String](["Belch", "Curse", "Dizzy Punch", "Double-Edge", "Endure", "Focus Punch", "Hammer Arm", "Heart Stamp", "Helping Hand", "Natural Gift", "Present", "Punishment", "Reversal", "Seismic Toss", "Sleep Talk"])

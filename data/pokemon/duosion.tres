@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://essabt8n5x7y"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4inv1"]
+
+[resource]
+script = ExtResource("1_4inv1")
+dex_number = 578
+display_name = "Duosion"
+id = "duosion"
+types = Array[int]([10])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 13
+hit_points = 50
+hit_dice = "d10"
+attributes = {
+0: 13,
+1: 11,
+2: 15,
+3: 8,
+4: 16,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Overcoat", "Magic Guard"])
+hidden_ability = "Regenerator"
+evolves_to = Array[String](["reuniclus"])
+evolution_level = 14
+evolution_points = 11
+level_moves = {
+3: ["Rollout"],
+4: ["Psybeam", "Snatch"],
+5: ["Hidden Power"],
+6: ["Light Screen"],
+7: ["Charm"],
+8: ["Recover"],
+9: ["Psyshock"],
+10: ["Ally Switch", "Endeavor"],
+11: ["Future Sight"],
+12: ["Pain Split"],
+13: ["Psychic"],
+15: ["Heal Block", "Skill Swap"],
+16: ["Wonder Room"]
+}
+starting_moves = Array[String](["Confusion", "Protect", "Psywave", "Reflect"])
+tms = Array[String](["tm_4", "tm_9", "tm_13", "tm_38", "tm_41", "tm_45", "tm_46", "tm_58", "tm_69", "tm_80", "tm_81", "tm_82", "tm_83", "tm_84", "tm_85", "tm_86", "tm_87", "tm_99", "tm_109", "tm_110", "tm_118", "tm_119", "tm_121", "tm_129", "tm_131", "tm_145", "tm_146", "tm_147", "tm_156", "tm_161", "tm_180", "tm_184", "tm_198", "tm_199", "tm_200", "tm_201", "tm_202", "tm_205", "tm_207", "tm_209", "tm_212", "tm_214", "tm_216", "tm_223", "tm_225", "tm_226", "tm_228", "tm_229", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_254", "tm_255", "tm_264", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_284", "tm_286", "tm_290", "tm_293", "tm_296", "tm_300", "tm_301", "tm_317", "tm_321"])
+egg_moves = Array[String](["Acid Armor", "Astonish", "Confuse Ray", "Helping Hand", "Imprison", "Night Shade", "Secret Power", "Trick"])

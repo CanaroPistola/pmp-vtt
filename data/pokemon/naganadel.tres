@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://f7fdb5b8f3tt"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_k8sl6"]
+
+[resource]
+script = ExtResource("1_k8sl6")
+dex_number = 804
+display_name = "Naganadel"
+id = "naganadel"
+types = Array[int]([7, 14])
+sr = "15"
+min_level = 15
+evolution_stage = 2
+armor_class = 16
+hit_points = 247
+hit_dice = "d12"
+attributes = {
+0: 18,
+1: 22,
+2: 16,
+3: 8,
+4: 14,
+5: 10
+}
+skills = Array[int]([5, 8])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}])
+abilities = Array[String](["Beast Boost"])
+level_moves = {
+3: ["Fury Attack"],
+5: ["Venoshock"],
+7: ["Charm"],
+8: ["Venom Drench"],
+11: ["Nasty Plot"],
+13: ["Poison Jab"],
+14: ["Toxic"],
+15: ["Fell Stinger"],
+16: ["Air Slash", "Gastro Acid"],
+17: ["Dragon Pulse", "Dragon Rush"]
+}
+starting_moves = Array[String](["Acid", "Air Cutter", "Growl", "Helping Hand", "Peck"])
+tms = Array[String](["tm_2", "tm_3", "tm_7", "tm_9", "tm_12", "tm_28", "tm_41", "tm_45", "tm_49", "tm_52", "tm_58", "tm_60", "tm_63", "tm_65", "tm_66", "tm_72", "tm_75", "tm_87", "tm_91", "tm_97", "tm_102", "tm_109", "tm_111", "tm_113", "tm_120", "tm_127", "tm_129", "tm_130", "tm_131", "tm_136", "tm_149", "tm_151", "tm_155", "tm_182", "tm_189", "tm_191", "tm_199", "tm_214", "tm_216", "tm_228", "tm_233", "tm_241", "tm_242", "tm_243", "tm_246", "tm_247", "tm_248", "tm_249", "tm_250", "tm_252", "tm_253", "tm_254", "tm_255", "tm_270", "tm_277", "tm_281", "tm_288", "tm_289", "tm_294", "tm_296", "tm_303", "tm_305", "tm_307", "tm_320"])

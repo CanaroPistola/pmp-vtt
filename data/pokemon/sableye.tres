@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://boaxvq82tndsw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_1vpt2"]
+
+[resource]
+script = ExtResource("1_1vpt2")
+dex_number = 302
+display_name = "Sableye"
+id = "sableye"
+types = Array[int]([15, 13])
+sr = "7"
+min_level = 5
+evolution_stage = 1
+armor_class = 18
+hit_points = 35
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 12,
+1: 10,
+2: 14,
+3: 8,
+4: 16,
+5: 10
+}
+skills = Array[int]([5, 6])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Keen Eye", "Stall"])
+hidden_ability = "Prankster"
+level_moves = {
+2: ["Foresight", "Night Shade"],
+3: ["Astonish"],
+4: ["Fury Swipes"],
+5: ["Detect", "Disable"],
+6: ["Shadow Sneak"],
+7: ["Fake Out", "Feint Attack"],
+8: ["Punishment"],
+9: ["Knock Off"],
+10: ["Shadow Claw"],
+11: ["Confuse Ray"],
+12: ["Power Gem", "Zen Headbutt"],
+13: ["Shadow Ball"],
+14: ["Foul Play"],
+15: ["Mean Look", "Quash"]
+}
+starting_moves = Array[String](["Leer", "Scratch"])
+tms = Array[String](["tm_3", "tm_9", "tm_13", "tm_25", "tm_29", "tm_34", "tm_38", "tm_45", "tm_46", "tm_52", "tm_53", "tm_55", "tm_58", "tm_67", "tm_69", "tm_80", "tm_81", "tm_83", "tm_84", "tm_87", "tm_94", "tm_100", "tm_105", "tm_106", "tm_109", "tm_112", "tm_113", "tm_118", "tm_121", "tm_129", "tm_130", "tm_131", "tm_136", "tm_141", "tm_144", "tm_145", "tm_150", "tm_152", "tm_156", "tm_158", "tm_159", "tm_161", "tm_165", "tm_166", "tm_168", "tm_171", "tm_174", "tm_175", "tm_178", "tm_180", "tm_184", "tm_186", "tm_188", "tm_191", "tm_194", "tm_196", "tm_199", "tm_200", "tm_201", "tm_202", "tm_208", "tm_209", "tm_212", "tm_214", "tm_215", "tm_216", "tm_225", "tm_226", "tm_228", "tm_240", "tm_241", "tm_242", "tm_243", "tm_244", "tm_245", "tm_248", "tm_253", "tm_254", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_282", "tm_283", "tm_284", "tm_286", "tm_288", "tm_289", "tm_292", "tm_293", "tm_295", "tm_296", "tm_300", "tm_311", "tm_316", "tm_317", "tm_320", "tm_321"])
+egg_moves = Array[String](["Captivate", "Feint", "Flatter", "Imprison", "Mean Look", "Metal Burst", "Moonlight", "Nasty Plot", "Recover", "Sucker Punch", "Torment", "Trick"])

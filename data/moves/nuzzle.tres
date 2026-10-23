@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dhhim1x2e74ey"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_mllam"]
+
+[resource]
+script = ExtResource("1_mllam")
+id = "nuzzle"
+display_name = "Nuzzle (Chamego)"
+name_en = "Nuzzle"
+name_pt = "Chamego"
+type = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+save_attribute = 2
+description = "Você toca uma criatura com suas bochechas eletrificadas, enviando eletricidade por suas veias. Faça um ataque corpo a corpo contra uma criatura. Em um acerto, o alvo recebe 1d4 + MOVE de dano elétrico e é forçado a fazer um teste de CON contra sua CD de Move, ficando paralisado em caso de falha."
+scaling_text = "O dado de dano para este Move muda para 1d6 no nível 5, 1d8 no nível 10 e 1d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["paralysis"])

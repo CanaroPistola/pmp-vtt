@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dww2q3hdh17sp"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_0q5m6"]
+
+[resource]
+script = ExtResource("1_0q5m6")
+id = "hyper_fang"
+display_name = "Hyper Fang (Hiper Presa)"
+name_en = "Hyper Fang"
+name_pt = "Hiper Presa"
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você ataca uma criatura com um rápido ataque de presa. Faça um ataque corpo a corpo -1, causando 4d4 + MOVE de dano normal no acerto. Em um resultado natural de 19 ou 20 no acerto, o alvo fica atordoado."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["stun"])

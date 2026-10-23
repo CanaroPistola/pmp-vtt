@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cmwtk1yubmkho"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_q0kv7"]
+
+[resource]
+script = ExtResource("1_q0kv7")
+dex_number = 895
+display_name = "Regidrago"
+id = "regidrago"
+types = Array[int]([14])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 13
+hit_points = 233
+hit_dice = "d20"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 16,
+1: 14,
+2: 28,
+3: 8,
+4: 12,
+5: 12
+}
+skills = Array[int]([2, 3, 7, 8])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 1
+}, {
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Dragon's Maw"])
+level_moves = {
+2: ["Bite"],
+4: ["Ancient Power"],
+6: ["Dragon Breath"],
+10: ["Crunch"],
+12: ["Dragon Claw"],
+14: ["Hammer Arm"],
+15: ["Dragon Dance"],
+16: ["Focus Energy", "Laser Focus", "Thrash"],
+17: ["Dragon Energy"],
+18: ["Explosion", "Hyper Beam"]
+}
+starting_moves = Array[String](["Twister", "Vise Grip"])
+tms = Array[String](["tm_25", "tm_28", "tm_50", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_73", "tm_74", "tm_83", "tm_87", "tm_92", "tm_113", "tm_136", "tm_140", "tm_156", "tm_182", "tm_199", "tm_212", "tm_214", "tm_218", "tm_228", "tm_233", "tm_239", "tm_248", "tm_255", "tm_270", "tm_277", "tm_282", "tm_286", "tm_291"])

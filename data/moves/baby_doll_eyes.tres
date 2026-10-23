@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bliu7e4oqpm4j"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4r57y"]
+
+[resource]
+script = ExtResource("1_4r57y")
+id = "baby_doll_eyes"
+display_name = "Baby-Doll Eyes"
+name_en = "Baby-Doll Eyes"
+type = 17
+pp = 15
+move_time = "1 reação / ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+activation = 3
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você rapidamente abre os olhos na tentativa de encantar uma criatura, diminuindo sua vontade de lutar. Quando você é alvo de um Move corpo a corpo, você pode usar sua reação antes de receber o dano. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o Ataque do alvo é reduzido em 1 estágio, podendo ser acumulado em até -6 estágios. Caso faça isso, você abre mão de sua ação padrão em seu próximo turno. Este Move também pode ser usado como uma ação para aplicar o mesmo efeito a um alvo dentro do alcance."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([5])
+effect_tags = Array[String](["stat_change"])

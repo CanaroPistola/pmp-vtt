@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dfoj3hdx6lfrt"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_8lqjy"]
+
+[resource]
+script = ExtResource("1_8lqjy")
+dex_number = 227
+display_name = "Skarmory"
+id = "skarmory"
+types = Array[int]([16, 9])
+sr = "10"
+min_level = 8
+evolution_stage = 1
+armor_class = 17
+hit_points = 68
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 19,
+1: 14,
+2: 14,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 13])
+abilities = Array[String](["Keen Eye", "Sturdy"])
+hidden_ability = "Weak Armor"
+level_moves = {
+2: ["Sand Attack"],
+3: ["Metal Claw"],
+4: ["Air Cutter"],
+6: ["Fury Attack"],
+7: ["Feint", "Wing Attack"],
+8: ["Swift"],
+10: ["Spikes"],
+11: ["Agility", "Payback"],
+12: ["Drill Peck", "Steel Wing"],
+13: ["Slash"],
+14: ["Metal Sound"],
+15: ["Air Slash", "Autotomize", "Iron Defense"],
+16: ["Brave Bird", "Night Slash"]
+}
+starting_moves = Array[String](["Leer", "Peck"])
+tms = Array[String](["tm_3", "tm_5", "tm_6", "tm_7", "tm_12", "tm_13", "tm_24", "tm_27", "tm_45", "tm_51", "tm_52", "tm_54", "tm_58", "tm_70", "tm_72", "tm_83", "tm_87", "tm_99", "tm_102", "tm_109", "tm_113", "tm_119", "tm_131", "tm_133", "tm_136", "tm_144", "tm_147", "tm_148", "tm_168", "tm_169", "tm_186", "tm_199", "tm_214", "tm_216", "tm_218", "tm_220", "tm_223", "tm_225", "tm_227", "tm_228", "tm_230", "tm_231", "tm_246", "tm_247", "tm_248", "tm_255", "tm_260", "tm_262", "tm_263", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_295", "tm_296", "tm_320"])
+egg_moves = Array[String](["Air Cutter", "Assurance", "Brave Bird", "Curse", "Drill Peck", "Endure", "Feint", "Guard Swap", "Night Slash", "Pursuit", "Roost", "Sky Attack", "Stealth Rock", "Whirlwind"])

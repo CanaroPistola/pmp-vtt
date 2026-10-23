@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dfofgbyvun0sj"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_74fbh"]
+
+[resource]
+script = ExtResource("1_74fbh")
+id = "swagger"
+display_name = "Swagger"
+name_en = "Swagger"
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 6
+range_category = 2
+range_distance = 12.0
+description = "Você encara uma criatura dentro do alcance de maneira intimidadora enquanto brilha em vermelho, deixando -a confusa e também mais forte. Role 1d20 + MOVE + 6 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o alvo fica Confuso, mas aumenta o Ataque dele em 2 estágios, podendo ser acumulado em até 6 estágios. Você também pode usar este Move em aliados, sem precisar da rolagem."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([4, 5])
+effect_tags = Array[String](["stat_change", "confusion"])

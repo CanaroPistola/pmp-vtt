@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://da0rmc64nggb7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_37t0u"]
+
+[resource]
+script = ExtResource("1_37t0u")
+dex_number = 548
+display_name = "Petilil"
+id = "petilil"
+types = Array[int]([4])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 17
+movement = {
+0: 6.0
+}
+attributes = {
+0: 11,
+1: 10,
+2: 12,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([12, 17])
+abilities = Array[String](["Chlorophyll", "Own Tempo"])
+hidden_ability = "Leaf Guard"
+evolves_to = Array[String](["lilligant"])
+evolution_level = 8
+evolution_points = 15
+level_moves = {
+2: ["Growth"],
+3: ["Leech Seed"],
+4: ["Charm", "Sleep Powder"],
+5: ["Mega Drain"],
+6: ["Synthesis"],
+7: ["Magical Leaf"],
+8: ["Stun Spore"],
+9: ["Giga Drain"],
+10: ["Aromatherapy"],
+11: ["Helping Hand"],
+12: ["Energy Ball"],
+13: ["Entrainment"],
+14: ["Sunny Day"],
+15: ["After You", "Leaf Storm"]
+}
+starting_moves = Array[String](["Absorb"])
+tms = Array[String](["tm_4", "tm_13", "tm_17", "tm_36", "tm_41", "tm_45", "tm_48", "tm_58", "tm_69", "tm_81", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_114", "tm_116", "tm_125", "tm_129", "tm_131", "tm_151", "tm_154", "tm_163", "tm_179", "tm_193", "tm_199", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_279", "tm_286", "tm_296", "tm_298", "tm_319"])
+egg_moves = Array[String](["Bide", "Charm", "Encore", "Endure", "Grass Whistle", "Healing Wish", "Ingrain", "Natural Gift", "Sweet Scent", "Worry Seed"])

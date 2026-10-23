@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dy0gacx8yydy"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_y6xls"]
+
+[resource]
+script = ExtResource("1_y6xls")
+id = "hydro_pump"
+display_name = "Hydro Pump (Hidro Bomba)"
+name_en = "Hydro Pump"
+name_pt = "Hidro Bomba"
+type = 2
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 4
+range_distance = 24.0
+description = "Você envia uma onda de água poderosa em direção às criaturas em uma linha de 24 metros, com  (1,5 metros) de largura. Criaturas atingidas pela explosão devem ter sucesso em um teste de DES contra sua CD de Move -2, sofrendo 2d12 + MOVE de dano de água em uma falha, e metade desse dano em caso de sucesso."
+scaling_text = "Os dados de dano para este Move mudam para 4d8 no nível 5, 4d12 no nível 10 e 7d8 no nível 17."
+range_text_raw = "Pessoal (linha de 24 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -2
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 12,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 7,
+"dice_max": 8,
+"move": true
+}
+}

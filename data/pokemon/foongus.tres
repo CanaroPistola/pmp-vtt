@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dvrj0v5ohv4nh"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_31vck"]
+
+[resource]
+script = ExtResource("1_31vck")
+dex_number = 590
+display_name = "Foongus"
+id = "foongus"
+types = Array[int]([4, 7])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 20
+hit_dice = "d8"
+movement = {
+0: 3.0
+}
+attributes = {
+0: 12,
+1: 8,
+2: 15,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([5, 12])
+senses = Array[Dictionary]([{
+"range_m": 7.5,
+"type": 1
+}])
+abilities = Array[String](["Effect Spore"])
+hidden_ability = "Regenerator"
+evolves_to = Array[String](["amoonguss"])
+evolution_level = 13
+evolution_points = 11
+level_moves = {
+2: ["Growth"],
+3: ["Astonish", "Stun Spore"],
+4: ["Bide"],
+5: ["Mega Drain"],
+6: ["Ingrain"],
+7: ["Feint Attack"],
+8: ["Sweet Scent"],
+10: ["Giga Drain"],
+11: ["Toxic"],
+12: ["Synthesis"],
+13: ["Clear Smog"],
+15: ["Rage Powder", "Solar Beam", "Spore"]
+}
+starting_moves = Array[String](["Absorb"])
+tms = Array[String](["tm_4", "tm_13", "tm_25", "tm_36", "tm_45", "tm_58", "tm_83", "tm_84", "tm_87", "tm_106", "tm_109", "tm_111", "tm_112", "tm_114", "tm_117", "tm_131", "tm_154", "tm_163", "tm_179", "tm_186", "tm_193", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_238", "tm_248", "tm_249", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_279", "tm_286", "tm_296", "tm_307", "tm_319"])
+egg_moves = Array[String](["Body Slam", "Defense Curl", "Endure", "Gastro Acid", "Growth", "Poison Powder", "Rollout", "Stun Spore", "Worry Seed"])

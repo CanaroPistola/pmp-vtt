@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ny6urxhw7uax"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_2jdep"]
+
+[resource]
+script = ExtResource("1_2jdep")
+dex_number = 378
+display_name = "Regice"
+id = "regice"
+types = Array[int]([5])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 20
+hit_points = 366
+hit_dice = "d20"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 18,
+1: 20,
+2: 18,
+3: 8,
+4: 16,
+5: 10
+}
+skills = Array[int]([3, 17])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 1
+}, {
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Clear Body"])
+hidden_ability = "Ice Body"
+level_moves = {
+3: ["Icy Wind"],
+5: ["Charge Beam"],
+7: ["Bulldoze"],
+9: ["Curse"],
+11: ["Ancient Power"],
+13: ["Amnesia"],
+15: ["Blizzard", "Hammer Arm", "Ice Beam"],
+16: ["Lock-On", "Zap Cannon"],
+17: ["Hyper Beam", "Superpower"]
+}
+starting_moves = Array[String](["Explosion", "Stomp"])
+tms = Array[String](["tm_10", "tm_15", "tm_16", "tm_22", "tm_23", "tm_24", "tm_25", "tm_29", "tm_35", "tm_40", "tm_45", "tm_51", "tm_58", "tm_74", "tm_83", "tm_86", "tm_87", "tm_99", "tm_100", "tm_103", "tm_105", "tm_108", "tm_109", "tm_113", "tm_118", "tm_122", "tm_128", "tm_131", "tm_136", "tm_139", "tm_141", "tm_142", "tm_143", "tm_144", "tm_148", "tm_165", "tm_166", "tm_199", "tm_201", "tm_209", "tm_214", "tm_216", "tm_222", "tm_223", "tm_225", "tm_228", "tm_229", "tm_239", "tm_242", "tm_243", "tm_248", "tm_255", "tm_256", "tm_266", "tm_270", "tm_274", "tm_276", "tm_286", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296"])

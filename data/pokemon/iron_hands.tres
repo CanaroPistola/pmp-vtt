@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cq0kbrvrt24ah"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_eghh3"]
+
+[resource]
+script = ExtResource("1_eghh3")
+dex_number = 992
+display_name = "Iron Hands"
+id = "iron_hands"
+types = Array[int]([6, 3])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 22,
+1: 14,
+2: 22,
+3: 8,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 5, 7, 8, 15])
+abilities = Array[String](["Quark Drive"])
+level_moves = {
+3: ["Fake Out"],
+5: ["Whirlwind"],
+7: ["Thunder Punch"],
+10: ["Slam"],
+12: ["Force Palm"],
+14: ["Seismic Toss"],
+15: ["Charge"],
+16: ["Wild Charge"],
+17: ["Close Combat", "Detect"],
+18: ["Heavy Slam"],
+19: ["Belly Drum"],
+20: ["Focus Punch"]
+}
+starting_moves = Array[String](["Arm Thrust", "Focus Energy", "Sand Attack", "Tackle"])
+tms = Array[String](["tm_24", "tm_25", "tm_29", "tm_35", "tm_39", "tm_43", "tm_59", "tm_67", "tm_74", "tm_77", "tm_83", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_113", "tm_123", "tm_128", "tm_136", "tm_141", "tm_147", "tm_148", "tm_158", "tm_159", "tm_171", "tm_190", "tm_199", "tm_214", "tm_218", "tm_223", "tm_225", "tm_234", "tm_248", "tm_266", "tm_270", "tm_273", "tm_278", "tm_282", "tm_286", "tm_290", "tm_292", "tm_294", "tm_308", "tm_315"])

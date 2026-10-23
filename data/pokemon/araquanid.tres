@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://js1exnevkjmi"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_t2p2d"]
+
+[resource]
+script = ExtResource("1_t2p2d")
+dex_number = 752
+display_name = "Araquanid"
+id = "araquanid"
+types = Array[int]([2, 11])
+sr = "10"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 60
+hit_dice = "d10"
+movement = {
+0: 7.5,
+1: 9.0
+}
+attributes = {
+0: 15,
+1: 15,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([15])
+abilities = Array[String](["Water Bubble"])
+hidden_ability = "Water Absorb"
+level_moves = {
+2: ["Infestation"],
+3: ["Spider Web"],
+5: ["Bug Bite"],
+6: ["Bubble Beam"],
+7: ["Bite", "Headbutt"],
+9: ["Aqua Ring"],
+11: ["Leech Life"],
+13: ["Crunch"],
+15: ["Lunge", "Mirror Coat"],
+16: ["Liquidation"],
+17: ["Entrainment"]
+}
+starting_moves = Array[String](["Bubble", "Soak", "Water Gun", "Wide Guard"])
+tms = Array[String](["tm_13", "tm_22", "tm_25", "tm_32", "tm_33", "tm_42", "tm_45", "tm_50", "tm_57", "tm_58", "tm_82", "tm_83", "tm_87", "tm_108", "tm_109", "tm_112", "tm_113", "tm_131", "tm_135", "tm_136", "tm_139", "tm_144", "tm_146", "tm_147", "tm_151", "tm_155", "tm_157", "tm_160", "tm_161", "tm_162", "tm_191", "tm_195", "tm_199", "tm_209", "tm_212", "tm_214", "tm_216", "tm_228", "tm_229", "tm_232", "tm_234", "tm_243", "tm_245", "tm_248", "tm_255", "tm_270", "tm_275", "tm_276", "tm_286", "tm_296", "tm_298", "tm_311", "tm_312", "tm_317", "tm_320"])
+egg_moves = Array[String](["Aurora Beam", "Power Split", "Spit Up", "Sticky Web", "Stockpile"])

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bvnoaif2fgylx"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ryeqm"]
+
+[resource]
+script = ExtResource("1_ryeqm")
+dex_number = 775
+display_name = "Komala"
+id = "komala"
+types = Array[int]([0])
+sr = "7"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 4.5,
+2: 6.0
+}
+attributes = {
+0: 17,
+1: 15,
+2: 16,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([5, 9])
+abilities = Array[String](["Comatose"])
+level_moves = {
+2: ["Spit Up", "Stockpile", "Swallow"],
+4: ["Rapid Spin"],
+6: ["Yawn"],
+7: ["Slam"],
+9: ["Flail"],
+11: ["Sucker Punch"],
+12: ["Psych Up"],
+14: ["Wood Hammer"],
+15: ["Thrash"]
+}
+starting_moves = Array[String](["Defense Curl", "Rollout"])
+tms = Array[String](["tm_2", "tm_13", "tm_25", "tm_29", "tm_34", "tm_35", "tm_38", "tm_41", "tm_45", "tm_51", "tm_58", "tm_59", "tm_74", "tm_82", "tm_83", "tm_87", "tm_100", "tm_109", "tm_113", "tm_120", "tm_131", "tm_136", "tm_142", "tm_148", "tm_150", "tm_153", "tm_158", "tm_159", "tm_168", "tm_186", "tm_190", "tm_199", "tm_201", "tm_208", "tm_209", "tm_216", "tm_218", "tm_223", "tm_225", "tm_228", "tm_238", "tm_241", "tm_248", "tm_255", "tm_266", "tm_270", "tm_271", "tm_272", "tm_274", "tm_276", "tm_278", "tm_282", "tm_286", "tm_288", "tm_296", "tm_298", "tm_303", "tm_318", "tm_321"])
+egg_moves = Array[String](["Charm", "Play Rough", "Sing", "Superpower", "Wish"])

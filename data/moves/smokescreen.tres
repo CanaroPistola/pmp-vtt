@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dmx0xjlo7f1x5"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4sm82"]
+
+[resource]
+script = ExtResource("1_4sm82")
+id = "smokescreen"
+display_name = "Smokescreen (Cortina de Fumaça)"
+name_en = "Smokescreen"
+name_pt = "Cortina de Fumaça"
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+save_attribute = 2
+range_category = 2
+range_distance = 9.0
+duration_rounds = 5
+description = "Você conjura uma linha de fumaça escura no campo de batalha, com 9 metros de comprimento e  (1,5 metros) de espessura, que se estende em qualquer direção a partir de um ponto dentro do alcance, com duração de 5 rodadas. A área dos dois lados fica obscurecida e impõe desvantagem em qualquer ataque à distância feito por uma criatura mirando em outra do lado oposto. Qualquer criatura atingida dentro da parede de fumaça no momento em que foi criada deve fazer um teste de resistência de CON contra sua CD do Move ou ficará cega pelo tempo de duração. Uma criatura cega pode repetir o teste no início de seus turnos para remover o efeito com sucesso. Ao sair da cegueira, a criatura permanece com sua Precisão reduzida em 1 estágio, podendo ser acumulado em até -6 estágios."
+range_text_raw = "(9 metros)"
+duration_text_raw = "5 rodadas"
+move_power_attributes = Array[int]([2])
+effect_tags = Array[String](["stat_change", "blind"])

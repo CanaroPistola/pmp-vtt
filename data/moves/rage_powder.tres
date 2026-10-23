@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://u33l8ot3r1"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_cq6ba"]
+
+[resource]
+script = ExtResource("1_cq6ba")
+id = "rage_powder"
+display_name = "Rage Powder"
+name_en = "Rage Powder"
+type = 11
+move_time = "1 reação"
+resolution = 2
+has_save = true
+save_attribute = 4
+activation = 1
+range_category = 5
+range_distance = 6.0
+duration_rounds = 1
+description = "Você espalha uma nuvem de pó irritante, atraindo ataques para você. Quando um inimigo em alcance ativa um Move que mira diretamente outra criatura, ou é capaz de atingi-la em uma área de efeito, você pode usar sua reação para espalhar uma nuvem de pó ao seu redor. Todos os inimigos em alcance devem realizar um teste de SAB contra a sua CD de Move. Em caso de falha, todos os Moves de alvo único devem ter você como alvo até o início do seu próximo turno, e Moves d e área de efeito devem ter você como centro . Se você estiver fora do alcance do Move inimigo, a criatura deve usar seu deslocamento restante para se aproximar de você (sem provocar ataques de oportunidade) . Caso ainda esteja fora de alcance, o Move dela falha automaticamente . Pokémon do tipo Grama e Pokémon com Overcoat são imunes ao Rage Powder, de modo que seus ataques não são desviados por ele. Ativar este Move faz com que você perca sua ação em seu próximo turno. Observações: Rage Powder  não redirecio na Future Sight , Doom Desire e nem Sky Drop. Rage Powder atrai golpes do tipo Elétrico e Água mesmo que haja um Pokémon com Lightning Rod ou Storm Drain em campo. Se outro Pokémon da mesma equipe já estiver como centro das atenções, o primeiro a usar a téc nica terá prioridade; se esse primeiro usuário estiver fora do alcance ou deixar de ser o centro das atenções, o ataque será redirecionado para o próximo centro das atenções . Rage Powder não pode ser escolhido pelo Move Assist."
+range_text_raw = "Pessoal (raio de 6 metros)"
+duration_text_raw = "Até o início do próximo turno"
+move_power_attributes = Array[int]([2, 5])

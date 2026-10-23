@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bp53q81qvgwue"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8rfmx"]
+
+[resource]
+script = ExtResource("1_8rfmx")
+id = "rock_throw"
+display_name = "Rock Throw (Arremesso de Pedras)"
+name_en = "Rock Throw"
+name_pt = "Arremesso de Pedras"
+type = 12
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 18.0
+description = "Você cria um anel de pedras ao redor do corpo, e então as lança em direção ao oponente. Faça um ataque à distância -1 contra um alvo em alcance, causando 1d10 + MOVE de dano de pedra em um acerto."
+scaling_text = "O dado de dano para este Move muda para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}

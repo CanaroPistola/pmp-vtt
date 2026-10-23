@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bcm83tox2t66l"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_hrx2a"]
+
+[resource]
+script = ExtResource("1_hrx2a")
+id = "clear_smog"
+display_name = "Clear Smog"
+name_en = "Clear Smog"
+type = 7
+move_time = "1 ação"
+range_category = 2
+range_distance = 6.0
+description = "Você lança uma lama especial que tem o poder de remover todas as mudanças de status de um alvo. Esse golpe é garantido de acertar , causando 1d10 + MOVE de dano do tipo venenoso, e removendo todas as Mudanças de Status afetando o alvo, desde que você possa ver o alvo e ele esteja dentro do seu alcance. Role um d20 para chance de golpe crítico e outros efeitos."
+scaling_text = "Os dados de dano para este Move mudam para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}

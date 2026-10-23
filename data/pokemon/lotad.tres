@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://seg4xmfwaiyn"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_bixms"]
+
+[resource]
+script = ExtResource("1_bixms")
+dex_number = 270
+display_name = "Lotad"
+id = "lotad"
+types = Array[int]([2, 4])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 17
+movement = {
+0: 4.5,
+1: 7.5
+}
+attributes = {
+0: 10,
+1: 12,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([12])
+abilities = Array[String](["Swift Swim", "Rain Dish"])
+hidden_ability = "Own Tempo"
+evolves_to = Array[String](["lombre"])
+evolution_level = 5
+evolution_points = 8
+level_moves = {
+2: ["Absorb", "Water Gun"],
+3: ["Bubble"],
+4: ["Natural Gift"],
+5: ["Mist"],
+6: ["Flail", "Mega Drain"],
+7: ["Bubble Beam"],
+8: ["Leech Seed", "Nature Power"],
+9: ["Rain Dance"],
+10: ["Giga Drain"],
+11: ["Zen Headbutt"],
+12: ["Energy Ball"]
+}
+starting_moves = Array[String](["Astonish", "Growl"])
+tms = Array[String](["tm_13", "tm_22", "tm_25", "tm_36", "tm_42", "tm_45", "tm_56", "tm_58", "tm_59", "tm_75", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_114", "tm_116", "tm_117", "tm_122", "tm_131", "tm_139", "tm_144", "tm_163", "tm_176", "tm_179", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_232", "tm_238", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_275", "tm_276", "tm_278", "tm_279", "tm_282", "tm_286", "tm_288", "tm_296", "tm_298", "tm_305", "tm_311", "tm_313", "tm_314", "tm_321"])
+egg_moves = Array[String](["Counter", "Flail", "Giga Drain", "Leech Seed", "Razor Leaf", "Sweet Scent", "Synthesis", "Teeter Dance", "Tickle", "Water Gun"])

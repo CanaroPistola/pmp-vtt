@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cfnyxc35dlibn"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6q4ap"]
+
+[resource]
+script = ExtResource("1_6q4ap")
+dex_number = 867
+display_name = "Runerigus"
+id = "runerigus"
+types = Array[int]([8, 13])
+sr = "9"
+min_level = 5
+evolution_stage = 2
+armor_class = 18
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 15,
+1: 11,
+2: 14,
+3: 6,
+4: 16,
+5: 10
+}
+skills = Array[int]([8, 9])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 2
+}])
+abilities = Array[String](["Wandering Spirit"])
+level_moves = {
+4: ["Disable"],
+6: ["Brutal Swing"],
+7: ["Crafty Shield"],
+8: ["Hex"],
+10: ["Mean Look"],
+11: ["Slam"],
+13: ["Curse"],
+15: ["Earthquake", "Shadow Ball"],
+16: ["Guard Split", "Power Split"],
+17: ["Destiny Bond"]
+}
+starting_moves = Array[String](["Astonish", "Haze", "Night Shade", "Protect", "Scary Face", "Shadow Claw"])
+tms = Array[String](["tm_13", "tm_31", "tm_35", "tm_87", "tm_88", "tm_113", "tm_119", "tm_130", "tm_136", "tm_145", "tm_186", "tm_188", "tm_194", "tm_198", "tm_199", "tm_209", "tm_214", "tm_217", "tm_221", "tm_223", "tm_225", "tm_228", "tm_229", "tm_230", "tm_231", "tm_234", "tm_241", "tm_255", "tm_288", "tm_301", "tm_316", "tm_317"])
+egg_moves = Array[String](["Memento"])

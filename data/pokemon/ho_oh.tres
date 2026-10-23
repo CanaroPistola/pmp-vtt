@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d8gne02ek37g"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vquug"]
+
+[resource]
+script = ExtResource("1_vquug")
+dex_number = 250
+display_name = "Ho-oh"
+id = "ho_oh"
+types = Array[int]([1, 9])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 19
+hit_points = 486
+hit_dice = "d20"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 22,
+1: 20,
+2: 18,
+3: 12,
+4: 16,
+5: 16
+}
+skills = Array[int]([0, 2, 9])
+abilities = Array[String](["Pressure"])
+hidden_ability = "Regenerator"
+level_moves = {
+3: ["Gust", "Life Dew"],
+5: ["Brave Bird"],
+8: ["Extrasensory"],
+10: ["Sunny Day"],
+13: ["Fire Blast"],
+15: ["Punishment", "Sacred Fire"],
+16: ["Ancient Power"],
+17: ["Safeguard"],
+18: ["Future Sight", "Recover"],
+19: ["Natural Gift"],
+20: ["Burn Up", "Calm Mind", "Overheat", "Sky Attack"]
+}
+starting_moves = Array[String](["Weather Ball", "Whirlwind"])
+tms = Array[String](["tm_3", "tm_6", "tm_7", "tm_25", "tm_27", "tm_35", "tm_38", "tm_40", "tm_45", "tm_54", "tm_58", "tm_59", "tm_69", "tm_72", "tm_73", "tm_74", "tm_75", "tm_83", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_102", "tm_109", "tm_110", "tm_112", "tm_113", "tm_127", "tm_129", "tm_131", "tm_133", "tm_136", "tm_137", "tm_145", "tm_148", "tm_151", "tm_156", "tm_177", "tm_183", "tm_199", "tm_201", "tm_202", "tm_209", "tm_212", "tm_214", "tm_216", "tm_220", "tm_227", "tm_228", "tm_229", "tm_231", "tm_235", "tm_240", "tm_242", "tm_243", "tm_246", "tm_247", "tm_248", "tm_255", "tm_257", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294", "tm_296", "tm_313", "tm_316", "tm_321"])

@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b1totd8aygnl6"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_e6bk8"]
+
+[resource]
+script = ExtResource("1_e6bk8")
+dex_number = 714
+display_name = "Noibat"
+id = "noibat"
+types = Array[int]([9, 14])
+sr = "1"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 4.5
+}
+attributes = {
+0: 10,
+1: 12,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([13])
+senses = Array[Dictionary]([{
+"range_m": 24.0,
+"type": 3
+}])
+abilities = Array[String](["Frisk", "Infiltrator"])
+hidden_ability = "Telepathy"
+evolves_to = Array[String](["noivern"])
+evolution_level = 15
+evolution_points = 18
+level_moves = {
+2: ["Absorb"],
+4: ["Double Team", "Gust"],
+5: ["Bite"],
+6: ["Agility", "Wing Attack"],
+8: ["Air Cutter"],
+9: ["Roost"],
+11: ["Razor Wind"],
+12: ["Tailwind"],
+14: ["Whirlwind"],
+15: ["Air Slash", "Super Fang"],
+16: ["Hurricane"]
+}
+starting_moves = Array[String](["Screech", "Supersonic", "Tackle"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_13", "tm_29", "tm_45", "tm_52", "tm_54", "tm_58", "tm_60", "tm_63", "tm_65", "tm_69", "tm_72", "tm_75", "tm_83", "tm_87", "tm_102", "tm_109", "tm_127", "tm_131", "tm_133", "tm_137", "tm_149", "tm_155", "tm_182", "tm_199", "tm_202", "tm_214", "tm_216", "tm_227", "tm_228", "tm_236", "tm_240", "tm_241", "tm_246", "tm_248", "tm_254", "tm_255", "tm_257", "tm_265", "tm_270", "tm_271", "tm_272", "tm_276", "tm_277", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_295", "tm_296", "tm_303", "tm_305", "tm_311", "tm_315", "tm_320"])
+egg_moves = Array[String](["Defog", "Dragon Rush", "Outrage", "Snatch", "Switcheroo", "Tailwind"])

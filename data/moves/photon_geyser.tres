@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ck0nstxvqq45t"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_xfcuq"]
+
+[resource]
+script = ExtResource("1_xfcuq")
+id = "photon_geyser"
+display_name = "Photon Geyser (Gêiser de Fótons)"
+name_en = "Photon Geyser"
+name_pt = "Gêiser de Fótons"
+type = 10
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 2
+range_distance = 30.0
+description = "Um pilar de luz irrompe do chão em um cilindro de 6 metros de raio e 24 metros de altura, centrado em um ponto no alcance. Qualquer criatura pega na explosão deve fazer um teste de DES contra sua CD de Move, sofrendo 2d10 + MOVE de dano psíquico em uma falha, ou metade disso em um sucesso. Este Move ignora qualquer habilidade passiva das criaturas que afetariam a capacidade do usuário de acertar ou causar dano total."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "(30 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}

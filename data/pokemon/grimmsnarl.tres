@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cnud658sgiqb2"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_uvw3d"]
+
+[resource]
+script = ExtResource("1_uvw3d")
+dex_number = 861
+display_name = "Grimmsnarl"
+id = "grimmsnarl"
+types = Array[int]([15, 17])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 14
+hit_points = 112
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 15,
+1: 14,
+2: 16,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([2, 3, 5, 8])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 2
+}])
+abilities = Array[String](["Prankster", "Frisk"])
+hidden_ability = "Pickpocket"
+level_moves = {
+4: ["Fake Tears"],
+6: ["Assurance"],
+7: ["Swagger"],
+8: ["Sucker Punch"],
+10: ["Torment"],
+12: ["Dark Pulse"],
+14: ["Nasty Plot"],
+15: ["Play Rough"],
+16: ["Foul Play"],
+17: ["Hammer Arm"]
+}
+starting_moves = Array[String](["Bite", "Bulk Up", "Confide", "Fake Out", "False Surrender", "Flatter", "Spirit Break"])
+tms = Array[String](["tm_12", "tm_13", "tm_24", "tm_25", "tm_29", "tm_34", "tm_37", "tm_42", "tm_50", "tm_52", "tm_53", "tm_67", "tm_68", "tm_83", "tm_87", "tm_88", "tm_94", "tm_100", "tm_103", "tm_105", "tm_106", "tm_113", "tm_136", "tm_141", "tm_145", "tm_152", "tm_155", "tm_156", "tm_158", "tm_159", "tm_165", "tm_166", "tm_171", "tm_173", "tm_178", "tm_190", "tm_198", "tm_199", "tm_212", "tm_214", "tm_215", "tm_217", "tm_228", "tm_234", "tm_241", "tm_248", "tm_255", "tm_266", "tm_270", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_292", "tm_293", "tm_298", "tm_300", "tm_317"])
+egg_moves = Array[String](["Parting Shot"])

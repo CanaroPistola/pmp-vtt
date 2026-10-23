@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://doskhplolxkxr"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_bb7q8"]
+
+[resource]
+script = ExtResource("1_bb7q8")
+dex_number = 219
+display_name = "Magcargo"
+id = "magcargo"
+types = Array[int]([1, 12])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 16
+hit_points = 88
+hit_dice = "d10"
+movement = {
+0: 7.5,
+2: 7.5
+}
+attributes = {
+0: 17,
+1: 11,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Magma Armor", "Flame Body"])
+hidden_ability = "Weak Armor"
+level_moves = {
+2: ["Ember"],
+3: ["Rock Throw"],
+5: ["Harden", "Incinerate"],
+7: ["Clear Smog"],
+8: ["Ancient Power"],
+9: ["Flame Burst"],
+10: ["Rock Slide"],
+12: ["Amnesia", "Lava Plume"],
+15: ["Body Slam", "Recover"],
+16: ["Earth Power", "Flamethrower"]
+}
+starting_moves = Array[String](["Shell Smash", "Smog", "Yawn"])
+tms = Array[String](["tm_4", "tm_10", "tm_13", "tm_25", "tm_35", "tm_37", "tm_45", "tm_51", "tm_58", "tm_73", "tm_74", "tm_83", "tm_86", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_109", "tm_113", "tm_121", "tm_126", "tm_127", "tm_131", "tm_136", "tm_146", "tm_147", "tm_156", "tm_174", "tm_175", "tm_179", "tm_183", "tm_184", "tm_196", "tm_199", "tm_212", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_235", "tm_248", "tm_251", "tm_255", "tm_257", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_282", "tm_285", "tm_286", "tm_296", "tm_316"])
+egg_moves = Array[String](["Acid Armor", "Curse", "Earth Power", "Guard Swap", "Heat Wave", "Inferno", "Memento", "Rollout", "Smokescreen", "Spit Up", "Stockpile", "Swallow"])

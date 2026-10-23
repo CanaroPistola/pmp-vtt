@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ck4bwnutcfo1h"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_i8231"]
+
+[resource]
+script = ExtResource("1_i8231")
+id = "brutal_swing"
+display_name = "Brutal Swing (Balanço Violento)"
+name_en = "Brutal Swing"
+name_pt = "Balanço Violento"
+type = 15
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 5
+description = "Você balança os braços violentamente, atacando tudo dentro de um círculo de 3 metros, centrado em você. Todas as criaturas dentro do alcance devem fazer um teste de resistência de DES contra sua CD de Move, sofrendo 2d6 + MOVE de dano sombrio em caso de falha, ou metade disso em caso de sucesso."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "Pessoal (raio de / 1,5 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}

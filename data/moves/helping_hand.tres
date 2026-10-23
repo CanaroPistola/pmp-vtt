@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b6mxwmyqht4mn"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_sjnuj"]
+
+[resource]
+script = ExtResource("1_sjnuj")
+id = "helping_hand"
+display_name = "Helping Hand"
+name_en = "Helping Hand"
+move_time = "1 reação"
+activation = 1
+range_category = 2
+range_distance = 18.0
+description = "Você libera um raio de energia azul de seu corpo em direção a um aliado, energizando-o. Sempre que um aliado ao alcance for sujeito a um teste, você pode usar sua reação para adicionar um d6 a uma rolagem de teste de habilidade, ataque ou salvamento que ele fizer, antes que o resultado da rolagem seja dito pelo Mestre. Um aliado ajudado só pode ter um d6 disponível por vez. Além disso, quando um aliado em alcance efetuar um ataque, você também pode usar sua reação para aumentar os dados de dano desse ataque em metade da quantidade original (arredondado para baixo). Caso seja uma rolagem com apenas 1 dado, role o dano duas vezes e escolha o maior resultado. Para qualquer uso deste Move, você abre mão de sua ação no próximo turno. Este Move pode ser usado de forma cumulativa no mesmo alvo para aumentar os dados de dano de um ataque, desde que provenha de usuários distintos."
+scaling_text = "Higher Levels: The helping dice for this move changes to d8 at level 5, d10 at level 10, and d12 at level 17."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"

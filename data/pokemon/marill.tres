@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://1nafyk7cl56q"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_gn4kq"]
+
+[resource]
+script = ExtResource("1_gn4kq")
+dex_number = 183
+display_name = "Marill"
+id = "marill"
+types = Array[int]([2, 17])
+sr = "1/2"
+evolution_stage = 2
+armor_class = 13
+hit_points = 19
+hit_dice = "d8"
+movement = {
+0: 7.5,
+1: 7.5
+}
+attributes = {
+0: 12,
+1: 11,
+2: 12,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([0])
+abilities = Array[String](["Thick Fat", "Huge Power"])
+hidden_ability = "Sap Sipper"
+evolves_to = Array[String](["azumarill"])
+evolution_level = 6
+evolution_points = 8
+level_moves = {
+2: ["Water Sport"],
+3: ["Bubble", "Charm"],
+4: ["Defense Curl", "Rollout", "Slam"],
+5: ["Bounce", "Bubble Beam"],
+6: ["Helping Hand"],
+7: ["Aqua Tail"],
+8: ["Play Rough"],
+10: ["Aqua Ring"],
+11: ["Rain Dance"],
+13: ["Double-Edge"],
+14: ["Superpower"],
+15: ["Hydro Pump"]
+}
+starting_moves = Array[String](["Tackle", "Tail Whip", "Water Gun"])
+tms = Array[String](["tm_8", "tm_10", "tm_11", "tm_13", "tm_22", "tm_25", "tm_26", "tm_29", "tm_31", "tm_35", "tm_41", "tm_42", "tm_45", "tm_48", "tm_55", "tm_56", "tm_57", "tm_58", "tm_59", "tm_68", "tm_81", "tm_83", "tm_87", "tm_88", "tm_100", "tm_105", "tm_109", "tm_114", "tm_122", "tm_129", "tm_131", "tm_135", "tm_137", "tm_139", "tm_141", "tm_142", "tm_144", "tm_149", "tm_150", "tm_156", "tm_157", "tm_165", "tm_166", "tm_171", "tm_172", "tm_173", "tm_174", "tm_175", "tm_176", "tm_190", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_232", "tm_248", "tm_255", "tm_256", "tm_264", "tm_270", "tm_274", "tm_275", "tm_276", "tm_277", "tm_282", "tm_286", "tm_296", "tm_298", "tm_311", "tm_312", "tm_314", "tm_318"])
+egg_moves = Array[String](["Amnesia", "Aqua Jet", "Belly Drum", "Body Slam", "Camouflage", "Copycat", "Encore", "Fake Tears", "Future Sight", "Muddy Water", "Perish Song", "Present", "Refresh", "Sing", "Slam", "Soak", "Superpower", "Supersonic", "Tickle", "Water Sport"])

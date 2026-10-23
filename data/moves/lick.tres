@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bwxddkbps4740"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_issgr"]
+
+[resource]
+script = ExtResource("1_issgr")
+id = "lick"
+display_name = "Lick (Lambida)"
+name_en = "Lick"
+name_pt = "Lambida"
+type = 13
+pp = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você estende a língua e lambe um alvo. Faça um ataque corpo a corpo. Em um acerto, cause 1d6 + MOVE de dano do tipo fantasma. Em um resultado natural de 15 ou mais no acerto, o alvo fica paralisado."
+scaling_text = "O dado de dano para este Move muda para 1d10 no nível 5, 1d12 no nível 10 e 2d8 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["paralysis"])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b28c4lpxkv77p"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_cui14"]
+
+[resource]
+script = ExtResource("1_cui14")
+id = "moonlight"
+display_name = "Moonlight"
+name_en = "Moonlight"
+type = 17
+pp = 3
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+description = "Um raio de luz da lua brilha sobre você, banhando -o em luz curativa cuja potência depende do clima em que se encontra. Confira a tabela no livro. Se usado durante o dia, recebe metade da cura total (mesmo com o efeito de Luz Solar Intensa). Clima Nível 1 Nível 5 Nível 10 Nível 17 Sem clima 2d6 2d10 4d8 4d12 Luz Solar Intensa 3d6 3d10 5d8 5d12 Chuva, Granizo ou Tempestade de Areia 1d6 1d10 2d8 2d12"
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([4, 5])

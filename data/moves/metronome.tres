@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://2tjgg4ef3png"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_3g35y"]
+
+[resource]
+script = ExtResource("1_3g35y")
+id = "metronome"
+display_name = "Metronome (Metrônomo)"
+name_en = "Metronome"
+name_pt = "Metrônomo"
+pp = 5
+move_time = "1 ação"
+range_category = 6
+range_distance = 0.0
+duration_flags = Array[String](["variable"])
+description = "Você invoca um Move aleatório para infligir contra uma criatura. Você pode utilizar seu deslocamento antes de utilizar o Move selecionado por Metronome. Se o Move não puder ser concluído por causa do posicionamento, alcance, etc., o Metronome falha. Alguns Moves não podem ser escolhidos por Metronome. Nesse caso, utilize um dos métodos abaixo para este Move (a ser escolhido pelo Mestre). Confira a tabela no livro"
+range_text_raw = "Variável"
+duration_text_raw = "Variável"
+effect_tags = Array[String](["copy"])

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cl2d5eissi2gf"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_kn07g"]
+
+[resource]
+script = ExtResource("1_kn07g")
+id = "corrosive_gas"
+display_name = "Corrosive Gas"
+name_en = "Corrosive Gas"
+type = 7
+pp = 20
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 1
+range_category = 2
+range_distance = 6.0
+description = "Você libera um gás altamente ácido que envolve um alvo, corroendo os itens que ele estiver segurando. Role 1d20 + MOVE + 9 e compare o resultado com 10 + DES do alvo. Em um resultado maior ou igual, o item segurável dele é largado e se torna inutilizável até o final do combate. Observações: Itens segurados removidos por Corrosive Gas não podem ser recuperados por Recycle ou Harvest. Corrosive Gas não afeta um item segurado por Pokémon com a habilidade Sticky Hold, ou se atingir um substitute de um Pokémon. Também não afeta uma Griseous Orb, Drive, Memory, Rusted Sword ou Rusted Shield segurados respectivamente por Giratina, Genesect, Silvally, Zacian ou Zamazenta."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([1, 4])

@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://h6qslwxr0f5a"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_w3u4j"]
+
+[resource]
+script = ExtResource("1_w3u4j")
+dex_number = 1008
+display_name = "Miraidon"
+id = "miraidon"
+types = Array[int]([3, 14])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 19
+hit_points = 486
+hit_dice = "d20"
+movement = {
+0: 15.0,
+1: 12.0,
+2: 12.0
+}
+attributes = {
+0: 19,
+1: 22,
+2: 19,
+3: 10,
+4: 16,
+5: 18
+}
+skills = Array[int]([3, 7, 8, 9, 12, 14, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}])
+abilities = Array[String](["Hadron Engine"])
+level_moves = {
+3: ["Shock Wave"],
+5: ["Charge"],
+7: ["Parabolic Charge"],
+10: ["Discharge"],
+12: ["Agility"],
+14: ["Dragon Pulse"],
+16: ["Electro Drift"],
+17: ["Metal Sound", "Mirror Coat"],
+18: ["Outrage"],
+19: ["Thunder"],
+20: ["Hyper Beam", "Overheat"]
+}
+starting_moves = Array[String](["Dragon Breath", "Electric Terrain", "Thunder Shock"])
+tms = Array[String](["tm_2", "tm_5", "tm_25", "tm_38", "tm_39", "tm_40", "tm_46", "tm_50", "tm_53", "tm_60", "tm_62", "tm_63", "tm_65", "tm_66", "tm_76", "tm_77", "tm_78", "tm_83", "tm_87", "tm_99", "tm_113", "tm_128", "tm_129", "tm_136", "tm_156", "tm_169", "tm_182", "tm_183", "tm_196", "tm_199", "tm_212", "tm_214", "tm_234", "tm_248", "tm_253", "tm_257", "tm_270", "tm_273", "tm_278", "tm_282", "tm_283", "tm_286", "tm_290", "tm_293", "tm_294", "tm_303", "tm_308", "tm_315", "tm_321"])

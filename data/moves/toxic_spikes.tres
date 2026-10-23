@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://411rgh4sljtn"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_gcca3"]
+
+[resource]
+script = ExtResource("1_gcca3")
+id = "toxic_spikes"
+display_name = "Toxic Spikes"
+name_en = "Toxic Spikes"
+type = 7
+move_time = "1 ação"
+range_category = 2
+range_distance = 15.0
+target_area_radius = 6.0
+description = "Você rapidamente espalha uma camada de espinhos venenosos no chão em um raio de 20 pés (6 metros), centrado em um ponto dentro do alcance. Sempre que uma criatura entrar nessa área, ou quando um Pokémon for substituído e o próximo surgir dentro dela, ela fica Envenenada. Mover -se dentro da área é considerado terreno difícil. Uma criatura pode ignorar essa penalidade ao atravessar os espinhos, mas fica Envenenada ao fazer isso. Você pode usar uma ação para fortalecer a área, aumentando seu raio em 10 pés (3 metros), e ela passa a causar a condição Gravemente Envenenado. Um mesmo Pokémon pode manter até duas áreas de Toxic Spikes ativas simultaneamente. Caso tente criar uma terceira, a mais antiga desaparece automaticamente. Qualquer Pokémon do tipo Venenoso que esteja dentro de uma área de Toxic Spikes pode usar sua ação bônus para absorver todo o veneno presente nela, desfazendo essa área completamente. Quando faz isso, se usar um Move do tipo Venenoso no mesmo turno, esse Move causa mais um dado de dano. Esse bônus não é cumulativo. Pokémon elevados não sofrem o efeito deste Move. Pokémon elevados são quaisquer Pokémon do tipo Voador, aqueles sob os efeitos de Levitate, Eelevate, Magnet Rise ou Telekinesis, ou que estejam segurando um Air Balloon."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+effect_tags = Array[String](["hazard", "poison"])

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://clvtdpyp4jbdy"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_rtgu5"]
+
+[resource]
+script = ExtResource("1_rtgu5")
+dex_number = 617
+display_name = "Accelgor"
+id = "accelgor"
+types = Array[int]([11])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 72
+hit_dice = "d10"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 13,
+1: 20,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 3])
+abilities = Array[String](["Hydration", "Sticky Hold"])
+hidden_ability = "Unburden"
+level_moves = {
+2: ["Acid Spray"],
+3: ["Double Team"],
+5: ["Quick Attack"],
+6: ["Struggle Bug"],
+7: ["Mega Drain"],
+9: ["Swift"],
+10: ["Me First"],
+11: ["Agility"],
+13: ["Giga Drain"],
+14: ["U-turn"],
+15: ["Bug Buzz", "Recover"],
+16: ["Final Gambit", "Power Swap", "Toxic"]
+}
+starting_moves = Array[String](["Absorb", "Water Shuriken"])
+tms = Array[String](["tm_13", "tm_32", "tm_45", "tm_58", "tm_67", "tm_84", "tm_87", "tm_103", "tm_109", "tm_111", "tm_112", "tm_113", "tm_119", "tm_131", "tm_136", "tm_146", "tm_150", "tm_151", "tm_155", "tm_174", "tm_198", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_231", "tm_243", "tm_245", "tm_248", "tm_249", "tm_255", "tm_270", "tm_276", "tm_277", "tm_296", "tm_303", "tm_307"])
+egg_moves = Array[String](["Baton Pass", "Double-Edge", "Encore", "Endure", "Feint", "Guard Split", "Mind Reader", "Mud-Slap", "Pursuit", "Spikes", "Toxic Spikes"])

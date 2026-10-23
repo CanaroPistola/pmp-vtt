@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c3diuq7jmikk2"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ixd7d"]
+
+[resource]
+script = ExtResource("1_ixd7d")
+id = "spore"
+display_name = "Spore (Esporos)"
+name_en = "Spore"
+name_pt = "Esporos"
+type = 4
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 2
+range_category = 2
+range_distance = 4.5
+description = "Você libera uma nuvem de esporos em direção a um alvo em alcance. A criatura deve fazer um teste de CON contra sua CD de Move, adormecendo em caso de falha."
+range_text_raw = "(4,5 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([2])

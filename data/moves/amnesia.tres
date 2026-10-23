@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://drfay8ye7ewqq"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_de7oq"]
+
+[resource]
+script = ExtResource("1_de7oq")
+id = "amnesia"
+display_name = "Amnesia (Amnésia)"
+name_en = "Amnesia"
+name_pt = "Amnésia"
+type = 10
+move_time = "1 ação bônus"
+activation = 2
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Sua mente eleva-se a um novo nível de foco. Aumente sua Defesa Especial em 2 estágios, mas selecione um de seus Moves que não seja Amnésia. Você esquece esse Move e não pode usá-lo novamente. Este bônus pode ser acumulado até um máximo de 6 estágios, esquecendo até 3 Moves diferentes."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dd17wljfh65yg"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_kfugp"]
+
+[resource]
+script = ExtResource("1_kfugp")
+id = "knock_off"
+display_name = "Knock Off"
+name_en = "Knock Off"
+type = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você tenta tirar um item segurado por uma criatura pelo resto da batalha. Faça um ataque corpo a corpo contra um alvo, causando 2d6 + MOVE de dano sombrio em um acerto. Se o alvo estiver segurando um item, dobre os dados de dano, e qualquer item segurado pelo alvo desaparece. O item reaparece no inventário do alvo quando a batalha termina. Observação: Se o item for ativado ou consumido ao ser atacado, ele é ativado/consumido antes de ser roubado."
+scaling_text = "Os dados de dan o para este Move mudam para 1d20 no nível 5, 4d6 no nível 10 e 4d8 no nível 17. 148"
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+}
+}

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bhnr4qp5402rt"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_pqaly"]
+
+[resource]
+script = ExtResource("1_pqaly")
+dex_number = 522
+display_name = "Blitzle"
+id = "blitzle"
+types = Array[int]([3])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 9.0
+}
+attributes = {
+0: 10,
+1: 15,
+2: 11,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Lightning Rod", "Motor Drive"])
+hidden_ability = "Sap Sipper"
+evolves_to = Array[String](["zebstrika"])
+evolution_level = 9
+evolution_points = 14
+level_moves = {
+2: ["Tail Whip"],
+3: ["Charge"],
+4: ["Shock Wave"],
+5: ["Thunder Wave"],
+6: ["Flame Charge"],
+8: ["Pursuit"],
+9: ["Spark"],
+10: ["Stomp"],
+11: ["Discharge"],
+12: ["Agility"],
+13: ["Wild Charge"],
+15: ["Thrash"]
+}
+starting_moves = Array[String](["Quick Attack"])
+tms = Array[String](["tm_5", "tm_13", "tm_18", "tm_25", "tm_26", "tm_39", "tm_40", "tm_45", "tm_58", "tm_59", "tm_76", "tm_77", "tm_78", "tm_79", "tm_82", "tm_83", "tm_87", "tm_96", "tm_109", "tm_129", "tm_131", "tm_156", "tm_158", "tm_164", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_242", "tm_243", "tm_248", "tm_252", "tm_254", "tm_255", "tm_270", "tm_271", "tm_273", "tm_276", "tm_277", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294", "tm_296", "tm_298", "tm_305", "tm_308", "tm_315"])
+egg_moves = Array[String](["Double Kick", "Double-Edge", "Endure", "Feint", "Me First", "Rage", "Sand Attack", "Screech", "Shock Wave", "Snatch", "Take Down"])

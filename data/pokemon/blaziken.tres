@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://1y7uwc1tbgld"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0ogrm"]
+
+[resource]
+script = ExtResource("1_0ogrm")
+dex_number = 257
+display_name = "Blaziken"
+id = "blaziken"
+types = Array[int]([1, 6])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 15
+hit_points = 97
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 17,
+1: 19,
+2: 14,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Blaze"])
+hidden_ability = "Speed Boost"
+level_moves = {
+2: ["Ember"],
+4: ["Detect", "Sand Attack"],
+5: ["Peck"],
+7: ["Aerial Ace", "Flame Charge"],
+9: ["Quick Attack"],
+10: ["Bounce"],
+11: ["Bulk Up"],
+13: ["Focus Energy"],
+15: ["Brave Bird", "Reversal", "Slash"],
+16: ["Sky Uppercut"],
+17: ["Flare Blitz"]
+}
+starting_moves = Array[String](["Blaze Kick", "Double Kick", "Fire Punch", "Growl", "High Jump Kick", "Scratch"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_12", "tm_13", "tm_14", "tm_18", "tm_21", "tm_25", "tm_26", "tm_27", "tm_29", "tm_34", "tm_35", "tm_43", "tm_44", "tm_45", "tm_51", "tm_54", "tm_55", "tm_58", "tm_59", "tm_71", "tm_74", "tm_75", "tm_83", "tm_87", "tm_90", "tm_91", "tm_93", "tm_94", "tm_95", "tm_96", "tm_97", "tm_98", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_126", "tm_127", "tm_129", "tm_131", "tm_136", "tm_150", "tm_151", "tm_153", "tm_158", "tm_159", "tm_165", "tm_166", "tm_175", "tm_183", "tm_191", "tm_199", "tm_214", "tm_216", "tm_217", "tm_218", "tm_220", "tm_223", "tm_225", "tm_226", "tm_228", "tm_235", "tm_241", "tm_248", "tm_255", "tm_257", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_278", "tm_282", "tm_285", "tm_286", "tm_288", "tm_292", "tm_296", "tm_303", "tm_304", "tm_305", "tm_306", "tm_316", "tm_318"])
+egg_moves = Array[String](["Agility", "Baton Pass", "Counter", "Crush Claw", "Curse", "Endure", "Feather Dance", "Feint", "Flame Burst", "Last Resort", "Low Kick", "Night Slash", "Peck", "Reversal", "Smelling Salts"])

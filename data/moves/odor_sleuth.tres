@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://btl8cd7s62l1m"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_0wps5"]
+
+[resource]
+script = ExtResource("1_0wps5")
+id = "odor_sleuth"
+display_name = "Odor Sleuth"
+name_en = "Odor Sleuth"
+pp = 20
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você exala uma onda de energia em direção a uma criatura dentro do alcance, envolvendo -a com um odor característico. Role 1d20 + MOVE + 9 e compare o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, o alvo não pode se beneficiar de aumentos em sua Evasão. Além disso, se o alvo for do tipo Fantasma, ele passa a poder ser acertado por Moves dos tipos Normal e Lutador durante a duração. Observações: Este Move ignora Substitute."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([3, 4])

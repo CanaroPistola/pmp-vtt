@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://lo5xwctqdbu0"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_xfd8h"]
+
+[resource]
+script = ExtResource("1_xfd8h")
+dex_number = 855
+display_name = "Polteageist"
+id = "polteageist"
+types = Array[int]([13])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 50
+hit_dice = "d10"
+attributes = {
+0: 16,
+1: 13,
+2: 16,
+3: 8,
+4: 16,
+5: 10
+}
+skills = Array[int]([2, 5, 6])
+abilities = Array[String](["Weak Armor"])
+hidden_ability = "Cursed Body"
+level_moves = {
+6: ["Protect"],
+8: ["Sucker Punch"],
+10: ["Aromatherapy", "Sweet Scent"],
+12: ["Giga Drain"],
+14: ["Nasty Plot"],
+15: ["Shadow Ball"],
+16: ["Memento", "Shell Smash"],
+17: ["Curse"]
+}
+starting_moves = Array[String](["Aromatic Mist", "Astonish", "Mega Drain", "Strength Sap", "Teatime", "Withdraw"])
+tms = Array[String](["tm_18", "tm_38", "tm_46", "tm_51", "tm_52", "tm_83", "tm_87", "tm_106", "tm_112", "tm_113", "tm_130", "tm_136", "tm_145", "tm_156", "tm_163", "tm_171", "tm_178", "tm_180", "tm_184", "tm_186", "tm_188", "tm_194", "tm_199", "tm_200", "tm_202", "tm_207", "tm_212", "tm_214", "tm_228", "tm_239", "tm_240", "tm_244", "tm_248", "tm_255", "tm_261", "tm_268", "tm_270", "tm_286", "tm_300", "tm_301", "tm_316", "tm_317"])
+egg_moves = Array[String](["Ally Switch"])

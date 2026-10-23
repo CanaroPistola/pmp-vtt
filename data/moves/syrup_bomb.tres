@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bpv2jlc1etmmo"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_miqct"]
+
+[resource]
+script = ExtResource("1_miqct")
+id = "syrup_bomb"
+display_name = "Syrup Bomb"
+name_en = "Syrup Bomb"
+type = 4
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você provoca uma explosão de xarope doce e pegajoso sobre o alvo. Faça um ataque à distância -2 contra um alvo em alcance, causando 2d6 + MOVE de dano do tipo Grama em um acerto. Se acertar, o alvo fica coberto por xarope pegajoso e passa a perder 1 estágio de Velocidade ao final de cada turno pelos próximos 3 turnos. Acertos subsequentes deste Move não acumulam esse efeito, mas reiniciam a contagem para 3 turnos. Se você deixar o combate, a contagem de turnos é interrompida imediatamente. Se o alvo deixar o combate, todo o efeito é dissipado."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea, Enquanto ativo"
+role = 0
+move_power_attributes = Array[int]([1])
+move_power_modifier = -2
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

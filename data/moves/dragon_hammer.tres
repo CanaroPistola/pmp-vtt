@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ck4fvk35gi7sw"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_wsqxa"]
+
+[resource]
+script = ExtResource("1_wsqxa")
+id = "dragon_hammer"
+display_name = "Dragon Hammer (Martelo Dragão)"
+name_en = "Dragon Hammer"
+name_pt = "Martelo Dragão"
+type = 14
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+range_category = 4
+range_distance = 7.5
+description = "Você golpeia sua cabeça como um martelo para atacar uma criatura no alcance. Faça um ataque corpo a corpo contra o alvo, causando 3d6 + MOVE de dano do tipo dragão em um acerto. Acertando ou errando, todas as criaturas dentro da linha criada pelo ataque (com  / 1,5 metros de largura) devem fazer um teste de resistência de DES contra sua CD de Move, sofrendo o mesmo dano em caso de falha."
+scaling_text = "Os dados de dano para este Move mudam para 3d10 no nível 5, 3d12 no nível 10 e 4d12 no nível 17."
+range_text_raw = "Pessoal (linha de / 7,5 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}

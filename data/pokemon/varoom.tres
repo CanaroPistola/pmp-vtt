@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dr7xdqlf1al0r"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_notiy"]
+
+[resource]
+script = ExtResource("1_notiy")
+dex_number = 965
+display_name = "Varoom"
+id = "varoom"
+types = Array[int]([16, 7])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 10.5
+}
+attributes = {
+0: 14,
+1: 10,
+2: 15,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Overcoat"])
+hidden_ability = "Slow Start"
+evolves_to = Array[String](["revavroom"])
+evolution_level = 14
+evolution_points = 14
+level_moves = {
+2: ["Smog"],
+3: ["Taunt"],
+4: ["Assurance"],
+5: ["Sludge"],
+6: ["Gyro Ball"],
+7: ["Headbutt"],
+9: ["Screech"],
+10: ["Iron Head"],
+11: ["Swagger"],
+12: ["Poison Jab"],
+14: ["Uproar"],
+15: ["Gunk Shot", "Spin Out"]
+}
+starting_moves = Array[String](["Lick", "Poison Gas"])
+tms = Array[String](["tm_1", "tm_25", "tm_35", "tm_51", "tm_59", "tm_83", "tm_87", "tm_99", "tm_120", "tm_121", "tm_124", "tm_147", "tm_148", "tm_169", "tm_191", "tm_199", "tm_209", "tm_214", "tm_231", "tm_234", "tm_248", "tm_249", "tm_250", "tm_263", "tm_270", "tm_271", "tm_282", "tm_283", "tm_286", "tm_288", "tm_296", "tm_297", "tm_305", "tm_307", "tm_321"])
+egg_moves = Array[String](["Haze", "Parting Shot", "Self-Destruct", "Torment", "Toxic"])

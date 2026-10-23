@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cq1wfjnlhbsow"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_0vbnt"]
+
+[resource]
+script = ExtResource("1_0vbnt")
+id = "shell_trap"
+display_name = "Shell Trap"
+name_en = "Shell Trap"
+type = 1
+pp = 3
+move_time = "1 ação bônus"
+is_attack = true
+resolution = 1
+activation = 2
+range_category = 5
+range_distance = 3.0
+duration_is_permanent = true
+duration_flags = Array[String](["conditional"])
+description = "Você prepara uma armadilha de concha que explode quando entra em contato físico com um inimigo. Como ação bônus, ao ativar este Move, você prepara uma armadilha em si mesmo. Apenas uma armadilha pode estar ativa por vez. Enquanto ela estiver preparada, caso seja atingido por um ataque corpo a corpo, você pode usar sua reação para detoná -la. Ao ser detonada, todas as criaturas em um semicírculo de 10 pés (3 metros) de raio, centrado em você e voltado na direção em que recebeu o golpe, devem realizar um test e de DES contra sua CD de Move , com desvantagem, sofrendo 5d6 + MOVE de dano de fogo em caso de falha, ou metade disso em caso de sucesso. Quando a armadilha é detonada, você perde sua ação em seu próximo turno. Observações: Shell Trap não pode ser escolhido pelo Move Assist."
+scaling_text = "Os dados de dano para este Move mudam  para 5d8 no nível 5, 6d10 no nível 10 e 6d12 no nível 17."
+range_text_raw = "Pessoal (semicírculo de 3 metros)"
+duration_text_raw = "Até ser acionada"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 12,
+"move": true
+}
+}

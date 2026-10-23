@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bhkqwxpe7uci0"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_bo1sc"]
+
+[resource]
+script = ExtResource("1_bo1sc")
+id = "barrier"
+display_name = "Barrier"
+name_en = "Barrier"
+type = 10
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você cria um esc udo transparente de energia psíquica, aumentando sua Defesa em 2 estágios, podendo ser acumulado em até 6 estágios."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

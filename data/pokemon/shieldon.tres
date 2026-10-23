@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://mo3o7icup54o"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_etj6g"]
+
+[resource]
+script = ExtResource("1_etj6g")
+dex_number = 410
+display_name = "Shieldon"
+id = "shieldon"
+types = Array[int]([12, 16])
+sr = "3"
+evolution_stage = 1
+armor_class = 16
+hit_points = 19
+hit_dice = "d8"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 17,
+1: 9,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Sturdy"])
+hidden_ability = "Soundproof"
+evolves_to = Array[String](["bastiodon"])
+evolution_level = 10
+evolution_points = 13
+level_moves = {
+2: ["Taunt"],
+4: ["Metal Sound"],
+5: ["Take Down"],
+7: ["Iron Defense"],
+8: ["Swagger"],
+10: ["Ancient Power"],
+11: ["Endure"],
+13: ["Metal Burst"],
+14: ["Iron Head"],
+15: ["Heavy Slam"]
+}
+starting_moves = Array[String](["Protect", "Tackle"])
+tms = Array[String](["tm_13", "tm_22", "tm_25", "tm_35", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_83", "tm_87", "tm_91", "tm_97", "tm_99", "tm_104", "tm_109", "tm_123", "tm_128", "tm_131", "tm_139", "tm_147", "tm_148", "tm_149", "tm_164", "tm_169", "tm_175", "tm_196", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_221", "tm_222", "tm_223", "tm_224", "tm_225", "tm_228", "tm_230", "tm_231", "tm_234", "tm_235", "tm_242", "tm_248", "tm_251", "tm_255", "tm_262", "tm_263", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_282", "tm_283", "tm_286", "tm_290", "tm_294", "tm_295", "tm_296", "tm_298"])
+egg_moves = Array[String](["Body Slam", "Counter", "Curse", "Double-Edge", "Fissure", "Focus Energy", "Guard Split", "Headbutt", "Rock Blast", "Scary Face", "Screech", "Stealth Rock", "Wide Guard"])

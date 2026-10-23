@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://6rk7tc44c1br"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_o2u7b"]
+
+[resource]
+script = ExtResource("1_o2u7b")
+dex_number = 906
+display_name = "Sprigatito"
+id = "sprigatito"
+types = Array[int]([4])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 9.0,
+2: 6.0
+}
+attributes = {
+0: 10,
+1: 12,
+2: 10,
+3: 6,
+4: 13,
+5: 12
+}
+skills = Array[int]([0, 12])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Protean"
+evolves_to = Array[String](["floragato"])
+evolution_level = 6
+evolution_points = 7
+level_moves = {
+3: ["Bite"],
+4: ["Hone Claws"],
+5: ["Magical Leaf", "Quick Attack"],
+6: ["Seed Bomb"],
+7: ["U-turn"],
+9: ["Worry Seed"],
+10: ["Slash"],
+11: ["Energy Ball"],
+12: ["Play Rough"]
+}
+starting_moves = Array[String](["Leafage", "Scratch", "Tail Whip"])
+tms = Array[String](["tm_2", "tm_5", "tm_36", "tm_41", "tm_56", "tm_83", "tm_84", "tm_87", "tm_88", "tm_112", "tm_114", "tm_115", "tm_116", "tm_117", "tm_129", "tm_154", "tm_163", "tm_175", "tm_178", "tm_187", "tm_190", "tm_199", "tm_214", "tm_238", "tm_241", "tm_248", "tm_257", "tm_270", "tm_277", "tm_282", "tm_283", "tm_286", "tm_298", "tm_303"])
+egg_moves = Array[String](["Ally Switch", "Copycat", "Leech Seed", "Petal Blizzard", "Sucker Punch"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cyh8o480513tw"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_810oq"]
+
+[resource]
+script = ExtResource("1_810oq")
+id = "court_change"
+display_name = "Court Change"
+name_en = "Court Change"
+pp = 5
+move_time = "1 ação"
+range_category = 2
+range_distance = 18.0
+description = "Você usa um poder misterioso para trocar entre si os efeitos presentes de cada lado do campo. Ao ativar este Move, você pode tomar para si quaisquer barreiras inimigas ativas (Reflect, Light Screen ou Aurora Veil), ou ainda reposicionar qualquer área de efeito atualmente em campo, desde que esteja dentro do seu alcance. Os seguintes Moves podem ser afetados por Court Change: Reflect, Light Screen, Aurora Veil, Fire Pledge, Grass Pledge, Water Pledge, Mist, Safeguard, Stealth Rock, Spikes, Sticky Web, Toxic Spikes, Tailwind, G-Max Steelsurge, G-Max Stonesurge, G-Max Resonance, G- Max Volcalith, G-Max Vine Lash, G-Max Wildfire,"
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"

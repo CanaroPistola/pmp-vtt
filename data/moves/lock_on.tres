@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ca21xk8vsrt4c"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_jfxep"]
+
+[resource]
+script = ExtResource("1_jfxep")
+id = "lock_on"
+display_name = "Lock-On (Mira)"
+name_en = "Lock-On"
+name_pt = "Mira"
+pp = 3
+move_time = "1 ação"
+range_category = 2
+range_distance = 18.0
+description = "Você mira em seu alvo, marcando-o com um foco que garante que seu próximo Move não erre. Escolha um alvo em alcance ao ativar este Move. Um único ataque que você fizer no próximo turno é garantido de acertar este alvo, desde que você ainda possa vê-lo e ele esteja dentro do seu alcance. Você ainda pode rolar o dado para ver se acerta um ataque crítico ou causa um efeito a partir de uma rolagem. Você também pode usar este Move em um aliado."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"

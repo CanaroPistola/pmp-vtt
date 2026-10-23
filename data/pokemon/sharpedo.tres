@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://sicg6khoplpu"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0wupo"]
+
+[resource]
+script = ExtResource("1_0wupo")
+dex_number = 319
+display_name = "Sharpedo"
+id = "sharpedo"
+types = Array[int]([2, 15])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 72
+hit_dice = "d10"
+movement = {
+0: 1.5,
+1: 12.0
+}
+attributes = {
+0: 16,
+1: 20,
+2: 14,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 8])
+abilities = Array[String](["Rough Skin"])
+hidden_ability = "Speed Boost"
+level_moves = {
+2: ["Rage"],
+3: ["Focus Energy"],
+4: ["Aqua Jet"],
+5: ["Assurance"],
+6: ["Screech"],
+8: ["Swagger"],
+9: ["Ice Fang"],
+10: ["Scary Face"],
+12: ["Poison Fang"],
+14: ["Crunch"],
+15: ["Agility", "Liquidation"],
+16: ["Skull Bash", "Take Down", "Taunt"],
+17: ["Night Slash"]
+}
+starting_moves = Array[String](["Bite", "Feint", "Leer", "Slash"])
+tms = Array[String](["tm_12", "tm_13", "tm_16", "tm_22", "tm_26", "tm_30", "tm_35", "tm_45", "tm_52", "tm_57", "tm_58", "tm_74", "tm_87", "tm_101", "tm_109", "tm_113", "tm_122", "tm_131", "tm_136", "tm_139", "tm_140", "tm_144", "tm_157", "tm_186", "tm_191", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_220", "tm_225", "tm_228", "tm_232", "tm_233", "tm_234", "tm_236", "tm_248", "tm_253", "tm_255", "tm_261", "tm_270", "tm_272", "tm_275", "tm_276", "tm_277", "tm_283", "tm_288", "tm_295", "tm_296", "tm_305", "tm_311", "tm_312", "tm_314", "tm_321"])
+egg_moves = Array[String](["Ancient Power", "Brine", "Destiny Bond", "Double-Edge", "Hydro Pump", "Psychic Fangs", "Swift", "Thrash", "Water Pulse"])

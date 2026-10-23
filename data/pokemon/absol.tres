@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bgrus78qte31s"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6rhox"]
+
+[resource]
+script = ExtResource("1_6rhox")
+dex_number = 359
+display_name = "Absol"
+id = "absol"
+types = Array[int]([15])
+sr = "12"
+min_level = 10
+evolution_stage = 1
+armor_class = 15
+hit_points = 75
+hit_dice = "d10"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 15,
+1: 20,
+2: 15,
+3: 8,
+4: 16,
+5: 10
+}
+skills = Array[int]([9, 17])
+senses = Array[Dictionary]([{
+"range_m": 4.5,
+"type": 2
+}])
+abilities = Array[String](["Pressure", "Super Luck"])
+hidden_ability = "Justified"
+level_moves = {
+2: ["Leer"],
+3: ["Quick Attack"],
+4: ["Knock Off", "Pursuit"],
+5: ["Taunt"],
+6: ["Bite"],
+7: ["Double Team"],
+8: ["Slash"],
+9: ["Swords Dance"],
+10: ["Night Slash"],
+11: ["Detect"],
+12: ["Focus Energy"],
+13: ["Psycho Cut"],
+14: ["Me First"],
+15: ["Razor Wind", "Sucker Punch"],
+16: ["Future Sight", "Perish Song"]
+}
+starting_moves = Array[String](["Feint", "Scratch"])
+tms = Array[String](["tm_3", "tm_7", "tm_12", "tm_13", "tm_22", "tm_26", "tm_31", "tm_38", "tm_40", "tm_45", "tm_52", "tm_58", "tm_69", "tm_75", "tm_87", "tm_89", "tm_91", "tm_97", "tm_106", "tm_109", "tm_113", "tm_122", "tm_130", "tm_131", "tm_136", "tm_139", "tm_144", "tm_149", "tm_150", "tm_151", "tm_161", "tm_186", "tm_199", "tm_201", "tm_206", "tm_209", "tm_214", "tm_215", "tm_216", "tm_223", "tm_225", "tm_226", "tm_228", "tm_231", "tm_240", "tm_241", "tm_242", "tm_248", "tm_253", "tm_254", "tm_255", "tm_261", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_278", "tm_283", "tm_288", "tm_289", "tm_290", "tm_293", "tm_294", "tm_295", "tm_296", "tm_311", "tm_316", "tm_320", "tm_321"])
+egg_moves = Array[String](["Assurance", "Baton Pass", "Bite", "Curse", "Double-Edge", "Feint", "Feint Attack", "Hex", "Magic Coat", "Me First", "Mean Look", "Megahorn", "Perish Song", "Play Rough", "Punishment", "Sucker Punch", "Zen Headbutt"])

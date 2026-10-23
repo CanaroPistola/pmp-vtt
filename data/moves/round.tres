@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://doi6ysehdniip"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_tdug0"]
+
+[resource]
+script = ExtResource("1_tdug0")
+id = "round"
+display_name = "Round (Rotação)"
+name_en = "Round"
+name_pt = "Rotação"
+move_time = "1 ação / reação"
+resolution = 2
+has_save = true
+save_attribute = 4
+activation = 3
+range_category = 2
+range_distance = 12.0
+description = "Você solta uma melodia ressonante que toma forma em ondas sonoras coloridas, amplificando-se quando mais vozes se unem ao canto. Selecione um alvo no alcance e force-o a fazer um teste de resistência de SAB contra sua CD de Move. Em uma falha, o alvo sofre 2d6 + MOVE de dano normal. Se um aliado ao seu alcance e no alcance do alvo também conhecer este Move, ele pode se juntar à canção como uma reação para dobrar os dados de dano, abrindo mão da ação dele no próximo turno. Não é possível acumular mais de 2 usuários neste Move. Observações: Round é um Move baseado em som."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([5, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["sleep"])

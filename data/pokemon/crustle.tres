@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cttuwemmhqy8l"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_8qwjb"]
+
+[resource]
+script = ExtResource("1_8qwjb")
+dex_number = 558
+display_name = "Crustle"
+id = "crustle"
+types = Array[int]([11, 12])
+sr = "10"
+min_level = 5
+evolution_stage = 2
+armor_class = 18
+hit_points = 55
+hit_dice = "d12"
+movement = {
+0: 7.5,
+2: 4.5
+}
+attributes = {
+0: 18,
+1: 13,
+2: 17,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 1
+}])
+abilities = Array[String](["Sturdy", "Shell Armor"])
+hidden_ability = "Weak Armor"
+level_moves = {
+2: ["Rock Blast"],
+3: ["Withdraw"],
+4: ["Sand Attack"],
+5: ["Feint Attack"],
+6: ["Smack Down"],
+7: ["Rock Polish"],
+8: ["Bug Bite", "Stealth Rock"],
+10: ["Rock Slide"],
+11: ["Slash"],
+13: ["X-Scissor"],
+15: ["Flail", "Shell Smash"],
+16: ["Rock Wrecker"]
+}
+tms = Array[String](["tm_3", "tm_13", "tm_23", "tm_32", "tm_35", "tm_45", "tm_55", "tm_58", "tm_74", "tm_87", "tm_109", "tm_113", "tm_131", "tm_136", "tm_147", "tm_150", "tm_170", "tm_179", "tm_191", "tm_199", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_241", "tm_245", "tm_248", "tm_251", "tm_255", "tm_257", "tm_258", "tm_262", "tm_266", "tm_267", "tm_270", "tm_276", "tm_278", "tm_296", "tm_320"])
+egg_moves = Array[String](["Block", "Counter", "Curse", "Endure", "Iron Defense", "Knock Off", "Night Slash", "Rototiller", "Sand Tomb", "Spikes", "Wide Guard"])

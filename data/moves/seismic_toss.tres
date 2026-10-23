@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ddbwv3kjve43r"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_3pb0a"]
+
+[resource]
+script = ExtResource("1_3pb0a")
+id = "seismic_toss"
+display_name = "Seismic Toss"
+name_en = "Seismic Toss"
+type = 6
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você tenta arremessar uma criatura no chão com força tremenda. Faça uma rolagem de ataque corpo a corpo contra um alvo. Em um acerto, o alvo sofre dano fixo do tipo Lutador igual ao nível do usuário + seu bônus de proficiência, independente do tipo do alvo (não há resistências ou super efetivos, porém não causa dano quando há imunidade). Esse dano não pode ser aumentado ou reduzido por nenhuma fonte,  incluindo STAB, itens, condições, habilidades (de Pokémon ou Treinador), outros Moves ou acertos críticos."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0])

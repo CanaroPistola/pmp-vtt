@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://db6wwtf8ttlse"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_whe7t"]
+
+[resource]
+script = ExtResource("1_whe7t")
+dex_number = 594
+display_name = "Alomomola"
+id = "alomomola"
+types = Array[int]([2])
+sr = "9"
+min_level = 5
+evolution_stage = 1
+armor_class = 13
+hit_points = 65
+hit_dice = "d12"
+movement = {
+0: 1.5,
+1: 9.0
+}
+attributes = {
+0: 12,
+1: 14,
+2: 22,
+3: 6,
+4: 10,
+5: 14
+}
+skills = Array[int]([11, 17])
+abilities = Array[String](["Healer", "Hydration"])
+hidden_ability = "Regenerator"
+level_moves = {
+2: ["Aqua Ring"],
+3: ["Aqua Jet"],
+5: ["Double Slap"],
+6: ["Heal Pulse"],
+7: ["Protect"],
+9: ["Water Pulse"],
+10: ["Wake-Up Slap"],
+11: ["Soak"],
+13: ["Wish"],
+14: ["Brine"],
+15: ["Safeguard", "Whirlpool"],
+16: ["Healing Wish", "Helping Hand"],
+17: ["Hydro Pump", "Wide Guard"]
+}
+starting_moves = Array[String](["Play Nice", "Pound", "Water Sport"])
+tms = Array[String](["tm_2", "tm_8", "tm_13", "tm_18", "tm_22", "tm_25", "tm_26", "tm_38", "tm_42", "tm_45", "tm_58", "tm_83", "tm_87", "tm_101", "tm_109", "tm_113", "tm_122", "tm_129", "tm_131", "tm_135", "tm_136", "tm_139", "tm_144", "tm_150", "tm_156", "tm_157", "tm_161", "tm_173", "tm_184", "tm_190", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_232", "tm_233", "tm_240", "tm_244", "tm_248", "tm_255", "tm_256", "tm_270", "tm_275", "tm_276", "tm_282", "tm_286", "tm_296", "tm_311", "tm_312", "tm_314", "tm_321"])
+egg_moves = Array[String](["Bounce", "Endure", "Mirror Coat", "Mist", "Pain Split", "Refresh", "Tickle"])

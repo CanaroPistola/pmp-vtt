@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dvoo1ts5s4uk"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4obey"]
+
+[resource]
+script = ExtResource("1_4obey")
+dex_number = 788
+display_name = "Tapu Fini"
+id = "tapu_fini"
+types = Array[int]([2, 17])
+sr = "15"
+min_level = 15
+evolution_stage = 1
+armor_class = 19
+hit_points = 380
+hit_dice = "d20"
+movement = {
+1: 15.0
+}
+attributes = {
+0: 20,
+1: 16,
+2: 20,
+3: 12,
+4: 16,
+5: 18
+}
+skills = Array[int]([4, 13, 14])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 12.0,
+"type": 2
+}])
+abilities = Array[String](["Misty Surge"])
+hidden_ability = "Telepathy"
+level_moves = {
+3: ["Water Pulse"],
+5: ["Whirlpool"],
+7: ["Soak"],
+9: ["Refresh"],
+11: ["Brine"],
+13: ["Defog"],
+14: ["Surf"],
+15: ["Muddy Water", "Nature’s Madness"],
+16: ["Aqua Ring", "Hydro Pump"]
+}
+starting_moves = Array[String](["Haze", "Heal Pulse", "Mean Look", "Mist", "Misty Terrain", "Moonblast", "Water Gun", "Withdraw"])
+tms = Array[String](["tm_22", "tm_30", "tm_38", "tm_45", "tm_53", "tm_54", "tm_57", "tm_58", "tm_68", "tm_75", "tm_87", "tm_100", "tm_109", "tm_113", "tm_114", "tm_118", "tm_119", "tm_131", "tm_136", "tm_139", "tm_141", "tm_144", "tm_147", "tm_150", "tm_156", "tm_161", "tm_162", "tm_173", "tm_179", "tm_199", "tm_201", "tm_209", "tm_212", "tm_214", "tm_216", "tm_228", "tm_229", "tm_232", "tm_240", "tm_248", "tm_252", "tm_255", "tm_270", "tm_275", "tm_276", "tm_283", "tm_284", "tm_295", "tm_296", "tm_300", "tm_311", "tm_312", "tm_314", "tm_317"])

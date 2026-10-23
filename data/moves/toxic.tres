@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bkpc2g53e20oo"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_6jdue"]
+
+[resource]
+script = ExtResource("1_6jdue")
+id = "toxic"
+display_name = "Toxic"
+name_en = "Toxic"
+type = 7
+pp = 5
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 7
+status_roll_target_attribute = 2
+range_category = 2
+range_distance = 6.0
+description = "Você lança uma chuva intensa de veneno contra uma criatura dentro do alcance. Role 1d20 + MOVE  + 7 e compare o resultado com 10 + CON do alvo. Em um resultado maior ou igual, o alvo fica Gravemente Envenenado. Caso este Move seja usado por um Pokémon do tipo Venenoso, ele acerta automaticamente."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([2])
+effect_tags = Array[String](["poison"])

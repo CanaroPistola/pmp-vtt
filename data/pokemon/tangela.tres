@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dmtqmie68uo22"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ilujg"]
+
+[resource]
+script = ExtResource("1_ilujg")
+dex_number = 114
+display_name = "Tangela"
+id = "tangela"
+types = Array[int]([4])
+sr = "5"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 35
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 15,
+1: 14,
+2: 15,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([12])
+abilities = Array[String](["Chlorophyll", "Leaf Guard"])
+hidden_ability = "Regenerator"
+evolves_to = Array[String](["tangrowth"])
+evolution_level = 1
+evolution_points = 5
+level_moves = {
+2: ["Sleep Powder"],
+3: ["Vine Whip"],
+4: ["Absorb"],
+5: ["Poison Powder"],
+6: ["Bind"],
+7: ["Growth"],
+8: ["Mega Drain"],
+9: ["Knock Off"],
+10: ["Stun Spore"],
+11: ["Natural Gift"],
+12: ["Giga Drain"],
+13: ["Ancient Power"],
+14: ["Slam"],
+15: ["Grassy Terrain", "Power Whip", "Tickle", "Wring Out"]
+}
+starting_moves = Array[String](["Constrict", "Ingrain"])
+tms = Array[String](["tm_13", "tm_20", "tm_36", "tm_45", "tm_58", "tm_82", "tm_84", "tm_87", "tm_109", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_131", "tm_136", "tm_146", "tm_150", "tm_179", "tm_184", "tm_198", "tm_199", "tm_201", "tm_212", "tm_214", "tm_216", "tm_224", "tm_228", "tm_238", "tm_242", "tm_248", "tm_249", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_288", "tm_296", "tm_319"])
+egg_moves = Array[String](["Amnesia", "Confusion", "Endeavor", "Flail", "Giga Drain", "Leaf Storm", "Leech Seed", "Mega Drain", "Natural Gift", "Nature Power", "Power Swap", "Rage Powder", "Wake-Up Slap"])

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://eaiycijo7v7n"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_p4uky"]
+
+[resource]
+script = ExtResource("1_p4uky")
+id = "nihil_light"
+display_name = "Nihil Light (Luz do Vazio)"
+name_en = "Nihil Light"
+name_pt = "Luz do Vazio"
+type = 14
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 4
+range_distance = 60.0
+description = "Você ataca liberando uma luz poderosa que desafia todas as leis da natureza, em uma linha de 200 pés (60 metros) de comprimento e 15 pés (4,5 metros) de largura. Qualquer criatura pega na linha deve ter sucesso em um teste de DES contra sua CD de Move, sofrendo 4d10 + MOVE de dano do tipo Dragão em caso de falha, e metade em um sucesso. Este Move ignora Mudanças de Status do alvo, Moves de proteção (como Protect ou Detect), e também ignora a imunidade de Pokémon do tipo Fada a Moves do tipo Dragão, causando dano neutro.      Observações: Se usado em um Pokémon de tipo duplo que tenha Fada como um de seus tipos, o cálculo de dano levará em conta apenas o outro tipo (por exemplo, um Pokémon de tipo duplo Fada/Dragão será tratado apenas como tipo Dragão, e Nihil Light será super efetivo)."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "Pessoal (linha de 60 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 8,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 10,
+"dice_max": 10,
+"move": true
+}
+}

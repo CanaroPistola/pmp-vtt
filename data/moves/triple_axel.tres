@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://56dx0o0fkg5v"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_688bc"]
+
+[resource]
+script = ExtResource("1_688bc")
+id = "triple_axel"
+display_name = "Triple Axel"
+name_en = "Triple Axel"
+type = 5
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+description = "Você gira e desfere três chutes consecutivos no oponente, aumentando a força a cada golpe e expandindo o alcance a cada salto. Faça 3 ataques corpo a corpo -1 contra o mesmo alvo. O primeiro golpe causa 1d4 + MOVE de dano do tipo gelo. Os golpes seguintes multiplicam seus dados de dano em x2 e x3, respectivamente. Além disso, todas as criaturas ao redor do alvo em um raio de 10 pés (3 metros) no segundo golpe e 20 pés (6 metros) no terceiro golpe devem fazer um teste de DES contra sua CD de Move, recebendo o mesmo dano do respectivo golpe em um sucesso, ou metade em uma falha."
+scaling_text = "Os dados de dano para este Move mudam para 1d6 no nível 5, 1d8 no nível 10 e 1d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["multi_hit"])

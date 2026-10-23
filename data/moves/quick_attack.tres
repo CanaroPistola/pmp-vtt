@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bapp5mjehld44"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_6vpy8"]
+
+[resource]
+script = ExtResource("1_6vpy8")
+id = "quick_attack"
+display_name = "Quick Attack (Ataque Rápido)"
+name_en = "Quick Attack"
+name_pt = "Ataque Rápido"
+pp = 15
+move_time = "1 ação / reação"
+is_attack = true
+resolution = 1
+activation = 3
+description = "Você dispara em alta velocidade, seja para se reposicionar ou atacar. Como uma ação, você pode se mover imediatamente até 10 pés (3 metros) sem provocar ataques de oportunidade, e realizar um ataque corpo a corpo, causando 2d4 + MOVE de dano do tipo Normal em um acerto. Este Move também pode ser usado como reação para ser executado a qualquer momento da rodada, desde que ocorra fora do turno de outra criatura e antes do início do seu turno. Se usar esta reação, você perde a ação padrão do seu próximo turno. Este Move é classificado como Prioridade 1. Caso outra criatura utilize um Move de Prioridade 1 no mesmo momento, a ordem de execução é determinada pela Destreza (ou por uma rolagem, em caso de empate). Moves com valores mais altos de Prioridade são sempre executados antes."
+scaling_text = "Os dados de dano para este Move mudam para 1d12 no nível 5, 4d4 no nível 10 e 2d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+}
+}

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c0sgouy5tu8d3"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_i1e46"]
+
+[resource]
+script = ExtResource("1_i1e46")
+id = "defense_curl"
+display_name = "Defense Curl (Espiral de Defesa)"
+name_en = "Defense Curl"
+name_pt = "Espiral de Defesa"
+pp = 20
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você se enrola em formato esférico, aumentando sua Defesa em 1 estágio, podendo ser acumulado em até 6 estágios. Ao ativar Defense Curl, enquanto você permanecer em batalha e até ser trocado, dobre os dados de dano dos Moves Rollout ou Ice Ball."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://2ifld4asg1m7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_u3ned"]
+
+[resource]
+script = ExtResource("1_u3ned")
+dex_number = 701
+display_name = "Hawlucha"
+id = "hawlucha"
+types = Array[int]([6, 9])
+sr = "11"
+min_level = 8
+evolution_stage = 1
+armor_class = 16
+hit_points = 86
+hit_dice = "d10"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 16,
+1: 18,
+2: 16,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0, 3])
+abilities = Array[String](["Limber", "Unburden"])
+hidden_ability = "Mold Breaker"
+level_moves = {
+2: ["Karate Chop"],
+3: ["Wing Attack"],
+4: ["Roost"],
+6: ["Aerial Ace"],
+7: ["Encore"],
+8: ["Brick Break", "Fling", "Submission"],
+10: ["Flying Press"],
+11: ["Bounce", "Taunt"],
+12: ["Endeavor"],
+14: ["Feather Dance"],
+15: ["High Jump Kick", "Sky Attack"],
+16: ["Sky Drop", "Swords Dance"]
+}
+starting_moves = Array[String](["Detect", "Hone Claws", "Tackle"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_9", "tm_12", "tm_13", "tm_18", "tm_24", "tm_25", "tm_26", "tm_27", "tm_29", "tm_34", "tm_43", "tm_44", "tm_45", "tm_54", "tm_55", "tm_58", "tm_67", "tm_71", "tm_72", "tm_81", "tm_82", "tm_83", "tm_87", "tm_89", "tm_90", "tm_94", "tm_100", "tm_102", "tm_103", "tm_105", "tm_109", "tm_113", "tm_114", "tm_129", "tm_131", "tm_136", "tm_148", "tm_151", "tm_153", "tm_158", "tm_159", "tm_160", "tm_165", "tm_166", "tm_186", "tm_191", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_217", "tm_218", "tm_223", "tm_225", "tm_227", "tm_228", "tm_246", "tm_247", "tm_248", "tm_255", "tm_265", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_278", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_292", "tm_295", "tm_296", "tm_298", "tm_303", "tm_304", "tm_305", "tm_318", "tm_320", "tm_321"])
+egg_moves = Array[String](["Agility", "Ally Switch", "Baton Pass", "Cross Chop", "Defog", "Entrainment", "Feint", "Me First", "Mean Look", "Mud Sport", "Quick Guard"])

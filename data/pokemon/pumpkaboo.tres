@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://xgdw2hqi5knj"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wscou"]
+
+[resource]
+script = ExtResource("1_wscou")
+dex_number = 710
+display_name = "Pumpkaboo"
+id = "pumpkaboo"
+types = Array[int]([13, 4])
+sr = "2"
+evolution_stage = 1
+armor_class = 14
+hit_points = 17
+movement = {
+0: 6.0
+}
+attributes = {
+0: 14,
+1: 14,
+2: 12,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([5])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Pickup", "Frisk"])
+hidden_ability = "Insomnia"
+evolves_to = Array[String](["gourgeist"])
+evolution_level = 12
+evolution_points = 9
+level_moves = {
+2: ["Scary Face", "Trick-or-Treat"],
+4: ["Worry Seed"],
+6: ["Razor Leaf"],
+7: ["Leech Seed"],
+9: ["Bullet Seed"],
+10: ["Shadow Sneak"],
+12: ["Shadow Ball"],
+14: ["Pain Split"],
+15: ["Seed Bomb"]
+}
+starting_moves = Array[String](["Trick", "Astonish", "Confuse Ray"])
+tms = Array[String](["tm_9", "tm_13", "tm_36", "tm_40", "tm_45", "tm_52", "tm_58", "tm_69", "tm_84", "tm_86", "tm_87", "tm_91", "tm_96", "tm_97", "tm_106", "tm_109", "tm_112", "tm_114", "tm_116", "tm_121", "tm_130", "tm_131", "tm_145", "tm_156", "tm_161", "tm_177", "tm_179", "tm_184", "tm_194", "tm_199", "tm_202", "tm_214", "tm_216", "tm_223", "tm_226", "tm_228", "tm_229", "tm_234", "tm_238", "tm_240", "tm_244", "tm_245", "tm_248", "tm_249", "tm_255", "tm_257", "tm_261", "tm_270", "tm_271", "tm_276", "tm_279", "tm_284", "tm_288", "tm_296", "tm_300", "tm_301", "tm_316", "tm_319"])
+egg_moves = Array[String](["Bestow", "Curse", "Destiny Bond", "Disable"])
+is_variant = true
+variant_data = {
+"Tamanho Grande": {
+"diff": {
+"attributes": {
+"CON": 15,
+"DEX": 12
+}
+},
+"display_name": "Pumpkaboo Tamanho Grande",
+"is_default": false
+},
+"Tamanho Médio": {
+"diff": {
+"attributes": {
+"CON": 14,
+"DEX": 13
+},
+"moves_diff": {
+"level_moves": {
+2: ["Scary Face"],
+4: ["Worry Seed"],
+6: ["Razor Leaf"],
+7: ["Leech Seed"],
+9: ["Bullet Seed"],
+10: ["Shadow Sneak"],
+12: ["Shadow Ball"],
+14: ["Pain Split", "Trick-or-Treat"],
+15: ["Seed Bomb"]
+},
+"starting_moves": ["Astonish", "Confuse Ray", "Trick"]
+}
+},
+"display_name": "Pumpkaboo Tamanho Médio",
+"is_default": false
+},
+"Tamanho Pequeno": {
+"diff": {},
+"display_name": "Pumpkaboo Tamanho Pequeno",
+"is_default": true
+},
+"Tamanho Super": {
+"diff": {
+"attributes": {
+"CON": 16,
+"DEX": 11
+}
+},
+"display_name": "Pumpkaboo Tamanho Super",
+"is_default": false
+}
+}

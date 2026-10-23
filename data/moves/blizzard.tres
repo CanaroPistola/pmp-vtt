@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dq248n8m5dymv"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_k2k7p"]
+
+[resource]
+script = ExtResource("1_k2k7p")
+id = "blizzard"
+display_name = "Blizzard (Nevasca)"
+name_en = "Blizzard"
+name_pt = "Nevasca"
+type = 5
+pp = 3
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 3
+range_distance = 12.0
+description = "Uma rajada de vento congelante é exalada pelo usuário em um cone, cobrindo a área com neve e gelo cortante. Qualquer criatura pega no cone deve ter sucesso em um teste de DES contra sua CD de Move -3, sofrendo 2d12 + MOVE de dano de gelo em caso de falha, ou metade disso em caso de sucesso. Qualquer criatura que falhar no teste por 10 ou mais, ou rolar um resultado natural de 1 ou 2 no teste, se torna congelada."
+scaling_text = "Os dados de dano para este Move mudam para 4d8 no nível 5, 4d12 no nível 10 e 7d8 no nível 17."
+range_text_raw = "Pessoal (cone de 12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -3
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 12,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 7,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["freeze"])

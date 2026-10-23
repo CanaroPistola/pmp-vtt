@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bt2npewngmec"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_bbyfo"]
+
+[resource]
+script = ExtResource("1_bbyfo")
+id = "beak_blast"
+display_name = "Beak Blast (Bico Explosivo)"
+name_en = "Beak Blast"
+name_pt = "Bico Explosivo"
+type = 9
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 4
+range_distance = 15.0
+description = "Você aquece o bico, pressurizando o vento, e dispara um poderoso feixe contra o alvo. Quando você ativa este Move, você gasta sua ação para aquecer seu bico. Se for atingido por um ataque corpo a corpo antes da ação do seu próximo turno, o atacante é queimado. Em seu próximo turno, dispare um feixe em uma linha de 15 metros, com  (1,5 metros) de largura. Qualquer criatura pega na linha deve fazer um teste de resistência de DES contra sua CD de Move, sofrendo 2d10 + MOVE de dano voador em caso de falha, ou metade disso em caso de sucesso."
+scaling_text = "Os dados de dano para esse Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "Pessoal (linha de 15 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["burn"])

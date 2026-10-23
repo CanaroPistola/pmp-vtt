@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://kjsnf2otwn05"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0nvye"]
+
+[resource]
+script = ExtResource("1_0nvye")
+dex_number = 953
+display_name = "Rellor"
+id = "rellor"
+types = Array[int]([11])
+sr = "1/8"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 7.5
+}
+attributes = {
+0: 13,
+1: 8,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 12, 17])
+abilities = Array[String](["Compound Eyes"])
+hidden_ability = "Shed Skin"
+evolves_to = Array[String](["rabsca"])
+evolution_level = 7
+evolution_points = 14
+level_moves = {
+2: ["Sand Attack"],
+3: ["Struggle Bug"],
+4: ["Rollout"],
+5: ["Mud Shot"],
+7: ["Bug Bite"],
+8: ["Take Down"],
+10: ["Dig"],
+12: ["Lunge"]
+}
+starting_moves = Array[String](["Defense Curl", "Tackle"])
+tms = Array[String](["tm_32", "tm_33", "tm_55", "tm_83", "tm_87", "tm_100", "tm_120", "tm_147", "tm_155", "tm_160", "tm_174", "tm_175", "tm_195", "tm_199", "tm_214", "tm_225", "tm_245", "tm_248", "tm_249", "tm_269", "tm_270", "tm_282", "tm_286", "tm_288", "tm_313", "tm_320"])
+egg_moves = Array[String](["Cosmic Power", "Memento", "Recover", "Weather Ball"])

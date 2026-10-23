@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://4ncsh8br854k"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_rqxoh"]
+
+[resource]
+script = ExtResource("1_rqxoh")
+id = "grass_pledge"
+display_name = "Grass Pledge (Pilar de Grama)"
+name_en = "Grass Pledge"
+name_pt = "Pilar de Grama"
+type = 4
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Você faz brotar do solo uma densa massa de cipós e folhas afiadas, que se erguem em um redemoinho ao redor da criatura alvo. Faça um ataque à distância, causando 4d4 + MOVE de dano de grama em um acerto. Antes de realizar este ataque, se estiver em combate ao lado de um aliado que também esteja em alcance do alvo, você pode anunciar a intenção de formar um combo. Se esse aliado conhecer Fire Pledge ou Water Pledge, ele pode optar por usar o Move agora, gastando previamente a ação de seu próximo turno para combinar os ataques conforme as opções abaixo. Ao fazer isso, o teste de ataque passará a ser feito pelo aliado. Se o combo for declarado, mas o aliado não puder agir (ex: paralisia) ou errar o ataque, nenhum dos dois Moves será executado. O STAB sempre será contabilizado por ambos os usuários, caso haja (porém cada combinação é de um tipo único). Confira os combos no livro."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 4d10 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["paralysis"])

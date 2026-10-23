@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bhfknu33lfk5s"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ciefu"]
+
+[resource]
+script = ExtResource("1_ciefu")
+id = "thousand_waves"
+display_name = "Thousand Waves (Mil Ondas)"
+name_en = "Thousand Waves"
+name_pt = "Mil Ondas"
+type = 8
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 3
+range_distance = 18.0
+description = "Uma onda de energia verde percorre o campo de batalha em um cone de 60 pés (18 metros), centrado em você. Qualquer criatura pega na onda deve fazer um teste de resistência de DES contra sua CD de Move, sofrendo 3d6 + MOVE de dano de terra em caso de falha, ou a metade disso em caso de sucesso. Qualquer criatura que falhe na rolagem de resistência não pode fugir, ser trocada ou se afastar de você para além do alcance. O usuário, porém, pode se mover livremente, e caso o alvo saia do alcance devido à movimentação do usuário, ele deixa de ser afetado. O efeito dura enquanto você permanecer em combate. Isso não impede os efeitos de Moves, habilidades passivas ou itens que forçam a substituição do alvo, como Dragon Tail, Whirlwind ou Eject Button."
+scaling_text = "Os dados de dano para este Move mudam para 3d10 no nível 5, 3d12 no nível 10 e 4d12 no nível 17."
+range_text_raw = "Pessoal (cone de 18 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 4])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 12,
+"move": true
+}
+}

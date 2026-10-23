@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://d02on4w8w2r5n"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_wg4nq"]
+
+[resource]
+script = ExtResource("1_wg4nq")
+id = "power_trick"
+display_name = "Power Trick (Truque da Troca)"
+name_en = "Power Trick"
+name_pt = "Truque da Troca"
+type = 10
+pp = 5
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você utiliza seu poder psíquico para trocar seu próprio ataque e defesa. Ao ativar este Move, troque sua CA com um valor de atributo de sua escolha (Constituição não incluída)."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"

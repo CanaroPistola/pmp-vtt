@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cjvdq1aa12ks4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wsflw"]
+
+[resource]
+script = ExtResource("1_wsflw")
+dex_number = 964
+display_name = "Palafin"
+id = "palafin"
+types = Array[int]([2])
+sr = "10"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 80
+hit_dice = "d10"
+attributes = {
+0: 14,
+1: 16,
+2: 15,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([0, 9, 13])
+abilities = Array[String](["Zero to Hero"])
+level_moves = {
+3: ["Astonish"],
+4: ["Focus Energy"],
+5: ["Aqua Jet"],
+6: ["Double Hit"],
+7: ["Dive"],
+9: ["Charm"],
+10: ["Acrobatics"],
+12: ["Encore"],
+13: ["Aqua Tail"],
+15: ["Hydro Pump", "Mist"],
+16: ["Focus Punch"],
+17: ["Wave Crash"]
+}
+starting_moves = Array[String](["Flip Turn", "Jet Punch", "Supersonic", "Water Gun"])
+tms = Array[String](["tm_2", "tm_5", "tm_14", "tm_22", "tm_25", "tm_34", "tm_41", "tm_42", "tm_43", "tm_56", "tm_67", "tm_68", "tm_81", "tm_82", "tm_83", "tm_87", "tm_100", "tm_101", "tm_103", "tm_105", "tm_113", "tm_114", "tm_123", "tm_124", "tm_129", "tm_135", "tm_136", "tm_137", "tm_139", "tm_141", "tm_144", "tm_148", "tm_157", "tm_182", "tm_199", "tm_201", "tm_209", "tm_214", "tm_218", "tm_248", "tm_270", "tm_275", "tm_277", "tm_282", "tm_283", "tm_286", "tm_289", "tm_311", "tm_312", "tm_314", "tm_321"])
+egg_moves = Array[String](["Boomburst", "Bounce", "Counter", "Haze", "Tickle"])
+is_variant = true
+variant_data = {
+"Palafin Forma Herói": {
+"diff": {
+"armor_class": 17,
+"attributes": {
+"DEX": 18,
+"STR": 21,
+"WIS": 13
+},
+"movement": {
+0: 7.5,
+1: 15.0
+},
+"skills": [0, 3, 9, 13, 14]
+},
+"display_name": "Palafin Forma Herói",
+"is_default": false
+},
+"Palafin Forma Zero": {
+"diff": {
+"movement": {
+0: 1.5,
+1: 10.5
+}
+},
+"display_name": "Palafin Forma Zero",
+"is_default": true
+}
+}

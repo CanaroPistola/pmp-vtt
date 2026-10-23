@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bktsi7uv80r4r"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_w7i44"]
+
+[resource]
+script = ExtResource("1_w7i44")
+id = "blood_moon"
+display_name = "Blood Moon"
+name_en = "Blood Moon"
+pp = 3
+move_time = "1 ação, recarga"
+is_attack = true
+resolution = 1
+needs_recharge = true
+range_category = 2
+range_distance = 12.0
+description = "Você libera toda a força do seu espírito para criar uma esfera de energia vermelha como sangue, e a dispara contra um oponente. Faça um ataque à distância contra um alvo em alcance, causando 3d10 + MOVE de dano do tipo normal em um acerto. Este Move não pode ser usado em turnos consecutivos, exceto se o ataque errar ou falhar. Se o usuário não puder selecionar outro Move (devido a itens Choice ou por não ter outros Moves utilizáveis), ele usará Struggle a cada dois turnos."
+scaling_text = "Os dados de dano para este Move mudam para 4d10 no nível 5, 7d8 no nível 10 e 7d10 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 7,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 7,
+"dice_max": 10,
+"move": true
+}
+}

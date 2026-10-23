@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cdh3gpx7hxggc"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6dijw"]
+
+[resource]
+script = ExtResource("1_6dijw")
+dex_number = 934
+display_name = "Garganacl"
+id = "garganacl"
+types = Array[int]([12])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 17
+hit_points = 112
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 19,
+1: 10,
+2: 18,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([3, 11, 12, 17])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}, {
+"range_m": 24.0,
+"type": 1
+}])
+abilities = Array[String](["Purifying Salt", "Sturdy"])
+hidden_ability = "Clear Body"
+level_moves = {
+2: ["Rock Throw"],
+3: ["Mud Shot"],
+4: ["Rock Tomb"],
+5: ["Rock Polish"],
+6: ["Headbutt"],
+8: ["Salt Cure"],
+10: ["Recover"],
+12: ["Rock Slide"],
+14: ["Stealth Rock"],
+15: ["Earthquake", "Heavy Slam"],
+16: ["Explosion", "Stone Edge"]
+}
+starting_moves = Array[String](["Block", "Hammer Arm", "Harden", "Rock Blast", "Tackle", "Wide Guard"])
+tms = Array[String](["tm_16", "tm_24", "tm_25", "tm_29", "tm_35", "tm_51", "tm_55", "tm_59", "tm_73", "tm_74", "tm_83", "tm_87", "tm_94", "tm_99", "tm_100", "tm_105", "tm_113", "tm_118", "tm_123", "tm_128", "tm_129", "tm_136", "tm_141", "tm_147", "tm_148", "tm_170", "tm_174", "tm_196", "tm_199", "tm_209", "tm_214", "tm_221", "tm_223", "tm_225", "tm_231", "tm_248", "tm_251", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_282", "tm_286", "tm_292", "tm_321"])
+egg_moves = Array[String](["Ancient Power", "Curse", "Fissure", "Power Gem"])

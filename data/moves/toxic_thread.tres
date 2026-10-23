@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://iv18e1pev5c"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_81nyh"]
+
+[resource]
+script = ExtResource("1_81nyh")
+id = "toxic_thread"
+display_name = "Toxic Thread"
+name_en = "Toxic Thread"
+type = 7
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 0
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 2
+range_category = 2
+range_distance = 18.0
+description = "Você dispara uma trama de fios venenosos contra uma criatura dentro do alcance. Role 1d20 + MOVE  + 9 e compare o resultado com 10 + CON do alvo. Em um resultado maior ou igual, o alvo fica Envenenado e tem sua Velocidade reduzida em 1 estágio, podendo ser acumulado em até -6 estágios. Uma criatura cuja Velocidade seja reduzida a 0 com este Move fica impedida. O alvo pode gastar uma ação para se livrar de qualquer teia com um teste de FOR contra uma CD igual a 10 + bônus de proficiência do usuário deste Move + 1 pra cada acúmulo de teia."
+range_text_raw = "(18 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([1])
+effect_tags = Array[String](["stat_change", "poison"])

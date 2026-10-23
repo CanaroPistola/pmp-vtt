@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bn7jaxs6hn4w3"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_mbvt3"]
+
+[resource]
+script = ExtResource("1_mbvt3")
+dex_number = 149
+display_name = "Dragonite"
+id = "dragonite"
+types = Array[int]([14, 9])
+sr = "14"
+min_level = 15
+evolution_stage = 3
+armor_class = 17
+hit_points = 173
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 19,
+1: 18,
+2: 16,
+3: 8,
+4: 14,
+5: 14
+}
+skills = Array[int]([2, 9])
+abilities = Array[String](["Inner Focus"])
+hidden_ability = "Multiscale"
+level_moves = {
+2: ["Thunder Wave"],
+4: ["Twister"],
+5: ["Dragon Rage"],
+7: ["Slam"],
+9: ["Agility"],
+11: ["Dragon Tail"],
+13: ["Aqua Tail"],
+15: ["Dragon Rush"],
+16: ["Rain Dance", "Safeguard"],
+17: ["Dragon Dance", "Outrage"],
+18: ["Hyper Beam"],
+19: ["Hurricane"]
+}
+starting_moves = Array[String](["Extreme Speed", "Fire Punch", "Leer", "Roost", "Thunder Punch", "Wing Attack", "Wrap"])
+tms = Array[String](["tm_3", "tm_5", "tm_6", "tm_7", "tm_11", "tm_13", "tm_20", "tm_22", "tm_24", "tm_25", "tm_28", "tm_29", "tm_31", "tm_35", "tm_42", "tm_45", "tm_54", "tm_57", "tm_58", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_72", "tm_74", "tm_81", "tm_83", "tm_87", "tm_91", "tm_94", "tm_95", "tm_97", "tm_100", "tm_102", "tm_103", "tm_105", "tm_109", "tm_113", "tm_122", "tm_124", "tm_127", "tm_129", "tm_131", "tm_133", "tm_135", "tm_136", "tm_139", "tm_141", "tm_142", "tm_144", "tm_148", "tm_149", "tm_156", "tm_158", "tm_165", "tm_166", "tm_171", "tm_182", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_227", "tm_228", "tm_229", "tm_231", "tm_233", "tm_234", "tm_242", "tm_247", "tm_248", "tm_255", "tm_256", "tm_265", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_275", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_311", "tm_312", "tm_313", "tm_314"])
+egg_moves = Array[String](["Aqua Jet", "Dragon Breath", "Dragon Dance", "Dragon Pulse", "Dragon Rush", "Extreme Speed", "Haze", "Iron Tail", "Mist", "Supersonic", "Water Pulse"])

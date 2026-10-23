@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://hs32ftlndyqi"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_acco1"]
+
+[resource]
+script = ExtResource("1_acco1")
+dex_number = 599
+display_name = "Klink"
+id = "klink"
+types = Array[int]([16])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 14
+hit_points = 17
+attributes = {
+0: 13,
+1: 10,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([2])
+abilities = Array[String](["Plus", "Minus"])
+hidden_ability = "Clear Body"
+evolves_to = Array[String](["klang"])
+evolution_level = 13
+evolution_points = 10
+level_moves = {
+2: ["Charge"],
+4: ["Thunder Shock"],
+6: ["Gear Grind"],
+7: ["Bind"],
+9: ["Charge Beam"],
+11: ["Autotomize"],
+12: ["Mirror Shot"],
+13: ["Screech"],
+14: ["Discharge"],
+15: ["Lock-On", "Metal Sound", "Shift Gear"],
+16: ["Hyper Beam", "Zap Cannon"]
+}
+starting_moves = Array[String](["Vise Grip"])
+tms = Array[String](["tm_12", "tm_20", "tm_40", "tm_45", "tm_58", "tm_87", "tm_99", "tm_109", "tm_118", "tm_131", "tm_136", "tm_147", "tm_161", "tm_164", "tm_199", "tm_211", "tm_214", "tm_216", "tm_219", "tm_222", "tm_228", "tm_231", "tm_236", "tm_242", "tm_243", "tm_248", "tm_255", "tm_263", "tm_264", "tm_270", "tm_276", "tm_284", "tm_293", "tm_294", "tm_296", "tm_305", "tm_308", "tm_315"])

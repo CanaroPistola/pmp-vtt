@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cko2wfbdaw3ot"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_56eig"]
+
+[resource]
+script = ExtResource("1_56eig")
+id = "signal_beam"
+display_name = "Signal Beam (Raio Sinalizador)"
+name_en = "Signal Beam"
+name_pt = "Raio Sinalizador"
+type = 11
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 24.0
+description = "Você dispara um feixe de energia multicolorida em uma criatura no alcance. Faça uma rolagem de ataque à distância contra uma criatura, causando 2d8 + MOVE de dano de inseto em um acerto. Em um resultado natural de 19 ou 20 no acerto, o alvo fica confuso."
+scaling_text = "Os dados de dano para este Move mudam para 2d10 no nível 5, 5d6 no nível 10 e 6d6 no nível 17."
+range_text_raw = "(24 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["confusion"])

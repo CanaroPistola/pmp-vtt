@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://6irhfv3mp7rq"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8c04i"]
+
+[resource]
+script = ExtResource("1_8c04i")
+id = "octolock"
+display_name = "Octolock"
+name_en = "Octolock"
+type = 6
+move_time = "1 ação"
+is_attack = true
+resolution = 3
+has_save = true
+save_attribute = 0
+duration_is_permanent = true
+duration_flags = Array[String](["conditional"])
+description = "Você envolve o oponente com seus tentáculos, apertando-o até que abra suas defesas. Faça um ataque corpo a corpo. Em um acerto, o alvo fica agarrado. O alvo tem direito a um teste de FOR contra sua CD de Move no início de cada turno para tentar se soltar. Enquanto estiver agarrado, o alvo não pode fugir ou ser substituído, e ao final de cada turno terá sua Defesa e Defesa Especial reduzida em 1 estágio, podendo ser acumulado em até -6 estágios cada."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Enquanto agarrado"
+move_power_attributes = Array[int]([0])
+effect_tags = Array[String](["stat_change", "grapple"])

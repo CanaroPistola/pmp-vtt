@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b7xecsyi0dwo0"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_sl0k5"]
+
+[resource]
+script = ExtResource("1_sl0k5")
+dex_number = 623
+display_name = "Golurk"
+id = "golurk"
+types = Array[int]([8, 13])
+sr = "11"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 80
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 19,
+1: 13,
+2: 17,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([2, 3])
+abilities = Array[String](["Iron Fist", "Klutz"])
+hidden_ability = "No Guard"
+level_moves = {
+2: ["Mud-Slap"],
+3: ["Rollout"],
+5: ["Shadow Punch"],
+6: ["Iron Defense"],
+7: ["Stomping Tantrum"],
+9: ["Mega Punch"],
+10: ["Magnitude"],
+12: ["Dynamic Punch", "Shadow Ball"],
+14: ["Night Shade"],
+15: ["Curse"],
+16: ["Earthquake"],
+17: ["Focus Punch", "Hammer Arm"],
+18: ["Phantom Force"]
+}
+starting_moves = Array[String](["Astonish", "Defense Curl", "Heavy Slam", "High Horsepower", "Pound"])
+tms = Array[String](["tm_9", "tm_23", "tm_24", "tm_25", "tm_29", "tm_35", "tm_40", "tm_43", "tm_45", "tm_46", "tm_51", "tm_55", "tm_58", "tm_59", "tm_67", "tm_73", "tm_74", "tm_83", "tm_87", "tm_94", "tm_99", "tm_100", "tm_102", "tm_103", "tm_105", "tm_109", "tm_113", "tm_114", "tm_118", "tm_121", "tm_123", "tm_126", "tm_128", "tm_129", "tm_130", "tm_131", "tm_132", "tm_136", "tm_139", "tm_141", "tm_144", "tm_145", "tm_147", "tm_150", "tm_158", "tm_159", "tm_161", "tm_165", "tm_166", "tm_175", "tm_180", "tm_188", "tm_194", "tm_199", "tm_201", "tm_202", "tm_209", "tm_212", "tm_214", "tm_216", "tm_222", "tm_223", "tm_225", "tm_228", "tm_229", "tm_231", "tm_235", "tm_239", "tm_240", "tm_242", "tm_243", "tm_248", "tm_251", "tm_255", "tm_257", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_284", "tm_286", "tm_288", "tm_292", "tm_294", "tm_296", "tm_300", "tm_321"])

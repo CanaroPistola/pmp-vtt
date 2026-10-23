@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://yeab2oora6t7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6wupm"]
+
+[resource]
+script = ExtResource("1_6wupm")
+dex_number = 554
+display_name = "Darumaka"
+id = "darumaka"
+types = Array[int]([1])
+sr = "1"
+evolution_stage = 1
+armor_class = 12
+hit_points = 24
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 13,
+1: 12,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Hustle"])
+hidden_ability = "Inner Focus"
+evolves_to = Array[String](["darmanitan"])
+evolution_level = 12
+evolution_points = 14
+level_moves = {
+2: ["Incinerate"],
+3: ["Bite", "Rage"],
+4: ["Fire Fang"],
+5: ["Headbutt"],
+6: ["Uproar"],
+7: ["Facade"],
+8: ["Fire Punch"],
+9: ["Thrash", "Work Up"],
+10: ["Belly Drum"],
+11: ["Flare Blitz"],
+12: ["Taunt"],
+13: ["Superpower"],
+14: ["Overheat"]
+}
+starting_moves = Array[String](["Rollout", "Tackle"])
+tms = Array[String](["tm_13", "tm_29", "tm_45", "tm_55", "tm_58", "tm_82", "tm_87", "tm_91", "tm_92", "tm_94", "tm_95", "tm_96", "tm_97", "tm_100", "tm_105", "tm_109", "tm_114", "tm_121", "tm_127", "tm_131", "tm_165", "tm_166", "tm_183", "tm_199", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_228", "tm_248", "tm_254", "tm_255", "tm_257", "tm_270", "tm_271", "tm_274", "tm_276", "tm_283", "tm_288", "tm_296", "tm_303", "tm_305", "tm_316", "tm_318", "tm_321"])
+egg_moves = Array[String](["Encore", "Endure", "Extrasensory", "Flame Wheel", "Focus Energy", "Focus Punch", "Hammer Arm", "Sleep Talk", "Snatch", "Take Down", "Yawn"])
+is_variant = true
+variant_data = {
+"Darumaka": {
+"diff": {},
+"display_name": "Darumaka",
+"is_default": true
+},
+"Darumaka de Galar": {
+"diff": {
+"Evolve": "Darmanitan de Galar",
+"moves_diff": {
+"egg_moves": ["Flame Wheel", "Focus Punch", "Freeze-Dry", "Hammer Arm", "Incinerate", "Power-Up Punch", "Take Down", "Yawn"],
+"level_moves": {
+2: ["Taunt"],
+3: ["Bite"],
+4: ["Avalanche"],
+6: ["Work Up"],
+7: ["Ice Fang"],
+8: ["Headbutt"],
+10: ["Ice Punch"],
+11: ["Uproar"],
+12: ["Belly Drum"],
+14: ["Blizzard"],
+15: ["Superpower", "Thrash"]
+},
+"starting_moves": ["Powder Snow", "Tackle"],
+"tms": ["tm_13", "tm_16", "tm_29", "tm_55", "tm_87", "tm_92", "tm_94", "tm_95", "tm_100", "tm_140", "tm_141", "tm_165", "tm_166", "tm_199", "tm_214", "tm_223", "tm_225", "tm_228", "tm_255", "tm_257", "tm_271", "tm_288", "tm_303", "tm_316"]
+},
+"types": [5]
+},
+"display_name": "Darumaka de Galar",
+"is_default": false
+}
+}

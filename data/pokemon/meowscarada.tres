@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://smmft263xsq4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_dcgrw"]
+
+[resource]
+script = ExtResource("1_dcgrw")
+dex_number = 908
+display_name = "Meowscarada"
+id = "meowscarada"
+types = Array[int]([4, 15])
+sr = "13"
+size_category = "médio"
+size_meters = 1.5
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 102
+hit_dice = "d12"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 12,
+1: 16,
+2: 14,
+3: 6,
+4: 15,
+5: 17
+}
+skills = Array[int]([0, 12, 15])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Protean"
+level_moves = {
+3: ["Bite"],
+4: ["Hone Claws"],
+5: ["Magical Leaf", "Quick Attack"],
+7: ["Seed Bomb"],
+8: ["U-turn"],
+10: ["Worry Seed"],
+11: ["Slash"],
+13: ["Night Slash"],
+14: ["Energy Ball"],
+15: ["Play Rough"],
+16: ["Grassy Terrain", "Knock Off"],
+17: ["Leaf Storm"]
+}
+starting_moves = Array[String](["Flower Trick", "Leafage", "Scratch", "Tail Whip"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_14", "tm_29", "tm_36", "tm_41", "tm_42", "tm_52", "tm_56", "tm_83", "tm_84", "tm_87", "tm_88", "tm_100", "tm_106", "tm_107", "tm_112", "tm_113", "tm_114", "tm_115", "tm_116", "tm_117", "tm_129", "tm_136", "tm_150", "tm_152", "tm_154", "tm_158", "tm_159", "tm_163", "tm_175", "tm_178", "tm_187", "tm_190", "tm_193", "tm_196", "tm_199", "tm_201", "tm_214", "tm_238", "tm_240", "tm_241", "tm_244", "tm_248", "tm_257", "tm_260", "tm_270", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_292", "tm_297", "tm_298", "tm_300", "tm_301", "tm_302", "tm_303"])
+egg_moves = Array[String](["Ally Switch", "Copycat", "Leech Seed", "Petal Blizzard", "Sucker Punch"])

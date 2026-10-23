@@ -1,0 +1,67 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://xd5s0w7x2rd"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_odu7c"]
+
+[resource]
+script = ExtResource("1_odu7c")
+dex_number = 421
+display_name = "Cherrim"
+id = "cherrim"
+types = Array[int]([4])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 55
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 14,
+1: 16,
+2: 17,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Flower Gift"])
+level_moves = {
+3: ["Growth"],
+4: ["Leech Seed"],
+5: ["Helping Hand"],
+7: ["Magical Leaf"],
+8: ["Sunny Day"],
+10: ["Worry Seed"],
+12: ["Take Down"],
+15: ["Lucky Chant", "Petal Blizzard", "Solar Beam"]
+}
+starting_moves = Array[String](["Morning Sun", "Petal Dance", "Tackle"])
+tms = Array[String](["tm_13", "tm_36", "tm_45", "tm_53", "tm_58", "tm_68", "tm_84", "tm_87", "tm_109", "tm_112", "tm_113", "tm_114", "tm_116", "tm_117", "tm_129", "tm_131", "tm_136", "tm_151", "tm_163", "tm_179", "tm_190", "tm_199", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_248", "tm_255", "tm_257", "tm_258", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_296", "tm_313", "tm_319"])
+egg_moves = Array[String](["Aromatherapy", "Defense Curl", "Flower Shield", "Grass Whistle", "Grassy Terrain", "Heal Pulse", "Healing Wish", "Natural Gift", "Nature Power", "Razor Leaf", "Rollout", "Seed Bomb", "Sweet Scent", "Tickle", "Weather Ball"])
+is_variant = true
+variant_data = {
+"Cherrim Forma Encoberta": {
+"diff": {},
+"display_name": "Cherrim Forma Encoberta",
+"is_default": true
+},
+"Cherrim Forma Ensolarada": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+5: ["Helping Hand"],
+7: ["Magical Leaf"],
+8: ["Sunny Day"],
+10: ["Worry Seed"],
+12: ["Take Down"],
+15: ["Solar Beam", "Lucky Chant", "Petal Blizzard"]
+},
+"starting_moves": ["Petal Dance", "Morning Sun", "Tackle", "Growth", "Leech Seed", "Flower Shield", "Leafage"]
+}
+},
+"display_name": "Cherrim Forma Ensolarada",
+"is_default": false
+}
+}

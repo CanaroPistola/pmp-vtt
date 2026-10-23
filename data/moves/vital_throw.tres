@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cvyym8c4thepl"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_eotij"]
+
+[resource]
+script = ExtResource("1_eotij")
+id = "vital_throw"
+display_name = "Vital Throw (Lançamento Vital)"
+name_en = "Vital Throw"
+name_pt = "Lançamento Vital"
+type = 6
+pp = 5
+move_time = "1 ação"
+description = "Você espera o inimigo atacar primeiro e, em seguida, o agarra para arremessá-lo com força, sem chance de errar. Como uma ação em seu turno, você segura este Move até o início de seu próximo turno, onde automaticamente acertará o golpe, causando 2d8 + MOVE de dano lutador desde que o alvo permaneça dentro do alcance corpo a corpo ou desencadeie um ataque de oportunidade antes disso. Ao causar o dano do ataque, você pode arremessar o alvo até 10 pés (3 metros) em uma direção à sua escolha, desde que ele seja de até duas categorias de tamanho maiores que a sua."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 3d10 no nível 10 e 3d12 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 3,
+"dice_max": 12,
+"move": true
+}
+}

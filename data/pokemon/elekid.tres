@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://3qks4u7g4stg"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qq7re"]
+
+[resource]
+script = ExtResource("1_qq7re")
+dex_number = 239
+display_name = "Elekid"
+id = "elekid"
+types = Array[int]([3])
+sr = "2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 26
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 12,
+1: 16,
+2: 13,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Static"])
+hidden_ability = "Vital Spirit"
+evolves_to = Array[String](["electabuzz"])
+evolution_level = 10
+evolution_points = 8
+level_moves = {
+2: ["Thunder Shock"],
+3: ["Charge", "Low Kick"],
+4: ["Swift"],
+5: ["Shock Wave"],
+7: ["Thunder Wave"],
+8: ["Electro Ball"],
+9: ["Light Screen"],
+10: ["Thunder Punch"],
+11: ["Discharge"],
+12: ["Screech"],
+14: ["Thunderbolt"],
+15: ["Thunder"]
+}
+starting_moves = Array[String](["Leer", "Quick Attack"])
+tms = Array[String](["tm_13", "tm_25", "tm_29", "tm_39", "tm_40", "tm_45", "tm_48", "tm_58", "tm_59", "tm_71", "tm_76", "tm_77", "tm_78", "tm_79", "tm_83", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_109", "tm_129", "tm_131", "tm_141", "tm_150", "tm_156", "tm_158", "tm_164", "tm_165", "tm_166", "tm_169", "tm_199", "tm_202", "tm_209", "tm_214", "tm_216", "tm_224", "tm_228", "tm_236", "tm_242", "tm_243", "tm_248", "tm_255", "tm_270", "tm_273", "tm_276", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_298", "tm_305", "tm_308", "tm_315"])
+egg_moves = Array[String](["Barrier", "Cross Chop", "Dynamic Punch", "Feint", "Fire Punch", "Focus Punch", "Follow Me", "Hammer Arm", "Ice Punch", "Karate Chop", "Meditate", "Rolling Kick"])

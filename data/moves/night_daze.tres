@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://d1bk82ky615ti"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_yb3rd"]
+
+[resource]
+script = ExtResource("1_yb3rd")
+id = "night_daze"
+display_name = "Night Daze (Ofuscamento Noturno)"
+name_en = "Night Daze"
+name_pt = "Ofuscamento Noturno"
+type = 13
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Uma onda de energia sombria se apressa em direção a um alvo. Faça um ataque à distância -1, causando 4d4 + MOVE de dano sombrio em um acerto. Em um resultado natural de 13 ou mais no acerto, o alvo tem sua Precisão reduzida em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 4d6 no nível 5, 4d8 no nível 10 e 5d8 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([4, 1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 4,
+"move": true
+},
+5: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

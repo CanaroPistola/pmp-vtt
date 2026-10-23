@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cgq8iunay8stf"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qcswk"]
+
+[resource]
+script = ExtResource("1_qcswk")
+dex_number = 508
+display_name = "Stoutland"
+id = "stoutland"
+types = Array[int]([0])
+sr = "14"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 122
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 18,
+2: 18,
+3: 6,
+4: 14,
+5: 12
+}
+skills = Array[int]([13])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Intimidate", "Sand Rush"])
+hidden_ability = "Scrappy"
+level_moves = {
+2: ["Odor Sleuth"],
+3: ["Bite"],
+4: ["Helping Hand"],
+5: ["Take Down"],
+7: ["Baby-Doll Eyes", "Work Up"],
+8: ["Crunch"],
+10: ["Roar"],
+12: ["Retaliate"],
+14: ["Reversal"],
+16: ["Giga Impact", "Last Resort"],
+17: ["Play Rough"]
+}
+starting_moves = Array[String](["Fire Fang", "Ice Fang", "Leer", "Tackle", "Thunder Fang"])
+tms = Array[String](["tm_3", "tm_4", "tm_13", "tm_41", "tm_45", "tm_48", "tm_55", "tm_58", "tm_87", "tm_92", "tm_109", "tm_113", "tm_129", "tm_131", "tm_136", "tm_137", "tm_140", "tm_148", "tm_153", "tm_186", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_220", "tm_225", "tm_228", "tm_240", "tm_242", "tm_248", "tm_253", "tm_255", "tm_266", "tm_270", "tm_271", "tm_274", "tm_275", "tm_276", "tm_290", "tm_291", "tm_293", "tm_294", "tm_296", "tm_305", "tm_315", "tm_318"])
+egg_moves = Array[String](["After You", "Charm", "Covet", "Endure", "Fire Fang", "Howl", "Ice Fang", "Lick", "Mud-Slap", "Psychic Fangs", "Pursuit", "Sand Attack", "Thunder Fang", "Yawn"])

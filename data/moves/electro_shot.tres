@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dpktifsobj1qw"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_bgxi6"]
+
+[resource]
+script = ExtResource("1_bgxi6")
+id = "electro_shot"
+display_name = "Electro Shot"
+name_en = "Electro Shot"
+type = 3
+pp = 5
+move_time = "1 ação, carga"
+is_attack = true
+resolution = 1
+needs_charge = true
+range_category = 2
+range_distance = 30.0
+duration_rounds = 1
+duration_flags = Array[String](["concentration"])
+description = "Você concentra energia elétrica em seu corpo e, em seguida, dispara um tiro de altíssima voltagem. Ao ativar este Move, seu Ataque Especial aumenta em 1 estágio, podendo ser acumulado em até 6 estágios. Com uma ação completa no seu próximo turno, se você mantiver sua concentração, você realiza um ataque à distância contra um alvo em alcance, causando 4d6 + MOVE de dano do tipo elétrico em um acerto. A criatura atingida deve ser bem-sucedida em um teste de resistência de FOR contra sua CD do Move ou ser derrubada. Após selecionar Electro Shot, o usuário não pode ser trocado para fora da batalha até que o Move seja interrompido ou totalmente executado. Caso seja usado durante a chuva, Electro Shot é executado em 1 único turno, aumentando o Ataque Especial e realizando o ataque no mesmo turno. As condições dormindo, congelado e atordoado pausam, mas não interrompem, a duração de Electro Shot."
+scaling_text = "Os dados de dano para este Move mudam para 2d20 no nível 5, 5d10 no nível 10 e 8d8 no nível 17."
+range_text_raw = "(30 metros)"
+duration_text_raw = "1 rodada, Concentração"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 8,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change", "sleep", "freeze", "stun"])

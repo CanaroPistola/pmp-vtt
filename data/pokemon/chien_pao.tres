@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://k1fq1r3qw25c"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_skguf"]
+
+[resource]
+script = ExtResource("1_skguf")
+dex_number = 1002
+display_name = "Chien-Pao"
+id = "chien_pao"
+types = Array[int]([15, 5])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 16
+hit_points = 158
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 16,
+1: 19,
+2: 16,
+3: 10,
+4: 12,
+5: 15
+}
+skills = Array[int]([0, 2, 5, 7, 8, 17])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}])
+abilities = Array[String](["Sword of Ruin"])
+level_moves = {
+2: ["Icy Wind"],
+4: ["Payback"],
+5: ["Haze", "Mist"],
+7: ["Ice Shard"],
+9: ["Swords Dance"],
+10: ["Snowscape"],
+12: ["Night Slash"],
+14: ["Dark Pulse"],
+15: ["Icicle Crash", "Ruination"],
+16: ["Sacred Sword", "Sucker Punch"],
+17: ["Recover", "Throat Chop"],
+18: ["Sheer Cold"]
+}
+starting_moves = Array[String](["Mean Look", "Powder Snow", "Spite"])
+tms = Array[String](["tm_2", "tm_3", "tm_16", "tm_22", "tm_29", "tm_50", "tm_52", "tm_83", "tm_87", "tm_89", "tm_113", "tm_124", "tm_130", "tm_136", "tm_140", "tm_142", "tm_144", "tm_152", "tm_199", "tm_203", "tm_209", "tm_214", "tm_234", "tm_248", "tm_253", "tm_256", "tm_261", "tm_270", "tm_278", "tm_282", "tm_283", "tm_286", "tm_289"])

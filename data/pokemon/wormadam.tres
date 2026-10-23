@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cvcw0rp5btmvp"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6tfo8"]
+
+[resource]
+script = ExtResource("1_6tfo8")
+dex_number = 413
+display_name = "Wormadam"
+id = "wormadam"
+types = Array[int]([11, 4])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 4.5,
+2: 4.5
+}
+attributes = {
+0: 12,
+1: 12,
+2: 15,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([12, 17])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Anticipation"])
+hidden_ability = "Overcoat"
+level_moves = {
+4: ["Protect"],
+5: ["Bug Bite"],
+7: ["Hidden Power"],
+8: ["Confusion"],
+9: ["Razor Leaf"],
+10: ["Growth"],
+11: ["Psybeam"],
+12: ["Captivate"],
+13: ["Flail"],
+14: ["Attract"],
+15: ["Bug Buzz", "Leaf Storm", "Psychic"]
+}
+starting_moves = Array[String](["Quiver Dance", "Sucker Punch", "Tackle"])
+tms = Array[String](["tm_9", "tm_13", "tm_32", "tm_45", "tm_58", "tm_69", "tm_79", "tm_82", "tm_84", "tm_87", "tm_109", "tm_112", "tm_113", "tm_114", "tm_131", "tm_136", "tm_146", "tm_163", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_240", "tm_243", "tm_244", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_279", "tm_284", "tm_288", "tm_296", "tm_305", "tm_307", "tm_319"])
+is_variant = true
+variant_data = {
+"Wormadam Manto de Areia": {
+"diff": {
+"moves_diff": {
+"level_moves": {
+4: ["Protect"],
+5: ["Bug Bite"],
+7: ["Hidden Power"],
+8: ["Confusion"],
+9: ["Rock Blast"],
+10: ["Harden"],
+11: ["Psybeam"],
+12: ["Captivate"],
+13: ["Flail"],
+14: ["Attract"],
+15: ["Bug Buzz", "Fissure", "Psychic"]
+},
+"starting_moves": ["Quiver Dance", "Sucker Punch", "Tackle"],
+"tms": ["tm_9", "tm_13", "tm_32", "tm_35", "tm_45", "tm_58", "tm_69", "tm_73", "tm_74", "tm_79", "tm_82", "tm_87", "tm_109", "tm_113", "tm_131", "tm_136", "tm_146", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_225", "tm_228", "tm_229", "tm_231", "tm_240", "tm_243", "tm_244", "tm_248", "tm_255", "tm_262", "tm_270", "tm_271", "tm_276", "tm_284", "tm_288", "tm_296", "tm_305", "tm_307"]
+},
+"types": [11, 8]
+},
+"display_name": "Wormadam Manto de Areia",
+"is_default": false
+},
+"Wormadam Manto de Lixo": {
+"diff": {
+"attributes": {
+"CON": 14,
+"DEX": 13
+},
+"moves_diff": {
+"level_moves": {
+4: ["Protect"],
+5: ["Bug Bite"],
+7: ["Hidden Power"],
+8: ["Confusion"],
+9: ["Mirror Shot"],
+10: ["Metal Sound"],
+11: ["Psybeam"],
+12: ["Captivate"],
+13: ["Flail"],
+14: ["Attract"],
+15: ["Bug Buzz", "Iron Head", "Psychic"]
+},
+"starting_moves": ["Metal Burst", "Quiver Dance", "Sucker Punch", "Tackle"],
+"tms": ["tm_9", "tm_13", "tm_32", "tm_45", "tm_58", "tm_69", "tm_79", "tm_82", "tm_87", "tm_99", "tm_109", "tm_113", "tm_120", "tm_121", "tm_131", "tm_136", "tm_146", "tm_147", "tm_148", "tm_164", "tm_199", "tm_201", "tm_202", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_240", "tm_243", "tm_244", "tm_248", "tm_255", "tm_262", "tm_263", "tm_270", "tm_271", "tm_276", "tm_284", "tm_288", "tm_296", "tm_305", "tm_307"]
+},
+"types": [11, 16]
+},
+"display_name": "Wormadam Manto de Lixo",
+"is_default": false
+},
+"Wormadam Manto de Planta": {
+"diff": {},
+"display_name": "Wormadam Manto de Planta",
+"is_default": true
+}
+}

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b38mk4yykjky2"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_bdyh2"]
+
+[resource]
+script = ExtResource("1_bdyh2")
+dex_number = 330
+display_name = "Flygon"
+id = "flygon"
+types = Array[int]([8, 14])
+sr = "14"
+min_level = 12
+evolution_stage = 3
+armor_class = 16
+hit_points = 126
+hit_dice = "d12"
+movement = {
+0: 4.5
+}
+attributes = {
+0: 17,
+1: 19,
+2: 17,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([0])
+abilities = Array[String](["Levitate"])
+level_moves = {
+2: ["Mud-Slap"],
+3: ["Bulldoze"],
+4: ["Sand Tomb"],
+5: ["Rock Slide"],
+7: ["Supersonic"],
+8: ["Screech"],
+9: ["Earth Power"],
+10: ["Bug Buzz", "Dragon Tail"],
+11: ["Earthquake"],
+12: ["Sandstorm"],
+14: ["Uproar"],
+15: ["Dragon Rush", "Hyper Beam"],
+17: ["Boomburst"]
+}
+starting_moves = Array[String](["Bide", "Dragon Breath", "Dragon Claw", "Dragon Dance", "Feint Attack", "Sand Attack", "Sonic Boom"])
+tms = Array[String](["tm_3", "tm_5", "tm_6", "tm_7", "tm_8", "tm_13", "tm_25", "tm_28", "tm_31", "tm_32", "tm_33", "tm_35", "tm_45", "tm_50", "tm_54", "tm_55", "tm_58", "tm_59", "tm_60", "tm_62", "tm_63", "tm_64", "tm_65", "tm_66", "tm_72", "tm_73", "tm_74", "tm_83", "tm_87", "tm_91", "tm_94", "tm_95", "tm_97", "tm_102", "tm_109", "tm_112", "tm_113", "tm_127", "tm_129", "tm_131", "tm_136", "tm_149", "tm_151", "tm_165", "tm_166", "tm_174", "tm_175", "tm_182", "tm_199", "tm_204", "tm_214", "tm_216", "tm_223", "tm_225", "tm_227", "tm_228", "tm_230", "tm_231", "tm_233", "tm_235", "tm_236", "tm_243", "tm_248", "tm_255", "tm_257", "tm_262", "tm_265", "tm_267", "tm_269", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_289", "tm_292", "tm_296", "tm_303", "tm_305", "tm_306"])
+egg_moves = Array[String](["Bug Bite", "Earth Power", "Endure", "Feint", "First Impression", "Flail", "Focus Energy", "Fury Cutter", "Gust", "Mud Shot", "Quick Attack", "Signal Beam"])

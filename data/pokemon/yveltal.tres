@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d1d0dulo0lyog"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_j14uv"]
+
+[resource]
+script = ExtResource("1_j14uv")
+dex_number = 717
+display_name = "Yveltal"
+id = "yveltal"
+types = Array[int]([15, 9])
+sr = "15"
+min_level = 20
+evolution_stage = 1
+armor_class = 17
+hit_points = 505
+hit_dice = "d20"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 17,
+1: 18,
+2: 20,
+3: 14,
+4: 18,
+5: 20
+}
+skills = Array[int]([3, 5, 8, 9])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Dark Aura"])
+level_moves = {
+2: ["Double Team"],
+4: ["Air Slash"],
+6: ["Snarl"],
+9: ["Oblivion Wing", "Tailwind"],
+12: ["Disable"],
+15: ["Dark Pulse"],
+16: ["Foul Play", "Phantom Force", "Psychic"],
+17: ["Dragon Rush"],
+18: ["Focus Blast", "Sucker Punch"],
+19: ["Hyper Beam"],
+20: ["Sky Attack"]
+}
+starting_moves = Array[String](["Hurricane", "Razor Wind", "Roost", "Taunt"])
+tms = Array[String](["tm_2", "tm_3", "tm_7", "tm_23", "tm_45", "tm_52", "tm_54", "tm_58", "tm_63", "tm_69", "tm_72", "tm_80", "tm_87", "tm_102", "tm_103", "tm_106", "tm_109", "tm_113", "tm_127", "tm_131", "tm_136", "tm_137", "tm_150", "tm_151", "tm_152", "tm_186", "tm_188", "tm_199", "tm_202", "tm_209", "tm_214", "tm_216", "tm_223", "tm_227", "tm_228", "tm_240", "tm_241", "tm_246", "tm_247", "tm_248", "tm_253", "tm_255", "tm_265", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_283", "tm_288", "tm_295", "tm_296", "tm_303", "tm_321"])

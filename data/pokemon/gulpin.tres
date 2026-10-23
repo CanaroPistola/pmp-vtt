@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cpoct7wp1f0x4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_uf3l6"]
+
+[resource]
+script = ExtResource("1_uf3l6")
+dex_number = 316
+display_name = "Gulpin"
+id = "gulpin"
+types = Array[int]([7])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 20
+hit_dice = "d8"
+movement = {
+0: 3.0
+}
+attributes = {
+0: 12,
+1: 10,
+2: 15,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Liquid Ooze", "Sticky Hold"])
+hidden_ability = "Gluttony"
+evolves_to = Array[String](["swalot"])
+evolution_level = 9
+evolution_points = 11
+level_moves = {
+2: ["Yawn"],
+3: ["Poison Gas"],
+4: ["Amnesia", "Sludge"],
+6: ["Acid Spray"],
+7: ["Encore"],
+9: ["Toxic"],
+10: ["Spit Up", "Stockpile", "Swallow"],
+11: ["Sludge Bomb"],
+12: ["Gastro Acid"],
+14: ["Belch"],
+15: ["Gunk Shot", "Pain Split", "Wring Out"]
+}
+starting_moves = Array[String](["Pound"])
+tms = Array[String](["tm_1", "tm_10", "tm_13", "tm_25", "tm_36", "tm_45", "tm_51", "tm_58", "tm_69", "tm_81", "tm_83", "tm_86", "tm_87", "tm_94", "tm_100", "tm_109", "tm_111", "tm_112", "tm_120", "tm_129", "tm_131", "tm_139", "tm_141", "tm_146", "tm_174", "tm_175", "tm_184", "tm_191", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_238", "tm_240", "tm_242", "tm_248", "tm_249", "tm_250", "tm_254", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_282", "tm_286", "tm_288", "tm_292", "tm_293", "tm_296", "tm_297", "tm_307", "tm_311"])
+egg_moves = Array[String](["Acid Armor", "Clear Smog", "Curse", "Destiny Bond", "Gunk Shot", "Mud-Slap", "Pain Split", "Smog", "Stuff Cheeks", "Venom Drench"])

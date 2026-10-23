@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://y6smfxwr1w6d"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_07hak"]
+
+[resource]
+script = ExtResource("1_07hak")
+dex_number = 411
+display_name = "Bastiodon"
+id = "bastiodon"
+types = Array[int]([12, 16])
+sr = "11"
+min_level = 5
+evolution_stage = 2
+armor_class = 20
+hit_points = 71
+hit_dice = "d12"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 20,
+1: 10,
+2: 20,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+abilities = Array[String](["Sturdy"])
+hidden_ability = "Soundproof"
+level_moves = {
+2: ["Taunt"],
+4: ["Metal Sound"],
+5: ["Take Down"],
+7: ["Iron Defense"],
+8: ["Swagger"],
+10: ["Ancient Power"],
+12: ["Endure"],
+15: ["Metal Burst"],
+16: ["Heavy Slam", "Iron Head"]
+}
+starting_moves = Array[String](["Block", "Protect", "Tackle"])
+tms = Array[String](["tm_13", "tm_16", "tm_22", "tm_23", "tm_24", "tm_25", "tm_35", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_83", "tm_87", "tm_91", "tm_97", "tm_99", "tm_104", "tm_106", "tm_109", "tm_113", "tm_123", "tm_128", "tm_131", "tm_136", "tm_139", "tm_147", "tm_148", "tm_149", "tm_161", "tm_164", "tm_169", "tm_170", "tm_175", "tm_182", "tm_196", "tm_197", "tm_199", "tm_209", "tm_212", "tm_214", "tm_216", "tm_218", "tm_220", "tm_221", "tm_222", "tm_223", "tm_224", "tm_225", "tm_228", "tm_230", "tm_231", "tm_234", "tm_235", "tm_242", "tm_248", "tm_251", "tm_255", "tm_262", "tm_263", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_282", "tm_283", "tm_286", "tm_290", "tm_294", "tm_295", "tm_296", "tm_298"])
+egg_moves = Array[String](["Body Slam", "Counter", "Curse", "Double-Edge", "Fissure", "Focus Energy", "Guard Split", "Headbutt", "Rock Blast", "Scary Face", "Screech", "Stealth Rock", "Wide Guard"])

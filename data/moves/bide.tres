@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://ce4km5mwc76t5"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_47jw6"]
+
+[resource]
+script = ExtResource("1_47jw6")
+id = "bide"
+display_name = "Bide (Aguardar)"
+name_en = "Bide"
+name_pt = "Aguardar"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 15.0
+duration_rounds = 2
+description = "Você abraça o dano feito a você, esperando sua hora de atacar. Use sua ação para ativar este Move e registre todo o dano que você receber nas próximas duas rodadas. No seu terceiro turno (contando a partir deste), use sua ação para atacar um alvo dentro do alcance com um ataque à distância, causando o dobro do dano total acumulado nesse período. Esse ataque é um acerto garantido, não possui tipo e só pode ser realizado se você puder ver o alvo e ele estiver dentro do seu alcance."
+range_text_raw = "(15 metros)"
+duration_text_raw = "2 rodadas"

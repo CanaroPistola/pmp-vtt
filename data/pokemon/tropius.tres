@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cottvjvy1jln7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_2mhbt"]
+
+[resource]
+script = ExtResource("1_2mhbt")
+dex_number = 357
+display_name = "Tropius"
+id = "tropius"
+types = Array[int]([4, 9])
+sr = "11"
+min_level = 8
+evolution_stage = 1
+armor_class = 15
+hit_points = 82
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 18,
+1: 14,
+2: 20,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 12])
+abilities = Array[String](["Chlorophyll", "Solar Power"])
+hidden_ability = "Harvest"
+level_moves = {
+2: ["Sweet Scent"],
+4: ["Stomp"],
+6: ["Magical Leaf"],
+7: ["Whirlwind"],
+9: ["Leaf Tornado"],
+10: ["Natural Gift", "Wide Guard"],
+12: ["Air Slash"],
+14: ["Body Slam"],
+15: ["Bestow", "Outrage", "Synthesis"],
+16: ["Solar Beam"],
+17: ["Leaf Storm"]
+}
+starting_moves = Array[String](["Growth", "Gust", "Leer", "Razor Leaf"])
+tms = Array[String](["tm_3", "tm_6", "tm_7", "tm_13", "tm_24", "tm_25", "tm_31", "tm_35", "tm_36", "tm_38", "tm_45", "tm_51", "tm_54", "tm_58", "tm_59", "tm_64", "tm_65", "tm_66", "tm_72", "tm_74", "tm_83", "tm_84", "tm_87", "tm_102", "tm_109", "tm_112", "tm_113", "tm_114", "tm_117", "tm_129", "tm_131", "tm_133", "tm_136", "tm_154", "tm_163", "tm_179", "tm_182", "tm_187", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_227", "tm_228", "tm_229", "tm_238", "tm_248", "tm_255", "tm_257", "tm_258", "tm_261", "tm_265", "tm_266", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_281", "tm_282", "tm_286", "tm_296", "tm_298", "tm_303", "tm_319", "tm_321"])
+egg_moves = Array[String](["Bullet Seed", "Curse", "Dragon Dance", "Dragon Hammer", "Headbutt", "Leaf Blade", "Leaf Storm", "Leech Seed", "Natural Gift", "Nature Power", "Razor Wind", "Slam", "Synthesis"])

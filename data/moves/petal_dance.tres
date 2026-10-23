@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dqn1w0arxwkcx"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_2hpan"]
+
+[resource]
+script = ExtResource("1_2hpan")
+id = "petal_dance"
+display_name = "Petal Dance (Dança das Pétalas)"
+name_en = "Petal Dance"
+name_pt = "Dança das Pétalas"
+type = 4
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 24.0
+duration_rounds = 3
+description = "Você entra em uma dança frenética e imparável, liberando uma série de ataques de folhas afiadas contra uma criatura. Neste e durante os próximos 1d2 turnos, faça um ataque à distância contra um alvo em alcance, causando 3d8 + MOVE de dano do tipo grama em um acerto. Quando este Move termina após a última rodada, você fica confuso. Enquanto Petal Dance estiver sob efeito, você sempre deve utilizar sua movimentação para estar em alcance contra o alvo, não pode fazer uso de outros Moves, e não pode ser substituído. O PP só é gasto no primeiro golpe."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "(24 metros)"
+duration_text_raw = "2-3 rodadas"
+role = 0
+move_power_attributes = Array[int]([1, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["confusion"])

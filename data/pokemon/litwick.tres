@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ufusq54t5e27"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wyhx8"]
+
+[resource]
+script = ExtResource("1_wyhx8")
+dex_number = 607
+display_name = "Litwick"
+id = "litwick"
+types = Array[int]([13, 1])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 4.5
+}
+attributes = {
+0: 11,
+1: 9,
+2: 13,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([2])
+abilities = Array[String](["Flash Fire", "Flame Body"])
+hidden_ability = "Infiltrator"
+evolves_to = Array[String](["lampent"])
+evolution_level = 14
+evolution_points = 11
+level_moves = {
+2: ["Smog"],
+3: ["Fire Spin"],
+4: ["Confuse Ray"],
+5: ["Night Shade"],
+6: ["Will-O-Wisp"],
+7: ["Flame Burst"],
+8: ["Imprison"],
+10: ["Hex"],
+11: ["Memento"],
+13: ["Inferno"],
+15: ["Curse", "Shadow Ball"],
+16: ["Pain Split"],
+17: ["Overheat"]
+}
+starting_moves = Array[String](["Astonish", "Ember", "Minimize"])
+tms = Array[String](["tm_9", "tm_13", "tm_37", "tm_38", "tm_45", "tm_46", "tm_51", "tm_52", "tm_58", "tm_69", "tm_80", "tm_83", "tm_84", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_109", "tm_124", "tm_127", "tm_130", "tm_131", "tm_145", "tm_177", "tm_180", "tm_183", "tm_184", "tm_186", "tm_194", "tm_199", "tm_201", "tm_202", "tm_214", "tm_216", "tm_228", "tm_229", "tm_240", "tm_242", "tm_245", "tm_248", "tm_255", "tm_257", "tm_261", "tm_270", "tm_271", "tm_276", "tm_283", "tm_284", "tm_285", "tm_286", "tm_288", "tm_296", "tm_300", "tm_301", "tm_316"])
+egg_moves = Array[String](["Acid", "Acid Armor", "Captivate", "Clear Smog", "Endure", "Haze", "Heat Wave", "Power Split"])

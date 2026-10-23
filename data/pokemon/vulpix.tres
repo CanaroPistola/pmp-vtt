@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dbk205n67dknf"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_nahy1"]
+
+[resource]
+script = ExtResource("1_nahy1")
+dex_number = 37
+display_name = "Vulpix"
+id = "vulpix"
+types = Array[int]([1])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 9.0
+}
+attributes = {
+0: 10,
+1: 13,
+2: 10,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([10, 13])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Flash Fire"])
+hidden_ability = "Drought"
+evolves_to = Array[String](["ninetales"])
+evolution_level = 6
+evolution_points = 12
+level_moves = {
+2: ["Disable", "Tail Whip"],
+3: ["Baby-Doll Eyes", "Roar"],
+4: ["Confuse Ray", "Quick Attack", "Spite"],
+5: ["Fire Spin"],
+6: ["Incinerate", "Payback"],
+7: ["Will-O-Wisp"],
+8: ["Feint Attack"],
+9: ["Hex"],
+10: ["Flame Burst"],
+11: ["Extrasensory"],
+12: ["Flamethrower", "Safeguard"],
+13: ["Imprison"],
+14: ["Fire Blast"],
+15: ["Captivate", "Grudge", "Inferno"]
+}
+starting_moves = Array[String](["Ember"])
+tms = Array[String](["tm_5", "tm_13", "tm_17", "tm_18", "tm_25", "tm_37", "tm_41", "tm_45", "tm_46", "tm_48", "tm_52", "tm_55", "tm_58", "tm_59", "tm_81", "tm_83", "tm_84", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_106", "tm_109", "tm_127", "tm_129", "tm_130", "tm_131", "tm_145", "tm_149", "tm_177", "tm_178", "tm_181", "tm_183", "tm_184", "tm_186", "tm_198", "tm_199", "tm_201", "tm_214", "tm_216", "tm_220", "tm_226", "tm_228", "tm_229", "tm_248", "tm_253", "tm_255", "tm_261", "tm_270", "tm_271", "tm_276", "tm_277", "tm_280", "tm_282", "tm_286", "tm_296", "tm_313", "tm_316", "tm_321"])
+egg_moves = Array[String](["Baby-Doll Eyes", "Captivate", "Disable", "Extrasensory", "Feint Attack", "Flail", "Flame Charge", "Flare Blitz", "Healing Wish", "Heat Wave", "Hex", "Howl", "Hypnosis", "Memento", "Power Swap", "Roar", "Secret Power", "Spite", "Tail Slap"])
+is_variant = true
+variant_data = {
+"Vulpix": {
+"diff": {},
+"display_name": "Vulpix",
+"is_default": true
+},
+"Vulpix de Alola": {
+"diff": {
+"Evolve": "Ninetales de Alola",
+"abilities": ["Snow Cloak"],
+"attributes": {
+"CON": 11,
+"DEX": 12
+},
+"hidden_ability": "Snow Warning",
+"moves_diff": {
+"egg_moves": ["Agility", "Baby-Doll Eyes", "Charm", "Disable", "Encore", "Extrasensory", "Flail", "Freeze-Dry", "Howl", "Hypnosis", "Moonblast", "Power Swap", "Roar", "Secret Power", "Spite", "Tail Slap"],
+"level_moves": {
+2: ["Disable", "Tail Whip"],
+3: ["Baby-Doll Eyes", "Roar"],
+4: ["Confuse Ray", "Ice Shard", "Spite"],
+5: ["Icy Wind"],
+6: ["Payback"],
+7: ["Mist"],
+8: ["Feint Attack"],
+9: ["Hex"],
+10: ["Aurora Beam"],
+11: ["Extrasensory"],
+12: ["Ice Beam", "Safeguard"],
+13: ["Imprison"],
+14: ["Blizzard"],
+15: ["Aurora Veil", "Captivate", "Freeze-Dry", "Grudge", "Sheer Cold"]
+},
+"starting_moves": ["Powder Snow"],
+"tms": ["tm_5", "tm_11", "tm_13", "tm_15", "tm_17", "tm_18", "tm_22", "tm_25", "tm_41", "tm_42", "tm_45", "tm_46", "tm_48", "tm_52", "tm_53", "tm_55", "tm_56", "tm_58", "tm_59", "tm_68", "tm_81", "tm_83", "tm_84", "tm_87", "tm_88", "tm_106", "tm_108", "tm_109", "tm_122", "tm_125", "tm_129", "tm_130", "tm_131", "tm_139", "tm_140", "tm_143", "tm_144", "tm_145", "tm_149", "tm_173", "tm_178", "tm_184", "tm_186", "tm_190", "tm_198", "tm_199", "tm_201", "tm_209", "tm_214", "tm_216", "tm_220", "tm_226", "tm_228", "tm_229", "tm_248", "tm_255", "tm_256", "tm_261", "tm_268", "tm_270", "tm_276", "tm_277", "tm_280", "tm_282", "tm_286", "tm_296", "tm_313", "tm_321"]
+},
+"types": [5]
+},
+"display_name": "Vulpix de Alola",
+"is_default": false
+}
+}

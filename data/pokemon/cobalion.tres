@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://prxye6hpnqcp"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_6b8cn"]
+
+[resource]
+script = ExtResource("1_6b8cn")
+dex_number = 638
+display_name = "Cobalion"
+id = "cobalion"
+types = Array[int]([16, 6])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 19
+hit_points = 366
+hit_dice = "d20"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 18,
+1: 18,
+2: 18,
+3: 10,
+4: 15,
+5: 10
+}
+skills = Array[int]([3, 14])
+senses = Array[Dictionary]([{
+"range_m": 30.0,
+"type": 0
+}, {
+"range_m": 30.0,
+"type": 2
+}])
+abilities = Array[String](["Justified"])
+level_moves = {
+3: ["Take Down"],
+5: ["Helping Hand"],
+7: ["Retaliate"],
+9: ["Iron Head"],
+11: ["Sacred Sword"],
+13: ["Swords Dance"],
+14: ["Quick Guard"],
+15: ["Work Up"],
+16: ["Metal Burst"],
+17: ["Close Combat"]
+}
+starting_moves = Array[String](["Double Kick", "Leer", "Metal Claw", "Quick Attack"])
+tms = Array[String](["tm_3", "tm_7", "tm_14", "tm_23", "tm_24", "tm_25", "tm_26", "tm_29", "tm_38", "tm_43", "tm_44", "tm_45", "tm_58", "tm_59", "tm_83", "tm_87", "tm_89", "tm_99", "tm_103", "tm_109", "tm_113", "tm_128", "tm_129", "tm_131", "tm_136", "tm_147", "tm_148", "tm_151", "tm_164", "tm_168", "tm_169", "tm_191", "tm_199", "tm_201", "tm_209", "tm_212", "tm_214", "tm_215", "tm_216", "tm_217", "tm_218", "tm_220", "tm_222", "tm_228", "tm_229", "tm_231", "tm_234", "tm_248", "tm_252", "tm_255", "tm_262", "tm_263", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_293", "tm_296", "tm_304", "tm_306", "tm_308", "tm_318", "tm_320", "tm_321"])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dv0muuhbm28c2"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_3pbn3"]
+
+[resource]
+script = ExtResource("1_3pbn3")
+id = "sweet_scent"
+display_name = "Sweet Scent (Aroma Doce)"
+name_en = "Sweet Scent"
+name_pt = "Aroma Doce"
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 5
+range_category = 3
+range_distance = 9.0
+description = "Você libera um cheiro doce direcionado em um cone de 9 metros, na tentativa de distrair os inimigos. Qualquer criatura pega no cone deve ter sucesso em um teste de resistência de CAR contra sua CD de Move, reduzindo a Evasão em 1 estágio em caso de falha, podendo ser acumulado em até -6 estágios."
+range_text_raw = "Pessoal (cone de 9 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([5, 2])
+effect_tags = Array[String](["stat_change"])

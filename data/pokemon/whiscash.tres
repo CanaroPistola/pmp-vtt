@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dckuiiw2fe6ef"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qgmak"]
+
+[resource]
+script = ExtResource("1_qgmak")
+dex_number = 340
+display_name = "Whiscash"
+id = "whiscash"
+types = Array[int]([2, 8])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 60
+hit_dice = "d12"
+movement = {
+0: 1.5,
+1: 10.5
+}
+attributes = {
+0: 13,
+1: 12,
+2: 18,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Oblivious", "Anticipation"])
+hidden_ability = "Hydration"
+level_moves = {
+2: ["Mud Sport", "Water Sport"],
+3: ["Water Gun"],
+5: ["Amnesia", "Mud Bomb"],
+6: ["Water Pulse"],
+7: ["Magnitude"],
+9: ["Rest", "Snore"],
+10: ["Aqua Tail"],
+12: ["Earthquake"],
+13: ["Muddy Water"],
+15: ["Future Sight"],
+16: ["Fissure"]
+}
+starting_moves = Array[String](["Belch", "Mud-Slap", "Thrash", "Tickle", "Zen Headbutt"])
+tms = Array[String](["tm_3", "tm_10", "tm_11", "tm_13", "tm_22", "tm_25", "tm_26", "tm_35", "tm_42", "tm_45", "tm_51", "tm_57", "tm_58", "tm_59", "tm_64", "tm_73", "tm_74", "tm_83", "tm_87", "tm_109", "tm_110", "tm_113", "tm_122", "tm_129", "tm_131", "tm_132", "tm_135", "tm_136", "tm_139", "tm_144", "tm_157", "tm_174", "tm_175", "tm_176", "tm_182", "tm_199", "tm_209", "tm_214", "tm_216", "tm_223", "tm_224", "tm_225", "tm_228", "tm_230", "tm_231", "tm_232", "tm_234", "tm_248", "tm_255", "tm_260", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_275", "tm_276", "tm_277", "tm_282", "tm_286", "tm_296", "tm_311", "tm_312", "tm_313", "tm_314", "tm_321"])
+egg_moves = Array[String](["Dragon Dance", "Earth Power", "Flail", "Hydro Pump", "Mud Shot", "Muddy Water", "Spark", "Take Down", "Thrash", "Whirlpool"])

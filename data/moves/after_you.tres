@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://6kkno2elw8te"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_t2jrf"]
+
+[resource]
+script = ExtResource("1_t2jrf")
+id = "after_you"
+display_name = "After You (Depois de Você)"
+name_en = "After You"
+name_pt = "Depois de Você"
+move_time = "1 ação"
+range_category = 2
+range_distance = 15.0
+description = "Escolha uma criatura no alcance que ainda não tenha feito sua jogada no turno atual. O alvo deve imediatamente fazer sua jogada agora e retornar à ordem normal de iniciativa no próximo turno. Caso ele já tenha agido, você pode usar este Move para torná-lo o primeiro da iniciativa na rodada seguinte, retornando ao normal após isso."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"

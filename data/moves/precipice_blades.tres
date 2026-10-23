@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cgat3us1x0aig"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_nf4h5"]
+
+[resource]
+script = ExtResource("1_nf4h5")
+id = "precipice_blades"
+display_name = "Precipice Blades"
+name_en = "Precipice Blades"
+type = 8
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 30.0
+description = "Você reúne a energia natural da terra ao seu redor e manifesta todo o poder em lâminas de pedra temíveis que surgem do chão. Faça até quatro rolagens de ataque à distância contra qualquer criatura(s) no alcance, e a até 40 pés (12 metros) de altura do solo, causando 3d8 + MOVE de dano de terra em cada acerto bem-sucedido. Cada lâmina deve mirar um alvo diferente."
+scaling_text = "Os dados de dano para este Move mudam  para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "(30 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}

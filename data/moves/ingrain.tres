@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bpeaixgpjcwxp"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_e8xfq"]
+
+[resource]
+script = ExtResource("1_e8xfq")
+id = "ingrain"
+display_name = "Ingrain"
+name_en = "Ingrain"
+type = 4
+move_time = "1 ação"
+resolution = 2
+has_save = true
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você perfura o solo com raízes, absorvendo energia natural e se fixando no lugar. No final de cada um de seus turnos (incluindo este), cure-se em 1d6 + MOVE pontos de vida. Durante a duração deste Move, seu deslocamento é reduzid o a zero , você sofre desva ntagem em testes de DES, e não pode fugir ou ser trocado por seu treinador."
+scaling_text = "O dado de cura para este Move muda para 1d10 no nível 5, 1d12 no nível 10 e 2d8 no nível 17. Observações: Moves que forçam a troca do alvo (como Roar e Whirlwind) não conseguem forçar um Pokémon enraizado a sair do campo. Um Pokémon afetado por Heal Block ainda pode usar Ingrain (enraizando -se normalmente), mas não receberá cura de Ingrain enquanto Heal Block estiver em efeito. Os efeitos de Ingrain podem ser passados com Baton Pass. Um Pokémon enraizado ainda pode ser trocado quando: • Usa um Move que troque o usuário (como Baton Pass, U-turn ou Volt Switch); • Segura um Smoke Ball; • O efeito do Eject Button é ativado; • O Treinador usa um item de fuga."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+role = 1
+move_power_attributes = Array[int]([2])
+has_healing = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["heal"])

@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://rnh5rh60e0p4"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_5543k"]
+
+[resource]
+script = ExtResource("1_5543k")
+dex_number = 100
+display_name = "Voltorb"
+id = "voltorb"
+types = Array[int]([3])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 14
+hit_points = 17
+movement = {
+0: 7.5
+}
+attributes = {
+0: 12,
+1: 14,
+2: 12,
+3: 6,
+4: 10,
+5: 8
+}
+skills = Array[int]([6])
+abilities = Array[String](["Soundproof", "Static"])
+hidden_ability = "Aftermath"
+evolves_to = Array[String](["electrode"])
+evolution_level = 10
+evolution_points = 10
+level_moves = {
+2: ["Eerie Impulse", "Sonic Boom", "Thunder Shock"],
+3: ["Spark"],
+4: ["Rollout"],
+5: ["Screech"],
+6: ["Charge Beam"],
+7: ["Swift"],
+8: ["Electro Ball"],
+9: ["Self-Destruct"],
+10: ["Light Screen"],
+12: ["Magnet Rise"],
+13: ["Discharge"],
+14: ["Explosion"],
+15: ["Gyro Ball", "Mirror Coat"]
+}
+starting_moves = Array[String](["Charge", "Tackle"])
+tms = Array[String](["tm_5", "tm_39", "tm_40", "tm_45", "tm_58", "tm_59", "tm_76", "tm_77", "tm_78", "tm_79", "tm_83", "tm_86", "tm_87", "tm_106", "tm_109", "tm_121", "tm_129", "tm_131", "tm_156", "tm_161", "tm_164", "tm_169", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_242", "tm_243", "tm_248", "tm_255", "tm_270", "tm_276", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_290", "tm_293", "tm_294", "tm_295", "tm_296", "tm_308", "tm_315"])
+egg_moves = Array[String](["Metal Sound", "Recycle"])
+is_variant = true
+variant_data = {
+"Voltorb": {
+"diff": {},
+"display_name": "Voltorb",
+"is_default": true
+},
+"Voltorb de Hisui": {
+"diff": {
+"moves_diff": {
+"egg_moves": ["Leech Seed", "Recycle", "Worry Seed"],
+"level_moves": {
+2: ["Stun Spore", "Thunder Shock"],
+3: ["Bullet Seed"],
+4: ["Rollout"],
+5: ["Screech"],
+6: ["Charge Beam"],
+7: ["Swift"],
+8: ["Electro Ball"],
+9: ["Self-Destruct"],
+10: ["Energy Ball"],
+12: ["Discharge", "Seed Bomb"],
+14: ["Explosion"],
+15: ["Grassy Terrain", "Gyro Ball"]
+},
+"starting_moves": ["Charge", "Tackle"],
+"tms": ["tm_5", "tm_36", "tm_39", "tm_40", "tm_59", "tm_77", "tm_78", "tm_79", "tm_83", "tm_84", "tm_87", "tm_106", "tm_112", "tm_114", "tm_116", "tm_117", "tm_121", "tm_138", "tm_154", "tm_163", "tm_199", "tm_209", "tm_212", "tm_214", "tm_238", "tm_248", "tm_257", "tm_270", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_290", "tm_293", "tm_294", "tm_308", "tm_315"]
+},
+"types": [3, 4]
+},
+"display_name": "Voltorb de Hisui",
+"is_default": false
+}
+}

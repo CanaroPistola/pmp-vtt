@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b7arwhbs6e25e"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_seh5s"]
+
+[resource]
+script = ExtResource("1_seh5s")
+id = "wide_guard"
+display_name = "Wide Guard"
+name_en = "Wide Guard"
+type = 12
+pp = 5
+move_time = "1 reação"
+activation = 1
+range_category = 5
+range_distance = 6.0
+duration_rounds = 1
+description = "Você tem a habilidade de criar uma grande barreira para proteger seus aliados de Moves de área de efeito. Quando uma criatura ativa um Move que caus e dano a vários alvos dentro do alcance, você pode usar sua reação para evitar automaticamente o dano e efeitos desse e de qualquer outro Move de múltiplos alvos dentro da área até o início de seu próximo turno . Caso faça isso, você abre mão de sua ação padrão em seu próximo turno . A precisão de Wide Guard não diminui se for usado em rodadas consecutivas após ele mesmo ou Quick Guard. No entanto , cada uso consecutivo bem -sucedido de Wide Guard conta para a redução da precisão de Protect, Detect, Endure, Spiky Shield, King's Shield, Baneful Bunker, Burning Bulwark, Max Guard, Obstruct e Silk Trap: role 1d6 para cada uso consecutivo bem -sucedido de sses Moves, até o máximo de 6d6, e o Move só será bem -sucedido se todos os dados resultarem em 5 ou 6."
+range_text_raw = "Pessoal (raio de 6 metros)"
+duration_text_raw = "Até o início do próximo turno"
+effect_tags = Array[String](["protect"])

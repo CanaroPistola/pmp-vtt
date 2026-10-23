@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b1iftncbvvgbw"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_uutuq"]
+
+[resource]
+script = ExtResource("1_uutuq")
+dex_number = 886
+display_name = "Drakloak"
+id = "drakloak"
+types = Array[int]([14, 13])
+sr = "8"
+min_level = 8
+evolution_stage = 2
+armor_class = 14
+hit_points = 64
+hit_dice = "d8"
+attributes = {
+0: 15,
+1: 16,
+2: 12,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 6])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Clear Body", "Infiltrator"])
+hidden_ability = "Cursed Body"
+evolves_to = Array[String](["dragapult"])
+evolution_level = 16
+evolution_points = 17
+level_moves = {
+2: ["Lock-On"],
+4: ["Assurance"],
+6: ["Hex"],
+8: ["Agility"],
+10: ["Double Hit"],
+12: ["U-turn"],
+14: ["Dragon Dance"],
+15: ["Phantom Force"],
+16: ["Take Down"],
+17: ["Double-Edge", "Dragon Rush"],
+18: ["Last Resort"]
+}
+starting_moves = Array[String](["Astonish", "Bite", "Dragon Pulse", "Infestation", "Quick Attack"])
+tms = Array[String](["tm_2", "tm_5", "tm_12", "tm_13", "tm_18", "tm_19", "tm_28", "tm_30", "tm_46", "tm_51", "tm_57", "tm_59", "tm_60", "tm_62", "tm_64", "tm_65", "tm_66", "tm_83", "tm_87", "tm_91", "tm_97", "tm_129", "tm_130", "tm_135", "tm_156", "tm_180", "tm_182", "tm_188", "tm_195", "tm_199", "tm_203", "tm_212", "tm_214", "tm_228", "tm_240", "tm_248", "tm_255", "tm_265", "tm_270", "tm_271", "tm_275", "tm_277", "tm_282", "tm_286", "tm_288", "tm_290", "tm_293", "tm_294", "tm_303", "tm_316"])
+egg_moves = Array[String](["Confuse Ray", "Curse", "Disable", "Double Team", "Dragon Tail", "Grudge", "Sucker Punch"])

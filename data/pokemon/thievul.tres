@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dilkcxge3rtx7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_4p13x"]
+
+[resource]
+script = ExtResource("1_4p13x")
+dex_number = 828
+display_name = "Thievul"
+id = "thievul"
+types = Array[int]([15])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 12,
+1: 16,
+2: 12,
+3: 6,
+4: 11,
+5: 13
+}
+skills = Array[int]([5, 6, 15])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Run Away", "Unburden"])
+hidden_ability = "Stakeout"
+level_moves = {
+4: ["Snarl"],
+6: ["Assurance"],
+8: ["Nasty Plot"],
+10: ["Sucker Punch"],
+12: ["Night Slash"],
+14: ["Tail Slap"],
+15: ["Foul Play"],
+16: ["Parting Shot"]
+}
+starting_moves = Array[String](["Beat Up", "Hone Claws", "Quick Attack", "Tail Whip", "Thief"])
+tms = Array[String](["tm_2", "tm_12", "tm_13", "tm_19", "tm_37", "tm_55", "tm_87", "tm_88", "tm_92", "tm_113", "tm_136", "tm_140", "tm_152", "tm_174", "tm_199", "tm_214", "tm_228", "tm_236", "tm_241", "tm_253", "tm_255", "tm_277", "tm_280", "tm_288", "tm_291", "tm_303"])
+egg_moves = Array[String](["Howl", "Knock Off", "Quick Guard", "Torment"])

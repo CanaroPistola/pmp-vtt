@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dr1o487aeyfvt"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_dty6f"]
+
+[resource]
+script = ExtResource("1_dty6f")
+id = "triple_dive"
+display_name = "Triple Dive"
+name_en = "Triple Dive"
+type = 2
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você realiza três mergulhos perfeitamente sincronizados, atingindo o alvo em sequência com impactos e respingos de água. Faça três ataques corpo a corpo -1 contra 1 ou até 3 alvos diferentes, causando 1d6 + MOVE de dano do tipo Água por golpe por acerto."
+scaling_text = "Os dados de dano para este Move mudam para 1d10 no nível 5, 1d12 no nível 10 e 2d8 no nível 17. Cada golpe de Triple Dive é tratado como um ataque separado: Habilidades que ativam com o contato (como Static, Weak Armor, Iron Barbs, etc.) são ativadas para cada golpe individualmente. Se o primeiro golpe quebrar um Substitute, o segundo golpe causará dano direto ao Pokémon alvo. O Move Counter revida apenas o golpe final, enquanto Bide revida todo o dano acumulado."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -1
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+10: {
+"amount": 1,
+"dice_max": 12,
+"move": true
+},
+17: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["multi_hit"])

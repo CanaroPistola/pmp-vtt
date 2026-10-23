@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://by8pygaue2v7u"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_177xn"]
+
+[resource]
+script = ExtResource("1_177xn")
+dex_number = 191
+display_name = "Sunkern"
+id = "sunkern"
+types = Array[int]([4])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 11
+hit_points = 18
+movement = {
+0: 3.0
+}
+attributes = {
+0: 9,
+1: 9,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([12])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 1
+}])
+abilities = Array[String](["Chlorophyll", "Solar Power"])
+hidden_ability = "Early Bird"
+evolves_to = Array[String](["sunflora"])
+evolution_level = 6
+evolution_points = 13
+level_moves = {
+2: ["Ingrain"],
+3: ["Grass Whistle"],
+4: ["Mega Drain"],
+5: ["Leech Seed"],
+6: ["Razor Leaf"],
+7: ["Worry Seed"],
+8: ["Giga Drain"],
+9: ["Endeavor"],
+10: ["Synthesis"],
+11: ["Natural Gift"],
+12: ["Solar Beam"],
+13: ["Double-Edge"],
+14: ["Sunny Day"],
+15: ["Seed Bomb"]
+}
+starting_moves = Array[String](["Absorb", "Growth", "Tackle"])
+tms = Array[String](["tm_4", "tm_13", "tm_36", "tm_45", "tm_51", "tm_58", "tm_59", "tm_73", "tm_81", "tm_82", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_114", "tm_117", "tm_129", "tm_131", "tm_154", "tm_156", "tm_163", "tm_179", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_248", "tm_249", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_282", "tm_286", "tm_296", "tm_298", "tm_305", "tm_313", "tm_319"])
+egg_moves = Array[String](["Bide", "Curse", "Encore", "Endure", "Grass Whistle", "Grassy Terrain", "Helping Hand", "Ingrain", "Leech Seed", "Morning Sun", "Natural Gift", "Nature Power", "Sweet Scent"])

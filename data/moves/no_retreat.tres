@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cdfakudo1wtkx"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_k6cuc"]
+
+[resource]
+script = ExtResource("1_k6cuc")
+id = "no_retreat"
+display_name = "No Retreat"
+name_en = "No Retreat"
+type = 6
+pp = 3
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você se arrisca ao máximo, energizando seu corpo para um caminho de luta sem volta. Seu Ataque, Ataque E special, Defesa, Defesa Especial e Velocidade aumentam em 1 estágio, podendo ser acumulados em até 6 estágios cada. Entretanto, você se torna incapaz de fugir, ser trocado, ou se afastar voluntariamente 30 pés (9 metros) do seu inimigo mais próximo até o fim do combate. Observações: O usuário de No Retreat ainda pode ser trocado após usar o Move se estiver segurando Shed Shell, se seu Eject Button ativar, ou se o oponente usar um Move que force a troca do alvo, como Whirlwind ou Dragon Tail."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

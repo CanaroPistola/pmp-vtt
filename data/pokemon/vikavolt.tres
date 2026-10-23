@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b8mexvvvpfml7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qdwe5"]
+
+[resource]
+script = ExtResource("1_qdwe5")
+dex_number = 738
+display_name = "Vikavolt"
+id = "vikavolt"
+types = Array[int]([11, 3])
+sr = "10"
+min_level = 5
+evolution_stage = 3
+armor_class = 15
+hit_points = 59
+hit_dice = "d10"
+movement = {
+0: 1.5
+}
+attributes = {
+0: 16,
+1: 18,
+2: 16,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([0, 17])
+abilities = Array[String](["Levitate"])
+level_moves = {
+2: ["String Shot"],
+3: ["Mud-Slap"],
+4: ["Bite"],
+5: ["Bug Bite"],
+6: ["Spark"],
+7: ["Acrobatics"],
+9: ["Guillotine"],
+10: ["Sticky Web"],
+11: ["Bug Buzz"],
+13: ["Dig"],
+14: ["Zap Cannon"],
+15: ["Agility", "Fly"]
+}
+starting_moves = Array[String](["Air Slash", "Charge", "Crunch", "Discharge", "Thunderbolt", "Vise Grip"])
+tms = Array[String](["tm_2", "tm_5", "tm_7", "tm_13", "tm_18", "tm_32", "tm_33", "tm_35", "tm_39", "tm_40", "tm_45", "tm_50", "tm_55", "tm_58", "tm_72", "tm_76", "tm_77", "tm_78", "tm_79", "tm_83", "tm_84", "tm_87", "tm_99", "tm_102", "tm_109", "tm_113", "tm_131", "tm_136", "tm_147", "tm_151", "tm_156", "tm_160", "tm_164", "tm_174", "tm_175", "tm_191", "tm_195", "tm_199", "tm_209", "tm_214", "tm_216", "tm_219", "tm_227", "tm_228", "tm_236", "tm_242", "tm_243", "tm_245", "tm_247", "tm_248", "tm_255", "tm_257", "tm_269", "tm_270", "tm_273", "tm_276", "tm_277", "tm_282", "tm_286", "tm_290", "tm_293", "tm_294", "tm_296", "tm_308", "tm_315", "tm_320"])
+egg_moves = Array[String](["Discharge", "Electroweb", "Endure", "Harden", "Mud Shot"])

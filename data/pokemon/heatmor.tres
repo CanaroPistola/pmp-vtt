@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bxhqsm6a4anut"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_0jolu"]
+
+[resource]
+script = ExtResource("1_0jolu")
+dex_number = 631
+display_name = "Heatmor"
+id = "heatmor"
+types = Array[int]([1])
+sr = "8"
+min_level = 5
+evolution_stage = 1
+armor_class = 14
+hit_points = 60
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 17,
+1: 15,
+2: 16,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Gluttony", "Flash Fire"])
+hidden_ability = "White Smoke"
+level_moves = {
+2: ["Odor Sleuth"],
+4: ["Bind"],
+6: ["Fire Spin"],
+7: ["Fury Swipes"],
+9: ["Snatch"],
+11: ["Flame Burst"],
+12: ["Bug Bite"],
+14: ["Slash"],
+15: ["Amnesia", "Fire Lash", "Flamethrower"],
+16: ["Spit Up", "Stockpile", "Swallow"],
+17: ["Flare Blitz", "Inferno"]
+}
+starting_moves = Array[String](["Hone Claws", "Incinerate", "Lick", "Tackle"])
+tms = Array[String](["tm_3", "tm_13", "tm_20", "tm_31", "tm_32", "tm_37", "tm_45", "tm_55", "tm_58", "tm_67", "tm_87", "tm_91", "tm_94", "tm_95", "tm_97", "tm_100", "tm_103", "tm_105", "tm_109", "tm_111", "tm_112", "tm_113", "tm_127", "tm_131", "tm_150", "tm_158", "tm_183", "tm_199", "tm_209", "tm_211", "tm_214", "tm_216", "tm_225", "tm_228", "tm_235", "tm_241", "tm_248", "tm_254", "tm_255", "tm_257", "tm_266", "tm_270", "tm_271", "tm_274", "tm_276", "tm_283", "tm_288", "tm_289", "tm_292", "tm_296", "tm_316"])
+egg_moves = Array[String](["Belch", "Body Slam", "Curse", "Feint Attack", "Heat Wave", "Night Slash", "Pursuit", "Sleep Talk", "Sucker Punch", "Tickle", "Wrap"])

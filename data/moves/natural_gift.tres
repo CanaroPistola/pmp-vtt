@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bq8bdc6swy1m4"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_id815"]
+
+[resource]
+script = ExtResource("1_id815")
+id = "natural_gift"
+display_name = "Natural Gift (Presente Natural)"
+name_en = "Natural Gift"
+name_pt = "Presente Natural"
+type_is_variable = true
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Você absorve poder de sua berry segurada, liberando-o em um ataque à distância. Faça um ataque à distância. O dano e o tipo do ataque dependerão da berry segurada, conforme os dados abaixo: Confira a tabela no livro."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([1, 0])

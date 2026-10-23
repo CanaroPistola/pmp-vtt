@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://byxmr2ukp60da"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_3n54k"]
+
+[resource]
+script = ExtResource("1_3n54k")
+dex_number = 163
+display_name = "Hoothoot"
+id = "hoothoot"
+types = Array[int]([0, 9])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 16
+movement = {
+0: 4.5
+}
+attributes = {
+0: 10,
+1: 11,
+2: 10,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([6, 13])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Insomnia", "Keen Eye"])
+hidden_ability = "Tinted Lens"
+evolves_to = Array[String](["noctowl"])
+evolution_level = 7
+evolution_points = 10
+level_moves = {
+2: ["Hypnosis"],
+3: ["Peck"],
+4: ["Confusion"],
+5: ["Defog", "Echoed Voice"],
+6: ["Zen Headbutt"],
+7: ["Psycho Shift"],
+8: ["Extrasensory"],
+9: ["Take Down"],
+10: ["Reflect"],
+11: ["Air Slash"],
+12: ["Uproar"],
+13: ["Roost"],
+14: ["Moonblast"],
+15: ["Dream Eater", "Synchronoise"]
+}
+starting_moves = Array[String](["Foresight", "Growl", "Tackle"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_10", "tm_13", "tm_27", "tm_38", "tm_45", "tm_46", "tm_54", "tm_58", "tm_69", "tm_72", "tm_75", "tm_83", "tm_87", "tm_90", "tm_102", "tm_109", "tm_124", "tm_127", "tm_131", "tm_133", "tm_137", "tm_145", "tm_161", "tm_178", "tm_180", "tm_199", "tm_200", "tm_201", "tm_202", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_227", "tm_228", "tm_236", "tm_240", "tm_244", "tm_246", "tm_248", "tm_255", "tm_261", "tm_265", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_281", "tm_282", "tm_286", "tm_288", "tm_296", "tm_305", "tm_318", "tm_321"])
+egg_moves = Array[String](["Agility", "Defog", "Feather Dance", "Feint Attack", "Hurricane", "Mean Look", "Mirror Move", "Night Shade", "Sky Attack", "Supersonic", "Whirlwind", "Wing Attack"])

@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://6xds5xvgjd1r"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vf4hi"]
+
+[resource]
+script = ExtResource("1_vf4hi")
+dex_number = 51
+display_name = "Dugtrio"
+id = "dugtrio"
+types = Array[int]([8])
+sr = "8"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 55
+hit_dice = "d10"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 15,
+1: 18,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 6])
+senses = Array[Dictionary]([{
+"range_m": 36.0,
+"type": 1
+}])
+abilities = Array[String](["Sand Veil", "Arena Trap"])
+hidden_ability = "Sand Force"
+level_moves = {
+2: ["Growl"],
+3: ["Astonish"],
+4: ["Mud-Slap"],
+5: ["Magnitude"],
+6: ["Bulldoze"],
+8: ["Sucker Punch"],
+9: ["Mud Bomb"],
+10: ["Earth Power", "Sandstorm"],
+12: ["Dig"],
+14: ["Slash"],
+15: ["Earthquake"],
+16: ["Fissure"]
+}
+starting_moves = Array[String](["Night Slash", "Rototiller", "Sand Attack", "Sand Tomb", "Scratch", "Tri Attack"])
+tms = Array[String](["tm_3", "tm_5", "tm_12", "tm_13", "tm_19", "tm_25", "tm_35", "tm_41", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_75", "tm_82", "tm_83", "tm_87", "tm_106", "tm_109", "tm_113", "tm_129", "tm_131", "tm_136", "tm_174", "tm_175", "tm_199", "tm_214", "tm_216", "tm_218", "tm_221", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_235", "tm_236", "tm_241", "tm_248", "tm_249", "tm_250", "tm_251", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_278", "tm_282", "tm_286", "tm_288", "tm_289", "tm_296", "tm_305"])
+egg_moves = Array[String](["Ancient Power", "Astonish", "Beat Up", "Endure", "Feint Attack", "Final Gambit", "Headbutt", "Hone Claws", "Memento", "Mud Bomb", "Pursuit", "Reversal", "Screech", "Uproar"])
+is_variant = true
+variant_data = {
+"Dugtrio": {
+"diff": {},
+"display_name": "Dugtrio",
+"is_default": true
+},
+"Dugtrio de Alola": {
+"diff": {
+"abilities": ["Sand Veil", "Tangling Hair"],
+"attributes": {
+"DEX": 16,
+"STR": 17
+},
+"moves_diff": {
+"egg_moves": ["Ancient Power", "Beat Up", "Endure", "Feint Attack", "Final Gambit", "Headbutt", "Hone Claws", "Memento", "Metal Sound", "Pursuit", "Reversal", "Thrash"],
+"level_moves": {
+2: ["Growl"],
+3: ["Astonish"],
+4: ["Mud-Slap"],
+5: ["Magnitude"],
+6: ["Bulldoze"],
+8: ["Sucker Punch"],
+9: ["Mud Bomb"],
+10: ["Earth Power", "Sandstorm"],
+12: ["Dig"],
+14: ["Iron Head"],
+15: ["Earthquake"],
+16: ["Fissure"]
+},
+"starting_moves": ["Metal Claw", "Night Slash", "Rototiller", "Sand Attack", "Sand Tomb", "Tri Attack"],
+"tms": ["tm_3", "tm_5", "tm_12", "tm_13", "tm_19", "tm_25", "tm_35", "tm_41", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_75", "tm_82", "tm_83", "tm_87", "tm_99", "tm_106", "tm_109", "tm_113", "tm_129", "tm_131", "tm_136", "tm_147", "tm_148", "tm_168", "tm_169", "tm_174", "tm_175", "tm_199", "tm_214", "tm_216", "tm_218", "tm_221", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_234", "tm_235", "tm_236", "tm_241", "tm_248", "tm_249", "tm_250", "tm_251", "tm_255", "tm_262", "tm_263", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_278", "tm_282", "tm_286", "tm_288", "tm_289", "tm_296", "tm_305", "tm_318"]
+},
+"types": [8, 16]
+},
+"display_name": "Dugtrio de Alola",
+"is_default": false
+}
+}

@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cd1eqdnshn4gl"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_qnekc"]
+
+[resource]
+script = ExtResource("1_qnekc")
+dex_number = 228
+display_name = "Houndour"
+id = "houndour"
+types = Array[int]([15, 1])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 17
+movement = {
+0: 9.0
+}
+attributes = {
+0: 11,
+1: 14,
+2: 12,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 6])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Early Bird", "Flash Fire"])
+hidden_ability = "Unnerve"
+evolves_to = Array[String](["houndoom"])
+evolution_level = 8
+evolution_points = 9
+level_moves = {
+2: ["Howl"],
+3: ["Smog"],
+5: ["Roar"],
+6: ["Bite"],
+7: ["Incinerate", "Odor Sleuth"],
+9: ["Beat Up"],
+10: ["Fire Fang"],
+11: ["Feint Attack", "Torment"],
+13: ["Comeuppance", "Embargo"],
+14: ["Foul Play"],
+15: ["Crunch", "Flamethrower"],
+16: ["Inferno", "Nasty Plot"]
+}
+starting_moves = Array[String](["Ember", "Leer"])
+tms = Array[String](["tm_13", "tm_25", "tm_37", "tm_45", "tm_50", "tm_52", "tm_58", "tm_59", "tm_69", "tm_80", "tm_83", "tm_87", "tm_91", "tm_92", "tm_95", "tm_96", "tm_97", "tm_98", "tm_106", "tm_109", "tm_127", "tm_129", "tm_131", "tm_137", "tm_149", "tm_152", "tm_174", "tm_175", "tm_178", "tm_183", "tm_184", "tm_186", "tm_199", "tm_203", "tm_209", "tm_214", "tm_216", "tm_218", "tm_220", "tm_226", "tm_228", "tm_234", "tm_240", "tm_248", "tm_249", "tm_253", "tm_254", "tm_255", "tm_257", "tm_261", "tm_270", "tm_271", "tm_272", "tm_276", "tm_282", "tm_283", "tm_285", "tm_286", "tm_288", "tm_291", "tm_295", "tm_296", "tm_298", "tm_305", "tm_316"])
+egg_moves = Array[String](["Beat Up", "Counter", "Destiny Bond", "Feint", "Fire Fang", "Fire Spin", "Nasty Plot", "Punishment", "Pursuit", "Rage", "Reversal", "Spite", "Sucker Punch", "Thunder Fang"])

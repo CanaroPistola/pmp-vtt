@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://btov8ht0juj68"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_yltx1"]
+
+[resource]
+script = ExtResource("1_yltx1")
+dex_number = 428
+display_name = "Lopunny"
+id = "lopunny"
+types = Array[int]([0])
+sr = "9"
+min_level = 5
+evolution_stage = 2
+armor_class = 17
+hit_points = 55
+hit_dice = "d10"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 16,
+1: 17,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([13])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}])
+abilities = Array[String](["Cute Charm", "Klutz"])
+hidden_ability = "Limber"
+level_moves = {
+2: ["Endure"],
+5: ["Baby-Doll Eyes"],
+6: ["Quick Attack"],
+7: ["Double Kick"],
+8: ["Jump Kick"],
+9: ["Baton Pass"],
+11: ["Agility", "Headbutt"],
+12: ["Dizzy Punch"],
+15: ["After You", "Charm", "Flatter"],
+16: ["Bounce", "Entrainment"],
+17: ["Healing Wish", "High Jump Kick"]
+}
+starting_moves = Array[String](["Defense Curl", "Foresight", "Magic Coat", "Mirror Coat", "Pound", "Return", "Rototiller", "Splash"])
+tms = Array[String](["tm_2", "tm_4", "tm_12", "tm_13", "tm_17", "tm_22", "tm_26", "tm_31", "tm_40", "tm_41", "tm_45", "tm_48", "tm_55", "tm_58", "tm_67", "tm_82", "tm_87", "tm_88", "tm_94", "tm_100", "tm_103", "tm_105", "tm_109", "tm_113", "tm_114", "tm_125", "tm_129", "tm_131", "tm_136", "tm_137", "tm_139", "tm_141", "tm_149", "tm_151", "tm_153", "tm_158", "tm_159", "tm_161", "tm_165", "tm_166", "tm_186", "tm_190", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_224", "tm_228", "tm_240", "tm_242", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_277", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_302", "tm_303", "tm_305", "tm_311", "tm_318"])
+egg_moves = Array[String](["Circle Throw", "Copycat", "Cosmic Power", "Double Hit", "Encore", "Fake Out", "Fake Tears", "Fire Punch", "Flail", "Focus Punch", "Ice Punch", "Low Kick", "Mud Sport", "Power-Up Punch", "Sky Uppercut", "Sweet Kiss", "Switcheroo", "Teeter Dance", "Thunder Punch"])

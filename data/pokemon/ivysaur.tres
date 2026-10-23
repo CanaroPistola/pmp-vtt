@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c0x73tn7ebc38"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_imwbe"]
+
+[resource]
+script = ExtResource("1_imwbe")
+dex_number = 2
+display_name = "Ivysaur"
+id = "ivysaur"
+types = Array[int]([4, 7])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 45
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 15,
+1: 14,
+2: 12,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 12])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Chlorophyll"
+evolves_to = Array[String](["venusaur"])
+evolution_level = 11
+evolution_points = 10
+level_moves = {
+3: ["Leech Seed", "Vine Whip"],
+5: ["Poison Powder", "Sleep Powder", "Take Down"],
+7: ["Razor Leaf", "Seed Bomb"],
+8: ["Sweet Scent"],
+10: ["Growth"],
+11: ["Double-Edge"],
+12: ["Worry Seed"],
+13: ["Synthesis"],
+15: ["Power Whip", "Solar Beam"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_1", "tm_13", "tm_20", "tm_25", "tm_36", "tm_41", "tm_45", "tm_51", "tm_58", "tm_59", "tm_75", "tm_83", "tm_84", "tm_87", "tm_89", "tm_109", "tm_112", "tm_114", "tm_115", "tm_116", "tm_117", "tm_129", "tm_131", "tm_150", "tm_154", "tm_156", "tm_163", "tm_179", "tm_199", "tm_214", "tm_216", "tm_220", "tm_228", "tm_229", "tm_238", "tm_248", "tm_249", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_282", "tm_286", "tm_296", "tm_298", "tm_307", "tm_313", "tm_318", "tm_319"])
+egg_moves = Array[String](["Amnesia", "Charm", "Curse", "Endure", "Giga Drain", "Grass Whistle", "Grassy Terrain", "Ingrain", "Leaf Storm", "Magical Leaf", "Nature Power", "Petal Dance", "Power Whip", "Skull Bash", "Sludge", "Toxic"])

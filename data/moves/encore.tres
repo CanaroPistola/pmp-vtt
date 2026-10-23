@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://db1400flh4kxt"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_iqm81"]
+
+[resource]
+script = ExtResource("1_iqm81")
+id = "encore"
+display_name = "Encore"
+name_en = "Encore"
+pp = 3
+move_time = "1 reação/ação"
+activation = 3
+range_category = 2
+range_distance = 30.0
+duration_rounds = 3
+description = "Você dispara uma esfera de energia branca em uma criatura, fazendo-a brilhar em uma aura clara que a força a repetir o último Move que utilizou. Quando uma criatura dentro do alcance usar um Move, você pode gastar sua reação para rolar 1d20 + MOVE + 9 e comparar o resultado com 10 + SAB do alvo. Em um resultado maior ou igual, nenhum outro Move além do que ativou esta reação pode ser ativado pela criatura alvo pelas próximas 3 rodadas. Fazer isso consome sua ação em seu próximo turno. Você pode usar este Move como uma ação em seu turno para fazer o mesmo efeito com o último Move utilizado pelo alvo naquele combate. Observações: Este Move ignora Substitute.  Se o Pokémon afetado por Encore ficar sem PP para o Move bloqueado, o efeito de Encore termina imediatamente. Se o Move  estiver impedido por Disable, Gravity, Heal Block, Imprison, Taunt, Throat Chop ou Torment, o Pokémon será forçado a usar Struggle . Encore não pode ser utilizado contra os Moves Encore, Mimic, Mirror Move, Sketch, Struggle ou Transform."
+range_text_raw = "(30 metros)"
+duration_text_raw = "3 rodadas"
+move_power_attributes = Array[int]([4, 5])

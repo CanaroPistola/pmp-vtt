@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bp0wtdrywcbiv"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_7f72i"]
+
+[resource]
+script = ExtResource("1_7f72i")
+dex_number = 973
+display_name = "Flamigo"
+id = "flamigo"
+types = Array[int]([9, 6])
+sr = "9"
+min_level = 5
+evolution_stage = 1
+armor_class = 15
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 17,
+1: 15,
+2: 17,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 9, 13])
+abilities = Array[String](["Scrappy", "Tangled Feet"])
+hidden_ability = "Costar"
+level_moves = {
+2: ["Double Kick"],
+3: ["Detect"],
+4: ["Wing Attack"],
+5: ["Focus Energy"],
+6: ["Low Kick"],
+7: ["Feint"],
+9: ["Payback"],
+11: ["Roost"],
+12: ["Air Slash"],
+13: ["Mega Kick"],
+15: ["Throat Chop", "Wide Guard"],
+16: ["Brave Bird"]
+}
+starting_moves = Array[String](["Copycat", "Peck"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_6", "tm_7", "tm_27", "tm_34", "tm_42", "tm_43", "tm_72", "tm_82", "tm_83", "tm_87", "tm_90", "tm_100", "tm_102", "tm_113", "tm_133", "tm_136", "tm_157", "tm_158", "tm_159", "tm_160", "tm_195", "tm_199", "tm_201", "tm_214", "tm_218", "tm_248", "tm_270", "tm_278", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_303", "tm_304", "tm_311"])
+egg_moves = Array[String](["Double Team", "Quick Guard", "Sky Attack"])

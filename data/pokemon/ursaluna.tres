@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cild64shr7qny"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_iptsl"]
+
+[resource]
+script = ExtResource("1_iptsl")
+dex_number = 901
+display_name = "Ursaluna"
+id = "ursaluna"
+types = Array[int]([8, 0])
+sr = "14"
+min_level = 10
+evolution_stage = 3
+armor_class = 16
+hit_points = 132
+hit_dice = "d12"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 19,
+1: 14,
+2: 19,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([3, 12, 17])
+senses = Array[Dictionary]([{
+"range_m": 6.0,
+"type": 0
+}])
+abilities = Array[String](["Guts", "Bulletproof"])
+hidden_ability = "Unnerve"
+level_moves = {
+3: ["Fury Swipes"],
+5: ["Payback"],
+6: ["Sweet Scent"],
+8: ["Slash"],
+9: ["Play Nice"],
+10: ["Play Rough"],
+12: ["Scary Face"],
+14: ["Rest", "Snore"],
+15: ["High Horsepower"],
+16: ["Thrash"],
+17: ["Hammer Arm"]
+}
+starting_moves = Array[String](["Covet", "Fake Tears", "Headlong Rush", "Leer", "Lick", "Scratch"])
+tms = Array[String](["tm_3", "tm_16", "tm_17", "tm_24", "tm_25", "tm_29", "tm_34", "tm_35", "tm_41", "tm_43", "tm_50", "tm_51", "tm_55", "tm_59", "tm_67", "tm_73", "tm_74", "tm_83", "tm_87", "tm_88", "tm_94", "tm_100", "tm_104", "tm_105", "tm_113", "tm_120", "tm_123", "tm_128", "tm_129", "tm_132", "tm_136", "tm_137", "tm_141", "tm_158", "tm_168", "tm_171", "tm_190", "tm_199", "tm_209", "tm_214", "tm_220", "tm_223", "tm_224", "tm_225", "tm_234", "tm_238", "tm_241", "tm_248", "tm_251", "tm_266", "tm_267", "tm_270", "tm_271", "tm_273", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_292", "tm_298", "tm_305"])
+egg_moves = Array[String](["Belly Drum", "Close Combat", "Counter", "Cross Chop", "Crunch", "Double-Edge", "Fake Tears", "Fury Cutter", "Metal Claw", "Night Slash", "Seismic Toss", "Yawn"])
+is_variant = true
+variant_data = {
+"Ursaluna": {
+"diff": {},
+"display_name": "Ursaluna",
+"is_default": true
+},
+"Ursaluna Lua Sangrenta": {
+"diff": {
+"abilities": ["Mind's Eye"],
+"attributes": {
+"CON": 17,
+"STR": 14,
+"WIS": 19
+},
+"hit_points": 122,
+"moves_diff": {
+"egg_moves": [],
+"level_moves": {
+3: ["Fury Swipes"],
+5: ["Payback"],
+6: ["Harden"],
+8: ["Slash"],
+9: ["Play Nice"],
+12: ["Scary Face"],
+14: ["Rest", "Snore"],
+15: ["Earth Power"],
+16: ["Moonblast"],
+17: ["Blood Moon", "Hammer Arm"]
+},
+"starting_moves": ["Headlong Rush", "Leer", "Lick", "Scratch"],
+"tms": ["tm_16", "tm_24", "tm_25", "tm_29", "tm_35", "tm_38", "tm_50", "tm_55", "tm_59", "tm_73", "tm_74", "tm_83", "tm_87", "tm_94", "tm_100", "tm_103", "tm_105", "tm_113", "tm_120", "tm_123", "tm_128", "tm_129", "tm_132", "tm_136", "tm_137", "tm_141", "tm_158", "tm_168", "tm_174", "tm_199", "tm_209", "tm_214", "tm_220", "tm_223", "tm_225", "tm_234", "tm_238", "tm_241", "tm_248", "tm_251", "tm_253", "tm_266", "tm_267", "tm_270", "tm_271", "tm_277", "tm_278", "tm_282", "tm_283", "tm_286", "tm_288", "tm_292", "tm_298", "tm_305", "tm_306"]
+},
+"senses": [{
+"range_m": 12.0,
+"type": 0
+}],
+"skills": [2, 3, 8, 12, 17]
+},
+"display_name": "Ursaluna Lua Sangrenta",
+"is_default": false
+}
+}

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bbqhyhg28affy"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_25vmq"]
+
+[resource]
+script = ExtResource("1_25vmq")
+dex_number = 303
+display_name = "Mawile"
+id = "mawile"
+types = Array[int]([16, 17])
+sr = "7"
+min_level = 5
+evolution_stage = 1
+armor_class = 17
+hit_points = 40
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 16,
+1: 11,
+2: 14,
+3: 6,
+4: 10,
+5: 14
+}
+skills = Array[int]([5, 8])
+abilities = Array[String](["Hyper Cutter", "Intimidate"])
+hidden_ability = "Sheer Force"
+level_moves = {
+2: ["Fake Tears"],
+3: ["Bite"],
+5: ["Sweet Scent"],
+6: ["Vise Grip"],
+7: ["Feint Attack"],
+9: ["Baton Pass"],
+10: ["Crunch"],
+11: ["Iron Defense"],
+13: ["Sucker Punch"],
+14: ["Spit Up", "Stockpile", "Swallow"],
+15: ["Iron Head", "Play Rough"]
+}
+starting_moves = Array[String](["Astonish", "Fairy Wind", "Growl", "Taunt"])
+tms = Array[String](["tm_12", "tm_13", "tm_29", "tm_31", "tm_40", "tm_45", "tm_52", "tm_58", "tm_68", "tm_80", "tm_87", "tm_88", "tm_89", "tm_91", "tm_92", "tm_97", "tm_99", "tm_100", "tm_103", "tm_105", "tm_106", "tm_109", "tm_113", "tm_114", "tm_119", "tm_129", "tm_131", "tm_136", "tm_139", "tm_140", "tm_141", "tm_144", "tm_147", "tm_148", "tm_150", "tm_151", "tm_153", "tm_164", "tm_165", "tm_166", "tm_173", "tm_184", "tm_186", "tm_199", "tm_201", "tm_209", "tm_214", "tm_216", "tm_223", "tm_225", "tm_228", "tm_231", "tm_240", "tm_248", "tm_249", "tm_254", "tm_255", "tm_257", "tm_262", "tm_263", "tm_267", "tm_270", "tm_271", "tm_272", "tm_276", "tm_278", "tm_283", "tm_291", "tm_292", "tm_295", "tm_296"])
+egg_moves = Array[String](["Ancient Power", "Captivate", "Fire Fang", "Guard Swap", "Ice Fang", "Metal Burst", "Misty Terrain", "Poison Fang", "Power-Up Punch", "Punishment", "Seismic Toss", "Slam", "Sucker Punch", "Thunder Fang", "Tickle"])

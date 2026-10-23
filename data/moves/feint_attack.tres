@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bmv71oyay8ey5"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8w0hx"]
+
+[resource]
+script = ExtResource("1_8w0hx")
+id = "feint_attack"
+display_name = "Feint Attack (Ataque Ligeiro)"
+name_en = "Feint Attack"
+name_pt = "Ataque Ligeiro"
+type = 15
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você se aproxima de uma criatura e a atinge com um soco de surpresa. Faça um ataque corpo a corpo com acerto garantido contra um alvo, causando 2d6 + MOVE de dano sombrio em um acerto, desde que você possa vê-lo e ele esteja dentro do seu alcance. Role um d20 para chance de golpe crítico e outros efeitos."
+scaling_text = "Os dados de dano para este Move mudam para 3d6 no nível 5, 3d8 no nível 10 e 5d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1, 5])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 3,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+}
+}

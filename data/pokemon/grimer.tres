@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://band14wqtr1xq"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_8k25e"]
+
+[resource]
+script = ExtResource("1_8k25e")
+dex_number = 88
+display_name = "Grimer"
+id = "grimer"
+types = Array[int]([7])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 12
+hit_points = 19
+movement = {
+0: 4.5
+}
+attributes = {
+0: 14,
+1: 9,
+2: 16,
+3: 6,
+4: 10,
+5: 8
+}
+skills = Array[int]([6])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Stench", "Sticky Hold"])
+hidden_ability = "Poison Touch"
+evolves_to = Array[String](["muk"])
+evolution_level = 13
+evolution_points = 11
+level_moves = {
+2: ["Harden"],
+3: ["Mud-Slap"],
+4: ["Disable"],
+5: ["Sludge"],
+6: ["Mud Bomb", "Mud Shot"],
+7: ["Minimize"],
+9: ["Fling", "Toxic"],
+10: ["Sludge Bomb"],
+11: ["Sludge Wave"],
+13: ["Screech"],
+14: ["Gunk Shot"],
+15: ["Acid Armor", "Belch", "Memento"]
+}
+starting_moves = Array[String](["Poison Gas", "Pound"])
+tms = Array[String](["tm_1", "tm_13", "tm_25", "tm_45", "tm_46", "tm_51", "tm_55", "tm_58", "tm_67", "tm_83", "tm_86", "tm_87", "tm_91", "tm_94", "tm_97", "tm_100", "tm_109", "tm_112", "tm_120", "tm_124", "tm_129", "tm_130", "tm_131", "tm_141", "tm_145", "tm_146", "tm_171", "tm_174", "tm_175", "tm_184", "tm_186", "tm_191", "tm_199", "tm_209", "tm_214", "tm_216", "tm_223", "tm_225", "tm_228", "tm_231", "tm_234", "tm_240", "tm_242", "tm_248", "tm_249", "tm_250", "tm_255", "tm_270", "tm_271", "tm_276", "tm_282", "tm_283", "tm_286", "tm_288", "tm_290", "tm_292", "tm_294", "tm_295", "tm_296", "tm_307", "tm_321"])
+egg_moves = Array[String](["Acid Spray", "Curse", "Haze", "Imprison", "Lick", "Mean Look", "Power-Up Punch", "Scary Face", "Shadow Punch", "Shadow Sneak", "Spit Up", "Stockpile", "Swallow"])
+is_variant = true
+variant_data = {
+"Grimer": {
+"diff": {},
+"display_name": "Grimer",
+"is_default": true
+},
+"Grimer de Alola": {
+"diff": {
+"Evolve": "Muk de Alola",
+"abilities": ["Poison Touch", "Gluttony"],
+"attributes": {
+"CON": 14,
+"WIS": 12
+},
+"hidden_ability": "Power of Alchemy",
+"hit_points": 18,
+"moves_diff": {
+"egg_moves": ["Assurance", "Clear Smog", "Curse", "Imprison", "Mean Look", "Power-Up Punch", "Pursuit", "Recycle", "Scary Face", "Shadow Sneak", "Spit Up", "Spite", "Stockpile", "Swallow"],
+"level_moves": {
+2: ["Harden"],
+3: ["Bite"],
+4: ["Disable"],
+5: ["Acid Spray"],
+6: ["Poison Fang"],
+7: ["Minimize"],
+9: ["Fling", "Toxic"],
+10: ["Knock Off"],
+11: ["Crunch"],
+13: ["Screech"],
+14: ["Gunk Shot"],
+15: ["Acid Armor", "Belch", "Memento"]
+},
+"starting_moves": ["Poison Gas", "Pound"],
+"tms": ["tm_1", "tm_13", "tm_25", "tm_29", "tm_31", "tm_45", "tm_50", "tm_51", "tm_52", "tm_55", "tm_58", "tm_67", "tm_80", "tm_83", "tm_86", "tm_87", "tm_91", "tm_94", "tm_97", "tm_100", "tm_109", "tm_111", "tm_112", "tm_113", "tm_120", "tm_129", "tm_130", "tm_131", "tm_136", "tm_141", "tm_145", "tm_146", "tm_150", "tm_171", "tm_174", "tm_175", "tm_184", "tm_186", "tm_191", "tm_199", "tm_208", "tm_209", "tm_214", "tm_216", "tm_222", "tm_223", "tm_225", "tm_228", "tm_231", "tm_234", "tm_240", "tm_242", "tm_248", "tm_249", "tm_250", "tm_253", "tm_255", "tm_261", "tm_267", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_286", "tm_288", "tm_290", "tm_292", "tm_294", "tm_295", "tm_296", "tm_307", "tm_321"]
+},
+"types": [7, 15]
+},
+"display_name": "Grimer de Alola",
+"is_default": false
+}
+}

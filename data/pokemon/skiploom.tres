@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cp383vcqn86o7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_c3wpi"]
+
+[resource]
+script = ExtResource("1_c3wpi")
+dex_number = 188
+display_name = "Skiploom"
+id = "skiploom"
+types = Array[int]([4, 9])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 13,
+1: 15,
+2: 14,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([12])
+abilities = Array[String](["Chlorophyll", "Leaf Guard"])
+hidden_ability = "Infiltrator"
+evolves_to = Array[String](["jumpluff"])
+evolution_level = 9
+evolution_points = 7
+level_moves = {
+2: ["Synthesis", "Tail Whip"],
+3: ["Tackle"],
+4: ["Fairy Wind", "Poison Powder"],
+5: ["Stun Spore"],
+6: ["Sleep Powder"],
+7: ["Bullet Seed"],
+8: ["Leech Seed"],
+10: ["Mega Drain"],
+11: ["Acrobatics"],
+12: ["Rage Powder"],
+14: ["Cotton Spore"],
+15: ["U-turn", "Worry Seed"],
+16: ["Bounce", "Giga Drain", "Memento"]
+}
+starting_moves = Array[String](["Absorb", "Splash"])
+tms = Array[String](["tm_2", "tm_3", "tm_13", "tm_18", "tm_26", "tm_36", "tm_41", "tm_45", "tm_53", "tm_58", "tm_59", "tm_81", "tm_82", "tm_83", "tm_84", "tm_87", "tm_100", "tm_109", "tm_112", "tm_114", "tm_117", "tm_129", "tm_131", "tm_146", "tm_154", "tm_156", "tm_160", "tm_163", "tm_193", "tm_199", "tm_201", "tm_209", "tm_212", "tm_214", "tm_216", "tm_228", "tm_238", "tm_248", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_281", "tm_282", "tm_286", "tm_288", "tm_296", "tm_298", "tm_303", "tm_319"])
+egg_moves = Array[String](["Amnesia", "Aromatherapy", "Confusion", "Cotton Guard", "Double-Edge", "Encore", "Endure", "Grassy Terrain", "Helping Hand", "Rage Powder", "Seed Bomb", "Strength Sap", "Switcheroo", "Worry Seed"])

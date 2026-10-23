@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://blukcpw80qg8f"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wtwna"]
+
+[resource]
+script = ExtResource("1_wtwna")
+dex_number = 450
+display_name = "Hippowdon"
+id = "hippowdon"
+types = Array[int]([8])
+sr = "10"
+min_level = 5
+evolution_stage = 2
+armor_class = 18
+hit_points = 66
+hit_dice = "d12"
+movement = {
+0: 9.0,
+1: 6.0
+}
+attributes = {
+0: 18,
+1: 13,
+2: 19,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 17])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 1
+}])
+abilities = Array[String](["Sand Stream"])
+hidden_ability = "Sand Force"
+level_moves = {
+3: ["Bite"],
+5: ["Yawn"],
+7: ["Dig", "Take Down"],
+8: ["Sandstorm"],
+9: ["Sand Tomb"],
+11: ["Crunch", "Roar"],
+13: ["Rest"],
+14: ["Earthquake"],
+15: ["Double-Edge"],
+16: ["Fissure"],
+17: ["Slack Off"]
+}
+starting_moves = Array[String](["Fire Fang", "Ice Fang", "Sand Attack", "Tackle", "Thunder Fang"])
+tms = Array[String](["tm_10", "tm_13", "tm_24", "tm_25", "tm_35", "tm_45", "tm_50", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_83", "tm_87", "tm_92", "tm_109", "tm_113", "tm_123", "tm_128", "tm_129", "tm_131", "tm_132", "tm_136", "tm_137", "tm_140", "tm_148", "tm_149", "tm_174", "tm_175", "tm_176", "tm_199", "tm_214", "tm_216", "tm_217", "tm_220", "tm_223", "tm_224", "tm_225", "tm_228", "tm_230", "tm_231", "tm_235", "tm_248", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_286", "tm_291", "tm_296", "tm_311", "tm_313"])
+egg_moves = Array[String](["Body Slam", "Curse", "Revenge", "Sand Tomb", "Slack Off", "Sleep Talk", "Spit Up", "Stockpile", "Swallow", "Whirlwind"])

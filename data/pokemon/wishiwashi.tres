@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cu4jie224am00"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_s7hnk"]
+
+[resource]
+script = ExtResource("1_s7hnk")
+dex_number = 746
+display_name = "Wishiwashi"
+id = "wishiwashi"
+types = Array[int]([2])
+sr = "5"
+evolution_stage = 1
+armor_class = 13
+hit_points = 18
+hit_dice = "d8"
+movement = {
+0: 1.5,
+1: 7.5
+}
+attributes = {
+0: 8,
+1: 9,
+2: 10,
+3: 6,
+4: 10,
+5: 10
+}
+abilities = Array[String](["Schooling"])
+level_moves = {
+2: ["Helping Hand"],
+3: ["Feint Attack"],
+5: ["Brine"],
+6: ["Aqua Ring"],
+8: ["Tearful Look"],
+9: ["Take Down"],
+10: ["Dive", "Uproar"],
+11: ["Beat Up"],
+13: ["Aqua Tail"],
+14: ["Double-Edge"],
+15: ["Endeavor", "Soak"],
+16: ["Hydro Pump"]
+}
+starting_moves = Array[String](["Growl", "Water Gun"])
+tms = Array[String](["tm_11", "tm_13", "tm_19", "tm_30", "tm_35", "tm_45", "tm_48", "tm_57", "tm_58", "tm_74", "tm_82", "tm_87", "tm_101", "tm_109", "tm_122", "tm_129", "tm_131", "tm_139", "tm_149", "tm_174", "tm_199", "tm_209", "tm_214", "tm_216", "tm_228", "tm_232", "tm_233", "tm_248", "tm_255", "tm_270", "tm_275", "tm_276", "tm_296", "tm_303", "tm_311", "tm_312", "tm_314"])
+egg_moves = Array[String](["Mist", "Muddy Water", "Take Down", "Water Pulse", "Water Sport", "Whirlpool"])
+is_variant = true
+variant_data = {
+"Wishiwashi Forma Cardume": {
+"diff": {
+"armor_class": 18,
+"attributes": {
+"CON": 17,
+"DEX": 16,
+"STR": 15
+}
+},
+"display_name": "Wishiwashi Forma Cardume",
+"is_default": false
+},
+"Wishiwashi Forma Solo": {
+"diff": {},
+"display_name": "Wishiwashi Forma Solo",
+"is_default": true
+}
+}

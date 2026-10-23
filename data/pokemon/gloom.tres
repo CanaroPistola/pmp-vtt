@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bjd3mnbs4d8in"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_wapmr"]
+
+[resource]
+script = ExtResource("1_wapmr")
+dex_number = 44
+display_name = "Gloom"
+id = "gloom"
+types = Array[int]([4, 7])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 14,
+1: 12,
+2: 15,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([12, 17])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 0
+}])
+abilities = Array[String](["Chlorophyll"])
+hidden_ability = "Stench"
+evolves_to = Array[String](["vileplume", "bellossom"])
+evolution_level = 14
+evolution_points = 10
+level_moves = {
+2: ["Sweet Scent"],
+3: ["Acid"],
+5: ["Poison Powder", "Sleep Powder", "Stun Spore"],
+7: ["Mega Drain"],
+8: ["Lucky Chant"],
+10: ["Moonlight"],
+11: ["Moonblast"],
+12: ["Giga Drain"],
+13: ["Toxic"],
+15: ["Natural Gift", "Petal Blizzard"],
+16: ["Grassy Terrain", "Petal Dance"]
+}
+starting_moves = Array[String](["Absorb", "Growth"])
+tms = Array[String](["tm_1", "tm_4", "tm_13", "tm_36", "tm_41", "tm_45", "tm_53", "tm_58", "tm_67", "tm_83", "tm_84", "tm_87", "tm_100", "tm_109", "tm_111", "tm_112", "tm_114", "tm_116", "tm_117", "tm_129", "tm_131", "tm_146", "tm_154", "tm_163", "tm_179", "tm_187", "tm_193", "tm_199", "tm_214", "tm_216", "tm_228", "tm_238", "tm_248", "tm_249", "tm_255", "tm_257", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_286", "tm_296", "tm_298", "tm_307", "tm_319"])
+egg_moves = Array[String](["After You", "Charm", "Flail", "Ingrain", "Leech Seed", "Nature Power", "Razor Leaf", "Secret Power", "Strength Sap", "Synthesis", "Teeter Dance", "Tickle"])

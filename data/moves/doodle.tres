@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dmbojhjbmjey5"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_kuipi"]
+
+[resource]
+script = ExtResource("1_kuipi")
+id = "doodle"
+display_name = "Doodle"
+name_en = "Doodle"
+pp = 5
+move_time = "1 ação"
+resolution = 2
+has_save = true
+save_attribute = 5
+range_category = 5
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você captura a essência do alvo em um esboço. Escolha um alvo dentro do alcance. Sua habilidade passiva e a de todos os seus aliados a até 30 pés (9 metros) de você passam a ser a mesma habilidade passiva desse alvo. Qualquer aliado que não deseje substituir sua habilidade atual pode tentar resistir, realizando um teste de CAR contra a sua CD de Move, evitando o efeito em um sucesso. Observações: Doodle falha se o alvo, o usuário ou o aliado do usuário possuírem qualquer uma das seguintes habilidades: As One, Battle Bond, Comatose, Commander, Disguise, Gulp Missile, Ice Face, Multitype, Poison Puppeteer, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Zen Mode ou Zero to Hero. Ele também falha se o alvo possuir Receiver, mas não falha se o usuário ou seu aliado possuírem essa habilidade."
+range_text_raw = "(9 metros); aliados em raio de (9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([5])

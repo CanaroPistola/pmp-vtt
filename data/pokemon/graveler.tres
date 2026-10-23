@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dlsh4knsoa1bs"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_r64d8"]
+
+[resource]
+script = ExtResource("1_r64d8")
+dex_number = 75
+display_name = "Graveler"
+id = "graveler"
+types = Array[int]([12, 8])
+sr = "6"
+min_level = 5
+evolution_stage = 2
+armor_class = 15
+hit_points = 55
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 16,
+1: 10,
+2: 16,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([3, 17])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 1
+}])
+abilities = Array[String](["Rock Head", "Sturdy"])
+hidden_ability = "Sand Veil"
+evolves_to = Array[String](["golem"])
+evolution_level = 12
+evolution_points = 9
+level_moves = {
+2: ["Mud Sport", "Rock Polish"],
+4: ["Magnitude", "Rollout"],
+6: ["Rock Throw", "Smack Down"],
+8: ["Bulldoze", "Self-Destruct"],
+10: ["Stealth Rock"],
+12: ["Rock Blast"],
+14: ["Earthquake"],
+15: ["Double-Edge", "Explosion"],
+16: ["Stone Edge"]
+}
+starting_moves = Array[String](["Defense Curl", "Tackle"])
+tms = Array[String](["tm_13", "tm_23", "tm_24", "tm_25", "tm_29", "tm_35", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_83", "tm_86", "tm_87", "tm_91", "tm_94", "tm_97", "tm_100", "tm_103", "tm_105", "tm_109", "tm_121", "tm_123", "tm_128", "tm_131", "tm_132", "tm_147", "tm_148", "tm_171", "tm_174", "tm_175", "tm_179", "tm_199", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_224", "tm_225", "tm_228", "tm_231", "tm_234", "tm_248", "tm_251", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_286", "tm_292", "tm_296"])
+egg_moves = Array[String](["Autotomize", "Block", "Curse", "Dynamic Punch", "Endure", "Flail", "Focus Punch", "Hammer Arm", "Mega Punch", "Rock Climb", "Wide Guard"])
+is_variant = true
+variant_data = {
+"Graveler": {
+"diff": {},
+"display_name": "Graveler",
+"is_default": true
+},
+"Graveler de Alola": {
+"diff": {
+"Evolve": "Golem de Alola",
+"abilities": ["Magnet Pull", "Sturdy"],
+"hidden_ability": "Galvanize",
+"moves_diff": {
+"egg_moves": ["Autotomize", "Block", "Counter", "Curse", "Endure", "Flail", "Magnet Rise", "Rock Climb", "Screech", "Wide Guard", "Zap Cannon"],
+"level_moves": {
+2: ["Charge", "Rock Polish"],
+4: ["Rollout", "Spark"],
+6: ["Rock Throw", "Smack Down"],
+8: ["Self-Destruct", "Thunder Punch"],
+10: ["Stealth Rock"],
+12: ["Rock Blast"],
+14: ["Discharge"],
+15: ["Double-Edge", "Explosion"],
+16: ["Stone Edge"]
+},
+"starting_moves": ["Defense Curl", "Tackle"],
+"tms": ["tm_9", "tm_13", "tm_23", "tm_25", "tm_29", "tm_31", "tm_35", "tm_39", "tm_40", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_77", "tm_79", "tm_83", "tm_86", "tm_87", "tm_91", "tm_94", "tm_97", "tm_100", "tm_103", "tm_105", "tm_109", "tm_121", "tm_123", "tm_131", "tm_132", "tm_147", "tm_164", "tm_171", "tm_174", "tm_175", "tm_179", "tm_199", "tm_214", "tm_216", "tm_221", "tm_222", "tm_223", "tm_225", "tm_228", "tm_231", "tm_234", "tm_242", "tm_248", "tm_251", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_273", "tm_274", "tm_276", "tm_282", "tm_286", "tm_290", "tm_292", "tm_293", "tm_294", "tm_296", "tm_308", "tm_315"]
+},
+"types": [12, 3]
+},
+"display_name": "Graveler de Alola",
+"is_default": false
+}
+}

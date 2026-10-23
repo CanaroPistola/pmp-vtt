@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dqlexwq7q83gl"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_a77bw"]
+
+[resource]
+script = ExtResource("1_a77bw")
+id = "sand_attack"
+display_name = "Sand Attack"
+name_en = "Sand Attack"
+type = 8
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 2
+range_category = 2
+range_distance = 9.0
+duration_is_permanent = true
+description = "Você chuta uma nuvem de areia contra uma criatura dentro do alcance, tentando atrapalhar sua visão. Role 1d20 + MOVE + 9 e compare o resultado com 10 + CON do alvo. Em um resultado maior ou igual, a Precisão do alvo é reduzida em 1 estágio, podendo ser acumulada em até -6 estágios. Caso o resultado seja 10 ou mais acima do valor necessário, o alvo também fica Cego até o final do próximo turno dele. Embora seja um Move do tipo Terra, ele é capaz de afetar Pokémon elevados. Pokémon elevados  são quaisquer do tipo Voador , aqueles sob os efeitos de Levitate, Magnet Rise ou Telekinesis ou por segurarem um Air Balloon."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([1, 2])
+effect_tags = Array[String](["stat_change", "blind"])

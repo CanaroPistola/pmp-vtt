@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bduvpcwnbliwt"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ek68n"]
+
+[resource]
+script = ExtResource("1_ek68n")
+dex_number = 921
+display_name = "Pawmi"
+id = "pawmi"
+types = Array[int]([3])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 11
+hit_points = 16
+movement = {
+0: 7.5
+}
+attributes = {
+0: 8,
+1: 12,
+2: 10,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([0, 14])
+abilities = Array[String](["Static", "Natural Cure"])
+hidden_ability = "Iron Fist"
+evolves_to = Array[String](["pawmo"])
+evolution_level = 6
+evolution_points = 6
+level_moves = {
+2: ["Quick Attack"],
+3: ["Charge"],
+4: ["Nuzzle"],
+5: ["Dig"],
+7: ["Bite"],
+8: ["Spark"],
+9: ["Thunder Wave"],
+11: ["Entrainment"],
+12: ["Slam"],
+13: ["Discharge"],
+14: ["Agility"],
+15: ["Wild Charge"]
+}
+starting_moves = Array[String](["Growl", "Scratch", "Thunder Shock"])
+tms = Array[String](["tm_5", "tm_18", "tm_39", "tm_40", "tm_41", "tm_50", "tm_55", "tm_76", "tm_77", "tm_78", "tm_79", "tm_81", "tm_83", "tm_87", "tm_100", "tm_129", "tm_168", "tm_190", "tm_199", "tm_209", "tm_214", "tm_248", "tm_270", "tm_271", "tm_272", "tm_277", "tm_282", "tm_286", "tm_288", "tm_290", "tm_291", "tm_293", "tm_294", "tm_308", "tm_315"])
+egg_moves = Array[String](["Fake Out", "Mach Punch", "Sweet Kiss", "Wish"])

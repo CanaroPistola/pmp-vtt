@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://eldgq3tqldvg"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_q22py"]
+
+[resource]
+script = ExtResource("1_q22py")
+dex_number = 878
+display_name = "Cufant"
+id = "cufant"
+types = Array[int]([16])
+sr = "4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 17
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 16,
+1: 9,
+2: 16,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Sheer Force"])
+hidden_ability = "Heavy Metal"
+evolves_to = Array[String](["copperajah"])
+evolution_level = 12
+evolution_points = 12
+level_moves = {
+2: ["Rollout"],
+4: ["Rock Smash"],
+5: ["Bulldoze"],
+7: ["Stomp"],
+9: ["Iron Defense"],
+10: ["Dig"],
+12: ["Strength"],
+14: ["Iron Head"],
+15: ["High Horsepower", "Play Rough"],
+16: ["Superpower"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_13", "tm_24", "tm_25", "tm_29", "tm_31", "tm_35", "tm_51", "tm_55", "tm_59", "tm_73", "tm_74", "tm_82", "tm_83", "tm_87", "tm_99", "tm_100", "tm_128", "tm_132", "tm_147", "tm_148", "tm_165", "tm_174", "tm_190", "tm_199", "tm_214", "tm_221", "tm_223", "tm_225", "tm_228", "tm_231", "tm_236", "tm_248", "tm_255", "tm_262", "tm_263", "tm_264", "tm_266", "tm_267", "tm_270", "tm_282", "tm_286", "tm_321"])
+egg_moves = Array[String](["Belch", "Curse", "Defense Curl", "Double-Edge", "Fissure", "Slam", "Swagger", "Whirlwind"])

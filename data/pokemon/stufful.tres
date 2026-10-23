@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://g0408s50fgjv"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_7fc8q"]
+
+[resource]
+script = ExtResource("1_7fc8q")
+dex_number = 759
+display_name = "Stufful"
+id = "stufful"
+types = Array[int]([0, 6])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 20
+hit_dice = "d8"
+movement = {
+0: 7.5
+}
+attributes = {
+0: 13,
+1: 12,
+2: 15,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3])
+abilities = Array[String](["Fluffy", "Klutz"])
+hidden_ability = "Cute Charm"
+evolves_to = Array[String](["bewear"])
+evolution_level = 9
+evolution_points = 12
+level_moves = {
+2: ["Bide"],
+4: ["Baby-Doll Eyes"],
+5: ["Brutal Swing"],
+6: ["Endure"],
+7: ["Flail", "Strength"],
+8: ["Payback"],
+10: ["Take Down"],
+11: ["Hammer Arm"],
+13: ["Thrash"],
+14: ["Pain Split"],
+15: ["Double-Edge", "Superpower"]
+}
+starting_moves = Array[String](["Leer", "Tackle"])
+tms = Array[String](["tm_3", "tm_13", "tm_20", "tm_29", "tm_31", "tm_34", "tm_35", "tm_41", "tm_44", "tm_45", "tm_58", "tm_71", "tm_74", "tm_87", "tm_100", "tm_103", "tm_105", "tm_109", "tm_131", "tm_141", "tm_148", "tm_159", "tm_165", "tm_166", "tm_184", "tm_186", "tm_199", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_226", "tm_228", "tm_248", "tm_255", "tm_266", "tm_270", "tm_274", "tm_276", "tm_278", "tm_283", "tm_292", "tm_296", "tm_318", "tm_321"])
+egg_moves = Array[String](["Defense Curl", "Endure", "Force Palm", "Ice Punch", "Mega Kick", "Rollout", "Stomp", "Stomping Tantrum", "Thunder Punch", "Wide Guard"])

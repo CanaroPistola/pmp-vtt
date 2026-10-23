@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://0fybd4fcryba"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_x5w7m"]
+
+[resource]
+script = ExtResource("1_x5w7m")
+dex_number = 674
+display_name = "Pancham"
+id = "pancham"
+types = Array[int]([6])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 20
+hit_dice = "d8"
+movement = {
+0: 7.5,
+2: 4.5
+}
+attributes = {
+0: 14,
+1: 11,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([8])
+abilities = Array[String](["Iron Fist", "Mold Breaker"])
+hidden_ability = "Scrappy"
+evolves_to = Array[String](["pangoro"])
+evolution_level = 11
+evolution_points = 11
+level_moves = {
+3: ["Arm Thrust", "Taunt"],
+4: ["Karate Chop", "Work Up"],
+5: ["Comet Punch"],
+6: ["Low Sweep"],
+7: ["Slash"],
+9: ["Circle Throw", "Vital Throw"],
+11: ["Body Slam"],
+13: ["Crunch"],
+14: ["Entrainment"],
+15: ["Parting Shot", "Sky Uppercut"]
+}
+starting_moves = Array[String](["Leer", "Tackle"])
+tms = Array[String](["tm_3", "tm_13", "tm_23", "tm_29", "tm_34", "tm_35", "tm_44", "tm_45", "tm_48", "tm_52", "tm_55", "tm_58", "tm_67", "tm_71", "tm_75", "tm_82", "tm_87", "tm_89", "tm_94", "tm_100", "tm_105", "tm_106", "tm_109", "tm_114", "tm_120", "tm_129", "tm_131", "tm_137", "tm_141", "tm_148", "tm_150", "tm_152", "tm_158", "tm_159", "tm_165", "tm_166", "tm_186", "tm_199", "tm_209", "tm_214", "tm_215", "tm_216", "tm_220", "tm_223", "tm_225", "tm_228", "tm_241", "tm_248", "tm_249", "tm_254", "tm_255", "tm_261", "tm_267", "tm_270", "tm_271", "tm_274", "tm_275", "tm_276", "tm_278", "tm_292", "tm_295", "tm_296", "tm_305", "tm_318", "tm_321"])
+egg_moves = Array[String](["Foul Play", "Me First", "Power Trip", "Quash", "Quick Guard", "Seismic Toss", "Storm Throw"])

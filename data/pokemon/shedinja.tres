@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://3j4h6umfmbuy"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ol2ew"]
+
+[resource]
+script = ExtResource("1_ol2ew")
+dex_number = 292
+display_name = "Shedinja"
+id = "shedinja"
+types = Array[int]([11, 13])
+sr = "1"
+min_level = 5
+evolution_stage = 2
+armor_class = 12
+hit_dice = "d0"
+attributes = {
+0: 13,
+1: 14,
+2: 10,
+3: 8,
+4: 18,
+5: 10
+}
+skills = Array[int]([9, 12])
+senses = Array[Dictionary]([{
+"range_m": 18.0,
+"type": 0
+}, {
+"range_m": 3.0,
+"type": 2
+}])
+abilities = Array[String](["Wonder Guard"])
+level_moves = {
+2: ["Absorb"],
+3: ["Sand Attack"],
+5: ["Fury Swipes"],
+6: ["Spite"],
+7: ["Shadow Sneak"],
+9: ["Mind Reader"],
+10: ["Confuse Ray"],
+11: ["Shadow Ball"],
+13: ["Grudge"],
+14: ["Heal Block"],
+15: ["Phantom Force"]
+}
+starting_moves = Array[String](["Harden", "Scratch"])
+tms = Array[String](["tm_3", "tm_9", "tm_32", "tm_45", "tm_55", "tm_58", "tm_69", "tm_87", "tm_89", "tm_109", "tm_112", "tm_113", "tm_130", "tm_131", "tm_136", "tm_155", "tm_188", "tm_194", "tm_199", "tm_214", "tm_216", "tm_228", "tm_231", "tm_240", "tm_241", "tm_245", "tm_248", "tm_255", "tm_257", "tm_261", "tm_270", "tm_271", "tm_276", "tm_284", "tm_288", "tm_296", "tm_300", "tm_316", "tm_320"])
+egg_moves = Array[String](["Bug Bite", "Bug Buzz", "Endure", "Feint Attack", "Final Gambit", "Flail", "Gust", "Night Slash", "Silver Wind"])

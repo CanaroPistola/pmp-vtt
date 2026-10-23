@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b24ylu6h4xe66"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_iugyw"]
+
+[resource]
+script = ExtResource("1_iugyw")
+id = "mud_bomb"
+display_name = "Mud Bomb"
+name_en = "Mud Bomb"
+type = 8
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 12.0
+description = "Você lança uma bola de lama compacta em uma criatura, podendo obstruir sua visão. Faça um ataque à distância -2, causando 2d6 + MOVE de dano de terra em um acerto . Em um resultado natural de 19 ou 20, o alvo fica cego até o final do próximo turno dele. Além disso, em um resultado natural de 15 ou mais no acerto, o alvo tem sua Precisão reduzida em 1 estágio, podendo ser acumulado em até -6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 1d20 no nível 5, 4d6 no nível 10 e 4d8 no nível 17."
+range_text_raw = "(12 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+move_power_modifier = -2
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 6,
+"move": true
+},
+5: {
+"amount": 1,
+"dice_max": 20,
+"move": true
+},
+10: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 8,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change", "blind"])

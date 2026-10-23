@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://3ou7gn5igly4"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_4v4lk"]
+
+[resource]
+script = ExtResource("1_4v4lk")
+id = "gravity"
+display_name = "Gravity (Gravidade)"
+name_en = "Gravity"
+name_pt = "Gravidade"
+type = 10
+pp = 3
+move_time = "1 ação"
+range_category = 5
+range_distance = 12.0
+duration_rounds = 5
+description = "Você fortalece a gravidade em um raio de 40 pés (12 metros), centrado em você. A gravidade intensa faz com que todos os Pokémon no campo fiquem no chão por 5 rodadas. Pokémon no chão perdem a imunidade a Moves do tipo Terra concedida por seu tipo Voador, pela habilidade Levitate, pelos efeitos de Magnet Rise ou Telekinesis, ou por segurarem um Air Balloon. Além disso, Pokémon no chão passam a ser afetados por efeitos de terrenos. Gravity também impede o uso dos seguintes Moves: Bounce, Fly, Flying Press, High Jump Kick, Jump Kick, Magnet Rise, Sky Drop, Splash e Telekinesis. Se um Pokémon estiver no turno semiinvulnerável de Fly ou Bounce e Gravity for usado no alcance em que esses Moves foram ativados, o efeito é cancelado imediatamente."
+range_text_raw = "Pessoal (raio de 12 metros)"
+duration_text_raw = "5 rodadas"

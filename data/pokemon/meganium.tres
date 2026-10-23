@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dssmrhwmsec8v"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_3ush6"]
+
+[resource]
+script = ExtResource("1_3ush6")
+dex_number = 154
+display_name = "Meganium"
+id = "meganium"
+types = Array[int]([4])
+sr = "13"
+min_level = 10
+evolution_stage = 3
+armor_class = 17
+hit_points = 112
+hit_dice = "d12"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 18,
+1: 16,
+2: 16,
+3: 6,
+4: 14,
+5: 10
+}
+skills = Array[int]([12])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Leaf Guard"
+level_moves = {
+2: ["Razor Leaf"],
+3: ["Poison Powder"],
+4: ["Synthesis"],
+6: ["Reflect"],
+8: ["Magical Leaf"],
+9: ["Leech Seed", "Natural Gift"],
+12: ["Sweet Scent"],
+14: ["Light Screen"],
+15: ["Body Slam"],
+16: ["Aromatherapy", "Giga Drain", "Safeguard"],
+17: ["Petal Blizzard", "Solar Beam"]
+}
+starting_moves = Array[String](["Growl", "Petal Dance", "Tackle"])
+tms = Array[String](["tm_13", "tm_24", "tm_25", "tm_35", "tm_36", "tm_41", "tm_45", "tm_51", "tm_58", "tm_59", "tm_66", "tm_74", "tm_75", "tm_81", "tm_82", "tm_83", "tm_84", "tm_87", "tm_88", "tm_107", "tm_109", "tm_112", "tm_113", "tm_114", "tm_115", "tm_116", "tm_117", "tm_129", "tm_131", "tm_136", "tm_149", "tm_150", "tm_151", "tm_154", "tm_156", "tm_161", "tm_163", "tm_175", "tm_179", "tm_182", "tm_187", "tm_199", "tm_212", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_248", "tm_255", "tm_257", "tm_258", "tm_266", "tm_270", "tm_271", "tm_276", "tm_278", "tm_279", "tm_282", "tm_286", "tm_296", "tm_298", "tm_313", "tm_318", "tm_319", "tm_321"])
+egg_moves = Array[String](["Ancient Power", "Aromatherapy", "Body Slam", "Counter", "Flail", "Grass Whistle", "Grassy Terrain", "Heal Pulse", "Ingrain", "Leaf Storm", "Leech Seed", "Nature Power", "Refresh", "Vine Whip", "Wring Out"])

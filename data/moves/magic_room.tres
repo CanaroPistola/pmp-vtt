@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b1ns5tq3yhfuh"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_7nrmo"]
+
+[resource]
+script = ExtResource("1_7nrmo")
+id = "magic_room"
+display_name = "Magic Room (Sala Mágica)"
+name_en = "Magic Room"
+name_pt = "Sala Mágica"
+type = 10
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 15.0
+duration_rounds = 5
+description = "Você usa seu poder psíquico para suprimir o efeito de todos os itens segurados em um círculo de 15 metros de raio, centrado em você, por 5 rodadas. Observações: Magic Room impede o uso de itens por meio de Natural Gift e Fling; no entanto, não suprime o efeito de Berries consumidas via Pluck ou Bug Bite. Também não afeta efeitos que movem itens, como Trick e Pickpocket. Se um Pokémon usar Judgment, Techno Blast ou Multi-Attack enquanto Magic Room estiver ativo, esses Moves se tornarão do tipo Normal."
+range_text_raw = "Pessoal (raio de 15 metros)"
+duration_text_raw = "5 rodadas"

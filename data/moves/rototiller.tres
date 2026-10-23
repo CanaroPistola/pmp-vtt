@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://gpictqhjgopp"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_x5lg4"]
+
+[resource]
+script = ExtResource("1_x5lg4")
+id = "rototiller"
+display_name = "Rototiller (Fertilizante)"
+name_en = "Rototiller"
+name_pt = "Fertilizante"
+type = 8
+pp = 5
+move_time = "1 ação"
+range_category = 5
+range_distance = 15.0
+duration_is_permanent = true
+description = "Você infunde o solo ao seu redor com uma camada mística de energia natural, como arar solo fresco. Todos os Pokémon do tipo grama dentro da área no momento em que este Move é ativado aumentam seu Ataque e Ataque Especial em 1 estágio, podendo ser acumulado em até 6 estágios. Este Move ignora reações de proteção, como Protect ou Detect."
+range_text_raw = "Pessoal (raio de 15 metros)"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

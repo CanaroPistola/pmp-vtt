@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cqkokvc2idk3m"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_b5k5y"]
+
+[resource]
+script = ExtResource("1_b5k5y")
+dex_number = 931
+display_name = "Squawkabilly"
+id = "squawkabilly"
+types = Array[int]([0, 9])
+sr = "7"
+min_level = 5
+evolution_stage = 1
+armor_class = 14
+hit_points = 50
+hit_dice = "d8"
+movement = {
+0: 9.0
+}
+attributes = {
+0: 12,
+1: 14,
+2: 13,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([4, 5])
+abilities = Array[String](["Intimidate", "Hustle"])
+hidden_ability = "Guts"
+level_moves = {
+2: ["Quick Attack"],
+4: ["Torment"],
+5: ["Aerial Ace"],
+6: ["Fury Attack"],
+7: ["Taunt"],
+8: ["Uproar"],
+9: ["Copycat"],
+10: ["Fly"],
+12: ["Facade"],
+13: ["Swagger"],
+14: ["Brave Bird"],
+15: ["Roost"],
+16: ["Reversal"]
+}
+starting_moves = Array[String](["Growl", "Mimic", "Peck"])
+tms = Array[String](["tm_3", "tm_6", "tm_7", "tm_27", "tm_59", "tm_72", "tm_82", "tm_83", "tm_87", "tm_88", "tm_90", "tm_102", "tm_106", "tm_113", "tm_127", "tm_129", "tm_133", "tm_136", "tm_137", "tm_152", "tm_195", "tm_199", "tm_214", "tm_218", "tm_234", "tm_248", "tm_270", "tm_271", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_303", "tm_305"])
+egg_moves = Array[String](["Double-Edge", "Final Gambit", "Flatter", "Parting Shot"])
+is_variant = true
+variant_data = {
+"Squawkabilly Plumagem Amarela": {
+"diff": {
+"hidden_ability": "Sheer Force"
+},
+"display_name": "Squawkabilly Plumagem Amarela",
+"is_default": false
+},
+"Squawkabilly Plumagem Azul": {
+"diff": {},
+"display_name": "Squawkabilly Plumagem Azul",
+"is_default": false
+},
+"Squawkabilly Plumagem Branca": {
+"diff": {
+"hidden_ability": "Sheer Force"
+},
+"display_name": "Squawkabilly Plumagem Branca",
+"is_default": false
+},
+"Squawkabilly Plumagem Verde": {
+"diff": {},
+"display_name": "Squawkabilly Plumagem Verde",
+"is_default": true
+}
+}

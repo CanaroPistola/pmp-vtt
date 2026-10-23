@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://ckcy8qyb72o03"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_vru2c"]
+
+[resource]
+script = ExtResource("1_vru2c")
+dex_number = 322
+display_name = "Numel"
+id = "numel"
+types = Array[int]([1, 8])
+sr = "1/4"
+evolution_stage = 1
+armor_class = 12
+hit_points = 20
+hit_dice = "d8"
+movement = {
+0: 6.0
+}
+attributes = {
+0: 11,
+1: 10,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Oblivious", "Simple"])
+hidden_ability = "Own Tempo"
+evolves_to = Array[String](["camerupt"])
+evolution_level = 11
+evolution_points = 13
+level_moves = {
+2: ["Ember"],
+3: ["Focus Energy"],
+4: ["Bulldoze", "Magnitude"],
+5: ["Flame Burst", "Incinerate"],
+7: ["Amnesia"],
+8: ["Lava Plume"],
+9: ["Earth Power"],
+10: ["Curse"],
+11: ["Take Down"],
+12: ["Yawn"],
+14: ["Earthquake"],
+15: ["Double-Edge", "Flamethrower"]
+}
+starting_moves = Array[String](["Growl", "Tackle"])
+tms = Array[String](["tm_4", "tm_10", "tm_13", "tm_24", "tm_25", "tm_35", "tm_41", "tm_45", "tm_51", "tm_55", "tm_58", "tm_59", "tm_73", "tm_74", "tm_75", "tm_82", "tm_83", "tm_87", "tm_91", "tm_95", "tm_96", "tm_97", "tm_98", "tm_99", "tm_109", "tm_126", "tm_127", "tm_128", "tm_129", "tm_131", "tm_132", "tm_148", "tm_152", "tm_174", "tm_175", "tm_179", "tm_183", "tm_199", "tm_209", "tm_214", "tm_216", "tm_220", "tm_223", "tm_225", "tm_228", "tm_231", "tm_234", "tm_235", "tm_248", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_276", "tm_282", "tm_285", "tm_286", "tm_296", "tm_298", "tm_316", "tm_321"])
+egg_moves = Array[String](["Ancient Power", "Body Slam", "Defense Curl", "Endure", "Growth", "Heat Wave", "Heavy Slam", "Howl", "Iron Head", "Mud Bomb", "Rollout", "Scary Face", "Spit Up", "Stockpile", "Stomp", "Swallow", "Yawn"])

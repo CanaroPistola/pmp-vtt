@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bfjmvo3n0vtlo"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_n0cku"]
+
+[resource]
+script = ExtResource("1_n0cku")
+dex_number = 725
+display_name = "Litten"
+id = "litten"
+types = Array[int]([1])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 16
+movement = {
+0: 7.5
+}
+attributes = {
+0: 12,
+1: 14,
+2: 11,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([8])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Blaze"])
+hidden_ability = "Intimidate"
+evolves_to = Array[String](["torracat"])
+evolution_level = 6
+evolution_points = 6
+level_moves = {
+2: ["Growl"],
+3: ["Lick"],
+4: ["Leer"],
+5: ["Fire Fang"],
+6: ["Double Kick", "Roar"],
+8: ["Bite"],
+9: ["Swagger"],
+10: ["Fury Swipes"],
+11: ["Thrash"],
+12: ["Flamethrower"],
+13: ["Scary Face"],
+15: ["Flare Blitz", "Outrage"]
+}
+starting_moves = Array[String](["Ember", "Scratch"])
+tms = Array[String](["tm_2", "tm_13", "tm_25", "tm_34", "tm_45", "tm_48", "tm_50", "tm_58", "tm_59", "tm_82", "tm_83", "tm_87", "tm_91", "tm_92", "tm_93", "tm_95", "tm_96", "tm_97", "tm_98", "tm_109", "tm_127", "tm_129", "tm_131", "tm_155", "tm_178", "tm_182", "tm_183", "tm_185", "tm_199", "tm_214", "tm_216", "tm_217", "tm_220", "tm_228", "tm_234", "tm_241", "tm_248", "tm_255", "tm_270", "tm_271", "tm_276", "tm_278", "tm_282", "tm_283", "tm_285", "tm_286", "tm_295", "tm_296", "tm_298", "tm_303", "tm_316", "tm_318"])
+egg_moves = Array[String](["Body Slam", "Crunch", "Fake Out", "Heat Wave", "Nasty Plot", "Parting Shot", "Power Trip", "Revenge"])

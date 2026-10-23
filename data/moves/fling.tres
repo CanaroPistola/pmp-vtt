@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cd3sa6585u1ny"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_oppsb"]
+
+[resource]
+script = ExtResource("1_oppsb")
+id = "fling"
+display_name = "Fling (Arremessar)"
+name_en = "Fling"
+name_pt = "Arremessar"
+type = 15
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 15.0
+description = "Você sacrifica seu item segurado para lançá-lo em uma criatura. Faça um ataque à distância. Em um acerto, a quantidade de dano sombrio e efeito secundário causado vai depender do item arremessado, com base nas tabelas abaixo. Após ativar este Move, em um acerto ou erro, o item desaparece, podendo ser recuperado ao final do combate. Confira a tabela no livro."
+range_text_raw = "(15 metros)"
+duration_text_raw = "Instantânea"
+move_power_attributes = Array[int]([0, 1])

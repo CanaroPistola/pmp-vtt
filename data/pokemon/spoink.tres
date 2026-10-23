@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://bms4sgy6qcvt0"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_bqdv1"]
+
+[resource]
+script = ExtResource("1_bqdv1")
+dex_number = 325
+display_name = "Spoink"
+id = "spoink"
+types = Array[int]([10])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 14
+hit_points = 18
+movement = {
+0: 7.5
+}
+attributes = {
+0: 10,
+1: 13,
+2: 14,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([0])
+abilities = Array[String](["Thick Fat", "Own Tempo"])
+hidden_ability = "Gluttony"
+evolves_to = Array[String](["grumpig"])
+evolution_level = 11
+evolution_points = 13
+level_moves = {
+3: ["Confusion", "Psywave"],
+4: ["Growl", "Odor Sleuth"],
+5: ["Psybeam", "Psych Up"],
+6: ["Confuse Ray"],
+7: ["Magic Coat"],
+9: ["Zen Headbutt"],
+10: ["Power Gem", "Rest"],
+11: ["Snore"],
+13: ["Psyshock"],
+14: ["Payback"],
+15: ["Bounce", "Psychic"]
+}
+starting_moves = Array[String](["Splash", "Tackle"])
+tms = Array[String](["tm_9", "tm_10", "tm_13", "tm_25", "tm_26", "tm_38", "tm_40", "tm_42", "tm_45", "tm_46", "tm_48", "tm_53", "tm_58", "tm_69", "tm_81", "tm_82", "tm_83", "tm_85", "tm_87", "tm_99", "tm_109", "tm_110", "tm_114", "tm_125", "tm_129", "tm_131", "tm_144", "tm_145", "tm_149", "tm_156", "tm_160", "tm_161", "tm_180", "tm_186", "tm_196", "tm_199", "tm_200", "tm_201", "tm_202", "tm_205", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_226", "tm_228", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_253", "tm_254", "tm_255", "tm_256", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_282", "tm_283", "tm_284", "tm_286", "tm_288", "tm_293", "tm_295", "tm_296", "tm_298", "tm_300", "tm_301", "tm_305", "tm_321"])
+egg_moves = Array[String](["Amnesia", "Endure", "Extrasensory", "Future Sight", "Lucky Chant", "Mirror Coat", "Simple Beam", "Skill Swap", "Trick", "Whirlwind", "Zen Headbutt"])

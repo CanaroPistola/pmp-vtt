@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://gbi8wgpkel5r"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_gsq8m"]
+
+[resource]
+script = ExtResource("1_gsq8m")
+id = "volt_tackle"
+display_name = "Volt Tackle (Investida Trovão)"
+name_en = "Volt Tackle"
+name_pt = "Investida Trovão"
+type = 3
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você avança em um lampejo de eletricidade, se chocando contra uma criatura. Ao ativar este Move, você pode se mover até  (4,5 metros) e fazer um ataque corpo a corpo contra uma criatura, causando 3d8 + MOVE de dano elétrico em um acerto. Em um acerto, você também sofre 1/3 do dano causado (arredondado para baixo) como recuo sem tipo. Em um resultado natural de 19 ou 20 no acerto, o alvo fica paralisado."
+scaling_text = "Os dados de dano para este Move mudam para 6d6 no nível 5, 6d8 no nível 10 e 6d10 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 0])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 3,
+"dice_max": 8,
+"move": true
+},
+5: {
+"amount": 6,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 6,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 6,
+"dice_max": 10,
+"move": true
+}
+}
+effect_tags = Array[String](["recoil", "paralysis"])

@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://uo06yoskkdp0"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_lvyxf"]
+
+[resource]
+script = ExtResource("1_lvyxf")
+id = "flame_charge"
+display_name = "Flame Charge (Ataque de Chamas)"
+name_en = "Flame Charge"
+name_pt = "Ataque de Chamas"
+type = 1
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+description = "Você envolve seu corpo em chamas e investe contra uma criatura, aumentando sua velocidade após o impacto. Faça um ataque corpo a corpo, causando 1d10 + MOVE de dano de fogo em um acerto. Cada vez que acertar este Move em um inimigo, aumente sua Velocidade em 1 estágio, podendo ser acumulado em até 6 estágios."
+scaling_text = "Os dados de dano para este Move mudam para 2d8 no nível 5, 2d10 no nível 10 e 4d6 no nível 17."
+range_text_raw = "Corpo a corpo"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([0, 1])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 1,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 2,
+"dice_max": 8,
+"move": true
+},
+10: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+17: {
+"amount": 4,
+"dice_max": 6,
+"move": true
+}
+}
+effect_tags = Array[String](["stat_change"])

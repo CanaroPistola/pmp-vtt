@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://p1tl77n55ybj"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_8vb8m"]
+
+[resource]
+script = ExtResource("1_8vb8m")
+id = "healing_wish"
+display_name = "Healing Wish (Desejo de Cura)"
+name_en = "Healing Wish"
+name_pt = "Desejo de Cura"
+type = 10
+pp = 5
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+description = "Você se sacrifica, emanando uma pequena área de cura para o próximo Pokémon de seu treinador. Ao ativar este Move, o usuário desmaia, mas a próxima criatura libertada por seu treinador tem sua vida completamente restaurada e é curada de todas as condições de status. Para receber esta cura, o Pokémon que entra deve estar a pelo menos  (1,5 metros) do exato local em que o usuário desmaiou."
+range_text_raw = "Pessoal"
+duration_text_raw = "Instantânea"

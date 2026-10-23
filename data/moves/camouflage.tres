@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bjrsxii1to2wh"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_mr6bd"]
+
+[resource]
+script = ExtResource("1_mr6bd")
+id = "camouflage"
+display_name = "Camouflage (Camuflagem)"
+name_en = "Camouflage"
+name_pt = "Camuflagem"
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você se mistura com o ambiente, assumindo um novo tipo para resistências/vulnerabilidades/imunidades. O tipo depende do terreno, e fica a critério do mestre, ou pode seguir a tabela abaixo. Confira a tabela no livro"
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"

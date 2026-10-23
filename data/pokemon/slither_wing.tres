@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://dy6cau141kf0g"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_7rrwk"]
+
+[resource]
+script = ExtResource("1_7rrwk")
+dex_number = 988
+display_name = "Slither Wing"
+id = "slither_wing"
+types = Array[int]([11, 6])
+sr = "14"
+min_level = 15
+evolution_stage = 1
+armor_class = 17
+hit_points = 128
+hit_dice = "d12"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 18,
+1: 16,
+2: 20,
+3: 10,
+4: 12,
+5: 12
+}
+skills = Array[int]([0, 6, 7, 8, 13])
+abilities = Array[String](["Protosynthesis"])
+level_moves = {
+3: ["Poison Powder", "Stun Spore"],
+5: ["Flame Charge"],
+7: ["Stomp"],
+10: ["Low Sweep"],
+12: ["Morning Sun"],
+14: ["Lunge"],
+15: ["Superpower"],
+16: ["Bulk Up"],
+17: ["Dual Wingbeat", "First Impression"],
+18: ["Whirlwind"],
+19: ["Leech Life"],
+20: ["Thrash"]
+}
+starting_moves = Array[String](["Bug Bite", "Ember", "Gust"])
+tms = Array[String](["tm_2", "tm_3", "tm_24", "tm_25", "tm_29", "tm_32", "tm_33", "tm_34", "tm_43", "tm_51", "tm_59", "tm_72", "tm_74", "tm_83", "tm_87", "tm_96", "tm_98", "tm_112", "tm_113", "tm_126", "tm_127", "tm_128", "tm_132", "tm_133", "tm_136", "tm_155", "tm_158", "tm_159", "tm_160", "tm_199", "tm_209", "tm_214", "tm_218", "tm_231", "tm_245", "tm_248", "tm_266", "tm_270", "tm_271", "tm_282", "tm_285", "tm_286", "tm_298", "tm_303", "tm_315", "tm_316", "tm_321"])

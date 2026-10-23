@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://b1tu80u8x0af"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_gsga0"]
+
+[resource]
+script = ExtResource("1_gsga0")
+dex_number = 677
+display_name = "Espurr"
+id = "espurr"
+types = Array[int]([10])
+sr = "1"
+evolution_stage = 1
+armor_class = 13
+hit_points = 18
+hit_dice = "d8"
+movement = {
+0: 6.0,
+2: 4.5
+}
+attributes = {
+0: 11,
+1: 13,
+2: 11,
+3: 6,
+4: 12,
+5: 12
+}
+skills = Array[int]([9])
+senses = Array[Dictionary]([{
+"range_m": 9.0,
+"type": 0
+}])
+abilities = Array[String](["Keen Eye", "Infiltrator"])
+hidden_ability = "Own Tempo"
+evolves_to = Array[String](["meowstic"])
+evolution_level = 9
+evolution_points = 12
+level_moves = {
+2: ["Covet"],
+3: ["Confusion"],
+5: ["Light Screen"],
+6: ["Psybeam"],
+7: ["Fake Out"],
+8: ["Disarming Voice"],
+9: ["Psyshock"],
+10: ["Reflect"]
+}
+starting_moves = Array[String](["Leer", "Scratch"])
+tms = Array[String](["tm_9", "tm_13", "tm_38", "tm_40", "tm_41", "tm_45", "tm_48", "tm_52", "tm_56", "tm_58", "tm_69", "tm_75", "tm_83", "tm_84", "tm_85", "tm_87", "tm_88", "tm_109", "tm_118", "tm_125", "tm_129", "tm_131", "tm_149", "tm_156", "tm_161", "tm_162", "tm_178", "tm_185", "tm_186", "tm_190", "tm_199", "tm_200", "tm_201", "tm_202", "tm_204", "tm_207", "tm_209", "tm_211", "tm_212", "tm_214", "tm_216", "tm_226", "tm_228", "tm_229", "tm_240", "tm_242", "tm_243", "tm_244", "tm_248", "tm_254", "tm_255", "tm_270", "tm_271", "tm_276", "tm_277", "tm_284", "tm_286", "tm_293", "tm_294", "tm_295", "tm_296", "tm_300", "tm_301", "tm_317", "tm_318", "tm_321"])
+egg_moves = Array[String](["Assist", "Barrier", "Tickle", "Trick", "Yawn"])

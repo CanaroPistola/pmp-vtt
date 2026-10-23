@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://cot4wmtcpm7vj"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_ikasf"]
+
+[resource]
+script = ExtResource("1_ikasf")
+dex_number = 669
+display_name = "Flabebe"
+id = "flabebe"
+types = Array[int]([17])
+sr = "1/2"
+evolution_stage = 1
+armor_class = 13
+hit_points = 17
+movement = {
+0: 3.0
+}
+attributes = {
+0: 12,
+1: 11,
+2: 13,
+3: 6,
+4: 10,
+5: 12
+}
+skills = Array[int]([11, 17])
+abilities = Array[String](["Flower Veil"])
+hidden_ability = "Symbiosis"
+evolves_to = Array[String](["floette"])
+evolution_level = 7
+evolution_points = 8
+level_moves = {
+2: ["Fairy Wind"],
+4: ["Lucky Chant", "Safeguard"],
+5: ["Razor Leaf"],
+7: ["Wish"],
+8: ["Grassy Terrain", "Magical Leaf"],
+10: ["Petal Blizzard"],
+11: ["Aromatherapy", "Synthesis"],
+13: ["Misty Terrain"],
+14: ["Moonblast"],
+15: ["Petal Dance", "Solar Beam"]
+}
+starting_moves = Array[String](["Tackle", "Vine Whip"])
+tms = Array[String](["tm_4", "tm_8", "tm_9", "tm_13", "tm_18", "tm_38", "tm_41", "tm_42", "tm_45", "tm_48", "tm_53", "tm_56", "tm_58", "tm_68", "tm_75", "tm_82", "tm_83", "tm_84", "tm_87", "tm_109", "tm_112", "tm_114", "tm_117", "tm_125", "tm_129", "tm_131", "tm_156", "tm_161", "tm_163", "tm_173", "tm_179", "tm_187", "tm_193", "tm_199", "tm_202", "tm_209", "tm_214", "tm_216", "tm_228", "tm_229", "tm_238", "tm_248", "tm_255", "tm_257", "tm_268", "tm_270", "tm_271", "tm_276", "tm_277", "tm_279", "tm_286", "tm_296", "tm_298", "tm_319"])
+egg_moves = Array[String](["Camouflage", "Captivate", "Copycat", "Endeavor", "Tearful Look"])

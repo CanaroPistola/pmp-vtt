@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bgp3vigico28"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_db17b"]
+
+[resource]
+script = ExtResource("1_db17b")
+id = "spit_up"
+display_name = "Spit Up"
+name_en = "Spit Up"
+pp = 5
+move_time = "1 ação"
+is_attack = true
+resolution = 1
+range_category = 2
+range_distance = 9.0
+description = "O poder da energia armazenada por Stockpile é liberado contra um alvo. Faça um ataque à distância contra uma criatura, causando um dano normal base de 2d10 + MOVE em caso de acerto. Os dados de dano são dobrados se Stockpile foi usado por duas rodadas, e triplicados se Stockpile foi usado por três rodadas."
+scaling_text = "Os dados de dano para este Move mudam para 5d6 no nível 5, 5d8 no nível 10 e 5d10 no nível 17."
+range_text_raw = "(9 metros)"
+duration_text_raw = "Instantânea"
+role = 0
+move_power_attributes = Array[int]([1, 2])
+has_damage = true
+damage_by_level = {
+1: {
+"amount": 2,
+"dice_max": 10,
+"move": true
+},
+5: {
+"amount": 5,
+"dice_max": 6,
+"move": true
+},
+10: {
+"amount": 5,
+"dice_max": 8,
+"move": true
+},
+17: {
+"amount": 5,
+"dice_max": 10,
+"move": true
+}
+}

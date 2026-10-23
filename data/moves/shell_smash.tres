@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c1xj7047r31ov"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_6b3m7"]
+
+[resource]
+script = ExtResource("1_6b3m7")
+id = "shell_smash"
+display_name = "Shell Smash (Quebra-Concha)"
+name_en = "Shell Smash"
+name_pt = "Quebra-Concha"
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você quebra uma parte de sua concha, reduzindo sua Defesa e Defesa Especial em 1 estágio cada, mas aumentando seu Ataque, Ataque Especial e Velocidade em 2 estágios cada."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

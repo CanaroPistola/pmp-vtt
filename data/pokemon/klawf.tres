@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://7wxy1jb5jvy3"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_bgktf"]
+
+[resource]
+script = ExtResource("1_bgktf")
+dex_number = 950
+display_name = "Klawf"
+id = "klawf"
+types = Array[int]([12])
+sr = "8"
+min_level = 5
+evolution_stage = 1
+armor_class = 16
+hit_points = 50
+hit_dice = "d10"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 17,
+1: 13,
+2: 17,
+3: 6,
+4: 10,
+5: 10
+}
+skills = Array[int]([3, 6, 17])
+senses = Array[Dictionary]([{
+"range_m": 15.0,
+"type": 1
+}])
+abilities = Array[String](["Anger Shell", "Shell Armor"])
+hidden_ability = "Regenerator"
+level_moves = {
+2: ["Harden"],
+3: ["Rock Smash"],
+5: ["Rock Tomb"],
+6: ["Metal Claw"],
+7: ["Protect"],
+8: ["Rock Blast"],
+10: ["X-Scissor"],
+11: ["Swords Dance"],
+13: ["Flail"],
+14: ["Rock Slide"],
+15: ["High Horsepower"],
+16: ["Guillotine", "Iron Defense"]
+}
+starting_moves = Array[String](["Rock Throw", "Vise Grip"])
+tms = Array[String](["tm_25", "tm_29", "tm_35", "tm_55", "tm_73", "tm_82", "tm_83", "tm_87", "tm_100", "tm_113", "tm_129", "tm_132", "tm_136", "tm_147", "tm_150", "tm_168", "tm_170", "tm_174", "tm_175", "tm_196", "tm_199", "tm_209", "tm_214", "tm_218", "tm_221", "tm_223", "tm_225", "tm_231", "tm_234", "tm_241", "tm_245", "tm_248", "tm_251", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_278", "tm_282", "tm_285", "tm_286", "tm_288", "tm_289", "tm_298", "tm_320"])
+egg_moves = Array[String](["Ancient Power", "Crabhammer", "Endeavor", "Knock Off"])

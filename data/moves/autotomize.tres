@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c0011k65m5fud"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_c3oh2"]
+
+[resource]
+script = ExtResource("1_c3oh2")
+id = "autotomize"
+display_name = "Autotomize (Autotomizar)"
+name_en = "Autotomize"
+name_pt = "Autotomizar"
+type = 16
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você elimina parte do seu corpo para ficar mais leve e aumentar sua Velocidade em 2 estágios, podendo ser acumulado em até 6 estágios. Para cada vez que usar este Move, você é considerado um tamanho menor para Moves que utilizam tamanho como parâmetro, como Grass Knot, Heat Crash, Heavy Slam e Low Kick."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"
+effect_tags = Array[String](["stat_change"])

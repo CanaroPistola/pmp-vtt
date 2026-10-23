@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b3osrk5mf5rl2"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_dh00h"]
+
+[resource]
+script = ExtResource("1_dh00h")
+id = "power_shift"
+display_name = "Power Shift"
+name_en = "Power Shift"
+pp = 5
+move_time = "1 ação"
+range_category = 0
+range_distance = 0.0
+duration_is_permanent = true
+description = "Você renova suas energias, trocando suas aptidões ofensivas pelas defensivas. Ao usar este Move, troque seu valor de atributo de Força com a sua CA."
+range_text_raw = "Pessoal"
+duration_text_raw = "Enquanto ativo"

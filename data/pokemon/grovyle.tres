@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://d3rswh0ccjqhj"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_xhis4"]
+
+[resource]
+script = ExtResource("1_xhis4")
+dex_number = 253
+display_name = "Grovyle"
+id = "grovyle"
+types = Array[int]([4])
+sr = "5"
+min_level = 5
+evolution_stage = 2
+armor_class = 14
+hit_points = 40
+hit_dice = "d8"
+movement = {
+0: 9.0,
+2: 9.0
+}
+attributes = {
+0: 13,
+1: 17,
+2: 11,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 12])
+abilities = Array[String](["Overgrow"])
+hidden_ability = "Unburden"
+evolves_to = Array[String](["sceptile"])
+evolution_level = 12
+evolution_points = 10
+level_moves = {
+2: ["Absorb"],
+3: ["Quick Attack"],
+5: ["Mega Drain"],
+6: ["Pursuit"],
+7: ["Assurance"],
+8: ["Leaf Blade"],
+9: ["Giga Drain"],
+10: ["Agility"],
+11: ["Slam"],
+12: ["Double Team"],
+13: ["Detect"],
+15: ["Endeavor", "False Swipe", "X-Scissor"],
+16: ["Leaf Storm", "Quick Guard"],
+17: ["Screech"]
+}
+starting_moves = Array[String](["Fury Cutter", "Leafage", "Leer", "Pound"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_12", "tm_13", "tm_28", "tm_29", "tm_36", "tm_45", "tm_50", "tm_55", "tm_58", "tm_66", "tm_67", "tm_82", "tm_83", "tm_84", "tm_87", "tm_89", "tm_100", "tm_105", "tm_109", "tm_112", "tm_114", "tm_115", "tm_116", "tm_117", "tm_129", "tm_131", "tm_149", "tm_154", "tm_158", "tm_159", "tm_163", "tm_165", "tm_166", "tm_179", "tm_199", "tm_214", "tm_216", "tm_223", "tm_225", "tm_228", "tm_229", "tm_236", "tm_238", "tm_248", "tm_255", "tm_257", "tm_258", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_279", "tm_282", "tm_286", "tm_288", "tm_292", "tm_296", "tm_298", "tm_304", "tm_306", "tm_318", "tm_319", "tm_320"])
+egg_moves = Array[String](["Absorb", "Bullet Seed", "Crunch", "Crush Claw", "Double Kick", "Dragon Breath", "Endeavor", "Grass Whistle", "Grassy Terrain", "Leaf Storm", "Leech Seed", "Magical Leaf", "Mud Sport", "Natural Gift", "Night Slash", "Razor Wind", "Slash", "Synthesis", "Worry Seed"])

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://btan3vdvjb7y7"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_3rc53"]
+
+[resource]
+script = ExtResource("1_3rc53")
+dex_number = 750
+display_name = "Mudsdale"
+id = "mudsdale"
+types = Array[int]([8])
+sr = "10"
+min_level = 5
+evolution_stage = 2
+armor_class = 16
+hit_points = 66
+hit_dice = "d12"
+movement = {
+0: 10.5
+}
+attributes = {
+0: 18,
+1: 12,
+2: 19,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([17])
+abilities = Array[String](["Own Tempo", "Stamina"])
+hidden_ability = "Inner Focus"
+level_moves = {
+3: ["Rototiller"],
+4: ["Bulldoze"],
+5: ["Double Kick"],
+6: ["Stomp"],
+7: ["Strength"],
+8: ["Bide", "High Horsepower"],
+10: ["Iron Defense"],
+12: ["Heavy Slam"],
+14: ["Counter"],
+15: ["Earthquake"],
+16: ["Mega Kick", "Superpower"]
+}
+starting_moves = Array[String](["Mud Sport", "Mud-Slap", "Rock Smash"])
+tms = Array[String](["tm_13", "tm_24", "tm_25", "tm_35", "tm_43", "tm_45", "tm_51", "tm_58", "tm_59", "tm_73", "tm_74", "tm_82", "tm_83", "tm_87", "tm_103", "tm_109", "tm_113", "tm_128", "tm_131", "tm_132", "tm_136", "tm_147", "tm_148", "tm_152", "tm_158", "tm_159", "tm_165", "tm_174", "tm_175", "tm_186", "tm_199", "tm_214", "tm_216", "tm_217", "tm_220", "tm_223", "tm_225", "tm_228", "tm_230", "tm_231", "tm_234", "tm_248", "tm_251", "tm_255", "tm_262", "tm_266", "tm_267", "tm_270", "tm_271", "tm_274", "tm_276", "tm_282", "tm_286", "tm_296"])
+egg_moves = Array[String](["Body Slam", "Close Combat", "Double-Edge", "Endeavor", "Fissure", "Magnitude", "Mud Bomb", "Roar", "Smack Down"])

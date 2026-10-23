@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cnkui62bhxibo"]
+
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_jqw55"]
+
+[resource]
+script = ExtResource("1_jqw55")
+id = "magic_powder"
+display_name = "Magic Powder"
+name_en = "Magic Powder"
+type = 10
+move_time = "1 ação"
+resolution = 4
+has_status_roll = true
+status_roll_bonus = 9
+status_roll_target_attribute = 5
+range_category = 2
+range_distance = 6.0
+duration_is_permanent = true
+description = "Você espalha uma nuvem de pó mágico ao seu redor, tentando transformar o tipo de uma criatura em alcance. Role 1d20 + Move + 9 e compare o resultado com 10 + CAR do alvo. Em um resultado maior ou igual, o tipo do alvo passa a ser apenas Psíquico. Observações: Mudar de forma, usar Transform ou Terastallizar anula o efeito. Magic Powder falha se o alvo estiver com Substitute , já for do tipo Psíquico puro, estiver Terastallizado ou tiver a habilidade RKS System. Por ser um Move de pó, falha em Pokémon do tipo Grama, Pokémon com a habilidade Overcoat ou que estejam segurando Safety Goggles."
+range_text_raw = "(6 metros)"
+duration_text_raw = "Enquanto ativo"
+move_power_attributes = Array[int]([3, 4])

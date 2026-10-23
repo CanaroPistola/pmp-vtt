@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="PokemonSpecies" format=3 uid="uid://c65v6ldycngoe"]
+
+[ext_resource type="Script" uid="uid://dvia3837fo4bp" path="res://scripts/pokemon/pokemon_species.gd" id="1_he61r"]
+
+[resource]
+script = ExtResource("1_he61r")
+dex_number = 85
+display_name = "Dodrio"
+id = "dodrio"
+types = Array[int]([0, 9])
+sr = "9"
+min_level = 8
+evolution_stage = 2
+armor_class = 15
+hit_points = 64
+hit_dice = "d10"
+movement = {
+0: 12.0
+}
+attributes = {
+0: 16,
+1: 19,
+2: 13,
+3: 6,
+4: 12,
+5: 10
+}
+skills = Array[int]([0, 13])
+abilities = Array[String](["Run Away", "Early Bird"])
+hidden_ability = "Tangled Feet"
+level_moves = {
+2: ["Quick Attack"],
+3: ["Rage"],
+4: ["Fury Attack"],
+5: ["Pursuit"],
+7: ["Pluck"],
+8: ["Double Hit"],
+9: ["Agility"],
+10: ["Uproar"],
+12: ["Acupressure"],
+13: ["Swords Dance"],
+15: ["Drill Peck", "Jump Kick"],
+16: ["Endeavor", "Thrash"]
+}
+starting_moves = Array[String](["Growl", "Peck", "Tri Attack"])
+tms = Array[String](["tm_2", "tm_3", "tm_5", "tm_13", "tm_18", "tm_25", "tm_27", "tm_45", "tm_58", "tm_59", "tm_70", "tm_75", "tm_82", "tm_83", "tm_87", "tm_90", "tm_102", "tm_109", "tm_113", "tm_129", "tm_131", "tm_136", "tm_150", "tm_158", "tm_160", "tm_175", "tm_186", "tm_195", "tm_199", "tm_209", "tm_214", "tm_216", "tm_227", "tm_228", "tm_234", "tm_246", "tm_248", "tm_255", "tm_265", "tm_266", "tm_270", "tm_271", "tm_276", "tm_277", "tm_278", "tm_281", "tm_282", "tm_283", "tm_286", "tm_288", "tm_289", "tm_295", "tm_296", "tm_298", "tm_305", "tm_318"])
+egg_moves = Array[String](["Assurance", "Brave Bird", "Endeavor", "Feint Attack", "Flail", "Haze", "Mirror Move", "Natural Gift", "Quick Attack", "Sky Attack", "Supersonic", "Whirlwind"])
