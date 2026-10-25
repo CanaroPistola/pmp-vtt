@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dk8bqruqr0i3p"]
+
+[ext_resource type="Script" uid="uid://sn08mn4voft" path="res://scripts/pokemon/move_slot.gd" id="1_kncer"]
+
+[node name="MoveSlot" type="PanelContainer" unique_id=2088049079]
+script = ExtResource("1_kncer")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=524115172]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=894218704]
+layout_mode = 2
+
+[node name="MoveNameLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=591505931]
+layout_mode = 2
+text = "Thunder Shock"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=96156024]
+layout_mode = 2
+
+[node name="TypeImage" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1425394408]
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1560707363]
+layout_mode = 2
+
+[node name="PPLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1420766223]
+layout_mode = 2

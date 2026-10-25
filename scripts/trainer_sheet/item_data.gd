@@ -1723,29 +1723,62 @@ const DATA := {
 		"description": "Traz um Amaura de volta à vida.", "effect": {"type": "revive_fossil", "species": "amaura"}, "consumable": true},
 }
 
+static func _get_raw_data(id: String) -> Dictionary:
+	# Se for uma TM (ex: "tm_1"), gera os dados na hora
+	if id.begins_with("tm_"):
+		var num_str = id.replace("tm_", "")
+		if num_str.is_valid_int():
+			var num = int(num_str)
+			if TmData.has_data(num):
+				return {
+					"display_name": TmData.get_display_name(num),
+					"category": "tm",
+					"price": TmData.get_price(num),
+					"description": "Ensina o Move %s a um Pokémon." % TmData.get_move_id(num).capitalize(),
+					"effect": {"type": "teach_tm", "tm_number": num},
+					"consumable": true
+				}
+	# Se não for TM, busca no dicionário normal
+	return DATA.get(id, {})
+
+# --- Atualize TODAS as funções abaixo para usar _get_raw_data ---
+
 static func has_item(id: String) -> bool:
-	return DATA.has(id)
+	return not _get_raw_data(id).is_empty() or DATA.has(id)
 
 static func get_display_name(id: String) -> String:
-	return DATA.get(id, {}).get("display_name", id)
+	var data = _get_raw_data(id)
+	return data.get("display_name", id)
 
 static func get_category(id: String) -> String:
-	return DATA.get(id, {}).get("category", "")
+	var data = _get_raw_data(id)
+	return data.get("category", "")
 
 static func get_price(id: String) -> int:
-	return DATA.get(id, {}).get("price", 0)
+	var data = _get_raw_data(id)
+	return data.get("price", 0)
 
 static func get_description(id: String) -> String:
-	return DATA.get(id, {}).get("description", "")
+	var data = _get_raw_data(id)
+	return data.get("description", "")
 
 static func get_effect(id: String) -> Dictionary:
-	return DATA.get(id, {}).get("effect", {})
+	var data = _get_raw_data(id)
+	return data.get("effect", {})
 
 static func is_consumable(id: String) -> bool:
-	return DATA.get(id, {}).get("consumable", false)
+	var data = _get_raw_data(id)
+	return data.get("consumable", false)
 
-## Lista de ids de itens de uma categoria (ou todos se category_id == "todos").
 static func get_ids_by_category(category_id: String) -> Array:
+	# Se for categoria "tm", gera a lista das 321 TMs
+	if category_id == "tm":
+		var tm_ids := []
+		for num in TmData.get_all_numbers():
+			tm_ids.append("tm_" + str(num))
+		return tm_ids
+
+	# Senão, busca no DATA normal
 	if category_id == "todos":
 		return DATA.keys()
 	var result := []
@@ -1753,9 +1786,3 @@ static func get_ids_by_category(category_id: String) -> Array:
 		if DATA[id].get("category", "") == category_id:
 			result.append(id)
 	return result
-
-static func get_category_display_name(category_id: String) -> String:
-	for c in CATEGORIES:
-		if c["id"] == category_id:
-			return c["display_name"]
-	return category_id

@@ -202,8 +202,79 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="TabContainer/TrainerCard/TeamContainer/Slot1" unique_id=1118211448]
 layout_mode = 2
+text = "+"
 
 [node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/TeamContainer/Slot1" unique_id=110338941]
+layout_mode = 2
+mouse_filter = 2
+stretch_mode = 4
+
+[node name="Slot2" type="PanelContainer" parent="TabContainer/TrainerCard/TeamContainer" unique_id=1685649421]
+custom_minimum_size = Vector2(68, 56)
+custom_maximum_size = Vector2(68, 56)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="TabContainer/TrainerCard/TeamContainer/Slot2" unique_id=493888500]
+layout_mode = 2
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/TeamContainer/Slot2" unique_id=690873891]
+layout_mode = 2
+mouse_filter = 2
+stretch_mode = 4
+
+[node name="Slot3" type="PanelContainer" parent="TabContainer/TrainerCard/TeamContainer" unique_id=430596438]
+custom_minimum_size = Vector2(68, 56)
+custom_maximum_size = Vector2(68, 56)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="TabContainer/TrainerCard/TeamContainer/Slot3" unique_id=2110681436]
+layout_mode = 2
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/TeamContainer/Slot3" unique_id=1999821896]
+layout_mode = 2
+mouse_filter = 2
+stretch_mode = 4
+
+[node name="Slot4" type="PanelContainer" parent="TabContainer/TrainerCard/TeamContainer" unique_id=493038352]
+custom_minimum_size = Vector2(68, 56)
+custom_maximum_size = Vector2(68, 56)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="TabContainer/TrainerCard/TeamContainer/Slot4" unique_id=156488472]
+layout_mode = 2
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/TeamContainer/Slot4" unique_id=1288404527]
+layout_mode = 2
+mouse_filter = 2
+stretch_mode = 4
+
+[node name="Slot5" type="PanelContainer" parent="TabContainer/TrainerCard/TeamContainer" unique_id=2140565974]
+custom_minimum_size = Vector2(68, 56)
+custom_maximum_size = Vector2(68, 56)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="TabContainer/TrainerCard/TeamContainer/Slot5" unique_id=91563271]
+layout_mode = 2
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/TeamContainer/Slot5" unique_id=1089908295]
+layout_mode = 2
+mouse_filter = 2
+stretch_mode = 4
+
+[node name="Slot6" type="PanelContainer" parent="TabContainer/TrainerCard/TeamContainer" unique_id=320604984]
+custom_minimum_size = Vector2(68, 56)
+custom_maximum_size = Vector2(68, 56)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="TabContainer/TrainerCard/TeamContainer/Slot6" unique_id=882029995]
+layout_mode = 2
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/TrainerCard/TeamContainer/Slot6" unique_id=1923710910]
 layout_mode = 2
 mouse_filter = 2
 stretch_mode = 4

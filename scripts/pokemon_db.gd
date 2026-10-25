@@ -82,6 +82,12 @@ func has_move(id: String) -> bool:
 	if not _loaded: _load_all_data()
 	return _moves.has(id.to_lower().replace(" ", "_"))
 
+## Atalho para buscar o Move real a partir do número da TM
+func get_move_from_tm(tm_number: int) -> MoveData:
+	var move_id = TmData.get_move_id(tm_number)
+	if move_id == "": return null
+	return get_move(move_id)
+
 # ---------- Sprites ----------
 
 func get_sprite(id: String) -> Texture2D:

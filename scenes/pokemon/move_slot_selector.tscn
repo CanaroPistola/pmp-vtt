@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cm50iu7f23jkj"]
+
+[ext_resource type="Script" uid="uid://bqvv5xcyo7ys2" path="res://scripts/pokemon/move_slot_selector.gd" id="1_6dean"]
+
+[node name="MoveSlotSelector" type="PanelContainer" unique_id=1000237234]
+script = ExtResource("1_6dean")
+
+[node name="Button" type="Button" parent="." unique_id=331997292]
+layout_mode = 2

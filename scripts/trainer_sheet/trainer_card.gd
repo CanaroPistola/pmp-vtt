@@ -181,7 +181,7 @@ func _refresh_team() -> void:
 			sb.bg_color = Color(0.1, 0.1, 0.1, 1)
 			btn.add_theme_stylebox_override("disabled", sb)
 			if tex: tex.texture = null
-			btn.tooltip_text = "Bloqueado (Requer nível maior)"
+			btn.tooltip_text = "Slot bloqueado"
 			
 		elif i < data.pokemons.size():
 			var pkmn: PokemonInstance = data.pokemons[i]
@@ -189,10 +189,12 @@ func _refresh_team() -> void:
 			if tex:
 				tex.texture = tex_sprite
 			btn.tooltip_text = "%s\nNv. %d" % [pkmn.get_display_name(), pkmn.level]
+			btn.text = ""
 			
 		else:
 			# Vazio
 			if tex: tex.texture = null
+			btn.text = "+"
 			btn.tooltip_text = "Clique para adicionar um Pokémon"
 
 func _on_slot_pressed(slot_index: int) -> void:
@@ -205,12 +207,23 @@ func _on_slot_pressed(slot_index: int) -> void:
 		print("Clicou no Pokémon: ", pkmn.get_display_name())
 
 func _on_pokemon_chosen(species_id: String, form: String, level: int,
-		nature: int, ability: String) -> void:
+		nature: int, ability: String, known_moves: Array[String],
+		evs: Dictionary = {}, capture_level: int = 1) -> void:
 	var pkmn = PokemonInstance.new()
 	pkmn.setup(species_id, form, level, nature, ability)
+	pkmn.capture_level = capture_level
+	for attr in evs:
+		pkmn.evs[attr] = int(evs[attr])
+	
+	# Define os moves escolhidos no seletor
+	if not known_moves.is_empty():
+		pkmn.known_moves = known_moves.duplicate()
+	
 	pkmn.recalculate()
 	pkmn.refresh_learnable_moves()
 	pkmn.recalculate()
+	# EVs em CON mudam o PV máximo: um Pokémon novo começa com PV cheio.
+	pkmn.current_hp = pkmn.max_hp
 	
 	data.add_pokemon(pkmn)
 

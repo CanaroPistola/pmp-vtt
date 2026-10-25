@@ -36,6 +36,22 @@ extends Resource
 @export var is_variant: bool = false
 @export var variant_data: Dictionary = {}
 
+const _ATTR_KEYS := {
+	"STR": Constants.Attribute.STR, "DEX": Constants.Attribute.DEX,
+	"CON": Constants.Attribute.CON, "INT": Constants.Attribute.INT,
+	"WIS": Constants.Attribute.WIS, "CHA": Constants.Attribute.CHA,
+	"FOR": Constants.Attribute.STR, "DES": Constants.Attribute.DEX,
+	"SAB": Constants.Attribute.WIS, "CAR": Constants.Attribute.CHA,
+}
+
+## Converte "STR" / "str" / 0 em Constants.Attribute (int). Retorna -1 se inválido.
+static func normalize_attr_key(key: Variant) -> int:
+	if key is int:
+		return key
+	if key is String or key is StringName:
+		return _ATTR_KEYS.get(String(key).to_upper(), -1)
+	return -1
+
 func get_form_data(form_name: String = "") -> Dictionary:
 	var base_data = {
 		"display_name": display_name,
@@ -75,8 +91,14 @@ func _apply_diff(base: Dictionary, diff: Dictionary) -> void:
 			"hidden_ability":
 				base["hidden_ability"] = String(diff["hidden_ability"])
 			"attributes":
+				# O diff vem do JSON com chaves em texto ("STR"), mas o base usa o enum
+				# Constants.Attribute (int). Normaliza para não criar chaves duplicadas.
 				for attr_key in diff["attributes"]:
-					base["attributes"][attr_key] = int(diff["attributes"][attr_key])
+					var norm_key := normalize_attr_key(attr_key)
+					if norm_key == -1:
+						push_warning("Atributo desconhecido no diff: %s" % str(attr_key))
+						continue
+					base["attributes"][norm_key] = int(diff["attributes"][attr_key])
 			"movement":
 				for mov_key in diff["movement"]:
 					base["movement"][mov_key] = diff["movement"][mov_key]

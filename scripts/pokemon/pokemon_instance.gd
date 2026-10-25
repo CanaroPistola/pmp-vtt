@@ -11,17 +11,45 @@ extends Resource
 @export var temp_hp: int = 0
 
 @export var nature: int = -1
-## Habilidade passiva escolhida (String vazia = usar a primeira do form_data).
 @export var ability: String = ""
-## Moves conhecidos (até 4 normalmente, mais se tiver Move Extra etc.).
-## Guarda os IDs normalizados (ex: "water_shuriken"), não os nomes bonitos.
 @export var known_moves: Array[String] = []
-## Todos os Moves aprendíveis no nível atual (IDs normalizados).
 @export var learned_moves: Array[String] = []
-## PP atual de cada Move conhecido. Chave = id do Move; valor = int.
-## Populado por refresh_pp_from_moves() sempre que known_moves muda.
 @export var current_pp: Dictionary = {}
 @export var held_item: String = ""
+
+@export var stab: int = 1
+
+## Pontos de Esforço (EVs). Máximo de 4 por atributo.
+@export var evs: Dictionary = {
+	Constants.Attribute.STR: 0, Constants.Attribute.DEX: 0,
+	Constants.Attribute.CON: 0, Constants.Attribute.INT: 0,
+	Constants.Attribute.WIS: 0, Constants.Attribute.CHA: 0
+}
+
+## Nível em que o Pokémon foi obtido. 1 = acompanha o treinador desde o início
+## (progressão normal de EVs). Valores maiores redistribuem os EVs "perdidos"
+## entre os níveis pares restantes (ver calc_ev_progression).
+@export var capture_level: int = 1
+
+## Valores Individuais (IVs). Variam de -2 a +2. (Serão rolados na criação de ovos).
+@export var ivs: Dictionary = {
+	Constants.Attribute.STR: 0, Constants.Attribute.DEX: 0,
+	Constants.Attribute.CON: 0, Constants.Attribute.INT: 0,
+	Constants.Attribute.WIS: 0, Constants.Attribute.CHA: 0
+}
+
+## Regras de EV
+const EV_MAX_TOTAL := 10     # total de pontos ao longo da vida do Pokémon
+const EV_MAX_PER_ATTR := 4   # máximo investido em um único atributo
+const EV_MAX_LEVEL := 20     # nível em que o último ponto é recebido
+
+const STAB_BONUS := {
+	1: 1,  2: 1,  3: 1,  4: 1,
+	5: 2,  6: 2,  7: 2,  8: 2,  9: 2,
+	10: 3, 11: 3, 12: 3, 13: 3, 14: 3,
+	15: 4, 16: 4, 17: 4, 18: 4, 19: 4,
+	20: 5
+}
 
 var _species: PokemonSpecies
 
@@ -51,7 +79,6 @@ func get_form_data() -> Dictionary:
 	if not sp: return {}
 	return sp.get_form_data(form_name)
 
-## Retorna a habilidade passiva efetiva: a escolhida, ou a primeira disponível.
 func get_ability() -> String:
 	if not ability.is_empty():
 		return ability
@@ -60,18 +87,84 @@ func get_ability() -> String:
 		return ""
 	return String(abilities[0])
 
+## Retorna o valor total (Base + Natureza + IV + EV).
 func get_effective_attribute(attr: Constants.Attribute) -> int:
 	if not get_species(): return 8
-	var base_val: int = get_form_data().get("attributes", {}).get(attr, 8)
+	
+	# 1. Base da espécie
+	var base_val: int = int(get_form_data().get("attributes", {}).get(attr, 8))
+	
+	# 2. Natureza (+2 / -2)
 	if nature != -1:
-		if Natures.get_plus(nature) == attr:
-			base_val += 2
-		if Natures.get_minus(nature) == attr:
-			base_val -= 2
+		if Natures.get_plus(nature) == attr: base_val += 2
+		if Natures.get_minus(nature) == attr: base_val -= 2
+		
+	# 3. IVs (-2 a +2)
+	var iv_val = int(ivs.get(attr, 0))
+	base_val += iv_val
+	
+	# 4. EVs (até 4)
+	var ev_val = int(evs.get(attr, 0))
+	base_val += ev_val
+	
 	return clampi(base_val, 1, 30)
 
 func get_attribute_modifier(attr: Constants.Attribute) -> int:
 	return Constants.get_attribute_modifier(get_effective_attribute(attr))
+
+## Retorna o número total de EVs gastos.
+func get_total_evs_spent() -> int:
+	var total = 0
+	for val in evs.values():
+		total += int(val)
+	return total
+
+## Pontos de EV que o Pokémon recebe em cada nível par, de acordo com o nível de captura.
+## Retorna { nível_par:int -> pontos:int }. Vazio se capturado no nível 20 ou acima:
+## não há níveis restantes, então todos os 10 pontos ficam disponíveis na captura.
+##
+## Regra: os pontos dos níveis pares até o nível de captura (inclusive) são
+## "perdidos" e divididos igualmente entre os níveis pares restantes. A sobra
+## vai para os níveis mais altos, em ordem decrescente a partir do nível 20.
+## Ex.: capturado no nível 8 -> perde 4 pontos; restam 10,12,14,16,18,20 ->
+## { 10:1, 12:1, 14:2, 16:2, 18:2, 20:2 }.
+static func calc_ev_progression(p_capture_level: int) -> Dictionary:
+	var lost := 0
+	var remaining: Array[int] = []
+	for lvl in range(2, EV_MAX_LEVEL + 1, 2):
+		if lvl <= p_capture_level:
+			lost += 1
+		else:
+			remaining.append(lvl)
+
+	var result := {}
+	if remaining.is_empty():
+		return result
+
+	var base_extra := lost / remaining.size()
+	var leftover := lost % remaining.size()
+	for lvl in remaining:
+		result[lvl] = 1 + base_extra
+	for i in range(leftover):
+		result[remaining[remaining.size() - 1 - i]] += 1
+	return result
+
+## Total de pontos de EV a que o Pokémon tem direito no nível atual.
+func get_max_evs_allowed() -> int:
+	# Capturado no nível 20: sem níveis restantes, os 10 pontos já estão disponíveis.
+	if capture_level >= EV_MAX_LEVEL:
+		return EV_MAX_TOTAL
+	var total := 0
+	var progression := calc_ev_progression(capture_level)
+	for lvl in progression:
+		if lvl <= level:
+			total += int(progression[lvl])
+	return mini(total, EV_MAX_TOTAL)
+
+## Pontos de EV ainda não investidos. Devem ser investidos obrigatoriamente.
+func get_unspent_evs() -> int:
+	return maxi(get_max_evs_allowed() - get_total_evs_spent(), 0)
+
 
 func get_armor_class() -> int:
 	if not get_species(): return 10
@@ -87,90 +180,127 @@ func recalculate() -> void:
 	var hp_gain_per_level := (hit_dice_max / 2) + 1 + con_mod
 	max_hp = hit_dice_max + con_mod + ((level - 1) * hp_gain_per_level)
 	current_hp = clampi(current_hp, 0, max_hp) if current_hp > 0 else max_hp
+	stab = STAB_BONUS.get(level, 1)
 
 # ---------------------------------------------------------------------------
 # Moves aprendíveis
 # ---------------------------------------------------------------------------
 
-## Popula `learned_moves` com os IDs normalizados de todos os Moves
-## disponíveis no nível atual (Starting + Level + TM + Egg).
-## Se `known_moves` estiver vazio, escolhe os 4 primeiros como padrão.
-## Também chama `refresh_pp_from_moves()` para alinhar o PP.
 func refresh_learnable_moves() -> void:
 	var form_data := get_form_data()
 	if form_data.is_empty(): return
 
 	learned_moves.clear()
 
-	# Starting Moves
 	for m in form_data.get("starting_moves", []):
 		_add_normalized_move(m)
 
-	# Level Moves até o nível atual
 	for lvl in form_data.get("level_moves", {}):
 		if int(lvl) <= level:
 			for m in form_data["level_moves"][lvl]:
 				_add_normalized_move(m)
 
-	# TMs (já vêm como "tm_N" do importador — o catálogo trata depois)
 	for m in form_data.get("tms", []):
 		_add_normalized_move(m)
 
-	# Egg Moves
 	for m in form_data.get("egg_moves", []):
 		_add_normalized_move(m)
 
-	# Se o jogador ainda não escolheu os moves, pega os 4 primeiros
 	if known_moves.is_empty():
 		for i in range(mini(4, learned_moves.size())):
 			known_moves.append(learned_moves[i])
 
 	refresh_pp_from_moves()
 
-## Normaliza um nome de Move (ex: "Water Shuriken" → "water_shuriken")
-## e adiciona em `learned_moves` se ainda não estiver.
+## Retorna um dicionário com todos os moves disponíveis baseados nas restrições
+func get_available_moves() -> Dictionary:
+	var form_data := get_form_data()
+	var available := {
+		"level": [],
+		"egg": [],
+		"tm": []
+	}
+	
+	for lvl in form_data.get("level_moves", {}):
+		if int(lvl) <= level:
+			for m in form_data["level_moves"][lvl]:
+				var id := normalize_move_id(m)
+				if id not in available["level"]:
+					available["level"].append(id)
+					
+	for m in form_data.get("egg_moves", []):
+		var id := normalize_move_id(m)
+		if id not in available["egg"]:
+			available["egg"].append(id)
+			
+	for m in form_data.get("tms", []):
+		available["tm"].append(m) 
+		
+	return available
+
+## Tenta aprender uma TM (número de 1 a 321). Retorna true se conseguiu.
+func learn_tm(tm_number: int, slot_index: int = -1) -> bool:
+	var form_data = get_form_data()
+	var tm_string = "tm_" + str(tm_number)
+	
+	var can_learn = false
+	for tm in form_data.get("tms", []):
+		if String(tm) == tm_string or String(tm) == "tm_0" + str(tm_number):
+			can_learn = true
+			break
+			
+	if not can_learn:
+		return false
+		
+	var move_id = TmData.get_move_id(tm_number)
+	if move_id == "": return false
+	
+	if slot_index == -1:
+		if known_moves.size() < 4:
+			known_moves.append(move_id)
+		else:
+			return false
+	else:
+		if slot_index >= 0 and slot_index < known_moves.size():
+			known_moves[slot_index] = move_id
+		else:
+			return false
+			
+	refresh_pp_from_moves()
+	return true
+
 func _add_normalized_move(raw_name: String) -> void:
 	var id := normalize_move_id(raw_name)
 	if not id.is_empty() and id not in learned_moves:
 		learned_moves.append(id)
 
-## Normaliza um nome/ID de Move para a chave usada pelo PokemonDB.
+## Normaliza o nome do Move substituindo espaços e hifens por underline (_).
+## Ex: "Double-Edge" -> "double_edge", "Water Shuriken" -> "water_shuriken"
 static func normalize_move_id(raw: String) -> String:
-	return raw.strip_edges().to_lower().replace(" ", "_").replace("'", "").replace(".", "")
+	return raw.strip_edges().to_lower().replace(" ", "_").replace("-", "_").replace("'", "").replace(".", "")
 
 # ---------------------------------------------------------------------------
 # PP por Move
 # ---------------------------------------------------------------------------
 
-## Garante que `current_pp` tenha uma entrada para cada Move conhecido.
-## Moves novos começam com PP máximo; Moves removidos são apagados.
-## Moves que já existiam mantêm o PP atual (não reseta).
 func refresh_pp_from_moves() -> void:
-	# Remove PP de moves que não são mais conhecidos
 	for id in current_pp.keys():
 		if id not in known_moves:
 			current_pp.erase(id)
 
-	# Adiciona PP máximo para moves novos
 	for id in known_moves:
 		if not current_pp.has(id):
 			var max_pp := get_move_max_pp(id)
 			current_pp[id] = max_pp
 
-## Retorna o PP máximo de um Move, ou 0 se o Move não for encontrado.
 func get_move_max_pp(move_id: String) -> int:
 	var move := PokemonDB.get_move(move_id)
-	if move == null:
-		push_warning("Move não encontrado no DB: " + move_id)
-		return 0
+	if move == null: return 0
 	return move.pp
 
-## Retorna o PP atual do Move (0 se não conhecido).
 func get_move_current_pp(move_id: String) -> int:
 	return int(current_pp.get(move_id, 0))
 
-## Retorna um dicionário com todos os Moves como recursos MoveData.
-## Útil para a futura UI (ficha do Pokémon).
 func get_known_moves_data() -> Array[MoveData]:
 	var out: Array[MoveData] = []
 	for id in known_moves:
@@ -179,40 +309,29 @@ func get_known_moves_data() -> Array[MoveData]:
 			out.append(move)
 	return out
 
-## Tenta gastar `amount` PP de um Move. Retorna true se conseguiu.
-## Não deixa o PP ficar negativo.
 func spend_pp(move_id: String, amount: int = 1) -> bool:
-	if amount <= 0:
-		return true
+	if amount <= 0: return true
 	var current := get_move_current_pp(move_id)
-	if current < amount:
-		return false
+	if current < amount: return false
 	current_pp[move_id] = current - amount
 	return true
 
-## Recupera `amount` PP de um Move, limitado ao máximo.
 func restore_pp(move_id: String, amount: int) -> void:
-	if amount <= 0:
-		return
+	if amount <= 0: return
 	var max_pp := get_move_max_pp(move_id)
 	var current := get_move_current_pp(move_id)
 	current_pp[move_id] = mini(current + amount, max_pp)
 
-## Restaura todo o PP de um único Move.
 func restore_all_pp_of_move(move_id: String) -> void:
 	current_pp[move_id] = get_move_max_pp(move_id)
 
-## Restaura todo o PP de todos os Moves conhecidos (descanso longo, Centro Pokémon).
 func restore_all_pp() -> void:
 	for id in known_moves:
 		current_pp[id] = get_move_max_pp(id)
 
-## Verdadeiro se o Pokémon não tem PP em nenhum Move conhecido
-## (Struggle é sempre possível, então a UI pode usar isso para avisar).
 func is_out_of_pp() -> bool:
 	for id in known_moves:
-		if get_move_current_pp(id) > 0:
-			return false
+		if get_move_current_pp(id) > 0: return false
 	return true
 
 # ---------------------------------------------------------------------------
@@ -232,13 +351,8 @@ func get_sprite() -> Texture2D:
 func get_full_info() -> Dictionary:
 	var form_data := get_form_data()
 	return {
-		"name": get_display_name(),
-		"species": species_id,
-		"form": form_name,
-		"level": level,
-		"nature": Natures.get_display_name(nature) if nature != -1 else "—",
-		"ability": get_ability(),
-		"ac": get_armor_class(),
-		"hp": [current_hp, max_hp],
-		"pp_out": is_out_of_pp(),
+		"name": get_display_name(), "species": species_id, "form": form_name,
+		"level": level, "nature": Natures.get_display_name(nature) if nature != -1 else "—",
+		"ability": get_ability(), "ac": get_armor_class(),
+		"hp": [current_hp, max_hp], "pp_out": is_out_of_pp()
 	}

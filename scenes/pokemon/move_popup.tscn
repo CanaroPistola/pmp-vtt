@@ -1,0 +1,212 @@
+[gd_scene format=3 uid="uid://bek037lkqgace"]
+
+[ext_resource type="Script" uid="uid://debtaqkg4aqio" path="res://scripts/pokemon/move_popup.gd" id="1_qbm2o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_titulo"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.3, 0.3, 0.3, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_creme"]
+content_margin_left = 12.0
+content_margin_top = 12.0
+content_margin_right = 12.0
+content_margin_bottom = 12.0
+bg_color = Color(0.960784, 0.933333, 0.862745, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="MovePopup" type="Window" unique_id=1256989099]
+title = "Detalhes do Move"
+initial_position = 1
+size = Vector2i(500, 650)
+visible = false
+exclusive = true
+unresizable = true
+always_on_top = true
+script = ExtResource("1_qbm2o")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=489023946]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=1549050616]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1912951180]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="TitlePanel" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=2016716059]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_titulo")
+
+[node name="TitleLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/TitlePanel" unique_id=1727998729]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "NOME DO MOVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StatsGrid" type="GridContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1106402111]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 2
+
+[node name="PPBox" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid" unique_id=383535563]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/PPBox" unique_id=754316229]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.6, 0.8, 1)
+theme_override_font_sizes/font_size = 14
+text = "PP"
+horizontal_alignment = 1
+
+[node name="Value" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/PPBox" unique_id=1140177236]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "3/3"
+horizontal_alignment = 1
+
+[node name="DamageBox" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid" unique_id=1416800885]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/DamageBox" unique_id=2062132068]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.6, 0.8, 1)
+theme_override_font_sizes/font_size = 14
+text = "DANO"
+horizontal_alignment = 1
+
+[node name="Value" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/DamageBox" unique_id=712866120]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "7d8+10"
+horizontal_alignment = 1
+
+[node name="CostBox" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid" unique_id=1977859933]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/CostBox" unique_id=451764762]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.6, 0.8, 1)
+theme_override_font_sizes/font_size = 14
+text = "CUSTO"
+horizontal_alignment = 1
+
+[node name="Value" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/CostBox" unique_id=695003192]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "1 ação"
+horizontal_alignment = 1
+
+[node name="RangeBox" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid" unique_id=1578981254]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/RangeBox" unique_id=1653965123]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.6, 0.8, 1)
+theme_override_font_sizes/font_size = 14
+text = "ALCANCE"
+horizontal_alignment = 1
+
+[node name="Value" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/RangeBox" unique_id=143431176]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Pessoal (cone de 12 metros)"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="PowerBox" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid" unique_id=1828738559]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/PowerBox" unique_id=1072615183]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.6, 0.8, 1)
+theme_override_font_sizes/font_size = 14
+text = "PODER DO MOVE"
+horizontal_alignment = 1
+
+[node name="Value" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/PowerBox" unique_id=1729258379]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "FOR/DES"
+horizontal_alignment = 1
+
+[node name="DurationBox" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid" unique_id=447526989]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/DurationBox" unique_id=1316318465]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.6, 0.8, 1)
+theme_override_font_sizes/font_size = 14
+text = "DURAÇÃO"
+horizontal_alignment = 1
+
+[node name="Value" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsGrid/DurationBox" unique_id=545685747]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Instantânea"
+horizontal_alignment = 1
+
+[node name="DescPanel" type="PanelContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1896596907]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_creme")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer/DescPanel" unique_id=1843842854]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/MarginContainer/VBoxContainer/DescPanel/MarginContainer" unique_id=1371963247]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="DescriptionLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/DescPanel/MarginContainer/ScrollContainer" unique_id=1436856657]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.1, 0.1, 0.1, 1)
+theme_override_font_sizes/font_size = 14
+text = "Descrição do move..."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="BottomBox" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=2064095165]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TypeImage" type="TextureRect" parent="PanelContainer/MarginContainer/VBoxContainer/BottomBox" unique_id=775502845]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TypeNameLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/BottomBox" unique_id=1030240914]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "TIPO"
+vertical_alignment = 1

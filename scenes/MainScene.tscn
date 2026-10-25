@@ -23,3 +23,11 @@ offset_left = 94.0
 offset_right = 253.0
 offset_bottom = 31.0
 text = "Adicionar Pokemon"
+
+[node name="HBoxContainer" type="GridContainer" parent="Control" unique_id=1704678007]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 76.0
+offset_right = 108.0
+offset_bottom = 116.0
+columns = 2
