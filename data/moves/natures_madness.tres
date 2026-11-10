@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c2qclewujney7"]
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://c1tw7g6ihscc"]
 
-[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_5gf73"]
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_jj125"]
 
 [resource]
-script = ExtResource("1_5gf73")
-id = "nature's_madness"
+script = ExtResource("1_jj125")
+id = "natures_madness"
 display_name = "Nature's Madness"
 name_en = "Nature's Madness"
 type = 17

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc2to32ttsvkf"
-path="res://.godot/imported/porygon_2.png-2b60becdcef646b94a1188daddd6abd6.ctex"
+uid="uid://ds7palegyrnbo"
+path="res://.godot/imported/farfetchd.png-f28678d2a0a91b8cbf7fe817f1a15117.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pc_sprites/porygon_2.png"
-dest_files=["res://.godot/imported/porygon_2.png-2b60becdcef646b94a1188daddd6abd6.ctex"]
+source_file="res://assets/pc_sprites/Shiny/farfetchd.png"
+dest_files=["res://.godot/imported/farfetchd.png-f28678d2a0a91b8cbf7fe817f1a15117.ctex"]
 
 [params]
 

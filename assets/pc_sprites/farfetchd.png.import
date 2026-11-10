@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds7palegyrnbo"
-path="res://.godot/imported/farfetch'd.png-551312194846b36813b47dd094fa72ac.ctex"
+uid="uid://cucpc58jxmw02"
+path="res://.godot/imported/farfetchd.png-f79e23757f6ca66bc742a7af666033c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pc_sprites/Shiny/farfetch'd.png"
-dest_files=["res://.godot/imported/farfetch'd.png-551312194846b36813b47dd094fa72ac.ctex"]
+source_file="res://assets/pc_sprites/farfetchd.png"
+dest_files=["res://.godot/imported/farfetchd.png-f79e23757f6ca66bc742a7af666033c1.ctex"]
 
 [params]
 

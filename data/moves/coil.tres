@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://bvqhmiw5lnqk3"]
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cfec68hjgce65"]
 
 [ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_kavou"]
 

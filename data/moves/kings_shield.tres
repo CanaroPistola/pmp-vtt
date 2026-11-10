@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dv25dxaq8wb1k"]
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://dmwrcd22g1a0x"]
 
-[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_k7el0"]
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_xjcu0"]
 
 [resource]
-script = ExtResource("1_k7el0")
-id = "king's_shield"
+script = ExtResource("1_xjcu0")
+id = "kings_shield"
 display_name = "King's Shield"
 name_en = "King's Shield"
 type = 16

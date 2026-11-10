@@ -61,3 +61,7 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Plugin de AI
+addons/godot-ai/
+addons/godot-git-plugin/

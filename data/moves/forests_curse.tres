@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://cw4gmne7fc6xd"]
+[gd_resource type="Resource" script_class="MoveData" format=3 uid="uid://b2nns7t83gasn"]
 
-[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_irecp"]
+[ext_resource type="Script" uid="uid://dnutt1ictghku" path="res://scripts/data/move_data.gd" id="1_ycvwp"]
 
 [resource]
-script = ExtResource("1_irecp")
-id = "forest's_curse"
+script = ExtResource("1_ycvwp")
+id = "forests_curse"
 display_name = "Forest's Curse"
 name_en = "Forest's Curse"
 type = 4
